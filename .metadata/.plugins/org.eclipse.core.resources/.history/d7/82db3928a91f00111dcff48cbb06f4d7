@@ -1,0 +1,18 @@
+<div id="cont_menu_inf">
+
+  <h3>Símbolos e Hino</h3>
+  
+  <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+  <img src="brasao_itapecerica.jpg" alt="Brasão do Município de Itapecerica da Serra" title="Brasão do Município de Itapecerica da Serra" class="inf_brasao" />
+  <img src="bandeira_itap.jpg" alt="Bandeira do Município de Itapecerica da Serra" title="Bandeira do Município de Itapecerica da Serra" class="inf_bnd" />
+  
+  <div id="simbolos_itap">
+    <p class="inf_brasao">Brasão do Município de Itapecerica da Serra</p>
+    <p class="inf_bnd">Bandeira do Município de Itapecerica da Serra</p>
+  </div>
+  
+  <h4>Hino</h4>
+  <p id="inf_hino">Visualize o Hino do Município de Itapecerica da Serra clicando <a href="hino_itapecerica_serra.pdf" title="Hino do Município de Itapecerica da Serra" target="_blank">aqui</a>.</p>
+  
+</div>

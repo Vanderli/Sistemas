@@ -1,0 +1,269 @@
+/* ESTILO CONTROLE DE DOCUMENTOS - DOCUMENTOS - PESQUISA */
+.centralizar{
+	margin: 0 auto;
+}
+th.cabecalhoLista {
+	font-weight: bold;
+	text-align: center;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+}
+#msg  {
+	font-size: 11px;
+	color: #FF0000;
+	background-color: #FFFF99;
+	font-weight: bold;
+}
+.titulo {
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	background-color: #CCCCCC;
+	border: 1px dotted #666666;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-family: "Trebuchet MS", Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+.btnPaginacao {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: #666666;
+	color:#FFFFFF;
+	border: 1px solid #999999;
+	font-size: 12px;
+	border: 2px solid #ccc;
+	font-weight: bold;
+	padding: 4px;
+	cursor: pointer;
+}
+
+input, textarea{ text-transform:uppercase;}
+.cinza {
+	background-color: #eaeaea;
+}
+.lista{
+	border:#999999 1px dashed;
+}
+#container {
+	width:750px;
+	margin:0 auto;
+}
+.mascara {
+	font-size: 11px;
+	color: #FF0000;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+#bemVindo {
+	border:#999999 1px dashed;
+}
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: "Trebuchet MS", Arial; 
+	list-style: none; 
+}
+
+body {
+	padding: 10px; 
+	color: #666;; 
+	font-size: 12px;
+}
+
+fieldset {
+	padding: 10px; 
+	margin: 10px; 
+	border: 1px solid #999; 
+	background-color:#EAEAEA;
+}
+
+fieldset legend {
+	border: 1px double #999; 
+	padding: 2px 10px; 
+	background-color: #D2D2D2; 
+	margin-bottom: 10px; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+input, textarea, select {
+	border-left: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;	
+	font-size: 12px; 
+	color: #666;
+}
+
+.radio{ width:50px; text-align:right}
+
+label {
+	border-bottom: 1px solid #ccc; 
+	float: left; 
+	width: 160px;
+}
+
+p {
+	padding: 2px 0;
+}
+.borda-fina {
+	border: 1px solid #696969;
+}
+
+/* formCadDocumento */
+#formCadDocumento fieldset {}
+#formCadDocumento label {
+	width: 120px;
+}
+
+.vermelhorNegrito16 {
+	color: #FF0000; font-weight: bold; font-size: 16px;
+}
+
+.vermelhorNegrito10 {
+	color: #FF0000; font-weight: bold; font-size: 10px;
+}
+
+.linhaLista {
+	background-color: #D1D1D1; font-size:22px; color:#666666;
+}
+
+.negrito {
+	font-weight: bold;
+}
+
+.tam14 {
+	font-size: 14px;
+}
+
+.tam12 {
+	font-size: 12px;
+}
+#naoExiste {
+	font-size: 11px;
+	color: #FF0000;
+	background-color: #FFFF99;
+	font-weight: bold;
+}
+.botao {
+	background: #666666;
+	border: 2px solid #ccc; 
+	color:#FFFFFF; 
+	font-size: 14px; 
+	font-weight: bold; 
+	width: 188px; 
+	padding: 4px; 
+	cursor: pointer;
+}
+	
+.observacao {
+	width:200px; 
+	font-size:10px; 
+	color:#FF0000;
+}
+.bemVindo {
+	font-size:12px;
+	font-family: "Trebuchet MS", Arial;
+}
+
+
+ul.menubar {
+  margin: 0px; 
+  padding: 0px; 
+  background-color: #FFFFFF; /* IE6 Bug */ 
+  width:777px; 
+}
+
+ul.menubar .menuvertical {
+   margin: 0px; 
+   padding: 0px; l
+   ist-style: none;
+   background-color: #000; 
+   float:left; 
+   width: 111px; 
+}
+ul.menubar ul.menu {
+   display: none; 
+   position: absolute; 
+   margin: 0px;
+}
+
+ul.menubar a {
+   display: block; 
+   text-decoration: none; 
+   color: #fff; 
+   height:20px; 
+   text-align:center; 
+   font-size:10px; 
+   font-family: "Arial"; 
+   font-weight: bold; 
+   padding: 0 10px; 
+   line-height: 20px; 
+   cursor:pointer;
+   border: 1px solid #fff;
+}
+
+ul.menubar a:hover { color: #fff; background-color:#666666; }
+
+ul.menu,
+ul.menu ul {
+   margin: 0; 
+   padding: 0; 
+   border-bottom: 1px solid #ccc; 
+   width: 111px; /* Width of Menu Items */
+   background-color: #000; /* IE6 Bug */
+}
+
+ul.menu li {
+   position: relative; 
+   list-style: none; 
+   border: 0px;
+}  
+
+ul.menu li a {
+   display: block; 
+   text-decoration: none; 
+   color: #fff; 
+   height:20px; 
+   text-align:left; 
+   font-size:10px; 
+   font-family: "Arial"; 
+   font-weight: bold; 
+   padding: 0 10px; 
+   line-height: 20px; 
+   cursor:pointer;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul.menu li { float: left; height: 1%; }
+* html ul.menu li a { height: 1%; }
+/* End */
+
+ul.menu ul {
+   position: absolute; 
+   display: none; 
+   left: 111px; /* Set 1px less than menu width */ top: 0px;
+}
+
+ul.menu li.submenu ul { display: none; } /* Hide sub-menus initially */
+
+ul.menu li.submenu { background: #000 url(../../imagens/img_menu/arrow.gif) right center no-repeat; }
+
+ul.menu li a:hover { color: #fff; }
+

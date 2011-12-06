@@ -1,0 +1,501 @@
+<?php 
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>..:: Ajuda Trâmites - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--estilos-->
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css"/>
+</head>
+<body onLoad="vertical();horizontal();">
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+	<div class="cont_geral">
+    	<!--################################ TEXTO 1 ######################################-->
+        <div class="text">
+            <p>
+                Para Cadastrar um Trâmite Externo, basta passar o mouse sobre o nome            </p>
+            <p>Trâmites no menu e depois em Externo</p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image001.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 2 ######################################-->
+        <div class="text">
+            <p>
+            Após clicar na aba Tramite / Externo, abrirá uma tela onde você </p>
+            <p>pesquisará 
+            um Documento já cadastrado</p>
+<br />
+            <p>
+            	            	<img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />
+            Apenas para exemplificar escolhemos a opção de pesquisa "Nome" e no campo</p>
+            <p> "Digite a Consulta" digitamos o nome MARIA e </p>
+            <p>em seguida clicamos no botão Pesquisar</p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image002.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 3 ######################################-->
+        <div class="text">
+        	<p>
+				Caso não exista nenhum Documento cadastrado com o nome MARIA será exibida            </p>
+        	<p>uma mensagem dizendo que não existe o dado pesquisado
+            </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image003.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 4 ######################################-->
+        <div class="text">
+        	<p>
+            	Agora vamos escolher a opção de pesquisa "Nome” e no campo "Digite a Consulta”            </p>
+        	<p>digitamos o nome Leonardo e clicamos no botão Pesquisar</p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image004.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 5 ######################################-->
+        <div class="text">
+            <p>
+                Ao clicar no botão Pesquisar será exibida uma listagem dos documentos que 
+            possuem o</p>
+            <p>nome Leonardo. </p>
+      <p>            
+            	1 - Escolha o Documento que você quer cadastrar o trâmite
+            </p>
+          <p style="text-align:left; margin-left:175px">
+                2 - Clique em Visualizar
+          </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image005.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 6 ######################################-->
+        <div class="text">
+        	<p>
+            	<img src="../imagens/help_img_tra/visto.jpg" alt="visto" />
+                 Após clicar em Visualizar, caso não exista nenhum trâmite cadastrado, 
+                será exibida a </p>
+        	<p>seguinte tela, contendo no topo da página o detalhamento do 
+                Documento no </p>
+        	<p>qual o tr&acirc;mite estar&aacute; vinculado</p>
+        	</div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image006.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 7 ######################################-->
+        <div class="text">
+       	  <p>
+            	<img src="../imagens/help_img_tra/visto.jpg" alt="visto" />
+                Na parte inferior será exibido um histórico dos trâmites, note que neste 
+          Documento </p>
+       	  <p>não possui nenhum trâmite Externo cadastrado, por isso é exibido          </p>
+       	  <p>uma mensagem dizendo que não possuir </p>
+       	  <p>histórico de trâmite externo no Nº Documento 
+          </p>
+    <br />
+            <p>
+            	Para cadastrar um Trâmite clique no botão “Cadastrar Trâmite”<br /><br />
+				Será exibida a tela abaixo.
+			Os campos N.º Informação, Data Tramitação e Usuário, são </p>
+            <p>apenas para visualização, 
+                não sendo possível a edição dos mesmo por essa tela
+            </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image007.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 8 ######################################-->
+        <div class="text">
+        	<p>
+            	Para cadastrar o Status de um Trâmite Externo, basta escolher uma das opções abaixo,            </p>
+        	<p>em car&aacute;ter de demonstração será escolhida a opção Andamento
+            </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image008.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 9 ######################################-->
+        <div class="text">
+        	<p>
+            	Para cadastrar o Destino Externo 1 de um Trâmite Externo, basta escolher uma das opções
+            </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image009.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 10 ######################################-->
+        <div class="text">
+        	<p>
+            	Agora escolha o Destino Externo 2
+            </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image010.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 11 ######################################-->
+        <div class="text">
+        	<p>
+            	Para cadastrar o N.º Remessa de um Trâmite Externo, digite no campo N.º Remessa.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image011.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 12 ######################################-->
+        <div class="text">
+        	<p>
+            	Todos os campos nessa tela são obrigatórios com exceção do N.º Remessa
+            </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image012.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 13 ######################################-->
+        <div class="text">
+        	<p>
+            	Agora com os dados devidamente preenchidos é só clicar no botão Cadastrar para 
+            registrar </p>
+        	<p>um Tr&acirc;mite Externo no Documento escolhido
+            </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image013.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 14 ######################################-->
+        <div class="text">
+        	<p>Ap&oacute;s clicar no bot&atilde;o Cadastrar, ser&aacute; exibida uma mensagem de Dados cadastrados com sucesso</p>
+   	  </div>
+<div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image014.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 15 ######################################-->
+        <div class="text">
+        	<p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image015.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 16 ######################################-->
+        <div class="text">
+        	<p>
+            Ao clicar no OK, você será redirecionado para a tela com detalhamento do Documento e </p>
+        	<p>histórico da Tramitação do Trâmite Externo</p>
+<p>              <img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> O histórico de Tr&acirc;mitação é exibido de dez em dez Trâmites<br />
+                <br />
+                Os Trâmites são ordenados por 2 quesitos</p>
+        	<p>        	  <br />
+        	  <img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> Primeiro: Data que foi cadastrada</p>
+        	<p> <img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> Segundo: Hora que foi cadastrada </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image016.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 17 ######################################-->
+        <div class="text">
+        	<p>
+				Para visualizar o último Trâmite cadastrado, basta clicar em Próximo
+            </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image017.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 18 ######################################-->
+        <div class="text">
+        	<p>
+            	Aqui é exibida o Trâmite já finalizado
+            </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image018.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 19 ######################################-->
+        <div class="text">
+        	<p>
+           	Para Cadastrar um Trâmite Interno, basta passar o mouse sobre o nome Trâmites </p>
+        	<p>no menu e depois em Interno </p>
+        	</div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image019.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 20 ######################################-->
+        <div class="text">
+        	<p> 
+                Após clicar na aba Tramite / Interno, abrirá uma tela onde você pesquisará um            </p>
+        	<p>Documento já cadastrado.</p>
+        	<p>              <img src="../imagens/help_img_tra/visto.jpg" alt="visto" />  Nessa tela você terá algumas opções de pesquisas tais como: </p>
+        	<p>Nome; Número do Documento; 
+            Assunto; Tipo do Documento e </p>
+        	<p>Data que foi efetuado o Cadastro do Documento. </p>
+        	</div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image020.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 21 ######################################-->
+        <div class="text">
+        	<p> 
+            	<img src="../imagens/help_img_tra/visto.jpg" alt="visto" />
+            Para pesquisar escolha a opção e Digite a consulta.</p>
+        	<p> Caso tenha esquecido de selecionar algum item, ou de digitar a respectiva consulta </p>
+        	<p>será exibido a mensagem                 
+            </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image021.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 22 ######################################-->
+        <div class="text">
+        	<p> 
+                Nesse caso escolhemos a opção de pesquisa “Nome” e no campo “Digite a Consulta”            </p>
+        	<p>digitamos o nome Maria e basta clicar no botão Pesquisar.
+            </p>
+        	</div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image022.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 23 ######################################-->
+        <div class="text">
+        	<p> 
+            Caso não tenha nenhum Documento cadastrado com o nome Maria ele exibirá a seguinte </p>
+        	<p>mensagem dizendo que não existe o dado pesquisado. 
+            </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image023.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 24 ######################################-->
+        <div class="text">
+        	<p> 
+            Apenas para exemplificar escolhemos a opção de pesquisa “Data Cad. Doc.” e no campo</p>
+        	<p> “Digite a Consulta” aparecerá um modelo pré-definidos de como digitar o</p>
+        	<p> “dia/mês/ano”, onde não será permitido a digitação de textos,</p>
+        	<p> só é permitido a digitação de números.
+            </p>
+        	</div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image024.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 25 ######################################-->
+        <div class="text">
+        	<p> 
+            Digitamos a data que desejamos, lembrando que a mesma é a data no qual o documento </p>
+        	<p>foi cadastrado. </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image025.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 26 ######################################-->
+        <div class="text">
+        	<p> 
+            Após clicar no botão Pesquisar será exibida uma listagem dos Documentos que possuem a </p>
+        	<p>data igual a requisitada. 
+        	  
+       	  Depois de escolher qual Documento você quer cadastrar o </p>
+        	<p>trâmite clique em Visualizar.
+      	    </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image026.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 27 ######################################-->
+        <div class="text">
+        	<p> 
+                 <img src="../imagens/help_img_tra/visto.jpg" alt="visto" />
+                  Após clicar em Visualizar, caso não exista nenhum trâmite cadastrado, 
+            será exibida a </p>
+        	<p>seguinte tela, contendo no topo da página o detalhamento do</p>
+        	<p>Documento escolhido.</p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image027.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 28 ######################################-->
+        <div class="text">
+        	<p> 
+            Caso exista algum trâmite já cadastrado será exibido a tela já com os trâmites que </p>
+        	<p>estão 
+                cadastrados vinculados com determinado Documento.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image028.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 29 ######################################-->
+        <div class="text">
+        	<p> 
+               
+
+Após clicar no botão Cadastrar Trâmite, será exibido à tela cadastrar Trâmite Interno, note que </p>
+        	<p>se tentar cadastrar o Trâmite sem preencher os campos obrigatórios, o mesmo irá exibir </p>
+        	<p>uma mensagem pedindo que preencha tais campos. </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image029.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 30 ######################################-->
+        <div class="text">
+        	<p> 
+            Para cadastrar o destino interno de um Trâmite Interno, basta escolher uma das </p>
+        	<p>opções abaixo.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image030.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 31 ######################################-->
+        <div class="text">
+        	<p> 
+               Para cadastrar o assunto de um Trâmite Interno, basta digitar no campo assunto.
+            </p>
+      	</div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image031.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 32 ######################################-->
+        <div class="text">
+        	<p> 
+            Agora com os dados devidamente preenchidos é só clicar no botão Cadastrar para registrar </p>
+        	<p>um Trâmite Interno no Documento escolhido.
+            </p>
+       	  </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image032.jpg" alt="Trâmites" />
+            </p>
+        </div>
+
+
+        <!--################################ TEXTO 14 ######################################-->
+        <div class="text">
+        	<p> 
+               Ao clicar no botão Cadastrar e o Trâmite tenha sido cadastrado com sucesso, será exibida a mensagem
+            </p>
+      	</div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image014.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 15 ######################################-->
+        <div class="text">
+        	<p> 
+               Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+      	</div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image015.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 34 ######################################-->
+        <div class="text">
+        	<p> 
+            Ao clicar no OK, você será redirecionado para a tela com detalhamento do Documento e</p>
+        	<p> histórico da Tramitação do Trâmite Interno</p>
+        	<p><img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> O histórico de Tramitação é exibido de dez em dez Trâmites       	  </p>
+        	<p>&nbsp;</p>
+       	  <p>Os Trâmites são ordenados por 2 quesitos            </p>
+        	<p><img src="../imagens/help_img_tra/visto.jpg" alt="visto" />Primeiro: Data que foi cadastrada</p>
+        	<p> <img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> Segundo: Hora que foi cadastrada
+      	    </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image034.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 35 ######################################-->
+        <div class="text">
+        	<p> 
+            Para visualizar o último Trâmite cadastrado, basta clicar em Próximo
+      	    </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image035.jpg" alt="Trâmites" />
+            </p>
+        </div>
+        <!--################################ TEXTO 36 ######################################-->
+        <div class="text">
+        	<p> 
+            Aqui é exibida o Trâmite já finalizado
+      	    </p>
+        </div>
+        <div class="image">
+            <p>
+              <img src="../imagens/help_img_tra/image036.jpg" alt="Trâmites" />
+            </p>
+        </div>
+	</div> <!--DIV cont_geral-->
+</body>
+</html>

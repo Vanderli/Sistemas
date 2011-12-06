@@ -1,0 +1,76 @@
+<div id="servico_online">
+  
+  <h3>Reforma Com Acréscimo de Área / Sem Acréscimo de Área</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Reforma Com Acréscimo de Área / Sem Acréscimo de Área</p>
+      </li>
+      <li>
+        <h4>Exigências</h4>
+        <p>
+        	Terreno particular/ loteamento regular e o pedido é feito pessoalmente
+        </p>
+      </li>      
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+			<strong>1ª FASE</strong>
+			<br /><br />
+                - Requerimento com qualificação e endereço completo<br />
+                - RG e CPF/CNPJ originais e cópia simples <br />
+                - Cópia do documento de propriedade do Imóvel – CRI (certidão de registro de imóveis) atualizada com discrição do lote, medidas e confrontações, fornecida pelo cartório de Registro de Imóveis ou documento de posse<br />
+                - Cópia do IPTU (capa e 1ª folha)<br />
+                - Planta do projeto completo – escala 1:100 (para analise)<br />
+                - Memorial Descritivo<br />
+                - ART (anotação de responsabilidade técnica, fornecida pó profissional habilitado no CREA<br />
+                - Caderneta de Obras (adquirida na associação dos engenheiros e arquitetos de Itapecerica da Serra)<br />
+                - Cópia do Certificado “Habite-se” ou Alvará de Regularização<br />
+                - Certidão de Uso e Ocupação do Solo (para Indústria ou Comércio)<br />
+                - Croqui de localização<br />
+                - ART (anotação de responsabilidade técnica), fornecida por profissional habilitado no CREA
+        </p>
+        <p>
+        	<strong>2ª FASE (APÓS ANALISE)</strong>
+            <br /><br />
+                - Plantas do projeto completo – escala 1:100. (2 vias)<br />
+                - Memorial Descritivo. (2 vias)
+       
+        </p>        
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+            - Procuração (reconhecida Firma) no caso de não ser o proprietário<br />
+            - Contrato social se pessoa jurídica<br />
+            - Se for demolição parcial ou lindeira a outras construções vizinhas, deverá apresentar projeto (reforma ou regularização) com responsável técnico<br />
+            - Recolhimento das taxas devidas e ISS referente à área a ser demolida
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+        	- Taxa de protocolo R$ 7,22<br />
+            - Alvará R$ 18,23<br />
+			- Vistoria R$ 28,08
+
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria de Planejamento e Meio Ambiente <br />
+        	Completo Administrativo Norberto Jose da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../cidadao.php';" />
+  </div>
+</div>

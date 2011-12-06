@@ -1,0 +1,58 @@
+<?php
+// tempo desempregado
+$meses_des = $_POST['tempo_desempregado'];
+
+// formato a data no formato 11/05/2009
+$nascimento  = $_POST['diaNasc'].'/'.$_POST['mesNasc'].'/'.$_POST['anoNasc'];
+
+// Declara a data 
+$data = $nascimento;
+
+// Separa em dia, mês e ano
+list($dia, $mes, $ano) = explode('/', $data);
+
+
+// Descobre que dia é hoje e retorna a unix timestamp
+$hoje = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
+
+// Descobre a unix timestamp da data de nascimento do fulano
+$nascimento = mktime( 0, 0, 0, $mes, $dia, $ano);
+
+
+// 365.25 (por causa do 1/4 de dia que fica sobrando)
+// Aqui faço o cálculo
+$idade = floor((((($hoje - $nascimento) / 60) / 60) / 24) / 365.25);
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+// REDIRECIONAR E MENSAGEM DE ERRO!
+
+$mens1 = '\\tATEN%C7%C3O!\\n\\nN%E3o %e9 permitido o cadastro de menores de 18 anos!\\nN%E3o %e9 permitido o cadastro com menos de 6 meses desempregado!';
+$mens2 = '\\tATEN%C7%C3O!\\n\\nN%E3o %e9 permitido o cadastro de menores de 18 anos';
+$mens3 = '\\tATEN%C7%C3O!\\n\\nN%E3o %e9 permitido o cadastro com menos de 6 meses desempregado!';
+
+// se a idade for igual ou maior que 18 anos deixo continuar o cadastro
+if($idade >= 18 && $meses_des >=6){
+	sleep(0);                       						  // tempo para redirecionar
+	header("Location: ../inscricoes/cadastrarCandidato.php?data=$data&idade=$idade&des=$meses_des"); // local para onde estou redirecionando
+
+}else if($meses_des < 6 && $idade < 18){
+	echo "<script type=\"text/javascript\">
+				  alert(unescape('".$mens1."'));
+				  window.location.href='../inscricoes/cadastrar_data.php';
+			 </script>";
+
+}else if($idade < 18){
+	echo "<script type=\"text/javascript\">
+			  alert(unescape('".$mens2."'));
+			  window.location.href='../inscricoes/cadastrar_data.php';
+		 </script>";
+}else{
+	echo "<script type=\"text/javascript\">
+			  alert(unescape('".$mens3."'));
+			  window.location.href='../inscricoes/cadastrar_data.php';
+		 </script>";
+}
+?>

@@ -1,0 +1,63 @@
+<?php
+	// insiro o cabecalho da página
+	include("cabecalho/_meta-css-js.php"); 
+?>
+
+<body>
+
+<div id="dcs_login">
+  
+  	<!-- Banner do sistema -->
+    <div class="dcs_logo">
+      <img src="img/topo_brasao.png" alt="Cabeçalho Dados Para Recadastramento de Sevidores" title="Prefeitura Municipal de Itapecerica da Serra" />
+      <h1>Prefeitura do Município de Itapecerica da Serra</h1>
+    </div>
+    
+    <!-- Barra com nome do Sistema -->
+    <div id="dcs_anuncio">
+      <h2>Processo Seletivo nº 001/2010 - DRH / SAÚDE - IS</h2> 
+    </div>
+    
+    <!-- Campos do login -->
+    <div id="dcs_sist">
+        <form id="form1" name="form1" method="POST" action="login/verifica_login.php">
+            <ul>
+            	<li>
+            		<h2>Autenticação</h2>
+            	</li>
+                <li>
+                	<label>Login</label>
+                	<input type="text" class="dcs_campo" maxlength="50 " name="login" onBlur="verificaLogin();" id="login" />
+                </li>
+                <li>
+                	<label>Senha</label>
+                	<input type="password" class="dcs_campo" maxlength="50" name="senha"  id="senha" />
+                </li>
+                <li class="dcs_invalido">
+                    <p id="msg">
+						<?php 
+                            if($_GET['action'] == 'erroLogin'){
+                                echo "Usuário e/ou senha inválido!";
+                            } else if($_GET['action'] == 'lessLogin'){
+                                echo "Sessão expirada!"; 
+                            } else if($_GET['action'] == 'finish'){
+                                echo "Sessão encerrada!";
+                            } 
+                        ?>
+                    </p>
+                </li>
+                <li class="dcs_btns">
+                	<input class="dcs_logar" name="btn_logar"  id="btn_logar" type="submit" value="LOGAR" />
+                </li> 
+            </ul>
+        </form>
+    </div> <!-- fecha div dsc_sist -->
+    
+    <div id="dcs_rodape">
+      <p>Av. Eduardo Roberto Daher, 1135 - Centro - Itapecerica da Serra - SP</p> 
+    </div>
+
+</div> <!-- fecha div dsc_login -->
+
+</body>
+</html>

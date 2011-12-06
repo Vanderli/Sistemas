@@ -1,0 +1,90 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Planejamento e Meio Ambiente</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    <ul>
+      <li>
+        <p>I - Coordenar e executar a política, os planos, os projetos de obras e edificações e planejamento territorial do Município, aprovando-os ou não;</p>
+      </li>
+      <li>
+        <p>II - Planejar o uso e ocupação do solo no Município, especialmente em Zona Urbana;</p>
+      </li>
+      <li>
+        <p>III - Conceder, cassar ou recusar licenças, certidões e habite-se;</p>
+      </li>
+      <li>
+        <p>IV - Estabelecer normas de edificação, de loteamento, arruamento a zoneamento a ordenação do território do Município;</p>
+      </li>
+      <li>
+        <p>V - Assessorar o processo de planejamento e Orçamento Municipal visando orientar, selecionar e integrar, com critérios compatíveis aos do Plano Diretor Estratégico, os programas e projetos a serem implementados pelo Poder Público ou com sua participação;</p>
+      </li>
+      <li>
+        <p>VI - Promover e desenvolver estudos e projetos para implantação de áreas e empreendimentos urbanos de caráter inovador, que elevem o padrão funcional urbanístico e paisagístico do Município e atraiam novos investidores e usuários;</p>
+      </li>
+      <li>
+        <p>VII - Implantar um sistema operacional de licenciamento, uso e ocupação do solo adequado aos vários propósitos, diretrizes e normas urbano ambientais contidas no Plano Diretor Estratégico;</p>
+      </li>
+      <li>
+        <p>VIII - Oferecer assistência técnica para elaboração de planos, programas e projetos de que participe a população e, em especial, quando vinculadas aos Planos Diretores de Bairros;</p>
+      </li>
+      <li>
+        <p>IX - Sistematizar e disponibilizar informações atualizadas sobre a realidade socioeconômica e social, e sobre contexto ambiental e territorial do Município, de forma a atender aos diferentes agentes e grupos sociais que pretendam contribuir para o desenvolvimento planejado do Município;</p>
+      </li>
+      <li>
+        <p>X - Coordenar e definir a política municipal de meio ambiente e recursos hídricos;</p>
+      </li>
+      <li>
+        <p>XI - Planejar, coordenar e supervisionar as atividades voltadas para a gestão ambiental, a atuação dos Departamentos e do Conselho Municipal de Meio Ambiente;</p>
+      </li>
+      <li>
+        <p>XII - Realizar intercâmbio com entidades públicas e privadas, visando a proteção ambiental e de recursos hídricos;</p>
+      </li>
+      <li>
+        <p>XIII - Viabilizar a captação de recursos nas esferas governamentais e não governamentais;</p>
+      </li>
+      <li>
+        <p>XIV - Planejar, organizar, difundir e coordenar as atividades de educação ambiental e recreação em áreas de parques;</p>
+      </li>
+      <li>
+        <p>XV - Fixar as diretrizes do planejamento ambiental e de recursos hídricos do Município;</p>
+      </li>
+      <li>
+        <p>XVI - Articular-se com órgãos públicos federais, estaduais, municipais ou particulares, objetivando a complementação e aperfeiçoamento do sistema para consecução dos programas e planos elaborados para o Município;</p>
+      </li>
+      <li>
+        <p>XVII - Promover, fiscalizar a implantação e desenvolvimento da coleta seletiva de lixo, reciclagem e reaproveitamento de sucatas;</p>
+      </li>
+      <li>
+        <p>XVIII - Assessorar o Prefeito quanto aos assuntos relativos ao desenvolvimento sustentado do Município;</p>
+      </li>
+      <li>
+        <p>XIX - Implementar a política municipal de meio ambiente, delineando e estruturando o Código Municipal de Meio Ambiente;</p>
+      </li>
+      <li>
+        <p>XX - Analisar, dar parecer e emitir licenças de caráter ambiental;</p>
+      </li>
+      <li>
+        <p>XXI - Desenvolver a agricultura sustentável no Município;</p>
+      </li>
+      <li>
+        <p>XXII - Atuar em planejamento rural e urbano quanto à arborização, processo de desmatamento, movimento de terra e construção junto aos cursos d'água;</p>
+      </li>
+      <li>
+        <p>XXIII - Assessorar e subsidiar o funcionamento do Subcomitê Cotia-Guarapiranga e a Agência Regional de Bacia; e</p>
+      </li>
+      <li>
+        <p>XXIV - Promover a manutenção e conservação das praças, parques, jardins e demais áreas públicas do Município.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

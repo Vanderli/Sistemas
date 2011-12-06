@@ -1,0 +1,39 @@
+<?php 
+		# CRIANDO UMA CONSTANTE E GUARDANDO NA VARIÁVEL URL
+		define('URL','http://'.$_SERVER['SERVER_NAME'].'/portal_itapecerica-WEB-2.0/_ADM');	
+		header("Content-type: text/html; charset='ISO-8859-1'",true);
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="ltr" xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"><head>
+  	<title><?='Sistema Administrativo - '.$title?></title>
+    
+    <!-- Meta Tags -->
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="description" content="Prefeitura do Município de Itapecerica da Serra" />
+    <meta name="keywords" content="Itapecerica da Serra, Prefeitura, Município, Cidade, Concurso"/>
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Departamento de Tecnologia e Informaçao - SADTI" />
+
+	<!-- Javascript's--> 
+	<script type="text/javascript" src="<?=URL?>/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="<?=URL?>/js/jquery-mask.js"></script>    
+    <script type="text/javascript" src="<?=URL?>/js/lib_adm.js" charset="ISO-8859-1"></script>
+   	
+    <!--     
+    <script type="text/javascript" src="<=URL?>/js/jquery-validate.js"></script>  
+    <script type="text/javascript" src="<=URL?>/js/validar_adm.js" charset="ISO-8859-1"></script>
+    -->
+    
+    <!-- CSS -->
+    <link href="<?=URL?>/css/estilo_adm.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="<?=URL?>/css/hacks.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <!-- Icon abas -->
+    <link rel="shortcut icon" href="<?=URL?>/img/favicon.ico" type="image/x-icon" />
+  
+  </head>
+<body>

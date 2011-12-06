@@ -1,0 +1,15 @@
+<div id="sobre_secretario">
+  <h3>Secretaria Municipal de Obras e Serviços</h3>
+
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Carlos Humberto H. da Silva" />
+  
+  <div id="descreve_secretario">
+    <h4>Carlos Humberto H. da Silva</h4>
+    
+    <p>Nascido em Minas Gerais, é morador de Itapecerica da Serra há 5 anos. Casado e pai de três filhos, Carlos é Engenheiro Civil graduado pela Escola de Engenharia do Triangulo Mineiro.</p>
+    <p>Antes de se tornar secretário de Obras e Serviços, trabalhou na construção de prédios em São Paulo, com pavimentações em Osasco e foi também professor universitário. </p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

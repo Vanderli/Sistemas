@@ -1,0 +1,31 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 28/04/2010</p>
+    <h4>Programa&ccedil;&atilde;o do Anivers&aacute;rio de 133 anos de Itapecerica da Serra</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/aniversario_itapecerica2010_gra.jpg" alt="Programa&ccedil;&atilde;o do Anivers&aacute;rio de Itapecerica da Serra" /> 
+    </div>
+
+    <div id="noticia_descreve">
+    
+        <p id="age_data">
+        	<span><a href="arquivos/aniversario_itapecerica2010.pdf" target="_blank">Clique aqui para baixar a Programação do Aniversário de 133 anos de Itapecerica da Serra</a> -</span>
+            <span class="link_color">562 KB</span>
+        </p>
+        
+    </div>   
+     
+</div>

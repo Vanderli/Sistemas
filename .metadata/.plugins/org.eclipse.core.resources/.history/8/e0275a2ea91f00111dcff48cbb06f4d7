@@ -1,0 +1,41 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 21/05/2010</p>
+    <h4>Sexta Cultural - Encontros e Cantos</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/sexta_cultural_gra.jpg" alt="Sexta Cultural - Encontros e Cantos" /> 
+    </div>
+
+   <div id="noticia_descreve">
+
+        <p id="age_data">
+        	<span>Data:</span> Todas as sextas feiras
+        </p>
+        
+        <p id="age_data">
+        	<span>Horário:</span> das 19h as 22h
+        </p>
+               
+        <p id="age_local">
+        	<span>Endereço:</span> Praça João Pessoa - Centro - Itapecerica da Serra
+        </p> 
+        
+        <p id="age_local">
+        	<span>Inscrições e maiores informações na Secretaria de Cultura:</span> (11) 4165-4528 - falar com Bia ou Zezé
+        </p>        
+    </div>
+         
+</div>

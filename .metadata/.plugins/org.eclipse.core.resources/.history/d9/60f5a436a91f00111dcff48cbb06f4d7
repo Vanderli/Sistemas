@@ -1,0 +1,31 @@
+<div id="servico_online">
+  
+  <h3>Limpeza de Bueiro</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Limpeza e desobstrução do bueiro ou boca de lobo</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- Endereço completo<br />
+        	- Telefone para contato
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria Municipal de Obras e Serviços<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+       </p>                
+      </li>
+    </ul>
+    
+  </div>
+
+</div>

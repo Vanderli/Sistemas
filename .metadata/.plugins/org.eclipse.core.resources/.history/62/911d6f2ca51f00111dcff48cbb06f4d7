@@ -1,0 +1,98 @@
+/* Mostro a segunda via */
+.seg_via{ 
+	visibility:visible;
+	display: block;
+}
+.txt_via{
+	text-decoration:underline;
+	visibility:visible;
+	display: block;
+}
+
+/* deixo invisivel o botão no momento da impressão */
+.list_btn { 
+	visibility:hidden;
+	display: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial;
+	list-style: none;
+}
+body {
+	padding: 10px;
+	color: #000;
+	font-size: 12px;
+}
+.dados {
+	color: #666;
+}
+fieldset {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #999;
+}
+fieldset legend {
+	border: 1px double #999;
+	padding: 2px 10px;
+	background-color: #D2D2D2;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+input, textarea, select {
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;	
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;	
+	width: 360px;	
+	font-size: 12px;
+	color: #666;
+	background: #e7e7e7;
+}
+
+label {
+	border-bottom: 1px solid #ccc;
+	float: left;
+	width: 140px;
+}
+p {
+	padding: 2px 0;
+}
+/* formMunicipe */
+#formMunicipe fieldset {}
+#formMunicipe label {
+	width: 80px;
+}
+.vermelhorNegrito16 {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 16px;
+	
+}
+td {
+	background-color: #E6E6E6;
+	padding-left: 10px;
+	float: left;
+}
+.linhaLista {
+	background-color: #D1D1D1;
+	font-size:22px;
+	color:#000000;
+}
+.negrito {
+	font-weight: bold;
+}
+.tam14 {
+	font-size: 14px;
+}
+.tam12 {
+	font-size: 12px;
+}
+.linhaAbaixo {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+}

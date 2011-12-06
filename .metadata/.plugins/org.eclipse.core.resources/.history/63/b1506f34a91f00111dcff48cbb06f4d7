@@ -1,0 +1,31 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Cultura</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+  
+    <ul>
+      <li>
+        <p>I - coordenar, planejar, controlar e organizar as atividades culturais do Município;</p>
+      </li>
+      <li>
+        <p>II - incentivar, difundir e desenvolver atividades culturais, festividades cívicas e comemorativas, certames e eventos artísticos, literários e vocacionais no Município;</p>
+      </li>
+      <li>
+        <p>III - promover a administração e manutenção da Biblioteca Pública, bem como a guarda, controle, renovação e circulação do seu acervo; e</p>
+      </li>
+      <li>
+        <p>IV - promover a coleta, guarda, conservação e preservação de documentos e demais peças que compõem a memória e o acervo artístico e histórico do Município.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

@@ -1,0 +1,63 @@
+<div id="cont_atrib_sec">
+
+  <h3>Secretaria Municipal de Administração</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    <ul>
+      <li>
+        <p>I - elaborar políticas, programas, planos, projetos, diretrizes e metas quanto aos aspectos administrativos da Prefeitura;</p>
+      </li>
+      <li>
+        <p>II - promover a administração dos recursos humanos da Prefeitura, promovendo, executando e coordenando a realização de concursos públicos, obedecidas as normas estabelecidas em regulamento;</p>
+      </li>
+      <li>
+        <p>III - promover a seleção, o recrutamento e o treinamento dos recursos humanos da Prefeitura;</p>
+      </li>
+      <li>
+        <p>IV - estudar e propor ao Prefeito modificações na legislação de pessoal e, sugerir, medidas julgadas necessárias à execução da política e administração de pessoal;</p>
+      </li>
+      <li>
+        <p>V - manter registro do pessoal e elaborar a folha de pagamento dos servidores públicos;</p>
+      </li>
+      <li>
+        <p>VI - promover a administração do apoio administrativo, zeladoria, copa, manutenção e conservação do Complexo Administrativo;</p>
+      </li>
+      <li>
+        <p>VII - coordenar a expedição de Leis, Decretos, Ofícios e outros Atos do Prefeito;</p>
+      </li>
+      <li>
+        <p>VIII - supervisionar e coordenar a execução das atividades ligadas a protocolo e arquivamento de papéis;</p>
+      </li>
+      <li>
+        <p>IX - guardar, distribuir e manter a conservação da frota de veículos leves da Prefeitura;</p>
+      </li>
+      <li>
+        <p>X - coordenar, desenvolver e manter os diversos sistemas de informação e o Site oficial, automatizando tarefas administrativas e serviços ao munícipe;</p>
+      </li>
+      <li>
+        <p>XI - coordenar, desenvolver e manter o parque tecnológico, infraestrutura lógica e física, garantindo o menor tempo de indisponibilidade de um equipamento ou serviço;</p>
+      </li>
+      <li>
+        <p>XII - estudar processos e métodos que visem o aperfeiçoamento do serviço, tanto na parte referente à guarda e conservação dos documentos, como na parte que diz respeito ao julgamento de inutilidade do documento como fonte de informação para a administração;</p>
+      </li>
+      <li>
+        <p>XIII - estabelecer normas por leis, decretos ou atos administrativos para destruição de documentos, quando julgados inúteis como fontes de informação para a administração;</p>
+      </li>
+      <li>
+        <p>XIV - promover o atendimento presencial aos munícipes, encaminhando-os aos setores competentes; e</p>
+      </li>
+      <li>
+        <p>XV - elaborar controles estatísticos, por Secretaria, de todos os atendimentos.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

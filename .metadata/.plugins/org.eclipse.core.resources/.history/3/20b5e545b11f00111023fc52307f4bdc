@@ -1,0 +1,56 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 20/04/2010</p>
+    <h4>Família Bike 2010</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/familia_bike_gra.jpg" alt="Grupo Clariô de Teatro" /> 
+    </div>
+
+    <div id="noticia_descreve">
+    
+        <p id="age_data">
+        	<span>6º PASSEIO CICLÍSTICO DA FAMÍLIA</span>
+        </p>
+        
+    </div>   
+
+    <div id="noticia_descreve">
+    
+        <p id="age_data">
+        	<span>Data:</span> 25 de abril de 2010
+        </p>
+        <p id="age_hora">
+        	<span>Concentracao:</span> 8h
+        </p>
+        <p id="age_hora">
+        	<span>Largada:</span> 9h
+        </p>        
+        <p id="age_local">
+        	<span>Local:</span> Praça da Fonte
+        </p>
+        <p id="age_local">
+        	<span>Chegada:</span> Largo da Matriz
+        </p> 
+        <p id="age_local">
+        	<span>Inscrições:</span> 2 KG de Arroz ou Feijão nos postos autorizados
+        </p> 
+        <p id="age_local">
+        	<span>Maiores informações:</span> (11) 4666-5966
+        </p>                        
+        
+    </div>
+         
+</div>

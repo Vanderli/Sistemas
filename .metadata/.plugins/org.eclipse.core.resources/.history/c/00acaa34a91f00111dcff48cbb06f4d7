@@ -1,0 +1,63 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Obras e Serviços</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+    
+    <ul>
+      <li>
+        <p>I - coordenar, promover a construção, conservação e manutenção dos próprios municipais;</p>
+      </li>
+      <li>
+        <p>II - manter e controlar o uso de máquinas e equipamentos da Prefeitura;</p>
+      </li>
+      <li>
+        <p>III - promover a construção, manutenção e conservação da rede viária do Município, de suas estradas e caminhos;</p>
+      </li>
+      <li>
+        <p>IV - executar e fiscalizar serviços de pavimentação asfáltica, guias e sarjetas e outras obras viárias;</p>
+      </li>
+      <li>
+        <p>V - providenciar a limpeza das vias e logradouros públicos, a remoção do lixo e resíduos de qualquer natureza;</p>
+      </li>
+      <li>
+        <p>VI - promover e controlar os serviços de necrópoles;</p>
+      </li>
+      <li>
+        <p>VII - participar da formulação de política das ações de saneamento básico;</p>
+      </li>
+      <li>
+        <p>VIII - promover a execução de desenhos, projetos, mapas, plantas, gráficos e respectivos cálculos, seja para fins de arquivo como para efeito de tributação;</p>
+      </li>
+      <li>
+        <p>IX - proceder os levantamentos planialtimétricos e trabalhos topográficos indispensáveis aos serviços de engenharia no Município;</p>
+      </li>
+      <li>
+        <p>X - instruir e se manifestar em termos técnicos nas licitações para contratações de obras públicas;</p>
+      </li>
+      <li>
+        <p>XI - coordenar, analisar, orçar os custos, executar projetos de obras públicas e fiscalizá-las;</p>
+      </li>
+      <li>
+        <p>XII - gerenciar, fiscalizar e realizar acompanhamento técnico de convênios e das parcerias populares referentes às obras públicas;</p>
+      </li>
+      <li>
+        <p>XIII - manter e controlar o use da usina de asfalto e fábrica de artefatos de cimento;</p>
+      </li>
+      <li>
+        <p>XIV - coordenar e implementar, pelas Administrações Regionais do Valo Velho, Jardim Jacira e do Potuverá, os serviços e manutenções pertinentes à Secretaria Municipal de Obras e Serviços; e</p>
+      </li>
+      <li>
+        <p>XV - coordenar, implementar e gerir projetos habitacionais.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+<div id="tel_util">
+
+  <h3>Telefones Úteis</h3>
+  
+  <div id="cont_tel_util">
+    <h4>Telefônica</h4>
+    
+    <ul>
+      <li id="util_endereco">
+        <p>Praça Professor Porcino Rodrigues - Centro</p>
+      </li>
+      <li id="util_tel">
+        <p>103 15</p>
+      </li>
+      <li id="util_site">
+        <a href="http://www.telefonica.com.br" target="_blank" title="Telefônica">www.telefonica.com.br</a>
+      </li>
+    </ul>
+  </div>
+
+</div>

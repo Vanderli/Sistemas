@@ -1,0 +1,52 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 14/05/2010</p>
+    <h4>Corpus Christi 2010</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/corpus_christi_2010_gra.jpg" alt="Corpus Christi 2010" /> 
+    </div>
+
+   <div id="noticia_descreve">
+
+        <p id="age_local">
+        	<span>Roteiro Turístico Religioso - Itapecerica da Serra</span>
+        </p>
+    
+        <p id="age_data">
+        	<span>Data:</span> 3 de Junho de 2010
+        </p>
+        <p id="age_data">
+        	<span>Horário:</span>
+            <br />
+        	<span>- 4h:</span> Benção aos artistas e colaboradores 
+            <br />                       
+        	<span>- 4h30:</span> Confecção dos tapetes
+            <br />            
+        	<span>- 10h:</span> Visitação
+            <br />            
+        	<span>- 15h:</span> Santa Missa (campal)
+        </p>
+                
+        <p id="age_local">
+        	<span>Endereço:</span> Largo da Matriz de Nossa Senhora dos Prazeres - Centro - Itapecerica da Serra
+        </p> 
+        
+        <p id="age_local">
+        	<span>Informações:</span> (11) 4666-5966
+        </p>        
+    </div>
+         
+</div>

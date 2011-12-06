@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>jQZoom v1.2</title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function(){
+$("img.jqzoom").jqueryzoom({
+				xzoom: 200, //zooming div default width(default width value is 200)
+				yzoom: 200, //zooming div default width(default height value is 200)
+				offset: 10 //zooming div default offset(default offset value is 10)
+				//position: "right" //zooming div position(default position value is "right")
+			});
+});
+</script>
+<link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="style/jqzoom.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+
+		<div id="maincontent">
+	
+    			<div style="float:left;width:100%;clear:both;">
+                    <span class="tozoom"><img src="images/brasao_peq.jpg" class="jqzoom"  alt="images/brasao_gra.jpg"></span>
+                </div>
+		 <span style="float:left;width:100%;height:200px;">&nbsp;</span>
+		</div>
+</div>
+
+</body>
+</html>

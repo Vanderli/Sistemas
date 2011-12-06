@@ -1,0 +1,14 @@
+<div id="cont_cipa">
+    <h3>CIPA</h3>
+        <ul>
+            <h4>Confira os Eleitos!</h4>
+            <li>
+            	<a href="arquivo/eleitos_servidores_cipa_2010.pdf" title="Eleitos pelos servidores" target="_blank">
+                	Eleitos pelos Servidores</a>
+            </li>
+            <li>
+            	<a href="arquivo/nomeados_empregador_cipa_2010.pdf" title="Nomeados pelo empregador" target="_blank">
+                	Nomeados pelo Empregador</a>
+            </li>    	
+        </ul>
+</div>

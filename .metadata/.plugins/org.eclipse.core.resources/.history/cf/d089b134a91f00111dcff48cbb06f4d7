@@ -1,0 +1,62 @@
+<div id="cont_lista_arvore">
+
+  <h3>Autarquia Municipal de Saúde</h3>
+  
+  <h4>Serviços da Secretaria</h4>  
+  
+  <div class="la_container">
+    <p>Clique em Lista de Serviços para visualizar todos os serviços da Secretaria.<p>
+    <ul>
+    
+      <div class="la_colunas">    
+        <li class="la_coluna_tit3">   
+          <a title="Lista de Serviços" class="btn_esconde_la">Lista de Serviços</a>
+          <ul class="esconde_la">
+            <li><a href="#" title="Cadastro Imobiliário">Cadastro Imobiliário</a></li>
+            <li><a href="#" title="Certidões">Certidões</a></li>
+            <li><a href="#" title="Isenção de IPTU">Isenção de IPTU</a></li>
+            <li><a href="#" title="Alteração de Inscrições Municipais">Alteração de Inscrições Municipais</a></li>
+            <li><a href="#" title="Certidão Negativa de ISS">Certidão Negativa de ISS</a></li>
+            <li><a href="#" title="Emissão de AIDF">Emissão de AIDF</a></li>
+            <li><a href="#" title="Inscrição da Empresa">Inscrição da Empresa</a></li>
+            <li><a href="#" title="Termo de Responsabilidade Técnica de Construção Civil">Termo de Responsabilidade Técnica de Construção Civil</a></li>
+            <li><a href="#" title=" 2º Via Carnê de IPTU"> 2º Via Carnê de IPTU</a></li>
+            <li><a href="#" title="Alteração de A/C, Endereço de Entrega, Lançamento em Blocos, Lançamento da Construção">Alteração de A/C, Endereço de Entrega, Lançamento em Blocos, Lançamento da Construção</a></li>
+            <li><a href="#" title="Atualização Cadastral">Atualização Cadastral</a></li>
+            <li><a href="#" title="Certidão Nada Consta">Certidão Nada Consta</a></li>
+            <li><a href="#" title="Unificação de Área / Lote">Unificação de Área / Lote</a></li>
+            <li><a href="#" title="Desdobro / Desmembramento">Desdobro / Desmembramento</a></li>
+            <li><a href="#" title="2ª via da Inscrição Municipal">2ª via da Inscrição Municipal</a></li>
+            <li><a href="#" title="2ª via do Carnê Emolumentos Cemitério">2ª via do Carnê Emolumentos Cemitério</a></li>
+            <li><a href="#" title="Alteração de Horário de Funcionament">Alteração de Horário de Funcionament</a></li>
+            <li><a href="#" title="Alteração de Licença para Feirante">Alteração de Licença para Feirante</a></li>
+            <li><a href="#" title="Alteração de Licença de Funcionamento">Alteração de Licença de Funcionamento</a></li>
+            <li><a href="#" title="Certidão para Compra de Veículo – Isenção de IPI para TAXI">Certidão para Compra de Veículo – Isenção de IPI para TAXI</a></li>
+            <li><a href="#" title="Certidão para Compra de Veículo – Isenção de ICMS para TAXI">Certidão para Compra de Veículo – Isenção de ICMS para TAXI</a></li>
+            <li><a href="#" title="Carimbar Nota Fiscal (Autorização de uso)">Carimbar Nota Fiscal (Autorização de uso)</a></li>
+            <li><a href="#" title="Comunicação de Extravios">Comunicação de Extravios</a></li>
+            <li><a href="#" title="Exclusão de Atividade">Exclusão de Atividade</a></li>
+            <li><a href="#" title="Inclusão de Atividade">Inclusão de Atividade</a></li>
+            <li><a href="#" title="Inscrição de Ambulante">Inscrição de Ambulante</a></li>
+            <li><a href="#" title="Inscrição de Autônomo">Inscrição de Autônomo</a></li>
+            <li><a href="#" title="Inscrição Eventual ">Inscrição Eventual </a></li>
+            <li><a href="#" title="Relação de Indústrias">Relação de Indústrias</a></li>
+            <li><a href="#" title="Renovação do CCM">Renovação do CCM</a></li>
+            <li><a href="#" title="Revisão de Taxas">Revisão de Taxas</a></li>
+            <li><a href="#" title="Talão de Nota Fiscal">Talão de Nota Fiscal</a></li>
+          </ul>
+        </li>
+        
+      </div>
+    
+    
+    
+    </ul>
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+
+</div>

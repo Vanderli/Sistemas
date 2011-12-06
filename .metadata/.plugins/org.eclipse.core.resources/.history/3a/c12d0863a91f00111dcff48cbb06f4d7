@@ -1,0 +1,34 @@
+<?php require_once('../lib/DataHora.php'); ?>
+<?php 
+
+$hora = date('G');
+$min = date('i');
+$seg = date('s');
+$dia = substr($_GET['dataNascimento'],0,2);
+$mes = substr($_GET['dataNascimento'],3,2);
+$ano = substr($_GET['dataNascimento'],6,4);
+		
+$anoCalc = date("Y") - $ano;
+$hoje = mktime(0, 0, 0, date("m"), date("d"), date("Y") - $anoCalc);
+$niver = mktime(0, 0, 0, $mes, $dia, $ano);
+
+if ($hoje >= $niver)
+{
+	header("Content-type: application/xml");
+	echo '<?xml version="1.0" encoding="iso-8859-1"?>
+	<retorno>
+		<resposta>valido</resposta>
+		<dados>'.$anoCalc.'</dados>	
+	</retorno>';
+}
+else
+{
+	header("Content-type: application/xml");
+	echo '<?xml version="1.0" encoding="iso-8859-1"?>
+	<retorno>
+		<resposta>invalido</resposta>
+		<dados>0</dados>	
+	</retorno>';
+}
+
+?>

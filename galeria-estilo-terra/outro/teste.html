@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" dir="ltr" lang="pt-br">
+
+<head>
+    <title>Teste fotos Zoom com texto</title>
+    <link rel="stylesheet" href="teste_arquivos/globocore.css">    
+	<script type="text/javascript" src="teste_arquivos/jquery-1.js"></script>
+</head>
+
+<body>
+
+    <div class="maisvistas-fotos">
+        <ul>
+            <li class="foto fotoMedia">
+                <a href="http://g1.globo.com/mundo/fotos/2010/05/imagens-desta-terca-feira-4-de-maio-de-2010.html">
+                    <span class="canto-ce"></span>
+                    <span class="canto-cd"></span>
+                    <span class="canto-re"></span>
+                    <span class="canto-rd"></span>
+                    <img src="teste_arquivos/tartarugas-140.jpg"  alt="wwwwwwwwwwwwwwwwwwwww">
+                </a>
+            </li>
+            
+            <li class="foto fotoMedia">
+                <a href="http://g1.globo.com/mundo/fotos/2010/04/veja-fotos-da-expo-xangai-2010.html">
+                    <span class="canto-ce"></span>
+                    <span class="canto-cd"></span>
+                    <span class="canto-re"></span>
+                    <span class="canto-rd"></span>
+                    <img src="teste_arquivos/bebe140.jpg"  alt="ccccccccccccccccccccccc">
+                </a>
+            </li>
+        </ul>
+        <div class="maisvistas-tooltip destaque">
+            <a>
+                <div class="foto">
+                    <span class="canto-ce"></span>
+                    <span class="canto-cd"></span>
+                    <span class="canto-re"></span>
+                    <span class="canto-rd"></span>
+                </div>
+                <div class="texto">
+                    <span class="descricao"></span>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="teste_arquivos/g1-delivery.js"></script>
+    <script type="text/javascript">
+        $(".agrupamento-vertical-simples").each(function(){
+            if($(this).children(".chamada-principal").length == 0)
+                $(".chamada-secundaria:first-child", this).addClass("remover-borda-chamada");
+        });       
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div id="sobre_secretario">
+  <h3>Secretaria Municipal de Governo, Ciência e Tecnologia</h3>
+  <img src="secretario.jpg" alt="Foto do Secretário" title="José David Binsztajn" />
+  
+  <div id="descreve_secretario">
+    <h4>José David Binsztajn</h4>
+    
+    <p>Nascido no Rio de Janeiro é casado, pai de quatro filhos. Desde 1972 mora em Itapecerica da Serra.</p>
+    <p>Sua historia é marcada por vasta atuação na vida pública. É formado em Ciência Social pela Universidade de São Paulo e Direito pela FIEO, de Osasco, estudou Antropologia no Uruguai, Filosofia em Israel, História na França, e na USP. Pós graduação em Direito Ambiental pela Faculdade de Saúde Pública da USP e Pedagogia pela FLAXO – faculdade Argentina conveniada em Jundiaí cursou Cinema, trabalhou por dois anos na TV Educativa de Jundiaí.</p>
+    <p>Zé David também atuou como professor, em diversas escolas da capital, jornalista, radialista, estivador, lavrador, gráfico, foi professor de História Geral e diretor do Anglo Vestibular por muitos anos e dirigiu uma empresa de paisagismo; vereador, Presidente da Câmara e Secretário da Promoção Social em Osasco, foi Secretário do Meio Ambiente em Itapecerica e  Desde 2005 está a frente a Secretaria de Governo, Ciência e Tecnologia.</p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

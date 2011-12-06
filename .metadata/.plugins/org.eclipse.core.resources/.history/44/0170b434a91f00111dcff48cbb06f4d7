@@ -1,0 +1,51 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Turismo</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    <ul>
+      <li>
+        <p>I - planejar ações que visem o desenvolvimento do turismo sustentável;</p>
+      </li>
+      <li>
+        <p>II - promover eventos ligados ao esporte de aventura e ecoturismo;</p>
+      </li>
+      <li>
+        <p>III - promover o relacionamento com as esferas de turismo intermunicipal, estadual e federal, para elaboração de convênios e parcerias, buscando a captação de recursos;</p>
+      </li>
+      <li>
+        <p>IV - garantir as atividades referentes ao Conselho Municipal de Turismo e definir suas diretrizes;</p>
+      </li>
+      <li>
+        <p>V - participar de convenções, seminários e feiras referentes ao turismo, promovendo a divulgação das ações municipais;</p>
+      </li>
+      <li>
+        <p>VI - garantir participação efetiva na Câmara Técnica de Turismo, Lazer e Entretenimento do Subcomitê da Bacia Hidrográfica Cotia-Guarapiranga, assim como na Câmara de Turismo e Lazer no meio rural, do Estado de São Paulo;</p>
+      </li>
+      <li>
+        <p>VII - elaborar programas de qualidade turística em parceria com as demais Secretarias da Administração Municipal;</p>
+      </li>
+      <li>
+        <p>VIII - garantir a divulgação dos atrativos turísticos municipais em meio de comunicação própria, bem como no Calendário Estadual de Eventos;</p>
+      </li>
+      <li>
+        <p>IX - fomentar ações que garantam a manutenção do Município na Classificação Nacional de Potencial Turístico;</p>
+      </li>
+      <li>
+        <p>X - fomentar a realização de eventos tradicionais e datas comemorativas; e</p>
+      </li>
+      <li>
+        <p>XI - promover estudos que visem o aproveitamento do potencial turístico do Município, buscando parcerias com órgãos públicos ou privados e instituições de ensino.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

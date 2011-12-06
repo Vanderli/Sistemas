@@ -1,0 +1,281 @@
+<?php require_once('Connections/conn.php'); ?>
+<?php require_once('lib/DataHora.php'); ?>
+<?php $data = new DataHora; ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$id = "-1";
+if (isset($_GET['codInscricao'])) {
+  $id = base64_decode($_GET['codInscricao']);
+}
+
+$editFormAction = $_SERVER['PHP_SELF'];
+if (isset($_SERVER['QUERY_STRING'])) {
+  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+}
+
+if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
+
+	
+
+  $updateSQL = sprintf("UPDATE inscricoes SET cod_cargo=%s, nome=%s, rg=%s, sexo=%s, dataNascimento=%s, idade=%s, numeroFilhosMenor18=%s, estadoCivil=%s, endereco=%s, numero=%s, complemento=%s, bairro=%s, cidade=%s, cep=%s, uf=%s, telefone=%s, tipoContato=%s WHERE codInscricao=%s",
+                       GetSQLValueString($_POST['cod_cargo'], "int"),
+                       GetSQLValueString($_POST['nome'], "text"),
+                       GetSQLValueString($_POST['rg'], "text"),
+                       GetSQLValueString($_POST['sexo'], "text"),
+                       GetSQLValueString($_POST['dataNascimento'], "date"),
+                       GetSQLValueString($_POST['idade'], "int"),
+                       GetSQLValueString($_POST['numeroFilhosMenor18'], "int"),
+                       GetSQLValueString($_POST['estadoCivil'], "text"),
+                       GetSQLValueString($_POST['endereco'], "text"),
+                       GetSQLValueString($_POST['numero'], "int"),
+                       GetSQLValueString($_POST['complemento'], "text"),
+                       GetSQLValueString($_POST['bairro'], "text"),
+                       GetSQLValueString($_POST['cidade'], "text"),
+                       GetSQLValueString($_POST['cep'], "text"),
+                       GetSQLValueString($_POST['uf'], "text"),
+                       GetSQLValueString($_POST['telefone'], "text"),
+                       GetSQLValueString($_POST['tipoContato'], "text"),
+                       GetSQLValueString($_POST['codInscricao'], "int"));
+
+  mysql_select_db($database_conn, $conn);
+  $Result1 = mysql_query($updateSQL, $conn) or die(mysql_error());
+
+	if($Result1){
+		echo "<script type=\"text/javascript\">
+			alert('Dados Alterados com sucesso!');
+			window.location.href=' imprime_ficha/imprime_ficha.php?codInscricao='+'".base64_encode($id)."';
+		</script>";
+		
+	}
+	
+			
+}
+
+$colname_consInscricao = "-1";
+if (isset($_GET['codInscricao'])) {
+  $colname_consInscricao = base64_decode($_GET['codInscricao']);
+}
+mysql_select_db($database_conn, $conn);
+$query_consInscricao = sprintf("SELECT * FROM inscricoes WHERE codInscricao = %s", GetSQLValueString($colname_consInscricao, "int"));
+$consInscricao = mysql_query($query_consInscricao, $conn) or die(mysql_error());
+$row_consInscricao = mysql_fetch_assoc($consInscricao);
+$totalRows_consInscricao = mysql_num_rows($consInscricao);
+
+mysql_select_db($database_conn, $conn);
+$query_selCargos = "SELECT * FROM cargos ORDER BY nome_cargo ASC";
+$selCargos = mysql_query($query_selCargos, $conn) or die(mysql_error());
+$row_selCargos = mysql_fetch_assoc($selCargos);
+$totalRows_selCargos = mysql_num_rows($selCargos);
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Processo Seletivo N&ordm; 001/2010 - ..:: Alterar Inscri&ccedil;&otilde;es ::..</title>
+
+<link href="css/estilo.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="js/nyroModal-1.2.8/js/jquery.nyroModal-1.2.8.pack.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="js/jquery-validate.min.js"></script>
+<script type="text/javascript" src="js/lib_validacao.js"></script>
+
+
+</head>
+
+<body>
+<div id="container">
+ <div class="topoMenu">
+    	<img src="imagens/topo_ProcessoSeletivo.jpg">
+    </div>
+    <br />
+<div id="formulario">
+  <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="form1">
+    <h3>.: Alterar dados da Inscri&ccedil;&atilde;o :.</h3>
+    <table width="725">
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Número de Inscrição:</div></td>
+        <td><?php echo $row_consInscricao['codInscricao']; ?></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Cargo:</div></td>
+        <td><select name="cod_cargo" id="cod_cargo">
+          <option value="" <?php if (!(strcmp(-1, $row_consInscricao['cod_cargo']))) {echo "selected=\"selected\"";} ?>>--------</option>
+          <?php
+do {  
+?>
+          <option value="<?php echo $row_selCargos['cod_cargo']?>"<?php if (!(strcmp($row_selCargos['cod_cargo'], $row_consInscricao['cod_cargo']))) {echo "selected=\"selected\"";} ?>><?php echo $row_selCargos['nome_cargo']?></option>
+          <?php
+} while ($row_selCargos = mysql_fetch_assoc($selCargos));
+  $rows = mysql_num_rows($selCargos);
+  if($rows > 0) {
+      mysql_data_seek($selCargos, 0);
+	  $row_selCargos = mysql_fetch_assoc($selCargos);
+  }
+?>
+        </select></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Nome completo:</div></td>
+        <td><input type="text" name="nome" value="<?php echo htmlentities($row_consInscricao['nome'], ENT_COMPAT, 'iso-8859-1'); ?>" size="50" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">RG:</div></td>
+        <td><input type="text" name="rg" value="<?php echo htmlentities($row_consInscricao['rg'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Sexo:</div></td>
+        <td><select name="sexo" id="sexo">
+           <option>--------</option>
+          <option value="masculino" <?php if (!(strcmp("masculino", $row_consInscricao['sexo']))) {echo "selected=\"selected\"";} ?>>Masculino</option>
+          <option value="feminino" <?php if (!(strcmp("feminino", $row_consInscricao['sexo']))) {echo "selected=\"selected\"";} ?>>Feminino</option>
+        </select></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Data Nascimento:</div></td>
+        <td>
+        	<input type="text" name="dataNascimento" value="<?php echo htmlentities($row_consInscricao['dataNascimento']); ?>" size="32" />
+        <span class="mascara">(dd/mm/aaaa)</span>
+        </td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Idade:</div></td>
+        <td><input type="text" name="idade" value="<?php echo htmlentities($row_consInscricao['idade'], ENT_COMPAT, 'iso-8859-1'); ?>" size="3" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Número de filhos menores de 18 anos::</div></td>
+        <td><input type="text" name="numeroFilhosMenor18" value="<?php echo htmlentities($row_consInscricao['numeroFilhosMenor18'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Estado Civil:</div></td>
+        <td><select name="estadoCivil" id="estadoCivil">
+          <option value="" <?php if (!(strcmp(-1, $row_consInscricao['estadoCivil']))) {echo "selected=\"selected\"";} ?>>--------</option>
+          <option value="solteiro" <?php if (!(strcmp("solteiro", $row_consInscricao['estadoCivil']))) {echo "selected=\"selected\"";} ?>>Solteiro</option>
+          <option value="casado" <?php if (!(strcmp("casado", $row_consInscricao['estadoCivil']))) {echo "selected=\"selected\"";} ?>>Casado</option>
+          <option value="separado" <?php if (!(strcmp("separado", $row_consInscricao['estadoCivil']))) {echo "selected=\"selected\"";} ?>>Separado</option>
+          <option value="viuvo" <?php if (!(strcmp("viuvo", $row_consInscricao['estadoCivil']))) {echo "selected=\"selected\"";} ?>>Viuvo</option>
+          <option value="outros" <?php if (!(strcmp("outros", $row_consInscricao['estadoCivil']))) {echo "selected=\"selected\"";} ?>>Outros</option>
+        </select></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Endereco:</div></td>
+        <td><input type="text" name="endereco" value="<?php echo htmlentities($row_consInscricao['endereco'], ENT_COMPAT, 'iso-8859-1'); ?>" size="50" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Numero:</div></td>
+        <td><input type="text" name="numero" value="<?php echo htmlentities($row_consInscricao['numero'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Complemento:</div></td>
+        <td><input type="text" name="complemento" value="<?php echo htmlentities($row_consInscricao['complemento'], ENT_COMPAT, 'iso-8859-1'); ?>" size="50" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Bairro:</div></td>
+        <td><input type="text" name="bairro" value="<?php echo htmlentities($row_consInscricao['bairro'], ENT_COMPAT, 'iso-8859-1'); ?>" size="50" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Cidade:</div></td>
+        <td><input type="text" name="cidade" value="<?php echo htmlentities($row_consInscricao['cidade'], ENT_COMPAT, 'iso-8859-1'); ?>" size="50" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Cep:</div></td>
+        <td><input type="text" name="cep" value="<?php echo htmlentities($row_consInscricao['cep'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" /></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">UF:</div></td>
+        <td><select name="uf" id="uf">
+          <option value="" <?php if (!(strcmp(-1, $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>--------</option>
+          <option value="ac" <?php if (!(strcmp("ac", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>AC</option>
+          <option value="al" <?php if (!(strcmp("al", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>AL</option>
+          <option value="am" <?php if (!(strcmp("am", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>AM</option>
+          <option value="ap" <?php if (!(strcmp("ap", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>AP</option>
+          <option value="ba" <?php if (!(strcmp("ba", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>BA</option>
+          <option value="ce" <?php if (!(strcmp("ce", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>CE</option>
+          <option value="df" <?php if (!(strcmp("df", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>DF</option>
+          <option value="es" <?php if (!(strcmp("es", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>ES</option>
+          <option value="go" <?php if (!(strcmp("go", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>GO</option>
+          <option value="ma" <?php if (!(strcmp("ma", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>MA</option>
+          <option value="mg" <?php if (!(strcmp("mg", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>MG</option>
+          <option value="mt" <?php if (!(strcmp("mt", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>MT</option>
+          <option value="ms" <?php if (!(strcmp("ms", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>MS</option>
+          <option value="pa" <?php if (!(strcmp("pa", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>PA</option>
+          <option value="pb" <?php if (!(strcmp("pb", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>PB</option>
+          <option value="pe" <?php if (!(strcmp("pe", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>PE</option>
+          <option value="pi" <?php if (!(strcmp("pi", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>PI</option>
+          <option value="pr" <?php if (!(strcmp("pr", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>PR</option>
+          <option value="rj" <?php if (!(strcmp("rj", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>RJ</option>
+          <option value="rn" <?php if (!(strcmp("rn", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>RN</option>
+          <option value="ro" <?php if (!(strcmp("ro", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>RO</option>
+          <option value="rr" <?php if (!(strcmp("rr", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>RR</option>
+          <option value="rs" <?php if (!(strcmp("rs", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>RS</option>
+          <option value="sc" <?php if (!(strcmp("sc", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>SC</option>
+          <option value="se" <?php if (!(strcmp("se", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>SE</option>
+          <option value="sp" <?php if (!(strcmp("sp", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>SP</option>
+          <option value="to" <?php if (!(strcmp("to", $row_consInscricao['uf']))) {echo "selected=\"selected\"";} ?>>TO</option>
+        </select></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Telefone:</div></td>
+        <td><input type="text" name="telefone" value="<?php echo htmlentities($row_consInscricao['telefone'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" />
+        <span class="mascara">xx xxxxxxxx</span></td>
+      </tr>
+      <tr valign="baseline">
+        <td align="right" nowrap="nowrap" class="label"><div align="left">Tipo de Contato:</div></td>
+        <td><select name="tipoContato" id="tipoContato">
+          <option value="" <?php if (!(strcmp(-1, $row_consInscricao['tipoContato']))) {echo "selected=\"selected\"";} ?>>--------</option>
+          <option value="residencial" <?php if (!(strcmp("residencial", $row_consInscricao['tipoContato']))) {echo "selected=\"selected\"";} ?>>Residencial</option>
+          <option value="comercial" <?php if (!(strcmp("comercial", $row_consInscricao['tipoContato']))) {echo "selected=\"selected\"";} ?>>Comercial</option>
+          <option value="recado" <?php if (!(strcmp("recado", $row_consInscricao['tipoContato']))) {echo "selected=\"selected\"";} ?>>Recado</option>
+          <option value="celular" <?php if (!(strcmp("celular", $row_consInscricao['tipoContato']))) {echo "selected=\"selected\"";} ?>>Celular</option>
+        </select></td>
+      </tr>
+      <tr valign="baseline">
+        <td colspan="2" align="right" nowrap="nowrap">&nbsp;</td>
+      </tr>
+      <tr valign="baseline">
+        <td colspan="2" align="center"><input name="btnAlterarCandidato" type="submit" class="botao" id="btnAlterarCandidato" value="Salvar" /></td>
+      </tr>
+    </table>
+    <input type="hidden" name="MM_update" value="form1" />
+    <input type="hidden" name="codInscricao" value="<?php echo $row_consInscricao['codInscricao']; ?>" />
+  </form>
+  <p>&nbsp;</p>
+</div>
+
+
+</div>
+</body>
+</html>
+<?php
+mysql_free_result($consInscricao);
+
+mysql_free_result($selCargos);
+?>

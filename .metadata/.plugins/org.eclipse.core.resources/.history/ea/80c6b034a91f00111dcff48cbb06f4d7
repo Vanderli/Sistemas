@@ -1,0 +1,57 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Autarquia Municipal de Saúde</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    <ul>
+      <li>
+        <p>I - coordenar e gerir o Sistema Único de Saúde no âmbito Municipal;</p>
+      </li>
+      <li>
+        <p>II - definir as diretrizes da Saúde em conjunto com o Conselho Municipal de Saúde;</p>
+      </li>
+      <li>
+        <p>III - garantir as atividades referentes ao Conselho Municipal de Saúde;</p>
+      </li>
+      <li>
+        <p>IV - administrar e coordenar o Fundo Municipal de Saúde;</p>
+      </li>
+      <li>
+        <p>V - coordenar e executar a seleção e desenvolvimento de Recursos Humanos na área da Saúde;</p>
+      </li>
+      <li>
+        <p>VI - administrar, organizar e manter a rede de serviços municipais, garantindo a execução das ações da Saúde;</p>
+      </li>
+      <li>
+        <p>VII - coordenar e executar o desenvolvimento de ações de vigilância à saúde e assistência à saúde sob ótica epidemiológica e sanitária;</p>
+      </li>
+      <li>
+        <p>VIII - executar o controle de zoonoses e vetores;</p>
+      </li>
+      <li>
+        <p>IX - controlar e fiscalizar procedimentos, produtos e substâncias de interesse à saúde;</p>
+      </li>
+      <li>
+        <p>X - participar da formulação de política das ações de saneamento básico;</p>
+      </li>
+      <li>
+        <p>XI - colaborar na proteção do meio ambiente nele compreendido o trabalho no limite de sua competência;</p>
+      </li>
+      <li>
+        <p>XII - estabelecer mecanismos de articulação com as Secretarias Municipais em assuntos referentes à saúde; e</p>
+      </li>
+      <li>
+        <p>XIII - estabelecer articulação com as esferas federal e estadual no sentido de garantir apoio técnico e financeiro definidos na Programação Orçamentária Integrada.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

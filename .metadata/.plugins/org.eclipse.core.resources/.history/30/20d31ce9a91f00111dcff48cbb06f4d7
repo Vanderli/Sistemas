@@ -1,0 +1,569 @@
+body {
+	background-image: url(imagens/pattern2.gif);
+}
+img {
+	border: 0;
+}
+body, input, select {
+	font-family: Arial, Tahoma, "Lucida Sans";
+	font-size: 12px;
+	color: #6D6E71;
+	margin: 0;
+}
+a { text-decoration: none; 	color: #6D6E71; }
+a:hover { text-decoration: underline; }
+
+/* topo ------------------------------------------------------------------------------------ */
+#conteudo {
+	background-color: #fff;
+	width: 770px;
+	margin: 0 auto;
+	border-left: 1px solid #E6E7E8;
+	border-right: 1px solid #E6E7E8;
+}
+#dataTopo {
+	font-size: 11px;
+	text-align: right;
+	background-color: #fff;
+	padding: 2px 0;
+	padding-right: 16px;	
+}
+#topo {}
+#busca {
+	height: 28px;
+	border-bottom: 1px solid #E6E7E8;
+	background-color: #fff;	
+}
+#busca .ultimasNoticias {
+	width: 524px;
+	float: left;
+}
+#busca .tituBusca {
+	font-size: 11px;
+	color: #6D6E71;
+	margin: 0;
+	margin: 8px 0;
+	margin-left: 15px;
+	float: left;
+	font-weight: bold;
+}
+#busca .noticiaBusca {
+	font-size: 11px;
+	color: #6D6E71;
+	margin: 0;
+	margin: 8px 0;
+	margin-left: 10px;
+	float: left;
+	width: 370px;
+}
+#busca .controles {
+	width: 52px;
+	float: left;
+	margin-top: 3px;	
+}
+.controles ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+	float: left;
+}
+.controles ul li {
+	float: left;
+}
+.controles li.anterior, li.proximo {
+	width: 24px;
+	height: 22px;
+	/*background: url(imagens/btnUltimasNoticias.gif) no-repeat;*/
+	padding-top: 2px;
+	text-align: center;		
+}
+li.anterior a, li.proximo a {
+	text-decoration: none;
+	color: #6D6E71;
+}
+li.anterior a:active, li.proximo a:active {
+	text-decoration: none;
+	color: #F6830E;
+}
+.controles li.separator {
+	width: 4px;
+}
+#busca .busca {
+	float: left;	
+	margin-top: 4px;	
+	width: 190px;
+}
+.busca .campoBusca {
+	border: 1px solid #E6E7E8;
+	height: 15px;
+	width: 93px;
+}	
+.busca .btnOkBusca {
+	float: left;
+	margin-left: 5px;
+}
+.busca .divBusca {
+	float: left;
+	width: 142px;
+	margin-left: 10px;
+}
+.divBusca label {
+	color: #272878;
+}
+
+/* Conteudo central -------------------------------------------------------------------------- */
+#conteudoCentro {
+	width: 770px;
+	float: left;
+	padding-top: 8px;
+	background-color: #fff;
+}
+/* coluna 1 ------------------------------------------------------------------------------------ */
+#conteudoCentro .coluna1 {
+	float: left;
+	width: 186px;
+	border: 1px solid #E6E7E8;
+	border-left: 0;
+	border-bottom: 0;	
+	border-right: 0;
+	background-color: #fff;	
+}
+.coluna1 .pagPrincipal {
+	width: 186px;
+	background-color:#F1F1F2;
+}	
+.coluna1 .linksMaisAcessados {
+	margin-top: 10px;
+	background-color:#F1F1F2;
+}
+.coluna1 p {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px 0;
+	margin-left: 17px;	
+}
+.coluna1 p a {
+	text-decoration: none;
+	color: #272878;
+}
+.coluna1 p a:hover {
+	text-decoration: underline;
+}
+.coluna1 .acessoRapido {
+	font-size: 13px;
+	color: #F6830E;
+	background-color: #E6E7E8;
+	padding: 3px 0;
+	padding-left: 15px;
+}
+.coluna1 .localicacao {
+	font-size: 13px;
+	color: #F6830E;
+	background-color: #E2E2E2;
+	padding: 3px 0;
+	padding-left: 15px;
+	margin: 10px 0;	
+}
+.coluna1 .linksMaisAcessadosDiv {
+	font-size: 13px;
+	color: #F6830E;
+
+	padding: 3px 0;
+	padding-left: 15px;
+	margin: 10px 0;
+}
+.linksMaisAcessados .linksAcessados p, .linksAgenda p {
+	/*margin-bottom: 15px;*/
+}
+.linksMaisAcessados .linksAcessados p a, .linksAgenda p a {
+	font-weight: normal;
+	color: #6D6E71;
+	font-size: 13px;
+}
+.linksMaisAcessados .linksAcessados p a:hover,  .linksAgenda p a:hover  {
+	text-decoration: underline;
+}
+.coluna1 .menuSel {}
+.coluna1 .menuSel select { font-size: 12px;}
+.coluna1 .menuSel select option { font-size: 10px;}
+.menuSel div {
+	margin: 27px 15px;
+}
+select {
+	width: 152px;
+}
+
+/* coluna 2 ----------------------------------------------------------------------------------------------------------------- */
+#conteudoCentro .coluna2 {
+	float: left;
+	width: 370px;
+	border: 1px solid #E6E7E8;
+	border-top: 1px solid #fff;
+	border-bottom: 0;
+	background-color: #fff;
+	min-height: 720px;
+	padding-top: 0;
+	padding-right: 13px;
+	padding-bottom: 0;
+	padding-left: 13px;
+}
+.coluna2 form {
+	margin: 0;
+	border: 1px solid #666;
+	padding: 5px;	
+}
+.bannerConcurso {
+	text-decoration: none;
+}
+
+.coluna2 form input, textarea {
+	border: 1px solid #666;
+}	
+.coluna2 .dataPublicado {
+	font-size: 10px;
+	margin-bottom: 15px;
+}
+.coluna2 .noticia {
+	
+}
+.noticia h4 {
+	font-size: 14px;
+	margin: 0;
+	padding-bottom: 10px;
+}
+.noticia .dbNoticias {
+	line-height: 20px;
+	font-size: 11px;
+	padding-bottom: 10px;
+}
+.noticia .fonts {
+
+}
+.noticia .fonts a {
+	color: #F6830E;
+}
+.noticia .botoes p {
+	font-size: 11px;
+	margin: 10px 0;
+}
+
+.dataPublicado .data {
+	float: left;
+}
+.dataPublicado .fotos {
+	float: right;	
+}
+.leiaMais a {
+	color: #F6830E;
+	font-size: 10px;
+	padding: 0 10px;
+	font-weight: normal;
+}
+span.leiaMais a:hover { text-decoration: underline; }
+.coluna2 .imgCentro {
+	margin-bottom: 13px;
+}
+.coluna2 .tituloNoticias {}	
+.tituloNoticias h4, .linkh4 {
+	font-size: 16px;
+	margin: 0;
+	color: #6D6E71;
+	text-decoration: none;
+}
+.tituloNoticias h4 a:hover { text-decoration: underline; }
+.tituloNoticias h5, .linkh5 {
+	font-weight: normal;
+	font-size: 12px;
+	margin: 0;
+	color: #6D6E71;
+	text-decoration: none;
+	margin: 6px 0;	
+}
+.noticia1 .bannerColeta {
+	clear: both;
+	margin: 0px;
+	padding-top: 10px;
+}
+
+.tituloNoticias h5 a:hover { text-decoration: underline; }
+.coluna2 .banner { margin: 9px 0; }
+.coluna2 .agendaNoticias {
+	font-size: 13px;
+	color: #F6830E;
+	background-color: #E2E2E2;
+	padding: 3px 0;
+	padding-left: 15px;
+	margin: 10px 0;	
+}
+.coluna2 .noticia1 {
+	margin-bottom: 15px;
+}
+.noticia1 .imgNot {
+	float: left;
+	margin-right: 15px;
+}
+.noticia1 .descNot {
+	float: left;
+	width: 225px;
+	margin-bottom: 15px;
+}
+.descNot h5, p {
+	margin: 0;
+	text-decoration: none;
+	line-height: 20px;
+}
+.descNot h5 { font-size: 13px;}
+.descNot p {
+	font-size: 11px;
+}
+
+/* coluna 3 --------------------------------------------------------------------- */
+#conteudoCentro .coluna3 {
+	float: right;
+	border: 1px solid #E6E7E8;
+	border-right: 0;
+	border-bottom: 0;
+	border-left: 0;
+	background-color: #F1F1F2;
+	width: 186px;
+}
+.coluna3 .agenda {
+	width: 186px;
+}
+.agenda .labelAgenda {
+	font-size: 13px;
+	color: #F6830E;
+	background-color: #E2E2E2;
+	padding: 3px 0;
+	padding-left: 15px;
+	margin: 10px 0;	
+}
+.agenda .linksAgenda {
+	padding: 0 10px;
+	line-height: 20px;
+}
+.coluna3 .eventos {
+	width: 186px;
+}
+.eventos .labelEventos {
+	font-size: 13px;
+	color: #F6830E;
+	background-color: #E6E7E8;
+	padding: 3px 0;
+	padding-left: 15px;
+	margin: 10px 0;	
+}
+.eventos .imgEvento {
+	width: 160px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.eventos .noticiaEvento {
+	width: 160px;
+	margin: 0 auto;
+}
+.eventos .noticiaEvento a {
+	font-size: 11px;
+}
+.btnEvento {
+	width: 142px;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-size: 11px;
+}
+.btnEvento .btnEventoAnterior {
+	width: 66px;
+	height: 26px;
+	background: url(imagens/btnEvento.gif) no-repeat;
+	float: left;
+	text-align: center;
+	padding-top: 3px;
+}
+.btnEvento .btnEventoProximo {
+	width: 66px;
+	height: 26px;
+	background: url(imagens/btnEvento.gif) no-repeat;
+	float: left;
+	text-align: center;	
+	margin-left: 5px;
+	padding-top: 3px;	
+}
+.coluna3 .canteiroObras {
+	margin-top: 10px;
+
+}
+.canteiroObras .labelObras {
+	font-size: 13px;
+	color: #F6830E;
+	background-color: #E2E2E2;
+	padding: 3px 0;
+	padding-left: 15px;
+	margin: 10px 0;	
+}
+.canteiroObras  .noticiaObras {
+	width: 160px;
+	margin: 0 auto;	
+}
+.canteiroObras  .noticiaObras a {
+	font-size: 11px;
+}
+.canteiroObras .imgObra {
+	width: 160px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.canteiroObras .meioAmbiente {
+	width: 160px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.imgLocalizacao {
+	width: 160px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.canteiroObras .imgIss {
+	width: 160px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+/* resultado de noticias ---------------------------------------------------- */
+
+.colunaNoticiasBusca {
+	float: left;
+	border-left: 1px solid #E6E7E8;
+	min-height: 430px;
+	padding-left: 10px;	
+}
+.colunaNoticiasBusca h3 {
+	color: #272878;
+	margin: 0;
+	margin-bottom: 30px;
+}
+.colunaNoticiasBusca .resultadosNoticias {}
+.resultadosNoticias .resultado {
+	margin-right: 10px;
+}
+.resultado h3 {
+	color: #F6830E;
+	margin: 0;
+	margin-bottom: 3px;
+}
+.resultado h3 a {
+	color: #F6830E;	
+}
+.resultado .ultimaAtualizacao {
+	border-top: 1px solid #6D6E71;
+	width: 563px;
+	color: #C9C9CB;
+	font-size: 10px;
+	padding-top: 3px;
+}
+.resultado .textoNoticia {
+	color: #6D6E71;
+	max-width: 562px;
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+.resultado .textoNoticia a {
+	color: #6D6E71;	
+}
+.paginacao {
+	margin: 20px 0;
+	padding: 3px 0;
+	border-top: 1px solid #6D6E71;
+	border-bottom: 1px solid #6D6E71;	
+	margin-right: 10px;
+}
+.paginacao .anterior {
+	float: left;
+}
+.paginacao .dadosPag {
+	float: left;
+	text-align: center;
+	width: 433px;
+}
+.paginacao .proximo {
+	float: right;
+}
+
+/* rodape ----------------------------------------------------------------------------------- */
+#rodape {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #E6E7E8;
+	font-size: 11px;
+	padding: 8px 0;
+}
+#rodape .endereco {
+	float: left;
+	margin-left: 15px;
+	width: 500px;
+}
+#rodape .links {
+	float: right;
+	margin-right: 15px;
+}
+
+/* Bullet laranja ------------------------------------------------------ */
+.bulletLaranja {
+	float: left;
+	padding-top: 6px;
+	padding-right: 5px;
+}
+
+/* Bullet laranja ------------------------------------------------------ */
+.btnImprimir {
+	float: left;
+	padding-right: 5px;
+}
+#conteudo #conteudoCentro .coluna2 .noticia .labelNovo {
+	float: left;
+	padding-right: 5px;
+	margin-top: -2px;
+}
+.marcacaoSec ul {
+	list-style-image: url(imagens/bullerMarc.gif);
+	margin: 0px;
+	padding-left: 15px;
+}
+.marcacaoSec li {
+	padding-right: 3px;
+	padding-bottom: 10px;
+}
+#fotosSec {
+	text-decoration: none;
+	padding-top: 30px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+}
+
+#topoAdm {
+	text-decoration: none;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.imgTopo   {
+	background-image: url(imagens/topoAdmSecretaria.jpg);
+	height: 17px;
+	width: 368px;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 22px;
+	background-repeat: no-repeat;
+}
+#centroSec {
+	text-decoration: none;
+}
+.borda {
+	border: 1px solid #cccccc;
+}
+.corLaranjaBackCinza {
+	color:#F6830E;
+	border-bottom: 1px solid #FFC488;
+}

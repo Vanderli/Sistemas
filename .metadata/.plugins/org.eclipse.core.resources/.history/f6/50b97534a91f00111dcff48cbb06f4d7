@@ -1,0 +1,52 @@
+<div id="servico_online">
+  
+  <h3>Melhor Idade</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Jogos adaptados para a 3ª idade, acompanhados e monitorados por professores de Educação Física. Promovendo a prática esportiva, recreação e lazer, além participarem de competições regionais e municipais.
+</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+            - Ficha de inscrição<br />
+            - Cópia do RG ou protocolo<br />
+            - 2 fotos 3x4 (recentes)<br />
+            - Cópia de comprovante de residência<br />
+            - Atestado médico<br />
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+          <strong>Local das aulas:</strong>
+          <br />
+          - Ginásio de Esportes
+          
+          <br /><br />
+          
+          <strong>Horários:</strong>
+          <br />
+          - Terça e Quinta: 08:00 às 12:00
+        
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria Municipal de Esporte e Lazer<br />
+    			Av.: Dona Anila, 1001 - Bairro Olaria <br />
+    			Itapecerica da Serra – SP CEP: 06859-000 <br />
+    			Tel 4667-1148 / 4165- 4667
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>	
+</div>

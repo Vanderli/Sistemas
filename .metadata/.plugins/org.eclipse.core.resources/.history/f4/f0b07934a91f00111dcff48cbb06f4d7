@@ -1,0 +1,86 @@
+<? # endereço de onde está a biblioteca para gerar o thumbnail
+   $thumbnail = "../../../../lib_PHP/thumbnail.php?gd=2&src=../secretarias/esportes/fotos";
+?>
+<link rel="stylesheet" type="text/css" href="<?=URL?>/css/lightbox-0.5.css" media="screen" />  
+<script type="text/javascript" src="<?=URL?>/js/jquery-lightbox-0.5.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#ilustra_gal a').lightBox();
+	});
+</script>
+
+<div id="servico_online">
+<h3>Academias</h3>
+
+    <div id="servico_online_descreve">
+        <ul>
+            <li>
+                <h4>Descrição do Serviço</h4>
+                <p>
+                	São academias de ginástica gratuitas e disponíveis à população de segunda 
+                	a sexta em três períodos: manhã, tarde e noite com instrutores
+                </p>
+            </li>
+            <li>
+            	<h4>Documentos Necessários</h4>
+                <p>
+                    - Ficha de inscrição<br />
+                    - Cópia do RG ou protocolo<br />
+                    - 2 fotos 3x4 (recentes)<br />
+                    - Cópia de comprovante de residência<br />
+                    - Atestado médico<br />
+                    - Cópia do RG do responsável
+                </p>
+            </li>
+            <li>
+            	<h4>Observações</h4>
+                <p>
+                <strong>Bairros:</strong>
+                <br />
+                - Marilu<br />
+                - São Pedro e<br />
+                - Parque Paraíso
+                </p>
+                </li>
+                <li>
+                <h4>Local de Atendimento</h4>
+                <p>
+                    Secretaria Municipal de Esporte e Lazer<br />
+                    Av.: Dona Anila, 1001 - Bairro Olaria <br />
+                    Itapecerica da Serra – SP CEP: 06859-000 <br />
+                    Tel 4667-1148 / 4165- 4667
+                </p>                
+            </li>
+        </ul>
+    </div>
+
+    <div id="ilustra_gal">
+        <ul>
+            <li>
+                <a href="../../fotos/aquatico.jpg" title="Itapecerica retoma Projeto Aquático">
+                    <img src="<?=$thumbnail?>/aquatico.jpg&maxw=114" border="0" alt="Imagem Destaques" />
+                </a>
+            </li>
+            <li>
+                <a href="../../fotos/handbol.jpg" title="Aulas de Handebol">
+                    <img src="<?=$thumbnail?>/handbol.jpg&maxw=114" border="0" alt="Imagem Destaques" />
+                </a>
+            </li>
+            <li>
+                <a href="../../fotos/idoso.jpg" title="Itapecerica participa dos Jogos do Idoso">
+                    <img src="<?=$thumbnail?>/idoso.jpg&maxw=114" border="0" alt="Imagem Destaques" />
+                </a>
+            </li>
+            <li>
+                <a href="../../fotos/moto_mato.jpg" title="Participantes percorrem trilhas da região">
+                    <img src="<?=$thumbnail?>/moto_mato.jpg&maxw=114" border="0" alt="Imagem Destaques" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="sec_voltar">
+        <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+    </div>
+
+</div>

@@ -1,0 +1,22 @@
+ <div id="cont_galeria">
+    <h3>Agenda de Eventos</h3>
+    <ul>
+        <li>
+            <a href="../agenda_13.php" title="Corpus Christi 2010">
+            <img src="<?=URL?>/img/testando/corpus_christi_2010_peq.jpg" alt="Corpus Christi 2010" title="Corpus Christi 2010" /></a>
+            <h4>Corpus Christi 2010</h4>
+        </li>                 
+
+        <li class="gal_margens">
+            <a href="../agenda_17.php" title="II Virada Cultural do Sta Julia">
+            <img src="<?=URL?>/img/testando/II_virada_cultural_peq.JPG" alt="II Virada Cultural do Sta Julia" title="II Virada Cultural do Sta Julia" /></a>
+            <h4>II Virada Cultural do Sta Julia</h4>
+        </li>    
+    
+        <li>
+            <a href="../agenda_16.php" title="Sexta Cultural">
+            <img src="<?=URL?>/img/testando/sexta_cultural_peq.jpg" alt="Sexta Cultural" title="Sexta Cultural" /></a>
+            <h4>Sexta Cultural</h4>
+      </li>               
+  </ul>    
+</div>

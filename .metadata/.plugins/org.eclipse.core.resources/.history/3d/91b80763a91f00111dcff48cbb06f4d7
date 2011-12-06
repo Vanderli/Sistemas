@@ -1,0 +1,62 @@
+$(function() {
+
+/*----------------------------------------------------------------------------
+Formatação para qualquer mascara
+-----------------------------------------------------------------------------*/
+formatar = function(src, mask){
+  var i = src.value.length;
+  var saida = mask.substring(0,1);
+  var texto = mask.substring(i)
+if (texto.substring(0,1) != saida)
+  {
+	src.value += texto.substring(0,1);
+  }
+}
+
+/*
+	Cargos
+*/
+	ocultaMsg = function() {
+		$("#msg").slideUp().hide('slow');
+	}
+	
+	cargoJaExistente = function() {
+		$("#msg").hide();
+		$("#msg").text('Esse cargo já existe cadastrado!').slideDown();
+	}
+	
+/*
+	calcula data	
+*/
+	calcularData = function() {
+		if ($("#dataNascimento").val().length == 10)
+		{
+			$.ajax({
+				type: "GET",
+				url: "php_calcularData.php",
+				dataType: "xml",
+				data: "dataNascimento="+$("#dataNascimento").val(),
+				success: function(xml) {
+					
+					_xml = $(xml).find('retorno');
+					_resp = $(xml).find('resposta').text();
+					_dado = $(xml).find('dados').text();					
+					
+					if (_resp == 'invalido')
+					{
+						$("#btnCadastrar").attr('disabled','disabled');
+						$("#msg").hide();
+						$("#msg").text('Esse candidato não pode participar do PROCESSO SELETIVO, a idade permitida é somente maiores de 18 anos!').slideDown();						
+					}
+					else
+					{
+							$("#idade").val(_dado);
+						$("#btnCadastrar").attr('disabled','');
+						$("#msg").hide();
+					}
+				}
+			});
+		}
+	}
+
+});

@@ -1,0 +1,42 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 28/05/2010</p>
+    <h4>II Virada Cultural do Sta Julia</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/II_virada_cultural_gra.JPG" alt="II Virada Cultural do Sta Julia" /> 
+    </div>
+
+   <div id="noticia_descreve">
+
+        <p id="age_data">
+        	<span>Data:</span> 13 de Junho de 2010
+        </p>
+        
+        <p id="age_data">
+        	<span>Horário:</span> das 09h as 17h
+        </p>
+
+        <p id="age_data">
+        	<span>Local:</span> E.E. Júlia de Castro Carneiro
+        </p>
+               
+        <p id="age_local">
+        	<span>Endereço:</span> Av. Solimões, 1875 - Santa Júlia - Itapecerica da Serra
+        </p> 
+        
+    </div>
+         
+</div>

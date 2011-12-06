@@ -1,0 +1,180 @@
+<?php
+		/* conexão com banco de dados */
+		include("../../conexao_db/conexaoTecnologia.php");
+ 		/* insiro sessão para poder acessar as páginas */ 
+		include("../../login/protege_pagina.php");
+		/* biblioteca */
+		include("../../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+			
+		/* CADASTRAR INFORMAÇÕES */
+		if (!function_exists("GetSQLValueString")) {
+			function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = ""){
+				$theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+				$theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+		
+				switch ($theType) {
+					case "text":
+						$theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+					break;    
+					case "long":
+					case "int":
+						$theValue = ($theValue != "") ? intval($theValue) : "NULL";
+					break;
+					case "double":
+						$theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+					break;
+					case "date":
+						$theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+					break;
+					case "defined":
+						$theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+					break;
+				}
+				return $theValue;
+			}
+		}
+		
+		$editFormAction = $_SERVER['PHP_SELF'];
+		if (isset($_SERVER['QUERY_STRING'])) {
+			$editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+		}
+		if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "Form")) {
+
+			$insertSQL = sprintf("INSERT INTO origem2 
+										   (data_cadastro, 
+											hora, 
+											usuario_cadastro, 
+											cod_origem1, 
+											sigla_origem2, 
+											desc_origem2, 
+											status_origem2)
+									VALUES (%s, %s, %s, %s, %s, %s, %s)",
+				
+							GetSQLValueString(date("Y/m/d"), "date"),
+							GetSQLValueString(date('G:i:s'), "text"),
+							GetSQLValueString($_SESSION['codUsuario'], "int"),
+							GetSQLValueString($_POST['origem1'], "int"),
+							GetSQLValueString(strtoupper($_POST['sigla_origem2']), "text"),
+							GetSQLValueString(strtoupper($_POST['desc_origem2']), "text"),
+							GetSQLValueString($_POST['status'], "int"));
+
+			mysql_select_db($database_tecnologia, $tecnologia);
+			$Result1 = mysql_query($insertSQL, $tecnologia) or die(mysql_error());
+			
+			if($Result1){
+			  echo "<script type=\"text/javascript\">
+						 alert('Dados Cadastrados com sucesso!');
+						 window.location.href='formListarDep.php';  
+					</script>";	 
+			}else {
+				echo "<script type=\"text/javascript\">
+							  alert('Falha no Cadastro dos dados!');
+							  window.location.href='formListarDep.php';	  
+					  </script>";
+			}
+		}
+?>
+<html>
+<head>
+	<title>..:: Cadastro Departamento - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="../../estilo/estilo.css" rel="stylesheet" type="text/css"/>
+    <!-- javaScript -->
+    <script type="text/javascript" src="../../js/jquery-1.2.6.js"></script>
+    <script type="text/javascript" src="../../js/jquery-validate.js"></script> 
+    <script type="text/javascript">
+		<!-- Validação -->
+		$(document).ready( function() {
+			$("#Form").validate({
+				// Define as regras
+				rules:{
+					origem1:{
+						required: true
+					},
+					sigla_origem2:{
+						required: false
+					},
+					desc_origem2:{
+						required: true, minlength: 3
+					},
+					status:{
+						required: true
+					}
+				},
+				// Define as mensagens de erro para cada regra
+				messages:{
+					origem1:{
+						required: "Informe a Sec./Orgão"
+					},
+					sigla_origem2:{
+						required: "Informe a Sigla"
+					},
+					desc_origem2:{
+						required: "Informe a Descrição",
+						minlength: "A Descrição deve conter, no mínimo, 3 caracteres"
+					},
+					status:{
+						required: "Informe o Status"
+					}
+				}
+			});
+		});
+	</script>  
+</head>
+<body onLoad="vertical();horizontal();">
+	<!-- menu -->
+	<?php @include_once('../../menu/menu.php'); ?>
+    <br />
+    <div id="formCadDocumento" align="center">
+         <form action="<?php echo $editFormAction; ?>" method="POST" name="Form" id="Form">
+            <fieldset style="width: 500px;">
+                <p class="titulo">Cadastro de Origem / Destino Externo - Departamento / Órgão</p>
+      			<p align="left">
+      				 <!-- COMBO ORIGEM 1 -->
+                	<label>Secretaria / Órgão</label>
+                        <select name="origem1" id="origem1">
+                            <option value="">- Selecione -</option>
+                            <?php 
+									mysql_select_db($database_tecnologia, $tecnologia);
+									// varro as informações do banco de dados
+                                    $sql = sprintf("SELECT * FROM origem1 WHERE status_origem1='ATIVO' ORDER BY sigla_origem1");
+                                    $rs = mysql_query($sql);
+                                    // Obtém o resultado de uma linha como um objeto
+                                    while($row = mysql_fetch_object($rs)):?>
+                                        <option value="<?=$row->cod_origem1?>"><?=$row->sigla_origem1?></option>
+                                   <?php endwhile;?>
+                        </select>
+                </p>
+                 <!--Sigla-->
+                <p align="left">
+                    <label class="vermelhorNegrito">Sigla</label>
+                    	<input name="sigla_origem2" type="text" id="sigla_origem2" value="<?=$linha['sigla_origem2']?>" size="50" maxlength="40" />
+                </p>
+                 <!--Descrição-->
+                <p align="left">
+                    <label class="vermelhorNegrito">Descrição</label>
+                    	<input name="desc_origem2" type="text" id="desc_origem2" value="<?=$linha['desc_origem2']?>" size="50" maxlength="90" />
+                </p>	
+                 <!--Status-->	         	
+                <p align="left">
+                    <label>Status</label>
+                        <select name="status" id="status">
+                        <option value="">-- Selecione -- </option>
+                        <option value="1" <?php if (!(strcmp("ATIVO", $linha['status_origem2']))) {echo "selected=\"selected\"";} ?>>Ativo</option>
+                        <option value="2" <?php if (!(strcmp("INATIVO", $linha['status_origem2']))) {echo "selected=\"selected\"";} ?>>Inativo</option>
+                        </select>
+                </p>
+                <br />
+                <p align="center">          
+                	<input type="submit" name="cadastrar" value="Cadastrar" class="botao">
+                </p>
+            </fieldset>
+        <input type="hidden" name="MM_insert" value="Form">
+        </form>
+    </div>
+</body>
+</html>

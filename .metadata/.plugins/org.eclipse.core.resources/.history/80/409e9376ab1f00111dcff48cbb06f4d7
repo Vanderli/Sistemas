@@ -1,0 +1,75 @@
+<? 
+# destino da mensagem
+$para = "faleconosco@itapecerica.sp.gov.br";
+
+# assunto
+$assunto = "Formulário fale conosco.";
+
+# variáveis do form
+$nome     = $_POST['fc_nome'];
+$sexo     = $_POST['fc_sexo'];
+$pais     = $_POST['fc_pais'];
+$estado   = $_POST['fc_estado'];
+$cidade   = $_POST['fc_cidade'];
+$email    = $_POST['fc_email'];
+$tel1     = $_POST['fc_tel1'];
+$tel2     = $_POST['fc_tel2'];
+$assunto  = $_POST['assunto'];
+$mensagem = $_POST['fc_msg'];
+
+# para poder enviar com acentuacao
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+
+
+# Corpot de como irá a mensagem
+$corpo_msg = '<table width="400" border="1" align="center" bordercolor="#333">
+<tr>
+<td height="30" colspan="2" align="center" bordercolor="#000000" bgcolor="#CCCCCC"><strong>'.$assunto.'</strong></td>
+</tr>
+<tr>
+<td width="83" height="30" align="right" bordercolor="#000000" bgcolor="#CCCCCC"><strong>Nome:</strong></td>
+<td width="307" height="30" align="left" bordercolor="#000000" bgcolor="#FFFFFF">'.$nome.'</td>
+</tr>
+<tr>
+<td height="30" align="right" bordercolor="#000000" bgcolor="#CCCCCC"><strong>Sexo:</strong></td>
+<td height="30" align="left" bordercolor="#000000" bgcolor="#FFFFFF">'.$sexo.'</td>
+</tr>
+<tr>
+<td height="30" align="right" bordercolor="#000000" bgcolor="#CCCCCC"><strong>País:</strong></td>
+<td height="30" align="left" bordercolor="#000000" bgcolor="#FFFFFF">'.$pais.'</td>
+</tr>
+<tr>
+<td height="30" align="right" bordercolor="#000000" bgcolor="#CCCCCC"><strong>Estado:</strong></td>
+<td height="30" align="left" bordercolor="#000000" bgcolor="#FFFFFF">'.$estado.'</td>
+</tr>
+<tr>
+<td height="30" align="right" bordercolor="#000000" bgcolor="#CCCCCC"><strong>Cidade:</strong></td>
+<td height="30" align="left" bordercolor="#000000" bgcolor="#FFFFFF">'.$cidade.'</td>
+</tr>
+<tr>
+<td height="30" align="right" bordercolor="#000000" bgcolor="#CCCCCC"><strong>Email:</strong></td>
+<td height="30" align="left" bordercolor="#000000" bgcolor="#FFFFFF">'.$email.'</td>
+</tr>
+<tr>
+<td height="30" align="right" bordercolor="#000000" bgcolor="#CCCCCC"><strong>Telefone 1:</strong></td>
+<td height="30" align="left" bordercolor="#000000" bgcolor="#FFFFFF">('.$tel1.') '.$tel2.'</td>
+</tr>
+<tr>
+<td height="30" colspan="2" align="center" bordercolor="#000000" bgcolor="#CCCCCC"><strong>Mensagem:</strong></td>
+</tr>
+<tr>
+<td height="30" colspan="2" align="center" bordercolor="#000000" bgcolor="#FFFFFF">'.$mensagem.'</td>
+</tr>
+</table>
+';
+
+# Efetiva o envio da mensagem
+if (mail($para, $assunto, $corpo_msg, $headers)) {
+	header("Location: fale_conosco.php?msg_enviada=Mensagem Enviada com Sucesso");
+
+	}else {
+		header("Location: fale_conosco.php?msg_enviada=Falha ao Enviar a Mensagem");
+}
+
+?>

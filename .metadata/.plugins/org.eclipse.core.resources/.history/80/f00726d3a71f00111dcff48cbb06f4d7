@@ -1,0 +1,120 @@
+/* ESTILO CONTROLE DE DOCUMENTOS - DOCUMENTOS - RELATÓRIO */
+/* mensagens de erro no jquery */
+label { display: block; margin-top: 15px; }
+		label.error { float: none; color: red; margin: 0 .5em 0 0; vertical-align: top; font-size: 12px }
+		input.error { border: 1px solid red; }
+		textarea.error { border: 1px solid red; }
+p { clear: both; } 
+/* ################## */
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: "Trebuchet MS", Arial; 
+	list-style: none; 
+}
+.centralizar{
+	margin: 0 auto;
+}
+
+body {
+	padding: 10px; 
+	color: #666;; 
+	font-size: 12px;
+}
+.titulo {
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	background-color: #CCCCCC;
+	border: 1px dotted #666666;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-family: "Trebuchet MS", Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+label {
+	border-bottom: 1px solid #ccc; 
+	float: left; 
+	width: 160px;
+}
+/* formCadDocumento */
+#formCadDocumento label {
+	width: 150px;
+}
+.tituloLista {
+	font-weight: bold;
+	text-align: center;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+}
+.linhaBranca {
+	background-color: #FFFFFF;
+}
+input, textarea{text-transform:uppercase;}
+
+.cinza {
+	background-color: #eaeaea;
+}
+.lista{
+	border:#999999 1px dashed;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+fieldset {
+	padding: 10px; 
+	margin: 10px; 
+	border: 1px solid #999; 
+	background-color:#EAEAEA;
+}
+.gerar_relatorio {
+	border-left: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;	
+	width: 322px; 
+	font-size: 12px; 
+	color: #666;
+}
+.radio_tramite{
+	width: 370px;
+}
+#radio{
+	padding:2px;
+	border: 1px dotted #666666;
+	width: 400px;
+	color: #666666;
+}
+.txt_rd{
+	font-size:13px;
+	font-family: "Trebuchet MS", Arial;
+	font-weight: bold;
+}
+p {
+	padding: 2px 0;
+}
+.borda-fina {
+	border: 1px solid #696969;
+}
+
+.linhaLista {
+	background-color: #D1D1D1; 
+	font-size:22px; 
+	color:#666666;
+}
+.botao {
+	background: #666666;
+	border: 2px solid #ccc; 
+	color:#FFFFFF; 
+	font-size: 14px; 
+	font-weight: bold; 
+	width: 188px; 
+	padding: 4px; 
+	cursor: pointer;
+}

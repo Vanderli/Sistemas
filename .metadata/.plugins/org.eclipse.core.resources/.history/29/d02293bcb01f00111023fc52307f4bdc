@@ -1,0 +1,90 @@
+  <div class="cont_ceg">
+    <div class="barra_titulo_ceg">
+      <h3>Serviços para a Empresa</h3>
+      <!--<div class="busca_ceg">
+        <p>ENCONTRE O SERVIÇO DESEJADO</p>
+        <input type="text" name="" value="" size="15" class="campo_busca_ceg" />
+        <input type="button" name="" value="" class="btn_go" />
+      </div>-->
+    </div>
+      <ul>
+        <li class="ser_esq_ceg">
+          <img src="<?=URL?>/img/conteudo/cont_ceg_icons/tributos.png" alt="Imagem ilustrativa de Casa" title="Casa" />
+          <h4>Relações Tributárias</h4>
+          <ul>
+            <li><a href="servicos/cadastro_imobiliario/cadastro_imobiliario.php" title="Cadastro Imobiliário">Cadastro Imobiliário</a></li>
+            <li><a href="servicos/certidoes/certidoes.php" title="Certidões">Certidões</a></li>
+            <li><a href="servicos/2via_carne_iptu/2via_carne_iptu.php" title="2º Via do Carnê de IPTU">2º Via do Carnê de IPTU</a></li>
+            <li><a href="servicos/alteracao_insc_munic/alteracao_insc_munic.php" title="Alteração de inscrições Municipais">Alteração de Inscrições Municipais</a></li>
+            <li><a href="servicos/certidao_negativa_iss/certidao_negativa_iss.php" title="Certidão negativa de ISS">Certidão Negativa de ISS</a></li>
+            <li><a href="servicos/emissao_aidf/emissao_aidf.php" title="Emissão de AIDF">Emissão de AIDF</a></li>
+            <li><a href="servicos/inscricao_autonomo/inscricao_autonomo.php" title="Inscrição Autonomo">Inscrição Autonomo</a></li>
+            <li><a href="servicos/alteracao_horario_func/alteracao_horario_func.php" title="Alteração de Horário de Funcionamento">Alteração de Horário de Funcionamento</a></li>
+          </ul>
+        </li>
+        <li class="ser_dir_ceg">
+          <img src="<?=URL?>/img/conteudo/cont_ceg_icons/transporte.png" alt="Imagem ilustrativa de Documentos" title="Documentos" />
+          <h4>Trânsito e Transportes</h4>
+          <ul>
+            <li><a href="servicos/microfilm_multa/microfilm_multa.php" title="Microfilmagem de Multa de Trânsito">Microfilmagem de Multa de Trânsito</a></li>
+            <li><a href="servicos/recurso_multas/recurso_multas.php" title="Recurso de Multa">Recurso de Multa</a></li>
+            <li><a href="servicos/talao_zona_azul/talao_zona_azul.php" title="Talão de Zona Azul">Talão de Zona Azul</a></li>
+            <li><a href="servicos/indicacao_infrator/indicacao_infrator.php" title="Indicação de infrator">Indicação de Infrator</a></li>
+            <li><a href="servicos/fechamento_via/fechamento_via.php" title="Fechamento de Via Pública">Fechamento de Via Pública</a></li>
+          </ul>
+        </li>
+        <li class="ser_esq_ceg">
+          <img src="<?=URL?>/img/conteudo/cont_ceg_icons/planejamento_ma.png" alt="Imagem ilustrativa de Trabalho" title="Trabalho" />
+          <h4>Planejamento e Meio Ambiente</h4>
+          <ul>
+            <li><a href="servicos/certidao_num_oficial/certidao_num_oficial.php" title="Certidão de Nº Oficial">Certidão de Nº Oficial</a></li>
+            <li><a href="servicos/diretrizes_desdobro/diretrizes_desdobro.php" title="Diretrizes de Desdobro">Diretrizes de Desdobro</a></li>
+            <li><a href="servicos/diretrizes_movim_terra/diretrizes_movim_terra.php" title="Diretrizes para Movimentação de Terra">Diretrizes para Movimentação de Terra</a></li>
+            <li><a href="servicos/certidoes_diversas/certidoes_diversas.php" title="Certidões Diversas">Certidões Diversas</a></li>
+            <li><a href="servicos/aprovacao_const_resid/aprovacao_const_resid.php" title="Aprovação de Construção Residencial / Comercial / Industrial">Aprovação de Construção Residencial / Comercial / Industrial</a></li>
+            <li><a href="servicos/certificado_vistoria/certificado_vistoria.php" title="Certificado de vistoria e Habite-se">Certificado de Vistoria e Habite-se</a></li>
+            <li><a href="servicos/regularizacao_resid/regularizacao_resid.php" title="Regularização Residencial / Comercial / Industrial">Regularização Residencial / Comercial / Industrial</a></li>
+            <li><a href="servicos/reforma_acresc_area/reforma_acresc_area.php" title="Reforma com ou sem Acrescimo de Área">Reforma com ou sem Acrescimo de Área</a></li>
+          </ul>
+        </li>
+        <li class="ser_dir_ceg">
+          <img src="<?=URL?>/img/conteudo/cont_ceg_icons/obras.png" alt="Imagem ilustrativa de Trabalho" title="Trabalho" />
+          <h4>Obras e Serviços</h4>
+          <ul>
+            <li><a href="servicos/limpeza_bueiro/limpeza_bueiros.php" title="Limpeza de Bueiro ">Limpeza de Bueiro </a></li>
+            <li><a href="servicos/limpeza_vias_publicas/limpeza_vias_publicas.php" title="Limpezas de Vias Publicas">Limpezas de Vias Publicas</a></li>
+            <li><a href="servicos/cascalhar_ruas/cascalhar_ruas.php" title="Cascalhar Ruas (Maquina Motonivelar)">Cascalhar Ruas (Maquina Motonivelar)</a></li>
+            <li><a href="servicos/conservacao_vias/conservacao_vias.php" title="Conservação de Vias Publicas">Conservação de Vias Publicas</a></li>
+            <li><a href="servicos/canalizacao_corregos/canalizacao_corregos.php" title="Canalização de Corrégos">Canalização de Corrégos</a></li>
+            <li><a href="servicos/iluminacao_publica/iluminacao_publica.php" title="Iluminção Pública">Iluminção Pública</a></li>
+            <li><a href="servicos/exumacao/exumacao.php" title="Exumação">Exumação</a></li>
+            <li><a href="servicos/sepultamento/sepultamento.php" title="Sepultamento">Sepultamento</a></li>
+          </ul>
+        </li>
+        <li class="ser_esq_ceg">
+          <img src="<?=URL?>/img/conteudo/cont_ceg_icons/licitacoes.png" alt="Imagem ilustrativa de Transporte" title="Transporte" />
+          <h4>Licitação e Contrato</h4>
+          <ul>
+            <li><a href="servicos/financas/financas.php" title="Cadastro de Fornecedores">Cadastro de Fornecedores</a></li>
+            <!--
+            <li><a href="#" title="Editais">Editais</a></li>
+            <li><a href="#" title="Cartas Convites">Cartas Convites</a></li>            
+            <li><a href="#" title="Concorrência Pública">Concorrência Pública</a></li>
+            -->
+          </ul>
+        </li>
+        <!--<li class="ser_dir_ceg">
+          <img src="<?URL?>/img/conteudo/cont_ceg_icons/licitacoes.png" alt="Imagem ilustrativa de Segurana" title="Segurana" />
+          <h4>Licitaes</h4>
+          <ul>
+            <li><a href="#" title="Polcia Militar">Polcia Militar</a></li>
+            <li><a href="#" title="Emergncia">Emergncia</a></li>
+            <li><a href="#" title="Certido Negativa">Certido Negativa</a></li>
+            <li><a href="#" title="Bombeiros">Bombeiros</a></li>
+            <li><a href="#" title="Guarda Municipal">Guarda Municipal</a></li>
+            <li><a href="#" title="Dicas de Segurana">Dicas de Segurana</a></li>
+          </ul>
+        </li>-->
+  </ul>
+      <a class="mais_ceg" href="servicos.php" title="Guia Completo de Serviços">Guia Completo de Serviços</a>
+  </div>

@@ -1,0 +1,99 @@
+@import url(estilo.css);
+
+@media print {
+  #not_print_container #not_btn { display: none; }
+}
+
+/* CSS para Impressão */
+#not_print_container {
+  float: left;
+  width: 100%;
+}
+
+#not_print_container #not_print_topo {
+	height: 80px;
+	line-height: 20px;
+	width: 100%;
+}
+
+#not_print_container #not_print_topo img {
+  left: 50%;
+  margin-left: -125px;
+  position: relative;
+}
+
+#not_print_container h4 {
+  color: #F6830E;
+  float: left;
+  font-size: 1.8em;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0 0 5px 0;
+  padding: 0;
+  width: 100%;
+}
+
+#not_print_container #not_print_subdesc {
+  float: left;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#not_print_container #not_print_conteudo {
+  border-top: 1px solid #D5D5D5;
+  float: left;
+  margin-top: -10px;
+  padding: 10px;
+  width: 97%;
+}
+
+#not_print_container #not_print_conteudo p {
+  float: left;
+  margin-bottom: 10px;
+  text-align: justify;
+  width: 100%;
+}
+
+#not_print_container #not_print_rdp {
+	border-top: 1px solid #D5D5D5;
+	float: left;
+	margin-top: 15px;
+	width: 100%;
+}
+
+#not_print_container #not_print_rdp p {
+  float: left;
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+#not_print_container #not_print_rdp #not_btn {
+  float: left;
+  width: 100%;
+}
+
+#not_print_container #not_btn #not_print_btn {
+  border: 1px #D5D5D5 solid;
+  float: left;
+  margin: 15px 5px 0 300px;
+  padding: 3px 0;
+  text-align: center;
+  width: 75px;
+}
+
+#not_print_container #not_btn #not_close_btn {
+  border: 1px #D5D5D5 solid;
+  float: left;
+  margin-top: 15px;
+  padding: 3px 0;
+  text-align: center;
+  width: 75px;
+}
+
+#not_print_container #not_btn #not_print_btn:hover,
+#not_print_container #not_btn #not_close_btn:hover {
+  border: 1px solid #F6830E;
+  text-decoration: none;
+}

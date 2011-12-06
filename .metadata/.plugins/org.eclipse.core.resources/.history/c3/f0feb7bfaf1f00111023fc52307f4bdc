@@ -1,0 +1,34 @@
+<?   /* conexão com banco de dados */
+  $url = "http://'.$_SERVER['SERVER_NAME'].'/pf'";
+  
+  
+  print_r($url);exit;
+  include("conexao_db/conexaoTecnologia.php");
+   
+    $sql_agenda   = sprintf("SELECT * FROM agenda  WHERE age_status = 'ATIVO' ORDER BY age_id DESC"); 
+    $query_agenda = @mysql_query($sql_agenda) or die($msg[2]);
+   	
+	# endereço de onde está a biblioteca para gerar o thumbnail
+    $thumbnail = "lib_PHP/thumbnail.php?gd=2&src=../agenda/age_foto/age_id_";
+?>
+<div class="apresenta_agenda">
+	<div class="apresenta_img">       
+		<? while ($linha = mysql_fetch_assoc($query_agenda)) : ?>
+        <div class="ap_agenda">
+        	<a href="<?=URL?>/agenda/agenda.php?age_id=<?=$linha['age_id']?>" title="<?=utf8_encode($linha['age_titulo'])?>">
+                <img src="<?=$thumbnail?><?=$linha['age_id']?>/<?=$linha['age_img']?>&maxw=6000000" border="0" />
+            </a>
+            <a href="<?=URL?>/agenda/agenda.php?age_id=<?=$linha['age_id']?>"> 
+            	<p><?=utf8_encode($linha['age_titulo'])?></p>
+            </a>
+        </div>
+        <? endwhile; ?>
+	</div>
+
+    <!-- Botões -->
+    <div id="apresenta_btn">
+        <a id="link_bef" title="Evento Anterior">Anterior</a>
+        <a id="link_aft" title="Próxima Evento">Próximo</a>
+    </div>
+
+</div>

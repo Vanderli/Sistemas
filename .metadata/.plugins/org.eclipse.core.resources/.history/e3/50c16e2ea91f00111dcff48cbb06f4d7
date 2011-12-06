@@ -1,0 +1,169 @@
+<?  # Previsao do Tempo de Itapecerica da Serra
+    # http://www.google.com/ig/api?weather=Itapecerica%20da%20Serra,Brazil&hl=pt-br
+    # Localizacao
+    $cidade = 'Itapecerica da Serra';
+    $pais   = 'Brazil';
+    $idioma = 'pt-br';   
+    # URL principal da API
+    $googleWeather = 'http://www.google.com/ig/api';
+    # urlencode() para substituir caracteres especiais
+    $apiUrl = $googleWeather.'?weather='.urlencode($cidade).','.urlencode($pais).'&hl='.$idioma;
+    # resultado da API
+    $resultado = file_get_contents($apiUrl);
+    # O SimpleXML precisa receber valores em UTF-8
+    $xml = simplexml_load_string(utf8_encode($resultado));   
+    # Separando as informacoes encontradas
+    $atual = $xml->xpath('/xml_api_reply/weather/current_conditions');
+	
+	/*
+	 *	fog, haze                           => nevoa.png
+	 *	rain                                => chuva.png	
+	 *	chance_of_rain                      => possibilidade_de_chuva.png	
+	 *	chance_of_storm                     => possibilidade_de_tempestade.png		 	
+	 * 	mist                                => chuva_fraca.png	
+	 *	cloudy  ou mostly_cloudy            => nublado.png
+	 *  partly_cloudy.gif	                => parcialmente_nublado.png
+	 *	sunny                               => sol.png	
+	 *	mostly_sunny                        => parcialmente_ensolarado.png
+	 *	thunderstorm                        => pancada_de_chuva_com_trovoada.png
+	 * <img src="http://www.google.com<?=$atual[0]->icon['data']?>" />
+	*/
+	
+	switch ( $atual[0]->icon['data'] ) :
+	
+		case "/ig/images/weather/fog.gif":
+			$meteorologia = URL."/img/meteorologia/nevoa.png";
+		break;
+		
+		case "/ig/images/weather/haze.gif":
+			$meteorologia = URL."/img/meteorologia/nevoa.png";
+		break;
+		
+		case "/ig/images/weather/rain.gif":
+			$meteorologia = URL."/img/meteorologia/chuva.png";
+		break;
+		
+		case "/ig/images/weather/chance_of_rain.gif":
+			$meteorologia = URL."/img/meteorologia/possibilidade_de_chuva.png";
+		break;
+		
+		case "/ig/images/weather/chance_of_storm.gif":
+			$meteorologia = URL."/img/meteorologia/possibilidade_de_tempestade.png";
+		break;
+		
+		case "/ig/images/weather/mist.gif":
+			$meteorologia = URL."/img/meteorologia/chuva_fraca.png";
+		break;
+		
+		case "/ig/images/weather/cloudy.gif":
+			$meteorologia = URL."/img/meteorologia/nublado.png";
+		break;
+		
+		case "/ig/images/weather/mostly_cloudy.gif":
+			$meteorologia = URL."/img/meteorologia/nublado.png";
+		break;
+		
+		case "/ig/images/weather/partly_cloudy.gif":
+			$meteorologia = URL."/img/meteorologia/parcialmente_nublado.png";
+		break;
+			
+		case "/ig/images/weather/sunny.gif":
+			$meteorologia = URL."/img/meteorologia/sol.png";
+		break;	
+				
+		case "/ig/images/weather/mostly_sunny.gif":
+			$meteorologia = URL."/img/meteorologia/parcialmente_ensolarado.png";
+		break;		
+		
+		case "/ig/images/weather/thunderstorm.gif":
+			$meteorologia = URL."/img/meteorologia/pancada_de_chuva_com_trovoada.png";
+		break;
+		
+	endswitch;
+    
+?>
+
+<h2>Acessibilidade</h2>
+<div id="icones_acessibilidade">
+  <ul>
+      <li>
+       	<a href="#" title="Contraste" id="acs_contraste">
+          <img src="<?=URL?>/img/acessibilidade/icons/contraste.png" alt="Contraste" title="Contraste" />
+          <span>Contraste</span>
+        </a>
+      </li>
+      <li>
+      	<a href="<?=URL?>/index.php" title="Home" id="acs_home">
+          <img src="<?=URL?>/img/acessibilidade/icons/home.png" alt="Home" title="Home" />
+          <span>Home</span>
+        </a>
+      </li>
+      <!--
+      <li>
+      	<a href="#" title="Conteúdo" onclick="document.getElementById('gal_tec').focus();" id="acs_conteudo">
+          <img src="<=URL?>/img/acessibilidade/icons/conteudo.png" alt="Ir para Notícia" title="Ir para Notícia" />
+          <span>Conteúdo</span>
+        </a>
+      </li>
+      -->
+      <li>
+       	<a href="<?=URL?>/fale_conosco/fale_conosco.php" title="Fale Conosco" id="acs_fale_conosco">
+          <img src="<?=URL?>/img/acessibilidade/icons/fale_conosco.png" alt="Contato" title="Fale Conosco" />
+          <span>Contato</span>
+        </a>
+      </li>
+      <li>
+      	<a href="#" title="Busca" onclick="document.getElementById('campo_busca').focus();" id="acs_busca">
+          <img src="<?=URL?>/img/acessibilidade/icons/busca.png" alt="Busca" title="Busca" />
+          <span>Busca</span>
+        </a>
+      </li>
+      <li>
+      	<a href="#" title="Menu" onclick="document.getElementById('sel_servicos').focus();" id="acs_menu">
+          <img src="<?=URL?>/img/acessibilidade/icons/menu.png" alt="Menu" title="Menu" />
+          <span>Menu</span>
+        </a>
+      </li>
+      <li>
+      	<a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte">
+         	<img src="<?=URL?>/img/acessibilidade/icons/a_mais.png" alt="+ Fonte" title="Aumentar Fonte" />
+         	<span>Fonte+</span>
+        </a>
+      </li>
+      <li>
+      	<a href="#" title="Diminuir Fonte" id="acs_reduz_fonte">
+          <img src="<?=URL?>/img/acessibilidade/icons/a_menos.png" alt="- Fonte" title="Diminuir Fonte" />
+          <span>Fonte-</span>
+        </a>
+      </li>
+      <li id="voltar_img">
+      	<a href="#" title="Manter somente Texto" id="acs_somente_texto">
+          <img src="<?=URL?>/img/acessibilidade/icons/so_texto.png" alt="Voltar Imagens" title="Manter somente Texto" />
+          <span>Voltar Imagens</span>
+        </a>
+      </li>
+  </ul>
+</div>
+
+<div id="busca_avancada">
+  <a href="https://webmail.weblocal.com.br" target="_blank" id="btn_webmail">WebMail</a>
+  <form id="busca" name="busca" method="GET" action="<?=URL?>/noticia/busca_noticias/arquivo_noticias.php">
+    <input type="submit" value="Ok" id="btn_ok" />    
+    <input type="text" name="campo_busca" size="20" id="campo_busca"/>
+  </form>
+  <h2>BUSCA NOTÍCIA</h2>
+</div>
+
+<div id="tempo_itap">	
+    <a href="http://www.climatempo.com.br/previsao-do-tempo/cidade/458/itapecericadaserra-sp" title="Clique aqui para ver a Previsão do Tempo" target="_blank"> 
+        <img src="<?=$meteorologia?>"/> 
+        <? 
+			$txt_tempo = strtolower($atual[0]->condition['data']);
+			
+			if( $atual[0]->condition['data'] == "Névoa::" ){
+				$txt_tempo = "névoa";
+			}		
+		?>
+        <?=$atual[0]->temp_c['data']?>&deg; <?=$txt_tempo?>    
+    </a> 
+</div>

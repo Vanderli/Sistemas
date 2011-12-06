@@ -1,0 +1,20 @@
+/* Multifotos - Página */
+#conteudo #multifotos_pagina {width:945px; float:left; clear:both; margin:25px 0px 0px 0px;}
+#conteudo #multifotos_pagina ul#thumball {width:381px; float:left;}
+#conteudo #multifotos_pagina ul li {float:left; padding:0px 12px 26px 0px;}
+#conteudo #multifotos_pagina #foto-grande {float:right; border-left:1px #beb7af dotted; padding-left:60px;}
+#conteudo #multifotos_pagina #foto-grande .titulo-foto {margin:12px 0px 0px 0px; color:#524d45; width:500px;}
+#conteudo #multifotos_pagina #foto-grande .titulo-foto .tag-foto {font-size:20px; margin:0px 0px 8px 0px;}
+
+/* COLUNA BAIXO */
+#conteudo #coluna-baixo {float:left; clear:both; margin:25px 0px 0px 0px;}
+/* Multinotas */
+#conteudo #coluna-baixo #ultimas-noticias #multinotas {float:right; margin:15px 0px 8px 0px;}
+#conteudo #coluna-baixo #ultimas-noticias #multinotas .tit-multinotas {float:left; color:#aaa191; font-size:12px; font-weight:bold; margin:3px 8px 0px 0px;}
+#conteudo #coluna-baixo #ultimas-noticias #multinotas .select-multinotas {float:left;}
+
+/* Multifotos */
+#conteudo #coluna-baixo #multifotos {float:left; clear:both; width:675px; border:2px solid red}
+#conteudo #coluna-baixo #multifotos .tit-multifotos {background:#ebe5d7; color:#3e403d; margin-bottom:20px;}
+#conteudo #coluna-baixo #multifotos .lupa {position:absolute; display:none; padding:7px; border:3px #ebe5d7 solid; background:#F7F7F7; cursor:pointer; *cursor:hand}
+#conteudo #coluna-baixo #multifotos .lupa .conteudo {font-size:12px; text-align:left; margin-top:5px; color:#777777}

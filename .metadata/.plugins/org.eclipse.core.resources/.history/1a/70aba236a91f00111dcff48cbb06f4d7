@@ -1,0 +1,35 @@
+<div id="servico_online">
+  
+  <h3>Abertura de Via / Viela</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Abertura de acesso a residências</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+        	- Requerimento com qualificação e endereço completo
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>Taxa de protocolo R$ 7,22</p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria Municipal de Obras e Serviços<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+
+</div>

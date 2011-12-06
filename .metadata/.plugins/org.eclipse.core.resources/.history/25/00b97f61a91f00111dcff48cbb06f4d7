@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_imprime" value="name:nome_cargo;datatype:string,name:codInscricao;datatype:int,name:cod_cargo;datatype:int,name:nome;datatype:string,name:rg;datatype:string,name:sexo;datatype:string,name:dataNascimento;datatype:date,name:idade;datatype:int,name:numeroFilhosMenor18;datatype:int,name:estadoCivil;datatype:string,name:endereco;datatype:string,name:numero;datatype:int,name:complemento;datatype:string,name:bairro;datatype:string,name:cidade;datatype:string,name:cep;datatype:string,name:uf;datatype:string,name:telefone;datatype:string,name:tipoContato;datatype:string,name:data;datatype:date,name:hora;datatype:time,name:codUsuario;datatype:int" />
+</info>

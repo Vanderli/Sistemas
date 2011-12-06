@@ -1,0 +1,48 @@
+<? @include_once("../includes/cabecalho/_meta-css-js.php"); ?>
+
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Assuntos Jurídicos</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+  
+    <span>Telefone:</span> 4668-9000 
+    <br /><br />
+    
+    <span>Email:</span> coordenadoria.saj@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Procuradoria
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> procuradoria.saj@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Dívida Ativa e Execução Fiscal
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> daef.saj@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Fiscalização
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> fiscalizacao.saj@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Regularização Fundiária
+    <br />
+    <span>Telefone:</span> 4668-9000
+
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

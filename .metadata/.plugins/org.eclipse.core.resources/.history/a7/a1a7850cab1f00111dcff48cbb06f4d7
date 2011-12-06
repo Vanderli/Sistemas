@@ -1,0 +1,81 @@
+<div id="cont_lista_arvore">
+
+  <h3>Receita e Despesa de Ensino</h3>
+  
+  <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+  <div class="la_container">
+  
+    <h4>Relatórios Trimestrais</h4>
+        
+    <ul>
+      <div class="la_colunas"> 
+      
+       <li class="la_coluna_tit2">   
+          <a title="Ano de 2010" class="btn_esconde_la">Ano de 2010</a>
+          <ul class="esconde_la">
+          
+            <li>
+            	<a href="arquivos/2010/1trimestre/publicacao_1trimestre_2010.pdf" title="1º Trimestre" target="_blank">1º Trimestre</a>
+            </li>
+                        
+          </ul>
+       </li>
+         
+       <li class="la_coluna_tit2">   
+          <a title="Ano de 2009" class="btn_esconde_la">Ano de 2009</a>
+          <ul class="esconde_la">
+          
+            <li>
+            	<a href="arquivos/2009/1trimestre/publicacao_1trimestre_2009.pdf" title="1º Trimestre" target="_blank">1º Trimestre</a>
+            </li>
+            
+			<li>
+            	<a href="arquivos/2009/2trimestre/publicacao_2trimestre_2009.pdf" title="2º Trimestre" target="_blank">2º Trimestre</a>
+            </li>	
+            			
+      		<li>
+            	<a href="arquivos/2009/3trimestre/publicacao_3trimestre_2009.pdf" title="3º Trimestre" target="_blank">3º Trimestre</a>
+            </li>	
+            	
+      		<li>
+            	<a href="arquivos/2009/4trimestre/publicacao_4trimestre_2009.pdf" title="4º Trimestre" target="_blank">4º Trimestre</a>
+            </li>
+            
+          </ul>
+        </li>
+       </div> 
+       
+       <div class="la_colunas">  
+        <li class="la_coluna_tit2">   
+          <a title="Ano de 2008" class="btn_esconde_la">Ano de 2008</a>
+          <ul class="esconde_la">
+            <li>
+            	<a href="arquivos/2008/1trimestre/publicacao_1trimestre_2008.pdf" title="1º Trimestre" target="_blank">1º Trimestre</a></span>
+            </li>
+            
+			<li>
+            	<a href="arquivos/2008/2trimestre/publicacao_2trimestre_2008.pdf" title="2º Trimestre" target="_blank">2º Trimestre</a></span>
+            </li>
+            
+			<li>
+            	<a href="arquivos/2008/3trimestre/publicacao_ensino_3trimestre_2008.pdf" title="3º Trimestre" target="_blank">3º Trimestre</a>
+            </li>
+            
+            <li>
+            	<a href="arquivos/2008/3trimestre/publicacao_ensino_3trimestre_2008_EMPENHADO.pdf" title="3º Trimestre Empenhado" target="_blank">3º Trimestre - EMPENHADO</a>
+            </li>
+            <li>
+            	<a href="arquivos/2008/4trimestre/publicacao_ensino_4trimestre_2008.pdf" title="4º Trimestre" target="_blank">4º Trimestre</a></span>
+            </li>
+            
+          </ul>
+        </li>
+      
+      </div>
+    </ul>
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../governo.php';" />
+  </div>  
+</div>

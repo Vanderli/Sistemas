@@ -1,0 +1,41 @@
+/* CSS dos Dados Para Cadastramento de Servidores */
+
+/* Hacks IE */
+h1 {
+  font-weight: normal;
+  height: 18px;
+}
+
+h3 {
+  _margin-bottom: 0px;
+}
+
+#cadastro_serv ul li .mc_tam_menor {
+  width: 187px;
+}
+
+#cadastro_serv ul li .mc_tam_med {
+  _width: 528px;
+}
+
+.mc_tam_uf {
+  _width: 35px; 
+}
+
+/* Login */
+
+#mc_login #mc_sist {
+  _margin-left: 125px;
+}
+
+#mc_login #mc_rodape {
+  width: 99.5%;
+}
+
+#mc_login #mc_sist ul li input {
+  margin-bottom: 0;
+}
+
+#mc_login #mc_sist ul li {
+  margin: 0 0 5px 0;
+}

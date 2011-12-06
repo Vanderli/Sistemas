@@ -1,0 +1,171 @@
+<?php 	
+		/* conexão com banco de dados */
+		include("../conexao_db/conexaoTecnologia.php");
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+		/* biblioteca */
+		include("../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+		
+		// BUSCO O ID DO FORMULÁRIO
+		$id_doc = "-1";
+		if (isset($_GET['id_doc'])) {
+			$id_doc = $_GET['id_doc'];
+		}
+
+		/* VISUALIZAR */
+		mysql_select_db($database_tecnologia, $tecnologia);
+		// Transformo o recurso em um array	
+		$sql = sprintf("SELECT * FROM documento WHERE codDocumento='".$id_doc."'"); 
+		$query = mysql_query($sql, $tecnologia) or die('Clique em Voltar, e tente novamente!');
+		$linha = mysql_fetch_assoc($query);	 
+?>
+    
+<html>
+<head>
+<title>..:: Visualizar informa&ccedil;&otilde;es de Documentos - Sistema Administrativo ::..</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <!-- estilos -->
+    <link href="../estilo/estilo.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body onLoad="vertical();horizontal();">
+	<?php include('../menu/menu.php'); ?>
+    <br />
+        <div id="formCadDocumento" align="center">
+            <form action="" method="POST" name="Form" id="Form">
+            <fieldset style="width: 500px;">	
+                <p class="titulo">Visualizar informa&ccedil;&otilde;es de Documentos</p>
+<p align="left">
+                    <label class="vermelhorNegrito">Data</label>
+                    <input name="dataCadastro" type="text" id="dataCadastro" value="<?=$data->formataDataBR($linha['dataCadastro'])?>" size="10"  maxlength="10" disabled />
+                </p>
+                <p align="left">
+                    <label class="vermelhorNegrito">Horário </label>
+                    <input name="horaCadastro" type="text" id="horaCadastro" value="<?=$linha['horaCadastro']?>" size="10" maxlength="10" disabled />
+                </p>
+                <p align="left">
+                    <label class="vermelhorNegrito">Usuário </label>
+                     <?php // varro as informações do banco de dados
+                                $sql = sprintf("SELECT * FROM usuarios WHERE STATUS = 'ATIVO' AND codUsuario =".$linha['usuarioCadastro']);
+                                $rs = mysql_query($sql);
+                                // Obtém o resultado de uma linha como um objeto
+							while($row = mysql_fetch_object($rs)):?>                           
+							<!-- deixo checado apenas o combo que está no banco de dados -->
+								<input name="usuarioCadastro" type="text" id="usuarioCadastro" value="<?=$row->nomeUsuario;?>" size="20" maxlength="20" disabled />
+							<?php endwhile;?>   
+                </p>
+                <br />
+                <p align="left">
+                    <label>N&ordm; Documento </label>
+                    <input type="text" name="numDocumento"  id="numDocumento" size="50" disabled
+                    	value="<?=$linha['numDocumento']?>" />
+                </p>
+      <p align="left">
+                    <!-- COMBO ORIGEM 1 -->
+                    <label>Sec. / Órgão de Origem</label>
+                    <select name="origem1" id="origem1" disabled>
+                        <option value=" ">- Selecione -</option>
+                        <?php // varro as informações do banco de dados
+                                $sql = sprintf("SELECT * FROM origem1 WHERE status_origem1='ATIVO'");
+                                $rs = mysql_query($sql);
+                                // Obtém o resultado de uma linha como um objeto
+                                while($row = mysql_fetch_object($rs)):?>
+                                	<!-- deixo checado apenas o combo que está no banco de dados -->
+                                	<option value="<?=$row->cod_origem1;?>"<?php $linha['origem1'] == $row->cod_origem1 ? print 'selected' : null;?>>
+                                    	<?=$row->sigla_origem1;?>
+                                	</option>
+                               <?php endwhile;?>
+</select>
+                </p> 
+                 <p align="left">
+                    <!-- COMBO ORIGEM 2 -->
+                    <label>Depto. / Órgão de Origem</label>
+                    <select name="origem2" id="origem2" disabled>
+                        <option value=" ">- Selecione -</option>
+                        <?php // varro as informações do banco de dados
+                                $sql_2 = sprintf("SELECT * FROM origem2 WHERE status_origem2='ATIVO' AND cod_origem1 = '".$linha['origem1']."'");
+                                $rs_2 = mysql_query($sql_2);
+                                // Obtém o resultado de uma linha como um objeto
+                                while($row_2 = mysql_fetch_object($rs_2)):?>
+                                	<!-- deixo checado apenas o combo que está no banco de dados -->
+                                	<option value="<?=$row_2->cod_origem2;?>"<?php $linha['origem2'] == $row_2->cod_origem2 ? print 'selected' : null;?>>
+                                    	<?=$row_2->sigla_origem2;?>
+                                	</option>
+                               <?php endwhile;?>
+                   </select>
+                </p> 
+                <p align="left">
+                    <label>Tipo Documento </label>
+                        <select name="tipo_documento" id="tipo_documento" disabled>
+                            <option value=" ">- Selecione -</option>
+                            <?php // varro as informações do banco de dados
+                                $sql_2 = sprintf("SELECT * FROM tipo_documento WHERE status_tipo='ATIVO'");
+                                $rs_2 = mysql_query($sql_2);
+								// Obtém o resultado de uma linha como um objeto
+                                while($row_2 = mysql_fetch_object($rs_2)):?>
+                                    <!-- deixo checado apenas o combo que está no banco de dados -->
+                                    <option value="<?=$row_2->cod_tipo;?>"<?php $linha['tipo_documento'] == $row_2->cod_tipo ? print 'selected' : null;?>>
+										<?=$row_2->nome_tipo?>
+                                    </option>
+                                <?php endwhile;?>
+                        </select>   
+                </p>
+                <p align="left">
+                    <label>N&ordm; da Remessa</label>
+                    <input name="numRemessa" type="text" id="numRemessa" size="50" disabled
+                    	value="<?=$linha['numRemessa']?>" />
+                </p>
+      			<p align="left">
+                    <label>Assunto </label>
+                        <textarea name="assunto" cols="50" rows="5" id="assunto" class="disabled" readonly><?=$linha['assunto']?></textarea>
+                </p>
+                <p align="left">
+                    <label>Nome </label>
+                        <input name="nome" type="text" id="nome" size="50" value="<?=$linha['nome']?>" class="disabled" readonly/>
+                </p>
+                <p align="left">
+                    <label>Unidade </label>
+                        <input name="unidade" type="text" id="unidade" size="50" value="<?=$linha['unidade']?>" class="disabled" readonly/>
+                </p>
+                <p align="left">
+                    <label>Cargo </label>
+                    <input name="cargo" type="text" id="cargo" size="70" value="<?=$linha['cargo']?>" class="disabled" readonly/>
+                </p>
+        <br />
+                <p class="titulo">Recebimento</p>
+                <p align="left">
+                    <label>Recebido por</label>
+                    <select name="recebidoPor" id="recebidoPor" disabled>
+                            <?php // varro as informações do banco de dados
+                                $sql = sprintf("SELECT * FROM recebido_por WHERE status = 'ATIVO'");
+                                $rs = mysql_query($sql);
+                                // Obtém o resultado de uma linha como um objeto
+                                while($row = mysql_fetch_object($rs)):?>                           
+                                <!-- deixo checado apenas o combo que está no banco de dados -->
+                                <option value="<?=$row->cod_rec_por?>"<?php $linha['recebidoPor'] == $row->cod_rec_por ? print 'selected' : null;?>>
+                        			<?=$row->nome;?>
+                                </option>
+                        		<?php endwhile;?>
+                  </select>
+                </p>
+                <p align="left">
+                    <label>Data</label>
+                        <input name="dataRecebimento" type="text" id="dataRecebimento"  size="50" disabled
+                        	value="<?=$data->formataDataBR($linha['dataRecebimento'])?>" />
+                </p>   
+                <p align="left">
+                    <label>Hora</label>
+                        <input name="horaRecebimento" type="text" id="horaRecebimento" size="70" value="<?=$linha['horaRecebimento']?>" disabled/>
+                </p>
+                <br >
+            <p align="center">          
+          <input type="button" onClick="javascript:history.go(-1);" name="Voltar" value="Voltar" class="botao" />
+                </p>
+			</fieldset>
+		  </form>
+		</div>
+</body>
+</html>

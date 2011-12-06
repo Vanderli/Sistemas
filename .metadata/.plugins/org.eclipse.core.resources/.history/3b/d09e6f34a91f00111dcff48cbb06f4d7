@@ -1,0 +1,44 @@
+<? @include_once("../includes/cabecalho/_meta-css-js.php"); ?>
+
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Cultura</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+  
+  Secretaria Municipal de Cultura 
+  <br />
+  <span>Telefone:</span> 4165-4528
+  <br />
+  <span>Email:</span> cultura@itapecerica.sp.gov.br
+  <br /><br />
+  
+  Departamento Administrativo
+  <br />
+  <span>Telefine:</span> 4667-9992
+  <br />
+  <span>Email:</span> cultura.adm@itapecerica.sp.gov.br
+  <br /><br />
+  
+  Departamento de Oficinas Culturais
+  <br />
+  <span>Telefone:</span> 4165-4528
+  <br />
+  <span>Email:</span> artecultura@itapecerica.sp.gov.br
+  <br /><br />
+  
+  Departamento de Cultura
+  <br />
+  <span>Telefone:</span> 4667-9992
+  <br />
+  <span>Email:</span> culturagestor@itapecerica.sp.gov.br
+
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

@@ -1,0 +1,15 @@
+<div id="sobre_secretario">
+  <h3>Secretaria Municipal de Planejamento e Meio Ambiente</h3>
+
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Luís Pires" />
+  
+  <div id="descreve_secretario">
+    <h4>Luís Pires</h4>
+    
+    <p>O secretário de Planejamento e Meio Ambiente Luís Antônio Pires é morador de Itapecerica da Serra desde seu nascimento. Formado em Direito pela Faculdade Metropolitanas Unidas – FMU, com extensão em Gestão Ambiental pelo Instituto Brasileiro de Educação Ambiental, trabalhou na iniciativa privada de 1978 a 1991.</p>
+    <p>	Vereador da cidade entre 1997 e 2000, Luís Pires trabalhou na Prefeitura de 2001 a 2004, como Assistente de Gabinete; em 2005 assumiu o cargo de chefe de gabinete da Secretaria de Planejamento e Meio Ambiente, passando pelo cargo de coordenador e, em outubro de 2008, assumiu como secretário. </p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

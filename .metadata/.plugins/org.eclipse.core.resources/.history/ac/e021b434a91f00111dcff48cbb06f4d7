@@ -1,0 +1,35 @@
+<div id="cont_lista_arvore">
+
+  <h3>Secretaria Municipal de Segurança, Trânsito e Transporte</h3>
+  
+  <h4>Serviços da Secretaria</h4>
+  
+  <div class="la_container">
+    <p>Clique em Lista de Serviços para visualizar todos os serviços da Secretaria.<p>
+    <ul>
+    
+      <div class="la_colunas">    
+        <li class="la_coluna_tit3">   
+          <a title="Lista de Serviços" class="btn_esconde_la">Lista de Serviços</a>
+          <ul class="esconde_la">
+            <li><a href="microfilm_multa/microfilm_multa.php" title="Microfilmagem">Microfilmagem</a></li>
+            <li><a href="recurso_multas/recurso_multas.php" title="Recurso de Multa">Recurso de Multa</a></li>
+            <li><a href="talao_zona_azul/talao_zona_azul.php" title="Talão de Zona Azul">Talão de Zona Azul</a></li>
+            <li><a href="indicacao_infrator/indicacao_infrator.php" title="Indicação de infrator">Indicação de Infrator</a></li>
+            <li><a href="fechamento_via/fechamento_via.php" title="Fechamento de Via Pública">Fechamento de Via Pública</a></li>
+          </ul>
+        </li>
+        
+      </div>
+    
+    
+    
+    </ul>
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+
+</div>

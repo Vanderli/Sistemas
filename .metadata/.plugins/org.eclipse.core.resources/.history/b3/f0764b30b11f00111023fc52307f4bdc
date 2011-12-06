@@ -1,0 +1,49 @@
+<div id="servico_online">
+  
+  <h3>Mapas da cidade</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Impressão de mapas em diversas gramaturas e tamanhos</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+        	- Requerimento com qualificação e endereço completo
+       </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>Em caso de órgãos públicos e organizações não governamentais é necessário anexar <br />ofício ao requerimento para fins de isenção da taxa</p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+        	- A-4 impresso – gramatura de 75g/m², colorido ou preto e branco R$ 11,49<br />
+        	- A-3 impresso – gramatura de 75g/m², colorido ou preto e branco R$ 16,42<br />
+        	- A-1 impresso – gramatura de 75g/m², colorido ou preto e branco R$ 41,05<br />
+        	- A-0 impresso – gramatura de 75g/m², colorido ou preto e branco R$ 82,10<br />
+        	- Em formato digital (PDF) em qualquer tamanho-imagem raster, gravada em CD-R 700MB <br />R$ 164,20<br />
+        	- Em formato digital (dwg) ou shape, layer/camada, gravado em CD-R 700MB R$ 197,04<br />
+        	- Foto aérea/imagem de satélite existente na Prefeitura, georeferenciada, gravada em <br />CD’s ou DVD (Decreto nº 1.954/06) R$ 1.182,24
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>	
+            Departamento de Geoprocessamento<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../cidadao.php';" />
+  </div>
+</div>

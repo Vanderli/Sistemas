@@ -1,0 +1,30 @@
+  <!-- Início Secretarias -->
+  <div class="cont_secretarias">
+    
+    <h3>Previdência Social</h3>
+    
+    <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+    <!-- Início dos Concursos Publicos -->
+    <div class="sec_noticias">
+      <ul>
+      
+        <li>
+        	<a href="arquivos/2008/relacao-compras-2008.pdf" target="_blank">
+        		Rela&ccedil;&atilde;o de Compras - 2008
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2007/relacao-compras-2007.pdf" target="_blank">
+        		Rela&ccedil;&atilde;o de Compras - 2007
+            </a>
+        </li>
+        
+      </ul>
+    </div>
+      <!-- Fim dos Concursos Publicos -->
+        <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../governo.php';" />
+  </div>      
+  </div>

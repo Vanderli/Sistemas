@@ -1,0 +1,961 @@
+/* CSS dos Dados Para Cadastramento de Servidores */
+
+/* ---- Reset ---- */
+@import url(reset_dcs.css);
+
+/* -------------------------------- Geral ------------------------------------ */
+body {
+  background: url(../img/bg.png) repeat;
+  font-family: Verdana, Arial, Tahoma, Times New Roman;
+  font-size: 0.8em;
+  line-height: 15px;
+}
+
+h1 {
+  color: #F6830E;
+  float: right;
+  font-size: 1.2em;
+  line-height: 20px;
+  margin-top: 25px;
+  text-align: center;
+  width: 45%;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+h2 {
+  color: #F6830E;
+  float: left;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+h3 {
+  float: left;
+  font-weight: bold;
+  line-height: 15px;
+  margin-bottom: -10px;
+  margin-top: 30px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#msg_vazio{	
+	color: #F6830E;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+#msg_cpf{
+	background-color:#FFFF99;	
+	color: #F6830E;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+#msg_formato{
+	color: #FF0000;
+	font-size: 9px;
+}
+input, textarea{ 
+	text-transform:uppercase;
+}
+#login, #senha {
+	text-transform:lowercase;
+}
+/* -------------------------------- Container -------------------------------- */
+#cadastro_serv {
+  background-color: #FFF;
+  border: 1px #D5D5D5 solid;
+  float: left;
+  left: 50%;
+  margin: 10px 0 10px -385px;
+  padding: 10px;
+  position: relative;
+  width: 750px;
+}
+
+#cadastro_serv h2 {
+  border-bottom: 1px #F6830E solid;
+}
+
+/* ---- Configurações da Lista Geral ---- */
+#cadastro_serv ul,
+#cadastro_serv ul li {
+  float: left;
+  width: 100%;
+}
+
+
+/* ------------- Início Mostrar Dados ------------- */
+#cadastro_serv ul li p {
+  background-color: #FEEDDD;
+  color: #6D6E71;
+  float: left;
+  height: 20px;
+  margin-right: 8px;
+  padding-top: 3px;
+}
+
+#cadastro_serv ul li .dcs_tam_menor3 {
+  width: 170px;
+}
+
+/* ------------- Fim Mostrar Dados ------------- */
+
+
+#cadastro_serv ul li #dcs_def_qual {
+  background: none;
+  color: #000;
+  float: left;
+  margin: 0 5px 0 15px;
+}
+
+#cadastro_serv ul li input,
+#cadastro_serv ul li select,
+#cadastro_serv ul li textarea {
+  float: left;
+  margin-right: 8px;
+  border: 1px #D5D5D5 solid;
+}
+
+#cadastro_serv ul li label {
+  float: left;
+  margin: 10px 11px 1px 1px;
+}
+
+#cadastro_serv ul li label span {
+  color: #9F9F9F;
+  float: right;
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+/* Brasão do Formulário */
+.dcs_form_brasao img {
+  float: left;
+  height: 91px;
+  width: 354px;
+}
+
+/* ------------ Input / Select ------------ */
+
+/* Tamanho */
+#cadastro_serv ul li .dcs_tam_num {
+  width: 50px; 
+}
+
+#cadastro_serv ul li .dcs_tam_sn {
+  width: 65px; 
+}
+
+#cadastro_serv ul li .dcs_tam_sn2 {
+  margin-right: 300px;
+  width: 65px; 
+}
+
+#cadastro_serv ul li .dcs_tam_menor {
+  width: 176px; 
+}
+
+#cadastro_serv ul li .dcs_tam_menor2 {
+  width: 173px;
+}
+
+#cadastro_serv ul li .dcs_tam_menor2b {
+  margin-left: 10px;
+  width: 173px;
+}
+
+#cadastro_serv ul li .dcs_tam_menor3 {
+  width: 127px;
+}
+
+#cadastro_serv ul li .dcs_tam_peq {
+  width: 242px;
+}
+
+#cadastro_serv ul li .dcs_tam_med {
+  width: 535px;
+}
+
+#cadastro_serv ul li .dcs_tam_med2 {
+  width: 650px;
+}
+
+#cadastro_serv ul li .dcs_tam_med3 {
+  width: 355px;
+}
+
+#cadastro_serv ul li .dcs_tam_med4 {
+  width: 334px;  
+}
+
+#cadastro_serv ul li .dcs_tam_med5 {
+  width: 400px;  
+}
+#cadastro_serv ul li .dcs_tam_med6 {
+  width: 345px;  
+}
+
+#cadastro_serv ul li .dcs_tam_total {
+  width: 98.5%;
+}
+#cadastro_serv ul li .dcs_tam_total1 {
+  width: 98.5%;
+  height: 20%;
+}
+
+/* Dia, Mês e Ano */
+.dcs_tam_data {
+  width: 188px;
+}
+
+.dcs_tam_dia {
+  margin-right: 1px;
+  width: 47px;
+}
+.dcs_tam_nasc {
+  margin-right: 1px;
+  width: 193px;
+}
+
+.dcs_tam_mes {
+  margin-right: 2px;
+  width: 82px;
+}
+
+.dcs_tam_ano {
+  width: 50px;
+}
+
+/* ---- Tamanhos Específicos ---- */
+.dcs_tam_uf {
+  width: 45px; 
+}
+
+.dcs_tam_raca {
+  width: 178px; 
+}
+
+.dcs_tam_ender {
+  width: 598px; 
+}
+
+
+/* ---------------- Confirmação de Dependentes ---------------- */
+#cadastro_serv ul .list_confirma2 {
+  color: #6D6E71;
+  border: 1px #D5D5D5 solid;
+  margin: 30px 0 30px -2px;
+  padding: 0 0 10px 5px;
+  width: 750px;
+}
+
+#cadastro_serv ul .list_confirma2 h2 {
+  margin-top: 10px;
+  width: 99%;
+}
+
+
+/* ---------------- Botões e Termo de Responsabilidade ---------------- */
+#cadastro_serv ul .list_confirma {
+  border: 1px #D5D5D5 solid;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+#cadastro_serv ul li .par_corrigir {
+  background: none;
+  padding: 10px 10px 0 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#cadastro_serv ul li #par_termo {
+  background: none;
+  height: 100%;
+  margin-top: 50px;
+  padding: 0 10px;
+  text-align: justify;
+  width: 730px;
+}
+
+#cadastro_serv ul li button {
+  background-color: #F9A856;
+  border: 1px #F6830E solid;
+  color: #FFF;
+  float: left;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: 10px;
+  position: relative;
+  width: 150px;
+}
+
+#cadastro_serv ul li .dcs_corrigir {
+  float: left;
+  padding: 5px 0px;
+}
+
+#cadastro_serv ul li #dcs_confirmar {
+  background-color: #F6830E;
+  border: 5px #EEE solid;
+  float: left;
+  font-size: 1.4em;
+  margin-left: -150px;
+  margin-top: 15px;
+  padding: 15px;
+  width: 300px;
+}
+
+#cadastro_serv ul li #dcs_enviar {
+  font-size: 1.2em;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  padding-bottom: 4px;
+}
+
+/* -------------------------------- Login ------------------------------------ */
+#dcs_login {
+  background-color: #FFF;
+  border: 1px #D5D5D5 solid;
+  float: left;
+  left: 50%;
+  margin: 100px 0 0 -375px;
+  position: relative;
+  width: 770px;
+}
+
+#dcs_login .dcs_logo {
+  float: left;
+  height: 130px;
+  width: 100%;
+}
+
+#dcs_login .dcs_logo img {
+  float: left;
+  left: 50%;
+  margin: 10px 0 0 -177px;
+  position: relative;
+}
+
+#dcs_login .dcs_logo h1 {
+  float: left;
+  text-indent: -5000px;
+}
+
+/* Barra de Anúncio */
+#dcs_anuncio {
+  background: #EEE url(../img/bg_barra_anuncio.jpg) repeat-x;
+  float: left;
+  height: 30px;
+  width: 100%;
+}
+
+#dcs_anuncio h2 {
+  border: 0;
+  color: #6D6E71;
+  font-size: 1.2em;
+  margin: 0;
+  line-height: 29px;
+  text-align: center;
+  width: 100%;
+}
+
+#cadastro_serv #dcs_anuncio {
+  margin-left: -10px;
+  margin-top: 15px;
+  padding-right: 20px;
+}
+
+/* Painel */
+#dcs_login #dcs_sist {
+  background-color: #FFF;
+  border: 5px #EEE solid;
+  float: left;
+  margin: 50px 0 0 34%;
+  padding: 5px;
+  width: 30%;
+}
+
+#dcs_login #dcs_sist ul,
+#dcs_login #dcs_sist ul li {
+  float: left;
+  width: 100%
+}
+
+#dcs_login #dcs_sist h2 {
+  background-color: #D5D5D5;
+  color: #000;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+}
+
+#dcs_login #dcs_sist ul li label {
+  float: left;
+  padding-top: 3px;
+  width: 20%;
+}
+
+#dcs_login #dcs_sist ul li input {
+  border: 1px #D5D5D5 solid;
+  float: left;
+  margin-bottom: 5px;
+  width: 78%;
+}
+
+#dcs_login #dcs_sist ul li .dcs_campo {
+  color: #6D6E71;  
+}
+
+#dcs_login #dcs_sist ul .dcs_invalido p {
+  color: #FF0000;
+  float: left;
+  text-align: center;
+  width: 98.5%;
+}
+
+#dcs_login #dcs_sist ul .dcs_btns {
+  background-color: #EEE;
+  margin: 5px 0 -5px -5px;
+  padding: 0 5px 5px 5px;
+}
+
+#dcs_login #dcs_sist ul .dcs_btns .dcs_logar {
+  background-color: #F6830E;
+  border: none;
+  color: #FFF;
+  margin: 9px 0 0 25%;
+  padding: 5px 20px;
+  width: 50%;
+}
+
+/* Rodapé com Endereço */
+#dcs_rodape {
+  float: left;
+  margin: 50px 0 25px 0;
+  width: 100%;
+}
+
+#dcs_rodape p {
+  color: #6D6E71;
+  float: left;
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%;
+}
+
+#dcs_apresentacao {
+  color: #6D6E71;
+  font-size: 0.8em;
+  width: 100%;
+  padding-left: 5pt;
+}
+
+#dcs_sessao {
+  float: left;
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* -------------------------------- Dependetes em Página Separada ------------------------------------ */
+#pop_depende {
+  background-color: #FFF;
+  border: 1px #D5D5D5 solid;
+  float: left;
+  margin: 0;
+  width: 770px;
+}
+
+#pop_depende .dcs_logo {
+  float: left;
+  height: 130px;
+  width: 100%;
+}
+
+#pop_depende .dcs_logo img {
+  float: left;
+  left: 50%;
+  margin: 10px 0 0 -192.5px;
+  position: relative;
+}
+
+#pop_depende .dcs_logo h1 {
+  float: left;
+  text-indent: -5000px;
+}
+
+
+/* -- Formulário -- */
+#dcs_dependente_sep {
+  border: 5px #EEE solid;
+  float: left;
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  width: 720px
+}
+
+#dcs_dependente_sep ul,
+#dcs_dependente_sep ul li {
+  float: left;
+  width: 100%;
+}
+
+#dcs_dependente_sep label {
+  float: left;
+}
+
+#dcs_dependente_sep ul li input,
+#dcs_dependente_sep ul li select {
+  border: 1px #D5D5D5 solid;
+  float: left;
+  margin-bottom: 5px;
+} 
+
+#dcs_dependente_sep .dep_sep_nome {
+  margin-right: 15px;
+  width: 505px;
+}
+
+#dcs_dependente_sep .dep_sep_nome2 {
+  margin-right: 20px;
+  width: 505px;
+}
+
+#dcs_dependente_sep .dep_sep_nasc {
+  width: 195px;
+}
+
+#dcs_dependente_sep .dep_sep_sexo {
+  margin-right: 15px;
+  width: 110px;
+}
+
+#dcs_dependente_sep .dep_sep_grau {
+  width: 220px;
+}
+
+#dcs_dependente_sep .dep_sep_situ {
+  margin-right: 15px;
+  width: 340px;
+}
+
+/* Botões Dependentes Separados */
+#dcs_dependente_sep #dcs_dependente_sep_btn {
+  margin-top: 15px;
+}
+
+#dcs_dependente_sep #dcs_dependente_sep_btn input {
+  background-color: #F9A856;
+  border: 1px #F6830E solid;
+}
+
+#dcs_dependente_sep #dcs_depende_cadastrar2 {
+  margin-right: 5px;
+}
+
+#dcs_dependente_sep #dcs_depende_fechar { 
+  float: left;
+  left: 50%;
+  margin-left: -50px;
+  position: relative;
+  width: 100px;
+}
+
+/* Botões */
+#dcs_depende_botoes {
+  border: 5px #EEE solid;
+  float: left;
+  margin: 20px 10px;
+  padding: 10px 0;
+  width: 740px
+}
+
+#dcs_depende_botoes p {
+  color: #6D6E71;
+  float: left;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.dcs_depende_btn { 
+  background-color: #F6830E;
+  border: 0;
+  color: #FFF;
+  padding: 5px 0;
+  width: 100px;
+}
+
+#dcs_depende_cadastrar {
+  margin: 10px 0 0 305px;
+}
+
+#dcs_depende_botoes .dcs_alteracao {
+  float: left;
+  margin: 10px 0 0 335px;
+  width: 65px;
+}
+
+#dcs_depende_avacar {
+  float: left;
+  margin: 25px 0 0 315px;
+}
+
+
+
+
+/* -- Listagem dos Dependentes -- */
+#sep_list {
+  border: 5px #EEE solid;
+  float: left;
+  margin: 25px 10px 0 10px;
+  width: 740px
+}
+
+#cadastro_serv #sep_list {
+  margin: 10px 0 0 0;
+}
+
+#sep_list table {
+  border-collapse: collapse;
+  width: 100%
+}
+
+#sep_list table caption {
+  background-color: #EEE;
+  color: #6D6E71;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1px;
+  padding: 3px 0 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+#sep_list table tr td,
+#sep_list table tr th {
+  border: 1px #D5D5D5 solid;
+  padding: 3px 0;
+  text-align: center;
+}
+
+#sep_list table tr th {
+  color: #6D6E71;
+  font-weight: bold;
+}
+
+#sep_list table tr .sep_ver {
+  text-align: center;
+  width: 40px;
+}
+
+#sep_list table tr #btn_excluir {
+  background-color:#FFFFFF;
+  border:0px;
+  color: #F6830E;
+  cursor:pointer;	
+}
+
+#sep_list table tr .sep_editar,
+#sep_list table tr .sep_excluir {
+  text-align: center;
+  width: 60px;
+}
+
+#sep_list table tr .sep_ver,
+#sep_list table tr .sep_editar a,
+#sep_list table tr .sep_excluir a {
+  color: #F6830E;
+  text-decoration: none;
+}
+
+#sep_list table tr .sep_nome {
+  width: 350px;
+}
+
+#sep_list table tr .sep_nasc {
+  width: 100px;
+}
+
+
+/* -------------------------------- PROTOCOLO (ASSINATURA) ------------------------------------ */
+.prot_dados {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.prot_dados table {
+  border-collapse: collapse;
+  float: left;
+  width: 100%;
+}
+
+.prot_dados table tr {
+  width: 100%;
+}
+
+.prot_dados table tr td {
+  color: #6D6E71;
+  border: 1px #D5D5D5 solid;
+  padding: 3px;
+  padding-right: 0;
+}
+
+.prot_dados table tr .prot_tam_tit,
+.prot_dados table caption {
+  border: 1px #D5D5D5 solid;
+  background-color: #EEE;
+  color: #000;
+  font-weight: bold;
+  padding: 4px;
+  text-align: center;
+}
+
+.prot_dados table tr .prot_tam_info {
+  color: #000;
+  font-weight: bold;
+  width: 140px;
+}
+
+.prot_dados table tr .prot_tam_men {
+  color: #000;
+  font-weight: bold;
+  padding-right: 5px;
+  width: 100px;
+}
+
+
+.prot_dados table tr .dcs_btn_prot input {
+  background-color:#F9A856;
+  border:1px solid #F6830E;
+  color: #FFF;
+  float: left;
+  margin-left: -4px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+.prot_dados table tr .dcs_btn_prot #dcs_novo_registro {
+  float: right;
+}
+
+/* Assinaturas */
+.prot_assina {
+  border: 1px #D5D5D5 solid;
+  float: left;
+  margin-top: 15px;
+  padding: 10px;
+  width: 730px;
+}
+
+.prot_assina .prot_tam_termo {
+  color: #6D6E71;
+  float: left;
+  text-align: justify;
+  width: 100%
+}
+
+.prot_assina .prot_tam_data {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.prot_assina .prot_tam_assina,
+.prot_assina .prot_tam_assina2 {
+  border-top: 1px solid;
+  float: left;
+  margin: 50px 0 10px 0;
+  padding-top: 10px;
+  text-align: center;
+  width: 45%;
+}
+
+.prot_assina .prot_tam_assina2 {
+  float: right;
+}
+
+.prot_tam_termo2 {
+  float: left;
+  padding: 10px;
+  text-align: justify;
+}
+
+
+/* Linha */
+.prot_recorte {
+  float: left;
+  width: 100%;
+}
+
+.prot_recorte img {
+  float: right;
+  margin-top: -11px;
+}
+
+.prot_recorte .prot_linha {
+  background: none;
+  border-top: 1px #000 dashed;
+  float: left;
+  margin-top: 20px;
+  width: 99%;
+}
+
+
+/* -------------------------------- LISTAGEM PARA OS ADMINISTRADORES DO SISTEMA DE RECADASTRAMENTO ------------------------------------ */
+
+/* Puxa a Tabela dos Dependentes Separados, com algumas alterações abaixo */
+#cadastro_serv #sep_list table tr td {
+  padding: 5px;
+  text-align: left;
+}
+
+#cadastro_serv #sep_list table tr .dcs_adm_inscri {
+  text-align: center;
+  width: 65px;
+}
+
+#cadastro_serv #sep_list table tr .dcs_adm_matricula {
+  text-align: center;
+  width: 75px;
+}
+
+.dcs_adm_nome {
+  width: 300px;
+}
+
+#cadastro_serv #sep_list table tr .sep_ver {
+  padding: 0;
+  text-align: center;
+}
+
+
+#cadastro_serv #sep_list_campos,
+#cadastro_serv #escolhe_tipo_busca {
+  border: 5px #EEE solid;
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  width: 720px;
+}
+
+#cadastro_serv #sep_list_campos p,
+#cadastro_serv #escolhe_tipo_busca #escolhe_busca_tit {
+  background-color: #EEE;
+  float: left;
+  font-weight: bold;
+  margin: -15px -10px 10px -10px;
+  padding: 10px 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#cadastro_serv #sep_list_campos select {
+  float: left;
+  margin-left: 65px;
+  width: 500px;
+}
+
+#cadastro_serv #sep_list_campos #btn_escolhe_campo {
+  background-color: #F9A856;
+  border: 1px #F6830E solid;
+  color: #FFF;
+  float: left;
+  margin-left: 10px;
+}
+
+#cadastro_serv #escolhe_tipo_busca input {
+  float: left;
+  margin-left: 140px;
+}
+
+#cadastro_serv #escolhe_tipo_busca p {
+  float: left;
+}
+
+*[readonly]{
+  background-color: #EEE;
+  color:#f6830e;  
+}
+
+/* ---- Mudar cor do campo Selecionado ----*/
+.campo_focus {
+  border: 1px solid #F6830E !important; 
+  background-color: #FFFBF7 !important;
+}
+
+
+/* Listagem dos Cadastrados */
+#cadastro_serv .ver_cad,
+#cadastro_serv #sep_list table tr #cad_ant a,
+#cadastro_serv #sep_list table tr #cad_prox a {
+  color: #F6830E !important;
+  text-decoration: none;
+}
+
+#cadastro_serv .ver_cad:hover,
+#cadastro_serv #sep_list table tr #cad_ant a:hover,
+#cadastro_serv #sep_list table tr #cad_prox a:hover {
+  text-decoration: underline;
+}
+
+#cadastro_serv #sep_list table tr #total_cad,
+#cadastro_serv #sep_list table tr #cad_ant,
+#cadastro_serv #sep_list table tr #cad_prox {
+  text-align: center !important;
+}
+
+
+
+/* -------------------------------- Erro na Validação ------------------------------------ */
+#error {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.error {
+  background-color: #FFFED9;
+}
+
+label.error {
+  background-color: #FFFED9;
+	color: #FF0000;
+	float: left;
+	font-size: 0.8em;
+	line-height: 25px;
+	margin: 0;
+	padding: 0 10px;
+	width: 725px;
+}
+
+#cadastro_serv ul #esconde_valida {
+  display: none;
+}
+
+#valida_depende .error {
+  float: left;
+  margin: 15px 0 0 10px;
+  text-align: center;
+  width: 700px;
+}
+
+
+

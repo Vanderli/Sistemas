@@ -1,0 +1,112 @@
+<div id="cont_atrib_sec">
+
+  <h3>Autarquia Municipal de Saúde</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+
+  Autarquia Municipal de Saúde
+  <br />
+  <span>Telefone:</span> 4668-6000
+  <br /><br />
+
+  Pronto Socorro Central
+  <br /> 
+  <span>Telefone:</span> 4165-2979
+  <br /><br />
+  
+  Maternidade Central
+  <br /> 
+  <span>Telefone:</span> 4666-4540
+  <br /><br />
+  
+  UBS Analândia
+  <br />
+  <span>Telefone:</span> 4779-9563
+  <br /><br />
+  
+  UBS Crispim
+  <br /> 
+  <span>Telefone:</span> 4669-3142
+  <br /><br />
+  
+  UBS Jardim Branca Flor
+  <br /> 
+  <span>Telefone:</span> 4666-4276
+  <br /><br />
+  
+  UBS Jardim São Pedro
+  <br /> 
+  <span>Telefone:</span> 4666-7315
+  <br /><br />
+  
+  UBS Potuverá
+  <br /> 
+  <span>Telefone:</span> 4147-1395
+  <br /><br />
+  
+  UBS  Valo Velho
+  <br /> 
+  <span>Telefone:</span> 4775-3401
+  <br /><br />
+  
+  UBS Horizonte Azul
+  <br /> 
+  <span>Telefone:</span> 5896-9550
+  <br /><br />
+  
+  UBS Mombaça
+  <br /> 
+  <span>Telefone:</span> 4775-3811
+  <br /><br />
+  
+  UBS  Parque Paraíso
+  <br />
+  <span>Telefone:</span> 4666-5059
+  <br /><br />
+  
+  UBS Salvador de Leone
+  <br /> 
+  <span>Telefone:</span> 4666-2135
+  <br /><br />
+  
+  UBS / PS do Jardim Jacira
+  <br />
+  <span>Telefone:</span> 4669-3141
+  <br /><br />
+  
+  Centro de Controle de Zoonoses
+  <br /> 
+  <span>Telefone:</span> 4147-1664
+  <br /><br />
+  
+  CAPS-ad - Centro de Atenção Psicossocial - álcool e drogas
+  <br /> 
+  <span>Telefone:</span> 4666-8312
+  <br /><br />  
+  
+  Farmácia Popular
+  <br /> 
+  <span>Telefone:</span> 4668-2209
+  <br /><br />  
+
+  CEM - Centro de Especialidades Municipal
+  <br /> 
+  <span>Telefone:</span> 4667-8357
+  <br /><br /> 
+  
+  CLINISA - Clínica de Hemodiálise de Itapecerica da Serra
+  <br /> 
+  <span>Telefone:</span> 4667-7723
+  <br /><br />   
+
+  
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

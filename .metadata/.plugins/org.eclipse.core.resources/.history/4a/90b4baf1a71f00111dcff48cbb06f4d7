@@ -1,0 +1,200 @@
+# MySQL-Front 3.1  (Build 8.5)
+
+
+# Host: localhost     Database: controle_documentos
+# ------------------------------------------------------
+# Server version 5.1.37
+
+#
+# Table structure for table destino_interno
+#
+
+CREATE TABLE `destino_interno` (
+  `cod_dest_int` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `data_cadastro` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
+  `usuario_cadastro` smallint(6) DEFAULT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `status_dest_int` enum('ATIVO','INATIVO') DEFAULT 'ATIVO',
+  PRIMARY KEY (`cod_dest_int`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table destino_interno
+#
+
+
+#
+# Table structure for table documento
+#
+
+CREATE TABLE `documento` (
+  `codDocumento` int(6) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `dataCadastro` date NOT NULL,
+  `horaCadastro` time DEFAULT NULL,
+  `usuarioCadastro` smallint(6) DEFAULT NULL,
+  `numDocumento` varchar(45) DEFAULT NULL,
+  `origem1` int(6) DEFAULT NULL,
+  `origem2` int(6) DEFAULT NULL,
+  `tipo_documento` int(6) DEFAULT NULL,
+  `numRemessa` varchar(45) DEFAULT NULL,
+  `assunto` text,
+  `nome` varchar(100) DEFAULT NULL,
+  `unidade` varchar(100) DEFAULT NULL,
+  `cargo` varchar(100) DEFAULT NULL,
+  `recebidoPor` smallint(6) DEFAULT NULL,
+  `dataRecebimento` date DEFAULT NULL,
+  `horaRecebimento` time DEFAULT NULL,
+  PRIMARY KEY (`codDocumento`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table documento
+#
+
+
+#
+# Table structure for table origem1
+#
+
+CREATE TABLE `origem1` (
+  `cod_origem1` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `data_cadastro` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
+  `usuario_cadastro` smallint(6) DEFAULT NULL,
+  `sigla_origem1` varchar(45) DEFAULT NULL,
+  `desc_origem1` varchar(100) DEFAULT NULL,
+  `status_origem1` enum('ATIVO','INATIVO') DEFAULT NULL,
+  PRIMARY KEY (`cod_origem1`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table origem1
+#
+
+
+#
+# Table structure for table origem2
+#
+
+CREATE TABLE `origem2` (
+  `cod_origem2` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `data_cadastro` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
+  `usuario_cadastro` smallint(6) DEFAULT NULL,
+  `cod_origem1` int(6) DEFAULT NULL,
+  `sigla_origem2` varchar(45) DEFAULT NULL,
+  `desc_origem2` varchar(100) DEFAULT NULL,
+  `status_origem2` enum('ATIVO','INATIVO') DEFAULT 'ATIVO',
+  PRIMARY KEY (`cod_origem2`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table origem2
+#
+
+
+#
+# Table structure for table recebido_por
+#
+
+CREATE TABLE `recebido_por` (
+  `cod_rec_por` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `data_cadastro` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
+  `usuario_cadastro` smallint(6) DEFAULT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `status` enum('ATIVO','INATIVO') DEFAULT NULL,
+  PRIMARY KEY (`cod_rec_por`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table recebido_por
+#
+
+
+#
+# Table structure for table tipo_documento
+#
+
+CREATE TABLE `tipo_documento` (
+  `cod_tipo` int(6) NOT NULL AUTO_INCREMENT,
+  `data_cadastro` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
+  `usuario_cadastro` smallint(6) DEFAULT NULL,
+  `nome_tipo` varchar(100) NOT NULL,
+  `status_tipo` enum('ATIVO','INATIVO') DEFAULT 'ATIVO',
+  PRIMARY KEY (`cod_tipo`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table tipo_documento
+#
+
+
+#
+# Table structure for table tramite_externo
+#
+
+CREATE TABLE `tramite_externo` (
+  `cod_tra_ext` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `num_documento` varchar(45) DEFAULT NULL,
+  `data_cadastro` date DEFAULT NULL,
+  `hora_cadastro` time DEFAULT NULL,
+  `usuario_cadastro` smallint(6) DEFAULT NULL,
+  `status` enum('Andamento','Finalizado') DEFAULT NULL,
+  `dest_externo_1` int(6) DEFAULT NULL,
+  `dest_externo_2` int(6) DEFAULT NULL,
+  `num_remessa` varchar(45) DEFAULT NULL,
+  `assunto` text,
+  PRIMARY KEY (`cod_tra_ext`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table tramite_externo
+#
+
+
+#
+# Table structure for table tramite_interno
+#
+
+CREATE TABLE `tramite_interno` (
+  `cod_tra_int` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `num_documentoo` varchar(45) DEFAULT NULL,
+  `data_cadastro` date DEFAULT NULL,
+  `hora_cadastro` time DEFAULT NULL,
+  `usuario_cadastro` smallint(6) DEFAULT NULL,
+  `status` enum('Andamento','Finalizado') DEFAULT NULL,
+  `dest_interno` int(6) DEFAULT NULL,
+  `assunto` text,
+  PRIMARY KEY (`cod_tra_int`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table tramite_interno
+#
+
+
+#
+# Table structure for table usuarios
+#
+
+CREATE TABLE `usuarios` (
+  `codUsuario` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `data_cadastro` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
+  `usuario_cadastro` smallint(6) DEFAULT NULL,
+  `nomeUsuario` varchar(100) DEFAULT NULL,
+  `login` varchar(100) DEFAULT NULL,
+  `senha` varchar(100) DEFAULT NULL,
+  `modulo` enum('ADMINISTRADOR','CADASTRAR E CONSULTAR','CONSULTAR','TRAMITES') DEFAULT NULL,
+  `status` enum('ATIVO','INATIVO') DEFAULT NULL,
+  PRIMARY KEY (`codUsuario`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table usuarios
+#
+
+

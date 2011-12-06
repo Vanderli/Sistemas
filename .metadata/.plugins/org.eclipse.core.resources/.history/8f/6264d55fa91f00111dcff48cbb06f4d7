@@ -1,0 +1,20 @@
+<?php 
+
+	# Conexão do banco de Recadastramento 2010
+	// Mensagens de Erro
+	$msg[0] = "Erro de conexão, contate o Departamento de TI - 4668-9144.";
+	$msg[1] = "Não foi possível selecionar o banco de dados, contate o Departamento de TI - 4668-9144.";
+	$msg[2] = "Clique em Voltar, e tente novamente!, contate o Departamento de TI - 4668-9144.";
+    
+	// nome do banco de dados
+    $db_1   = "processoseletivo_001_2010_saude";
+	
+	$host = "127.0.0.1";
+    $user = "root";
+    $pass = "pmis";
+   
+    $conn = @mysql_connect($host, $user, $pass) or die ($msg[0]); 
+    
+    @mysql_select_db($db_1);
+	
+?>

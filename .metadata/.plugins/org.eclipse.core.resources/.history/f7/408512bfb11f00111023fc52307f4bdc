@@ -1,0 +1,33 @@
+<?	# inicializo a sessão.
+	if (!isset($_SESSION)){	session_start();}			
+	# impede que seja acessado alguma página sem passar pelo login 
+	@include("../login/protege_pagina.php");		
+	# biblioteca com funções PHP
+	@include("../lib_PHP/biblioteca.php");		
+	
+	# será inserida no titulo da página
+	$title = "Bem vindo";		
+	# insiro o cabecalho da página
+	@include("../includes/cabecalho/adm_meta-css-js.php"); 				
+?>
+<div class="sig_container">
+
+    <!-- Menu -->
+    <div class="sig_menu"><?php @include("../menu/menu.php");?></div>
+
+    <!-- Mensagem de boas vindas -->
+    <div id="sig_bemvindo">
+        <p id="bv_nome"><?=exibeSaudacao()?></p>
+        <p id="bv_versao">Sistema Administrativo - Versão 1.0</p>
+        <p id="bv_msg">
+        	Seja Bem Vindo ao Sistema Administrativo do site da Prefeitura de Itapecerica da Serra, 
+            onde terá controle dos documentos que serão disponibilizados.
+        </p>
+        <p id="bv_duvida">Dúvidas ligue: Service Desk - 9144 / 9145 ( Vanderli / Douglas )</p>
+    </div>
+    
+    
+</div><!-- fecha div sig_container -->
+
+</body>
+</html>

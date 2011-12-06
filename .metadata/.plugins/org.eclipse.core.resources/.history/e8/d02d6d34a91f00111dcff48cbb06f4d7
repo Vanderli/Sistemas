@@ -1,0 +1,45 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Administração</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+    <span>Endereço:</span> Av. Eduardo Roberto Daher, 1135 - Centro
+    <br />
+    CEP 06850-000 - Itap da Serra - SP
+    <br /><br />
+    
+    <span>Telefone:</span> 4668-9000
+    <br /><br />
+    
+    <span>E-mail:</span> - Secretaria de Administração
+    <br />
+            administracao@itapecerica.sp.gov.br
+            <br /><br />
+
+          - Departamento de Apoio Administrativo
+          <br />
+            apoioadmsa@itapecerica.sp.gov.br
+            <br /><br />
+
+          - Departamento de Recursos Humanos
+          <br />
+            da.drh@itapecerica.sp.gov.br
+            <br /><br />
+
+          - Departamento de Tecnologia e Informação
+          <br />
+            tecnologia@itapecerica.sp.gov.br
+            <br /><br />
+
+          - Gerência de Atendimento
+          <br />
+            gerencia.atendimento@itapecerica.sp.gov.br
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

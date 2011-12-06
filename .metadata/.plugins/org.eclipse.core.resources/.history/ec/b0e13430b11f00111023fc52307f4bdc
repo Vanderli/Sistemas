@@ -1,0 +1,50 @@
+<div id="servico_online">
+  
+  <h3>Alistamento Militar</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- Certidão de nascimento ou certidão de casamento original e cópia simples<br />
+			- RG e CPF originais e cópia simples<br />
+			- 3 fotos 3x4 recentes com barba e cabelo aparados sem brincos e correntes<br />
+			- Declaração escolar atual<br />
+			- Dois comprovantes de residência, um deles do início do exercício passado e o outro do mês do mês vigente em nome do alistado ou dos pais
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+			Para 2º via é necessário os documentos abaixo relacionados:<br />
+			- 2 fotos 3x4 recentes com barba e cabelo aparados sem brincos e correntes<br />
+			- RG e CPF originais e cópia simples<br />
+			- Comprovante de residência do mês do mês vigente em nome do alistado ou dos pais<br />
+			Multa de 2º via: R$ 7,20
+        </p>
+      </li>      
+      <li>
+        <h4>Taxas</h4>
+        <p>
+            Taxa de inscrição R$ 2,20 para aqueles com idade 17 e 18 anos<br />
+            Taxa de inscrição R$ 4,40 para aqueles com idade superior a 18 anos
+
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Junta de Serviço Militar<br />
+        	Rua Treze de Maio, 100 – Centro<br />
+        	Atendimento das 8h às 15h30
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../cidadao.php';" />
+  </div>
+</div>

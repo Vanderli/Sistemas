@@ -1,0 +1,307 @@
+<? 	# conexao com banco de dados
+	include_once('../Connections/conn.php');
+	include_once("../lib/biblioteca.php"); 	
+ 	$data = new DataHora;
+
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$colname_imprime = "-1";
+if (isset($_GET['codInscricao'])) {
+  $colname_imprime = descriptografa($_GET['codInscricao']);
+}
+mysql_select_db($database_conn, $conn);
+$query_imprime = sprintf("SELECT cargos.nome_cargo, inscricoes.* FROM inscricoes, cargos WHERE codInscricao = %s AND cargos.cod_cargo=inscricoes.cod_cargo ORDER BY codInscricao DESC", GetSQLValueString($colname_imprime, "int"));
+$imprime = mysql_query($query_imprime, $conn) or die(mysql_error());
+$row_imprime = mysql_fetch_assoc($imprime);
+$totalRows_imprime = mysql_num_rows($imprime);
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Processo Seletivo N&ordm; 003/2010 - Impress&atilde;o</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style2 {font-size: 14px}
+.style4 {font-size: 14px}
+.style5 {font-size: 14px}
+.style8 {font-size: 14px; font-weight: bold; }
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+.style9 {
+	color: #FF0000;
+	font-size: 14px;
+}
+.style10 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style11 {font-family: Arial, Helvetica, sans-serif}
+.style12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+#apDiv1 {
+	position:absolute;
+	left:720px;
+	top:119px;
+	width:146px;
+	height:34px;
+	z-index:1;
+}
+.style13 {
+	color: #FF0000;
+	font-size: 16px;
+}
+.alterar {color: #0000FF;font-size: 16px;}
+.style14 {color: #0000FF;color:#000000;}
+.style15 {
+	font-size: 14px;
+	color:#000000;}
+.style16 {color: #000000}
+-->
+</style>
+</head>
+
+<body>
+
+<div id="Layer1" style="position:absolute; left:13px; top:147px; width:627px; height:29px; z-index:1">
+  <table width="630" border="1" cellpadding="0" cellspacing="0" bgcolor="#EFEFEF" class="borda-fina">
+    <tr>
+      <td width="124"><div align="center"><strong>EMPREGO</strong></div></td>
+      <td width="606"><div align="center" class="cinza"><strong><?php echo $row_imprime['nome_cargo']; ?></strong></div></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer2" style="position:absolute; left:12px; top:187px; width:630px; height:141px; z-index:2">
+  <table width="630" border="1" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="style2"><span class="style11 style15"><strong>&nbsp;Número de Inscri&ccedil;&atilde;o</strong></span></td>
+      <td class="txt12preto"><span class="style2 style9 style4"><strong>&nbsp;<?php echo $row_imprime['codInscricao']; ?></strong></span></td>
+    </tr>
+    <tr>
+      <td width="246" class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Nome</strong></span></span></td>
+      <td width="378" class="txt12preto"><span class="style15"> &nbsp;<?php echo $row_imprime['nome']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Endere&ccedil;o</strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['endereco']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;N&deg;</strong></span></span></td>
+      <td class="txt12preto style15">&nbsp;<?php echo $row_imprime['numero']; ?></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style15"><strong>&nbsp;Complemento</strong></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['complemento']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Cep</strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['cep']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Bairro</strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['bairro']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Cidade</strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['cidade']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;UF</strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['uf']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Telefone Contato </strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['telefone']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Tipo Contato </strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['tipoContato']; ?></span></td>
+    </tr>
+    <tr>
+        <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;CPF</strong></span></span></td>
+        <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['cpf']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;RG</strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['rg']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Data Nascimento </strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['dataNascimento']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;Sexo</strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['sexo']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="style15"><strong>&nbsp;N&deg;  filhos menores de 18 anos: </strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['numeroFilhosMenor18']; ?></span></td>
+    </tr>
+    <tr>
+      <td class="style2"><span class="style4 style11"><span class="dadosProcesso style15"><strong>&nbsp;Estado Civil </strong></span></span></td>
+      <td class="txt12preto"><span class="style15">&nbsp;<?php echo $row_imprime['estadoCivil']; ?></span></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer3" style="position:absolute; left:13px; top:497px; width:630px; height:128px; z-index:3">
+	<br />
+  <p class="style5 style16">O Candidato abaixo DECLARA, sob as penas da lei, QUE: </p>
+  <p align="justify" class="style5">Os dados informados neste formul&aacute;rio s&atilde;o verdadeiros; na hip&oacute;tese de ser contratado, far&aacute; prova das condi&ccedil;&otilde;es exigidas para o emprego a que concorre; est&aacute; ciente de que n&atilde;o tomar&aacute; posse do emprego se n&atilde;o provar habilita&ccedil;&atilde;o legal, independentemente da classifica&ccedil;&atilde;o obtida; est&aacute; ciente de que a inexatid&atilde;o ou irregularidade destas afirmativas, ainda que verificadas posteriormente, ocasionar&aacute; sua elimina&ccedil;&atilde;o do Processo Seletivo, com a anula&ccedil;&atilde;o de todos os atos praticados, sem preju&iacute;zo das demais medidas de ordem administrativa, civil ou criminal; tem pleno conhecimento das normas e m&eacute;todos do Processo Seletivo a que se submete. </p>
+</div>
+<div class="style2" id="Layer4" style="position:absolute; left:15px; top:692px; width:335px; height:23px; z-index:4">
+  
+</div>
+<div id="Layer7" style="position:absolute; left:5px; top:728px; width:630px; height:35px; z-index:7">
+  
+  <table width="649" border="0">
+    <tr>
+      <td><img src="../imagens/topo_ProcessoSeletivo_protocolo.jpg" width="630"></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer8" style="position:absolute; left:12px; top:863px; width:630px; height:103px; z-index:8">
+  <table width="630" border="1" cellpadding="0" cellspacing="0" class="borda-fina">
+    <tr>
+      <td width="103"><span class="style4 style16"><strong>&nbsp;N&deg; Inscri&ccedil;&atilde;o </strong></span></td>
+      <td width="269"><span class="style9">&nbsp;<strong><?php echo $row_imprime['codInscricao']; ?></strong></span></td>
+      <td width="327"><span class="style16 style4">&nbsp;<strong>Data/Hor&aacute;rio Inscri&ccedil;&atilde;o:</strong></span> <span class="style16"><?php echo $data->formataDataBR($row_imprime['data']) . " - " . $row_imprime['hora']; ?></span></td>
+    </tr>
+    <tr>
+      <td><span class="style16">&nbsp;<span class="style4"><strong>Nome</strong></span></span></td>
+      <td colspan="2"><span class="style8 style4">&nbsp;</span><span class="style4 style16"><?php echo $row_imprime['nome']; ?></span></td>
+    </tr>
+    <tr>
+      <td><span class="style4 style16">&nbsp;<strong>Emprego</strong></span></td>
+      <td colspan="2"><span class="style4">&nbsp;<span class="style16"><?php echo $row_imprime['nome_cargo']; ?></span></span></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="style5"><div align="center" class="style4">
+        <p align="justify">
+            <span class="style16">
+                A convocação para a <strong>Prova Escrita</strong>, bem como a data, horário e local de sua realização 
+                será informado através do site <strong>www.itapecerica.sp.gov.br</strong> até o dia <strong>14 de junho de 2010</strong>.
+            </span>
+        </p>
+      </div></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer9" style="position:absolute; left:12px; top:688px; width:630px; height:22px; z-index:9"><br /><p class="prot_linha"></p></div>
+<div class="topoMenu">
+    	<img src="../imagens/topo_ProcessoSeletivo_protocolo.jpg" width="634">
+</div>
+<p>&nbsp;</p>
+<div id="apDiv1">
+  <table width="149" border="0">
+    <tr>
+      <td><div align="center"><strong><a href="javascript: print();" class="style13">Imprimir Inscrição</a></strong></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong><a href="../cadastro/alt_candidato.php?codInscricao=<?=criptografa($row_imprime['codInscricao'])?>" class="alterar">Alterar Inscrição</a></strong></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong><a href="http://www.itapecerica.sp.gov.br/" class="style14">Voltar ao site</a></strong></div></td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+</html>
+<?php
+mysql_free_result($imprime);
+?>

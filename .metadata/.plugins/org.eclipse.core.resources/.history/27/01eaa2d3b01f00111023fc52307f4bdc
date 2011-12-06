@@ -1,0 +1,77 @@
+<? @include("../../../includes/cabecalho/_meta-css-js.php"); ?>
+
+<!-- Extensao do Menu acessibildiade (tela inteira) -->
+<div id="extensao_acessibilidade"></div>
+
+<!-- *********************** Início CONTAINER *********************** -->
+<div id="container">
+
+    
+    <!-- *********************** CABEÇALHO *********************** -->
+    <div id="logo">
+    	<? @include("../../../includes/cabecalho/_logo.php"); ?>
+    </div>
+    <!-- Fim LOGO -->
+        
+    <!-- Início Barra de MENU ACESSIBILIDADE (centro horizontal) -->
+    <div id="menu_acessibilidade">
+    	<? @include("../../../includes/cabecalho/_acessibilidade.php"); ?>
+    </div>
+    <!-- *********************** CABEÇALHO *********************** -->
+    <!-- mensagem caso o javaScript esteja desabilitado-->
+    <? @include("../../../paginas_erro/nao_javascript.php"); ?> 
+    
+    
+    <!-- *********************** ESQUERDA *********************** -->
+    <div id="menu_navegacao">
+    	<? @include("../../../includes/esquerda/_esquerda.php"); ?>      
+    </div>
+    <!-- *********************** Fim ESQUERDA *********************** -->
+    
+    
+    
+    <!-- ***********************  CENTRO *********************** -->
+    <div id="conteudo">    
+        <!-- Início Menu CEG -->
+        <div id="conteudo_ceg">
+        	<? @include("../../../includes/centro/_conteudo_ceg.php"); ?> 
+        </div>
+        <!-- Fim Menu CEG -->  
+        
+        <!-- Muda conteúdo central -->
+        	<? @include("visualiza-relacao_industrias.php"); ?> 
+        <!-- Fim Muda conteúdo central -->
+        
+        <!-- Início Menu do Conteúdo (inferior) -->
+        <div id="conteudo_menu">
+        	<? @include("../../../includes/centro/_menu_inferior.php"); ?> 
+        </div>
+        <!-- Fim Menu do Conteúdo (inferior) -->      
+    </div>
+    <!-- *********************** Fim CENTRO *********************** -->
+    
+    
+    
+    <!-- ***********************  DIREITA *********************** -->
+    <div id="menu_interativo">    
+    	<? @include("../../../includes/direita/_direita.php"); ?>     
+    </div>
+    <!-- Fim MENU INTERATIVO -->
+    
+    <!-- COPYRIGHT (rodapé) -->
+    <div id="copyright">
+    	<? @include("../../../includes/rodape/_rodape.php"); ?>
+    </div>
+    <!--  Fim do DIREITA -->
+
+
+
+</div>
+<!-- *********************** Fim da CONTAINER *********************** -->
+
+
+<!-- Extensao do RODAPÉ (tela inteira) -->
+<div id="extensao_copyright"></div>
+
+</body>
+</html>

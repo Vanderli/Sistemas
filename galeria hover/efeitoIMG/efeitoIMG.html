@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Galeria de Imagens</title>
+        <style type="text/css">
+			body{
+				margin:0px;
+				background-color:#000;
+				text-align:center;
+			}
+			.miniatura{
+				width:200px;
+				height:200px;
+				cursor:pointer;
+				border:2px solid #FFF;
+			}
+			#fundo{
+				position:absolute;
+				background:#000;
+				z-index:1;
+				top:0;
+				left:0;
+			}
+			#foto{
+				top:0;
+				left:0;
+				position:absolute;
+				z-index:2;
+				cursor:pointer;
+				border:5px solid #fff;
+			}
+			/**/
+        </style>
+        <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+        <script type="text/javascript" src="galeria.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$(".miniatura").galeria({
+					opacity: 0.3, // opacidade pra deixar a imagem escura
+					speed: 500, // velocidade de quando passar o mouse na imagem
+					sharpness: 1, // contraste de quando o mouse estiver sob imagem
+					bckspeed: 1000, // velocidade de fadeOut na imagem ampliada
+					bckopacity:1 // opacidade do div fundo
+				});
+			});
+		</script>
+        
+    </head>    
+    <body>
+    	<div id="galeria">
+            <img src="mar1.jpg" alt="Muitos Peixes" class="miniatura"/>
+            <img src="mar2.jpg" alt="Mar" class="miniatura"/>
+            <img src="mar3.jpg" alt="Peixes" class="miniatura"/>
+            <img src="mar4.jpg" alt="Corais" class="miniatura"/>
+    	</div>
+    </body>
+</html>

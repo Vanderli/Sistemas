@@ -1,0 +1,44 @@
+<?php 
+	/* conexão com banco de dados */
+	include("../../../conexao_db/conexaoTecnologia.php");
+	
+	// inicializo a sessão.
+	if (!isset($_SESSION)) { session_start(); }
+	
+	// informações do servidor e banco de dados
+	$usu_id       = $_SESSION['usu_id'];
+	$dat_cad      = date('Y/m/d');
+	$hora_cad     = date('G:i:s');
+	
+	$ben_sec_id   = $_POST['ben_sec_id'];
+	$ben_titulo   = trim($_POST['ben_titulo']);
+	$ben_desc     = trim($_POST['ben_desc']);	
+	$ben_status   = $_POST['ben_status'];	
+
+
+	$sql = "INSERT INTO beneficio_sec(	ben_usu_id,
+										ben_sec_id,
+										ben_data_cad,
+										ben_hora_cad,
+										ben_titulo,
+										ben_desc,
+										ben_status)
+						VALUES ('$usu_id', 
+								'$ben_sec_id', 
+								'$dat_cad', 
+								'$hora_cad', 
+								'$ben_titulo', 
+								'$ben_desc', 
+								'$ben_status');";			
+
+	//print_r($sql);exit;
+	$result = mysql_query($sql) or die($msg[2]);
+
+	if($result){
+		echo "<script>alert('Dados inseridos com sucesso')</script>";
+		echo "<script>location.href='listar_beneficio_sec.php'</script>";
+	}
+	
+	// Libera um resultado da memória
+	mysql_free_result($result);
+?>

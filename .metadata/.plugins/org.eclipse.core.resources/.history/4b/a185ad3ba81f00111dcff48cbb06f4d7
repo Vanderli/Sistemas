@@ -1,0 +1,1097 @@
+<?php 
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>..:: Ajuda Ferramentas - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--estilos-->
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css"/>
+</head>
+<body onLoad="vertical();horizontal();" >
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+	<div class="cont_geral">
+        <!--################################ TEXTO 1 ######################################-->
+        <div class="text">
+        	<p>
+        		Para alterar sua senha de acesso ao sistema, basta passar o mouse sobre a aba 
+            Ferramentas e </p>
+        	<p>depois clicar em Alterar Senha. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image001.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 2 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar na aba Ferramentas / Alterar Senha, será mostrado uma tela 
+            onde você digitará </p>
+            <p>sua senha atual, abaixo sua nova senha, logo ap&oacute;s digite 
+            novamente sua nova senha para </p>
+            <p>confirmar se não digitou errado.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image002.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 3 ######################################-->
+        <div class="text">
+            <p>
+                Após preencher o campo da sua senha atual e os dois campos da sua nova senha, 
+            se atente a </p>
+            <p>digitar a nova senha corretamente, se você digitar a confirmação da senha </p>
+            <p>diferente da nova senha, ele irá exibir uma mensagem </p>
+            <p>dizendo que as senhas estão diferentes.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image003.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 4 ######################################-->
+        <div class="text">
+            <p>
+            	Caso você digite a nova senha igual a senha atual ele mostrará uma mensagem.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image004.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 5 ######################################-->
+        <div class="text">
+            <p>
+           	Depois de digitar a confirmação da senha igual à nova senha escolhida </p>
+            <p>e diferente 
+                da senha atual basta clicar no botão Alterar.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image005.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 6 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Alterar será exibida a confirmação da sua senha alterada com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                <img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 7 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 8 ######################################-->
+        <div class="text">
+            <p>
+            	E a tela será redirecionada para a página inicial do sistema.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image008.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 9 ######################################-->
+        <div class="text">
+            <p>
+            	Para cadastrar um destino externo / secretaria basta clicar na aba Destino Externo,            </p>
+            <p>Cadastrar e depois em Secretaria. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image009.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 10 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar na aba Destino Externo / Cadastrar / Secretaria será apresentado a 
+            seguinte </p>
+            <p>tela onde você irá preencher a Sigla, Descrição e o Status do Destino Externo.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image010.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 11 ######################################-->
+        <div class="text">
+            <p>
+            	Após preencher os campos corretamente basta clicar no botão Cadastrar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image011.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 12 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Cadastrar será exibida a confirmação dos Dados Cadastrados com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image012.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 13 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image013.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 14 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Secretarias / Órgãos.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image014.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 15 ######################################-->
+        <div class="text">
+            <p>
+           	Para listar as Secretarias / Órgãos basta clicar na aba Destino Externo,</p>
+            <p> Listar e depois em Secretarias </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image015.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 16 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar em Destino Externo / Listar / Secretarias será exibida a tela de            </p>
+            <p>Listagem de Secretarias / Órgãos. </p>
+            <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />
+            Caso queira visualizar os dados cadastrados basta 
+              clicar no link Visualizar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image016.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 17 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar em Visualizar, será exibida uma tela contendo os dados da 
+            Secretaria / Órgão</p>
+            <p> cadastrados. Caso queira retornar a listagem basta clicar no botão Voltar.
+            </p>
+      </div>
+        <div class="image">
+        	<p>
+        		<img src="../imagens/help_img_fer/image017.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 18 ######################################-->
+        <div class="text">
+            <p>
+            	Caso queira editar alguma informação cadastrada basta clicar no link Editar.       
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image019.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 19 ######################################-->
+        <div class="text">
+            <p>
+            	<img src="../imagens/help_img_doc/visto.jpg" alt="visto" />
+           	Após clicar no link Editar será exibida uma tela onde você poderá fazer </p>
+            <p>as 
+            alterações nos campos.</p>
+          <p>&nbsp;</p>
+            <p> Após feita a alteração clique no botão Alterar. </p>
+      </div>
+        <div class="image">
+            <p><img src="../imagens/help_img_fer/image018.jpg" alt="Consultas" /></p>
+    </div><!--################################ TEXTO 20 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Alterar, será exibida uma mensagem de Dados alterados com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 21 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 22 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Secretarias / Órgãos
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image019.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 23 ######################################-->
+        <div class="text">
+            <p>
+            	Para cadastrar um destino externo / departamento basta clicar na aba Destino Externo,            </p>
+            <p>Cadastrar e depois em Departamento. </p>
+      </div>
+        <div class="image">
+        <p>
+        <img src="../imagens/help_img_fer/image020.jpg" alt="Consultas" />
+        </p>
+        </div>
+        <!--################################ TEXTO 24 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar na aba Destino Externo / Cadastrar / Departamento será apresentado 
+            a seguinte </p>
+            <p>tela onde você irá preencher a Secretaria / Órgão, Sigla, </p>
+            <p>Descrição e o 
+                Status do Destino Externo.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image021.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 25 ######################################-->
+        <div class="text">
+            <p>
+            	Após preencher os campos corretamente basta clicar no botão Cadastrar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image022.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 26 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Cadastrar será exibida a confirmação dos Dados Cadastrados com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image012.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 27 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image013.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 28 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Departamento / Órgãos.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image023.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 29 ######################################-->
+        <div class="text">
+            <p>
+           	Para listar os Departamentos / Órgãos basta clicar na aba Destino Externo, </p>
+            <p>Listar e 
+              depois em Departamento. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image024.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 30 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar em Destino Externo / Listar / Departamento será exibida a tela de 
+            Listagem de</p>
+            <p> Departamentos / Órgãos. Caso queira visualizar os dados cadastrados            </p>
+            <p>basta clicar no link Visualizar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image025.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 31 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar em Visualizar, será exibida uma tela contendo os dados da            </p>
+            <p>Secretaria / Órgão cadastrados. </p>
+            <p>&nbsp;</p>
+          <p>
+          <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />
+          Caso queira retornar a listagem basta clicar no botão Voltar.            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image026.jpg" alt="Consultas" />
+            </p>
+        </div><!--################################ TEXTO 32 ######################################-->
+        <div class="text">
+            <p>
+            	Caso queira editar alguma informação cadastrada basta clicar no link Editar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image027.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 33 ######################################-->
+        <div class="text">
+            <p>
+            Após clicar no link Editar será exibida uma tela onde você poderá fazer as </p>
+            <p>alterações nos campos.</p>
+          <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Feita a alteração clique no botão Alterar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image028.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 34 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Alterar, será exibida uma mensagem de Dados alterados com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div><!--################################ TEXTO 35 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 36 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Departamentos / Órgãos.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image029.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 37 ######################################-->
+        <div class="text">
+            <p>
+            	Para cadastrar um destino interno basta clicar na aba Destino Interno e depois em Cadastrar.
+            </p>
+        </div>
+        <div class="image">
+        <p><img src="../imagens/help_img_fer/image030.jpg" alt="Consultas" /></p>
+        </div>
+        <!--################################ TEXTO 38 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar na aba Destino Interno / Cadastrar será apresentado a seguinte 
+            tela onde você </p>
+            <p>irá preencher o Nome do Servidor e o Status do Destino Interno.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image031.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 39 ######################################-->
+        <div class="text">
+            <p>
+            	Após preencher os campos corretamente basta clicar no botão Cadastrar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image032.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 40 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Cadastrar será exibida a confirmação dos Dados Cadastrados com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 41 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 42 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Destinos Internos.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image033.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 43 ######################################-->
+        <div class="text">
+            <p>
+            	Para listar um destino interno basta clicar na aba Destino Interno e depois em Listar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image034.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 44 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar em Destino Interno / Listar será exibida a tela de Listagem de 
+            Destinos Internos.</p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso queira visualizar os dados cadastrados basta clicar no link Visualizar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image035.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 45 ######################################-->
+        <div class="text">
+            <p>
+            Após clicar em Visualizar, será exibida uma tela contendo os dados do</p>
+            <p>Destino 
+              Interno cadastrado. </p>
+          <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso queira retornar a listagem basta clicar no botão Voltar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image036.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 46 ######################################-->
+        <div class="text">
+            <p>
+            	Caso queira editar alguma informação cadastrada basta clicar no link Editar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image037.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 47 ######################################-->
+        <div class="text">
+            <p>
+           	Após clicar no link Editar será exibida uma tela onde você poderá fazer as</p>
+            <p> alterações nos campos. </p>
+          <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Após feita a alteração clique no botão Alterar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image038.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 48 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Alterar, será exibida uma mensagem de Dados alterados com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 49 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 50 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Departamentos / Órgãos.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image033.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 51 ######################################-->
+        <div class="text">
+            <p>
+           	Para cadastrar um tipo de documento basta clicar na aba Tipo de Documento e </p>
+            <p>depois em Cadastrar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image039.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 52 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar na aba Tipo de Documento / Cadastrar será apresentado a seguinte 
+            tela onde </p>
+            <p>você irá preencher o Nome e o Status do Tipo de Documento.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image040.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 53 ######################################-->
+        <div class="text">
+            <p>
+            	Após preencher os campos corretamente basta clicar no botão Cadastrar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image041.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 54 ######################################-->
+        <div class="text">
+            <p>
+           	Após clicar no botão Cadastrar será exibida a confirmação dos Dados </p>
+            <p>Cadastrados com sucesso. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image012.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 55 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+           		<img src="../imagens/help_img_fer/image013.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 56 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Tipos de Documentos.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image042.jpg" alt="Consultas" />
+            </p>
+        </div>        
+        <!--################################ TEXTO 57 ######################################-->
+        <div class="text">
+            <p>
+           	Para listar um tipo de documento basta clicar na aba Tipo de Documento </p>
+            <p>e depois em Listar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image043.jpg" alt="Consultas" />
+            </p>
+        </div>       
+        <!--################################ TEXTO 57 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar em Tipos de Documentos / Listar será exibida a tela de Listagem de   
+            </p>
+            <p>Tipos de Documentos.            
+            </p>
+          <p>&nbsp;           	</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso  queira visualizar os dados cadastrados basta clicar no link Visualizar.            </p>
+      </div>
+        <div class="image">
+        	<p>
+            	<img src="../imagens/help_img_fer/image042.jpg" alt="Consultas" />            
+            </p>
+        </div>
+        <!--################################ TEXTO 58 ######################################-->
+        <div class="text">
+            <p>
+            Após clicar em Visualizar, será exibida uma tela contendo os dados </p>
+            <p>do Tipos de 
+                Documentos cadastrado.            </p>
+            <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso queira retornar a listagem basta clicar no botão Voltar. </p>
+      </div>
+        <div class="image">
+        	<p><img src="../imagens/help_img_fer/image044.jpg" alt="Consultas" /></p>
+        </div>
+        <!--################################ TEXTO 59 ######################################-->
+        <div class="text">
+            <p>
+            	Caso queira editar alguma informação cadastrada basta clicar no link Editar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image045.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 60 ######################################-->
+        <div class="text">
+            <p>
+           	Após clicar no link Editar será exibida uma tela onde você poderá fazer as alterações nos campos. </p>
+            <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Após feita a alteração clique no botão Alterar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image046.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 61 ######################################-->
+        <div class="text">
+            <p>Ap&oacute;s clicar no bot&atilde;o Alterar, ser&aacute; exibida uma mensagem de Dados alterados com sucesso</p>
+      </div>
+  <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 62 ######################################-->
+        <div class="text">
+            <p>Caso tenha ocorrido alguma falha ser&aacute; exibido a mensagem</p>
+      </div>
+  <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 63 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Tipos de Documentos.            
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image042.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 64 ######################################-->
+        <div class="text">
+            <p>
+            	Para cadastrar um recebido basta clicar na aba Recebido e depois em Cadastrar.        
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image047.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 65 ######################################-->
+        <div class="text">
+            <p>        
+            Após clicar na aba Recebido / Cadastrar será apresentado a seguinte tela onde </p>
+            <p>você 
+                irá preencher o Nome do Servidor e o Status do Recebido.        
+            </p>
+      </div>
+        <div class="image">
+        	<p><img src="../imagens/help_img_fer/image048.jpg" alt="Consultas" /></p>
+        </div>
+        <!--################################ TEXTO 66 ######################################-->
+        <div class="text">
+            <p>
+            	Após preencher os campos corretamente basta clicar no botão Cadastrar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image049.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 67 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Cadastrar, será exibida uma mensagem de Dados Cadastrados          </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image012.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 68 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image013.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 69 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem dos Servidores 
+                que podem Receber Documentos.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image050.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 70 ######################################-->
+        <div class="text">
+            <p>
+            	Para listar um Recebido basta clicar na aba Recebido e depois em Listar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image051.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 71 ######################################-->
+        <div class="text">
+            <p>
+       	  Após clicar em Recebido / Listar será exibida a tela de Listagem dos Servidores </p>
+            <p>que podem Receber Documentos. </p>
+             <p>&nbsp;</p>
+            <p>
+            <img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> 
+            Caso queira visualizar os dados cadastrados basta clicar no link Visualizar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image052.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 72 ######################################-->
+        <div class="text">
+            <p>
+            Após clicar em Visualizar, será exibida uma tela contendo os dados do Recebido cadastrado.</p>
+            <p>&nbsp;</p>
+            <p>
+            <img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> 
+            Caso queira retornar a listagem basta clicar no botão Voltar. </p>
+      </div>
+        <div class="image">
+        	<p><img src="../imagens/help_img_fer/image053.jpg" alt="Consultas" /></p>
+        </div>
+        <!--################################ TEXTO 73 ######################################-->
+        <div class="text">
+            <p>
+            	Caso queira editar alguma informação cadastrada basta clicar no link Editar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image054.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 74 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no link Editar será exibida uma tela onde você poderá fazer as 
+            alterações nos campos.</p>
+            <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> Após feita a alteração clique no botão Alterar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image055.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 75 ######################################-->
+        <div class="text">
+            <p>Ap&oacute;s clicar no bot&atilde;o Alterar, ser&aacute; exibida uma mensagem de Dados alterados com sucesso</p>
+      </div>
+  <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 76 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem 
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 77 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Servidores que            </p>
+            <p>podem Receber Documentos </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image050.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 78 ######################################-->
+        <div class="text">
+            <p>
+            	Para cadastrar um login e senha basta clicar na aba Login e Senha e depois em Cadastrar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image056.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 79 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar na aba Login e Senha / Cadastrar será apresentado a seguinte tela 
+                onde você irá preencher o Nome, Login, Senha, Módulo e o Status.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image057.jpg" alt="Consultas" />
+            </p>
+        </div> <!--################################ TEXTO 80 ######################################-->
+        <div class="text">
+            <p>
+            	No campo "senha" basta clicar no botão "gerar senha" logo após copie e cole em um 
+                lugar seguro, pois é essa senha que você irá entregar ao servidor.			</p>
+            <p>&nbsp;</p>
+            <p>Após preencher os campos corretamente basta clicar no botão Cadastrar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image058.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 81 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Cadastrar será exibida a confirmação dos Dados Cadastrados com sucesso.
+            </p>
+        </div>
+        <div class="image">
+        	<p><img src="../imagens/help_img_fer/image012.jpg" alt="Consultas" /></p>
+        </div>
+        <!--################################ TEXTO 82 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem 
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image013.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 83 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Login.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image059.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 84 ######################################-->
+        <div class="text">
+            <p>
+            	Para listar Login e Senha basta clicar na aba Login e Senha e depois em Listar.
+            </p>
+        </div>
+        <div class="image">
+        	<p><img src="../imagens/help_img_fer/image060.jpg" alt="Consultas" /></p>
+        </div>
+        <!--################################ TEXTO 85 ######################################-->
+        <div class="text">
+            <p>
+            Após clicar em Login e Senha / Listar será exibida a tela de Listagem de Logins.</p>
+            <p>&nbsp;</p>
+            <p>
+            	<img src="../imagens/help_img_tra/visto.jpg" alt="visto" /> 
+                Caso queira visualizar os dados cadastrados basta clicar no link Visualizar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image061.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 86 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar em Visualizar, será exibida uma tela contendo os dados do Login cadastrado.            </p>
+            <p>&nbsp;</p>
+            <p>Caso queira retornar a listagem basta clicar no botão Voltar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image062.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 87 ######################################-->
+        <div class="text">
+            <p>
+            	Caso queira editar alguma informação cadastrada basta clicar no link Editar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image063.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 88 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar no link Editar será exibida uma tela onde você poderá fazer as </p>
+            <p>alterações nos campos.            </p>
+          <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="visto" />Após feita a alteração clique no botão Alterar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image064.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 89 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Alterar, será exibida uma mensagem de Dados alterados com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 90 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 91 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no Ok, será redirecionado para a tela de Listagem de Login.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image059.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 92 ######################################-->
+        <div class="text">
+            <p>
+            Por motivos de segurança todas as senhas expiram em 30 dias </p>
+            <p>caso não exista nenhuma alteração na mesma.            </p>
+            <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="visto" />Caso a senha tenha expirado irá aparecer a seguinte tela </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image065.jpg" alt="Consultas" />
+            </p>
+        </div>
+</div> <!--DIV cont_geral-->
+</body>
+</html>

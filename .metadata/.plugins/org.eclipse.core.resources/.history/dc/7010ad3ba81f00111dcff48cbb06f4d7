@@ -1,0 +1,120 @@
+<?php 
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>..:: Ajuda Consultas - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--estilos-->
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css"/>
+</head>
+<body onLoad="vertical();horizontal();">
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+	<div class="cont_geral">
+        <!--################################ TEXTO 1 ######################################-->
+        <div class="text">
+            <p>
+            	Para consultar um Documento, basta passar o mouse na aba Consultas e depois clicar em Geral.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_con/image001.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 2 ######################################-->
+        <div class="text">
+            <p>
+            	<img src="../imagens/help_img_doc/visto.jpg" alt="visto" />
+                 Após clicar na aba Consultas / Geral, abrirá uma tela onde você pesquisará um            </p>
+            <p>documento já cadastrado.</p>
+          <p>&nbsp;</p>
+            
+            <p> 
+            	<img src="../imagens/help_img_doc/visto.jpg" alt="visto" />
+            	Nessa tela você terá algumas opções de pesquisas tais como: </p>
+            <p>Nome, Nº Doc., Assunto, 
+                Tipo do Documento, Data. </p>
+          <p>&nbsp;</p>
+            <p>Após escolher o tipo de pesquisa, basta digitar no </p>
+            <p>campo 
+            "Digite a consulta" o valor referente à</p>
+            <p> pesquisa e clicar no botão Consultar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_con/image002.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 3 ######################################-->
+        <div class="text">
+            <p>
+                Nesse caso escolhemos a opção de pesquisa Nome e no campo            
+            "Digite a Consulta"</p>
+            <p> digitamos o nome Antonio e basta clicar no botão Consultar.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            <img src="../imagens/help_img_con/image003.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 4 ######################################-->
+        <div class="text">
+            <p>
+           	Caso não exista nenhum documento cadastrado com o nome Antonio será exibida</p>
+            <p> a seguinte mensagem </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_con/image004.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 5 ######################################-->
+        <div class="text">
+            <p>
+            	Agora vamos escolher a opção de pesquisa Nome e no campo "Digite a Consulta"            </p>
+            <p>digitamos o nome Carlos da Silva e clicar no botão Consultar.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_con/image005.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 6 ######################################-->
+        <div class="text">
+            <p>       
+            Após clicar no botão Consultar será exibida uma listagem dos documentos que possuem o </p>
+            <p>nome Carlos da Silva.            </p>
+            <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="visto" />Depois de escolher qual documento você quer consultar clique em Visualizar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_con/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 7 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar em Visualizar, será exibida uma tela contendo o detalhamento do                </p>
+            <p>documento na parte superior, e na parte inferior</p>
+            <p> será exibido um histórico dos trâmites.</p>
+          <p>&nbsp;</p>
+            <p>Nessa tela você pode acompanhar todos os trâmites pertencentes ao Documento e saber </p>
+            <p>por onde o mesmo percorreu. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_con/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+    </div> <!--DIV cont_geral-->
+</body>
+</html>

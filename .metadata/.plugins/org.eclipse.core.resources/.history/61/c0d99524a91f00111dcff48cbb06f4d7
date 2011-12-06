@@ -1,0 +1,21 @@
+<div id="tel_util">
+
+  <h3>Telefones Úteis</h3>
+  
+  <div id="cont_tel_util">
+    <h4>Sabesp</h4>
+    
+    <ul>
+      <li id="util_endereco">
+        <p>Rua São Paulo - Centro</p>
+      </li>
+      <li id="util_tel">
+        <p>(11) 4666 7188</p>
+      </li>
+      <li id="util_site">
+        <a href="http://www.sabesp.com.br" target="_blank" title="Sabesp">www.sabesp.com.br</a>
+      </li>
+    </ul>
+  </div>
+
+</div>

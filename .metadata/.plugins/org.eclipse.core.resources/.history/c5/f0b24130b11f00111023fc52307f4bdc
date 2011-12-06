@@ -1,0 +1,40 @@
+<div id="servico_online">
+  
+  <h3>Certidão para Compra de Veículo – Isenção ICMS para TAXI</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Isenção de Imposto sobre Circulação de Mercadorias e Serviços na compra de veículo para TAXI</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+        	- Requerimento com qualificação e endereço completo<br />
+       </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+        	Taxa de protocolo 0,44 UFM/UFESP<br />
+        	Taxa de certidão 1,11 UFM/UFESP
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Departamento de Receita<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	AV. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../cidadao.php';" />
+  </div>
+</div>

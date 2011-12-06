@@ -1,0 +1,10 @@
+<?php
+# FileName="Connection_php_mysql.htm"
+# Type="MYSQL"
+# HTTP="true"
+$hostname_portal = "127.0.0.1";
+$database_portal = "Itapecerica";
+$username_portal = "itapmytecdesen";
+$password_portal = "$(tec)%671@ti";
+$portal = mysql_connect($hostname_portal, $username_portal, $password_portal) or trigger_error(mysql_error(),E_USER_ERROR); 
+?>

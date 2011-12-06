@@ -1,0 +1,120 @@
+<?php 
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>..:: Ajuda Ferramentas - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--estilos-->
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css"/>
+</head>
+<body onLoad="vertical();horizontal();" >
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+	<div class="cont_geral">
+        <!--################################ TEXTO 1 ######################################-->
+        <div class="text">
+        	<p>
+        		Para alterar sua senha de acesso ao sistema, basta passar o mouse sobre a aba 
+            Ferramentas e </p>
+        	<p>depois clicar em Alterar Senha. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image001.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 2 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar na aba Ferramentas / Alterar Senha, será mostrado uma tela 
+            onde você digitará </p>
+            <p>sua senha atual, abaixo sua nova senha, logo ap&oacute;s digite 
+            novamente sua nova senha para </p>
+            <p>confirmar se não digitou errado.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image002.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 3 ######################################-->
+        <div class="text">
+            <p>
+                Após preencher o campo da sua senha atual e os dois campos da sua nova senha, 
+            se atente a </p>
+            <p>digitar a nova senha corretamente, se você digitar a confirmação da senha </p>
+            <p>diferente da nova senha, ele irá exibir uma mensagem </p>
+            <p>dizendo que as senhas estão diferentes.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image003.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 4 ######################################-->
+        <div class="text">
+            <p>
+            	Caso você digite a nova senha igual a senha atual ele mostrará uma mensagem.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image004.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 5 ######################################-->
+        <div class="text">
+            <p>
+           	Depois de digitar a confirmação da senha igual à nova senha escolhida </p>
+            <p>e diferente 
+                da senha atual basta clicar no botão Alterar.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image005.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 6 ######################################-->
+        <div class="text">
+            <p>
+            	Após clicar no botão Alterar será exibida a confirmação da sua senha alterada com sucesso.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                <img src="../imagens/help_img_fer/image006.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 7 ######################################-->
+        <div class="text">
+            <p>
+            	Caso tenha ocorrido alguma falha será exibido a mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image007.jpg" alt="Consultas" />
+            </p>
+        </div>
+        <!--################################ TEXTO 8 ######################################-->
+        <div class="text">
+            <p>
+            	E a tela será redirecionada para a página inicial do sistema.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_fer/image008.jpg" alt="Consultas" />
+            </p>
+        </div>
+    </div> <!--DIV cont_geral-->
+</body>
+</html>

@@ -1,0 +1,918 @@
+<div id="cont_lista_arvore">
+
+  <h3>Lei de Responsabilidade Fiscal</h3>
+  
+  <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+  <!-- 2010 -->  
+  <div class="la_container">
+    
+    <h4>Ano de 2010</h4>
+    <h5>Relatórios Bimestrais</h5>
+  
+    <ul>
+      <div class="la_colunas"> 
+      
+        <li class="la_coluna_tit2">   
+          <a title="1º Bimestre" class="btn_esconde_la">1º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2010/1bimestre/1bimestre_2010_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/1bimestre/1bimestre_2010_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/1bimestre/1bimestre_2010_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/1bimestre/1bimestre_2010_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/1bimestre/1bimestre_2010_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/1bimestre/1bimestre_2010_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/1bimestre/1bimestre_2010_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+         
+        <li class="la_coluna_tit2">   
+          <a title="2º Bimestre" class="btn_esconde_la">2º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2010/2bimestre/2bimestre_2010_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/2bimestre/2bimestre_2010_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/2bimestre/2bimestre_2010_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/2bimestre/2bimestre_2010_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/2bimestre/2bimestre_2010_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/2bimestre/2bimestre_2010_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/2bimestre/2bimestre_2010_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+
+      </div>
+      <!--
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="3º Bimestre" class="btn_esconde_la">3º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="4º Bimestre" class="btn_esconde_la">4º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+      </div>
+      
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="5º Bimestre" class="btn_esconde_la">5º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="6º Bimestre" class="btn_esconde_la">6º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+           		<a href="arquivos/2009/6bimestre/6bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Dem_Rec_Operacoes_Credito_Desp_Capital.pdf" target="_blank">Receitas de Operações de Crédito e Despesas de Capital </a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Demonstrativo_da_Alienacao_de_Ativos.pdf" target="_blank">Demonstrativo da Alienação de Ativos</a>
+            </li>
+            
+          </ul>
+        </li>
+      
+      </div>
+ -->     
+      <h5>Relatórios Quadrimestrais</h5>
+      
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="1º Quadrimestre" class="btn_esconde_la">1º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2010/1quadrimestre/1quadrimestre_2010_DESPESA_PESSOAL.pdf" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2010/1quadrimestre/1quadrimestre_2010_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>	
+            
+          </ul>
+        </li>
+	<!--        
+        <li class="la_coluna_tit2">   
+          <a title="2º Quadrimestre" class="btn_esconde_la">2º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/2quadrimestre/2quadrimestre_2009_DESPESA_PESSOAL.pdf" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2quadrimestre/2quadrimestre_2009_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+      </div>
+        
+      <div class="la_colunas"> 
+        
+         <li class="la_coluna_tit2">   
+          <a title="3º Quadrimestre" class="btn_esconde_la">3º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DESPESA_PESSOAL.pdf" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_Demonstrativo_Operacoes_Credito.pdf" target="_blank">Operação de Crédito e A.R.O.</a>
+            </li>
+            
+            <li class="noticia">
+           		<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DISPONIBILIDADE_CAIXA.pdf" target="_blank">Demonstrativo da Disponibilidade de Caixa</a>
+            </li>
+            
+          </ul>
+        </li>
+      
+      </div>
+      -->
+    </ul>
+  </div>
+  
+  <!-- 2009 -->  
+  <div class="la_container">
+    
+    <h4>Ano de 2009</h4>
+    <h5>Relatórios Bimestrais</h5>
+  
+    <ul>
+      <div class="la_colunas"> 
+      
+        <li class="la_coluna_tit2">   
+          <a title="1º Bimestre" class="btn_esconde_la">1º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="2º Bimestre" class="btn_esconde_la">2º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+           		<a href="arquivos/2009/2bimestre/2bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+      </div>
+      
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="3º Bimestre" class="btn_esconde_la">3º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="4º Bimestre" class="btn_esconde_la">4º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+      </div>
+      
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="5º Bimestre" class="btn_esconde_la">5º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="6º Bimestre" class="btn_esconde_la">6º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Balanco_Orcamentario.pdf" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Despesas_Funcao_Subfuncao.pdf" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+           		<a href="arquivos/2009/6bimestre/6bimestre_2009_RCL.pdf" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Receita_Despesa_Previdenciaria.pdf" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Resultado_primario.pdf" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Resultado_nominal.pdf" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Restos_Pagar.pdf" target="_blank">Restos a Pagar</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Dem_Rec_Operacoes_Credito_Desp_Capital.pdf" target="_blank">Receitas de Operações de Crédito e Despesas de Capital </a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Demonstrativo_da_Alienacao_de_Ativos.pdf" target="_blank">Demonstrativo da Alienação de Ativos</a>
+            </li>
+            
+          </ul>
+        </li>
+      
+      </div>
+      
+      <h5>Relatórios Quadrimestrais</h5>
+      
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="1º Quadrimestre" class="btn_esconde_la">1º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/1quadrimestre/1quadrimestre_2009_DESPESA_PESSOAL.pdf" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1quadrimestre/1quadrimestre_2009_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>	
+            
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="2º Quadrimestre" class="btn_esconde_la">2º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/2quadrimestre/2quadrimestre_2009_DESPESA_PESSOAL.pdf" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2quadrimestre/2quadrimestre_2009_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+      </div>
+        
+      <div class="la_colunas"> 
+        
+         <li class="la_coluna_tit2">   
+          <a title="3º Quadrimestre" class="btn_esconde_la">3º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DESPESA_PESSOAL.pdf" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_Demonstrativo_Operacoes_Credito.pdf" target="_blank">Operação de Crédito e A.R.O.</a>
+            </li>
+            
+            <li class="noticia">
+           		<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DISPONIBILIDADE_CAIXA.pdf" target="_blank">Demonstrativo da Disponibilidade de Caixa</a>
+            </li>
+            
+          </ul>
+        </li>
+      
+      </div>
+      
+    </ul>
+  </div>
+
+  <!-- 2008 -->
+  <div class="la_container">
+    
+    <h4>Ano de 2008</h4>
+    <h5>Relatórios Bimestrais</h5>
+  
+    <ul>
+      <div class="la_colunas"> 
+      
+        <li class="la_coluna_tit2">   
+          <a title="1º Bimestre" class="btn_esconde_la">1º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Balanco_Orcamentario.pdf" title="Balanço Orçamentário" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Despesas_Funcao_Subfuncao.pdf" title="Despesa por Função" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_RCL.pdf" title="Receita Corrente Líquida" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Receita_Despesa_Previdenciaria.pdf" title="Receita e Despesa Previdenciária" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Resultado_primario.pdf" title=">Resultado Primário" target="_blank">Resultado Primário</a>
+            </li>
+            						
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Resultado_nominal.pdf" title="Resultado Nominal" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1bimestre/1bimestre_2009_Restos_Pagar.pdf" title="Restos a Pagar" target="_blank">Restos a Pagar</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="2º Bimestre" class="btn_esconde_la">2º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Balanco_Orcamentario.pdf" title="Balanço Orçamentário" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Despesas_Funcao_Subfuncao.pdf" title="Despesa por Função" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_RCL.pdf" title="Receita Corrente Líquida" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Receita_Despesa_Previdenciaria.pdf" title="Receita e Despesa Previdenciária" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Resultado_primario.pdf" title="Resultado Primário" target="_blank">Resultado Primário</a>
+            </li>
+            						
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Resultado_nominal.pdf" title="Resultado Nominal" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2bimestre/2bimestre_2009_Restos_Pagar.pdf" title="Restos a Pagar" target="_blank">Restos a Pagar</a>
+            </li>	
+          </ul>
+          
+        </li>
+        
+      </div>
+      
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="3º Bimestre" class="btn_esconde_la">3º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Balanco_Orcamentario.pdf" title="Balanço Orçamentário" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Despesas_Funcao_Subfuncao.pdf" title="Despesa por Função" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_RCL.pdf" title="Receita Corrente Líquida" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Receita_Despesa_Previdenciaria.pdf" title="Receita e Despesa Previdenciária" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Resultado_primario.pdf" title="Resultado Primário" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Resultado_nominal.pdf" title="Resultado Nominal" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3bimestre/3bimestre_2009_Restos_Pagar.pdf" title="Restos a Pagar" target="_blank">Restos a Pagar</a>
+            </li>
+          
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="4º Bimestre" class="btn_esconde_la">4º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Balanco_Orcamentario.pdf" title="Balanço Orçamentário" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Despesas_Funcao_Subfuncao.pdf" title="Despesa por Função" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_RCL.pdf" title="Receita Corrente Líquida" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Receita_Despesa_Previdenciaria.pdf" title="Receita e Despesa Previdenciária" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Resultado_primario.pdf" title="Resultado Primário<" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Resultado_nominal.pdf" title="Resultado Nominal" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/4bimestre/4bimestre_2009_Restos_Pagar.pdf" title="Restos a Pagar" target="_blank">Restos a Pagar</a>
+            </li>
+          
+          </ul>
+        </li>
+        
+      </div>
+      
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="5º Bimestre" class="btn_esconde_la">5º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Balanco_Orcamentario.pdf" title="Balanço Orçamentário" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Despesas_Funcao_Subfuncao.pdf" title="Despesa por Função" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_RCL.pdf" title="Receita Corrente Líquida" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Receita_Despesa_Previdenciaria.pdf" title="Receita e Despesa Previdenciária" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Resultado_primario.pdf" title="Resultado Primário" target="_blank">Resultado Primário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Resultado_nominal.pdf" title="Resultado Nominal" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/5bimestre/5bimestre_2009_Restos_Pagar.pdf" title="Restos a Pagar" target="_blank">Restos a Pagar</a>
+            </li>
+          
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="6º Bimestre" class="btn_esconde_la">6º Bimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Balanco_Orcamentario.pdf" title="Balanço Orçamentário" target="_blank">Balanço Orçamentário</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Despesas_Funcao_Subfuncao.pdf" title="" target="_blank">Despesa por Função</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_RCL.pdf" title="Despesa por Função" target="_blank">Receita Corrente Líquida</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Receita_Despesa_Previdenciaria.pdf" title="Receita e Despesa Previdenciária" target="_blank">Receita e Despesa Previdenciária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Resultado_primario.pdf" title="Resultado Primário" target="_blank">Resultado Primário</a >
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Resultado_nominal.pdf" title="Resultado Nominal" target="_blank">Resultado Nominal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Restos_Pagar.pdf" title="Restos a Pagar" target="_blank">Restos a Pagar</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Dem_Rec_Operacoes_Credito_Desp_Capital.pdf" title="Receitas de Operações de Crédito e Despesas de Capital" target="_blank">Operações de Cdto. e Desp. de Capital</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/6bimestre/6bimestre_2009_Demonstrativo_da_Alienacao_de_Ativos.pdf" title="Demonstrativo da Alienação de Ativos" target="_blank">Demonstrativo da Alienação de Ativos</a>
+            </li>
+          
+          </ul>
+        </li>
+      
+      </div>
+      
+      <h5>Relatórios Quadrimestrais</h5>
+      
+      <div class="la_colunas"> 
+        
+        <li class="la_coluna_tit2">   
+          <a title="1º Quadrimestre" class="btn_esconde_la">1º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/1quadrimestre/1quadrimestre_2009_DESPESA_PESSOAL.pdf" title="Despesa Total com Pessoal" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/1quadrimestre/1quadrimestre_2009_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" title="Dívida Consolidada e Mobiliária" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>
+          
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="2º Quadrimestre" class="btn_esconde_la">2º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/2quadrimestre/2quadrimestre_2009_DESPESA_PESSOAL.pdf" title="Despesa Total com Pessoal" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/2quadrimestre/2quadrimestre_2009_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" title="Dívida Consolidada e Mobiliária" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>
+          
+          </ul>
+        </li>
+        
+      </div>
+        
+      <div class="la_colunas"> 
+        
+         <li class="la_coluna_tit2">   
+          <a title="3º Quadrimestre" class="btn_esconde_la">3º Quadrimestre</a>
+          <ul class="esconde_la">
+          
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DESPESA_PESSOAL.pdf" title="Despesa Total com Pessoal" target="_blank">Despesa Total com Pessoal</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DEMONSTRATIVO_DIVIDA_CONSOLIDADA.pdf" title="Dívida Consolidada e Mobiliária" target="_blank">Dívida Consolidada e Mobiliária</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_Demonstrativo_Operacoes_Credito.pdf" title="Operação de Crédito e A.R.O." target="_blank">Operação de Crédito e A.R.O.</a>
+            </li>
+            
+            <li class="noticia">
+            	<a href="arquivos/2009/3quadrimestre/3quadrimestre_2009_DISPONIBILIDADE_CAIXA.pdf" title="Demonstrativo da Disponibilidade de Caixa" target="_blank">Demonstrativo da Disponib. de Caixa</a>
+            </li>
+          
+          </ul>
+        </li>
+      
+      </div>
+      
+    </ul>
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../governo.php';" />
+  </div>
+</div>

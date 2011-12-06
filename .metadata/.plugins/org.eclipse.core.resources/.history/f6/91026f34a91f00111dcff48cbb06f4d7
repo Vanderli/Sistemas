@@ -1,0 +1,15 @@
+<div id="sobre_secretario">
+	<h3>Secretaria Municipal de Assuntos Jurídicos</h3>
+
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Dra. Melissa Hee Terra do Amaral" />
+  
+  <div id="descreve_secretario">
+    <h4>Dra. Melissa Hee Terra do Amaral</h4>
+    
+    <p>Secretária de Assuntos Jurídicos. Natural de São Paulo, reside em Itapecerica da Serra, há 30 anos. Desde janeiro de 2007 está coordenando o Jurídico da PMIS. </p>
+    <p>Formada em Direito desde 1998, antes de ingressar na administração pública trabalhou como autônoma em diversas áreas do direito, inclusive eleitoral, a qual atuou nos pleitos de 2000 e 2004. Desde 2007 leciona na Universidade Anhanguera, unidade Taboão da Serra.</p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

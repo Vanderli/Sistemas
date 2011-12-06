@@ -1,0 +1,60 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Inclusão e Desenvolvimento Social</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+  
+    <ul>
+      <li>
+        <p>I - coordenar e definir as diretrizes da Política Municipal da Assistência Social em parceria com o Conselho Municipal de Assistência Social;</p>
+      </li>
+      <li>
+        <p>II - elaborar o Plano Municipal da Assistência Social em parceria com o Conselho Municipal de Assistência Social;</p>
+      </li>
+      <li>
+        <p>III - organizar e gerir a rede municipal de inclusão e proteção social, os programas, projetos e serviços assistenciais;</p>
+      </li>
+      <li>
+        <p>IV - articular com outras políticas públicas a inclusão dos destinatários da Assistência Social;</p>
+      </li>
+      <li>
+        <p>V - supervisionar, monitorar e avaliar as ações da Assistência Social no Município;</p>
+      </li>
+      <li>
+        <p>VI - estabelecer mecanismos de articulação com as outras esferas de Governo e com a Sociedade Civil para garantir apoio técnico e financeiro;</p>
+      </li>
+      <li>
+        <p>VII - desenvolver programas de qualificação de Recursos Humanos para a área de Assistência Social;</p>
+      </li>
+      <li>
+        <p>VIII - coordenar o desenvolvimento de gestão pública de emprego e renda;</p>
+      </li>
+      <li>
+        <p>IX - articular parcerias entre Poder Público e entidades da Sociedade Civil com vistas à elaboração e execução de projetos da área de empregos e geração de renda;</p>
+      </li>
+      <li>
+        <p>X - contribuir para a qualificação e requalificação profissional dos trabalhadores do Município;</p>
+      </li>
+      <li>
+        <p>XI - fomentar linhas de crédito para autoempreendedorismo;</p>
+      </li>
+      <li>
+        <p>XII - coordenar os serviços do Fundo Social de Solidariedade;</p>
+      </li>
+       <li>
+        <p>XIII - manter relações organizacionais com a Vara da Infância e Juventude; e</p>
+      </li>
+       <li>
+        <p>XIV - gerir a execução de programas e projetos estaduais e federais em âmbito municipal.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

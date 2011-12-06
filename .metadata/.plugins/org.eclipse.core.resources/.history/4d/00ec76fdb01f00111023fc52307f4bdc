@@ -1,0 +1,383 @@
+# Site Oficial de Itapecerica da Serra
+# Versão 1.0
+# 18/12/2009
+
+CREATE DATABASE site_itapecerica;
+USE site_itapecerica;
+
+CREATE TABLE modulo_usu (
+  mdu_id INTEGER(10) UNSIGNED NOT NULL,
+  mdu_usuario_cad SMALLINT(5) UNSIGNED NOT NULL,
+  mdu_dat_cad DATE NOT NULL,
+  mdu_hora_cad TIME NOT NULL,
+  mdu_nome VARCHAR(255) NOT NULL,
+  mdu_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(mdu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE bloco (
+  blo_id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  blo_dat_cad DATE NULL,
+  blo_hora_cad TIME NULL,
+  blo_nome VARCHAR(255) NULL,
+  blo_desc TEXT NULL,
+  blo_status ENUM('ATIVO','INATIVO') NULL,
+  PRIMARY KEY(blo_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE usuarios (
+  usu_id INTEGER(10) UNSIGNED NOT NULL,
+  usu_mdu_id INTEGER(10) UNSIGNED NOT NULL,
+  usu_usuario_cad SMALLINT(5) UNSIGNED NOT NULL,
+  usu_dat_cad DATE NOT NULL,
+  usu_hora_cad TIME NOT NULL,
+  usu_nome VARCHAR(100) NOT NULL,
+  usu_login VARCHAR(100) NOT NULL,
+  usu_senha VARCHAR(100) NOT NULL,
+  usu_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(usu_id),
+  INDEX usuarios_FKIndex1(usu_mdu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE banner (
+  ban_id INTEGER(10) UNSIGNED NOT NULL,
+  ban_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  ban_dat_cad DATE NOT NULL,
+  ban_hora_cad TIME NOT NULL,
+  ban_img VARCHAR(255) NOT NULL,
+  ban_nome VARCHAR(255) NOT NULL,
+  ban_posicao ENUM('1','2','3','4','5','6') NOT NULL,
+  ban_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(ban_id),
+  INDEX banner_FKIndex1(ban_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE topo_rotativo (
+  top_id INTEGER(10) UNSIGNED NOT NULL,
+  top_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  top_dat_cad DATE NOT NULL,
+  top_hora_cad TIME NOT NULL,
+  top_img VARCHAR(255) NOT NULL,
+  top_nome VARCHAR(255) NOT NULL,
+  top_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(top_id),
+  INDEX topo_rotativo_FKIndex1(top_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE relatorio_atend (
+  rel_id INTEGER(10) UNSIGNED NOT NULL,
+  rel_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  rel_dat_cad DATE NOT NULL,
+  rel_hora_cad TIME NOT NULL,
+  rel_desc TEXT NOT NULL,
+  rel_ano SMALLINT(6) NOT NULL,
+  rel_mes VARCHAR(10) NOT NULL,
+  rel_pdf VARCHAR(255) NOT NULL,
+  rel_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(rel_id),
+  INDEX relatorio_atend_FKIndex1(rel_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE secretarias (
+  sec_id INTEGER(10) UNSIGNED NOT NULL,
+  sec_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  sec_dat_cad DATE NOT NULL,
+  sec_hora_cad TIME NOT NULL,
+  sec_sigla VARCHAR(8) NOT NULL,
+  sec_nome VARCHAR(255) NOT NULL,
+  sec_rua VARCHAR(255) NOT NULL,
+  sec_numero VARCHAR(45) NOT NULL,
+  sec_complemento VARCHAR(255) NOT NULL,
+  sec_cep VARCHAR(10) NOT NULL,
+  sec_bairro VARCHAR(255) NOT NULL,
+  sec_cidade VARCHAR(45) NOT NULL,
+  sec_tel_1 VARCHAR(9) NOT NULL,
+  sec_tel_2 VARCHAR(9) NOT NULL,
+  sec_tel_3 VARCHAR(9) NOT NULL,
+  sec_uf ENUM('SP') NOT NULL,
+  sec_status ENUM('ATIVO','INATIVO') NULL,
+  PRIMARY KEY(sec_id),
+  INDEX secretarias_FKIndex1(sec_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE concurso_publico (
+  cop_id INTEGER(10) UNSIGNED NOT NULL,
+  con_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  cop_dat_cad DATE NOT NULL,
+  cop_hora_cad TIME NOT NULL,
+  cop_desc TEXT NOT NULL,
+  cop_pdf VARCHAR(255) NOT NULL,
+  cop_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(cop_id),
+  INDEX concurso_publico_FKIndex1(con_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE servicos_online (
+  svc_id INTEGER(10) UNSIGNED NOT NULL,
+  svc_sec_id INTEGER(10) UNSIGNED NOT NULL,
+  svc_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  svc_dat_cad DATE NOT NULL,
+  svc_hora_cad TIME NOT NULL,
+  svc_titulo VARCHAR(255) NOT NULL,
+  svc_nome VARCHAR(255) NOT NULL,
+  svc_categoria ENUM('CIDADAO','EMPRESA','GOVERNO') NOT NULL,
+  svc_status ENUM('ATIVO','INATIVO') NULL,
+  PRIMARY KEY(svc_id),
+  INDEX servicos_online_FKIndex1(svc_usu_id),
+  INDEX servicos_online_FKIndex2(svc_sec_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE beneficio_sec (
+  ben_id INTEGER(10) UNSIGNED NOT NULL,
+  ben_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  ben_sec_id INTEGER(10) UNSIGNED NOT NULL,
+  ben_data_cad DATE NOT NULL,
+  ben_hora_cad TIME NOT NULL,
+  ben_titulo VARCHAR(255) NOT NULL,
+  ben_desc VARCHAR(255) NOT NULL,
+  ben_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(ben_id),
+  INDEX beneficio_FKIndex1(ben_sec_id),
+  INDEX beneficio_FKIndex2(ben_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE contato_sec (
+  con_id INTEGER(10) UNSIGNED NOT NULL,
+  con_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  con_sec_id INTEGER(10) UNSIGNED NOT NULL,
+  con_dat_cad DATE NOT NULL,
+  con_hora_cad TIME NOT NULL,
+  con_titulo VARCHAR(255) NOT NULL,
+  con_email VARCHAR(255) NOT NULL,
+  con_tel VARCHAR(9) NOT NULL,
+  con_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(con_id),
+  INDEX contato_sec_FKIndex1(con_sec_id),
+  INDEX contato_sec_FKIndex2(con_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE agenda (
+  age_id INTEGER(10) UNSIGNED NOT NULL,
+  age_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  age_dat_cad DATE NOT NULL,
+  age_hora_cad TIME NOT NULL,
+  age_img VARCHAR(255) NOT NULL,
+  age_titulo VARCHAR(255) NOT NULL,
+  age_data_evento DATE NOT NULL,
+  age_hora_evento TIME NOT NULL,
+  age_local_evento VARCHAR(255) NOT NULL,
+  age_desc_evento TEXT NOT NULL,
+  age_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(age_id),
+  INDEX agenda_FKIndex1(age_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE atribuicao_sec (
+  atr_id INTEGER(10) UNSIGNED NOT NULL,
+  atr_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  atr_sec_id INTEGER(10) UNSIGNED NOT NULL,
+  atr_dat_cad DATE NOT NULL,
+  atr_hora_cad TIME NOT NULL,
+  atr_titulo VARCHAR(255) NOT NULL,
+  atr_desc TEXT NOT NULL,
+  atr_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(atr_id),
+  INDEX atribuicao_sec_FKIndex1(atr_sec_id),
+  INDEX atribuicao_sec_FKIndex2(atr_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE links_acesso (
+  lka_id INTEGER(10) UNSIGNED NOT NULL,
+  lka_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  lka_sec_id INTEGER(10) UNSIGNED NOT NULL,
+  lka_dat_cad DATE NOT NULL,
+  lka_hora_cad TIME NOT NULL,
+  lka_nome VARCHAR(45) NOT NULL,
+  lka_link VARCHAR(255) NOT NULL,
+  lka_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(lka_id),
+  INDEX links_acesso_FKIndex1(lka_sec_id),
+  INDEX links_acesso_FKIndex2(lka_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE noticias (
+  not_id INTEGER(10) UNSIGNED NOT NULL,
+  not_sec_id INTEGER(10) UNSIGNED NOT NULL,
+  not_blo_id INTEGER UNSIGNED NOT NULL,
+  not_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  not_dat_cad DATE NOT NULL,
+  not_hora_cad TIME NOT NULL,
+  not_img VARCHAR(255) NOT NULL,
+  not_titulo VARCHAR(255) NOT NULL,
+  not_descricao TEXT NOT NULL,
+  not_comentario VARCHAR(255) NOT NULL,
+  not_publicado ENUM('SIM','NAO') NOT NULL,
+  not_publicado_em DATETIME NOT NULL,
+  not_status ENUM('ATIVO','INATIVO') NULL,
+  PRIMARY KEY(not_id),
+  INDEX noticias_FKIndex1(not_usu_id),
+  INDEX noticias_FKIndex2(not_blo_id),
+  INDEX noticias_FKIndex3(not_sec_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE lei_resp_fiscal (
+  lef_id INTEGER(10) UNSIGNED NOT NULL,
+  lef_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  lef_dat_cad DATE NOT NULL,
+  lef_hora_cad TIME NOT NULL,
+  lef_ano SMALLINT(5) UNSIGNED NOT NULL,
+  lef_periodo VARCHAR(255) NOT NULL,
+  lef_periodo_esp VARCHAR(255) NOT NULL,
+  lef_nome VARCHAR(255) NOT NULL,
+  lef_pdf VARCHAR(255) NOT NULL,
+  lef_status ENUM('ATIVO','INATIVO') NULL,
+  PRIMARY KEY(lef_id),
+  INDEX lei_resp_fiscal_FKIndex1(lef_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE rec_des_ens (
+  rde_id INTEGER(10) UNSIGNED NOT NULL,
+  rde_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  rde_dat_cad DATE NOT NULL,
+  rde_hora_cad TIME NOT NULL,
+  rde_ano SMALLINT(5) UNSIGNED NOT NULL,
+  rde_periodo VARCHAR(45) NOT NULL,
+  rde_periodo_esp VARCHAR(45) NOT NULL,
+  rde_pdf VARCHAR(255) NOT NULL,
+  rde_status ENUM('ATIVO','INATIVO') NULL,
+  PRIMARY KEY(rde_id),
+  INDEX rec_des_ens_FKIndex1(rde_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE imprensa_oficial (
+  ipo_oficial INTEGER(10) UNSIGNED NOT NULL,
+  ipo_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  ipo_dat_cad DATE NULL,
+  ipo_hora_cad TIME NULL,
+  ipo_img VARCHAR(255) NOT NULL,
+  ipo_ano SMALLINT(5) UNSIGNED NOT NULL,
+  ipo_mes VARCHAR(10) NOT NULL,
+  ipo_edicao SMALLINT(5) UNSIGNED NOT NULL,
+  ipo_tamanho VARCHAR(10) NOT NULL,
+  ipo_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(ipo_oficial),
+  INDEX imprensa_oficial_FKIndex1(ipo_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE prev_social (
+  prv_id INTEGER(10) UNSIGNED NOT NULL,
+  prv_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  prv_dat_cad DATE NOT NULL,
+  prv_hora_cad TIME NOT NULL,
+  prv_descricao VARCHAR(255) NOT NULL,
+  prv_pdf VARCHAR(255) NOT NULL,
+  prv_status ENUM('ATIVO','INATIVO') NULL,
+  PRIMARY KEY(prv_id),
+  INDEX prev_social_FKIndex1(prv_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE links_utilidades (
+  lku_id INTEGER(10) UNSIGNED NOT NULL,
+  lku_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  lku_dat_cad DATE NOT NULL,
+  lku_hora_cad TIME NOT NULL,
+  lku_nome VARCHAR(255) NOT NULL,
+  lku_link VARCHAR(255) NOT NULL,
+  lku_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(lku_id),
+  INDEX links_utilidades_FKIndex1(lku_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE processo_seletivo (
+  pro_id INTEGER(10) UNSIGNED NOT NULL,
+  pro_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  pro_dat_cad DATE NOT NULL,
+  pro_hora_cad TIME NOT NULL,
+  pro_desc TEXT NOT NULL,
+  pro_pdf VARCHAR(255) NOT NULL,
+  pro_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(pro_id),
+  INDEX processo_seletivo_FKIndex1(pro_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE galeria (
+  gal_id INTEGER(10) UNSIGNED NOT NULL,
+  gal_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  gal_dat_cad DATE NOT NULL,
+  gal_hora_cad TIME NOT NULL,
+  gal_nome VARCHAR(200) NOT NULL,
+  gal_ano SMALLINT(4) UNSIGNED NOT NULL,
+  gal_foto_principal VARCHAR(255) NOT NULL,
+  gal_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(gal_id),
+  INDEX galeria_FKIndex1(gal_usu_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE importante (
+  imp_id INTEGER(10) UNSIGNED NOT NULL,
+  imp_not_id INTEGER(10) UNSIGNED NOT NULL,
+  imp_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  imp_dat_cad DATE NOT NULL,
+  imp_hora_cad TIME NOT NULL,
+  imp_seq SMALLINT(5) UNSIGNED NOT NULL,
+  imp_titulo_not TEXT NULL,
+  imp_status ENUM('ATIVO','INATIVO') NULL,
+  PRIMARY KEY(imp_id),
+  INDEX importante_FKIndex1(imp_usu_id),
+  INDEX importante_FKIndex2(imp_not_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE subgaleria (
+  sbg_id INTEGER(10) UNSIGNED NOT NULL,
+  sbg_gal_id INTEGER(10) UNSIGNED NOT NULL,
+  sbg_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  sbg_sec_id INTEGER(10) UNSIGNED NOT NULL,
+  sbg_dat_cad DATE NOT NULL,
+  sbg_hora_cad TIME NOT NULL,
+  sbg_nome VARCHAR(255) NOT NULL,
+  sbg_foto_principal VARCHAR(255) NOT NULL,
+  sbg_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(sbg_id),
+  INDEX subgaleria_FKIndex1(sbg_sec_id),
+  INDEX subgaleria_FKIndex3(sbg_usu_id),
+  INDEX subgaleria_FKIndex2(sbg_gal_id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE fotos (
+  fot_id INTEGER(10) UNSIGNED NOT NULL,
+  fot_usu_id INTEGER(10) UNSIGNED NOT NULL,
+  fot_sbg_id INTEGER(10) UNSIGNED NOT NULL,
+  fot_dat_cad DATE NOT NULL,
+  fot_hora_cad TIME NOT NULL,
+  fot_legenda VARCHAR(255) NOT NULL,
+  fot_foto VARCHAR(255) NOT NULL,
+  fot_status ENUM('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY(fot_id),
+  INDEX fotos_FKIndex1(fot_sbg_id),
+  INDEX fotos_FKIndex2(fot_usu_id)
+)
+TYPE=InnoDB;

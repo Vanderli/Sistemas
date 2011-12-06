@@ -1,0 +1,42 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Governo, Ciência e Tecnologia</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+    
+    Secretaria Municipal de Governo, Ciência e Tecnologia
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> secretariadegoverno@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Ação Institucional
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> acaopolitica@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Comunicação Social
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> comunicação@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Cerimonial e Relações Públicas
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> cerimonial@itapecerica.sp.gov.br
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

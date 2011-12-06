@@ -1,0 +1,185 @@
+<?php
+		/* conexão com banco de dados */
+		include("../../conexao_db/conexaoTecnologia.php");
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../../login/protege_pagina.php");
+		/* biblioteca */
+		include("../../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+
+
+		// BUSCO O ID DO FORMULÁRIO
+		$tra_int = "-1";
+		if (isset($_GET['tra_int'])) {
+			$tra_int = $_GET['tra_int'];
+		}
+		
+		if (!function_exists("GetSQLValueString")) {
+			function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = ""){
+				$theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+				$theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+				switch ($theType) {
+					case "text":
+						$theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+					break;    
+					case "long":
+					case "int":
+						$theValue = ($theValue != "") ? intval($theValue) : "NULL";
+					break;
+					case "double":
+						$theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+					break;
+					case "date":
+						$theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+					break;
+					case "defined":
+						$theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+					break;
+				}
+				return $theValue;
+			}
+		}
+
+		$editFormAction = $_SERVER['PHP_SELF'];
+		if (isset($_SERVER['QUERY_STRING'])) {
+		  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+		}
+		
+		if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "Form")) {
+		
+			$insertSQL = sprintf("INSERT INTO tramite_interno 
+									(num_documentoo, 
+									data_cadastro, 
+									hora_cadastro, 
+									usuario_cadastro, 
+									status, 
+									dest_interno,  
+									assunto) 
+									VALUES (%s, %s, %s, %s, %s, %s, %s)",
+
+				GetSQLValueString($_POST['num_documentoo'], "text"),
+				GetSQLValueString($data->formataDataUSA($_POST['data_cadastro']), "date"),
+				GetSQLValueString(date('G:i:s'), "text"),
+				GetSQLValueString($_SESSION['codUsuario'], "int"),
+				GetSQLValueString($_POST['status'], "text"),
+				GetSQLValueString($_POST['dest_interno'], "int"),
+				GetSQLValueString(strtoupper($_POST['assunto']), "text"));
+		
+			mysql_select_db($database_tecnologia, $tecnologia);
+			$Result1 = mysql_query($insertSQL, $tecnologia) or die(mysql_error());
+			
+			if($Result1){
+				echo "<script type=\"text/javascript\">
+						 alert('Dados Cadastrados com sucesso!'); 
+						 window.location.href=' formDetalheTraInt.php?id_tramite='+'".$tra_int."';
+					</script>";	 
+			}else {
+				echo "<script type=\"text/javascript\">
+							  alert('Falha no Cadastro dos dados!');
+							  window.location.href=' formTramiteInterno.php';	  
+					  </script>";
+			 }
+		}
+?>
+
+<html>
+<head>
+	<title>..:: Cadastrar Tr&acirc;mite Interno - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../../imagens/sgd_icon.ico">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!-- estilos -->
+    <link href="../../estilo/estilo.css" rel="stylesheet" type="text/css" /> 
+    <!-- javaScript -->
+    <script type="text/javascript" src="../../js/jquery-1.2.6.js"></script>
+    <script type="text/javascript" src="../../js/jquery-validate.js"></script> 
+    <script type="text/javascript">
+		<!-- Validação -->
+		$(document).ready( function() {
+			$("#Form").validate({
+				// Define as regras
+				rules:{
+					status:{
+						required: true
+					},
+					dest_interno:{
+						required: true
+					},
+					assunto:{
+						required: false, minlength: 3
+					}
+				},
+				// Define as mensagens de erro para cada regra
+				messages:{
+					status:{
+						required: "Informe o Status"
+					},
+					dest_interno:{
+						required: "Informe Dest. Interno"
+					},
+					assunto:{
+						required: "Informe o Assunto",
+						minlength: "O Assunto deve conter, no mínimo, 3 caracteres"
+					}
+				}
+			});
+		});
+	</script>  
+</head>
+<body onLoad="vertical();horizontal();">
+<?php include('../../menu/menu.php'); ?>
+<br />
+<div id="formCadDocumento" align="center">
+  <form action="<?php echo $editFormAction; ?>" method="POST" name="Form" id="Form">
+    <fieldset style="width: 500px;">
+        <p class="titulo">Tramita&ccedil;&atilde;o Interna de Documentos</p>
+        <p align="left">
+          <label class="vermelhorNegrito">Código Doc.</label>
+            <input type="text" name="num_documentoo" id="vermelhorNegrito12" value="<?=$tra_int?>" size="10" maxlength="10"class="disabled" readonly />
+        </p>
+        <p align="left">
+          <label class="vermelhorNegrito">Data Tramita&ccedil;&atilde;o</label>
+                <input type="text" name="data_cadastro" id="data_cadastro" value="<?php echo date("d/m/Y") ?>" size="10"  maxlength="10" class="disabled" readonly />
+		</p>
+        <p align="left">
+          <label class="vermelhorNegrito">Usuário </label>
+                <input type="text" name="usuario_cadastro" id="usuario_cadastro" value="<?=$_SESSION['nomeUsuario'];?>" size="50" maxlength="100" class="disabled" readonly />
+		</p>
+		<br />
+    	<p align="left">
+      		<label>Status</label>
+            <select name="status" id="status" valu>
+                <option value="">-- Selecione -- </option>
+                <option value="1">Andamento</option>
+                <option value="2">Finalizado</option>
+            </select>
+    	</p>
+	 	<p align="left">
+             <!-- COMBO Destino Externo 1 -->
+            <label>Destino Interno</label>
+                    <select name="dest_interno" id="dest_interno">
+                        <option value="">- Selecione -</option>
+                        <?php // varro as informações do banco de dados
+                            $sql = sprintf("SELECT * FROM destino_interno WHERE status_dest_int = 'ATIVO'");
+                            $rs = mysql_query($sql);
+                            // Obtém o resultado de uma linha como um objeto
+                            while($row = mysql_fetch_object($rs)):?>
+                      			<option value="<?=$row->cod_dest_int?>"><?=$row->nome?></option>
+                      		<?php endwhile;?>
+                  </select>
+		</p>
+        <p align="left">
+            <label>Assunto </label>
+              <textarea name="assunto" cols="50" rows="8" id="assunto"></textarea>
+    	</p>
+		<br />
+    	<p align="center">
+            <input type="submit" name="cadastrar" value="Cadastrar" class="botao">
+            <input type="hidden" name="MM_insert" value="Form">
+        </p>
+	</fieldset>   	
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<div id="cont_noticia">  
+    <h3>Secretaria Municipal de Planejamento e Meio Ambiente</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <h4>Coleta Seletiva</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="fotos/coleta_seletiva.jpg" alt="Coleta Seletiva" title="Coleta Seletiva" /> 
+    </div>
+
+    <div id="noticia_descreve">
+        <p id="age_desc"><span>Descrição:</span><br /><br /> 
+
+        A Coleta Seletiva do Município de Itapecerica da Serra foi implantada em Novembro de 2007, é uma cooperativa legalmente constituída e mantém convênio com a prefeitura que visa a reciclagem e o reaproveitamento de materiais antes destinados ao lixo comum, proporcionando a preservação do meio ambiente.<br /><br />
+
+O programa mantém vários postos de entrega de materiais recicláveis como: vasilhames de detergente, água sanitária e amaciante; garrafas pet; papeis em geral; caixa de papelão; latas de alumínio; objetos de ferro; pregos; parafusos; garrafas de vidro; frascos de produtos alimentícios, higiene e limpeza.<br /><br />
+
+A Cooperativa também coleta óleo de cozinha para vender às empresas que trabalham na fabricação de bicombustível. Esta é uma atitude que benefícia o meio ambiente, uma vez que o óleo de cozinha é altamente poluente e que quando destinado à lugares inadequados se torna prejudicial a saúde de todos.
+
+        </p>
+    </div> 
+   
+</div>

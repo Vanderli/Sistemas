@@ -1,0 +1,48 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Gabinete do Prefeito</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+    
+    Secretaria Geral de Gabinete: 
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> assessoria.gab@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Chefia de Gabinete:
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br /><br />
+    
+    Departamento de Relações entre Entes
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br /><br />
+    
+    Departamento de Indústria e Comércio
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br /><br />
+    
+    Junta do Serviço Militar
+    <br />
+    <span>Telefone:</span> 4165-2011
+    <br /><br />
+    
+    Núcleo de Acompanhamento de Convênios
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> Tatiana.lopes@itapecerica.sp.gov.br
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

@@ -1,0 +1,31 @@
+  <!-- Início Secretarias -->
+  <div class="cont_secretarias">
+    
+    <h3>Programa Emergencial de Trabalho e Cidadania</h3>
+    
+    <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+    <!-- Início dos Concursos Publicos -->
+    <div class="sec_noticias">
+    <br />
+      <ul>
+
+        <li>
+        	<a href="arquivos/2010/Classificacao_Frente_Trabalho_2010.pdf" target="_blank">
+        		<span>Edital Nº 039/2010</span> - Classificação final para o Programa Emergencial 
+                de Trabalho e Cidadania (Frente de Trabalho) - DRH.
+            </a>
+        </li>
+      
+        <li>
+        	<a href="arquivos/2010/EDITAL_PROGRAMA_EMERGENCIAL_DE_TRABALHO.pdf" target="_blank">
+        		<span>EDITAL Nº 039/2010</span> - Abertura de inscrições para o Programa Emergencial 
+                de Trabalho e Cidadania (Frente de Trabalho) - DRH.
+            </a>
+        </li>
+        
+      </ul>
+    </div>
+      <!-- Fim dos Concursos Publicos -->
+          
+  </div>

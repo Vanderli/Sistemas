@@ -1,0 +1,95 @@
+      <div id="voltar_home">
+        <a href="<?=URL?>/index.php" title="Voltar a Home">HOME</a>
+
+      </div>
+
+      <div class="padrao_navegacao">
+        <h2>ACESSO RÁPIDO</h2>
+        <select id="sel_servicos" name="servicos" class="fc" tabindex="2" onchange="selServicos($(this).val())">
+          <option value="">Serviços</option>
+          <option value="1">Para Cidadão</option>
+          <option value="2">Para Empresa</option>
+          <option value="3">Para Governo</option>
+        </select>
+        <select id="sel_utilidades" name="utilidades" class="fc" tabindex="3" onchange="selTelefones($(this).val())">
+          <option value="" selected="selected">Telefones Úteis</option>
+          <option value="1">Acessa São Paulo</option>
+          <option value="2">Agência da Receita Federal</option>
+          <option value="3">Câmara Municipal</option>
+          <option value="4">Cartório de Registro Civil</option>
+          <option value="5">Cartório de Registro de Imóveis</option>
+          <option value="6">Cartório de Registro de Notas</option>
+          <option value="7">Cartório Eleitoral</option>          
+          <option value="8">Cemitério Floreal Eterno</option>
+          <option value="9">Cemitério Parque dos Ipês</option>
+          <option value="10">Cemitério Recanto do Silêncio</option>
+          <option value="11">Corpo de Bombeiros</option>
+          <option value="12">Cremat. de Cemit. Horto da Paz</option>
+          <option value="13">Defesa Civil</option>
+          <option value="14">Eletropaulo</option>
+          <option value="15">Fórum</option>
+          <option value="16">Guarda Civil Municipal</option>
+          <option value="17">Hospital Geral</option>
+          <option value="18">IBGE</option>
+          <option value="19">Junta do Serviço Militar</option>
+          <option value="20">Justiça do Trabalho</option>
+          <option value="21">OAB</option>          
+          <option value="22">Polícia Civil</option>
+          <option value="23">Polícia Militar</option>
+          <option value="24">Procon</option>
+          <option value="25">Pronto Socorro</option>
+          <option value="26">Regional de Ensino</option>
+          <option value="27">Sabesp</option>
+          <option value="28">Telefônica</option>
+
+        </select>
+      </div>
+
+      <div class="padrao_navegacao" id="padrao_sec">
+        <h2>SECRETARIAS</h2>
+        <ul>
+          <li><a href="<?=URL?>/secretarias/administracao/secretarias.php" title="Administração">Administração</a></li>
+          <li><a href="<?=URL?>/secretarias/assuntos_juridico/secretarias.php" title="Assuntos Jurídicos">Assuntos Jurídicos</a></li>
+          <li><a href="<?=URL?>/secretarias/cultura/secretarias.php" title="Cultura">Cultura</a></li>
+          <li><a href="<?=URL?>/secretarias/educacao/secretarias.php" title="Educação">Educação</a></li>
+          <li><a href="<?=URL?>/secretarias/esportes/secretarias.php" title="Esporte e Lazer">Esporte e Lazer</a></li>
+          <li><a href="<?=URL?>/secretarias/financas/secretarias.php" title="Finanças">Finanças</a></li>
+          <li><a href="<?=URL?>/secretarias/gabinete_prefeito/secretarias.php" title="Gabinete do Prefeito">Gabinete do Prefeito</a></li>
+          <li><a href="<?=URL?>/secretarias/governo/secretarias.php" title="Governo, Ciência e Tecnologia">Governo, Ciência e Tecnologia</a></li>
+          <li><a href="<?=URL?>/secretarias/inclusao_social/secretarias.php" title="Inclusão e Desenv. Social">Inclusão e Desenv. Social</a></li>
+          <li><a href="<?=URL?>/secretarias/obras/secretarias.php" title="Obras e Serviços">Obras e Serviços</a></li>
+          <li><a href="<?=URL?>/secretarias/meio_ambiente/secretarias.php" title="Planej. e Meio Ambiente">Planej. e Meio Ambiente</a></li>
+          <li><a href="<?=URL?>/secretarias/transito/secretarias.php" title="Segurança, Trâns. e Transp.">Segurança, Trâns. e Transp.</a></li>
+          <li><a href="<?=URL?>/secretarias/turismo/secretarias.php" title="Turismo">Turismo</a></li>
+          <li><a href="<?=URL?>/secretarias/saude/secretarias.php" title="Autarquia Municipal de Sáude">Autarquia Municipal de Saúde</a></li>
+        </ul>
+      </div>
+
+    <div class="padrao_navegacao">
+        <h2>IMPORTANTE</h2>
+        <ul>
+            <li>
+                <a href="<?=URL?>/processo-seletivo/processo-seletivo.php" title="veja os editais do Processo Seletivo">
+                <strong>Processo Seletivo</strong><br />
+                Veja os editais do Processo Seletivo
+                </a>
+            </li>        
+            <li>
+                <a href="<?=URL?>/frente-trabalho/frente-trabalho.php" title="veja os editais do Concurso Público">
+                <strong>Frente de Trabalho</strong><br />
+                Veja os editais da Frente de Trabalho
+                </a>
+            </li>        
+            <li>
+                <a href="<?=URL?>/concurso-publico/concurso-publico.php" title="veja os editais do Concurso Público">
+                <strong>Concurso Público</strong><br />
+                Veja os editais do Concurso Público
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+     

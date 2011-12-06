@@ -1,0 +1,51 @@
+<?php 
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>..:: Manual do Usuário - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--estilos-->
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css"/>
+</head>
+<body onLoad="vertical();horizontal();">
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+    <br />
+	<div class="cont_geral">
+        <table id="ajuda">
+            <tr>
+            	<!--Título do arquivo-->
+            	<th id="title">MANUAL DO USUÁRIO</th>
+            </tr>
+            <tr>
+            	<!--Mensagem para baixar leitor de pdf caso não tenha instalado na máquina-->
+                <td class="row">
+                    ATENÇÃO! Para visualizar arquivos em PDF 
+                    (<a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" target="_blank">
+                        <img src="../imagens/acrobat/acrobat.jpg" width="16" height="15" border="0" />
+                    </a>) 
+                    você precisar ter o Adobe Reader instalado. 
+                    Caso não consiga abrir os arquivos, instale o Adobe Reader 
+                    <a target="_blank" href="http://www.brasil.adobe.com/products/acrobat/readstep2.html">
+                    	clicando aqui!
+                	</a>
+                </td>
+            </tr>
+            <tr>
+            	<!--Link para visualizar o arquivo-->
+                <td class="row">
+                    <img src="../imagens/acrobat/acrobat.jpg" width="16" height="15" />
+                    <a href="pdf/manual_sigd.pdf" target="_blank">
+                        Manual do SIGD SADTI
+                    </a>
+                </td>
+            </tr>
+        </table>   
+	</div> <!--DIV cont_geral-->
+</body>
+</html>

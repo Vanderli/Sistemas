@@ -1,0 +1,428 @@
+<? 
+	include_once('../conexao/frente_trabalho.php'); 
+	include_once("../biblioteca/lib.php");
+	# insiro sessão para poder acessar as páginas
+    include_once("../login/protege_pagina.php");
+
+
+// BUSCO O ID DO FORMULÁRIO
+$id = $_GET['id']; 
+
+	// Transformo o recurso em um array	
+	$sql = sprintf("SELECT * FROM inscricoes WHERE id='".$id."'");
+	$query = mysql_query($sql) or die(mysql_error());
+	$row = mysql_fetch_assoc($query);
+	
+	list($anoNasc, $mesNasc, $diaNasc) = explode('-', $row['nascimento']);
+	
+	# Funcao para retirar expressoes Regulares
+	$rg_digitado = trim(strtoupper($_POST['rg']));
+	$rg = preg_replace("/[^A-Za-z0-9]/", "", $rg_digitado);
+	
+
+
+	
+
+// EDITAR INFORMAÇÕES
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$editFormAction = $_SERVER['PHP_SELF'];
+if (isset($_SERVER['QUERY_STRING'])) {
+  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+}
+
+if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
+	
+	$nascimento  = $_POST['anoNasc'].'-'.$_POST['mesNasc'].'-'.$_POST['diaNasc'];
+
+  $updateSQL = sprintf("UPDATE inscricoes SET nascimento=%s, idade=%s, nome=%s, rg=%s, cpf=%s, pis=%s, sexo=%s, qtde_filhos_menores=%s, qtde_res_casa=%s, estado_civil=%s, endereco=%s, numero=%s, complemento=%s, bairro=%s, cidade=%s, cep=%s, uf=%s, telefone=%s, def_portador=%s, def_fisico_especifico=%s, escolaridade=%s, qtde_dependentes=%s, tempo_desempregado=%s, renda_familiar=%s, despesa_familiar=%s, carcerario=%s, seguro_desemprego=%s, aposentadoria=%s, prog_social=%s, prog_social_especifico=%s, hora=%s, data=%s, usuario_cadastro=%s  WHERE id='".$id."'",
+                       GetSQLValueString($nascimento, "date"),
+                       GetSQLValueString($_POST['idade'], "int"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['nome']))), "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($rg))), "text"),
+                       GetSQLValueString($_POST['cpf'], "text"),
+                       GetSQLValueString($_POST['pis'], "text"),
+                       GetSQLValueString($_POST['sexo'], "text"),
+                       GetSQLValueString($_POST['qtde_filhos_menores'], "int"),
+                       GetSQLValueString($_POST['qtde_res_casa'], "int"),
+                       GetSQLValueString($_POST['estado_civil'], "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['endereco']))), "text"),
+                       GetSQLValueString($_POST['numero'], "int"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['complemento']))), "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['bairro']))), "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['cidade']))), "text"),
+                       GetSQLValueString($_POST['cep'], "text"),
+                       GetSQLValueString($_POST['uf'], "text"),
+                       GetSQLValueString($_POST['telefone'], "text"),
+                       GetSQLValueString($_POST['def_portador'], "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['def_fisico_especifico']))), "text"),
+                       GetSQLValueString($_POST['escolaridade'], "text"),
+                       GetSQLValueString($_POST['qtde_dependentes'], "int"),
+                       GetSQLValueString($_POST['tempo_desempregado'], "int"),
+                       GetSQLValueString($_POST['renda_familiar'], "text"),
+                       GetSQLValueString($_POST['despesa_familiar'], "text"),
+                       GetSQLValueString($_POST['carcerario'], "text"),
+                       GetSQLValueString($_POST['seguro_desemprego'], "text"),
+                       GetSQLValueString($_POST['aposentadoria'], "text"),
+                       GetSQLValueString($_POST['prog_social'], "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['prog_social_especifico']))), "text"),
+					   GetSQLValueString(date('G:i:s'), "text"),
+					   GetSQLValueString(date('Y-m-d'), "text"),
+					   GetSQLValueString($_SESSION['log_id'], "text"));				   
+					   
+
+  
+  $Result1 = mysql_query($updateSQL) or die(mysql_error());
+   
+   if($Result1){
+	  echo "<script type=\"text/javascript\">
+					  alert('Dados Alterados com sucesso!');
+					  window.location.href=' ../imprime_ficha/form_ficha.php?id='+'".$id."';
+				 </script>";
+	}else {
+		echo "<script type=\"text/javascript\">
+					  alert('Falha na Alteração dos dados!');
+					  window.location.href='listarInscricoes.php';
+				 </script>";
+	}
+}
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>..:: Frente de Trabalho ::..</title>
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<!-- Javascript's-->
+<script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>    
+<script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="../js/jquery-price_format.js"></script>
+<script type="text/javascript" src="../js/library.js"></script> 
+</head>
+
+<body>
+<div id="container">
+    <div id="menu">
+		<?php 
+			@include('../menu/menu.php'); 
+            $somenteLeitura = 'readonly="readyonly"';
+			date("Y-m-d");
+			date("H:i:s");
+        ?>
+    </div>
+    <div id="formulario">
+      <form action="<?php echo $editFormAction; ?>" name="form1" method="POST">
+        <h3 align="center">.: Cadastro de Inscri&ccedil;&otilde;es :.</h3>
+      <table width="760" height="1056">
+                <tr valign="baseline">
+                    <td width="244" class="label">Fun&ccedil;&atilde;o:</td>
+                    <td colspan="3" align="left">
+                        <input name="funcao" type="text"  id="funcao" value="AUXILIAR DE SERVIÇOS GERAIS" size="40" <?php echo $somenteLeitura; ?> />
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">Data Nascimento:</td>
+                    <td colspan="3" align="left">
+                            <input type="text" value="<?=(isset($diaNasc))? $diaNasc:null?>" size="3" class="form" id="diaNasc " name="diaNasc"/>
+                        /
+                            <input type="text" value="<?=(isset($mesNasc))? $mesNasc:null?>"  size="3" class="form" id="mesNasc" name="mesNasc"/>
+                        /
+                            <input type="text" value="<?=(isset($anoNasc))? $anoNasc:null?>"  size="3" class="form" id="anoNasc" name="anoNasc"/>
+                            <span class="alerta">somente n&uacute;meros</span>
+                    <input id="nascimento" name="nascimento" value="" type="hidden" class="form" />
+                    	<input id="status" name="status" value="inativo" type="hidden" class="form" />               
+                </tr>
+                <tr valign="baseline">
+                    <td  class="label">Idade:</td>
+                    <td colspan="3" align="left"><input type="text" value="<?=(isset($row['idade']))? $row['idade']:null?>" size="10" 
+					class="form" id="idade" name="idade"/>                  </tr>
+                    <tr valign="baseline">
+                    <td   class="label">Nome:</td>
+                    <td colspan="3" align="left"><input name="nome" type="text" value="<?=(isset($row['nome']))? $row['nome']:null?>" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">RG:</td>
+                    <td colspan="3" align="left"><input name="rg" type="text" value="<?=(isset($row['rg']))? $row['rg']:null?>" size="20" maxlength="15" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">CPF:</td>
+                    <td colspan="3" align="left"><input name="cpf" id="cpf" type="text" value="<?=(isset($row['cpf']))? $row['cpf']:null?>" size="20" maxlength="15" />
+                    <span class="alerta">somente n&uacute;meros</span></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">PIS:</td>
+                    <td colspan="3" align="left"><input name="pis" type="text" value="<?=(isset($row['pis']))? $row['pis']:null?>" size="20" />
+                    <span class="alerta">somente n&uacute;meros</span></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Sexo:</td>
+                    <td colspan="3" align="left">
+                        <select name="sexo" id="sexo">
+                            <option value="MASCULINO" <?php if (!(strcmp("MASCULINO", $row['sexo']))) {echo "selected=\"selected\"";} ?>> MASCULINO </option>
+                            <option value="FEMININO"  <?php if (!(strcmp("FEMININO", $row['sexo']))) {echo "selected=\"selected\"";} ?>>  FEMININO  </option>
+                        </select>
+                    </td>                  
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">N.º de filhos menores de 18 anos</td>
+                    <td colspan="3" align="left"><input name="qtde_filhos_menores" id="qtde_filhos_menores" type="text" value="<?=(isset($row['qtde_filhos_menores']))? $row['qtde_filhos_menores']:null?>" size="10" maxlength="3" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">Quantas pessoas residem na casa</td>
+                    <td colspan="3" align="left"><input name="qtde_res_casa" id="qtde_res_casa" type="text" value="<?=(isset($row['qtde_res_casa']))? $row['qtde_res_casa']:null?>" size="10" maxlength="3" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td  class="label">Estado Civil:</td>
+                    <td colspan="3" align="left"><select name="estado_civil" id="estado_civil">
+                        <option value="SOLTEIRO" <?php if (!(strcmp("SOLTEIRO", $row['estado_civil']))) {echo "selected=\"selected\"";} ?>>SOLTEIRO</option>
+                        <option value="CASADO"   <?php if (!(strcmp("CASADO", $row['estado_civil']))) {echo "selected=\"selected\"";} ?>>CASADO</option>
+                        <option value="SEPARADO" <?php if (!(strcmp("SEPARADO", $row['estado_civil']))) {echo "selected=\"selected\"";} ?>>SEPARADO</option>
+                        <option value="VIUVO"    <?php if (!(strcmp("VIUVO", $row['estado_civil']))) {echo "selected=\"selected\"";} ?>>VIÚVO</option>
+                        <option value="OUTROS"   <?php if (!(strcmp("OUTROS", $row['estado_civil']))) {echo "selected=\"selected\"";} ?>>OUTROS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Endereco:</td>
+                    <td colspan="3" align="left"><input name="endereco" type="text" value="<?=(isset($row['endereco']))? $row['endereco']:null?>" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">N&uacute;mero:</td>
+                    <td colspan="3" align="left"><input name="numero" type="text" value="<?=(isset($row['numero']))? $row['numero']:null?>" size="15" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Complemento:</td>
+                    <td colspan="3" align="left"><input name="complemento" type="text" value="<?=(isset($row['complemento']))? $row['complemento']:null?>" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Bairro:</td>
+                    <td colspan="3" align="left"><input name="bairro" type="text" value="<?=(isset($row['bairro']))? $row['bairro']:null?>" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Cidade:</td>
+                    <td colspan="3" align="left"><input name="cidade" type="text" value="<?=(isset($row['cidade']))? $row['cidade']:null?>" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">CEP:</td>
+                    <td colspan="3" align="left">
+                        <input name="cep" type="text" id="cep" value="<?=(isset($row['cep']))? $row['cep']:null?>" size="30" maxlength="12"/>
+                        <span class="alerta">sem o h&iacute;fen ( - )</span>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">UF:</td>
+                    <td colspan="3" align="left">
+                        <select name="uf" id="uf">
+                          <option value="AC" <?php if (!(strcmp("AC", $row['uf']))) {echo "selected=\"selected\"";} ?>>AC</option>
+                          <option value="AL" <?php if (!(strcmp("AL", $row['uf']))) {echo "selected=\"selected\"";} ?>>AL</option>
+                          <option value="AM" <?php if (!(strcmp("AM", $row['uf']))) {echo "selected=\"selected\"";} ?>>AM</option>
+                		  <option value="AP" <?php if (!(strcmp("AP", $row['uf']))) {echo "selected=\"selected\"";} ?>>AP</option>
+                          <option value="BA" <?php if (!(strcmp("BA", $row['uf']))) {echo "selected=\"selected\"";} ?>>BA</option>
+                          <option value="CE" <?php if (!(strcmp("CE", $row['uf']))) {echo "selected=\"selected\"";} ?>>CE</option>
+                          <option value="DF" <?php if (!(strcmp("DF", $row['uf']))) {echo "selected=\"selected\"";} ?>>DF</option>
+                          <option value="ES" <?php if (!(strcmp("ES", $row['uf']))) {echo "selected=\"selected\"";} ?>>ES</option>
+                          <option value="GO" <?php if (!(strcmp("GO", $row['uf']))) {echo "selected=\"selected\"";} ?>>GO</option>
+                          <option value="MA" <?php if (!(strcmp("MA", $row['uf']))) {echo "selected=\"selected\"";} ?>>MA</option>
+                          <option value="MG" <?php if (!(strcmp("MG", $row['uf']))) {echo "selected=\"selected\"";} ?>>MG</option>
+                		  <option value="MT" <?php if (!(strcmp("MT", $row['uf']))) {echo "selected=\"selected\"";} ?>>MT</option>
+                          <option value="MS" <?php if (!(strcmp("MS", $row['uf']))) {echo "selected=\"selected\"";} ?>>MS</option>
+			              <option value="PA" <?php if (!(strcmp("PA", $row['uf']))) {echo "selected=\"selected\"";} ?>>PA</option>
+                          <option value="PB" <?php if (!(strcmp("PB", $row['uf']))) {echo "selected=\"selected\"";} ?>>PB</option>
+                          <option value="PE" <?php if (!(strcmp("PE", $row['uf']))) {echo "selected=\"selected\"";} ?>>PE</option>
+                          <option value="PI" <?php if (!(strcmp("PI", $row['uf']))) {echo "selected=\"selected\"";} ?>>PI</option>
+                          <option value="PR" <?php if (!(strcmp("PR", $row['uf']))) {echo "selected=\"selected\"";} ?>>PR</option>
+                          <option value="RJ" <?php if (!(strcmp("RJ", $row['uf']))) {echo "selected=\"selected\"";} ?>>RJ</option>
+                          <option value="RN" <?php if (!(strcmp("RN", $row['uf']))) {echo "selected=\"selected\"";} ?>>RN</option>
+                          <option value="RO" <?php if (!(strcmp("RO", $row['uf']))) {echo "selected=\"selected\"";} ?>>RO</option>
+                          <option value="RR" <?php if (!(strcmp("RR", $row['uf']))) {echo "selected=\"selected\"";} ?>>RR</option>
+                          <option value="RS" <?php if (!(strcmp("RS", $row['uf']))) {echo "selected=\"selected\"";} ?>>RS</option>
+                          <option value="SC" <?php if (!(strcmp("SC", $row['uf']))) {echo "selected=\"selected\"";} ?>>SC</option>
+                          <option value="SE" <?php if (!(strcmp("SE", $row['uf']))) {echo "selected=\"selected\"";} ?>>SE</option>
+                          <option value="SP" <?php if (!(strcmp("SP", $row['uf']))) {echo "selected=\"selected\"";} ?>>SP</option>
+                          <option value="TO" <?php if (!(strcmp("TO", $row['uf']))) {echo "selected=\"selected\"";} ?>>TO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Telefone:</td>
+                    <td colspan="2" align="left">
+                        <input name="telefone" id="telefone" type="text" size="20" maxlength="15" value="<?=(isset($row['telefone']))? $row['telefone']:null?>"/></td>
+                    <td width="292" align="left">&nbsp;</td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Portador de Deficiência: </td>
+                    <td width="113" align="left">
+                        <select name="def_portador" id="def_portador">
+                            <option value="NAO" <?php if (!(strcmp("NAO", $row['def_portador']))) {echo "selected=\"selected\"";} ?>>NÃO</option>
+                            <option value="SIM" <?php if (!(strcmp("SIM", $row['def_portador']))) {echo "selected=\"selected\"";} ?>>SIM</option>
+                      </select>
+                    </td>
+                    <td width="81" align="left">
+                        <div align="right">Especifique:&nbsp;&nbsp;</div>
+                    </td>
+                    <td align="left">
+                        <input name="def_fisico_especifico" type="text" id="def_fisico_especifico" value="<?=(isset($row['def_fisico_especifico']))? $row['def_fisico_especifico']:null?>" size="53" maxlength="50" />
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Escolaridade:</td>
+                    <td colspan="3" align="left">
+                        <select name="escolaridade" id="escolaridade">
+                            <option value="NAO ALFABETIZADO" 
+								<?php if (!(strcmp("NAO ALFABETIZADO", $row['escolaridade']))) {echo "selected=\"selected\"";} ?>>
+                            	NAO ALFABETIZADO
+                             </option>
+                            <option value="ENS. FUNDAMENTAL COMPLETO" 
+								<?php if (!(strcmp("ENS. FUNDAMENTAL COMPLETO", $row['escolaridade']))) {echo "selected=\"selected\"";} ?>>
+                            	ENS. FUNDAMENTAL COMPLETO
+                            </option>
+                            <option value="ENS. FUNDAMENTAL INCOMPLETO" 
+								<?php if (!(strcmp("ENS. FUNDAMENTAL INCOMPLETO", $row['escolaridade']))) {echo "selected=\"selected\"";} ?>>
+                            	ENS. FUNDAMENTAL INCOMPLETO
+                            </option>
+                            <option value="ENS. MEDIO COMPLETO" 
+								<?php if (!(strcmp("ENS. MEDIO COMPLETO", $row['escolaridade']))) {echo "selected=\"selected\"";} ?>>
+                            	ENS. MEDIO COMPLETO
+                            </option>
+                            <option value="ENS. MEDIO INCOMPLETO" 
+								<?php if (!(strcmp("ENS. MEDIO INCOMPLETO", $row['escolaridade']))) {echo "selected=\"selected\"";} ?>>
+                            	ENS. MEDIO INCOMPLETO
+                            </option>
+                            <option value="ENS. SUPERIOR COMPLETO" 
+								<?php if (!(strcmp("ENS. SUPERIOR COMPLETO", $row['escolaridade']))) {echo "selected=\"selected\"";} ?>>
+                            	ENS. SUPERIOR COMPLETO
+                            </option>
+                            <option value="ENS. SUPERIOR INCOMPLETO" 
+								<?php if (!(strcmp("ENS. SUPERIOR INCOMPLETO", $row['escolaridade']))) {echo "selected=\"selected\"";} ?>>
+                            	ENS. SUPERIOR INCOMPLETO
+                            </option>
+                      </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">N.º de Dependentes:</td>
+                    <td colspan="3" align="left">
+                        <input name="qtde_dependentes" type="text" id="qtde_dependentes" value="<?=(isset($row['qtde_dependentes']))? $row['qtde_dependentes']:null?>" size="20" maxlength="3" />
+                    <span class="alerta">somente n&uacute;meros</span>                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">Tempo desempregado <span class="alerta">(meses):</span></td>
+                    <td colspan="3" align="left">
+                        <input name="tempo_desempregado" type="text" id="tempo_desempregado" value="<?=(isset($row['tempo_desempregado']))? $row['tempo_desempregado']:null?>" size="20" maxlength="3" />
+                    <span class="alerta">somente n&uacute;meros</span>                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Renda Familiar R$:</td>
+                    <td colspan="3" align="left">
+                        <input name="renda_familiar" type="text" id="renda_familiar" value="<?=(isset($row['renda_familiar']))? $row['renda_familiar']:null?>" size="20" maxlength="15" />
+                    <span class="alerta">somente n&uacute;meros</span>                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Despesa Familiar R$:</td>
+                    <td colspan="3" align="left">
+                        <input name="despesa_familiar" type="text" id="despesa_familiar" value="<?=(isset($row['despesa_familiar']))? $row['despesa_familiar']:null?>" size="20" maxlength="15" />
+                    <span class="alerta">somente n&uacute;meros</span>                    </td>
+                </tr>
+                <tr valign="baseline">
+                	<td class="label">Egresso do Sistema Carcer&aacute;rio:</td>
+                    <td colspan="3" align="left">
+                        <select name="carcerario" id="carcerario">
+                        <option value="NAO" <?php if (!(strcmp("NAO", $row['carcerario']))) {echo "selected=\"selected\"";} ?>>NÃO</option>
+                        <option value="SIM" <?php if (!(strcmp("SIM", $row['carcerario']))) {echo "selected=\"selected\"";} ?>>SIM</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Recebe Seguro Desemprego:</td>
+                    <td colspan="3" align="left">
+                        <select name="seguro_desemprego" id="seguro_desemprego">
+                        	<option value="NAO" <?php if (!(strcmp("NAO", $row['seguro_desemprego']))) {echo "selected=\"selected\"";} ?>>NÃO</option>
+                        	<option value="SIM" <?php if (!(strcmp("SIM", $row['seguro_desemprego']))) {echo "selected=\"selected\"";} ?>>SIM</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">Recebe Aponsetadoria ou Benef&iacute;cios:</td>
+                    <td colspan="3" align="left">
+                        <select name="aposentadoria" id="aposentadoria">
+                            <option value="NAO" <?php if (!(strcmp("NAO", $row['aposentadoria']))) {echo "selected=\"selected\"";} ?>>NÃO</option>
+                        	<option value="SIM" <?php if (!(strcmp("SIM", $row['aposentadoria']))) {echo "selected=\"selected\"";} ?>>SIM</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Inserido em Programa Social Municipal:</td>
+                    <td align="left">
+                        <select name="prog_social" id="prog_social">
+                            <option value="NAO" <?php if (!(strcmp("não", $row['prog_social']))) {echo "selected=\"selected\"";} ?>>NÃO</option>
+                        	<option value="SIM" <?php if (!(strcmp("sim", $row['prog_social']))) {echo "selected=\"selected\"";} ?>>SIM</option>
+                      </select>
+                    </td>
+                    <td align="left"> <div align="right">Qual?&nbsp;&nbsp;</div></td>
+                    <td align="left">
+                        <input name="prog_social_especifico" type="text" id="prog_social_especifico" value="<?=(isset($row['prog_social_especifico']))? $row['prog_social_especifico']:null?>" size="53" maxlength="50" />
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="4">&nbsp;</td>
+                </tr>
+
+
+                <tr valign="baseline">
+                    <td colspan="4">
+                        <div align="center">
+                            <span class="alerta"> Os campos em branco dever&atilde;o ser preenchidos com ( - )</span>
+                      </div>
+                	</td>
+            	</tr>
+                <tr>
+                    <td colspan="4">
+                        <div align="center">
+                          <input name="btnCadastrar" type="submit" class="botao" id="btnCadastrar" value="Alterar" />
+                        </div>
+                  </td>
+        		</tr>
+                <tr>
+                    <td colspan="4"><input type="hidden" name="MM_insert" value="form1" /></td>
+                </tr>
+        </table>
+      <input type="hidden" name="MM_update" value="form1" />
+      </form>
+        <!-- MSG DE ERRO! -->
+        <div  id="msg">
+            <?php if ($_GET['action'] == 'success') { echo "Candidato inscrito com sucesso!"; } ?>
+            <?php if (!empty($_GET['erro'])) { echo $msgErro; echo "<script> setTimeout('ocultaMsg()',2000); </script>"; } ?>   
+        </div>      
+  	</div> <!-- DIV formulário -->
+</div><!-- DIV container -->
+    
+</body>
+</html>

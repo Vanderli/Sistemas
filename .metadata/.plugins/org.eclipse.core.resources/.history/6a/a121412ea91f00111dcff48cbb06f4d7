@@ -1,0 +1,101 @@
+<?php
+	/* conexão com banco de dados */
+	include("../../../conexao_db/conexaoTecnologia.php");	
+	# inicializo a sessão.
+	if (!isset($_SESSION)){	session_start();}		
+	# impede que seja acessado alguma página sem passar pelo login 
+	@include("../../login/protege_pagina.php");
+	
+	/* ---------------------------- EDITAR E VISUALIZAR  ---------------------------- */ 
+	$v = "-1";	
+	if (isset($_GET['ben_id'])) { $ben_id = $_GET['ben_id']; }	
+	/* 
+	 * Desabilito o campo caso seja para visualizar
+	 * Edito o título
+	 */
+	if ($_GET['v'] == 'true') {
+		$dis = "disabled='disabled'";
+		$title = "Visualizar Benefício das Secretarias";
+		
+	}else if ($_GET['edit'] == 'true') {
+		$title = "Editar Benefício das Secretarias";
+		$red = "editar_beneficio_sec.php?ben_id=$ben_id";
+		
+	/* Cadastro novo */
+	} else { 
+		$title = "Cadastro Benefício das Secretarias";
+		$red = "inserir_beneficio_sec.php";
+	}
+			
+	// Transformo o recurso em um array	
+	$sql = sprintf("SELECT * FROM beneficio_sec WHERE ben_id='$ben_id'");	
+	$query = @mysql_query($sql, $conn) or die($msg[2]);
+	$linha = @mysql_fetch_assoc($query);	 
+
+	
+	/* ---------------------------- FIM EDITAR E VISUALIZAR  ---------------------------- */
+	
+		
+	# insiro o cabecalho da página
+	include("../../includes/cabecalho/adm_meta-css-js.php"); 
+	
+?>
+
+<div class="sig_container">
+
+    <!-- Menu -->
+    <div class="sig_menu"><?php @include("../../menu/menu.php");?></div>
+  
+    <div class="admin">
+        <form id="admin_beneficio_sec" method="post" name="admin_beneficio_sec" action="<?=$red?>">
+            <ul>
+                <li>
+                	<h3>Benef&iacute;cio das Secretarias</h3>
+                </li>
+                <li>
+                	<label>Secretaria</label>
+                    <select name="ben_sec_id" id="ben_sec_id" <?=$dis?>>
+                			<option value="">- - - - - - - - - -</option>						  
+							<?php 
+                            // varro as informações do banco de dados
+                            $sql = sprintf("select * from secretarias WHERE sec_status='ATIVO' ORDER BY sec_nome ASC");
+                            $rs = mysql_query($sql);
+                            // Obtém o resultado de uma linha como um objeto
+                            while($row = mysql_fetch_array($rs)):?>
+                            <option value="<?=$row['sec_id']?>"<?=($linha['ben_sec_id'] == $row['sec_id'])?'selected':null;?>>	                       				
+                            <?=$row['sec_nome']?></option>
+                            <?php endwhile;?>
+                		</select>
+                </li>
+                <li>
+                	<label>Título</label>
+                	<input id="ben_titulo" action="" maxlength="255" name="ben_titulo" type="text" 
+                    	value="<?=$linha['ben_titulo']?$linha['ben_titulo']:null?>" <?=$dis?>/>       
+                </li>
+                <li>
+                	<label>Descrição</label>
+                    <textarea id="ben_desc" name="ben_desc" rows="3" <?=$dis?>><?=$linha['ben_desc']?$linha['ben_desc']:null?></textarea>
+                </li>
+                <li>
+                	<label>Status</label>
+                    <select name="ben_status" class="admin_status" <?=$dis?>>
+                        <option value="ATIVO"   <?=($linha['ben_status'] == 'ATIVO')?'selected':null;?>>ATIVO</option>
+                        <option value="INATIVO" <?=($linha['ben_status'] == 'INATIVO')?'selected':null;?>>INATIVO</option> 
+                    </select>
+                </li>
+                <li class="admin_btns">
+            	    <? if ($_GET['v'] == 'true') {?>
+                    <input class="btn_cadastrar" name="visualizar" type="button" value="Voltar" onClick="javascript:history.go(-1);"/>
+                    <? } else if($_GET['edit'] == 'true'){ ?>
+                    <input class="btn_cadastrar" name="editar" type="submit" value="Editar" />
+                    <? } else{ ?>
+                    <input class="btn_cadastrar" name="cadastrar" type="submit" value="Cadastrar" <?=$dis?>/>
+                    <? } ?>
+                </li>
+            </ul>
+        </form>
+    </div>
+  
+</div><!-- fecha div sig_container -->
+</body>
+</html>

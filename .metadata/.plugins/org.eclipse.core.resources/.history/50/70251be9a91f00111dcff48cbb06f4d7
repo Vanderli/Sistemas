@@ -1,0 +1,32 @@
+<div id="cont_minha_casa">
+
+  <h3>Minha Casa Minha Vida</h3>
+
+  <br /><br />
+  
+  <ul id="mc_tutorial">
+
+    <h4>Famílias Beneficiadas e Principais Benefícios</h4>
+    
+    <li>
+      <p>
+        <strong>Famílias com renda até 3 salários mínimos</strong><br />
+        - Subsídio integral com isenção do seguro.<br />
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>Famílias com renda de 3 a 6 salários mínimos</strong><br />
+        - Aumento do subsídio parcial em financiamentos com redução dos custos do seguro e acesso ao Fundo Garantidor.<br />
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>Famílias com renda de 6 a 10 salários mínimos</strong><br />
+        - Estímulo à compra com redução dos custos do seguro e acesso ao Fundo Garantidor.<br />
+      </p>
+    </li>
+  </ul>
+
+  
+</div>

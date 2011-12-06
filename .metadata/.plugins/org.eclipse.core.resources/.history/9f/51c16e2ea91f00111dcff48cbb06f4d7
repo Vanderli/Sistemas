@@ -1,0 +1,9 @@
+<? @include_once("_topo_rotativo.php");?>
+<img src="<?=URL?>/<?=topo_rotativo()?>" alt="Prefeitura do Município de Itapecerica da Serra" 
+			title="Prefeitura do Município de Itapecerica da Serra" />
+
+<div id="grafismo">
+	<h1>
+    	<a href="<?=URL?>/index.php" title="Prefeitura do Município de Itapecerica da Serra">
+        	Prefeitura do Município de Itapecerica da Serra</a></h1>
+</div>

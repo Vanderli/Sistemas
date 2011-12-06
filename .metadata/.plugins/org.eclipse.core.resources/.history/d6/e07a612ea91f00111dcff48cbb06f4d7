@@ -1,0 +1,288 @@
+<?
+	# endereço de onde está a biblioteca para gerar o thumbnail
+	$thumbnail = "../../../lib_PHP/thumbnail.php?gd=2&src=../galeria/subgaleria/carros_antigos/";
+
+?>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="../../../js/js_galeria.js?rand=995"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    $('img.image1').data('ad-desc', 'Whoa! This description is set through elm.data("ad-desc") instead of using the longdesc attribute.<br>And it contains <strong>H</strong>ow <strong>T</strong>o <strong>M</strong>eet <strong>L</strong>adies... <em>What?</em> That aint what HTML stands for? Man...');
+    $('img.image1').data('ad-title', 'Title through $.data');
+    $('img.image4').data('ad-desc', 'This image is wider than the wrapper, so it has been scaled down');
+    $('img.image5').data('ad-desc', 'This image is higher than the wrapper, so it has been scaled down');
+    var galleries = $('#gallery').adGallery();
+    $('#switch-effect').change(
+      function() {
+        galleries[0].settings.effect = $(this).val();
+        return false;
+      }
+    );
+    $('#toggle-slideshow').click(
+      function() {
+        galleries[0].slideshow.toggle();
+        return false;
+      }
+    );
+  });
+  </script>
+
+  
+  
+  
+  <div id="gallery">
+  
+  <h3>Encontro de Carros Antigos</h3>
+  
+    <div class="ad-image-wrapper"></div>
+    
+    <div class="ad-nav">
+    
+      <div class="ad-thumbs">
+        <ul class="ad-thumb-list">
+        
+          <li>
+            <a href="<?=$thumbnail?>images/img (1).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (1).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (2).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (2).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (3).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (3).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (4).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (4).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (5).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (5).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          
+          <li>
+            <a href="<?=$thumbnail?>images/img (6).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (6).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (7).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (7).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (8).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (8).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (9).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (9).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (10).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (10).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (11).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (11).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (12).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (12).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (13).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (13).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (14).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (14).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (15).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (15).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (16).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (16).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (17).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (17).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (18).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (18).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (19).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (19).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (20).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (20).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (21).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (21).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (22).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (22).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (23).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (23).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (24).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (24).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (25).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (25).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (26).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (26).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (27).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (27).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (28).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (28).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (29).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (29).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (30).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (30).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (31).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (31).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (32).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (32).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (33).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (33).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (34).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (34).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (35).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (35).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (36).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (36).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (37).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (37).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (38).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (38).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (39).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (39).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (40).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (40).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (41).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (41).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          
+          <li>
+            <a href="<?=$thumbnail?>images/img (42).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (42).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Largo da Matriz - 2009">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (43).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (43).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (44).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (44).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (45).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (45).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (46).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (46).jpg&maxw=90" title="Encontro de Carros Antigos" longdesc="Delfim Verde -  2007">
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="ad-controls"></div>
+    
+  </div>
+
+  <a href="<?=URL?>/galeria/galeria.php" title="Voltar à Galeria de Fotos" id="voltar_galeria">Voltar à Galeria de Fotos</a>

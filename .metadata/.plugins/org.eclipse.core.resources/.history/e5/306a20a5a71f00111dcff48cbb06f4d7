@@ -1,0 +1,85 @@
+/* ESTILO CONTROLE DE DOCUMENTOS - DOCUMENTOS - MENU */
+.centralizar{
+	margin: 0 auto;
+}
+/* tela de bemVindo do sistema*/
+#bemVindo { 
+	border:1px solid #D1D3D4;
+	font-size: 12px;
+	background-color:#F0F0F0;
+	color:#666;
+	width:600px;
+	padding:10px;
+	text-align:center;
+	font-family: "Trebuchet MS", Arial;	
+}
+#bemVindo .row{
+	padding:20px;
+}
+#title{
+	color:#272878;
+}
+/*fim do bem Vindo*/
+
+ul.menubar{
+  margin: 0px; padding: 0px; background-color: #FFFFFF; /* IE6 Bug */ 
+  width:777px; 
+}
+
+ul.menubar .menuvertical
+{
+   margin: 0px; 
+   padding: 0px; 
+   list-style: none; 
+   background-color: #000; 
+   float:left; 
+   width: 111px;
+   
+}
+ul.menubar ul.menu
+{
+   display: none; position: absolute; margin: 0px;
+}
+
+ul.menubar a
+{
+   display: block; text-decoration: none; color: #fff; height:20px; text-align:center; font-size:10px; font-family: "Arial"; 
+   font-weight: bold; padding: 0 10px; line-height: 20px; cursor:pointer; border: 1px solid #fff;
+}
+
+ul.menubar a:hover { color: #fff; background-color:#666666; }
+
+ul.menu,
+ul.menu ul
+{
+   margin: 0; padding: 0; border-bottom: 1px solid #ccc; width: 111px; /* Width of Menu Items */
+   background-color: #000; /* IE6 Bug */
+}
+
+ul.menu li
+{
+   position: relative; list-style: none; border: 0px;
+}  
+
+ul.menu li a
+{
+   display: block; text-decoration: none; color: #fff; height:20px; text-align:left; font-size:10px; font-family: "Arial"; 
+   font-weight: bold; padding: 0 10px; line-height: 20px; cursor:pointer;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul.menu li { float: left; height: 1%; }
+* html ul.menu li a { height: 1%; }
+/* End */
+
+ul.menu ul
+{
+   position: absolute; display: none; left: 111px; /* Set 1px less than menu width */ top: 0px;
+}
+
+ul.menu li.submenu ul { display: none; } /* Hide sub-menus initially */
+
+ul.menu li.submenu { background: #000 url(../imagens/img_menu/arrow.gif) right center no-repeat; }
+
+ul.menu li a:hover { color: #fff; }
+

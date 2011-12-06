@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_verifica" value="name:id_agenda;datatype:int,name:data_cadastro;datatype:date,name:nome;datatype:string,name:endereco;datatype:string,name:bairro;datatype:string,name:cep;datatype:string,name:telefone;datatype:string,name:email;datatype:string,name:historico;datatype:blob,name:login;datatype:string" />
+	<infoitem key="UD_cadastro" value="name:id_agenda;datatype:int,name:data_cadastro;datatype:date,name:nome;datatype:string,name:endereco;datatype:string,name:bairro;datatype:string,name:cep;datatype:string,name:telefone;datatype:string,name:email;datatype:string,name:historico;datatype:blob,name:login;datatype:string" />
+</info>

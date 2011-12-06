@@ -1,0 +1,59 @@
+<div id="servico_online">
+  
+  <h3>Certidão de Número Oficial</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Dar número oficial para residência ou terreno com finalidade de regularização de documentos</p>
+      </li>
+      <li>
+        <h4>Exigências</h4>
+        <p>
+        	Que o terreno seja de propriedade particular, o loteamento regularizado, o pedido deverá ser feito pessoalmente e pagas as devidas taxas
+        </p>
+      </li>      
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- Requerimento com qualificação e endereço completo<br />
+			- RG e CPF/CNPJ originais e cópia simples<br />
+			- Cópia simples do documento de propriedade do Imóvel – CRI (certidão de registro de imóveis) atualizada com discrição do lote, medidas e confrontações, fornecida pelo cartório de Registro de Imóveis ou documento de posse<br />
+			- Cópia simples do IPTU (capa e 1ª folha)<br />
+			- Croqui de localização<br />
+			- Cópia simples do rosto do projeto de aprovação / regularização de construção protocolizada junto à prefeitura
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+            - Em caso de primeira ligação de energia, apresentar conta de água e luz<br />
+            - Procuração (reconhecida firma) no caso de não ser o proprietário<br />
+            - Contrato Social, se pessoa Jurídica
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+        	Taxa de protocolo R$ 7,22<br />
+        	Certidão R$ 18,28<br />
+			Numeração R$ 14,96         
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria de Planejamento e Meio Ambiente <br />
+        	Completo Administrativo Norberto Jose da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../empresa.php';" />
+  </div>
+</div>

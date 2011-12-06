@@ -1,0 +1,44 @@
+<div id="servico_online">
+  
+  <h3>Rebaixamento de Guia</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Rebaixar guia para entrada de veículo na garagem ou acesso a deficientes</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+        	- Requerimento com qualificação, endereço completo e metragem para rebaixamento
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>Exigência: Garagem própria</p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+        	Taxa de protocolo R$ 7,22<br />
+        	R$ 9,67 por metro linear
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Departamento de Serviços Municipais<br />
+        	Rua Zoraide Eva das Dores – Jd Marilu<br />
+        	Telefone: 4666-6895
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>
+</div>

@@ -1,0 +1,86 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Inclusão e Desenvolvimento Social</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+
+  Secretaria Municipal de Inclusão e Desenvolvimento Social
+  <br />
+  <span>Telefone:</span> 4165-1026
+  <br /><br />
+  
+  Departamento de Referência e Assistência Social
+  <br />
+  Parque Paraíso
+  <br />
+  <span>Telefone:</span> 4165-1991 e 4165-2040
+  <br /><br />
+  Valo Velho
+  <br />
+  <span>Telefone:</span> 4165-1030
+  <br /><br />
+  Jardim Jacira
+  <br />
+  <span>Telefone:</span> 4669-4606
+  <br /><br />
+  Potuverá
+  <br />
+  <span>Telefone:</span> 4147-3220
+  <br /><br />
+  
+  Departamento de Programas e Projetos
+  <br />
+  <span>Telefone:</span> 4165-1192
+  <br /><br />
+  
+  Departamento de Relações com Entidades Subvencionadas
+  <br />
+  <span>Telefone:</span> 4165-3118
+  <br /><br />
+  
+  Departamento de Relações do Trabalho
+  <br />
+  <span>Telefone:</span> 4165-1979
+  <br /><br />
+  
+  Serviço Telecentro
+  <br />
+  <span>Telefone:</span> 4667-3148
+  <br /><br />
+  
+  Serviço Acessa São Paulo
+  <br />
+  <span>Telefone:</span> 4165-3000
+  <br /><br />
+  
+  Centro Profissionalizante
+  <br />
+  <span>Telefone:</span> 4667-6969 e 4667-9184    
+  <br /><br />
+  
+  Marcenaria
+  <br />
+  <span>Telefone:</span> 4667-4612
+  <br /><br />
+
+  Melhor Idade
+  <br />
+  <span>Telefone:</span> 4165-1682
+  <br /><br />    
+  
+  Conselho Tutelar
+  <br />
+  <span>Telefone:</span> 4667-3225 e 4667-6485
+  <br /><br />
+
+
+
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

@@ -1,0 +1,54 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Governo, Ciência e Tecnologia</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    <ul>
+      <li>
+        <p>I - coordenar e assessorar o Prefeito nas suas funções político-administrativas, no âmbito Municipal, Estadual e Federal;</p>
+      </li>
+      <li>
+        <p>II - superintender as publicações oficiais de interesse da Prefeitura;</p>
+      </li>
+      <li>
+        <p>III - cuidar e assessorar o Prefeito e auxiliares diretos nos assuntos de Cerimonial, coordenando as festividades e solenidades;</p>
+      </li>
+      <li>
+        <p>IV - executar serviços de relações públicas e de contato com a imprensa em geral;</p>
+      </li>
+      <li>
+        <p>V - assessorar o Prefeito em assuntos administrativos e parlamentares;</p>
+      </li>
+      <li>
+        <p>VI - promover a divulgação das atividades do governo municipal;</p>
+      </li>
+      <li>
+        <p>VII - exercer quaisquer outras atribuições que lhe sejam conferidas pelo Prefeito ou que decorrerem da natureza dos serviços sob sua responsabilidade;</p>
+      </li>
+      <li>
+        <p>VIII - publicar e divulgar atos oficiais do Município e, supletivamente, de outras pessoas de direito público ou privado;</p>
+      </li>
+      <li>
+        <p>IX - executar impressos oficiais, revistas e outros opúsculos oficiais;</p>
+      </li>
+      <li>
+        <p>X - publicar e divulgar informações locais, nacionais e internacionais;</p>
+      </li>
+      <li>
+        <p>XI - coordenar, promover e incentivar o desenvolvimento científico e tecnológico do Município; e</p>
+      </li>
+      <li>
+        <p>XII - articular, viabilizar, propor e acompanhar as ações necessárias ao desenvolvimento tecnológico das comunidades locais.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

@@ -1,0 +1,97 @@
+/* -------------------------------- SIG Menu (Somente em CSS) -------------------------- */
+
+/* ID Container do Sistema, que existe em todas páginas do ADM */
+.sig_menu {
+  float: left;
+  width: 100%;
+  z-index: 2;
+}
+
+/*.sig_logo{border:1px solid #FF0000}*/
+
+#sig_menu {
+  float: left;
+  margin-top: 5px;
+}
+
+.sig_menu_hor {
+	background: #EEE url(../img/menu/bg_menu.jpg); 
+}
+
+.sig_menu_adm {
+  position: relative;
+}
+
+.sig_menu_adm li {
+	background-color: #F6F6F6;
+	font-weight: bold; 
+	float: left; 
+}
+
+.sig_menu_adm li:hover {
+	background: #F6F6F6 url(../img/menu/bg_menu.jpg);
+	position: relative;
+}
+
+.sig_menu_adm li a { 
+	border-right: 1px solid #FFF;
+	color: #6E6E71;
+	display: block; 
+	padding: 4px 19.5px;
+}
+
+.sig_menu_adm li ul li a {
+  padding-left: 10px;
+}
+
+.sig_menu_adm li a:hover {
+  color: #000 !important;
+}
+
+
+/* 	2 nível */
+.sig_menu_adm ul { 
+	left: 0;
+	position: absolute; 
+	top: 100%;
+  visibility: hidden;
+	width: 145px;   
+}
+
+.sig_menu_adm ul li { 
+	background-color: #F6F6F6; 
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	float: left;
+	font-weight: normal;
+	width: 145px;
+}
+
+/* 3 nível */
+.sig_menu_adm ul ul { 
+	border-top: 1px solid #CCC;
+	left: 100%; 
+	top: 0; 
+}
+
+.sig_menu_adm li:hover > ul {
+  visibility: visible;
+  z-index: 2;
+}
+
+/* seta para submenus */
+.sig_menu_adm .sig_submenu {
+  background: #F6F6F6 url(../img/menu/seta.gif) right center no-repeat;
+}
+								  
+/* IE 6 & 7 */
+.sig_menu_adm ul li a { 
+	border-right: none; 
+	display: inline-block;
+	width: 100%; 	 
+}
+.sig_menu_adm li:last-child a {
+  border-right: none;
+} 
+

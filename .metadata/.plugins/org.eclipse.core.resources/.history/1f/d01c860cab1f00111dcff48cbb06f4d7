@@ -1,0 +1,156 @@
+<div id="cont_lista_arvore">
+
+  <h3>Imprensa Oficial</h3>
+  
+  <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+  <div class="la_container">
+    <h4>Ano de 2010</h4>
+    <ul>
+    
+      <div class="la_tres_colunas"> 
+        <li class="la_coluna_tit">   
+          <a title="Janeiro" class="btn_esconde_la">Janeiro</a>
+          <ul class="esconde_la">
+            <li>
+              <span>7,12 MB</span>
+              <a href="arquivos/2010/janeiro/imprensa_oficial_08.pdf" target="_blank" title="Edição 08">Edição 08</a>
+            </li>
+            <li>
+              <span>4,58 MB</span>
+              <a href="arquivos/2010/janeiro/imprensa_oficial_09.pdf" target="_blank" title="Edição 09">Edição 09</a>
+            </li>
+            <li>
+              <span>3,99 MB</span>
+              <a href="arquivos/2010/janeiro/imprensa_oficial_10.pdf" target="_blank" title="Edição 10">Edição 10</a>
+            </li>
+          </ul>
+        </li>
+        <li class="la_coluna_tit">   
+          <a title="Fevereiro" class="btn_esconde_la">Fevereiro</a>
+          <ul class="esconde_la">
+            <li>
+              <span>5,66 MB</span>
+              <a href="arquivos/2010/fevereiro/imprensa_oficial_11.pdf" target="_blank" title="Edição 11">Edição 11</a>
+            </li>
+            <li>
+              <span>9,06 MB</span>
+              <a href="arquivos/2010/fevereiro/imprensa_oficial_12.pdf" target="_blank" title="Edição 12">Edição 12</a>
+            </li>
+            <li>
+              <span>2,79 MB</span>
+              <a href="arquivos/2010/fevereiro/imprensa_oficial_13.pdf" target="_blank" title="Edição 13">Edição 13</a>
+            </li>            
+          </ul>
+        </li>
+         <li class="la_coluna_tit">   
+          <a title="Março" class="btn_esconde_la">Março</a>
+          <ul class="esconde_la">
+            <li>
+              <span>6,04 MB</span>
+              <a href="arquivos/2010/marco/imprensa_oficial_14.pdf" target="_blank" title="Edição 14">Edição 14</a>
+            </li>
+            <li>
+              <span>4,41 MB</span>
+              <a href="arquivos/2010/marco/imprensa_oficial_15.pdf" target="_blank" title="Edição 15">Edição 15</a>
+            </li> 
+            <li>
+              <span>2,91 MB</span>
+              <a href="arquivos/2010/marco/imprensa_oficial_16.pdf" target="_blank" title="Edição 16">Edição 16</a>
+            </li>  
+            <li>
+              <span>3,50 MB</span>
+              <a href="arquivos/2010/marco/imprensa_oficial_17.pdf" target="_blank" title="Edição 17">Edição 17</a>
+            </li>                                 
+          </ul>
+        </li>
+		<li class="la_coluna_tit">   
+          <a title="Abril" class="btn_esconde_la">Abril</a>
+          <ul class="esconde_la">
+            <li>
+              <span>3,12 MB</span>
+              <a href="arquivos/2010/abril/imprensa_oficial_18.pdf" target="_blank" title="Edição 18">Edição 18</a>
+            </li>
+            <li>
+              <span>3,87 MB</span>
+              <a href="arquivos/2010/abril/imprensa_oficial_19.pdf" target="_blank" title="Edição 19">Edição 19</a>
+            </li>            
+          </ul>
+        </li>
+        <li class="la_coluna_tit">   
+          <a title="Abril" class="btn_esconde_la">Maio</a>
+          <ul class="esconde_la">
+            <li>
+              <span>2,74 MB</span>
+              <a href="arquivos/2010/maio/imprensa_oficial_20.pdf" target="_blank" title="Edição 20">Edição 20</a>
+            </li>
+            <li>
+              <span>4,07 MB</span>
+              <a href="arquivos/2010/maio/imprensa_oficial_21.pdf" target="_blank" title="Edição 21">Edição 21</a>
+            </li>            
+          </ul>
+        </li>        
+      </div>
+      
+    </ul>
+  </div>
+  
+  <div class="la_container">
+    <h4>Ano de 2009</h4>
+    <ul>
+    
+      <div class="la_tres_colunas">
+        <li class="la_coluna_tit">
+          <a title="Outubro" class="btn_esconde_la">Outubro</a>
+          <ul class="esconde_la">
+            <li>
+              <span>8,49 MB</span>
+              <a href="arquivos/2009/outubro/imprensa_oficial_01.pdf" target="_blank" title="Edição 01">Edição 01</a>
+            </li>
+          </ul>
+        </li>
+        <li class="la_coluna_tit">
+          <a title="Novembro" class="btn_esconde_la">Novembro</a>
+          <ul class="esconde_la">
+            <li>
+              <span>2,36 MB</span>
+              <a href="arquivos/2009/novembro/imprensa_oficial_02.pdf" target="_blank" title="Edição 02">Edição 02</a>
+            </li>
+            <li>
+              <span>4,01 MB</span>
+              <a href="arquivos/2009/novembro/imprensa_oficial_03.pdf" target="_blank" title="Edição 03">Edição 03</a>
+            </li>
+            <li>
+              <span>5,02 MB</span>
+              <a href="arquivos/2009/novembro/imprensa_oficial_04.pdf" target="_blank" title="Edição 04">Edição 04</a>
+            </li>
+          </ul>
+        </li>
+        <li class="la_coluna_tit">
+          <a title="Dezembro" class="btn_esconde_la">Dezembro</a>
+          <ul class="esconde_la">
+            <li>
+              <span>2,10 MB</span>
+              <a href="arquivos/2009/dezembro/imprensa_oficial_05.pdf" target="_blank" title="Edição 05">Edição 05</a>
+            </li>
+            <li>
+              <span>8,09 MB</span>
+              <a href="arquivos/2009/dezembro/imprensa_oficial_06.pdf" target="_blank" title="Edição 06">Edição 06</a>
+            </li>
+            <li>
+              <span>3,98 MB</span>
+              <a href="arquivos/2009/dezembro/imprensa_oficial_07.pdf" target="_blank" title="Edição 07">Edição 07</a>
+            </li>            
+          </ul>
+        </li>       
+      </div>
+
+      
+      
+      
+    </ul>
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../governo.php';" />
+  </div>
+</div>

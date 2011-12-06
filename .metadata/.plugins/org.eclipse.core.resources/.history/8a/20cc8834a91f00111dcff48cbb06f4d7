@@ -1,0 +1,48 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Finanças</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    <ul>
+      <li>
+        <p>I - assistir e assessorar o Prefeito na elaboração de políticas, programas, planos, projetos, diretrizes e metas quanto aos aspectos financeiros do Município;</p>
+      </li>
+      <li>
+        <p>II - supervisionar, coordenar e controlar os assuntos financeiros, fiscais, de lançamentos, arrecadação e fiscalização de tributos do Município, e demais receitas;</p>
+      </li>
+      <li>
+        <p>III - supervisionar, coordenar e controlar o processamento das despesas, contabilização orçamentária, financeira, patrimonial e econômica;</p>
+      </li>
+      <li>
+        <p>IV - supervisionar, coordenar e controlar o recebimento, guarda e movimentação dos valores do Município;</p>
+      </li>
+      <li>
+        <p>V - coordenar, controlar e manter atualizado o registro do cadastro mobiliário e imobiliário;</p>
+      </li>
+      <li>
+        <p>VI - elaborar Projeto de Lei de Diretrizes Orçamentárias, o Orçamento Anual, o Plano Plurianual, em conjunto com as demais Secretarias e em consonância com o disposto na Legislação Federal, Estadual e Municipal;</p>
+      </li>
+      <li>
+        <p>VII - promover a administração de material e patrimônio;</p>
+      </li>
+      <li>
+        <p>VIII - centralizar, coordenar e supervisionar os serviços e assuntos relativos a padronização, aquisição, guarda, distribuição e controle de materiais e equipamentos;</p>
+      </li>
+      <li>
+        <p>IX - responsabilizar-se por tombamento, registro, inventário e proteção do patrimônio Municipal; e</p>
+      </li>
+      <li>
+        <p>X - responsabilizar-se pelas aquisições de materiais, contratações de obras e serviços, por meio de procedimentos licitatórios.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

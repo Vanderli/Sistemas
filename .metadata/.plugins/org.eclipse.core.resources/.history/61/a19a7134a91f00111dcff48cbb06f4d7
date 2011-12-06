@@ -1,0 +1,25 @@
+<div id="sobre_secretario">
+	<h3>Secretaria Municipal de Educação</h3>
+
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Irani Conceição Baciega Roschel" />
+  
+  <div id="descreve_secretario">
+    <h4>Irani Conceição Baciega Roschel</h4>
+
+    <p>É pedagoga cursando pós-graduação de Psicopedagogia, nasceu em Itapecerica da Serra, no bairro da Lagoa. Sempre atuou como professora no Ensino Fundamental e como Diretora. Colaborou na comunidade Santa Luzia, como catequista, direcionando a formação religiosa de crianças. Atualmente é Secretaria Municipal de Educação.</p>
+    <p>Professora com 30 anos de experiência na área educacional.</p>
+    <p>Formação acadêmica em nível superior em Pedagogia e Pós-Graduando em Psicopedagogia.</p>
+    <p>Experiência com gestão escolar, sala de aula e projetos educacionais.</p>
+    <p>Vasta experiência em coordenação de equipe.</p>
+    <p>Histórico Profissional:</p>
+    <p>Secretária Municipal de Educação de Itapecerica da Serra desde 2007 até o momento.</p>
+    <p>Coordenadora de Secretaria Municipal de Educação de Itapecerica da Serra, de 03 de janeiro de 2005 até 2007.</p>
+    <p>Diretora de Escola Municipal de Educação Infantil durante 05 anos.</p>
+    <p>Professora por 20 anos nas séries iniciais do Ensino Fundamental nas Redes de Ensino Estadual e Privada.</p>
+    <p>Desenvolvimento de Projeto – Resgatando Valores – em Colégio Particular.</p>
+    
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

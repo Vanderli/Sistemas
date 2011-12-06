@@ -1,0 +1,79 @@
+/******
+*
+* Créditos: hcar - Hamilcar Antônio Vieira da Silva - hcar_1@yahoo.com.br
+*
+* ******/
+.topo {
+	background-color: #0066FF;
+}
+.tab {
+	background-color: #33CCFF;
+}
+.list {
+	width: 100%;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+}
+.list .tab .exc {
+	width: 5%;
+	text-align: center;
+}
+#listar #navega {
+	text-align: center;
+	padding-top: 10px;
+}
+.num {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	padding: 3px;
+	background-color: #CCCCCC;
+	border: 1px solid #000000;
+}
+.antProx {
+	font-size: 14px;
+	text-decoration: none;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+#listar #navega {
+	padding-top: 10px;
+}
+.num1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background-color: #999999;
+	padding: 3px;
+	border: 2px solid #000000;
+}
+
+.list .tab .data {
+	width: 15%;
+	text-align: center;
+}
+.list .tab .tit {
+	width: 68%;
+}
+.list .tab .ord {
+	width: 5%;
+	text-align: center;
+}
+.list .tab .alt {
+	width: 5%;
+	text-align: center;
+}
+#listar {
+	padding: 10px;
+}

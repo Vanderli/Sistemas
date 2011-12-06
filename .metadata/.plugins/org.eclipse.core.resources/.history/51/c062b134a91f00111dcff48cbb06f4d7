@@ -1,0 +1,17 @@
+<div id="sobre_secretario">
+
+  <h3>Autarquia Municipal de Saúde</h3>
+  
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Michelle Sales dos Santos da Silva " />
+  
+  <div id="descreve_secretario">
+    <h4>Michelle Sales dos Santos da Silva </h4>
+    
+    <p>Casada, mãe de um filho.</p>
+    <p>Formada em Enfermagem em 2006 pela Universidade Adventista de São Paulo (UNASP), com especialização em saúde mental, Pós-Graduada em Administração Hospitalar, Saúde Coletiva e PSF no Centro Universitário Ítalo Brasileiro (UNIÍTALO). Atualmente cursa Gestão da Clínica.</p>
+    <p>Já trabalhou no CAPS (Centro de Atenção Psicossocial), Pronto Socorro e Unidade Básica de Saúde centrais. Antes de assumir a Autarquia, Michelle Sales dirigia o Programa Saúde da Família no Potuverá.</p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

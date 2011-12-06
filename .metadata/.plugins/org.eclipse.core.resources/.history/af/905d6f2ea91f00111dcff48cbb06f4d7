@@ -1,0 +1,27 @@
+<ul>
+
+    <li id="mcont_arquivo" class="mcont_lateral">
+    	<a href="<?=URL?>/sobre_municipio/sobre_municipio/sobre_municipio.php" title="Sobre o Município">Sobre o Município</a>
+    </li>
+    
+    <li id="mcont_iptu" class="mcont_centro">
+      <a href="<?=URL?>/sobre_municipio/simbolos_hino/simbolos_hino.php" title="Símbolos e Hino">Símbolos e Hino</a>
+    </li>
+    
+    <li id="mcont_leisdecretos" class="mcont_lateral">
+      <a href="http://ceaam.net/its/legislacao" title="Leis e Decretos" target="_blank">Leis e Decretos</a>
+    </li>
+    
+    <li id="mcont_galeria" class="mcont_lateral">
+      <a href="<?=URL?>/noticia/busca_noticias/arquivo_noticias.php?ult_not=true" title="Arquivo de Notícias">Arquivo de Notícias</a>
+    </li>
+    
+    <li id="mcont_protocolo" class="mcont_centro">
+      <a href="<?=URL?>/sobre_municipio/emergencias/emergencias.php" title="Emergências">Emergências</a>
+    </li>
+     
+    <li id="mcont_faleconosco" class="mcont_lateral">
+    	<a href="<?=URL?>/fale_conosco/fale_conosco.php" title="Fale Conosco">Fale Conosco</a>
+    </li>
+    
+</ul>

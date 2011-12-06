@@ -1,0 +1,17 @@
+<div id="sobre_secretario">
+ <h3>Secretaria Municipal de Esporte e Lazer</h3>
+
+
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Ronildo de Lima Oliveira" />
+  
+  <div id="descreve_secretario">
+    <h4>Ronildo de Lima Oliveira</h4>
+    
+    <p>Secretário de Esportes e Lazer. Nascido no município de Itapecerica da Serra, em Janeiro de 1977, pai de 02 filhos. É filho do saudoso Raimundo da Paz Oliveira (Vereador por 3 mandatos neste município).</p>
+    <p>Morador do Bairro Jardim Branca Flor, líder comunitário e também foi eleito vereador nas eleições de 2004 para a legislatura de 2005 à 2008. </p>
+    <p>A frente da política se concentrou na melhoria e qualidade de vida aos moradores do bairro onde mora desde sua infância. Esteve presente em diversas conquistas em prol da população de Itapecerica. </p>  
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

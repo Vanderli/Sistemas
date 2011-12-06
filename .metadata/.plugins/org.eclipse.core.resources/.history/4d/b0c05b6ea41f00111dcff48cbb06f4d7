@@ -1,0 +1,146 @@
+<?php require_once('../conexao/ft.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+?>
+<?php
+// *** Validate request to login to this site.
+if (!isset($_SESSION)) {
+  session_start();
+}
+
+$loginFormAction = $_SERVER['PHP_SELF'];
+if (isset($_GET['accesscheck'])) {
+  $_SESSION['PrevUrl'] = $_GET['accesscheck'];
+}
+
+if (isset($_POST['login'])) {
+  $loginUsername=$_POST['login'];
+  $password=$_POST['senha'];
+  $MM_fldUserAuthorization = "";
+  $MM_redirectLoginSuccess = "../inscricoes/bemVindo.php";
+  $MM_redirectLoginFailed = "login.php?action=erroLogin";
+  $MM_redirecttoReferrer = false;
+  //mysql_select_db($database_conn,$frente_trabalho); 
+  mysql_select_db($database_frente_trabalho, $frente_trabalho);
+  
+  $LoginRS__query=sprintf("SELECT * FROM usuarios WHERE login=%s AND senha=%s AND ativo=1",
+    GetSQLValueString($loginUsername, "text"), GetSQLValueString(md5($password), "text")); 
+   
+  $LoginRS = mysql_query($LoginRS__query,$frente_trabalho) or die(mysql_error());
+  $loginFoundUser = mysql_num_rows($LoginRS);
+  if ($loginFoundUser) {
+     $loginStrGroup = "";
+	
+	$res = mysql_query($LoginRS__query,$ft) or die(mysql_error());	
+	$campo= mysql_fetch_assoc($res);
+	 
+	 $_SESSION['codUsuario'] = $campo['codUsuario'];
+    
+    //declare two session variables and assign them
+    $_SESSION['MM_Username'] = $loginUsername;
+    $_SESSION['MM_UserGroup'] = $loginStrGroup;	      
+
+    if (isset($_SESSION['PrevUrl']) && false) {
+      $MM_redirectLoginSuccess = $_SESSION['PrevUrl'];	
+    }
+    header("Location: " . $MM_redirectLoginSuccess );
+  }
+  else {
+    header("Location: ". $MM_redirectLoginFailed );
+  }
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>..:: FT ::..</title>
+<script type="text/javascript" src="../Biblioteca/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript">
+
+$(function() {
+
+	verificaLogin = function() {
+		$.ajax({
+			type: "POST",
+			url: "php_verificaLogin.php",
+			dataType: "html",
+			data: "login=" + $("#login").val(),
+			success: function(ret) {
+				if (ret=="inativo")
+				{
+					$("#btnLogar").attr('disabled','disabled');
+					$("#msg").hide();
+					$("#msg").text('Usu�rio bloqueado pelo Administrador do Sistema, favor entrar em contato com o Departamento de Tecnologia e Informa��o!').show('show');
+				}
+			}
+		});
+	}
+
+});
+
+</script>
+<link href="../css/estilo.css" rel="stylesheet" type="text/css" /></head>
+
+<body>
+<div id="formulario">
+  <div style="clear: both;">
+      <div id="topoLogin"><span class="topoMenu"><img src="../imagens/Topo_frente-de-Trabalho.jpg" border="1" /></span></div>
+    <div id="formLogin">
+      <form id="form1" name="form1" method="POST" action="<?php echo $loginFormAction; ?>">
+        <table width="195" border="0">
+          <tr>
+            <td colspan="2"><h3>:: Login ::</h3></td>
+          </tr>
+          <tr>
+            <td width="48" class="label">Login</td>
+            <td width="137"><input name="login" type="text" id="login" onblur="verificaLogin();" size="25" /></td>
+          </tr>
+          <tr>
+            <td class="label">Senha</td>
+            <td><input name="senha" type="password" id="senha" size="25" /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="right">
+                <input type="submit" name="btnLogar" id="btnLogar" value="Logar" class="botao"/>
+            </div></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center" id="msg"><?php if ($_GET['action'] == 'erroLogin') { echo "Usu�rio ou senha inv�lido!"; } ?></div></td>
+          </tr>
+        </table>
+      </form>
+      <div style="clear: both;"></div>
+    </div>
+      </div>
+  <div style="clear: both;"></div>
+</div>
+</body>
+</html>

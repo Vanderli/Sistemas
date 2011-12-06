@@ -1,0 +1,62 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Obras e Serviços</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    Secretaria Municipal de Obras e Serviços
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> obraspmis@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento Regional do Valo Velho
+    <br /> 
+    <span>Telefone:</span> 4775-2787
+    <br /><br />
+    
+    Departamento Regional do Jardim Jacira
+    <br /> 
+    <span>Telefone:</span> 4669-3307
+    <br /><br />
+    
+    Departamento Regional do Potuverá
+    <br /> 
+    <span>Telefone:</span> 4667-9612
+    <br /><br />
+    
+    Departamento de Habitação
+    <br /> 
+    <span>Telefone:</span> 4668-9000
+    <br /> 
+    <span>Email:</span> habitacaopmis@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Serviços Municipais
+    <br /> 
+    <span>Email:</span> obrasmunicipais@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Geoprocessamento:
+    <br /> 
+    <span>Telefone:</span> 4668-9000
+    <br /> 
+    <span>Email:</span> geo@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Projetos
+    <br /> 
+    <span>Telefone:</span> 4668-9000
+    <br /> 
+    <span>Email:</span> obraspmisprojetos@itapecerica.sp.gov.br
+
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

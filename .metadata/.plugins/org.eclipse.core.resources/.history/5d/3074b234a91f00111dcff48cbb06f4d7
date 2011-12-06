@@ -1,0 +1,16 @@
+<div id="sobre_secretario">
+	
+  <h3>Secretaria Municipal de Segurança Trânsito e Transporte</h3>
+
+  <img src="secretario.jpg" alt="Foto do Secretário" title="João Pereira" />
+  
+  <div id="descreve_secretario">
+    <h4>João Pereira</h4>
+    
+    <p>Natural de Itapecerica da Serra, comanda desde fevereiro de 2009 a Secretaria de Segurança, Trânsito e Transportes.</p>
+    <p>Com 32 anos de serviço público, João Pereira foi vereador por 20 anos com cinco mandatos, passando também pelos setores de Almoxarifado, Compras e Ministério do Trabalho.</p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

@@ -1,0 +1,57 @@
+<div id="servico_online">
+  
+  <h3>Artes Marciais</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p><strong>Karatê:</strong>
+        Visa essencialmente a conquista do equilíbrio físico, mental e da autoconfiança; o desenvolvimento da intuição, para perceber o ataque do adversário antes mesmo do início do seu movimento. A capacidade de analisar o adversário, para prevenir-se contra surpresas e a  formação de hábitos de saúde. estimula a percepção ensinando que antecipar e evitar é a atitude mais sábia do que o confronto físico em si. Nesta arte marcial não existe agressão na sua extensão e sim nobreza de espírito, domínio da agressividade, modéstia e perseverança. Mas, quando for necessário, fazer vibrar no seu interior a coragem para enfrentar vários adversários. O Karatê é tido como um vetor de saúde, pois proporciona ao seu praticante aptidão física total ou seja, força, resistência, razoável flexibilidade articular e sistema cardiovascular com bom nível de capacidade aeróbica, adequação psicosocial e desenvolvimento moral, além da sensação de bem-estar, redução dos níveis de ansiedade, auto-estima, melhoria da imagem física de si mesmo e auto-conhecimento.
+
+        <br /><br />
+
+        <strong>Capoeira:</strong>
+        Para o corpo, é perfeito. Os movimentos da capoeira mexem com todos os músculos, desenvolvendo uma série de qualidades físicas como: menos tensão e reflexos mais rápidos. Possibilitando ainda o ganho de força.
+        
+        </p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+            - Ficha de inscrição<br />
+            - Cópia do RG ou protocolo<br />
+            - 2 fotos 3x4 (recentes)<br />
+            - Cópia de comprovante de residência<br />
+            - Atestado médico<br />
+            - Cópia do RG do responsável 
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+          <strong>Local das aulas:</strong>
+          <br />
+          - Karatê: Academia do Parque Paraíso
+          
+          <br />
+          - Capoeira: Academia do Marilú
+        
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria Municipal de Esporte e Lazer<br />
+    			Av.: Dona Anila, 1001 - Bairro Olaria <br />
+    			Itapecerica da Serra – SP CEP: 06859-000 <br />
+    			Tel 4667-1148 / 4165- 4667
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>	
+</div>

@@ -1,0 +1,85 @@
+<div id="cont_noticia">  
+    <h3>Acessibilidade</h3>
+    
+    <div id="not_tam_font">
+      <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        <img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        <span>A+</span>
+      </a>
+      <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        <img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        <span>A-</span>
+      </a>
+    </div>
+        
+    <div id="noticia_ilustra">      
+    	<a href="arquivos/cartaz_divulgacao.pdf" target="_blank">
+        <img src="<?=URL?>/acessibilidade/arquivos/cartaz_divulgacao_peq.jpg" alt="Cartaz de Divulgação" /> 
+      </a>
+      <br />
+      <br />
+      <a href="arquivos/cartaz_divulgacao.pdf" class="link_color" target="_blank">Clique aqui para fazer o download do Cartaz de Divulgação</a>    
+    </div>
+
+    <div id="noticia_descreve">
+
+        <p>
+            Em setembro de 2008 formou-se uma Comissão a fim de estudar e elaborar propostas para 
+            acessibilidade no Complexo Administrativo Norberto José da Costa.
+        </p>
+        
+        <br />
+        
+        <p>
+            Nas reuniões foram abordadas as dificuldades das pessoas com deficiência e encaminhadas 
+            à Secretaria Municipal de Administração com as propostas de soluções visando corrigir as barreiras arquitetônicas.
+        </p>
+                
+        <br />
+        
+        <p>
+            Nesta etapa, a Comissão contou com a valiosa contribuição do Conselho dos Direitos das 
+            Pessoas com Deficiência, dos profissionais da Secretaria Municipal de Planejamento e Meio Ambiente 
+            em especial do Plano Diretor, dos representantes do CREA e UOP, da OAB, da Associação Comercial dentre outros.
+        </p>
+                        
+        <br />
+        
+        <p>
+        	Em dezembro de 2009 foi inaugurada uma calçada modelo para travessia na Praça da Fonte, 
+            visando alcançar uma maior repercussão do tema, sendo esta uma das séries de adequações 
+            que estão sendo planejadas e que tornarão o nosso Município um local com mais 
+            acessibilidade às pessoas com necessidades especiais, como exemplo destas melhorias 
+            citamos também a barra de acessibilidade incluida no novo Site Oficial da Prefeitura, 
+            facilitando a navegação para aqueles que possuem algum tipo de necessidade especial.
+        </p>
+                        
+        <br />
+        
+        <p>
+        	Estão sendo elaborados pela Secretaria Municipal de Obras outros projetos, bem como 
+            futuras alterações no Plano Diretor e Código de Obras de modo a exigir que todas 
+            as novas construções em nosso Município estejam adequadas à legislação específica 
+            destinada às adequações às pessoas com necessidades especiais.
+        </p>                        
+                        
+        <br />
+        
+        <p>
+        	Além dos projetos está sendo realizado simultaneamente um levantamento do número 
+            de pessoas com necessidades especiais no Município por meio de um QUESTIONÁRIO que 
+            está sendo distribuído à população. Este questionário também está disponível no site 
+            oficial para preenchimento e posterior entrega na sede da Prefeitura no Atendimento, 
+            nos CRAS ou UBS e tem como objetivo apurar a demanda por bairros de pessoas com 
+            necessidades especiais, a fim de poder melhor administrar a distribuição 
+            de projetos sociais como esportes, teatro ou cursos profissionalizantes adequados.
+          <br /><br />
+        </p>
+        
+       	<p>
+        	<a href="arquivos/questionario_acessibilidade.doc" class="link_color" target="_blank">Clique aqui para baixar o Questionário de Pesquisa das Pessoas com Deficiência</a>
+        </p>                        
+                                
+  </div> 
+   
+</div>

@@ -1,0 +1,206 @@
+$().ready(function() {
+						   
+	/* --------------------- Mudar cor quando selecionar campo ------------------------------ */
+	// focus nos campos	
+	$("input:text, textarea, input:password, select:option").focus(function(){	
+		$(this).toggleClass('campo_focus');
+	});
+	/* quando o objeto perde o focus */
+	$("input:text, textarea, input:password, select:option").blur(function(){
+		$(this).toggleClass('campo_focus');
+	});
+	/* --------------------- Fim Mudar cor quando selecionar campo --------------------------- */					   
+	
+	/* --------------------- Contraste ------------------------------ */
+	$('#acs_contraste').click(function(){
+		$('body').toggleClass('acs_contraste');
+		return false;
+	});
+	/* --------------------- Fim Contraste --------------------------- */
+	
+	
+	/* ---------- Diminuir e aumentar tamanho do texto ------------- */
+	var fonte = 1;	
+	$('#acs_aumenta_fonte').click(function(){
+		if (fonte<1.3){
+			fonte = fonte+0.1;
+			$('#sub_container').css({'font-size' : fonte+'em'});
+		}
+	});
+	$('#acs_reduz_fonte').click(function(){
+		if (fonte>0.8){
+			fonte = fonte-0.1;
+			$('#sub_container').css({'font-size' : fonte+'em'});
+		}
+	});// fecha function texto
+	
+	// Aumentar tamanho da fonte da noticia
+	$('#acs_aumenta_fonte_not').click(function(){
+		if (fonte<1.3){
+			fonte = fonte+0.1;
+			$('#noticia_descreve').css({'font-size' : fonte+'em'});
+		}
+	});
+	$('#acs_reduz_fonte_not').click(function(){
+		if (fonte>0.8){
+			fonte = fonte-0.1;
+			$('#noticia_descreve').css({'font-size' : fonte+'em'});
+		}
+	});
+	/* ---------- Fim Diminuir e aumentar tamanho do texto ------------- */
+
+	/* ------------------------ Somente texto ---------------------------- */
+	$('#acs_somente_texto').toggle(
+		function() {
+			$('body').toggleClass('acs_normal').toggleClass('acs_somente_texto');
+			$('img').click(function(){
+				$(this).after($('<span class="somente_text_p">').css({width: $(this).css('width'), display: 'block'}).html($(this).attr('alt')));
+				return false;
+			});
+			$('img').click();
+			$('img').unbind('click');
+			return false;
+		},
+		function() {
+			$('body').toggleClass('acs_normal').toggleClass('acs_somente_texto');
+			$('.somente_text_p').remove();
+			return false;
+		}
+	);
+	/* ------------------------ Fim Somente texto ------------------------ */
+	
+   
+	/* ------------------------ Imprensa Oficial -------------------------- */
+    $('.esconde_la').css('display', 'none')
+    $('.btn_esconde_la', '.la_container').click(function() {
+    $(this).next().slideToggle('slow')
+    	.siblings('.esconde_la:visible').slideToggle('fast');
+    });    
+    $('.btn_esconde_la').click(function() {
+    	$(this).toggleClass('desce_la');
+    });
+	/* ------------------------ Fim Imprensa Oficial ---------------------- */
+	
+	
+	/* ------------------- Fale Conosco ---------------------- */
+	$(".cont_faleconosco").validate({ errorLabelContainer: $(".cont_faleconosco div.error") });	
+	var container = $('div.msg_errors');
+	var validator = $("#fc_estrut").validate({
+		errorContainer: container,
+		errorLabelContainer: $("ol", container),
+		wrapper: 'li',
+		meta: "validate"
+	});
+	$('#fc_tel1').mask("99");
+	$('#fc_tel2').mask("9999-9999");
+	/* ----------------- Fim Fale Conosco --------------------- */
+
+});
+
+
+/* Links Telefones Úteis (Acesso Rápido) */
+function selTelefones(pag) {
+BASE_URL = 'http://192.168.16.206/portal_itapecerica-WEB-2.0/'
+  switch(pag) {
+    case '1':
+	document.location = BASE_URL+'telefones_uteis/acessa_sp/acessa_sp.php'
+	break
+    case '2':
+	document.location = BASE_URL+'telefones_uteis/ag_rec_fed/ag_rec_fed.php'
+	break
+    case '3':
+	document.location = BASE_URL+'telefones_uteis/cam_municipal/cam_municipal.php'
+	break
+    case '4':
+	document.location = BASE_URL+'telefones_uteis/cart_reg_civil/cart_reg_civil.php'
+	break
+    case '5':
+	document.location = BASE_URL+'telefones_uteis/cart_reg_imoveis/cart_reg_imoveis.php'
+	break
+    case '6':
+	document.location = BASE_URL+'telefones_uteis/cart_reg_notas/cart_reg_notas.php'
+	break
+    case '7':
+	document.location = BASE_URL+'telefones_uteis/cart_eleitoral/cart_eleitoral.php'
+	break
+    case '8':
+	document.location = BASE_URL+'telefones_uteis/cemit_floreal_eterno/cemit_floreal_eterno.php'
+	break
+    case '9':
+	document.location = BASE_URL+'telefones_uteis/cemit_pq_ipes/cemit_pq_ipes.php'
+	break
+    case '10':
+	document.location = BASE_URL+'telefones_uteis/cemit_recanto_silencio/cemit_recanto_silencio.php'
+	break
+    case '11':
+	document.location = BASE_URL+'telefones_uteis/bombeiros/bombeiros.php'
+	break
+    case '12':
+	document.location = BASE_URL+'telefones_uteis/cremat_horto_paz/cremat_horto_paz.php'
+	break
+    case '13':
+	document.location = BASE_URL+'telefones_uteis/def_civil/def_civil.php'
+	break
+    case '14':
+	document.location = BASE_URL+'telefones_uteis/eletropaulo/eletropaulo.php'
+	break
+	  case '15':
+	document.location = BASE_URL+'telefones_uteis/forum/forum.php'
+	break
+    case '16':
+	document.location = BASE_URL+'telefones_uteis/guarda_civil_mun/guarda_civil_mun.php'
+	break
+    case '17':
+	document.location = BASE_URL+'telefones_uteis/hosp_geral/hosp_geral.php'
+	break
+    case '18':
+	document.location = BASE_URL+'telefones_uteis/ibge/ibge.php'
+	break
+    case '19':
+	document.location = BASE_URL+'telefones_uteis/junta_serv_militar/junta_serv_militar.php'
+	break
+    case '20':
+	document.location = BASE_URL+'telefones_uteis/justica_trab/justica_trab.php'
+	break
+    case '21':
+	document.location = BASE_URL+'telefones_uteis/oab/oab.php'
+	break
+    case '22':
+	document.location = BASE_URL+'telefones_uteis/policia_civil/policia_civil.php'
+	break
+    case '23':
+	document.location = BASE_URL+'telefones_uteis/policia_militar/policia_militar.php'
+	break
+    case '24':
+	document.location = BASE_URL+'telefones_uteis/procon/procon.php'
+	break
+    case '25':
+	document.location = BASE_URL+'telefones_uteis/pronto_socorro/pronto_socorro.php'
+	break
+    case '26':
+	document.location = BASE_URL+'telefones_uteis/regional_ensino/regional_ensino.php'
+	break
+    case '27':
+	document.location = BASE_URL+'telefones_uteis/sabesp/sabesp.php'
+	break
+	  case '28':
+	document.location = BASE_URL+'telefones_uteis/telefonica/telefonica.php'
+	break
+  }
+}
+
+/* redirecionar combo */
+function selServicos(pag) {
+BASE_URL = 'http://192.168.16.206/portal_itapecerica-WEB-2.0/'
+  switch(pag) {
+    case '1':
+	document.location = BASE_URL+'cidadao/servicos.php'
+	break
+    case '2':
+	document.location = BASE_URL+'empresa/servicos.php'
+	break
+    case '3':
+	document.location = BASE_URL+'governo/servicos.php'
+	break
+  }
+}

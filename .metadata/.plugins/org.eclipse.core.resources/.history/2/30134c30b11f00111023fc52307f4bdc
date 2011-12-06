@@ -1,0 +1,49 @@
+<div id="servico_online">
+  
+  <h3>Piscina</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Aulas dinâmicas e atividades de natação desenvolvidas para terceira idade, além de aulas de aeróbica e alongamento com instrutores nos períodos da manhã, tarde ou noite dependendo do local</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+            - Ficha de inscrição<br />
+            - Cópia do RG ou protocolo<br />
+            - 2 fotos 3x4 (recentes)<br />
+            - Cópia de comprovante de residência<br />
+            - Atestado médico<br />
+            - Cópia do RG do responsável
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+        	<strong>Local das aulas:</strong>
+            <br />
+            - Estádio Municipal <br />
+            - Ginásio de Esportes para Terceira Idade<br />
+            - Espaço Branca Flor para Aeróbica e Alongamento 
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria Municipal de Esporte e Lazer<br />
+			Av.: Dona Anila, 1001 - Bairro Olaria <br />
+			Itapecerica da Serra – SP CEP: 06859-000 <br />
+			Tel 4667-1148 / 4165- 4667
+
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../cidadao.php';" />
+  </div>
+</div>

@@ -1,0 +1,48 @@
+    <title>Prefeitura do Munic&iacute;pio de Itapecerica da Serra</title>    
+    
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <style type="text/css">
+<!--
+.style2 {color: #FF0000}
+.style3
+{
+	color: #F6830E;
+	font-size: 13px;
+	text-align:center;
+}
+
+-->
+    </style>
+</head>
+
+<body>
+        
+        <div id="conteudoCentro">
+            <div class="coluna1">
+               
+            </div>
+            <div class="coluna2">
+              <div class="noticia">
+                  <div align="left"></div>
+                  <div class="fonts"></div>
+                  
+                  <p class="style3">PROCESSO SELETIVO </p>
+                <strong>
+                  <p align="left">&nbsp;</p>
+                    </strong>
+                <p align="left"><strong>ATEN&Ccedil;&Atilde;O!</strong> Para visualizar arquivos em PDF (<a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" target="_blank"><img src="../imagens/acrobat/acrobat.jpg" width="16" height="15" border="0" /></a>) voc&ecirc; precisar ter o Adobe Reader instalado. Caso n&atilde;o consiga abrir os arquivos, instale o Adobe Reader <a target="_blank" href="http://www.brasil.adobe.com/products/acrobat/readstep2.html"><strong>clicando aqui!</strong></a></p>
+                  <p align="center">&nbsp;</p>
+                  <p align="center">&nbsp;</p>
+                  
+                  <p style="float:left; width:25px; height: 70px;"> <img src="../imagens/acrobat/acrobat.jpg" width="16" height="15" /></p>
+                  <p style="line-height:15px">
+                    <a href="processo-seletivo/EDITAL_N_093-2009_EDITAL_DE_PRORROGACAO.pdf" target="_blank">
+                        <strong>
+                           EDITAL Nº 093/2009 - Prorrogação das inscrições para os emprego
+                        </strong>
+                    </a>
+                  </p>
+                  <p>&nbsp;</p>
+                     </div>  
+</body>
+</html>

@@ -1,0 +1,61 @@
+<div id="cont_lista_arvore">
+
+  <h3>Secretaria Municipal de Finanças</h3>
+  
+  <h4>Serviços da Secretaria</h4>  
+  
+  <div class="la_container">
+    <p>Clique em Lista de Serviços para visualizar todos os serviços da Secretaria.<p>
+    <ul>
+    
+      <div class="la_colunas">    
+        <li class="la_coluna_tit3">   
+          <a title="Lista de Serviços" class="btn_esconde_la">Lista de Serviços</a>
+          <ul class="esconde_la">
+            <li><a href="2via_carne_iptu/2via_carne_iptu.php" title="2º Via do Carnê de IPTU">2º Via do Carnê de IPTU</a></li>
+            <li><a href="2via_insc_munic/2via_insc_munic.php" title="2ª Via da Inscrição Municipal">2ª Via da Inscrição Municipal</a></li>
+            <li><a href="2via_carne_emol_cemi/2via_carne_emol_cemi.php" title="2ª Via do Carnê Emolumentos Cemitério">2ª Via do Carnê Emolumentos Cemitério</a></li>
+            <li><a href="alteracao_ac/alteracao_ac.php" title="Alteração de A/C, End. de Entrega, Lançam. em Blocos, Lançam. da Construção">Alteração de A/C, End. de Entrega, Lançam. em Blocos, Lançam. da Construção</a></li>
+            <li><a href="atualizacao_cadastral/atualizacao_cadastral.php" title="Atualização Cadastral ">Atualização Cadastral </a></li>
+            <li><a href="cadastro_imobiliario/cadastro_imobiliario.php" title="Cadastro Imobiliário ">Cadastro Imobiliário </a></li>
+            <li><a href="certidoes/certidoes.php" title="Certidões">Certidões</a></li>
+            <li><a href="certidao_nada_consta/certidao_nada_consta.php" title="Certidão Nada Consta">Certidão Nada Consta</a></li>
+            <li><a href="isencao_iptu/isencao_iptu.php" title="Isenção de IPTU">Isenção de IPTU</a></li>
+            <li><a href="unificacao_area/unificacao_area.php" title="Unificação de Área / Lote ">Unificação de Área / Lote</a></li>
+            <li><a href="desdobro_desmembramento/desdobro.php" title="Desdobro / Desmembramento">Desdobro / Desmembramento</a></li>
+            <li><a href="alteracao_horario_func/alteracao_horario_func.php" title="Alteração de Horário de Funcionamento">Alteração de Horário de Funcionamento</a></li>
+            <li><a href="alteracao_insc_munic/alteracao_insc_munic.php" title="Alteração de Inscrições Municipais">Alteração de Inscrições Municipais</a></li>
+            <li><a href="alteracao_licen_feirante/alteracao_licen_feirante.php" title="Alteração de Licença para Feirante">Alteração de Licença para Feirante</a></li>
+            <li><a href="certidao_com_vei_ipi/certidao_com_vei_ipi.php" title="Certidão para Compra de Veículo – Isenção de IPI para TAXI">Certidão para Compra de Veículo – Isenção de IPI para TAXI</a></li>
+            <li><a href="certidao_com_vei_icms/certidao_com_vei_icms.php" title="Certidão para Compra de Veículo – Isenção ICMS para TAXI">Certidão para Compra de Veículo – Isenção ICMS para TAXI</a></li>
+            <li><a href="certidao_negativa_iss/certidao_negativa_iss.php" title="Certidão Negativa de ISS">Certidão Negativa de ISS</a></li>
+            <li><a href="carimbar_nota_fiscal/carimbar_nota_fiscal.php" title="Carimbar Nota Fiscal (Autorização de Uso)">Carimbar Nota Fiscal (Autorização de Uso)</a></li>
+            <li><a href="comunicacao_extravio/comunicacao_extravio.php" title="Comunicação de Extravios">Comunicação de Extravios</a></li>
+            <li><a href="emissao_aidf/emissao_aidf.php" title="Emissão de AIDF">Emissão de AIDF</a></li>
+            <li><a href="exclusao_atividade/exclusao_atividade.php" title="Exclusão de Atividade">Exclusão de Atividade</a></li>
+            <li><a href="inclusao_atividade/inclusao_atividade.php" title="Inclusão de Atividade">Inclusão de Atividade</a></li>
+            <li><a href="inscricao_ambulante/inscricao_ambulante.php" title="Inscrição de Ambulante">Inscrição de Ambulante</a></li>
+            <li><a href="inscricao_autonomo/inscricao_autonomo.php" title="Inscrição de Autônomo">Inscrição de Autônomo</a></li>
+            <li><a href="inscricao_eventual/inscricao_eventual.php" title="Inscrição Eventual">Inscrição Eventual</a></li>
+            <li><a href="http://eiss.conam.com.br/eiss/eiss_apresentacao.php?cod_ibge=3522208" title="ISS Eletrônico" target="_blank">ISS Eletrônico</a></li>           
+            <li><a href="relacao_industrias/relacao_industrias.php" title="Relação de Indústrias">Relação de Indústrias</a></li>
+            <li><a href="renovacao_ccm/renovacao_ccm.php" title="Renovação do CCM">Renovação do CCM</a></li>
+            <li><a href="revisao_taxas/revisao_taxas.php" title="Revisão de Taxas">Revisão de Taxas</a></li>
+            <li><a href="talao_nf/talao_nf.php" title="Talão de Nota Fiscal">Talão de Nota Fiscal</a></li>
+            <li><a href="termo_resp_tec_cc/termo_resp_tec_cc.php" title="Termo de Responsabilidade Técnica de Construção Civil">Termo de Responsabilidade Técnica de Construção Civil</a></li>
+          </ul>
+        </li>
+        
+      </div>
+    
+    
+    
+    </ul>
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+
+</div>

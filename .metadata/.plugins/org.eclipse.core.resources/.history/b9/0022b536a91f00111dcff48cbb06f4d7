@@ -1,0 +1,39 @@
+<div id="servico_online">
+  
+  <h3>Certidão Nada Consta </h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+        	- Requerimento com qualificação e endereço completo<br />
+            - Pessoa jurídica – procuração, contrato social; CNPJ<br />
+            - Comprovante de endereço em nome do requerente<br />
+            - Certidão de casamento / original e cópia<br />
+            - Contrato de locação com firma reconhecida das assinaturas / original e cópia, ou declaração do proprietário do imóvel com firma reconhecida
+       </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>Prazo de entrega: até 5 dias úteis</p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>Taxa de certidões 1,55 UFM/UFESP</p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Departamento de Receita<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+
+</div>

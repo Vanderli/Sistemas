@@ -1,0 +1,42 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Gabinete do Prefeito</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+  
+    <ul>
+      <li>
+        <p>I - coordenar os demais órgãos da Prefeitura quanto ao planejamento e execução de políticas, programas, planos, projetos, metas e diretrizes da ação de Governo do Município, mantendo o Prefeito constantemente informado a respeito destas atividades;</p>
+      </li>
+      <li>
+        <p>II - avaliar os resultados alcançados pelos órgãos da Prefeitura;</p>
+      </li>
+      <li>
+        <p>III - assessorar o Prefeito nos contatos com os demais Poderes e outros entes da federação, bem como no atendimento aos munícipes, associações e entidades;</p>
+      </li>
+      <li>
+        <p>IV - cuidar de todo o expediente do Prefeito inclusive correspondências, ofícios, agendamento de reuniões e compromissos e remessa de documentos internos;</p>
+      </li>
+      <li>
+        <p>V - assessorar o Prefeito quanto aos assuntos e serviços da Junta do Serviço Militar;</p>
+      </li>
+      <li>
+        <p>VI - direcionar os trabalhos e relações com os Governos Federal, Estadual e Municipal, bem como suas entidades da Administração Indireta;</p>
+      </li>
+      <li>
+        <p>VII - estabelecer diretrizes sobre o pólo industrial no Município; e</p>
+      </li>
+      <li>
+        <p>VIII - desenvolver o controle de convênios firmados entre a Administração Municipal e demais entes da federação.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

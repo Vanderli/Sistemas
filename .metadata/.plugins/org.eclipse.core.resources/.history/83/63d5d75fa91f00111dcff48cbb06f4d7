@@ -1,0 +1,49 @@
+<!-- Validacao -->
+$(document).ready( function() {
+	
+	$("#form1").validate({
+		// Define as regras
+		rules:{
+			cod_cargo:{ required: true },
+			nome:{ required: true },
+			rg:{ required: true },
+			cpf:{ required: true },
+			sexo:{ required: true },
+			dataNascimento:{ required: true },
+			idade:{ required: true},
+			numeroFilhosMenor18:{ required: true },
+			estadoCivil:{ required: true },
+			endereco:{ required: true },
+			numero:{ required: true },
+			complemento:{ required: true },
+			bairro:{ required: true },
+			cidade:{required: true },
+			cep:{required: true},
+			uf:{required: true},
+			telefone:{required: true},
+			tipoContato:{required: true}			
+		},
+		// Define as mensagens de erro para cada regra
+		messages:{
+			cod_cargo:{required: "Informe o Cargo " },
+			nome:{required: "Informe o nome" },
+			rg:{required: "Informe o RG " },
+			cpf:{required: "Informe o CPF " },
+			sexo:{required: "Informe o Sexo" },
+			dataNascimento:{required: "Informe a data de Nascimento" },
+			idade:{required: "Informe a idade" },
+			numeroFilhosMenor18:{required: "Informe o Nº de filhos " },
+			estadoCivil:{required: "Informe o estado civil" },
+			endereco:{required: "Informe o endereco" },
+			numero:{required: "Informe o número" },	
+			complemento:{required: "Informe o complemento" },
+			bairro:{required: "Informe o bairro" },
+			cidade:{required: "Informe a cidade" },
+			cep:{required: "Informe o CEP" },
+			uf:{required: "Informe o UF" },
+			telefone:{required: "Informe o telefone" },
+			tipoContato:{required: "Informe o tipo de contato" }				
+		}
+	});
+		
+});

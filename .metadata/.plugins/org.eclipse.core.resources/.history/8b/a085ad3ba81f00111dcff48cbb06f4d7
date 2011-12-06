@@ -1,0 +1,250 @@
+<?php 
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>..:: Ajuda Documentos - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--estilos-->
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css"/>
+</head>
+<body onLoad="vertical();horizontal();">
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+	<div class="cont_geral">
+    	<!--################################ TEXTO 1 ######################################-->
+        <div class="text">
+        	<p>
+            	Tela inicial do sistema
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                <img src="../imagens/help_img_doc/image001.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 2 ######################################-->
+        <div class="text">
+        	<p>
+            	Clique no Cadastrar para Cadastrar um novo Documento
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image002.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 3 ######################################-->
+        <div class="text">
+        	<p>
+            	Tela para Cadastro de Documentos
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image003.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 4 ######################################-->
+        <div class="text">
+        	<p>
+            	Escolha a Secretária / Orgão de Origem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image004.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 5 ######################################-->
+        <div class="text">
+        	<p>
+            	Abaixo será exibido apenas o Departamento / Orgão de Origem relativo a Secretaria / Orgão Origem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image005.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 6 ######################################-->
+        <div class="text">
+        	<p>
+            	Note que N.º Remessa, Cargo e Unidade não são obrigatórios
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image006.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 7 ######################################-->
+        <div class="text">
+        	<p>
+            	Informe qual o nome do servidor que recebeu o Documento
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image007.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 8 ######################################-->
+        <div class="text">
+        	<p>
+            	A data informada é inválida
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image008.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 9 ######################################-->
+        <div class="text">
+        	<p>
+            	Quando clicar no botão cadastrar e todos os dados estiverem corretos será exibido uma mensagem
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image009.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 10 ######################################-->
+        <div class="text">
+        	<p>
+            	Ao clicar no OK, você será redirecionado para uma listagem de todos os 
+            documentos </p>
+        	<p>já cadastrados, em ordem decrescente do código</p>
+   	  </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image010.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 11 ######################################-->
+        <div class="text">
+        	<p>
+            	Para listar os documentos já cadastrados, clique em Listar
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image011.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 12 ######################################-->
+        <div class="text">
+        	<p>
+            	Para editar documentos, basta clicar no link Editar na tela de listagem que 
+            será </p>
+        	<p>direcionado para a tela de Alterar Documentos</p>
+      </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image012.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 13 ######################################-->
+        <div class="text">
+        	<p>
+            	Nessa tela você poderá fazer todas as alterações necessárias em seu documento,            </p>
+        	<p>após feita as alterações, basta clicar no botão ALTERAR</p>
+      </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image013.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 14 ######################################-->
+        <div class="text">
+        	<p>
+           	Após clicar no botão ALTERAR será exibida a seguinte mensagem confirmando </p>
+        	<p>que 
+        	  os dados foram alterados</p>
+      </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image014.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 15 ######################################-->
+        <div class="text">
+        	<p>
+            	Ao clicar no OK, você será redirecionado para uma listagem com todos os documentos            </p>
+        	<p>já cadastrados, em ordem decrescente do código</p>
+   	  </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image015.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 16 ######################################-->
+        <div class="text">
+        	<p>
+            	Caso queira apenas visualizar os dados cadastrados, basta clicar no link Visualizar
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image016.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 17 ######################################-->
+        <div class="text">
+        	<p>
+            	Nessa tela é possível apenas visualizar as informações referentes ao documento 
+            escolhido, sem </p>
+        	<p>nenhuma opção de edição, para voltar a listagem basta clicar no 
+                botão voltar
+            </p>
+      </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image017.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 18 ######################################-->
+        <div class="text">
+        	<p>
+            	Após clicar no botão Voltar, você será redirecionado para a tela de listagem, que 
+            por </p>
+        	<p>sua vez é exibida de vinte em vinte documentos
+            </p>
+      </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image018.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 19 ######################################-->
+        <div class="text">
+        	<p>
+            	<img src="../imagens/help_img_doc/visto.jpg" alt="visto" />
+            	Existem 32 documentos cadastrados, na qual é exibida na listagem de forma decrescente,            </p>
+        	<p>para visualizar o documento número 12 basta clicar no botão próximo</p>
+      </div>
+        <!--################################ TEXTO 20 ######################################-->
+        <div class="text">
+        	<p>
+            	Repare que você agora está visualizando uma lista com os 12 primeiros cadastros
+            </p>
+        </div>
+        <div class="image">
+            <p>
+                 <img src="../imagens/help_img_doc/image019.jpg" alt="Documentos" />
+            </p>
+        </div>
+        <!--################################ TEXTO 21 ######################################-->
+        <div class="text">
+        	<p>
+            	Note que essa lista exibe o 12 documentos restantes de um total de 32 já cadastrados</p>
+        </div>
+	</div> <!--DIV cont_geral-->
+</body>
+</html>

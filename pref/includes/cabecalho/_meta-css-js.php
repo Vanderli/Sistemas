@@ -1,0 +1,45 @@
+<?	#CRIANDO UMA CONSTANTE E GUARDANDO NA VARIAVEL URL
+	define('URL','http://'.$_SERVER['SERVER_NAME'].'/pf');	
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"><head>
+  	<title>pf</title>    
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="description" content="PF" />
+    <meta name="keywords" content="cidade, pf"/>
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Departamento de Tecnologia e Informacao" />
+    <!-- Icon -->
+    <link rel="alternate" type="application/rss+xml" title="pf - RSS" href="<?=URL?>/rss/noticias-rss.php" />	
+    <link rel="shortcut icon" href="<?=URL?>/img/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link href="<?=URL?>/css/estilo.css" lang="pt-BR" media="screen,print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="<?=URL?>/css/hacks.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 6]>
+      <script  type="text/javascript" src="<?=URL?>/js/png_ie6.js"></script>    
+      <script type="text/javascript">DD_belatedPNG.fix('*');</script>
+    <![endif]-->    
+    <!-- Javascript's-->
+	<script type="text/javascript" src="<?=URL?>/js/jquery-1.3.2.min.js"></script>    
+    <script type="text/javascript" src="<?=URL?>/js/jquery-cycle.min.js"></script>	
+    <script type="text/javascript" src="<?=URL?>/js/jquery-metadata.js"></script>
+    <script type="text/javascript" src="<?=URL?>/js/jquery-validate.min.js"></script>
+    <script type="text/javascript" src="<?=URL?>/js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="<?=URL?>/js/jquery-anchor.js"></script>
+    <script type="text/javascript" src="<?=URL?>/js/lib_site.js"></script> 
+	<script>
+		(function($){	
+		$(document).ready(function() {	
+			$('#apresenta_home ul').cycle({
+				timeout:7000, pager:'#ap_home_btn', pause:true, cleartype:1, next:'#link_prox', prev:'#link_ant'});
+			});
+		})(jQuery);
+    </script>   
+  </head>
+<body>
+<div class="bg_contraste"></div>
+<div id="rss"><a href="<?=URL?>/rss/noticias-rss.php" target="_blank" title="Notícias RSS"></a></div>

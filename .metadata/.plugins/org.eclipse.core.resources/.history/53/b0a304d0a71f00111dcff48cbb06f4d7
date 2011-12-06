@@ -1,0 +1,291 @@
+/* ESTILO CONTROLE DE DOCUMENTOS - DOCUMENTOS */
+/* Para não quebrar o layout */
+/*table {
+	table-layout:fixed;
+	word-wrap:break-word; /* quebrar palavras caso não se encaixe no layout */
+	/*overflow:hidden; /* MOZILLA */
+/*}*/
+.breve {
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-color: #CCCCCC;
+	border: 1px dotted #666666;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.text{
+	font: bold 16px "Arial Rounded MT Bold","sans-serif";
+	line-height: 115%; 
+	color:#008000;
+	text-align:center;
+	padding-top:40px;
+	padding-bottom:20px;
+	/*text-decoration:underline;*/		
+}
+.image{
+	/*border:1px dashed #000000;*/
+	width:570px;
+	margin: 0 auto;
+}		
+.cont_geral{
+	margin: 0 auto;
+	width:770px;
+	border:1px solid #D1D3D4;
+}
+#title{
+	color:#272878;
+	height:60px;
+}
+
+.row{
+	padding:20px;
+}
+#ajuda a{
+	font-weight:bold;
+}
+
+a:hover{ 	
+	color: #272878;
+}
+#ajuda{
+	padding:20px;
+	background-color:#F0F0F0;
+	width:770px;
+	text-align:none;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+.centralizar{
+	margin: 0 auto;
+}
+.disabled{
+	background-color: #ffffff;
+	color:#9d9da1;
+}
+
+.cad_login {text-transform:lowercase}
+.cad_login2{ text-transform:none;}
+
+th.cabecalhoLista {
+	font-weight: bold;
+	text-align: center;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+}
+/* mensagens de erro no jquery */
+label { display: block; margin-top: 15px; }
+		label.error { float: none; color: red; margin: 0 .5em 0 0; vertical-align: top; font-size: 12px }
+		input.error { border: 1px solid red; }
+		textarea.error { border: 1px solid red; }
+p { clear: both; } 
+
+.msg  {
+	font-size: 12px;
+	color: #FF0000;
+	background-color: #FFFF99;
+	font-weight: bold;
+}
+.titulo {
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	background-color: #CCCCCC;
+	border: 1px dotted #666666;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-family: "Trebuchet MS", Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+.btnPaginacao {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: #666666;
+	color:#FFFFFF;
+	border: 1px solid #999999;
+	font-size: 12px;
+	border: 2px solid #ccc;
+	font-weight: bold;
+	padding: 4px;
+	cursor: pointer;
+}
+.label {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	text-align: left;
+	font-weight: bolder;
+}
+#Detalhe {
+	padding: 10px;
+	width: 770px;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+	text-align:left;
+}
+
+.tituloLista {
+	font-weight: bold;
+	text-align: center;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+}
+.linhaBranca {
+	background-color: #FFFFFF;
+
+}
+#paginacao {
+	width: 500px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+td.tituloLista {	font-weight: bold;
+	text-align: center;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+}
+tr.linhaLista {	background-color: #FFFFFF;
+	font-size:12px;
+}
+
+input, textarea{ text-transform:uppercase;}
+
+.cinza {
+	background-color: #eaeaea;
+}
+.lista{
+	border:#999999 1px dashed;
+}
+#container {
+	width:750px;
+	margin:0 auto;
+}
+.mascara {
+	font-size: 11px;
+	color: #FF0000;
+	padding: 0px;
+}
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: "Trebuchet MS", Arial; 
+	list-style: none; 
+}
+
+body {
+	padding: 10px; 
+	color: #666; 
+	font-size: 12px;
+}
+
+fieldset {
+	padding: 10px; 
+	margin: 10px; 
+	border: 1px solid #999; 
+	background-color:#EAEAEA;
+}
+
+fieldset legend {
+	border: 1px double #999; 
+	padding: 2px 10px; 
+	background-color: #D2D2D2; 
+	margin-bottom: 10px; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+input, textarea, select {
+	border-left: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;	
+	width: 322px; 
+	font-size: 12px; 
+	color: #666;
+}
+
+.radio{ width:50px; text-align:right}
+
+label {
+	border-bottom: 1px solid #ccc; 
+	float: left; 
+	width: 160px;
+}
+
+p {
+	padding: 2px 0;
+}
+.borda-fina {
+	border: 1px solid #696969;
+}
+
+/* tamanho do label */
+#formCadDocumento fieldset {}
+#formCadDocumento label {
+	width: 150px;
+}
+
+.vermelhorNegrito16 {
+	color: #FF0000; font-weight: bold; font-size: 16px;
+}
+#vermelhorNegrito12 {
+	color: #FF0000; font-weight: bold; font-size: 12px;
+}
+.vermelhorNegrito10 {
+	color: #FF0000; font-weight: bold; font-size: 10px;
+}
+
+.linhaLista {
+	background-color: #D1D1D1; font-size:22px; color:#666666;
+}
+
+.negrito {
+	font-weight: bold;
+}
+
+.tam14 {
+	font-size: 14px;
+}
+
+.tam12 {
+	font-size: 12px;
+}
+#naoExiste {
+	font-size: 11px;
+	color: #FF0000;
+	background-color: #FFFF99;
+	font-weight: bold;
+}
+.botao {
+	background: #666666;
+	border: 2px solid #ccc; 
+	color:#FFFFFF; 
+	font-size: 14px; 
+	font-weight: bold; 
+	width: 188px; 
+	padding: 4px; 
+	cursor: pointer;
+}
+	
+.observacao {
+	width:200px; 
+	font-size:10px; 
+	color:#FF0000;
+}
+.bemVindo{
+	font-size:12px;
+}

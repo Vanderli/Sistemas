@@ -1,0 +1,31 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 16/03/2010</p>
+    <h4>Grupo Clari&ocirc; de Teatro</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/teatro_gra.jpg" alt="Grupo Clariô de Teatro" /> 
+    </div>
+
+    <div id="noticia_descreve">
+        <p id="age_data"><span>Data do Evento:</span> 27 e 28 de Março e 10 e 11 de Abril</p>
+        <p id="age_hora"><span>Horário:</span> 21hs nos sábados e às 20hs nos domingos</p>
+        <p id="age_local"><span>Local:</span> Espaço Cultural do Branca Flor, Estrada da Jurema - 360, Jd. Branca Flor</p>
+       
+        <p id="age_desc"><span>Detalhes:</span><br /><br />* Entrada Franca!<br />
+        </p>
+    </div> 
+    
+</div>

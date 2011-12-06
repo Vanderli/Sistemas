@@ -1,0 +1,33 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Segurança, Trânsito e Transporte</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+
+  Secretaria Municipal de Segurança, Trânsito e Transporte
+  <br />
+  <span>Telefone:</span> 4667-4172
+  <br />
+  <span>Email:</span> sstt@itapecerica.sp.gov.br
+  <br /><br />
+  
+  Comando da Guarda Municipal
+  <br />
+  <span>Telefone:</span> 0800-150-364
+  <br />
+  <span>Email:</span> gcmis@itapecerica.sp.gov.br;
+  <br /><br />
+  
+  Departamento de Trânsito
+  <br />
+  <span>Telefone:</span> 4667-9159
+
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

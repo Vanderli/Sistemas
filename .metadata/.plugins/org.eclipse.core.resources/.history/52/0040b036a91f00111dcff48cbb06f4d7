@@ -1,0 +1,41 @@
+<div id="servico_online">
+  
+  <h3>Exclusão de Atividade</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Exclusão de atividade não mais exercida pela empresa</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+        	- Requerimento com qualificação e endereço completo<br />
+            - Documento de alteração da atividade devidamente registrado pela Junta Comercial do Estado de São Paulo<br />
+            - Guia de cadastro
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+            Taxa de protocolo 0,44 UFM/UFESP<br />
+            Alvará R$ 1,71 UFM/UFESP<br />
+            Serviços Administrativos 1,41 UFM/UFESP
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Departamento de Receita<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	AV. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+
+</div>

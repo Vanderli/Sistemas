@@ -1,0 +1,62 @@
+<?php   
+		/* conexão com banco de dados */
+		include("../conexao_db/conexaoTecnologia.php");
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+		/* biblioteca */
+		include("../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+		
+		// BUSCO O ID DO FORMULÁRIO
+		$id_dest_int = "-1";
+		if (isset($_GET['id_dest_int'])) {
+			$id_dest_int = $_GET['id_dest_int'];
+		}
+		
+		/* VISUALIZAR INFORMAÇÕES */
+		mysql_select_db($database_tecnologia, $tecnologia);
+		// Transformo o recurso em um array	
+		$sql = sprintf("SELECT * FROM destino_interno WHERE cod_dest_int ='".$id_dest_int."'"); 
+		$query = mysql_query($sql, $tecnologia) or die('Clique em Voltar, e tente novamente!');
+		$linha = mysql_fetch_assoc($query);	
+		//print_r($linha);exit; 
+?>
+<html>
+<head>
+	<title>..:: Visualizar Destino Interno - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="../estilo/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+<body onLoad="vertical();horizontal();">
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+	<br />
+    <div id="formCadDocumento" align="center">
+       <form action="<?php echo $editFormAction; ?>" method="POST" name="Form" id="Form">
+            <fieldset style="width: 500px;">
+            	<p class="titulo">Visualizar Destino Interno</p>
+            	<p align="left">
+            		<label class="vermelhorNegrito">Nome do Servidor</label>
+            		<input name="nome" type="text" id="nome" value="<?=$linha['nome']?>" size="65" maxlength="90" class="disabled" readonly/>
+            	</p>			         	
+                <p align="left">
+                <label>Status</label>
+                    <select name="status" id="status" disabled>
+                    <option value=" ">-- Selecione -- </option>
+                        <option value="1" <?php if (!(strcmp("ATIVO", $linha['status_dest_int']))) {echo "selected=\"selected\"";} ?>>Ativo</option>
+                        <option value="2" <?php if (!(strcmp("INATIVO", $linha['status_dest_int']))) {echo "selected=\"selected\"";} ?>>Inativo</option>
+                    </select>
+                </p>
+			 	<br />
+                <p align="center">          
+                	<input type="button" onClick="javascript:history.go(-1);" name="Voltar" value="Voltar" class="botao">
+                </p>	
+            </fieldset>
+        	<input type="hidden" name="MM_update" value="Form">
+        </form>
+    </div>
+</body>
+</html>

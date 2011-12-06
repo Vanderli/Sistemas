@@ -1,0 +1,70 @@
+#banners {
+  float: left;
+  font-size: 0.8em;
+	position: relative;
+	width: 172px;
+}
+
+#banners .banner{
+  float: left;
+  height: 98px;
+  left: 0;
+  margin-top: 20px;
+	position: absolute;
+	width: 100%;
+}
+
+.banner.current {
+  float: left;
+  z-index: 2;
+}
+
+#banners #controls {
+  float: left;
+  margin-left: -1px;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+#banners #controls li { 
+	background-color: #EEE;
+	display: inline-block;
+	float: left;
+	list-style: none;
+	margin-left: 1px;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+#banners #controls li a {
+  float: left;
+  margin: 0;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+
+#banners #controls li .last_ctr {
+  padding: 2px 3.5px 2px 2px;
+}
+
+#banners #controls li a:hover {
+  background-color: #D5D5D5;
+  color: #FFF;
+}
+
+#banners #controls li.active,
+#banners #controls li.active a {
+	background-color: #D5D5D5;
+	color: #FFF;
+}
+
+#banners .banner{
+  margin-top /*\**/: 0\;
+  *margin-top: 0;  
+  _margin-top: 0;
+}
+
+
+

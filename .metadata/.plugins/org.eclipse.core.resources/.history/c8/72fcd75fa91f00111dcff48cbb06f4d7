@@ -1,0 +1,51 @@
+<?
+########################### CRIPTOGRAFIA ###########################
+	# Criptografa
+	function criptografa($texto){
+		for($i=0; $i<10;$i++){ $texto=strrev(base64_encode($texto)); }
+		return($texto);
+	}
+	# Descriptografa
+	function descriptografa($texto){
+		for($i=0; $i<10;$i++){ $texto=base64_decode(strrev($texto)); }
+		return($texto);
+	}
+##################### CONVERTE PARA MAIÚSCUL ########################
+	function maiusculo($texto) {
+         $texto = strtoupper ($texto);
+         $texto = str_replace ("á", "Á", $texto); 
+		 $texto = str_replace ("é", "É", $texto); 
+		 $texto = str_replace ("í", "Í", $texto); 
+		 $texto = str_replace ("ó", "Ó", $texto); 
+		 $texto = str_replace ("ú", "Ú", $texto); 
+		 $texto = str_replace ("â", "Â", $texto); 
+		 $texto = str_replace ("ê", "Ê", $texto); 
+		 $texto = str_replace ("ô", "Ô", $texto); 
+		 $texto = str_replace ("Î", "I", $texto); 
+		 $texto = str_replace ("Û", "U", $texto); 
+		 $texto = str_replace ("ã", "Ã", $texto); 
+		 $texto = str_replace ("õ", "Õ", $texto); 
+		 $texto = str_replace ("ç", "Ç", $texto); 
+		 $texto = str_replace ("à", "A", $texto);
+
+   		return($texto);
+   }
+########################### DATA HORA ###########################	
+	class DataHora {
+		//Formata a data no formato BR dd/mm/aaaa
+		public function formataDataBR($data){
+			$dia = substr($data,8,2);
+			$mes = substr($data,5,2);
+			$ano = substr($data,0,4);
+			return $dia."/".$mes."/".$ano;
+		}
+		
+		// Formata a data no formato USA aaaa/mm/dd	
+		public function formataDataUSA($data){
+			$dia = substr($data,0,2);
+			$mes = substr($data,3,2);
+			$ano = substr($data,6,4);
+			return $ano."-".$mes."-".$dia;
+		}
+	}
+?>

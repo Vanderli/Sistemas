@@ -1,0 +1,40 @@
+<div id="cont_lista_arvore">
+
+  <h3>Serviços para o Governo</h3>
+  
+  <div class="la_container">
+    <ul>
+    
+      <div class="la_colunas">    
+        <li class="la_coluna_tit2">   
+          <a title="Transparência" class="btn_esconde_la">Transparência</a>
+          <ul class="esconde_la">
+            <li><a href="servicos/lei-responsabilidade-fiscal/lei-resp-fiscal.php" title="Lei de Responsabilidade Fiscal">Lei de Responsabilidade Fiscal</a></li>
+            <li><a href="servicos/despesas-receita-ensino/despesa-receita-ensino.php" title="Receitas e Despesas de Ensino">Receitas e Despesas de Ensino</a></li>
+            <li><a href="servicos/previdencia-social/previdencia-social.php" title="Previdência Social">Previdência Social</a></li>
+            <li><a href="servicos/relatorio_atendimento/relatorio-atendimento.php" title="Relatórios de Atendimento">Relatórios de Atendimento</a></li>
+            <li><a href="http://www.camaraitapecerica.sp.gov.br/" title="Leis Municipais" target="_blank">Leis Municipais</a></li>
+            <li><a href="servicos/execucao_fiscal/execucao_fiscal.pdf" title="Execução Fiscal" target="_blank">Execução Fiscal</a></li>
+          </ul>
+        </li>
+        <li class="la_coluna_tit2">   
+          <a title="Autarquia Municipal de Saúde" class="btn_esconde_la">Autarquia Municipal de Saúde</a>
+          <ul class="esconde_la">
+            <li><a href="servicos/autarquia_municipal_saude/autarquia_municipal_saude.php" title="Autarquia Municipal de Saúde">Autarquia Municipal de Saúde</a></li>
+          </ul>
+        </li>   
+      </div>
+      
+      <div class="la_colunas">    
+        <li class="la_coluna_tit2">   
+          <a title="Imprensa Oficial" class="btn_esconde_la">Imprensa Oficial</a>
+          <ul class="esconde_la">
+            <li><a href="servicos/imprensa_oficial/imprensa_oficial.php" title="Imprensa Oficial">Imprensa Oficial</a></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+
+</div>

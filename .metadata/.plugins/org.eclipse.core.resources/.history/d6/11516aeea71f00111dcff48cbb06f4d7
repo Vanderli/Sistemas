@@ -1,0 +1,172 @@
+<?php   
+		/* conexão com banco de dados */
+		include("../../conexao_db/conexaoTecnologia.php");
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../../login/protege_pagina.php");
+		/* biblioteca */
+		include("../../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+		
+		// BUSCO O ID DO FORMULÁRIO
+		$id_sec = "-1";
+		if (isset($_GET['id_sec'])) {
+			$id_sec = $_GET['id_sec'];
+		}
+		
+		/* ALTERAR INFORMAÇÕES */
+		if (!function_exists("GetSQLValueString")) {
+			function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+			{
+				$theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+				$theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+		
+				switch ($theType) {
+					case "text":
+						$theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+					break;    
+					case "long":
+					case "int":
+						$theValue = ($theValue != "") ? intval($theValue) : "NULL";
+					break;
+					case "double":
+						$theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+					break;
+					case "date":
+						$theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+					break;
+					case "defined":
+						$theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+					break;
+				}
+				return $theValue;
+			}
+		}
+		
+		$editFormAction = $_SERVER['PHP_SELF'];
+		if (isset($_SERVER['QUERY_STRING'])) {
+			$editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+		}
+
+		if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "Form")) {
+			
+			$updateSQL = sprintf("UPDATE origem1 SET 
+									data_cadastro=%s,
+									hora=%s,
+									usuario_cadastro=%s, 
+									desc_origem1=%s, 
+									sigla_origem1=%s, 
+									status_origem1=%s 
+									
+								WHERE cod_origem1='".$id_sec."'",
+		  
+							GetSQLValueString(date("Y/m/d"), "date"),
+							GetSQLValueString(date('G:i:s'), "text"),
+							GetSQLValueString($_SESSION['codUsuario'], "int"),
+							GetSQLValueString(strtoupper($_POST['desc_origem1']), "text"),
+							GetSQLValueString(strtoupper($_POST['sigla_origem1']), "text"),
+							GetSQLValueString($_POST['status'], "int"));
+							
+							//print_r($updateSQL);exit;
+			
+			mysql_select_db($database_tecnologia, $tecnologia);
+			$Result1 = mysql_query($updateSQL, $tecnologia) or die(mysql_error());
+			
+			if($Result1){
+				echo "<script type=\"text/javascript\">
+					  		alert('Dados Alterados com sucesso!');
+							window.location.href=' formListarSec.php';
+					  </script>";
+			}else {
+				echo "<script type=\"text/javascript\">
+							alert('Falha na Alteração dos dados!');
+							window.location.href=' formListarSec.php';
+					  </script>";
+				}
+			}
+		 
+		 // select para edição
+		 mysql_select_db($database_tecnologia, $tecnologia);
+		// Transformo o recurso em um array	
+		$sql = sprintf("SELECT * FROM origem1 WHERE cod_origem1 ='".$id_sec."'"); 
+		$query = mysql_query($sql, $tecnologia) or die('Clique em Voltar, e tente novamente!');
+		$linha = mysql_fetch_assoc($query);	
+		//print_r($linha);exit; 
+?>
+<html>
+<head>
+	<title>..:: Alterar Secretaria - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="../../estilo/estilo.css" rel="stylesheet" type="text/css" />
+    <!-- javaScript -->
+    <script type="text/javascript" src="../../js/jquery-1.2.6.js"></script>
+    <script type="text/javascript" src="../../js/jquery-validate.js"></script> 
+    <script type="text/javascript">
+		<!-- Validação -->
+		$(document).ready( function() {
+			$("#Form").validate({
+				// Define as regras
+				rules:{
+					sigla_origem1:{
+						required: false
+					},
+					desc_origem1:{
+						required: true, minlength: 3
+					},
+					status:{
+						required: true
+					}
+				},
+				// Define as mensagens de erro para cada regra
+				messages:{
+					sigla_origem1:{
+						required: "Informe a Sigla"
+					},
+					desc_origem1:{
+						required: "Informe a Descrição",
+						minlength: "A Descrição deve conter, no mínimo, 3 caracteres"
+					},
+					status:{
+						required: "Informe o Status"
+					}
+				}
+			});
+		});
+	</script>  
+</head>
+<body onLoad="vertical();horizontal();">
+	<!--menu-->
+	<?php @include_once('../../menu/menu.php'); ?>
+	<br />
+    <div id="formCadDocumento" align="center">
+      <form action="<?php echo $editFormAction; ?>" method="POST" name="Form" id="Form">
+         <fieldset style="width: 500px;">
+             <p class="titulo">Alterar Origem / Destino Externo - Secretaria / Órgão</p>
+         <p align="left">
+       	   <label class="vermelhorNegrito">Sigla</label>
+       			 <input name="sigla_origem1" type="text" id="sigla_origem1" value="<?=$linha['sigla_origem1']?>" size="50" maxlength="40" />
+         </p>
+                <p align="left">
+                	<label class="vermelhorNegrito">Descrição</label>
+               			<input name="desc_origem1" type="text" id="desc_origem1" value="<?=$linha['desc_origem1']?>" size="50" maxlength="90" />
+                </p>				         	
+         <p align="left">
+       	   <label>Status</label>
+               <select name="status" id="status">
+                 <option value="">-- Selecione -- </option>
+                        <option value="1" <?php if (!(strcmp("ATIVO", $linha['status_origem1']))) {echo "selected=\"selected\"";} ?>>Ativo</option>
+                        <option value="2" <?php if (!(strcmp("INATIVO", $linha['status_origem1']))) {echo "selected=\"selected\"";} ?>>Inativo</option>
+               </select>
+         </p>
+         <br />
+         <p align="center">          
+                	<input type="submit" name="Alterar" value="Alterar" class="botao">
+         </p>
+            </fieldset>
+        		<input type="hidden" name="MM_update" value="Form">
+        </form>
+    </div>
+</body>
+</html>

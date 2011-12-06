@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+  <head>
+    <!-- Meta Tags -->
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="description" content="Prefeitura do Município de Itapecerica da Serra" />
+    <meta name="keywords" content="Itapecerica da Serra, Prefeitura, Município, Cidade, Concurso"/>
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Departamento de Tecnologia e Informação - SADTI" />
+
+    <!-- CSS -->
+    <link href="../css/estilo.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="../css/hacks.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <!-- Icon abas -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+      
+    <title>Prefeitura do Município de Itapecerica da Serra</title>
+  </head>
+  
+<body>
+
+  <div class="listagem">
+    <table>
+      <caption>Listagem - FOTOS</caption>
+      <thead>
+        <tr>
+          <th class="list_editar">Editar</th>
+          <th>Subgaleria</th>
+          <th>Legenda</th>
+          <th>Foto</th>
+          <th class="list_status">Status</th>
+          <th class="list_detalhes">Detalhes</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            <table class="list_btns">
+              <tr>
+                <td colspan="2"><a href="#" title="Anterior">Anterior</a></td>
+                <td colspan="2" class="list_link">Y até Z total de X</td>
+                <td colspan="2"><a href="#" title="Próximo">Próximo</a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr class="dif">
+          <td class="list_editar"><a href="#" title="Editar">Editar</a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="list_status">ATIVO</td>
+          <td class="list_detalhes"><a href="#" title="Visualizar">Visualizar</a></td>
+        </tr>
+        <tr>
+          <td class="list_editar"><a href="#" title="Editar">Editar</a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="list_status">INATIVO</td>
+          <td class="list_detalhes"><a href="#" title="Visualizar">Visualizar</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

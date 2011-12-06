@@ -1,0 +1,284 @@
+<?php 
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>..:: Ajuda Consultas - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--estilos-->
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css"/>
+</head>
+<body onLoad="vertical();horizontal();">
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+	<div class="cont_geral">
+        <!--################################ TEXTO 1 ######################################-->
+        <div class="text">
+            <p>
+                Para gerar relatórios de documentos basta passar o mouse sobre a aba            </p>
+            <p>Relatórios depois clicar em Documentos.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image001.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 2 ######################################-->
+        <div class="text">
+            <p>
+            	<img src="../imagens/help_img_doc/visto.jpg" alt="visto" />
+                Após clicar na aba Relatórios / Documentos, abrirá uma tela onde você preencherá
+                 os</p>
+            <p> campos para gerar o relatório.            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image002.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 3 ######################################-->
+        <div class="text">
+            <p>
+            	Após preencher todos os campos, basta clicar no botão Pesquisar.
+            </p>
+        </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image003.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 4 ######################################-->
+        <div class="text">
+            <p>
+           	Caso não tenha nenhum documento cadastrado com os dados preenchidos </p>
+            <p>ele exibirá a seguinte mensagem.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image004.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 5 ######################################-->
+        <div class="text">
+            <p>
+            	Agora vamos preencher todos os campos com os dados corretos escolhendo a            </p>
+            <p>opção Com Trâmite e clicar no botão Pesquisar.
+            </p>
+          </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image005.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 6 ######################################-->
+        <div class="text">
+            <p>
+                Feito isso será exibido o relatório com os respectivos dados preenchidos anteriormente.            </p>
+            <p>&nbsp;</p>
+          <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />
+          Caso queira voltar  basta clicar no botão Voltar.</p>
+          <p>&nbsp;</p>
+          <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso queira imprimir o relatório basta clicar no botão Imprimir. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image006.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 7 ######################################-->
+        <div class="text">
+            <p>
+           	Agora vamos preencher todos os campos com os dados corretos escolhendo a opção</p>
+            <p> Sem Trâmite e clicar no botão Pesquisar.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image007.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 8 ######################################-->
+        <div class="text">
+            <p>
+                Feito isso será exibido o relatório com os respectivos dados preenchidos anteriormente.                </p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" /> Caso queira voltar  basta clicar no bot&atilde;o Voltar.</p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso queira imprimir o relat&oacute;rio basta clicar no bot&atilde;o Imprimir. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image008.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 9 ######################################-->
+        <div class="text">
+            <p>
+                Agora vamos preencher apenas a Data Inicio e a Data Final escolhendo a opção 
+            Geral e </p>
+            <p>clicando no botão Pesquisar.</p>
+            <p>&nbsp;</p>
+            <p> Observe que não preenchemos o restante dos 
+                campos, pois a intenção é que traga</p>
+            <p> todos os registros entre 01/01/2009 e 31/12/2009. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image009.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 10 ######################################-->
+        <div class="text">
+            <p>
+                Feito isso será exibido o relatório com os respectivos dados entre 01/01/2009 e 31/12/2009.            </p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" /> Caso queira voltar  basta clicar no bot&atilde;o Voltar.</p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso queira imprimir o relat&oacute;rio basta clicar no bot&atilde;o Imprimir. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image010.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 11 ######################################-->
+        <div class="text">
+            <p>
+           	Para gerar relatórios de trâmite externo basta clicar na aba Relatórios depois em </p>
+            <p>Trâmites Externo.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image011.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 12 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar na aba Relatórios / Trâmites Externo, abrirá uma tela onde você 
+            pesquisará um </p>
+            <p>documento já cadastrado.            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image012.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 13 ######################################-->
+        <div class="text">
+            <p>
+           	Agora vamos escolher a opção de pesquisa Nome e no campo "Digite a Consulta" </p>
+            <p>digitamos 
+                o nome Carlos da Silva e clicar no botão Pesquisar.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image013.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 14 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar no botão Pesquisar será exibida uma listagem dos documentos 
+            que</p>
+            <p> possuem o nome Carlos da Silva. </p>
+            <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />
+            	Depois de escolher qual documento você quer 
+                gerar o relatório clique em Visualizar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image014.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 15 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar em Visualizar, será exibida uma tela contendo o detalhamento do
+                documento na</p>
+            <p> parte superior, e na parte inferior será exibido um histórico dos tramites externos.                </p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" /> Caso queira voltar  basta clicar no bot&atilde;o Voltar.</p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso queira imprimir o relat&oacute;rio basta clicar no bot&atilde;o Imprimir. </p>
+      </div>
+        <div class="image">
+            <p>
+                <img src="../imagens/help_img_rel/image015.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 16 ######################################-->
+        <div class="text">
+            <p>
+           	Para gerar relatórios de trâmite interno basta clicar na aba Relatórios depois em </p>
+            <p>Trâmite Interno.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image016.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 17 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar na aba Relatórios / Trâmites Interno, abrirá uma tela onde você</p>
+            <p> pesquisará um            documento já cadastrado.</p>
+            </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image017.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 18 ######################################-->
+        <div class="text">
+            <p>
+            	Agora vamos escolher a opção de pesquisa Tipo de Documento e no campo "Digite a Consulta"            </p>
+            <p>digitamos Informação e clique no botão Pesquisar.
+            </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image018.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 19 ######################################-->
+        <div class="text">
+            <p>
+            Após clicar no botão Pesquisar será exibida uma listagem dos documentos que possuem </p>
+            <p>esse Tipo de Documento.            </p>
+            <p>&nbsp;</p>
+            <p><img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Depois de escolher qual documento você quer gerar o relatório clique em Visualizar. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image019.jpg" alt="Relatórios" />
+            </p>
+        </div>
+        <!--################################ TEXTO 20 ######################################-->
+        <div class="text">
+            <p>
+                Após clicar em Visualizar, será exibida uma tela contendo o detalhamento do 
+                documento na parte superior, e na parte inferior será exibido um histórico dos tr&acirc;mites internos.                </p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" /> Caso queira voltar  basta clicar no bot&atilde;o Voltar.</p>
+            <p>&nbsp;</p>
+            <p> <img src="../imagens/help_img_tra/visto.jpg" alt="Visto" />Caso queira imprimir o relat&oacute;rio basta clicar no bot&atilde;o Imprimir. </p>
+      </div>
+        <div class="image">
+            <p>
+            	<img src="../imagens/help_img_rel/image020.jpg" alt="Relatórios" />
+            </p>
+        </div>        
+    </div> <!--DIV cont_geral-->
+</body>
+</html>

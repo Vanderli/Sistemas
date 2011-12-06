@@ -1,0 +1,33 @@
+<div id="servico_online">
+  
+  <h3>Conservação de Vias Públicas</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Pavimentação, tapa buraco, limpeza da via e calçada, tampa de bueiro, motonivelar e cascalhar vias, coleta de lixo, tubulação</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- Endereço completo<br />
+        	- Telefone para contato
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Departamento de Serviços Municipais<br />
+        	Rua Zoraide Eva das Dores – Jd Marilu<br />
+        	Telefone: 4666-6895
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>
+</div>

@@ -1,0 +1,203 @@
+<?php
+		/* conexão com banco de dados */
+		include("../../conexao_db/conexaoTecnologia.php"); 
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../../login/protege_pagina.php");
+		/* biblioteca */
+		include("../../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+
+		// LISTAGEM
+		if ($_GET['busca'] != '' && $_GET['tipo_consulta'] != '')
+			{
+				switch ($_GET['tipo_consulta'] )
+				{
+					case 1:
+						$sql = 	"SELECT * FROM documento WHERE nome 
+								 LIKE '%".$_GET['busca']."%' 
+								 ORDER BY nome DESC";
+					break;
+					case 2:
+						$sql = "SELECT * FROM documento WHERE numDocumento = '".$_GET['busca']."' 
+								ORDER BY codDocumento DESC";
+					break;
+					case 3:
+						$sql = "SELECT * FROM documento WHERE assunto 
+								LIKE '%".$_GET['busca']."%' 
+								ORDER BY codDocumento DESC";
+					break;
+					case 4:
+						$sql = "SELECT * from documento WHERE tipo_documento = (SELECT cod_tipo from tipo_documento WHERE status_tipo='ATIVO' 
+								AND nome_tipo = '".$_GET['busca']."') 
+								ORDER BY codDocumento DESC";
+					break;
+					case 5:
+						$sql = "SELECT * FROM documento	
+								WHERE dataCadastro='".$data->formataDataUSA($_GET['busca'])."'	
+								ORDER BY codDocumento DESC";
+					break;
+				}
+			}else{
+				sleep(0);                       						// tempo para redirecionar
+				header("Location: formConTraInt.php?action=dontAcess"); // local para onde estou redirecionando
+			}
+		
+		if (!function_exists("GetSQLValueString")) {
+		function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+		{
+		  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+		
+		  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+		
+		  switch ($theType) {
+			case "text":
+			  $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+			  break;    
+			case "long":
+			case "int":
+			  $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+			  break;
+			case "double":
+			  $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+			  break;
+			case "date":
+			  $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+			  break;
+			case "defined":
+			  $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+			  break;
+		  }
+		  return $theValue;
+		}
+		}
+		$currentPage = $_SERVER["PHP_SELF"];
+		
+		$maxRows_listaInscricoes = 20;
+		$pageNum_listaInscricoes = 0;
+		if (isset($_GET['pageNum_listaInscricoes'])) {
+		  $pageNum_listaInscricoes = $_GET['pageNum_listaInscricoes'];
+		}
+		$startRow_listaInscricoes = $pageNum_listaInscricoes * $maxRows_listaInscricoes;
+		
+		mysql_select_db($database_tecnologia, $tecnologia);
+		$query_listaInscricoes = $sql;
+		
+		$query_limit_listaInscricoes = sprintf("%s LIMIT %d, %d", $query_listaInscricoes, $startRow_listaInscricoes, $maxRows_listaInscricoes);
+		$listaInscricoes = mysql_query($query_limit_listaInscricoes,$tecnologia) or die(mysql_error());
+		$row_listaInscricoes = mysql_fetch_assoc($listaInscricoes);
+		
+		if (isset($_GET['totalRows_listaInscricoes'])) {
+		  $totalRows_listaInscricoes = $_GET['totalRows_listaInscricoes'];
+		} else {
+		  $all_listaInscricoes = mysql_query($query_listaInscricoes);
+		  $totalRows_listaInscricoes = mysql_num_rows($all_listaInscricoes);
+		}
+		$totalPages_listaInscricoes = ceil($totalRows_listaInscricoes/$maxRows_listaInscricoes)-1;
+		
+		$queryString_listaInscricoes = "";
+		if (!empty($_SERVER['QUERY_STRING'])) {
+		  $params = explode("&", $_SERVER['QUERY_STRING']);
+		  $newParams = array();
+		  foreach ($params as $param) {
+			if (stristr($param, "pageNum_listaInscricoes") == false && 
+				stristr($param, "totalRows_listaInscricoes") == false) {
+			  array_push($newParams, $param);
+			}
+		  }
+		  if (count($newParams) != 0) {
+			$queryString_listaInscricoes = "&" . htmlentities(implode("&", $newParams));
+		  }
+		}
+		$queryString_listaInscricoes = sprintf("&totalRows_listaInscricoes=%d%s", $totalRows_listaInscricoes, $queryString_listaInscricoes);
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>..:: Tr&acirc;mites Internos Pesquisar - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<!-- estilos -->
+    <link href="../../estilo/estilo.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body onLoad="vertical();horizontal();">
+
+	<?php include('../../menu/menu.php'); ?>
+    <div align="center">
+		<br />
+        <table width="770" border="0" align="center" class="borda-fina">
+        <?php if(!$row_listaInscricoes): ?>
+	   		<tr>
+	   			<td align="center" style="padding:20px"><p class="msg">Não existem Dados similares a sua pesquisa!</p></td>
+			</tr>
+	 	<?php else:?>
+            <tr>
+            	<td colspan="6" align="center" class="titulo"><h3>Trâmites Internos Pesquisados</h3></td>
+            </tr>
+            <tr>
+              <th width="60" class="cabecalhoLista" scope="col">Código</th>
+              <th width="100" class="cabecalhoLista" scope="col">Nº Documento</th>
+              <th width="110"class="cabecalhoLista" scope="col">Sec./Órgão</th>
+              <th  width="110"class="cabecalhoLista" scope="col">Depto./Órgão</th>
+              <th  width="200"class="cabecalhoLista" scope="col">Tipo de Documento</th>
+              <th  width="70"class="cabecalhoLista" scope="col">Detalhes</th>
+          </tr>
+        <?php $color = 0; ?>
+        <?php do { ?>
+            <tr class="<?php echo ($color % 2 == 1) ? "cinza" : ""; ?>">
+                <td align="center"> <?=$row_listaInscricoes['codDocumento']; ?>  		    </td>
+               	<td align="left">   <?=limita_caracteres($row_listaInscricoes['numDocumento'],15);?>  			</td>
+                <?php // ORIGEM 1
+						$sql_origem1 = sprintf("SELECT * FROM origem1 WHERE status_origem1 = 'ATIVO' AND cod_origem1 = '".$row_listaInscricoes['origem1']."'");
+						$rs_origem1 = mysql_query($sql_origem1);
+						$row_origem1 = mysql_fetch_array($rs_origem1);
+				?>
+                <td align="left">   <?=limita_caracteres($row_origem1['sigla_origem1'],15);?>           		     </td>
+                <?php // ORIGEM 2
+						$sql_origem2 = sprintf("SELECT * FROM origem2 WHERE status_origem2 = 'ATIVO' AND cod_origem2 = '".$row_listaInscricoes['origem2']."'");
+						$rs_origem2 = mysql_query($sql_origem2);
+						$row_origem2 = mysql_fetch_array($rs_origem2);
+				?>
+                <td align="left">   <?=limita_caracteres($row_origem2['sigla_origem2'],15); ?>					      </td>
+			<?php // TIPO DE DOCUMENTO
+				$sql_tipo_documento = sprintf("SELECT * FROM tipo_documento WHERE status_tipo = 'ATIVO' AND cod_tipo = '".$row_listaInscricoes['tipo_documento']."'");
+				$rs_tipo_documento = mysql_query($sql_tipo_documento);
+				$row_tipo_documento = mysql_fetch_array($rs_tipo_documento);
+			?>
+                <td align="left">   <?=limita_caracteres($row_tipo_documento['nome_tipo'],30); ?>					   </td>
+                <td align="center"><a href="formDetalheTraInt.php?id_tramite=<?php echo $row_listaInscricoes['codDocumento']; ?>" class="mascara">Visualizar</a></td>
+		</tr>
+            <?php $color++; ?>
+            <?php } while ($row_listaInscricoes = mysql_fetch_assoc($listaInscricoes)); ?>
+            <tr>
+                <td colspan="6">
+                     <div align="center">
+                    <table width="440" align="center" height="22" border="0" cellpadding="0" cellspacing="0"  class="lista">
+                        <tr>
+                          <td width="115" align="left">
+                                <a class="btnPaginacao" href="<?php printf("%s?pageNum_listaInscricoes=%d%s", 
+                                    $currentPage, max(0, $pageNum_listaInscricoes - 1), $queryString_listaInscricoes); ?>">&lt;&lt; Anterior </a>
+                          </td>
+                          <td width="450">
+                            <div align="center"> 
+                                    <?php echo ($startRow_listaInscricoes + 1) ?> at&eacute; 
+                                    <?php echo min($startRow_listaInscricoes + $maxRows_listaInscricoes, $totalRows_listaInscricoes) ?> total de 
+                                    <?php echo $totalRows_listaInscricoes ?> 
+                            </div>
+                            </td>
+                            <td width="110" align="right">
+                               <a class="btnPaginacao"  href="<?php printf("%s?pageNum_listaInscricoes=%d%s", $currentPage, 
+                                min($totalPages_listaInscricoes, $pageNum_listaInscricoes + 1),
+                                $queryString_listaInscricoes); ?>">Pr&oacute;ximo &gt;&gt;</a>                              
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+              </td>
+          </tr>
+        </table>
+        <?php endif;?>
+        </div>
+</body>
+</html>

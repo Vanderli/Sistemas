@@ -1,0 +1,39 @@
+  <div class="cont_ceg">
+    <div class="barra_titulo_ceg">
+      <h3>Serviços para o Governo</h3>
+      <!--<div class="busca_ceg">
+        <p>ENCONTRE O SERVIÇO DESEJADO</p>
+        <input type="text" name="" value="" size="15" class="campo_busca_ceg" />
+        <input type="button" name="" value="" class="btn_go" />
+      </div>-->
+    </div>
+      <ul>
+        <li class="ser_esq_ceg">
+          <img src="<?=URL?>/img/conteudo/cont_ceg_icons/transparencia.png" alt="Imagem ilustrativa de Casa" title="Casa" />
+          <h4>Transparência</h4>
+          <ul>
+            <li><a href="servicos/lei-responsabilidade-fiscal/lei-resp-fiscal.php" title="Lei de Responsabilidade Fiscal">Lei de Responsabilidade Fiscal</a></li>
+            <li><a href="servicos/despesas-receita-ensino/despesa-receita-ensino.php" title="Receitas e Despesas de Ensino">Receitas e Despesas de Ensino</a></li>
+            <li><a href="servicos/previdencia-social/previdencia-social.php" title="Previdência Social">Previdência Social</a></li>
+            <li><a href="servicos/relatorio_atendimento/relatorio-atendimento.php" title="Relatórios de Atendimento">Relatórios de Atendimento</a></li>
+            <li><a href="http://www.camaraitapecerica.sp.gov.br/" title="Leis Municipais" target="_blank">Leis Municipais</a></li>
+            <li><a href="servicos/execucao_fiscal/execucao_fiscal.pdf" title="Execução Fiscal" target="_blank">Execução Fiscal</a></li>
+          </ul>
+        </li>
+        <li class="ser_dir_ceg">
+          <img src="<?=URL?>/img/conteudo/cont_ceg_icons/autarquia.png" alt="Imagem ilustrativa de Documentos" title="Documentos" />
+          <h4>Autarquia Municipal de Saúde</h4>
+          <ul>
+            <li><a href="servicos/autarquia_municipal_saude/autarquia_municipal_saude.php" title="Autarquia Municipal de Saúde">Autarquia Municipal de Saúde</a></li>
+          </ul>
+        </li>
+        <li class="ser_esq_ceg">
+          <img src="<?=URL?>/img/conteudo/cont_ceg_icons/imprensa_oficial.png" alt="Imagem ilustrativa de Contas" title="Contas" />
+          <h4>Imprensa Oficial</h4>
+          <ul>
+            <li><a href="servicos/imprensa_oficial/imprensa_oficial.php" title="Imprensa Oficial">Imprensa Oficial</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="mais_ceg" href="servicos.php" title="Guia Completo de Serviços">Guia Completo de Serviços</a>
+  </div>

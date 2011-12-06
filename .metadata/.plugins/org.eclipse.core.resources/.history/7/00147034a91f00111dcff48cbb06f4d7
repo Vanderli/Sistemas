@@ -1,0 +1,17 @@
+<div id="sobre_secretario">
+   <h3>Secretaria Municipal de Cultura</h3>
+    
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Paulo Roberto Esteves Guedes" />
+  
+  <div id="descreve_secretario">
+    <h4>Paulo Roberto Esteves Guedes</h4>
+    
+    <p>Casado, pai de um filho, é graduado em Pedagogia pela Faculdade Taboão da Serra - FTS e atualmente faz o curso de Letras pela Faculdade de Itapecerica da Serra – FIT. Natural de Teófilo Otoni – MG.</p>
+    <p>Paulo reside em Itapecerica da Serra desde 1971. Seu currículo profissional abrange diversas áreas. Já foi bancário, metalúrgico e professor de inglês. Além de Itapecerica da Serra, ele já trabalhou em outras administrações, como na Prefeitura de São Paulo.</p>
+    <p>Desde 2004 trabalha na Secretária de Cultura, e assumiu a pasta como Secretario a partir de agosto de 2009. </p>
+  
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

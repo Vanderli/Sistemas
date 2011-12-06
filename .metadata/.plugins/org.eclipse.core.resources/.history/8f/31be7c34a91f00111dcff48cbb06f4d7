@@ -1,0 +1,49 @@
+<div id="cont_atrib_sec">
+
+  <h3>Secretaria Municipal de Finanças</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    Secretaria Municipal de Finanças 
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> financas@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Receita 
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> receitapmis@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Despesas
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> despesa@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Tesouraria
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> tesouraria@itapecerica.sp.gov.br
+    <br /><br />
+    
+    Departamento de Suprimentos
+    <br />
+    <span>Telefone:</span> 4668-9000
+    <br />
+    <span>Email:</span> suprimentos@itapecerica.sp.gov.br
+
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

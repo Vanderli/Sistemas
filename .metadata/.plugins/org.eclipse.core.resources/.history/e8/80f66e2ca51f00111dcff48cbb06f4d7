@@ -1,0 +1,174 @@
+#login, #senha{
+	text-transform:none !important;
+}
+*[readonly]{
+	background-color: #EEE;
+	color:#f6830e;	
+}
+body {
+	font-family: "Trebuchet MS", Verdana, Tahoma, sans-serif, serif;
+	font-size: 12px;
+	color: #666666;
+}
+td{
+padding-top:1px;
+padding-bottom:1px;
+}
+a {
+	color: #666666;
+	text-decoration: none;
+}
+input, select, textarea {
+	border: 1px solid #666666;
+	color: #666666;
+	font-size: 12px;
+}
+input{text-transform:uppercase;}
+#msg  {
+	font-size: 11px;
+	color: #FF0000;
+	background-color: #FFFF99;
+	font-weight: bold;
+}
+#msgSupervisor {
+	color: #FF0000;
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-color: #CCCCCC;
+	border: 1px dotted #666666;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.botao { 
+	background: #666666;
+	border: 2px solid #ccc;
+	color:#FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	width: 188px;
+	padding: 4px;
+	cursor: pointer;
+}
+form {
+	float: left;
+	padding: 10px;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+	margin: 0px;
+}
+
+
+td.label {
+	font-weight: bold;
+	border-bottom-color: #CCCCCC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+th.cabecalhoLista {
+	background-color: #dddddd;
+	border: 1px solid #666666;
+}
+.cinza {
+	background-color: #eaeaea;
+}
+.mascara {
+	font-size: 11px;
+	color: #FF0000;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+.alerta {
+	font-size: 12px;
+	color: #FF0000;
+}
+#formLogin {
+	text-align: center;
+	width: 210px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#formulario {
+	text-decoration: none;
+}
+h1.titulo {
+	font-size: 45px;
+	font-weight: bold;
+	color: #666666;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+h2.dadosProcesso {
+	font-size: 30px;
+	color: #666666;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+#topoLogin {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 70px;
+}
+#topoMenu {
+	width: 750;
+}
+table{
+border:#999999 1px dashed;
+}
+#container{
+	width:780px;
+	margin:0 auto;
+	padding:2px;
+}
+
+/* MENU */
+#menu_link {
+	border:none;
+	font:bold;
+	margin: 0;
+	font:12px Arial, sans-serif;
+	text-align:center;
+	border:1px solid #000000;
+	width:780px;
+	background-color:#DFDFDF;
+}
+#menu_link li {
+	list-style: none; 
+	margin: 0;
+	display: inline;
+	position: relative;  
+	top: 25%;
+}
+#menu_link li a {
+	height:1px; /* IE5.0 bug */
+	padding: 2px; 
+	text-align:center;
+	text-decoration: none;
+}
+#menu_link li a:link {
+	color: #666666;
+}
+#menu_link li a:visited {
+	color: #666666;
+}
+#menu_link li a:hover {
+	background: #ccc;
+	color: #000; 
+	border-color: #000;
+	font:bold;
+	text-transform:uppercase;
+}

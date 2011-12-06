@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+  <head>
+    <!-- Meta Tags -->
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="description" content="Prefeitura do Município de Itapecerica da Serra" />
+    <meta name="keywords" content="Itapecerica da Serra, Prefeitura, Município, Cidade, Concurso"/>
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Departamento de Tecnologia e Informaçăo - SADTI" />
+
+    <!-- CSS -->
+    <link href="../css/estilo.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="../css/hacks.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <!-- Icon abas -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+      
+    <title>Prefeitura do Município de Itapecerica da Serra</title>
+  </head>
+  
+<body>
+  
+  <div class="admin">
+    <form id="admin_imprensa_oficial" action="" method="post" name="admin_imprensa_oficial">
+      <ul>
+        <li>
+          <h3>Imprensa Oficial</h3>
+        </li>
+        <li>
+          <label>Imagem</label>
+          <input class="admin_img" action="" maxlength="255" name="ipo_img" type="text" />
+          <input class="admin_procurar" name="ipo_procurar" type="submit" value="Procurar" />
+        </li>
+        <li>
+          <label>Ano</label>
+          <select name="ipo_ano" id="ipo_ano">
+            <option value="Item 1">Item 1</option>						  
+            <option value="Item 2">Item 2</option>
+            <option value="Item 3">item 3</option>
+          </select>
+        </li>
+        <li>
+          <label>Męs</label>
+          <select name="ipo_mes" id="ipo_mes">
+            <option value="Item 1">Item 1</option>						  
+            <option value="Item 2">Item 2</option>
+            <option value="Item 3">item 3</option>
+          </select>
+        </li>
+        <li>
+          <label>Ediçăo</label>
+          <select name="ipo_edicao" id="ipo_edicao">
+            <option value="Item 1">Item 1</option>						  
+            <option value="Item 2">Item 2</option>
+            <option value="Item 3">item 3</option>
+          </select>
+        </li>
+        <li>
+          <label>Tamanho</label>
+          <input id="ipo_tamanho" action="" maxlength="10" name="ipo_tamanho" type="text" />
+        </li>
+        <li>
+          <label>Status</label>
+          <select name="ipo_status" class="admin_status">
+            <option value="Ativo">Ativo</option>						  
+            <option value="Inativo">Inativo</option>
+          </select>
+        </li>
+        <li class="admin_btns">
+          <input class="btn_cadastrar" name="ipo_cadastrar" type="submit" value="Cadastrar" />
+        </li>
+      </ul>
+    </form>
+  </div>
+  
+</body>
+</html>

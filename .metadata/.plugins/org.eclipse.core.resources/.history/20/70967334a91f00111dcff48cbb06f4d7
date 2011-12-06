@@ -1,0 +1,52 @@
+<div id="servico_online">
+  
+  <h3>Artes Específicas</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>
+        Como uma forma de exercício, mas antes uma atividade social, de competição ou de lazer, dançar é, para além de uma arte, um
+forte aliado da nossa saúde. São muitos os benefícios que a dança traz para quem a pratica, dentre eles a  perda e manutenção de peso, flexibilidade, resistência, força e bem-estar geral. Dançar sempre foi uma atividade alegre e bem-disposta: promove o convívio social, alia música a movimentos mágicos para um resultado final surpreendente além de aumentar os níveis de auto-estima e de energia positiva de qualquer bailarino. Com benefícios físicos e emocionais dançar é ser saudável.       
+        </p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+            - Ficha de inscrição<br />
+            - Cópia do RG ou protocolo<br />
+            - 2 fotos 3x4 (recentes)<br />
+            - Cópia de comprovante de residência<br />
+            - Atestado médico<br />
+            - Cópia do RG do responsável 
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+          <strong>Local das aulas:</strong>
+          <br />
+          - Ballet: Jardim Marilu, Jardim Branca Flor, Parque Paraíso
+          
+          <br />
+          - Dança de Salão: Academia do Marilú
+        
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria Municipal de Esporte e Lazer<br />
+    			Av.: Dona Anila, 1001 - Bairro Olaria <br />
+    			Itapecerica da Serra – SP CEP: 06859-000 <br />
+    			Tel 4667-1148 / 4165- 4667
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>	
+</div>

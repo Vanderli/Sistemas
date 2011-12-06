@@ -1,0 +1,387 @@
+@import url(reset_mc.css);
+
+/* -------------------------------- Geral ------------------------------------ */
+body {
+  background: url(../img/bg.png) repeat;
+  font-family: Verdana, Arial, Tahoma, Times New Roman;
+  font-size: 0.8em;
+  line-height: 15px;
+}
+
+/* ---- Mudar cor do campo ao seleciona-lo ----*/
+.campo_focus {
+   border: 1px solid #F6830E !important; 
+   background-color: #FFFBF7 !important;
+}
+
+h1 {
+  color: #F6830E;
+  float: right;
+  font-size: 1.2em;
+  line-height: 20px;
+  margin-top: 25px;
+  text-align: center;
+  text-indent: -5000px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+h2 {
+  color: #F6830E;
+  float: left;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+h3 {
+  border-bottom: 1px #F9A856 solid;
+  float: left;
+  font-weight: bold;
+  line-height: 15px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 99%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#msg_vazio{	
+	color: #F6830E;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+
+#msg_cpf{
+	background-color:#FFFF99;	
+	color: #F6830E;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+
+#msg
+_formato{
+	color: #FF0000;
+	font-size: 9px;
+}
+
+input, textarea{ 
+	text-transform:uppercase;
+}
+
+#login, #senha {
+	text-transform:lowercase;
+}
+
+/* -------------------------------- Container -------------------------------- */
+#cadastro_serv {
+  background-color: #FFF;
+  border: 1px #D5D5D5 solid;
+  float: left;
+  left: 50%;
+  margin: 10px 0 10px -385px;
+  padding: 10px;
+  position: relative;
+  width: 750px;
+}
+
+#cadastro_serv h2 {
+  border-bottom: 1px #F6830E solid;
+}
+
+/* ---- Configurações da Lista Geral ---- */
+#cadastro_serv ul li {
+  float: left;
+  width: 100%;
+}
+
+#cadastro_serv ul .divide_coluna {
+  margin-right: 0;
+  width: 45%;
+}
+
+#cadastro_serv ul .divide_coluna2 {
+  margin-right: 0;
+  width: 55%;
+}
+
+#cadastro_serv ul .divide_coluna2 p {
+  background: none;
+  color: #000;
+  float: left;
+  padding: 0;
+}
+
+#cadastro_serv ul .divide_coluna3 {
+  float: left;
+  width: 68%;
+}
+
+#cadastro_serv ul .divide_coluna4 {
+  float: left;
+  width: 30%;
+}
+
+#cadastro_serv ul .divide_coluna4 p {
+  background: none;
+  float: left;
+}
+
+.linhas {
+  background: none !important;
+  border-bottom: 1px #000 solid;
+  margin-top: 10px;
+  width: 95%;
+}
+
+#data {
+  margin-top: 18px;
+}
+
+#cadastro_serv ul .divide_coluna2 .linhas {
+  margin-top: 12px;
+}
+
+#cadastro_serv ul .divide_coluna4 .assina {
+  background: none !important;
+  border-bottom: 1px #000 solid;
+  margin-top: 19px;
+  width: 95%;
+}
+
+.explica_reg,
+.explica_reg2 {
+  color: #F9A856 !important;
+  font-size: 0.8em;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.explica_reg2 {
+  margin-top: -7px;
+}
+
+#cadastro_serv ul .divide_coluna2 #reg_irre {
+  float: right;
+  font-size: 0.8em;
+  width: 70%;
+}
+
+#cadastro_serv ul li #demais_qst li {
+  width: 30%;
+}
+
+#cadastro_serv ul li #demais_qst #municipio_qual {
+  width: 23%;
+}
+
+#cadastro_serv ul li #demais_qst #municipio_trab {
+  float: right;
+  margin-top: 5px;
+  width: 47%;
+}
+#cadastro_serv ul li #demais_qst #municipio_trab p {
+  background: none;
+  color: #000;
+  float: left;
+  margin: -7px 0 0 -146px;
+}
+
+#cadastro_serv ul li #demais_qst #municipio_trab input {
+  width: 96%;
+}
+
+#cadastro_serv ul li p {
+  background-color: #FEEDDD;
+  color: #6D6E71;
+  float: left;
+  height: 20px;
+  margin-right: 8px;
+  padding-top: 3px;
+}
+
+#cadastro_serv ul li #mc_def_qual {
+  background: none;
+  color: #000;
+  float: left;
+  margin: 0 5px 0 15px;
+}
+
+#cadastro_serv ul li input,
+#cadastro_serv ul li select,
+#cadastro_serv ul li textarea {
+  float: left;
+  margin-right: 8px;
+  border: 1px #D5D5D5 solid;
+}
+
+#cadastro_serv ul li input[type=radio],
+#cadastro_serv ul li input[type=checkbox] {
+  border: none !important;
+}
+
+#cadastro_serv ul li label {
+  float: left;
+  margin: 10px 10px 1px 1px;
+}
+
+#cadastro_serv ul li label span {
+  color: #9F9F9F;
+  float: right;
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+/* Brasão do Formulário */
+.mc_form_brasao img {
+  float: left;
+  height: 86px;
+  margin-left: 110px;
+  width: 516px;
+}
+
+/* ------------ Input / Select ------------ */
+
+/* Tamanho */
+#cadastro_serv ul li .mc_tam_num {
+  width: 50px; 
+}
+
+#cadastro_serv ul li .mc_tam_sn {
+  width: 65px; 
+}
+
+#cadastro_serv ul li .mc_tam_sn2 {
+  margin-right: 300px;
+  width: 65px; 
+}
+
+#cadastro_serv ul li .mc_tam_menor {
+  /* width: 176px; */
+  width: 189px;
+}
+
+#cadastro_serv ul li .mc_tam_menor2 {
+  width: 184px;
+}
+
+#cadastro_serv ul li .mc_tam_menor2b {
+  margin-left: 10px;
+  width: 173px;
+}
+
+#cadastro_serv ul li .mc_tam_menor3 {
+  width: 127px;
+}
+
+#cadastro_serv ul li .mc_tam_menor4 {
+  width: 137px;
+}
+
+#cadastro_serv ul li .mc_tam_peq {
+  width: 332px;
+}
+
+#cadastro_serv ul li .mc_tam_peq2 {
+  width: 341px;
+}
+
+#cadastro_serv ul li .mc_tam_med {
+  width: 535px;
+}
+
+#cadastro_serv ul li .mc_tam_med2 {
+  width: 650px;
+}
+
+#cadastro_serv ul li .mc_tam_med3 {
+  width: 362px;
+}
+
+#cadastro_serv ul li .mc_tam_med4 {
+  width: 334px;  
+}
+
+#cadastro_serv ul li .mc_tam_med5 {
+  width: 400px;  
+}
+#cadastro_serv ul li .mc_tam_med6 {
+  width: 240px;  
+}
+
+#cadastro_serv ul li .mc_tam_total {
+  width: 98.5%;
+}
+#cadastro_serv ul li .mc_tam_total1 {
+  width: 98.5%;
+  height: 20%;
+}
+
+/* Dia, Mês e Ano */
+.mc_tam_data {
+  width: 190px;
+}
+
+.mc_tam_dia {
+  margin-right: 1px;
+  width: 47px;
+}
+.mc_tam_nasc {
+  margin-right: 1px;
+  width: 193px;
+}
+
+.mc_tam_mes {
+  margin-right: 2px;
+  width: 82px;
+}
+
+.mc_tam_ano {
+  width: 50px;
+}
+
+/* ---- Tamanhos Específicos ---- */
+.mc_tam_uf {
+  width: 45px; 
+}
+
+.mc_tam_raca {
+  width: 178px; 
+}
+
+.mc_tam_ender {
+  width: 598px; 
+}
+
+#outros_cm {
+  float: left !important;
+  margin-left: 25px;
+}
+
+/* ---- Tamanhos Específicos ---- */
+#cadastro_serv ul li #mc_imprimir {
+  background-color: #F9A856;
+  border: 1px #F6830E solid;
+  color: #FFF;
+  float: left;
+  font-size: 1.2em;
+  height: 30px;
+  left: 50%;
+  margin: 50px 0 20px -75px;
+  padding-bottom: 4px;
+  position: relative;
+  width: 150px;
+}
+
+/* ---- Quebrar Página Impressão ---- */
+#afasta_pag2 {
+  page-break-before: always;
+}

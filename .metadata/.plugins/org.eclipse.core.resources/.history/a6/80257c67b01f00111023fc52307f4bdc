@@ -1,0 +1,95 @@
+<? 
+# destino da mensagem
+$para = "faleconosco@itapecerica.sp.gov.br";
+
+# assunto
+$assunto = "Formulário fale conosco.";
+
+# variáveis do form
+$nome     = $_POST['fc_nome'];
+$sexo     = $_POST['fc_sexo'];
+$pais     = $_POST['fc_pais'];
+$estado   = $_POST['fc_estado'];
+$cidade   = $_POST['fc_cidade'];
+$email    = $_POST['fc_email'];
+$tel1     = $_POST['fc_tel1'];
+$tel2     = $_POST['fc_tel2'];
+$assunto  = $_POST['assunto'];
+$mensagem = $_POST['fc_msg'];
+
+# para poder enviar com acentuacao
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+# Corpot de como irá a mensagem
+$corpo_msg .= '
+
+<div style="color: #6D6E71; font-family: Arial, Verdana, Tahoma, Times New Roman; word-wrap: break-word; border: 5px #D5D5D5 solid; float:left; font-size :0.8em; padding: 15px; position: relative; width: 496px;">
+
+	<ul style="float: left; list-style: none; margin: -10px 0 0 0; padding: 0 0 15px 0; width: 100%;">
+	
+		<li style="border-bottom: 1px #F6830E solid; margin-bottom: 10px; float: left; width: 100%;">
+			<p style="float: left; margin-left:130px;">Prefeitura do Município de Itapecerica da Serra</p>
+		</li>
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="float: left; margin: 0;  padding: 0; width: 100%;">Nome completo</p>
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 0 10px 0; padding: 2px; width: 99.5%;">'.$nome.'</p>
+		</li>
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="float: left; margin: 0;  padding: 0; width: 50%;">Sexo</p>
+			<p style="float: left; margin: 0;  padding: 0; width: 50%;">Pa&iacute;s</p>
+		</li>
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 25px 10px 0; padding: 2px; width: 43.5%;">'.$sexo.'</p>
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 0 10px 0; padding: 2px; width: 49%;">'.$pais.'</p>
+		</li>
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="float: left; margin: 0;  padding: 0; width: 50%;">Estado</p>
+			<p style="float: left; margin: 0;  padding: 0; width: 50%;">Cidade</p>        
+		</li> 
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 25px 10px 0; padding: 2px; width: 43.5%;">'.$estado.'</p>
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 0 10px 0; padding: 2px; width: 49%;">'.$cidade.'</p>
+		</li>
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="float: left; margin: 0;  padding: 0; width: 100%;">E-mail</p>
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 0 10px 0; padding: 2px; width: 99.5%;">'.$email.'</p>
+		</li>		
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="float: left; font-size: 0.85em; margin: 0;  padding: 0; width: 30px;">DDD</p>
+			<p style="float: left; margin: 0;  padding: 0; width: 50%;">Telefone</p>
+		</li>
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">		
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 5px 10px 0; padding: 2px; width: 20px;">'.$tel1.'</p>
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 0 10px 0; padding: 2px; width: 30%;">'.$tel2.'</p>
+		</li>
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="float: left; margin: 0;  padding: 0; width: 99.5%;">Assunto</p>
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 0 10px 0; padding: 2px; width: 99.5%;">'.$assunto.'</p>
+		</li>
+		
+		<li style="float: left; margin: 0;  padding: 0; width:100%;">
+			<p style="float: left; margin: 0;  padding: 0; width: 100%;">Mensagem</p>
+			<p style="border: 1px #D5D5D5 solid; color: #000; float: left; margin: 3px 0 10px 0; padding: 2px; width: 100%;">'.$mensagem.'</p>
+		</li>
+		
+	</ul>
+</div>';
+# Efetiva o envio da mensagem
+if (mail($para, $assunto, $corpo_msg, $headers)) {
+	header("Location: fale_conosco.php?msg_enviada=Mensagem Enviada com Sucesso");
+
+	}else {
+		header("Location: fale_conosco.php?msg_enviada=Falha ao Enviar a Mensagem");
+}
+
+?>

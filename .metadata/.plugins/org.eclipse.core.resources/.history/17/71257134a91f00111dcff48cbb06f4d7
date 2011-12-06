@@ -1,0 +1,49 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Educação</h3>
+
+  <h4>Contato</h4>
+  
+  <div id="atrib_sec_descreve">
+
+      <span>Telefone:</span> 4165-2729
+      <br />
+      <span>Email:</span> secretariadeeducacao@itapecerica.sp.gov.br
+      <br /><br />
+      
+      Departamento Administrativo
+      <br />
+      <span>Telefone:</span> 4165-3001
+      <br /><br />
+      
+      Departamento de Educação Especial
+      <br />
+      <span>Telefone:</span> 4667-4679
+      <br /><br />
+      
+      Departamento de Educação Infantil
+      <br />
+      <span>Telefone:</span> 4667-7081
+      <br /><br />
+      
+      Departamento de Ensino Fundamental
+      <br />
+      <span>Telefone:</span> 4668-1584
+      <br /><br />
+      
+      Departamento de Merenda Escolar
+      <br />
+      <span>Telefone:</span> 4667-4208
+      <br /><br />
+      
+      Departamento de Apoio Pedagógico
+      <br />
+      <span>Telefone:</span> 4165-1383
+
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

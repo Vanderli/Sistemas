@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <link rel="stylesheet" type="text/css" href="estilo_casa.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="estilo_casa_print.css" media="print">
+    
+    <script type="text/javascript" src="principal.js" charset="utf-8"></script>
+    
+    <link rel="shortcut icon" href="<?=URL?>/img/favicon.ico" type="image/x-icon" />
+    
+    <title>Programa Habitacional - Minha Casa, Minha Vida</title>
+    <script language="JavaScript1.2">
+	<!--
+		function imprimir(){
+			if (!window.print){
+				alert("Use o Netscape  ou Internet Explorer \n nas versões 4.0 ou superior!")
+				return
+			}
+			window.print()
+		}
+	//-->
+	</script>
+</head>
+<body>
+<div class="container">
+	 <!-- HORÁRIO DO SERVIDOR
+    <div class="dataTopo">
+      <?php include_once('includes/_topo-data-hora.php'); ?>
+    </div> -->
+    <form id="form1" name="form1" method="post" action="">
+        <!-- CABEÇALHO -->
+        <table width="760" class="cabecalho">
+            <tr>
+                <td width="521" rowspan="4" align="center"><img src="imagens/banner-minha-casa.jpg" width="516" height="86" /></td>
+                <td colspan="4" align="center" class="letra12"><div align="left"><strong>QUESTIONÁRIO N.º :</strong></div></td>
+            </tr>
+            <tr>
+            	<td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+            	<td colspan="4" class="letra12"><strong>1 - FUNCIONÁRIO PÚBLICO:</strong></td>
+            </tr>
+            <tr>
+                <td width="32"><input type="radio" name="radio" id="radio" value="radio" /></td>
+                <td width="54">1.1 - SIM</td>
+                <td width="30"><input type="radio" name="radio" id="radio2" value="radio" /></td>
+                <td width="128">1.2 - NÃO</td>
+            </tr>
+		</table>
+        <!-- DADOS PESSOAIS -->
+        <table width="760">
+            <tr>
+                <td colspan="3">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3">2 - NOME 1º RESP.:</td>
+                <td width="273">2.1 - IDADE:</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <!-- campo NOME 1º RESP -->
+                    <input name="txt_nome_2" type="text" id="txt_nome_2" size="68" maxlength="56"
+                    onfocus="selCampo('txt_nome_2');" 
+                    onblur="desCampo('txt_nome_2');" 
+                    onkeypress="return verificaCaracter('txt_nome_2',this, event);"/>
+                </td>
+                <td>
+                    <!-- campo IDADE 1º RESP -->
+                    <input name="txt_idade_2_1" type="text" id="txt_idade_2_1" size="10" maxlength="3" 
+                    onfocus="selCampo('txt_idade_2_1');" 
+                    onblur="desCampo('txt_idade_2_1');" 
+                    onkeypress="return verificaCaracter('txt_idade_2_1',this, event);"/>
+                </td>
+            </tr>
+            <tr>
+                <td width="171">3 - RG:</td>
+                <td width="111">3.1 - ÓRGAO EM.:</td>
+                <td width="225">3.2 - DATA: <span class="mascara">(ddmmaaaa)</span></td>
+                <td>4 - CPF: <span class="mascara">(somente números)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- campo RG 1º RESP -->
+                    <input name="txt_rg_3" type="text" id="txt_rg_3" 
+                    onfocus="selCampo('txt_rg_3');" 
+                    onblur="desCampo('txt_rg_3');" size="20" maxlength="18"/>
+                </td>
+                <td>
+                     <!-- campo ORGAO 1º RESP -->
+                     <input name="txt_orgao_3_1" type="text" id="txt_orgao_3_1" 
+                     onfocus="selCampo('txt_orgao_3_1');" 
+                     onblur="desCampo('txt_orgao_3_1');" size="10" maxlength="12"/>
+                </td>
+                <td>
+                    <!-- campo DATA 1º RESP -->
+                    <input name="txt_data_3_2" type="text" id="txt_data_3_2" size="25" maxlength="10"
+                    onfocus="selCampo('txt_data_3_2');" 
+                    onblur="desCampo('txt_data_3_2');" 
+                    onkeypress="return verificaCaracter('txt_data_3_2',this, event); " 
+                    onkeyup="return txtBoxFormat(this, '99/99/9999', event);"/>
+                </td>
+                <td>
+                   <!-- campo CPF 1º RESP -->
+                    <input name="txt_cpf_4" type="text" id="txt_cpf_4"  size="25" maxlength="14" 
+                    onfocus="selCampo('txt_cpf_4');" onblur="desCampo('txt_cpf_4');" 
+                    onkeypress="return verificaCaracter('txt_cpf_4',this, event); " 
+                    onkeyup="return txtBoxFormat(this, '999.999.999-99', event);"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">5 - NOME 2º RESP.:</td>
+                <td>5.1 - IDADE:</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <!-- campo NOME 2º RESP -->
+                    <input name="txt_nome_5" type="text" id="txt_nome_5"
+                    onfocus="selCampo('txt_nome_5');" 
+                    onblur="desCampo('txt_nome_5');" 
+                    onkeypress="return verificaCaracter('txt_nome_5',this, event);" size="68" maxlength="56"/>
+                </td>
+                <td>
+                    <!-- campo IDADE 2º RESP -->
+                    <input name="txt_idade_5_1" type="text" id="txt_idade_5_1" size="10" maxlength="3"
+                    onfocus="selCampo('txt_idade_5_1');" 
+                    onblur="desCampo('txt_idade_5_1');" 
+                    onkeypress="return verificaCaracter('txt_idade_5_1',this, event);"/>
+                </td>
+            </tr>
+            <tr>
+                <td>6 - RG:</td>
+                <td>6.1 - ÓRGAO EM.:</td>
+                <td>6.2 - DATA:  <span class="mascara">(ddmmaaaa)</span></td>
+                <td>7 - CPF:  <span class="mascara">(somente números)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- campo RG 2º RESP -->
+                    <input name="txt_rg_6" type="text" id="txt_rg_6"
+                    onfocus="selCampo('txt_rg_6');" 
+                    onblur="desCampo('txt_rg_6');" size="20" maxlength="18" />
+                </td>
+                <td>
+                    <!-- campo ORGÃO 2º RESP -->
+                    <input name="txt_orgao_6_1" type="text" id="txt_orgao_6_1" 
+                    onfocus="selCampo('txt_orgao_6_1');" 
+                    onblur="desCampo('txt_orgao_6_1');" size="10" maxlength="11" />
+                </td>
+                <td>
+                    <!-- campo DATA 2º RESP -->
+                    <input name="txt_data_6_2" type="text" id="txt_data_6_2" size="25" maxlength="10"
+                    onfocus="selCampo('txt_data_6_2');" 
+                    onblur="desCampo('txt_data_6_2');" 
+                    onkeypress="return verificaCaracter('txt_data_6_2',this, event); " 
+                    onkeyup="return txtBoxFormat(this, '99/99/9999', event);"/>
+                </td>
+                <td>
+                    <!-- campo CPF 2º RESP -->
+                 	<input name="txt_cpf_7" type="text" id="txt_cpf_7" size="25" maxlength="14" 
+                    onfocus="selCampo('txt_cpf_7');" onblur="desCampo('txt_cpf_7');" 
+                    onkeypress="return verificaCaracter('txt_cpf_7',this, event); " 
+                    onkeyup="return txtBoxFormat(this, '999.999.999-99', event);"/>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <!-- ESTADO CIVIL & MORADIA -->
+        <table width="760">
+            <tr>
+                <td colspan="2" align="center" class="letra12">&nbsp;</td>
+                <td colspan="7" align="center" class="letra12">&nbsp;</td>
+           </tr>
+           <tr>
+                <td colspan="2" align="center" class="letra12"><strong>8 - ESTADO CIVIL</strong></td>
+                <td colspan="7" align="center" class="letra12"><strong>9 - CONDIÇÕES DA MORADIA *</strong></td>
+            </tr>
+        	<tr>
+                <td width="33"><input type="radio" name="radio_8_est" id="radio3" value="radio_estado_civil" /></td>
+                <td width="177">8.1 - SOLTEIRO</td>
+                <td width="36"><input type="radio" name="radio_9_moradia" id="radio10" value="radio_moradia" /></td>
+                <td width="99">9.1 - PROPRIA</td>
+                <td width="42"><input type="checkbox" name="che_9_reg_ire" id="radio15" value="radio_moradia" /></td>
+                <td colspan="2">9.1.1 - REGULAR</td>
+                <td width="42"><input type="checkbox" name="che_9_reg_ire" id="radio16" value="radio_moradia" /></td>
+                <td width="181">9.1.2 - IRREGULAR</td>
+        	</tr>
+        	<tr>
+                <td><input type="radio" name="radio_8_est" id="radio4" value="radio_estado_civil" /></td>
+                <td>8.2 - CASADO</td>
+                <td><input type="radio" name="radio_9_moradia" id="radio9" value="radio_moradia" /></td>
+                <td colspan="6">9.2 - CEDIDA</td>
+        	</tr>
+            <tr>
+                <td><input type="radio" name="radio_8_est" id="radio5" value="radio_estado_civil" /></td>
+                <td>8.3 - DESQUITADO</td>
+                <td><input type="radio" name="radio_9_moradia" id="radio11" value="radio_moradia" /></td>
+                <td colspan="6">9.3 - ALUGADA</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_8_est" id="radio6" value="radio_estado_civil" /></td>
+                <td>8.4 - DIVORCIADO</td>
+                <td><input type="radio" name="radio_9_moradia" id="radio12" value="radio_moradia" /></td>
+                <td colspan="6">9.4 - MORA COM PARENTES</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_8_est" id="radio7" value="radio_estado_civil" /></td>
+                <td>8.5 - VIUVO</td>
+                <td><input type="radio" name="radio_9_moradia" id="radio13" value="radio_moradia" /></td>
+                <td colspan="6">9.5 - FINANCIADA</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_8_est" id="radio8" value="radio_estado_civil" /></td>
+                <td>8.6 - UNIÃO ESTÁVEL</td>
+                <td><input type="radio" name="radio_9_moradia" id="radio14" value="radio_moradia" /></td>
+                <td colspan="6">9.6 - OUTROS:
+                  <!-- campo  CONDIÇÕES DA MORADIA - OUTROS  -->
+                  <input name="txt_radio_9_6" type="text" id="txt_radio_9_6" 
+                  onfocus="selCampo('txt_radio_9_6');" 
+                  onblur="desCampo('txt_radio_9_6');" size="45" maxlength="42" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            	<td colspan="6">&nbsp;</td>
+            </tr>
+        </table>
+        <!-- ENDEREÇO -->
+        <table width="760">
+            <tr>
+                <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2">10 - ENDEREÇO:</td>
+                <td width="150">&nbsp;</td>
+                <td>N.º:</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <!-- campo  ENDEREÇO  -->
+                    <input name="txt_end_10" type="text" id="txt_end_10"  
+                    onfocus="selCampo('txt_end_10');" 
+                    onblur="desCampo('txt_end_10');" size="75" maxlength="61" />
+                </td>
+                <td width="197">
+                    <!-- campo  NÚMERO  -->
+                    <input name="txt_num" type="text" id="txt_num" size="12" maxlength="9"
+                    onfocus="selCampo('txt_num');" 
+                    onblur="desCampo('txt_num');" 
+                    onkeypress="return verificaCaracter('txt_num',this, event);"/>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2">10.1 - BAIRRO:</td>
+                <td colspan="2">10.2 - CIDADE:&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- campo  BAIRRO  -->
+                    <input name="txt_bairro_10_1" type="text" id="txt_bairro_10_1" 
+                    onfocus="selCampo('txt_bairro_10_1');" 
+                    onblur="desCampo('txt_bairro_10_1');" size="55" maxlength="45" />
+                </td>
+                <td colspan="2">
+                    <!-- campo  CIDADE  -->
+                    <input name="txt_cidade_10_2" type="text" id="textfield18"
+                     onfocus="selCampo('txt_cidade_10_2');" 
+                     onblur="desCampo('txt_cidade_10_2');" size="37" maxlength="35" />
+                </td>
+            </tr>
+            <tr>
+                <td width="242">10.3 - TELEFONE: <span class="mascara">(00 0000-0000)</span></td>
+                <td width="191">10.4 - CELULAR: <span class="mascara">(00 0000-0000)</span></td>
+                <td colspan="2">10.5 - OBS.:</td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- campo  TELEFONE  -->
+                    <input name="txt_telefone_10_3" type="text" id="txt_telefone_10_3" size="20" maxlength="12"
+                     onfocus="selCampo('txt_telefone_10_3');" 
+                     onblur="desCampo('txt_telefone_10_3');" 
+                     onkeypress="return verificaCaracter('txt_telefone_10_3',this, event);"
+                     onkeyup="return txtBoxFormat(this, '99 9999-9999', event);"/>
+                </td>
+                <td>
+                    <!-- campo  CELULAR  -->
+                    <input name="txt_celular_10_4" type="text" id="txt_celular_10_4" size="20"  maxlength="12"
+                     onfocus="selCampo('txt_celular_10_4');" 
+                     onblur="desCampo('txt_celular_10_4');" 
+                     onkeypress="return verificaCaracter('txt_celular_10_4',this, event);"
+                     onkeyup="return txtBoxFormat(this, '99 9999-9999', event);"/>
+                </td>
+                <td colspan="2">
+                    <!--- campo OBSERVAÇÃO -->
+                    <input name="txt_obs_10_5" type="text" id="txt_obs_10_5" 
+                     onfocus="selCampo('txt_obs_10_5');" 
+                     onblur="desCampo('txt_obs_10_5');" size="37" maxlength="35" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+        </table>
+        <!-- OCUPAÇÃO & RENDA MENSAL -->
+        <table width="760">
+            <tr>
+                <td colspan="2" align="center" class="letra12">&nbsp;</td>
+                <td colspan="2" align="center" class="letra12">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" class="letra12"><strong>11 - OCUPAÇÃO 1º RESP.</strong></td>
+                <td colspan="2" align="center" class="letra12"><strong>12 - RENDA MENSAL FAMILIAR</strong></td>
+            </tr>
+            <tr>
+                <td width="29"><input type="radio" name="radio_11_ocp" id="radio17" value="radio_ocupacao" /></td>
+                <td width="255">11.1 - EMPREGADO COM REGISTRO</td>
+                <td width="36"><input type="radio" name="radio_12_renda" id="radio24" value="radio_renda_mensal" /></td>
+                <td width="460">12.1 -  ATÉ 01 SALÁRIO MÍNIMO (R$ 465,00)</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_11_ocp" id="radio18" value="radio_ocupacao" /></td>
+                <td>11.2  - EMPREGADO SEM REGISTRO</td>
+                <td><input type="radio" name="radio_12_renda" id="radio25" value="radio_renda_mensal" /></td>
+                <td>12.2 -  DE 02 A 03 SALÁRIOS MÍNIMOS (ATÉ R$ 1395,00)</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_11_ocp" id="radio19" value="radio_ocupacao" /></td>
+                <td>11.3 -  AUTÔNOMO</td>
+                <td><input type="radio" name="radio_12_renda" id="radio26" value="radio_renda_mensal" /></td>
+                <td>12.3 -  DE 04 A 05 SALÁRIOS MÍNIMOS (ATÉ R$ 2325,00)</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_11_ocp" id="radio20" value="radio_ocupacao" /></td>
+                <td>11.4  - SÓ FAZ BICO</td>
+                <td><input type="radio" name="radio_12_renda" id="radio27" value="radio_renda_mensal" /></td>
+                <td>12.4  - DE 06 A 10 SALÁRIOS MÍNIMOS (ATÉ R$ 4650,00)</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_11_ocp" id="radio21" value="radio_ocupacao" /></td>
+                <td>11.5  - BENEFICIO INSS</td>
+                <td><input type="radio" name="radio_12_renda" id="radio28" value="radio_renda_mensal" /></td>
+                <td>12.5  - ACIMA DE 10 SALÁRIOS MÍNIMOS (ACIMA DE R$ 4650,00)</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_11_ocp" id="radio22" value="radio_ocupacao" /></td>
+                <td>11.6  - DONA DE CASA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="radio_11_ocp" id="radio23" value="radio_ocupacao" /></td>
+                <td>11.7  - DESEMPREGADO</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+		</table>
+     	<!-- LOCAL DE TRABALHO --> 
+        <table width="760" height="143">
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td colspan="3">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="147">13 -  LOCAL DE TRABALHO:</td>
+                <td width="33"><input type="radio" name="radio_trabalho_13" id="radio47" value="radio" /></td>
+                <td colspan="2">ITAPECERICA DA SERRA</td>
+                <td width="22"><input type="radio" name="radio_trabalho_13" id="radio48" value="radio" /></td>
+                <td colspan="3">OUTRO MUNICIPIO. QUAL?</td>
+                <td colspan="2">
+                    <!-- OUTRO MUNICIPIO -->
+                    <input name="txt_trabalho_13" type="text" id="txt_trabalho_13" 
+                    onfocus="selCampo('txt_trabalho_13');" 
+                    onblur="desCampo('txt_trabalho_13');" size="20" maxlength="21" />          
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">14 -  QUANTAS PESSOAS MORAM NA CASA:</td>
+                <td colspan="7">
+                    <!-- QUANTAS PESSOAS -->
+                    <input name="txt_casa_14" type="text" id="txt_casa_14"
+                    onfocus="selCampo('txt_casa_14');" 
+                     onblur="desCampo('txt_casa_14');" 
+                     onkeypress="return verificaCaracter('txt_casa_14',this, event);" size="7" maxlength="9"/>          
+                </td>
+            </tr>
+            <tr>
+                <td height="23" colspan="4">15 - TEMPO DE MORADIA NO MUNICÍPIO:</td>
+                <td><input type="radio" name="radio_moradia_15" id="radio42" value="radio" /></td>
+                <td width="71">ATÉ 01 ANO</td>
+                <td width="23"><input type="radio" name="radio_moradia_15" id="radio45" value="radio" /></td>
+                <td>DE 01 A 05 ANOS</td>
+                <td width="24"><input type="radio" name="radio_moradia_15" id="radio46" value="radio" /></td>
+                <td width="157" align="center"><div align="left">ACIMA DE 05 ANOS</div></td>
+            <tr>
+                <td height="22" colspan="4">16 - TEM CADASTRO NO BOLSA FAMÍLIA:</td>
+                <td><input type="radio" name="radio_cadastro_16" id="radio40" value="radio" /></td>
+                <td>NÃO</td>
+                <td><input type="radio" name="radio_cadastro_16" id="radio41" value="radio" /></td>
+                <td width="90">SIM - N.º:</td>
+                <td colspan="2">
+                    <input name="txt_cadastro_16" type="text" id="txt_cadastro_16"
+                    onfocus="selCampo('txt_cadastro_16');" 
+                    onblur="desCampo('txt_cadastro_16');" size="20" maxlength="21" />          
+                </td>
+            </tr>
+            <tr>
+                <td height="23" colspan="4"><span class="style5">17 - JÁ FOI ATENDIDO POR ALGUM PROGRAMA HABITACIONAL:</span></td>
+                <td><input type="radio" name="radio_atn_17" id="radio44" value="radio" /></td>
+                <td>NÃO</td>
+                <td><input type="radio" name="radio_atn_17" id="radio35" value="radio" /></td>
+                <td>SIM. QUAL:</td>
+                <td colspan="2">
+                    <!-- TEM CADASTRO NO BOLSA FAMÍLIA -->
+                    <input name="txt_atn_17" type="text" id="txt_atn_17" 
+                    onfocus="selCampo('txt_atn_17');" 
+                    onblur="desCampo('txt_atn_17');" size="20" maxlength="21" />         
+               </td>
+            </tr>
+        </table>
+        
+        <table width="760">
+            <tr>
+                <td width="230" height="29">18 -  É PROPRIETÁRIO DE ALGUM IMÓVEL:</td>
+                <td width="36"><input type="radio" name="radio_imv_18" id="radio43" value="radio" /></td>
+                <td width="39">NÃO</td>
+                <td width="32"><input type="radio" name="radio_imv_18" id="radio34" value="radio" /></td>
+                <td width="69">SIM. QUAL:</td>
+                <td width="326">
+                <!-- PROPRIETÁRIO DE ALGUM IMÓVEL -->
+                <input name="txt_imv_18" type="text" id="textfield17" 
+                  onfocus="selCampo('txt_imv_18');" 
+                onblur="desCampo('txt_imv_18');" size="35" maxlength="34" />
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="4">&nbsp;</td>
+                <td>ONDE:</td>
+                <td>
+                <!-- PROPRIETÁRIO DE ALGUM IMÓVEL - ONDE -->
+                <input name="txt_imv_onde_18" type="text" id="txt_imv_onde_18" 
+                onfocus="selCampo('txt_imv_onde_18');" 
+                onblur="desCampo('txt_imv_onde_18');" size="35" maxlength="34" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+        	</tr>
+        </table>
+        <!-- DOCUMENTAÇÃO APRESENTADA -->
+        <table width="760" height="141">
+            <tr>
+                <td colspan="2" align="center" class="letra12">&nbsp;</td>
+                <td width="320" rowspan="5" class="mascara">
+                	NO CASO DE CADASTRO VIA INTERNET, APÓS PREENCHIMENTO, O INTERESSADO DEVERÁ IMPRIMIR O 
+                    CADASTRO E APRESENTAR NO DEPARTAMENTO DE HABITAÇÃO JUNTO COM CÓPIA DA DOCUMENTAÇÃO SOLICITADA AO LADO.
+                </td>
+                <td width="119" rowspan="5" class="mascara">&nbsp;</td>
+            </tr>
+            <tr>
+            	<td colspan="2" align="center" class="letra12"><strong>DOCUMENTAÇÃO APRESENTADA: (CÓPIA ANEXA)</strong></td>
+            </tr>
+            <tr>
+                <td width="28" height="22"><input type="checkbox" name="rg" id="radio29" value="radio_moradia" disabled="disabled"/></td>
+            	<td width="573"> RG</td>
+            </tr>
+            <tr>
+                <td height="22"><input type="checkbox" name="cpf" id="radio30" value="radio_moradia" disabled="disabled" /></td>
+                <td>CPF</td>
+            </tr>
+            <tr>
+                <td height="22"><input type="checkbox" name="cmp_renda" id="radio31" value="radio_moradia" disabled="disabled" /></td>
+                <td> COMPROVAÇÃO DE RENDA</td>
+            </tr>
+            <tr>
+                <td height="22"><input type="checkbox" name="cmp_end" id="radio32" value="radio_moradia" disabled="disabled" /></td>
+                <td>COMPROVANTE DE ENDEREÇO</td>
+                <td rowspan="2">&nbsp;</td>
+                <td rowspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="outro" id="radio33" value="radio_moradia" disabled="disabled" /></td>
+                <td> OUTRO</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <!-- ASSINATURAS -->
+        <table width="760" height="138">
+            <tr>
+                <td height="21">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td height="21">&nbsp;</td>
+                <td>___________________________________________________________</td>
+                <td>DATA:</td>
+                <td>_________/_________/____________</td>
+            </tr>
+            <tr>
+                <td height="21">&nbsp;</td>
+                <td>___________________________________________________________</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="28" height="21">OBS:</td>
+                <td width="242">___________________________________________________________</td>
+                <td>ENTREVISTADOR:</td>
+                <td>_______________________________________</td>
+            </tr>
+            <tr>
+                <td height="21">&nbsp;</td>
+                <td>___________________________________________________________</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td height="17" class="mascara">&nbsp;</td>
+                <td>___________________________________________________________</td>
+                <td>ASSINATURA:</td>
+                <td>_______________________________________</td>
+            </tr>
+            <tr>
+                <td height="21" colspan="2" class="mascara"> 
+                	<div align="left">* REGULAR = ESCRITURA COM REGISTRO EM CARTÓRIO </div>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td height="21" colspan="2" class="mascara"><div align="left">IRREGULAR = SEM DOCUMENTAÇÃO REGISTRADA OU ÁREA PÚBLICA</div></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <!-- BOTÃO IMPRIMIR -->
+        <div align="center">
+        	<p align="center">
+           	<img src="imagens/imprimir.jpg" alt="Clique aqui para imprimir" name="print" border="0" align="middle" class="print" onclick="imprimir();"/></p>
+        </div>
+    </form>
+</div>
+ <!-- RODAPÉ -->
+<div class="rodape">
+	Av. Eduardo Roberto Daher, 1135 - Centro - CEP: 06850-040 - Itapecerica da Serra - Fone: 4668-9000
+</div>
+</body>
+</html>

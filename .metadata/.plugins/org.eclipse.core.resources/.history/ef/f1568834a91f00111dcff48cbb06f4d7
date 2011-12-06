@@ -1,0 +1,28 @@
+<div id="cont_noticia">  
+    <h3>Secretaria Municipal de Finanças</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <h4>Almoxarifado</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="fotos/almoxarifado.jpg" alt="Almoxarifado" title="Almoxarifado" /> 
+    </div>
+
+    <div id="noticia_descreve">
+        <p id="age_desc"><span>Descrição:</span><br /><br /> 
+
+        O Almoxarifado é o setor responsável por guardar, conservar, classificar, codificar e registrar materiais e equipamentos. Fornecer e distribuir materiais requisitados aos setores da Prefeitura, organizando e controlando o movimento de entrada e saída de estoque, elaborando a previsão de compras objetivando suprir as necessidades dos órgãos da Prefeitura, organiza e atualiza o catálogo de materiais, prepara requisição para efetuar as compras, realiza inventário de material.
+        </p>
+    </div> 
+   
+</div>

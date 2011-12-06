@@ -1,0 +1,88 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 30/04/2010</p>
+    <h4>1&ordm; Torneio de Truco e Domin&oacute;</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/domino_truco_gra.jpg" alt="1&ordm; Torneio de Truco e Domin&oacute;" /> 
+    </div>
+
+    <div id="noticia_descreve">
+    
+        <p id="age_data">
+        	<span>Data:</span> 22 de Maio de 2010
+      </p>
+        <p id="age_hora">
+        	<span>Horário:</span> À partir das 09h
+        </p>
+<p id="age_local">
+        	<span>Local:</span> Ginásio de Esportes
+      </p>
+        <p id="age_local">
+        	<span>Endereço:</span> Av. Dona Anila, 1001 - Olaria - Itapecerica da Serra
+        </p> 
+        <p id="age_local">
+        	<span>Maiores informações:</span> 4667-1148 / 4667-5162
+        </p>
+        
+        <p id="age_local">
+       	  <span>&nbsp;</span>
+        </p>        
+        
+        <p id="age_local">
+        	<span class="link_color">SAIBA COMO PARTICIPAR</span>
+        </p> 
+        
+        <p id="age_local">
+        	<span>TRUCO</span>
+        </p> 
+        
+        <p id="age_local">
+       	- <a href="arquivos/truco/Regulamento_Oficial_Truco.pdf" target="_blank">Regulamento</a></p>
+        
+        <p id="age_local">
+       	- <a href="arquivos/truco/Ficha_Inscricao_Truco.pdf" target="_blank">Ficha de Inscrição</a></p>
+        
+        <p id="age_local">
+        	<span>&nbsp;</span>
+        </p>        
+        
+        <p id="age_local">
+        	<span>DOMINÓ</span>
+        </p> 
+        
+        <p id="age_local">
+       	- <a href="arquivos/domino/Regulamento_Oficial_Domino.pdf" target="_blank">Regulamento</a></p>
+        
+        <p id="age_local">
+       	- <a href="arquivos/domino/Ficha_Inscricao_Domino.pdf" target="_blank">Ficha de Inscrição</a></p> 
+        
+        <p id="age_local">
+        	<span>&nbsp;</span>
+        </p>  
+        
+        <p id="age_local">
+        	<span>Obs.: Esta deverá ser entregue até 20/05/2010 nos seguintes locais:</span>
+                <p>- Recepção do Complexo Administrativo (Prédio da Prefeitura)<br />
+                &nbsp;&nbsp;Av. Eduardo Roberto Daher, 1135 – Centro</p>
+                <p>- Quiosque do Turismo – Praça da Fonte<br />
+                &nbsp;&nbsp;Av. XV de Novembro, Centro</p>
+                <p>- Secretaria de Esporte e Lazer<br />
+                &nbsp;&nbsp;Av. Dona Anila, 1001 – Olaria</p>
+        </p>                                                        
+               
+  </div>  
+     
+</div>

@@ -1,0 +1,30 @@
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 25px;
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+<link href="../css/estilo.css" rel="stylesheet" type="text/css">
+<head>
+	<title>Processo Seletivo N&ordm; 005/2009 - ..:: Menu ::..</title>
+</head>
+<body>
+
+<div class="topoMenu" align="center">
+	<img src="../imagens/Topo_frente-de-Trabalho.jpg" border="1">
+</div>
+
+<br />
+    <div id="menu_link">
+        <ul>
+            <li><a href="../inscricoes/cadastrar_data.php" title="Cadastrar Candidato">Cadastrar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;     </li>
+            <li><a href="../inscricoes/listarInscricoes.php" title="Listar Candidatos">Listar</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="../consulta/formConGeral.php" title="Pesquisar">Pesquisar</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="../login/logout.php" title="Sair do Sistema">Sair</a>												    </li>
+        </ul>
+    </div>
+<br/>
+</body>

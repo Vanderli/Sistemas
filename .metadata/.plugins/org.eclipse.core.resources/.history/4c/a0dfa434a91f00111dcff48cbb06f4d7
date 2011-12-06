@@ -1,0 +1,71 @@
+<div id="servico_online">
+  
+  <h3>Aprovação de Desdobro, Fracionamento ou Desmembramento</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Análise técnica dos projetos apresentados após pareceres exarados na análise prévia e emissão dos respectivos alvarás</p>
+      </li>
+      <li>
+        <h4>Exigências</h4>
+        <p>
+        	 Terreno particular/ loteamento regular, o pedido tem que ser feito pessoalmente e pago as devidas taxas, ausência de débitos para com a Receita municipal
+        </p>
+      </li>      
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+			<strong>1ª FASE</strong>
+			<br /><br />        
+            - Requerimento com qualificação e endereço completo<br />
+            - RG e CPF/CNPJ originais <br />
+            - Diretrizes Deferidas (Cópia do Parecer Jurídico)<br />
+            - Cópia simples do IPTU (capa e 1ª folha)<br />
+            - ART (anotações de responsabilidade técnica), fornecida por profissional habilitado no CREA com comprovante de recolhimento<br />
+            - Planta (situação Atual e pretendida) – escala 1:100 (para analise) . (2 vias)<br />
+            - Memorial descritivo situação Atual e pretendida. (2 vias)<br />
+            - Relatório do Profissional (fornecida pelo Departamento de Receita)
+        </p>
+        <p>
+        	<strong>2ª FASE (APÓS ANALISE)</strong>
+            <br /><br />
+                - Plantas (situação Atual e pretendida) – escala 1:100 (reconhecido firma). (2 vias)<br />
+                - Memorial descritivo (situação Atual e pretendida com firma reconhecida). (2 vias)
+        </p>                
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+            - Procuração (Pública) no caso de não ser o proprietário<br />
+            - Contrato Social se pessoa Jurídica<br />
+            - Aprovação tem validade de 06 meses, devendo a mesma ser registrada no Cartório de registro de Imóveis nesse período
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+            - Taxa de Protocolo R$ 7,22<br />
+            - Alvará R$ 18,28<br />
+            - Desdobro R$ 0,09 m²<br />
+            - Fracionamento R$ 0,02m²<br />
+            - Desmembramento R$ 0,02m²
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria de Planejamento e Meio Ambiente <br />
+        	Completo Administrativo Norberto Jose da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>
+</div>

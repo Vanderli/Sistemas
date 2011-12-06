@@ -1,0 +1,41 @@
+<?php
+	/* conexão com banco de dados */
+	include("../../../conexao_db/conexaoTecnologia.php");
+	
+	// inicializo a sessão.
+	if (!isset($_SESSION)) { session_start(); }
+	// guardo o  em uma variável
+	if (isset($_GET['atr_id'])){$atr_id = $_GET['atr_id'];}
+	
+	// informações do servor e banco de dados
+	$usu_id       = $_SESSION['usu_id'];
+	$dat_cad      = date('Y/m/d');
+	$hora_cad     = date('G:i:s');
+	
+	$atr_sec_id   = $_POST['atr_sec_id'];	
+	$atr_titulo   = trim($_POST['atr_titulo']);	
+	$atr_desc     = trim($_POST['atr_desc']);
+	$atr_status   = $_POST['atr_status'];
+
+	$sql = "UPDATE atribuicao_sec SET 
+							atr_usu_id   = '$usu_id',
+							atr_sec_id   = '$atr_sec_id',
+							atr_dat_cad  = '$dat_cad',
+							atr_hora_cad = '$hora_cad',
+							atr_titulo   = '$atr_titulo',
+							atr_desc     = '$atr_desc',
+							atr_status   = '$atr_status'
+				WHERE atr_id = $atr_id";	
+
+	//print_r($sql);exit;
+	
+	$result = @mysql_query($sql) or die($msg[2]);
+	
+	if($result){
+		echo "<script>alert('Dados alterados com sucesso')</script>";
+		echo "<script>location.href='listar_atribuicao_sec.php'</script>";
+	}
+	
+	// Libera um resultado da memória
+	mysql_free_result($result);
+?>

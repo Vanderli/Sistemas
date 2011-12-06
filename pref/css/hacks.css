@@ -1,0 +1,215 @@
+/* ---- CSS Hacks Internet Explorer ---- */
+
+/* Correção de margin-left duplicada */
+div {
+  display: inline;
+}
+
+/* Correção de width */
+#menu_acessibilidade #icones_acessibilidade {
+  width: 220px;
+}
+
+#conteudo {
+  width: 536px;
+}
+
+#cont_fr {
+  width: 536px;
+}
+
+.sig_container #sig_sist ul li input {
+  width: 79%;
+}
+
+
+/* Correção do ultimo item da lista de imagens*/
+#menu_interativo #servicos a img {
+  float: left;
+  position: absolute;
+  width: 172px;
+}
+
+
+/* Correção do ultimo item da uma lista de opções rápidas*/
+#menu_navegacao .padrao_navegacao #sel_utilidades {
+  float: none;
+}
+
+/* Correção do Aumentar e Diminuir Fonte da Notícia */
+#cont_noticia #not_tam_font a {
+  margin-left: 0;
+}
+
+/* Correção das bordas dos botões do Fale Conosco */
+#cont_faleconosco #fc_estrut ul li #fc_cidade {
+  width: 48%;
+}
+
+/* Mensagem de Falta de javaScript */
+.no_js {
+  background-color: #F6830E;
+  color: #FFF;
+  float: left;
+  margin-top: 15px;
+  padding: 10px 5px;
+  text-align: center;
+  width: 998px;
+}
+
+/* Correção da falta de alt no Somente Texto da Barra Acessibilidade */
+.acs_somente_texto #menu_acessibilidade #icones_acessibilidade ul {
+  margin-left: -80px;
+  _margin-left: -90px;
+  _width: 998px;
+}
+
+.acs_somente_texto #menu_acessibilidade #icones_acessibilidade ul li a span {
+  border: 1px #F6830E solid;
+  display: block;
+  margin-left: -20px;
+  padding: 5px 0;
+  text-align: center;
+  text-indent: 0;
+  visibility: visible;
+  width: 113px;
+}
+
+/* Correção "ok" e "webmail" da Barra de Acessibilidade*/
+#menu_acessibilidade #busca_avancada #btn_ok {
+  padding: 1px 0 0 0;
+}
+
+#menu_acessibilidade #busca_avancada #btn_webmail {
+  padding-top: 2px;
+}
+
+/* Correção do BG no Contraste */
+.acs_contraste .bg_contraste {
+  left: 0;
+}
+
+/* -------------------- Correção da Listagem da Imprensa Oficial -------------------- */
+#cont_imprensa_oficial .ioficial_ano ul .ioficial_mes ul {
+  margin-left: -10px;
+  _margin-left: -30px;
+}
+
+#cont_imprensa_oficial .ioficial_ano ul .ioficial_mes span {
+  margin-right: 10px;
+  _margin-right: 5px;
+}
+
+#cont_imprensa_oficial .ioficial_ano ul .ioficial_mes ul li a {
+  _margin-left: 5px;
+  width: 90px;
+}
+
+/* -------------------- Correção do Login Geral -------------------- */
+.adm_login .adm_login_sist {
+  margin-left: 250px;
+}
+
+.adm_login .adm_login_rodape {
+  width: 99.5%;
+}
+
+.adm_login .adm_login_sist ul li input {
+  margin-bottom: 0;
+}
+
+.adm_login .adm_login_sist ul li {
+  margin: 0 0 5px 0;
+}
+
+
+/* -------------------- Print Notícia  -------------------- */
+#not_print_container #not_print_conteudo {
+  margin-top: 0;
+}
+
+/* -------------------- Galeria de Imagens Individual  -------------------- */
+#gallery .ad-image-wrapper .ad-image .ad-image-description {
+  background-color: #e9e9e9;
+}
+
+#gallery .ad-forward {
+  right: -16px;
+}
+
+#gallery .ad-back,
+#gallery .ad-forward {
+  background-color: #EEE;
+}
+
+/* -------------------- IE SIX INÍCIO (Site) -------------------- */
+#conteudo #conteudo_ceg ul li {
+  _width: 161px;
+}
+
+#container {
+  _margin-top: -170px;
+  _margin-bottom: -200px;
+}
+
+#extensao_acessibilidade {
+  _margin-left: 0;
+  _margin-top: 140px;
+  _position: relative;
+}
+
+.padrao_navegacao ul {
+  width: 177px;
+}
+
+#extensao_copyright {
+  _margin-top: 74px;
+}
+
+#copyright {
+  _float: none;
+  _left: 0;
+  _position: absolute;
+}
+
+.acs_somente_texto h2, 
+.acs_somente_texto #logo, 
+.acs_somente_texto #logo #grafismo, 
+.acs_somente_texto #acs_contraste {
+  _background-image: none;
+  _visibility: hidden;
+}
+
+.acs_contraste body {
+  _background-color: #000;
+}
+
+/* Marcadores Serviços */
+#servico_online #servico_online_descreve h4 {
+  float: right;
+  padding: 0;
+  width: 100%;
+}
+
+#servico_online #servico_online_descreve p {
+  margin-top: 3px;
+}
+
+#servico_online #servico_online_descreve ul li p {
+  margin: 0px !important;
+  padding-bottom: 30px;
+}
+
+/* Btn Voltar das Secretarias */
+#sec_voltar input {
+  width: 60px;
+}
+
+/* -------------------- IE 6 FIM -------------------- */
+
+
+
+
+
+
+

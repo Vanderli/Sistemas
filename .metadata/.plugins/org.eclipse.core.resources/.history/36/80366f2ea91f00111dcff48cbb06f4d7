@@ -1,0 +1,17 @@
+<ul>
+    <li class="cidadao">
+        <h2>CIDADÃO</h2>
+        	<a href="<?=URL?>/cidadao/cidadao.php" title="Cidadão">
+        		Serviços para Cidadão.</a>
+    </li>
+    <li class="empresa">
+        <h2>EMPRESA</h2>
+        <a href="<?=URL?>/empresa/empresa.php" title="Empresa">
+        	Serviços para Empresa.</a>
+    </li>
+    <li class="governo">
+        <h2>GOVERNO</h2>
+        <a href="<?=URL?>/governo/governo.php" title="Governo">
+        	Serviços para Governo.</a>
+    </li>
+</ul>

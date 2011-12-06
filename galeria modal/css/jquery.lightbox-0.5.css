@@ -1,0 +1,151 @@
+#img_destaque {
+	background-color: #444;
+	padding: 10px;
+	width: 520px;
+}
+
+#img_destaque ul {
+  list-style: none;
+}
+
+#img_destaque ul li { 
+  display: inline;
+}
+
+#img_destaque ul img {
+	border: 5px solid #3e3e3e;
+	border-width: 5px 5px 20px;
+}
+
+#img_destaque ul a:hover img {
+  border: 5px solid #fff;
+	border-width: 5px 5px 20px;
+	color: #fff;
+}
+
+#img_destaque ul a:hover { 
+  color: #fff;
+}
+ 
+#jquery-geral {
+  height: 500px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 90;
+}
+
+#jquery-lightbox {
+	left: 0;
+	line-height: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+#jquery-lightbox a img { 
+  border: none;
+}
+
+#lightbox-container-image-box {	
+	background-color: #fff;
+	height: 250px;
+	margin: 0 auto;
+	position: relative;
+	width: 250px;
+}
+
+#lightbox-container-image {
+  padding: 10px;
+}
+
+#lightbox-loading {
+  height: 25%;
+	left: 0%;
+	line-height: 0;
+	position: absolute;
+	text-align: center;
+  top: 40%;
+	width: 100%;
+}
+
+#lightbox-nav {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+#lightbox-container-image-box > #lightbox-nav { 
+  left: 0;
+}
+
+#lightbox-nav a { 
+  outline: none;
+}
+
+#lightbox-nav-ant, #lightbox-nav-prox {
+	display: block;
+	height: 100%;
+	width: 49%;
+	zoom: 1;	
+}
+
+#lightbox-nav-ant { 
+	float: left;
+  left: 0; 
+}
+
+#lightbox-nav-prox { 
+	float: right;
+	right: 0; 
+}
+
+#lightbox-container-image-data-box {
+  background-color: #fff;
+	font: 10px Verdana, Helvetica, sans-serif;
+	line-height: 1.4em;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0 10px 0;
+	width: 100%;
+}
+
+#lightbox-container-image-data {
+	color: #666;
+	padding: 0 10px;  
+}
+
+#lightbox-container-image-data #lightbox-image-detalhes { 
+	float: left; 
+	text-align: left; 
+	width: 70%;
+}	
+
+#lightbox-image-detalhes-caption {
+  font-weight: bold;
+}
+
+#lightbox-image-detalhes-currentNumber {
+	clear: left; 
+  display: block; 
+	padding-bottom: 1.0em;	
+}
+
+#lightbox-secNav-btnClose {
+	/*width: 66px; */
+	float: right;
+	padding-bottom: 0.7em;	
+}
+
+/* Ant - Prox */
+#lightbox-nav-ant,
+#lightbox-nav-prox {
+  height: 140px !important;
+  margin-top: 31% !important;
+}

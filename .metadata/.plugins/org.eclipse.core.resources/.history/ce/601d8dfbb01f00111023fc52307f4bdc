@@ -1,0 +1,129 @@
+<?	# endereço de onde está a biblioteca para gerar o thumbnail
+	$thumb_5 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (1).jpg";
+	$thumb_9 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (2).jpg";
+	$thumb_2 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (3).jpg";
+	$thumb_4 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (4).jpg";
+	$thumb_7 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (5).jpg";
+	$thumb_1 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (6).jpg";
+	$thumb_3 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (7).jpg";
+	$thumb_6 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (8).jpg";
+	$thumb_8 = "lib_PHP/thumbnail.php?gd=2&src=../destaque_galeria/fotos/relevancia (9).jpg";		
+?>
+
+<div id="gal_modelo">
+    <h2>GALERIA DE FOTOS</h2>
+    <ul>
+    
+        <li id="im1" class="pqn">
+            <a href="<?=URL?>/galeria/subgaleria/calcada_modelo/galeria_img.php" id="rlv_06">        
+                <img src="<?=$thumb_1?>&maxw=100" border="0" alt="Foto ilustrando Primeira Calçada Modelo"/>  
+                <span>         
+                    <img src="<?=$thumb_1?>&maxw=300" border="0" alt="Foto ilustrando Primeira Calçada Modelo"/>     
+                    <p class="tit_gal">Galeria</p>
+                    <p>Primeira Calçada Modelo</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>
+            </a>
+        </li>
+        
+        <li id="im2" class="mdo">
+            <a href="<?=URL?>/galeria/subgaleria/desfile_civico_2010/galeria_img.php" id="rlv_03">
+                <img src="<?=$thumb_2?>&maxw=127" border="0" alt="Foto ilustrando Desfile Cívico 2010"/>
+                <span>
+                    <img src="<?=$thumb_2?>&maxw=300" border="0" alt="Foto ilustrando Desfile Cívico 2010"/>
+                    <p class="tit_gal">Galeria</p>
+                    <p>Desfile Cívico 2010</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>
+            </a>    
+        </li>
+        
+        <li id="im3" class="pqn">
+            <a href="<?=URL?>/galeria/subgaleria/folia_na_serra_2010/galeria_img.php" id="rlv_07">
+                <img src="<?=$thumb_3?>&maxw=100" border="0" alt="Foto ilustrando Folia na Serra 2010"/>
+                <span>
+                    <img src="<?=$thumb_3?>&maxw=300" border="0" alt="Foto ilustrando Folia na Serra 2010"/>
+                    <p class="tit_gal">Galeria</p>
+                    <p>Folia na Serra 2010</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>
+            </a>
+        </li>
+        
+        <li id="im4"  class="mdo">
+            <a href="<?=URL?>/galeria/subgaleria/familia_bike/galeria_img.php" id="rlv_04">
+                <img src="<?=$thumb_4?>&maxw=127" border="0" alt="Foto ilustrando Família Bike 2010"/>
+                <span>
+                    <img src="<?=$thumb_4?>&maxw=300" border="0" alt="Foto ilustrando Família Bike 2010"/>
+                    <p class="tit_gal">Galeria</p>
+                    <p>Família Bike 2010</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>
+            </a>
+        </li>
+        
+        <li id="im5" class="grd">
+            <a href="<?=URL?>/galeria/subgaleria/show_ultraje/galeria_img.php" id="rlv_01">
+                <img src="<?=$thumb_5?>&maxw=201" border="0" alt="Foto ilustrando Show da Banda Ultraje a Rigor"/>
+                <span>
+                    <img src="<?=$thumb_5?>&maxw=300" border="0" alt="Foto ilustrando Show da Banda Ultraje a Rigor"/>
+                    <p class="tit_gal">Galeria</p>
+                    <p>Show da Banda Ultraje a Rigor</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>   
+            </a>
+        </li>
+        
+        <li id="im6" class="pqn">
+            <a href="<?=URL?>/galeria/subgaleria/academia_esportes/galeria_img.php" id="rlv_08">
+                <img src="<?=$thumb_6?>&maxw=100" border="0" alt="Foto ilustrando Academia de Esportes"/>
+                <span>
+                    <img src="<?=$thumb_6?>&maxw=300" border="0" alt="Foto ilustrando Academia de Esportes"/>
+                    <p class="tit_gal">Galeria</p>
+                    <p>Academia de Esportes</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>
+            </a>
+        </li>
+        
+        <li id="im7" class="mdo">
+            <a href="<?=URL?>/galeria/subgaleria/moto_no_mato/galeria_img.php" id="rlv_05">
+                <img src="<?=$thumb_7?>&maxw=127" border="0" alt="Foto ilustrando Moto no Mato"/>
+                <span>
+                    <img src="<?=$thumb_7?>&maxw=300" border="0" alt="Foto ilustrando Moto no Mato"/>
+                    <p class="tit_gal">Galeria</p>
+                    <p>Moto no Mato</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>
+            </a>
+        </li>
+        
+        <li id="im8" class="pqn">
+            <a href="<?=URL?>/galeria/subgaleria/carros_antigos/galeria_img.php" id="rlv_09">
+                <img src="<?=$thumb_8?>&maxw=100" border="0" alt="Foto ilustrando Carros Antigos"/>
+                <span>
+                <img src="<?=$thumb_8?>&maxw=300" border="0" alt="Foto ilustrando Carros Antigos"/>
+                    <p class="tit_gal">Galeria</p>
+                    <p>Carros Antigos</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>
+            </a>
+        </li>
+        
+        <li id="im9" class="grd">
+            <a href="<?=URL?>/galeria/subgaleria/novas_obras/galeria_img.php" id="rlv_02">
+                <img src="<?=$thumb_9?>&maxw=201" border="0" alt="Foto ilustrando Novas Obras"/>
+                <span>
+                    <img src="<?=$thumb_9?>&maxw=300" border="0" alt="Foto ilustrando Novas Obras"/>
+                    <p class="tit_gal">Galeria</p>
+                    <p>Novas Obras</p>
+                    <p class="veja_gal">Veja a Galeria de Fotos</p>
+                </span>
+            </a>
+        </li>
+    
+    </ul>
+    
+    <a href="<?=URL?>/galeria/galeria.php" title="Ir à todas Galerias de Fotos" id="todas_gal">Todas Galerias</a>
+
+</div>

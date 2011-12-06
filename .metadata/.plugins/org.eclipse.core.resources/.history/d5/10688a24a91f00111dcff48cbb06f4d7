@@ -1,0 +1,21 @@
+<div id="tel_util">
+
+  <h3>Telefones Úteis</h3>
+  
+  <div id="cont_tel_util">
+    <h4>Corpo de Bombeiros</h4>
+    
+    <ul>
+      <li id="util_endereco">
+        <p>Rua Tavares nº 94 - Jardim Itapecerica</p>
+      </li>
+      <li id="util_tel">
+        <p>(11) 4667 7890</p>
+      </li>
+      <li id="util_site">
+        <a href="http://www.ccb.polmil.sp.gov.br" target="_blank" title="Corpo de Bombeiros">www.ccb.polmil.sp.gov.br</a>
+      </li>
+    </ul>
+  </div>
+
+</div>

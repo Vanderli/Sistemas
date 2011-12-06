@@ -1,0 +1,44 @@
+<div id="cont_lista_arvore">
+
+  <h3>Secretaria Municipal de Obras e Serviços</h3>
+  
+  <h4>Serviços da Secretaria</h4> 
+  
+  <div class="la_container">
+    <p>Clique em Lista de Serviços para visualizar todos os serviços da Secretaria.<p>
+    <ul>
+    
+      <div class="la_colunas">    
+        <li class="la_coluna_tit3">   
+          <a title="Lista de Serviços" class="btn_esconde_la">Lista de Serviços</a>
+          <ul class="esconde_la">
+            <li><a href="guias_sarjetas/guias_sarjetas.php" title="Guias e Sarjetas">Guias e Sarjetas</a></li>
+            <li><a href="limpeza_bueiro/limpeza_bueiros.php" title="Limpeza de Bueiro">Limpeza de Bueiro</a></li>
+            <li><a href="limpeza_calcadas/limpeza_calcadas.php" title="Limpeza de Calçada">Limpeza de Calçada</a></li>
+            <li><a href="limpeza_vias_publicas/limpeza_vias_publicas.php" title="Limpeza de Vias Públicas">Limpeza de Vias Públicas</a></li>
+            <li><a href="cascalhar_ruas/cascalhar_ruas.php" title="Cascalhar Ruas (Maquina Motonivelar)">Cascalhar Ruas (Maquina Motonivelar)</a></li>
+            <li><a href="rebaixamento_guia/rebaixamento_guia.php" title="Rebaixamento de Guia">Rebaixamento de Guia</a></li>
+            <li><a href="conservacao_vias/conservacao_vias.php" title="Conservação de Vias Públicas">Conservação de Vias Públicas</a></li>
+            <li><a href="abertura_via/abertura_via.php" title="Abertura de Via / Viela">Abertura de Via / Viela</a></li>
+            <li><a href="canalizacao_corregos/canalizacao_corregos.php" title="Canalização de Córregos">Canalização de Córregos</a></li>
+            <li><a href="remocao_lixo/remocao_lixo.php" title="Remoção de Lixo">Remoção de Lixo</a></li>
+            <li><a href="iluminacao_publica/iluminacao_publica.php" title="Iluminação Pública">Iluminação Pública</a></li>
+            <li><a href="exumacao/exumacao.php" title="Exumação">Exumação</a></li>
+            <li><a href="sepultamento/sepultamento.php" title="Sepultamento">Sepultamento</a></li>
+            <li><a href="mapas_cidade/mapas_cidade.php" title="Mapas da Cidade">Mapas da Cidade</a></li>                        
+          </ul>
+        </li>
+        
+      </div>
+    
+    
+    
+    </ul>
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+
+</div>

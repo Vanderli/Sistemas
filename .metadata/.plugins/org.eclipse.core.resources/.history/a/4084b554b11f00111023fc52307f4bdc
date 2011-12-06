@@ -1,0 +1,43 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 10/02/2010</p>
+    <h4>Folia na Serra 2010</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/carnaval_2010.jpg" alt="Folia na Serra 2010" /> 
+    </div>
+
+    <div id="noticia_descreve">
+        <p id="age_data"><span>Data do Evento:</span> 13, 14 e 15 de Fevereiro de 2010</p>
+        <p id="age_hora"><span>Horário:</span> a partir das 19h</p>
+        <p id="age_local"><span>Local:</span> Av. Eduardo Roberto Daher(em frente à Prefeitura no Parque Paraíso)</p>
+        <p id="age_desc"><span>Descrição:</span><br /><br /> 
+
+        <strong>Shows:</strong><br />
+          - Diretamente de Salvador o melhor do Axé com Sheila Brazil<br />
+          - Grupo Ênfase<br /><br />
+
+          <strong>Desfile das Escolas de Samba</strong><br />
+          -Rosa Serrana e Acadêmicos do Jacira<br /><br />
+          
+          <strong>Participação Especial</strong><br />
+          -Bloco Unidos do Pé Grande(São Paulo)<br /><br />
+          
+          <strong>Informações:</strong> (11) 4666-5966
+        
+        </p>
+    </div> 
+   
+</div>

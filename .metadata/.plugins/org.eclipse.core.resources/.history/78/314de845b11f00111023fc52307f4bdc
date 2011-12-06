@@ -1,0 +1,60 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 29/04/2010</p>
+    <h4>Show com Samprazer e Bandas Convidadas</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/samprazer_gra.jpg" alt="Show com Samprazer e Bandas Convidadas" /> 
+    </div>
+
+    <div id="noticia_descreve">
+    
+        <p id="age_data">
+        	<span>Evento:</span> Show com Samprazer
+        </p>
+        
+        <p id="age_hora">
+        	<span>Horário:</span> 22h
+        </p>
+        
+        <p id="age_data">
+        	<span>Evento:</span> Bandas Convidadas
+        </p>
+        
+        <p id="age_hora">
+        	<span>Horário:</span> a partir das 14h
+        </p>
+        
+        <p id="age_local">
+        	<span>Local:</span> Av. Machado de Assis, 27 (Campo de Futebol) - Jardim Jacira - Itapecerica da Serra
+        </p>        
+        
+        <p id="age_hora">
+        	<span>Bandas:</span> Forroxé, Banda RU, Sóxoteiros, Elis e Banda, Ênfase, Banda EDDE, Na Batukda
+        </p>
+        
+        <p id="age_local">
+        	- E mais, a partir das 10h brinquedos infláveis e show "IMEMORIAL" com CIA. CINCOLANDO
+        </p>        
+        
+        <p id="age_local">
+        	- Evento Gratuíto
+        </p>        
+        
+  
+        
+    </div>   
+     
+</div>

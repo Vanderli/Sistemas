@@ -1,0 +1,101 @@
+<?php
+	/* conexão com banco de dados */
+	include("../../../conexao_db/conexaoTecnologia.php");	
+	# inicializo a sessão.
+	if (!isset($_SESSION)){	session_start();}		
+	# impede que seja acessado alguma página sem passar pelo login 
+	@include("../../login/protege_pagina.php");
+	
+	/* ---------------------------- EDITAR E VISUALIZAR  ---------------------------- */ 
+	$v = "-1";	
+	if (isset($_GET['imp_id'])) { $imp_id = $_GET['imp_id']; }	
+	/* 
+	 * Desabilito o campo caso seja para visualizar
+	 * Edito o título
+	 */
+	if ($_GET['v'] == 'true') {
+		$dis = "disabled='disabled'";
+		$title = "Visualizar Importante";
+		
+	}else if ($_GET['edit'] == 'true') {
+		$title = "Editar Importante";
+		$red = "editar_importante.php?imp_id=$imp_id";
+		
+	/* Cadastro novo */
+	} else { 
+		$title = "Cadastro Importante";
+		$red = "inserir_importante.php";
+	}
+			
+	// Transformo o recurso em um array	
+	$sql = sprintf("select * from importante WHERE imp_id='$imp_id'");	
+	$query = @mysql_query($sql, $conn) or die($msg[2]);
+	$linha = @mysql_fetch_assoc($query);	 
+
+	
+	/* ---------------------------- FIM EDITAR E VISUALIZAR  ---------------------------- */
+	
+		
+	# insiro o cabecalho da página
+	include("../../includes/cabecalho/adm_meta-css-js.php"); 
+	
+?>
+
+<div class="sig_container">
+
+    <!-- Menu -->
+    <div class="sig_menu"><?php @include("../../menu/menu.php");?></div>
+  
+  <div class="admin">
+    <form id="admin_importante" method="post" name="admin_importante" action="<?=$red?>">
+      <ul>
+        <li>
+          <h3>Importante</h3>
+        </li>
+         <li>
+          <label>Título Notícia</label>
+          <select name="imp_titulo_not" id="imp_titulo_not" <?=$dis?>>
+                <option value="">- - - - - - - - - -</option>						  
+                <?php 
+                // varro as informações do banco de dados
+                $sql = sprintf("select * from noticias WHERE not_status='ATIVO' ORDER BY not_titulo ASC");
+                $rs = mysql_query($sql);
+                // Obtém o resultado de uma linha como um objeto
+                while($row = mysql_fetch_array($rs)):?>
+                <option value="<?=$row['not_id']?>"<?=($linha['imp_not_id'] == $row['not_id'])?'selected':null;?>>	                       				
+                <?=$row['not_titulo']?></option>
+                <?php endwhile;?>
+            </select>
+        </li>
+        <li>
+          <label>Sequência</label>
+          <select name="imp_seq" id="imp_seq" <?=$dis?>>
+            <option value="1">Primeiro</option>						  
+            <option value="2">Segundo</option>
+            <option value="3">Terceiro</option>
+          </select>        
+        </li>
+       
+        <li>
+            <label>Status</label>
+            <select name="imp_status" class="admin_status" <?=$dis?>>
+                <option value="ATIVO"   <?=($linha['imp_status'] == 'ATIVO')?'selected':null;?>>ATIVO</option>
+                <option value="INATIVO" <?=($linha['imp_status'] == 'INATIVO')?'selected':null;?>>INATIVO</option> 
+            </select>
+        </li>
+        <li class="admin_btns">
+					<? if ($_GET['v'] == 'true') {?>
+                    <input class="btn_cadastrar" name="visualizar" type="button" value="Voltar" onClick="javascript:history.go(-1);"/>
+                    <? } else if($_GET['edit'] == 'true'){ ?>
+                    <input class="btn_cadastrar" name="editar" type="submit" value="Editar" />
+                    <? } else{ ?>
+                    <input class="btn_cadastrar" name="cadastrar" type="submit" value="Cadastrar" <?=$dis?>/>
+                    <? } ?>
+                </li>
+      </ul>
+    </form>
+  </div>
+  
+</div><!-- fecha div sig_container -->
+</body>
+</html>

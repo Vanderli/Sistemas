@@ -1,0 +1,50 @@
+<div id="cont_minha_casa">
+
+  <h3>Minha Casa Minha Vida</h3>
+
+  <br /><br />
+
+  <ul id="mc_tutorial">
+
+    <h4>Vantagens do Programa</h4>
+    
+    <li>
+      <p>
+        Pagamento da 1ª prestação somente na entrega do imóvel;
+      </p>
+    </li>
+    <li>
+      <p>
+        Pagamento opcional de entrada nos casos de financiamento;
+      </p>
+    </li>
+    <li>
+      <p>
+        Comprometimento máximo de 20% da renda para financiamento;
+      </p>
+    </li>
+        <li>
+      <p>
+        Fundo Garantidor: redução do risco do financiamento;
+      </p>
+    </li>
+    <li>
+      <p>
+        Barateamento do seguro;
+      </p>
+    </li>
+    <li>
+      <p>
+        Desonerações de custos cartoriais;
+      </p>
+    </li>
+    <li>
+      <p>
+        Desoneração fiscal: redução da alíquota do Regime Especial de Tributação da Construção Civil (RET) de 7% para 1%, substituindo a incidência de PIS, COFINS, IRPJ e CSLL.
+      </p>
+    </li>   
+    
+  </ul>
+
+  
+</div>

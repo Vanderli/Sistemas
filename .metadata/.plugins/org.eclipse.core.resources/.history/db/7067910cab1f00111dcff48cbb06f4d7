@@ -1,0 +1,75 @@
+<div id="cont_lista_arvore">
+
+  <h3>Relatório de Atendimento</h3>
+  
+  <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+  
+  <p class="la_descritivo">
+    A Prefeitura calcula a cada mês as variações do índice de utilização dos serviços públicos
+    disponibilizados no Complexo Administrativo Norberto Jose da Costa.
+    Para o cálculo das variações, leva-se em consideração a totalização mensal
+    dos atendimentos acumulados por serviço prestado.
+    O sistema de cálculo sempre abrange um período de 12 meses obtendo-se a
+    comparação histórica através dos links referente à meses anteriores
+  </p>
+  
+  <div class="la_container">
+    
+    <h4>Ano de 2010</h4>
+  
+    <ul>
+      <div class="la_colunas"> 
+      
+        <li class="la_coluna_tit2">   
+          <a title="1º Semestre" class="btn_esconde_la">1º Semestre</a>
+          <ul class="esconde_la">
+            <li><a href="arquivos/2010/TOTAL_ATENDIMENTO_JANEIRO_2010.pdf" title="Janeiro" target="_blank">Janeiro</a></li>
+            <li><a href="arquivos/2010/TOTAL_ATENDIMENTO_FEVEREIRO_2010.pdf" title="Fevereiro" target="_blank">Fevereiro</a></li>
+            <li><a href="arquivos/2010/TOTAL_ATENDIMENTO_MARCO_2010.pdf" title="Março" target="_blank">Março</a></li>            
+            <li><a href="arquivos/2010/TOTAL_ATENDIMENTO_ABRIL_2010.pdf" title="Abril" target="_blank">Abril</a></li>                        
+          </ul>
+        </li>
+        
+      </div>     
+    </ul>
+    
+  </div>
+  
+  <div class="la_container">
+    
+    <h4>Ano de 2009</h4>
+  
+    <ul>
+      <div class="la_colunas"> 
+      
+        <li class="la_coluna_tit2">   
+          <a title="1º Semestre" class="btn_esconde_la">1º Semestre</a>
+          <ul class="esconde_la">
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_JANEIRO_2009.pdf" title="Janeiro" target="_blank">Janeiro</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_FEVEREIRO_2009.pdf" title="Fevereiro" target="_blank">Fevereiro</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_MARCO_2009.pdf" title="Março" target="_blank">Março</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_ABRIL_2009.pdf" title="Abril" target="_blank">Abril</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_MAIO_2009.pdf" title="Maio" target="_blank">Maio</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_JUNHO_2009.pdf" title="Junho" target="_blank">Junho</a></li>
+          </ul>
+        </li>
+        
+        <li class="la_coluna_tit2">   
+          <a title="2º Semestre" class="btn_esconde_la">2º Semestre</a>
+          <ul class="esconde_la">
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_JULHO_2009.pdf" title="Julho" target="_blank">Julho</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_AGOSTO_2009.pdf" title="Agosto" target="_blank">Agosto</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_SETEMBRO_2009.pdf" title="Setembro" target="_blank">Setembro</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_OUTUBRO_2009.pdf" title="Outubro" target="_blank">Outubro</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_NOVEMBRO_2009.pdf" title="Novembro" target="_blank">Novembro</a></li>
+            <li><a href="arquivos/2009/TOTAL_ATENDIMENTO_DEZEMBRO_2009.pdf" title="Dezembro" target="_blank">Dezembro</a></li>
+          </ul>
+        </li>
+    
+    </ul>
+      </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../governo.php';" />
+  </div>
+
+</div>

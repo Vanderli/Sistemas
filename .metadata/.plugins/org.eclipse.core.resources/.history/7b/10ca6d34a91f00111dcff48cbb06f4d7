@@ -1,0 +1,15 @@
+<div id="sobre_secretario">
+<h3>Secretaria Municipal de Administração</h3>
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Olga Maria Santos de Jonge" />
+  
+  <div id="descreve_secretario">
+    <h4>Olga Maria Santos de Jonge</h4>
+    
+    <p>Natural de Itapecerica da Serra – Divorciada – (3 Filhos e 2 Netos)</p>
+    <p>Funcionária Pública desde 1974 – Secretária de gabinete por seis Vezes, se especializou na sua área técnica, com cursos no exterior, residindo por dois anos nos países baixos, adquirindo conhecimentos correlatos do serviço público.</p>
+    <p>Cursou Comunicação Social pela FMU, ao longo de sua carreira no serviço público atuou em distintas secretarias e desempenhou também outras atividades, o que lhe permitiu ter hoje o profundo conhecimento dos problemas do município e da administração pública como um todo.</p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

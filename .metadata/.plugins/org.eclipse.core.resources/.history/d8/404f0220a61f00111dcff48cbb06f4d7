@@ -1,0 +1,143 @@
+<?php
+		/* conexão com banco de dados */
+		include("../conexao_db/conexaoTecnologia.php");
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../login/protege_pagina.php");
+		/* biblioteca */
+		include("../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+			
+		/* CADASTRAR INFORMAÇÕES */
+		if (!function_exists("GetSQLValueString")) {
+			function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = ""){
+				$theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+				$theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+		
+				switch ($theType) {
+					case "text":
+						$theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+					break;    
+					case "long":
+					case "int":
+						$theValue = ($theValue != "") ? intval($theValue) : "NULL";
+					break;
+					case "double":
+						$theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+					break;
+					case "date":
+						$theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+					break;
+					case "defined":
+						$theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+					break;
+				}
+				return $theValue;
+			}
+		}
+		
+		$editFormAction = $_SERVER['PHP_SELF'];
+		if (isset($_SERVER['QUERY_STRING'])) {
+			$editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+		}
+		if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "Form")) {
+
+						$insertSQL = sprintf("INSERT INTO tipo_documento 
+											   (data_cadastro, 
+												hora, 
+												usuario_cadastro, 
+												nome_tipo, 
+												status_tipo) 
+									VALUES (%s, %s, %s, %s, %s)",
+				
+							GetSQLValueString(date("Y/m/d"), "date"),
+							GetSQLValueString(date('G:i:s'), "text"),
+							GetSQLValueString($_SESSION['codUsuario'], "int"),
+							GetSQLValueString(strtoupper($_POST['nome']), "text"),
+							GetSQLValueString($_POST['status_tipo'], "int"));
+							
+							//print_r($insertSQL);exit;
+		
+			mysql_select_db($database_tecnologia, $tecnologia);
+			$Result1 = mysql_query($insertSQL, $tecnologia) or die(mysql_error());
+			
+			if($Result1){
+			  echo "<script type=\"text/javascript\">
+						 alert('Dados Cadastrados com sucesso!');  
+						 window.location.href=' formListarTipoDoc.php';  
+					</script>";	 
+			}else {
+				echo "<script type=\"text/javascript\">
+							  alert('Falha no Cadastro dos dados!');
+							  window.location.href=' formListarTipoDoc.php';	  
+					  </script>";
+			}
+		}
+?>
+<html>
+<head>
+	<title>..:: Cadastrar Tipos de Documentos - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="../estilo/estilo.css" rel="stylesheet" type="text/css" />
+    <!-- javaScript -->
+    <script type="text/javascript" src="../js/jquery-1.2.6.js"></script>
+    <script type="text/javascript" src="../js/jquery-validate.js"></script> 
+    <script type="text/javascript">
+		<!-- Validação -->
+		$(document).ready( function() {
+			$("#Form").validate({
+				// Define as regras
+				rules:{
+					nome:{
+						required: true, minlength: 3
+					},
+					status_tipo:{
+						required: true
+					}
+				},
+				// Define as mensagens de erro para cada regra
+				messages:{
+					nome:{
+						required: "Informe o Nome",
+						minlength: "O nome deve conter, no mínimo, 3 caracteres"
+					},
+					status_tipo:{
+						required: "Informe o Status"
+					}
+				}
+			});
+		});
+	</script>  
+</head>
+<body onLoad="vertical();horizontal();">
+	<!--menu-->
+	<?php @include_once('../menu/menu.php'); ?>
+	<br />
+    <div id="formCadDocumento" align="center">
+        <form action="<?php echo $editFormAction; ?>" method="POST" name="Form" id="Form">
+            <fieldset style="width: 500px;">
+                <p class="titulo">Cadastro de Tipo de Documentos</p>
+                <p align="left">
+                    <label class="vermelhorNegrito">Nome</label>
+                    <input name="nome" type="text" id="nome" size="70" maxlength="90" />
+                </p>			
+                <p align="left">
+                	<label>Status</label>
+                        <select name="status_tipo" id="status_tipo">
+                            <option value="">-- Selecione -- </option>
+                            <option value="1">Ativo</option>
+                            <option value="2">Inativo</option>
+                        </select>
+                </p> 
+                <br />
+                <p align="center">          
+                	<input type="submit" name="cadastrar" value="Cadastrar" class="botao">
+                </p>
+            </fieldset>
+        		<input type="hidden" name="MM_insert" value="Form">
+        </form>
+    </div>
+</body>
+</html>

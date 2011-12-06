@@ -1,0 +1,37 @@
+<div id="servico_online">
+  
+  <h3>Microfilmagem de Multa de Trânsito</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+      <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Quando o requerente solicita cópia do auto de infração (manual), ou foto ampliada (quando radar ou avanço de sinal)</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+            - Cópia do documento do veículo<br />
+        	- Requerimento com qualificação e endereço completo
+
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>Taxa de protocolo R$ 7,22 </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Divisão de Protocolo<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+
+</div>

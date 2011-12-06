@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Processo Seletivo N&ordm; 003/2010</title>
+<script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="js/library.js"></script>
+<link href="css/estilo.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+<div id="container">
+
+    <div class="topoMenu">
+        <img src="imagens/topo_ProcessoSeletivo.jpg" 
+            alt="banner Processo Seletivo" 
+            title="Processo Seletivo da Prefeitura do Município de Itapecerica da Serra" />
+    </div>
+
+   	<br />
+    <div id="subcontainer">
+    <form id="form" name="form" method="post" action="cpf/consultar_cpf.php">
+        <table border="0" width="220px" height="150px">
+            <tr><td colspan="2"><h3>Escolha uma opção</h3></td></tr>
+                <tr>
+                    <td>
+                    	<a href="cpf/cad_cpf.php" title="Nova Inscrição">
+                        	NOVA INSCRIÇÃO
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="cpf/alt_cpf.php" title="Alterar Inscrições">
+                        	ALTERAR INSCRIÇÃO
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="cpf/seg_via_cpf.php" title="Imprimir 2º Via da Inscrição">
+                    		2º VIA DA INSCRIÇÃO
+                        </a>
+                    </td>
+                </tr>
+            <tr>
+        </table>
+    </form>
+    </div>
+</div>

@@ -1,0 +1,105 @@
+<div id="cont_noticia">  
+    <h3>IBGE abre inscrição para recenseadores - PSS 01/2010</h3>
+    
+    <div id="not_tam_font">
+      <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        <img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        <span>A+</span>
+      </a>
+      <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        <img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        <span>A-</span>
+      </a>
+    </div>
+    
+    <h4>Censo 2010</h4>
+        
+    <div id="noticia_ilustra">      
+    	<a href="http://www.censo2010.ibge.gov.br/" target="_blank">
+        <img src="<?=URL?>/censo2010/arquivos/censo2010.jpg" alt="Cartaz de Divulgação" /> 
+      </a>
+      <br /> 
+      <br />
+      <p class="link_color">Clique na imagem acima para acessar o site do Censo 2010</p>   
+    </div>
+
+    <div id="noticia_descreve">
+
+        <p>
+            <span>O prazo para se inscrever pela Internet, através do site da Cesgranrio 
+            (<a href="http://www.cesgranrio.org.br/" target="_blank">www.cesgranrio.org.br</a>) 
+            vai até 04 de abril.</span>
+        </p>
+        
+        <br />
+        
+        <p>
+            O IBGE vai realizar o Censo 2010, o grande retrato do povo brasileiro. 
+            Para essa operação serão selecionados 43.634 recenseadores no estado de São Paulo, 
+            11.907 somente para a Capital. Há vagas nos 645 municípios do estado de São Paulo. 
+            Para participar do processo seletivo é necessário ter 18 anos completos na data 
+            da contratação, ter concluído o Ensino Fundamental (antigo 1º grau), ser brasileiro 
+            ou, em caso de nacionalidade portuguesa, estar amparado pelo estatuto de igualdade. 
+            Há outras exigências, detalhadas no edital, publicado no Diário Oficial da União em 
+            5 de fevereiro de 2010 e disponível no site da Fundação Cesgranrio 
+            (<a href="http://www.cesgranrio.org.br/" target="_blank">www.cesgranrio.org.br</a>). 
+            É importante que o candidato tenha habilidade na comunicação interpessoal.
+        </p>
+                
+        <br />
+        
+        <p>
+            As inscrições custarão R$ 18,00 e poderão ser feitas via Internet e o 
+            prazo é até 04 de abril, através do site da Cesgranrio.
+        </p>
+                        
+        <br />
+        
+        <p>
+        	Os aprovados no processo seletivo simplificado trabalharão na coleta de dados do 
+            Censo 2010, por um período de um a quatro meses, utilizando computadores de mão. 
+            O horário de trabalho será flexível, mas é recomendável que o candidato disponha 
+            de 25 a 30 horas semanais para realizar as entrevistas domiciliares.
+        </p>
+                        
+        <br />
+        
+        <p>
+        	A remuneração será por produção, com base na quantidade de domicílios recenseados. 
+            Em média, há 300 domicílios por setor censitário, que podem ser visitados em menos 
+            de 30 dias pelo recenseador. É possível que um recenseador consiga completar mais 
+            de um setor ao longo do período da coleta de dados do Censo. Em média, cada setor 
+            irá propiciar uma remuneração, em São Paulo, em torno de R$ 1.000,00, dependendo 
+            da região do estado, podendo chegar até a R$ 1.600,00. O recenseador também terá 
+            direito ao 13º salário e às férias proporcionais aos dias trabalhados e à produção.
+        </p>                        
+                        
+        <br />
+        
+        <p>
+        	Há diversas informações sobre o processo seletivo no portal do IBGE na
+            Internet (<a href="http://www.ibge.gov.br/" target="_blank">www.ibge.gov.br</a>). 
+            Clique em “Quer trabalhar? Conte com a gente” ou em “Trabalhe conosco”.
+        </p>
+        
+        <br />
+        
+       	<p class="link_color">
+	        Provas estão previstas para 30 de maio.
+        </p> 
+        
+        <br />
+        
+       	<p>
+	        Previstas para 30 de maio, as provas ocorrerão simultaneamente em todo o país, 
+            em locais a serem divulgados a partir de 18 de maio. Haverá 50 questões objetivas - 
+            Língua Portuguesa (10), Matemática (10), Conhecimentos Gerais (10) e 
+            Conhecimentos Técnicos (20) -, baseadas no Estudo dos Conhecimentos Técnicos 
+            a serem aplicados no Censo Demográfico 2010 (anexo VI do edital). 
+            Os classificados nas provas objetivas serão submetidos a um treinamento, 
+            com caráter eliminatório e classificatório (item 11 do Edital).
+        </p>
+                               
+	</div> 
+   
+</div>

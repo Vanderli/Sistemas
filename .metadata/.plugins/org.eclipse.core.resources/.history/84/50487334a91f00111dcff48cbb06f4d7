@@ -1,0 +1,77 @@
+<div id="servico_online">
+  <h3>Academias de Ginástica e Musculação</h3>
+  
+  <div id="servico_online_descreve">
+    <ul>
+      <li>
+        <h4>Descrição do Serviço</h4>
+        <p>São academias de ginástica gratuitas e disponíveis à população de Segunda a Sexta em três períodos: manhã, tarde e noite com Professores de Educação Física</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+          - Ficha de inscrição<br />
+          - Cópia do RG ou protocolo<br />
+          - 2 fotos 3x4 (recentes)<br />
+          - Cópia de comprovante de residência<br />
+          - Atestado médico<br />
+          - Cópia do RG do responsável
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+          <strong>Local das aulas:</strong>
+          <br />
+          - Ginástica: Jardim Marilu, Jardim Branca Flor, Parque Paraíso
+          <br /><br />
+          
+          - Musculação: São Pedrom, Ginário de Esportes
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+          Secretaria Municipal de Esporte e Lazer<br />
+          Av.: Dona Anila, 1001 - Bairro Olaria <br />
+          Itapecerica da Serra – SP CEP: 06859-000 <br />
+          Tel 4667-1148 / 4165- 4667
+        </p>                
+      </li>
+    </ul>
+  </div>
+  
+  <div id="ilustra_gal">
+    <ul>
+      <li>
+        <a href="#" title="Teste">
+          <img src="../../../../img/icones_galeria/zoom.png" class="zoom" />
+          <img src="../../../../img/conteudo/apresentacao_cont/imagem1teste.jpg" alt="Teste" />
+        </a>
+      </li>
+      <li>
+        <a href="#" title="Teste">
+          <img src="../../../../img/icones_galeria/zoom.png" class="zoom" />
+          <img src="../../../../img/conteudo/apresentacao_cont/imagem_teste.jpg" alt="Teste" />
+        </a>
+      </li>
+      <li>
+        <a href="#" title="Teste">
+          <img src="../../../../img/icones_galeria/zoom.png" class="zoom" />
+          <img src="../../../../img/conteudo/apresentacao_cont/imagem1teste.jpg" alt="Teste" />
+        </a>
+      </li>
+      <li>
+        <a href="#" title="Teste">
+          <img src="../../../../img/icones_galeria/zoom.png" class="zoom" />
+          <img src="../../../../img/conteudo/apresentacao_cont/imagem_teste.jpg" alt="Teste" />
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>
+
+</div>

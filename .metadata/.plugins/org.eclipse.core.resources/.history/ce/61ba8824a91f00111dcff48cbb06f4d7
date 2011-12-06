@@ -1,0 +1,21 @@
+<div id="tel_util">
+
+  <h3>Telefones Úteis</h3>
+  
+  <div id="cont_tel_util">
+    <h4>Agência da Receita Federal</h4>
+    
+    <ul>
+      <li id="util_endereco">
+        <p>R. João C. Filho nº 105 - Jd. S. Miguel - Taboão da Serra</p>
+      </li>
+      <li id="util_tel">
+        <p>(11) 2112 9755</p>
+      </li>
+      <li id="util_site">
+        <a href="http://www.receita.fazenda.gov.br" target="_blank" title="Agência da Receita Federal">www.receita.fazenda.gov.br</a>
+      </li>
+    </ul>
+  </div>
+
+</div>

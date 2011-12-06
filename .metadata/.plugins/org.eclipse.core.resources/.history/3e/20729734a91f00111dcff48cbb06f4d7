@@ -1,0 +1,17 @@
+<div id="sobre_secretario">
+ <h3>Gabinete do Prefeito - Vice-Prefeito</h3>
+
+
+  <img src="vice_prefeito.jpg" alt="Foto do Secretário" title="Antonio Trolesi Roschel" />
+  
+  <div id="descreve_secretario">
+    <h4>Antonio Trolesi Roschel</h4>
+    
+    <p>Natural de Itapecerica da Serra é casado, pai de 3 filhos e um neto.</p>
+    <p>Bacharel em Direito pela FIEO de Osasco em 1984. Já trabalhou como supervisor de segurança por 15 anos, além de trabalhar em comercio próprio.</p>
+    <p>Foi vereador por 5 mandatos, durante esses 22 anos de trabalho na Camara Municipal foi eleito como Presidente por 3 vezes e também foi 3 vezes o vereador mais votado. Este é o seu segundo mandato como Vice-Prefeito.</p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

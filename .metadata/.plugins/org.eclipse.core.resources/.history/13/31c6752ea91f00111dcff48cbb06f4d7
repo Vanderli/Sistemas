@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+    <head>
+        <title>Programa Habitacional - Minha Casa Minha Vida | Prefeitura do Município de Itapecerica da Serra</title>
+        
+        <!-- Meta Tags -->
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="content-language" content="pt-br" />
+        <meta name="description" content="Prefeitura do Município de Itapecerica da Serra" />
+        <meta name="keywords" content="Itapecerica da Serra, Prefeitura, Município, Cidade, Concurso"/>
+        <meta name="robots" content="index,follow" />
+        <meta name="author" content="Departamento de Tecnologia e Informação - SADTI" />
+        
+        <!-- Icon abas -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        
+        <!-- CSS -->
+        <link href="css/estilo_mc.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+        <link href="css/print_mc.css" lang="pt-BR" media="print" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+          <link href="css/hacks_mc.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+        <![endif]-->        
+        
+        <!-- Javascript's-->
+        <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>    
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+        <script>
+			$().ready(function() {	
+				
+				/* --------------- Mudar cor quando selecionar campo --------------- */
+				// focus nos campos	
+				$("input:text").focus(function(){	
+				$(this).toggleClass('campo_focus');
+				});
+				/* quando o objeto perde o focus */
+				$("input:text").blur(function(){
+				$(this).toggleClass('campo_focus');
+				});
+				/* --------------- Fim Mudar cor quando selecionar campo --------------- */		
+				
+				/* --------------------- Mascaras --------------------------- */
+				$('#cpf').mask("999.999.999-99");
+				$('#cpf2').mask("999.999.999-99");
+				$('#data_rg_emissao').mask("99/99/9999");
+				$('#data_rg_emissao2').mask("99/99/9999");
+				$('#celular').mask("(99) 9999-9999");
+				$('#telefone').mask("(99) 9999-9999");
+			});
+        </script> 
+	</head>

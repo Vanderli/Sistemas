@@ -1,0 +1,44 @@
+<div id="servico_online">
+  
+  <h3>Inscrição de Autônomo</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Inscrição de autônomo</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais e copias<br />
+        	- Requerimento com qualificação e endereço completo<br />
+            - Inscrição no CCM como autônomo<br />
+            - Declinado a atividade<br /> 
+            - Cópia comprovante de residência                  
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+            Taxa de protocolo 0,44 UFM/UFESP<br />
+            Alvará R$ 1,11 UFM/UFESP<br />
+            Serviços Administrativos 1,41 UFM/UFESP<br />
+            Taxa de localização 3,46 UFM/UFESP<br />
+			Taxa de funcionamento 2,77 UFM/UFESP<br />
+
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Departamento de Receita<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	AV. Eduardo Roberto Daher, 1135 - Centro        </p>                
+      </li>
+    </ul>
+    
+  </div>
+
+</div>

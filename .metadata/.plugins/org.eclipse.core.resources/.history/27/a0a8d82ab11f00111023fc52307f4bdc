@@ -1,0 +1,208 @@
+  <!-- Início Secretarias -->
+  <div class="cont_secretarias">
+    
+    <h3>Concursos Públicos</h3>
+    
+    <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+    <!-- Início dos Concursos Publicos -->
+    <div class="sec_noticias">
+    <br />
+      <ul>
+      
+      <li>
+        	<a href="arquivos/2010/Rerratificacao_Edital_045_10.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 045/10</span> - Rerratificação do Edital de Abertura nº 042/2010 - Concurso Público para Contratação de Técnico II (Assistente Social).
+            </a>
+        </li> 
+      
+        <li>
+        	<a href="arquivos/2010/Edital_042_10_abertura_AssistenteSocial.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 042/10</span> -  Abertura de Concurso Público nº 001/2010 - DRH para Contratação de Técnico II (Assistente Social).
+            </a>
+        </li>        
+
+        <li>
+        	<a href="arquivos/2010/Edital_024_10_Homologacao_conc_publ_002-2009.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 024/10</span> - Homologação do Concurso Público nº 002/2009-DRH.
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2010/Edital_022_10_classificacao_final_concurso_002_09.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 022/10</span> -  Divulgação da classificação final do Concurso Público nº 002/2009-DRH.
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2010/Edital_018_10_divulga_resultado_certidao_e_prova_pratica.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 018/10</span> - Divulgação do resultado da apresentação da Certidão de Tempo de Serviço, da prova prática e a relação dos recursos impetrados do Concurso Público nº 002/2009-DRH. 
+            </a>
+        </li>        
+      
+        <li>
+        	<a href="arquivos/2010/Edital_007_10_convocacao_prova_pratica.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 007/10</span> - Convocação para a prova prática do Concurso Público nº 002/2009-DRH.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2010/Edital_004_10_convoca_apresent_Certidao_Tempo_Servico.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 004/10</span> - Convocação para entrega da Certidão de Tempo de 
+                Serviço - Diretor de Escola - Concurso Público nº 002/2009-DRH.
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2010/Edital_003_10_rerratif_do_resultado_prova_escrita P3.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 003/10</span> - Rerratificação do resultado da prova escrita para o 
+                emprego de Professor - P3 - Concurso Público nº 002/2009-DRH.
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2009/Edital_143_09_divulgacao_resultado_da_prova_escrita.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 143/09</span> - Divulgação do resultado da prova escrita do 
+                Concurso Público nº 002/2009-DRH.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_140_09_Rerratificacao_do_Gabarito_002_2009-DRH.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 140/09</span> - Rerratificação do Gabarito do Concurso Público nº 002/2009-DRH.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_135_09_divulgacao_Gabarito.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 135/09</span> - Divulgação do Gabarito do Concurso Público nº 002/2009-DRH.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_132_09_Homologacao.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 132/09</span> - Homologação do Concurso Público de Provas e Títulos 
+                nº 001/2009-DRH - Emprego.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_126_09_Classific_candidatos_portadores_de_deficiencia.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 126/09</span> - Candidatos Portadores de Deficiência Aprovados no Concurso 
+                Público de Provas e Títulos nº 001/2009-DRH - Emprego Procurador.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_125_09_Pontuacao_de_Titulos_e_Classificacao_Final_OFICIAL.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 125/09</span> - Resultado da Pontuação de Títulos e Classificação Final do 
+                Concurso Público de Provas e Títulos nº 001/2009-DRH - Emprego Procurador.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_123_09_convocacao_provas_escritas.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 123/09</span> - Convocação para a prova escrita do Concurso Público nº 002/09-DRH.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Listagem_dos_candidatos_e_escolas_para_a_prova_escrita_23_10_09_OFICIAL.pdf" title="Edital" target="_blank">
+        		<span>LISTAGEM DO EDITAL Nº 123/09</span> - Locais e horários para a realização das provas escritas.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_120_09_rerratif_Edital_114_09_inclusao_e_exclusao_de_candidatos.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 120/09</span> - Rerratificação do Edital nº 114/09 do Concurso Público nº 002/09-DRH.
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2009/Edital_114_09_divulgacao_relacao_dos_inscritos.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 114/09</span> - Divulgação da relação dos inscritos no Concurso Público nº 002/2009 - DRH.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_113_09_rerratif_requisito_FONOAUDIOLOGO.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 113/09</span> - Rerratificação do Edital nº 103/2009-DRH referente ao 
+                quesito da Formação do emprego de Técnico II - Fonoaudiólogo.
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2009/Edital_de_rerratificacao_105_ 09_rerratif_Edital_103_09.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 105/09</span> - Rerratificação do Edital nº 103/09 do Concurso Público nº 002/09-DRH.
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2009/Edital_103_09_abertura_inscricoes.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 103/09</span> - Abertura de Concurso Público nº 002/09-DRH para os 
+                empregos de Diretor de Escola-D.E., Operacional III (Motoboy), Operacional IV 
+                (Mecânico), Operador de Máquinas (Pá carregadeira), Operador de Máquinas (Patrol), 
+                Operador de Máquinas (Retroescavadeira), Orientador Pedagógico-OP, Professor-P3, 
+                Motorista, Técnico II (Professor de Educação Física) e Técnico II (Fonoaudiólogo).
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2009/Edital_102_09_candidatos_nao_classif_nao_habilit_ausentes.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 102/09</span> - Candidatos não classificados, não habilitados e ausentes na 
+                prova realizada no dia 9 de agosto de 2009 do Concurso Publico de Provas e 
+                Títulos nº 001/2009-DRH - Emprego Procurador.
+            </a>
+        </li>
+        
+        <li>
+        	<a href="arquivos/2009/Edital_101_09_resultado_prova_escrita.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 101/09</span> - Resultado da prova escrita e convocação para entrega de 
+                títulos do Concurso Público de Provas e Títulos nº 001/2009-DRH - Emprego Procurador.
+            </a>
+        </li>        
+        
+        <li>
+        	<a href="arquivos/2009/Edital_de_rerratificacao_10009-DRH.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 100/09</span> - Rerratificação do Gabarito do Concurso Público de 
+                Provas e Títulos nº 001/2009-DRH - Emprego Procurador.
+            </a>
+        </li>        
+        
+        <li>
+        	<a href="arquivos/2009/Edital_094_09_divulgacao_do_gabarito.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 094/2009</span> - Divulgação do Gabarito do Concurso Público de 
+                Provas e Títulos nº 001/2009 - DRH - Emprego Procurador.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital-081-09-homol-conv-prova escrita-I.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 081/09</span> - Homologação das inscrições e convocação para a prova escrita - Procurador.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Comunicado_Conc_Publ_001_09-DRH.pdf" title="Edital" target="_blank">
+        		<span>COMUNICADO PARA OS INSCRITOS NO CONCURSO PÚBLICO Nº 001/2009-DRH</span> - Emprego Procurador.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital-076-09-rerratificacao-Edital-058-09.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 076/09</span> - Rerratificação do Edital nº 058/09-DRH. 
+                Concurso de Provas e Títulos nº 001/09-DRH.
+            </a>
+        </li>
+
+        <li>
+        	<a href="arquivos/2009/Edital_058_09_abertura_conc_publ_Procurador.pdf" title="Edital" target="_blank">
+        		<span>EDITAL Nº 058/09</span> - Abertura de Concurso Público de Provas e Títulos nº 001/09-DRH - Procurador.
+            </a>
+        </li>
+        
+      </ul>
+    </div>
+      <!-- Fim dos Concursos Publicos -->
+          
+  </div>

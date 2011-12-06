@@ -1,0 +1,43 @@
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em 10/02/2010</p>
+    <h4>Moto no Mato 2010</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=URL?>/img/testando/moto_mato_gra.jpg" alt="Folia na Serra 2010" /> 
+    </div>
+
+    <div id="noticia_descreve">
+        <p id="age_data"><span>Data do Evento:</span> 18 de Abril de 2010</p>
+        <p id="age_hora"><span>Concentração:</span> 8h</p>
+        <p id="age_hora"><span>Largada:</span> 9h</p>        
+        <p id="age_local"><span>Local:</span> Praça da Fonte</p>
+        <p id="age_desc"><span>Inscrições</span> 2 Kg de alimento (vale uma camiseta e um colete)</p>
+
+        <p id="age_local">
+        	Faça a sua inscrição na Secretaria Municipal de Turismo
+            no Largo da Matriz atrás da Câmara dos Vereadores e
+            no Centro de Apoio ao Turista na Praça da Fonte
+            de segunda a sexta das 8h às 17h<br />
+        </p>
+
+        <p id="age_local"><span>Troféus e medalhas aos vencedores</span></p>
+
+        <strong>Informações:</strong> Secretaria Municipal de Turismo - (11) 4666-5966
+        
+        </p>
+    </div> 
+   
+</div>

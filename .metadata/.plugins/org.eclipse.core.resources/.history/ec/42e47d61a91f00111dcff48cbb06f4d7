@@ -1,0 +1,48 @@
+/* CSS PRINT DO PROTOCOLO */
+
+@import url(estilo_dcs.css);
+
+body {
+  color: #000;
+  font-size: 0.6em;
+  margin-left: 15%;
+}
+
+#cadastro_serv {
+  border: 1px #000 solid;
+  width: 90%;
+}
+
+#cadastro_serv h1 {
+  font-size: 1em;
+}
+
+.prot_assina {
+  width: 95%;
+}
+
+.dcs_form_brasao {
+  height: 50%;
+}
+
+.dcs_form_brasao img {
+  float: left;
+  height: 40%;
+  width: 40%;
+}
+
+.prot_dados table tr td,
+.prot_dados table caption,
+.prot_dados table tr .prot_tam_tit,
+.prot_assina {
+  border: 1px solid #000;
+}
+
+.prot_dados table tr .prot_tam_men {
+  width: 75px;
+}
+
+.prot_dados table tr .dcs_btn_prot,
+.prot_dados table tr .dcs_btn_prot input {
+  display: none;
+}

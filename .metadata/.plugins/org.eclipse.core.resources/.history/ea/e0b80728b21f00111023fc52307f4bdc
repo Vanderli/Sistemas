@@ -1,0 +1,633 @@
+/* ----- Estilo Administrativo do site da prefeitura de Itapecerica da Serra -------- */
+@charset "UTF-8"; 
+
+/*  ----- Reset ----- */
+@import url(reset.css);
+
+/*  ----- Menu ----- */
+@import url(estilo_menu.css);
+
+/*  ----- Validar ----- */
+/*@import url(validar.css);*/
+
+/* ----- Pr-formatao ----- */
+body {
+  background: url(../img/background_adm/bg.png) repeat;
+  font-family: Verdana, Arial, Tahoma, Times New Roman;
+  font-size: 0.8em;
+  line-height: 15px;
+}
+
+a {
+  color: #6D6E71;
+  text-decoration: none;
+}
+
+a:hover{
+	color: #272878 !important;
+	text-decoration: none;
+}
+
+h2 {
+  background: url(../img/botoes_diversos/seta_menu.png) no-repeat right;
+  color: #F6830E;
+  float: left;
+  font-weight: bold;
+  height: 16px;
+  padding: 15px 15px 15px 0;
+}
+
+h3 {
+  float: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+h4 {
+  color: #272878;
+  float: left;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 10px 0 0 5px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#msg_vazio{
+	/*background-color:#FFFACD;	*/
+	color: #F6830E;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+
+*[readonly]{
+	background-color: #EEE;
+	color:#f6830e;	
+}
+
+*[disabled]{
+	background-color: #EEE;
+	border:0px  solid red !important;
+}
+
+input[type="file"]{
+	background-color: #EEE !important;
+	background:url(suaimagem) no-repeat 0 0;
+}
+
+/* ---- Mudar cor do campo ao seleciona-lo ----*/
+.campo_focus {
+   border: 1px solid #F6830E !important; 
+   background-color: #FFFBF7 !important;
+}
+
+/* trocar de cor das linhas do relatorio */
+.zebrar{
+	background: #EEE;
+}
+
+/* -------------------------------- SIG Administrativo --------------------------------- */
+.sig_container {
+  background-color: #FFF;
+  border: 1px #EEE solid;
+  float: left;
+  left: 50%;
+  margin-left: -375px;
+  padding-bottom: 50px;
+  position: relative;
+  width: 770px;
+}
+
+.sig_container .sig_logo {
+  background-color: #EEE;
+  float: left;
+  height: 130px;
+  width: 100%;
+}
+
+.sig_container .sig_logo #banner_admin {
+	border: 0px solid #FF0000;
+	display: block;
+	height: 90px;
+	left: 10px; 
+	position: absolute;
+	text-indent:-99999px;	
+	top:23px;     		
+	width:350px;
+}
+
+.sig_container .sig_logo h1 {
+  float: left;
+  text-indent: -5000px;
+}
+
+/* -------------------------------- Tela Administrativa ------------------------------- */
+.admin {
+  border: 5px #EEE solid;
+  float: left;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: 50px;
+  padding: 15px 15px 0 15px;
+  position: relative;
+  width: 560px;
+}
+
+.admin h3 {
+  color: #F6830E;
+  float: left;
+  font-size: 1.2em;
+  text-align: right;
+  width: 100%;
+}
+
+.admin_tam_fotos {
+  color: #858585;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.admin ul li {
+  float: left;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.admin ul li label {
+  float: left;
+  width: 15%;
+}
+
+.admin ul li input,
+.admin ul li textarea {
+  border: 1px #D5D5D5 solid;
+  float: left;
+  /*text-transform:uppercase;*/
+  width: 84%;
+}
+
+.admin ul li select{
+  float: left;
+  width: 20%;
+}
+
+/*.admin ul li input:hover,
+.admin ul li select:hover,
+.admin ul li textarea:hover {
+  background-color: #FFFBF7;
+  border: 1px #F6830E solid;
+}*/
+
+.admin .admin_btns {
+  background-color: #EEE;
+  height: 50px;
+  margin: 15px 0 0 -3%;
+  padding: 0 16px;
+}
+
+.admin .admin_btns .btn_cadastrar {
+  background-color: #F6830E;
+  color: #FFF;
+  border: 0;
+  font-size: 1.2em;
+  margin-left: 42%;
+  margin-top: 12px;
+  padding: 5px 0;
+  width: 20%;
+}
+
+/*.admin ul li .admin_img {
+  width: 68%;
+}
+
+.admin ul li .admin_pdf {
+  width: 68%;
+}
+
+.admin ul li .admin_procurar {
+  background-color: #EEE;
+  margin-left: 5px;
+  padding: 0 10px;
+  width: 15%;
+}*/
+
+.admin ul li .admin_tel{
+  margin-right: 5px;
+  width: 20%;
+}
+/*
+.admin ul li .admin_tel2 {
+  width: 30%;
+}
+*/
+/* ADM (Expecifico para cada campo) */
+
+/* Imprensa Oficial */
+.admin ul li #ipo_tamanho {
+  width: 19.5%;
+}
+
+/* Notcias */
+.admin ul li #not_publicado_em {
+  width: 19.5%;
+}
+.admin ul li #thumb_img {
+  padding-left:100px;
+}
+
+/* Usuários */
+.admin ul li #usu_nome {
+	text-transform:uppercase;
+}
+.admin ul li #usu_gerar_senha {
+	float: left;
+	width: 19.5%;
+	text-transform:none;
+}
+.admin ul li #usu_senha {
+  margin-left: 5px;
+  text-transform:none;
+  width: 63.5%;
+}
+.admin ul li #usu_login {
+  text-transform:lowercase;
+}
+
+/* modulo usuario */
+.admin ul li #usu_mdu_id {
+  width: 35%;
+}
+.admin ul li #mdu_nome {
+  text-transform:uppercase;
+}
+
+/* Alterar Senha Pessoal */
+.admin #alt_senha_usu ul li label{
+	width: 32%;
+}
+.admin #alt_senha_usu #senha_atual, #nova_senha, #conf_nova_senha {
+	text-transform:none;
+	width: 67%;
+}
+
+/* Importante */
+.admin #admin_importante ul li label{
+	width: 20%;
+}
+.admin #admin_importante #imp_titulo_not{
+	width: 80%;
+}
+
+/* Secretarias */
+.admin #admin_secretarias ul li label{
+	width: 18%;
+}
+
+.admin #admin_secretarias ul li input{
+	width: 80%;
+}
+
+.admin #admin_secretarias ul .admin_btns .btn_cadastrar{
+	width: 20%;
+}
+
+/* Atribuicao das Secretarias 
+ * Beneficio das Secretarias
+ * Contato das Secretarias
+ * Links de Acesso
+ * Servicos Online
+ * Noticias
+ */
+.admin ul li #atr_sec_id, #ben_sec_id, #con_sec_id, #lka_sec_id, #svc_sec_id, #not_sec_id{
+	width:85%;
+}
+
+/* --------------------------------- Telas de Listagem --------------------------------- */
+.listagem {
+  border: 5px #EEE solid;
+  color:#6d6e71;
+  float: left;
+  left: 50%;
+  margin-left: -355px;
+  margin-top: 70px; 
+  position: relative;
+  width: 700px;
+}
+
+.listagem table {
+  border-collapse: collapse;
+  float: left;
+  width: 100%;
+}
+
+.listagem table caption {
+  background-color: #EEE;
+  height: 30px;
+  font-size: 1.4em;
+  margin: 0 0 1px -1px;
+  padding-top: 6px;
+  text-align: center;
+  width: 701px;;
+}
+
+.listagem table tr {
+  height: 20px;
+}
+
+.listagem table tr th {
+  border: 1px #D5D5D5 solid;
+  font-weight: bold;
+  padding: 1px 0 0 5px;
+  text-align: center;
+}
+
+.listagem table tr td {
+  border: 1px #D5D5D5 solid;
+  padding: 1px 0 0 5px;
+}
+
+.listagem table tr .list_excluir,
+.listagem table tr .list_editar,
+.listagem table tr .list_status,
+.listagem table tr .list_detalhes {
+  text-align: center;
+  width: 70px;
+}
+
+.listagem table tr .list_link {
+  text-align: center;
+}
+
+.listagem table tr .list_link,
+.listagem table tr .list_link a,
+.listagem table tr .list_excluir a,
+.listagem table tr .list_editar a,
+.listagem table tr .list_detalhes a {
+  color: #F6830E;
+  text-decoration: none;
+}
+
+.listagem table tr #btn_excluir {
+  background-color:transparent;
+  border:0px;
+  color: #F6830E;
+  cursor:pointer;	
+}
+
+/* Segunda Tabela para os Btns */
+.listagem table tfoot tr td {
+  border: 0;
+}
+
+.listagem table tfoot tr td .list_btns {
+  margin-left: -5px;
+  width: 100.7%;
+}
+
+.listagem table tfoot tr td .list_btns tr td {
+  border: 0;
+  padding: 5px 0;
+  text-align: center;
+  width: 33%;
+}
+
+/* -- Listagem Individual -- */
+
+/* Secretaria - Atrib/Benef Sec */
+.listagem table tr .list_sec {
+  width: 300px;
+}
+
+/* Nome - Banner */
+.listagem table tr .list_nome_ban {
+  width: 400px;
+}
+
+/* Nome - Galeria */
+.listagem table tr .list_nome_gal {
+  width: 300px;
+}
+
+/* Titulo - Importante */
+.listagem table tr .list_tit_imp {
+  width: 380px;
+}
+
+/* Titulo - Noticias */
+.listagem table tr .list_tit_not {
+  width: 250px;
+}
+
+/* Telefone - Secretarias */
+.listagem table tr .list_tel {
+  width: 90px;
+}
+
+/* Foto - Subgaleria */
+.listagem table tr .list_foto {
+  width: 70px;
+}
+
+/* Links de Acesso */
+.listagem table tr .list_sec_lka {
+  width: 220px;
+}
+
+/* Notícias */
+.listagem table tr .list_tit_not {
+  width: 107px;
+}
+
+.listagem table tr .list_pub_em {
+  width: 200px;
+}
+
+.listagem table tr td {
+	padding: 0px;
+	vertical-align:middle; 
+}
+
+.listagem table tr td p{
+  vertical-align:middle;  
+  text-align:center;
+  width: 100%;
+}
+
+
+/* -------------------------------- Tela de Boas Vindas - SIG -------------------------- */
+.sig_container #sig_bemvindo {
+  border: 5px #EEE solid;
+  float: left;
+  height: 200px;
+  margin: 20px 0 0 85px;
+  padding: 50px 15px;
+  width: 560px;
+}
+
+.sig_container #sig_bemvindo p {
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.sig_container #sig_bemvindo #bv_nome {
+  color: #F6830E;
+  font-size: 2em;
+  margin-bottom: 60px;
+}
+
+.sig_container #sig_bemvindo #bv_versao {
+  font-weight: bold;
+}
+
+.sig_container #sig_bemvindo #bv_msg {
+  margin-bottom: 50px;
+}
+
+
+
+/* ---------------------------- Login (Independente do Sistema) ------------------------ */
+.adm_login {
+  background-color: #FFF;
+  border: 1px #D5D5D5 solid;
+  float: left;
+  left: 50%;
+  margin: 100px 0 0 -375px;
+  position: relative;
+  width: 770px;
+}
+
+.adm_login h2 {
+  background: none;
+}
+
+.adm_login .adm_login_logo {
+  float: left;
+  height: 130px;
+  width: 100%;
+}
+
+.adm_login .adm_login_logo h1 {
+  float: left;
+  text-indent: -5000px;
+}
+
+.adm_login .adm_login_logo img {
+  float: left;
+  left: 50%;
+  margin: 10px 0 0 -192.5px;
+  position: relative;
+}
+
+/* Barra de Anúncio */
+.adm_login .adm_login_anuncio {
+  background: #EEE url(../img/background_adm/bg_barra_anuncio.jpg);
+  float: left;
+  height: 30px;
+  width: 100%;
+}
+
+.adm_login .adm_login_anuncio h2 {
+  color: #6D6E71;
+  font-size: 1.2em;
+  margin: 0;
+  line-height: 29px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Painel */
+.adm_login .adm_login_sist {
+  background-color: #FFF;
+  border: 5px #EEE solid;
+  float: left;
+  margin: 50px 0 0 34%;
+  padding: 5px;
+  width: 30%;
+}
+
+.adm_login .adm_login_sist ul,
+.adm_login .adm_login_sist ul li {
+  float: left;
+  width: 100%
+}
+
+.adm_login .adm_login_sist h2 {
+  background-color: #D5D5D5;
+  color: #000;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.adm_login .adm_login_sist ul li label {
+  float: left;
+  padding-top: 3px;
+  width: 20%;
+}
+
+.adm_login .adm_login_sist ul li input {
+  border: 1px #D5D5D5 solid;
+  float: left;
+  margin-bottom: 5px;
+  width: 78%;
+}
+
+.adm_login .adm_login_sist ul li .adm_login_campo {
+  color: #6D6E71;  
+}
+
+.adm_login .adm_login_sist ul .adm_login_invalido p {
+  color: #FF0000;
+  float: left;
+  text-align: center;
+  width: 98.5%;
+}
+
+.adm_login .adm_login_sist ul .adm_login_btns {
+  background-color: #EEE;
+  margin: 5px 0 -5px -5px;
+  padding: 0 5px 5px 5px;
+}
+
+.adm_login .adm_login_sist ul .adm_login_btns .adm_login_logar {
+  background-color: #F6830E;
+  border: none;
+  color: #FFF;
+  margin: 9px 0 0 25%;
+  padding: 5px 20px;
+  width: 50%;
+}
+
+/* Rodapé com Endereço */
+.adm_login .adm_login_rodape {
+  float: left;
+  margin: 50px 0 25px 0;
+  width: 100%;
+}
+
+.adm_login .adm_login_rodape p {
+  color: #6D6E71;
+  float: left;
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%;
+}
+
+/* ---- Hacks Chrome e Safari ---- */
+@media all and (-webkit-min-device-pixel-ratio) {
+  /* Geral */
+  body { 
+    font-family: Arial, Verdana, Tahoma, Times New Roman;
+    font-size: 0.8em;
+    line-height: 15px;
+  }
+}

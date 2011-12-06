@@ -1,0 +1,5 @@
+INDEX VERSION 1.122+/home/vanderli/Documentos/empresas/prefeitura de Itapecerica/SISTEMAS/SISTEMAS COMPLETOS/MEUS SISTEMAS/GITHUB/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3623122080.index
+2229854941.index
+571864049.index
+838836358.index

@@ -1,0 +1,43 @@
+<div id="servico_online">
+  
+  <h3>Alteração de Inscrições Municipais</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Alteração do Número de identificação do contribuinte no Cadastro Tributário Municipal</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+        	- Requerimento com qualificação e endereço completo<br />
+            - Preenchimento de guia de cadastro
+       </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+        	Taxa de protocolo 0,44 UFM/UFESP<br />
+        	Serviços Administrativos 1,41 UFM/UFESP<br />
+        	Alvará 1,71 UFM/UFESP<br />
+        	TLF de acordo com vistoria fiscal
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Departamento de Receita<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	AV. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>
+</div>

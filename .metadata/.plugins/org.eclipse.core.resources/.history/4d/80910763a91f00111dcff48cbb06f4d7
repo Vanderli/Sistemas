@@ -1,0 +1,318 @@
+<?php require_once('Connections/conn.php'); ?>
+<?php require_once('lib/DataHora.php'); ?>
+<?php $data = new DataHora; ?>
+<?php
+
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$editFormAction = $_SERVER['PHP_SELF'];
+if (isset($_SERVER['QUERY_STRING'])) {
+  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+}
+
+if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
+  $insertSQL = sprintf("INSERT INTO inscricoes (cod_cargo, nome, rg, sexo, dataNascimento, idade, numeroFilhosMenor18, estadoCivil, endereco, numero, complemento, bairro, cidade, cep, uf, telefone, tipoContato, data, hora) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+                       GetSQLValueString($_POST['cod_cargo'], "int"),
+                       GetSQLValueString($_POST['nome'], "text"),
+                       GetSQLValueString($_POST['rg'], "text"),
+                       GetSQLValueString($_POST['sexo'], "text"),
+                       GetSQLValueString($_POST['dataNascimento'], "text"),
+                       GetSQLValueString($_POST['idade'], "int"),
+                       GetSQLValueString($_POST['numeroFilhosMenor18'], "int"),
+                       GetSQLValueString($_POST['estadoCivil'], "text"),
+                       GetSQLValueString($_POST['endereco'], "text"),
+                       GetSQLValueString($_POST['numero'], "int"),
+                       GetSQLValueString($_POST['complemento'], "text"),
+                       GetSQLValueString($_POST['bairro'], "text"),
+                       GetSQLValueString($_POST['cidade'], "text"),
+                       GetSQLValueString($_POST['cep'], "text"),
+                       GetSQLValueString($_POST['uf'], "text"),
+                       GetSQLValueString($_POST['telefone'], "text"),
+                       GetSQLValueString($_POST['tipoContato'], "text"),
+                       GetSQLValueString(date('Y-m-d'), "text"),
+                       GetSQLValueString(date('G:i:s'), "text"));
+
+  mysql_select_db($database_conn, $conn);
+  $Result1 = mysql_query($insertSQL, $conn) or die(errMysql(mysql_errno()));
+  
+mysql_select_db($database_conn, $conn);
+$query_consInscricao = "SELECT * FROM inscricoes ORDER BY codInscricao DESC";
+$consInscricao = mysql_query($query_consInscricao, $conn) or die(mysql_error());
+$row_consInscricao = mysql_fetch_assoc($consInscricao);
+$totalRows_consInscricao = mysql_num_rows($consInscricao);  
+
+  //$insertGoTo = "cadastrarCandidato.php?action=success";
+  $insertGoTo = "imprime_ficha/imprime_ficha.php?codInscricao=".base64_encode($row_consInscricao['codInscricao']);
+  if (isset($_SERVER['QUERY_STRING'])) {
+    $insertGoTo .= (strpos($insertGoTo, '?')) ? "&" : "?";
+    $insertGoTo .= $_SERVER['QUERY_STRING'];
+  }
+  header(sprintf("Location: %s", $insertGoTo));
+}
+
+mysql_select_db($database_conn, $conn);
+$query_selCargos = "SELECT * FROM cargos ORDER BY nome_cargo ASC";
+$selCargos = mysql_query($query_selCargos, $conn) or die(errMysql(mysql_errno()));
+$row_selCargos = mysql_fetch_assoc($selCargos);
+$totalRows_selCargos = mysql_num_rows($selCargos);
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="js/jquery-validate.min.js"></script>
+<script type="text/javascript" src="js/lib_validacao.js"></script>
+<title>Processo Seletivo N&ordm; 001/2010 - ..:: Cadastrar Inscri&ccedil;&otilde;es ::..</title>
+<link href="css/estilo.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	left:540px;
+	top:41px;
+	width:261px;
+	height:34px;
+	z-index:1;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="container">
+
+    <div class="topoMenu">
+    	<img src="imagens/topo_ProcessoSeletivo.jpg">
+    </div>
+    <br />
+    
+    <div id="formulario">
+        <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="form1">
+            <h3>.: Cadastro de Inscri&ccedil;&otilde;es :.</h3>
+            <table width="725">
+            <tr valign="baseline">
+                <td width="132" align="right" nowrap="nowrap" class="label"><div align="left">Cargo:</div></td>
+                <td width="162">
+                    <label>
+                        <select name="cod_cargo" id="cod_cargo">
+                        <option value="">--------</option>
+                        <?php
+                        do {  
+                        ?>
+                        <option value="<?php echo $row_selCargos['cod_cargo']?>"><?php echo $row_selCargos['nome_cargo']?></option>
+                        <?php
+                        } while ($row_selCargos = mysql_fetch_assoc($selCargos));
+                        $rows = mysql_num_rows($selCargos);
+                        if($rows > 0) {
+                        mysql_data_seek($selCargos, 0);
+                        $row_selCargos = mysql_fetch_assoc($selCargos);
+                        }
+                        ?>
+                        </select>
+                    </label>
+                </td>
+            	<td width="189">&nbsp;</td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Nome completo:</div></td>
+                <td colspan="2"><input type="text" name="nome" value="" size="68" /></td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">RG:</div></td>
+                <td colspan="2"><input name="rg" type="text" value="" size="15" /></td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Sexo:</div></td>
+                <td>
+                <label>
+                    <select name="sexo" id="sexo">
+                        <option value="">--------</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                    </label>
+                </td>
+            	<td>&nbsp;</td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Data de nascimento:</div></td>
+                <td colspan="2">
+                	<input name="dataNascimento" type="text" id="dataNascimento" 
+                				 value="" size="9" maxlength="10" />          
+                <span class="mascara">(dd/mm/aaaa)</span>
+            </td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Idade:</div></td>
+                <td><input name="idade" type="text" id="idade" value="" size="1" maxlength="3" /></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Número de filhos menores de 18 anos:</div></td>
+                <td><input name="numeroFilhosMenor18" type="text" value="" size="1" maxlength="2" /></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Estado Civil:</div></td>
+                <td>
+                    <label>
+                        <select name="estadoCivil" id="estadoCivil">
+                            <option value="">--------</option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="casado">Casado</option>
+                            <option value="separado">Separado</option>
+                            <option value="viuvo">Viuvo</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </label>
+                </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Endereco:</div></td>
+                <td colspan="2"><input type="text" name="endereco" value="" size="68" /></td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">N&uacute;mero:</div></td>
+                <td><input type="text" name="numero" value="" size="10" /></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Complemento:</div></td>
+                <td colspan="2"><input type="text" name="complemento" value="" size="68" /></td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Bairro:</div></td>
+                <td colspan="2"><input type="text" name="bairro" value="" size="68" /></td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Cidade:</div></td>
+                <td colspan="2"><input type="text" name="cidade" value="" size="68" /></td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">CEP:</div></td>
+                <td colspan="2"><input name="cep" type="text" value="" size="32" /></td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">UF:</div></td>
+                <td>
+                    <select name="uf" id="uf">
+                        <option value="">--------</option>
+                        <option value="ac">AC</option>
+                        <option value="al">AL</option>
+                        <option value="am">AM</option>
+                        <option value="ap">AP</option>
+                        <option value="ba">BA</option>
+                        <option value="ce">CE</option>
+                        <option value="df">DF</option>
+                        <option value="es">ES</option>
+                        <option value="go">GO</option>
+                        <option value="ma">MA</option>
+                        <option value="mg">MG</option>
+                        <option value="mt">MT</option>
+                        <option value="ms">MS</option>
+                        <option value="pa">PA</option>
+                        <option value="pb">PB</option>
+                        <option value="pe">PE</option>
+                        <option value="pi">PI</option>
+                        <option value="pr">PR</option>
+                        <option value="rj">RJ</option>
+                        <option value="rn">RN</option>
+                        <option value="ro">RO</option>
+                        <option value="rr">RR</option>
+                        <option value="rs">RS</option>
+                        <option value="sc">SC</option>
+                        <option value="se">SE</option>
+                        <option value="sp">SP</option>
+                        <option value="to">TO</option>
+                    </select>
+            	</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Telefone:</div></td>
+                <td colspan="2"><input name="telefone" type="text" size="13" maxlength="15" />          
+                <span class="mascara">xx xxxxxxxx</span></td>
+            </tr>
+            <tr valign="baseline">
+                <td align="right" nowrap="nowrap" class="label"><div align="left">Tipo de Contato:</div></td>
+                <td>
+                <label>
+                    <select name="tipoContato" id="tipoContato">
+                        <option value="">--------</option>
+                        <option value="residencial">Residencial</option>
+                        <option value="comercial">Comercial</option>
+                        <option value="recado">Recado</option>
+                        <option value="celular">Celular</option>
+                    </select>
+            	</label>
+                </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr valign="baseline">
+            	<td colspan="3" align="right" nowrap="nowrap">
+                
+                
+                
+                <table width="725" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="333">&nbsp;</td>
+                        <td width="83">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                        <span class="alerta">Todos os campos dever&atilde;o ser preenchidos</span>              
+                        <div align="right"></div>
+                        </td>
+                	</tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                        	<input name="btnCadastrar" type="submit" class="botao" id="btnCadastrar" value="Cadastrar" />
+                        </td>
+                	</tr>
+                </table>
+                
+        </td>
+        </tr>
+        </table>
+        <input type="hidden" name="MM_insert" value="form1" />
+    </form>
+    <div style="clear: both;"></div>
+    </div>
+
+</div>
+</body>
+</html>
+<?php mysql_free_result($selCargos); ?>

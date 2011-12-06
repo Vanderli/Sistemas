@@ -1,0 +1,115 @@
+----------------------------------------- TOTEN -----------------------------------------------
+# seleciono todos os atendimentos referente a está data
+
+SELECT COUNT(*) from atendimento_bk2009marco WHERE data='2009-03-02';
+
+
+# seleciono todos os atendimentos entre 02/03/2009 à 31/03/2009, ordenando apartir da menor data
+
+SELECT data, count(data) as total_atendimento_dia from atendimento_bk2009marco
+WHERE data BETWEEN '2009-03-02' and '2009-03-31'
+GROUP BY data ORDER BY data ASC;
+
+
+# Selecionar pela nome, senha e letra no TOTEN
+SELECT 
+       A.cod_atendimento,
+       A.senha as Senha,
+       A.letra_dep as "Letra do Dep",
+       A.nome_municipe as Munícipe,
+       A.data as Data,
+       A.hora_chegada as Chegada,
+       A.inicio_atendimento as Início,
+       A.termino_atendimento as Término,
+       A.cod_dep,
+       D.nome_dep as "Nome do Departamento",
+       A.cod_serv,
+       S.nome_serv as "Nome do Serviço",
+       A.cod_usuario,
+       U.nome as "Nome do Usuário",
+       A.status as Status,
+       A.ip_guiche,
+       A.cod_prioridade,
+       A.encaminhada as Encaminhada,
+       A.cod_atendente
+FROM atendimento A
+INNER JOIN usuarios U ON U.cod_usuario = A.cod_usuario
+INNER JOIN servicos S ON S.cod_serv = A.cod_serv
+INNER JOIN departamentos D ON D.cod_dep = A.cod_dep
+WHERE A.senha = '0118' AND A.letra_dep = 'k' AND nome_municipe = 'VERA'
+
+
+-------------------------------- Processo Seletivo --------------------------------------------
+
+Criar senha md5 no banco de dados do Processo Seletivo
+
+INSERT INTO `usuarios` (
+        `codUsuario` ,
+        `nomeUsuario` ,
+        `login` ,
+        `senha` ,
+        `ativo`
+)
+VALUES (
+       NULL ,
+       'Nome completo Fulano',
+       'fulano.sobrenome',
+       MD5( 'senha' ) ,
+       '1'
+);
+
+----------------------------- Permição para acessar Banco de dados ----------------------------- 
+
+GRANT ALL PRIVILEGES ON *.* TO root@192.168.16.10 IDENTIFIED BY 'pmis';
+
+
+----------------------------- Permição para acessar Localhost ----------------------------- 
+
+    # Order Deny,Allow
+    # Deny from all
+    Allow from 127.0.0.1
+    Allow from 192.168.16.11
+    # Allow from 192.168.16.10
+</Directory>
+
+
+
+
+------------------------------ Impedir que o campo fique duplicado   --------------------------- 
+
+ALTER TABLE inscricoes ADD UNIQUE(cpf);
+
+ALTER TABLE inscricoes DROP INDEX cpf;
+
+
+
+------------------------------ Arquivos Duplicados no banco de dados --------------------------- 
+
+# Exibe quais e quantos CPF estão duplicados
+
+SELECT rec_id, rec_cpf, COUNT(*) quant_duplicados
+FROM recadastrados
+GROUP BY rec_cpf
+HAVING quant_duplicados > 1
+ORDER BY rec_id ASC
+
+
+
+# Para saber os id dos CPF duplicados
+
+SELECT rec_id, rec_cpf, rec_nome
+FROM recadastrados
+WHERE rec_cpf = "152.520.688-52"
+
+
+# Excluir o CPF duplicado
+
+DELETE FROM recadastrados WHERE rec_id = 223
+
+
+# SELECIONAR OS CPF's NÃO CADASTRADOS
+
+SELECT * FROM recadastramento A
+WHERE A.rec_cpf
+NOT IN (SELECT B.rec_cpf FROM recadastrados B)
+

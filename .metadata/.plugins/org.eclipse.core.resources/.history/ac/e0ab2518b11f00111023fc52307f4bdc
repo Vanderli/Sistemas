@@ -1,0 +1,15 @@
+<?php # Conexão do banco de dados site itapecerica
+	
+	// Mensagens de Erro
+	$msg[0] = "Erro de conexão, contate o Administrador do Sistema.";
+	$msg[1] = "Não foi possível selecionar o banco de dados, contate o Administrador do Sistema.";
+	$msg[2] = "Contate o Administrador do Sistema.";
+	
+	$host = "127.0.0.1";
+	$db   = "site_itapecerica";
+	$user = "root";
+	$pass = "pmis";
+	$conn = @mysql_connect($host, $user, $pass) or die ($msg[0]); 
+	
+	@mysql_select_db($db, $conn) or die($msg[1]); 
+?>

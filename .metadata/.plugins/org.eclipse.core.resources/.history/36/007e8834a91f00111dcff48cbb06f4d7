@@ -1,0 +1,38 @@
+<div id="cont_noticia">  
+    <h3>Secretaria Municipal de Finanças</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <h4>ISS Eletrônico</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="fotos/iss.jpg" alt="ISS Eletrônico" title="ISS Eletrônico" /> 
+    </div>
+
+    <div id="noticia_descreve">
+        <p id="age_desc"><span>Descrição:</span><br /><br /> 
+
+        O ISS Eletrônico é um sistema cujo objetivo é atender o cumprimento das obrigações tributárias municipais para recolhimento do Imposto Sobre Serviços de Qualquer Natureza (ISSQN ou ISS). Foi desenvolvido pra atender tanto as prefeituras quanto as pessoas jurídicas cadastradas no Município, ainda que imunes ou isentas, contribuintes ou não do ISS, facilitando e agilizando a declaração eletrônica de serviços. Suas funcionalidades vão desde a escrituração de todos os documentos fiscais emitidos e recebidos referentes aos serviços prestados e/ou tomados de terceiros, até a declaração mensal e transmissão via Internet.<br /><br />
+        
+        <strong>Entre seus principais serviços estão:</strong><br /><br />
+        - Manutenção dos dados cadastrais do contribuinte, tomador ou prestador de serviços;<br />
+        - Identificação do responsável pela declaração;<br />
+        - Registro dos documentos fiscais, referentes a serviços tomados de terceiro, inclusive o registro dos documentos emitidos por prestador de serviço estabelecido fora do município;<br />
+        - Registro das deduções na base de cálculo admitidas pela legislação do Imposto sobre Serviços de Qualquer Natureza (ISSQN);<br />
+        - Registro da falta de movimento econômico ou falta de serviços tomados;<br />
+        - Geração e transmissão da declaração por meio da internet ou mesmo gravada em disquete;<br />
+        - Emissão do protocolo de comprovação da declaração;<br />
+        - Emissão das guias do ISS para recolhimento do imposto.
+        </p>
+    </div> 
+   
+</div>

@@ -1,0 +1,92 @@
+<div id="cont_lista_arvore">
+
+  <h3>Autarquia de Saúde</h3>
+  
+  <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+  <div class="la_container">
+    <ul>
+      <div class="la_colunas"> 
+      
+        <li class="la_coluna_tit2">   
+          <a title="Extratos de Contratos" class="btn_esconde_la">Extratos de Contratos</a>
+          <ul class="esconde_la">
+            <li>
+              <a href="arquivos/Extratos_de_Contratos.pdf" title="Extratos de Contratos" target="_blank">
+                Extratos de Contratos
+              </a>
+            </li>
+            <li>
+              <a href="arquivos/Termo_Aditivo.pdf" title="Termo Aditivo" target="_blank">
+                Termo Aditivo
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="la_coluna_tit2">   
+          <a title="Convite" class="btn_esconde_la">Convite</a>
+          <ul class="esconde_la">
+            <li>
+              <a href="arquivos/Carta_Convite.pdf" target="_blank">	
+                Convite
+              </a>
+            </li>
+          </ul>
+        </li>
+      
+      </div>
+    </ul>
+  </div>
+  
+  <div class="la_container">
+    <ul>
+    
+      <div class="la_colunas"> 
+        <li class="la_coluna_tit3">   
+          <a title="Dispensa de Licitação" class="btn_esconde_la">Dispensa de Licitação</a>
+          <ul class="esconde_la">
+            <li>
+              <a href="arquivos/Rerratificacao_da_Dispensa_de_Licitacao_ 015_2008.pdf" title="Rerratificação" target="_blank">
+                Rerratificação da Dispensa de Licitação n.º 015/2008
+              </a>
+            </li>
+            <li>
+              <a href="arquivos/Rerratificacao_da_Dispensa_de_Licitacao_ 014_2008.pdf" title="Rerratificação" target="_blank">	
+                Rerratificação da Dispensa de Licitação n.º 014/2008
+              </a>
+            </li>
+            <li>
+              <a href="arquivos/Dispensa_Licitacao_N009-2009.pdf" title="Dispensa" target="_blank">	
+                Dispensa de Licitação n.º 009/2009
+              </a>
+            </li>
+            <li>
+              <a href="arquivos/Dispensa_Licitacao_N006-2009.pdf" title="Dispensa" target="_blank">	
+                Dispensa de Licitação n.º 006/2009
+              </a> 
+            </li>
+            <li>
+              <a href="arquivos/Dispensa_Licitacao_N004-2009.pdf" title="Dispensa" target="_blank">	
+                Dispensa de Licitação n.º 004/2009
+              </a>
+            </li>
+            <li>
+              <a href="arquivos/Dispensa_Licitacao_N002-2009.pdf" title="Dispensa" target="_blank">	
+                 Dispensa de Licitação n.º 002/2009
+              </a> 
+            </li>
+            <li>
+              <a href="arquivos/Dispensa_Licitacao_N001-2009.pdf" title="Dispensa" target="_blank">	
+                Dispensa de Licitação n.º 001/2009
+              </a>
+            </li>
+          </ul>
+        </li>
+      </div>
+      
+    </ul>
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../governo.php';" />
+  </div>
+</div>

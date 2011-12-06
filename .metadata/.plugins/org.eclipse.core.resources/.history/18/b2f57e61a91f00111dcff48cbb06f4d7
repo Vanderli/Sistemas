@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Processo Seletivo N&ordm; 003/2010 - Novo Cadastro</title>
+<script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="../js/library.js"></script>
+<link href="../css/estilo.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+
+<div id="container">
+
+    <div class="topoMenu">
+        <img src="../imagens/topo_ProcessoSeletivo.jpg" 
+            alt="banner Processo Seletivo" 
+            title="Processo Seletivo da Prefeitura do Município de Itapecerica da Serra" />
+    </div>
+
+   	<br />
+    <div id="subcontainer">
+    <form id="form" name="form" method="post" action="consultar_cpf.php">
+        <table border="0" width="60px" height="150px">
+            <tr><td colspan="2"><h3>Novo Cadastro - Informe o CPF</h3></td></tr>
+                <tr>
+                    <td>CPF:</td>
+                    <td><input type="text" maxlength="14" name="cpf" id="cpf" size="35"/></td>
+                </tr>
+            <tr>
+            <td colspan="2">
+                <div id="msg_cpf">
+					<? if($_GET['f_cpf'] == 'erroCPF') echo "CPF já cadastrado!";
+					   if($_GET['f_cpf'] == 'erroVAZIO') echo "Preencha o CPF!";  ?>
+                </div>
+            </td>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" onclick="javascript:window.location='../index.php';" value="VOLTAR">
+                    <input id="btn_cpf" name="btn_cpf" type="submit" value="AVANÇAR" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</div>

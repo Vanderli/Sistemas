@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_confirmacao" value="name:id_judicial;datatype:int,name:data_entrada;datatype:date,name:numero_ordem;datatype:string,name:numero_processo;datatype:string,name:vara_junta;datatype:string,name:comarca;datatype:string,name:acao;datatype:string,name:autor;datatype:string,name:reu;datatype:string,name:situacao;datatype:string,name:prazo;datatype:date,name:objeto;datatype:blob" />
+</info>

@@ -1,0 +1,45 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Segurança, Trânsito e Transporte</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    <ul>
+      <li>
+        <p>I - coordenar os trabalhos da Guarda Municipal;</p>
+      </li>
+      <li>
+        <p>II - assessorar o Prefeito em assuntos de segurança;</p>
+      </li>
+      <li>
+        <p>III - coordenar e implementar as atividades de engenharia e a operação de tráfego, ordenando, planejando, organizando e disciplinando o uso do solo viário;</p>
+      </li>
+      <li>
+        <p>IV - coordenar, implementar, autorizar e delegar as atividades do serviço de transporte público, ordenando, planejando, organizando e disciplinando em regulamento próprio;</p>
+      </li>
+      <li>
+        <p>V - credenciar agentes de fiscalização próprios ou de outros órgãos ou entidades que venham por força de convênios ou outros instrumentos executar isoladamente ou concomitantemente a fiscalização de trânsito e transportes;</p>
+      </li>
+      <li>
+        <p>VI - organizar e operar os sistemas do transporte coletivo e transporte de cargas como um todo, integrando-se aos sistemas de trânsito e transportes intermunicipais, de caráter regional, metropolitano, estadual ou federal;</p>
+      </li>
+      <li>
+        <p>VII - celebrar convênios, contratos e outros instrumentos legais com entes públicos ou privados, conforme art. 27, inciso V do Decreto Estadual nº 34.184, de 18 de novembro de 1991;</p>
+      </li>
+      <li>
+        <p>VIII - exercer, dentro de seu limite territorial, todas as competências que lhe foram atribuídas pela Lei Federal nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), e demais legislações e regulamentos, para o exercício do provimento, organização, gerenciamento e exploração do sistema de trânsito e transportes; e</p>
+      </li>
+      <li>
+        <p>IX - conceder ou autorizar os serviços de táxis, veículos de aluguel e transporte coletivo.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

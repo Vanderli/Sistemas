@@ -1,0 +1,18 @@
+<div id="tel_util">
+
+  <h3>Telefones Úteis</h3>
+  
+  <div id="cont_tel_util">
+    <h4>Cemitério Recanto do Silêncio</h4>
+    
+    <ul>
+      <li id="util_endereco">
+        <p>Rua Maria Ward nº 200</p>
+      </li>
+      <li id="util_tel">
+        <p>(11) 4666 6791</p>
+      </li>
+    </ul>
+  </div>
+
+</div>

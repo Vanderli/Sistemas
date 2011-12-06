@@ -1,0 +1,246 @@
+/* ---- CSS Hacks Internet Explorer 6 ---- */
+
+/* Correção de margin-left duplicada */
+div {
+  display: inline;
+}
+
+/* Correção de width */
+#menu_acessibilidade #icones_acessibilidade {
+  width: 300px;
+}
+
+#conteudo {
+  width: 536px;
+}
+#cont_fr {
+  width: 536px;
+}
+
+.sig_container #sig_sist ul li input {
+  width: 79%;
+}
+
+
+/* Correção do ultimo item da lista de imagens*/
+#menu_interativo #servicos a img {
+  float: left;
+  width: 177px;
+}
+
+/* Correção do ultimo item da uma lista de opções rápidas*/
+#menu_navegacao .padrao_navegacao #sel_utilidades {
+  float: none;
+}
+
+/* Correção da extensão da Barra Acessibilidade*/
+#extensao_acessibilidade {
+  background: none#D5D5D5 url(../img/acessibilidade/bg_menu_acessibilidade.jpg) repeat-x;
+  float: left;
+  height: 30px;
+  margin-top: 140px;
+  margin-left: -500px;
+  position: absolute;
+  width: 100%;
+}
+
+/* Correção das bordas dos botões do Fale Conosco */
+#cont_faleconosco #fc_estrut ul li #fc_cidade {
+  width: 48%;
+}
+
+/* Mensagem de Falta de javaScript */
+.no_js {
+  background-color: #F6830E;
+  color: #FFF;
+  float: left;
+  margin-top: 15px;
+  padding: 10px 5px;
+  text-align: center;
+  width: 998px;
+}
+
+/* Correção dos Ultimos dois ícones */
+#menu_acessibilidade #icones_acessibilidade .acessibilidade_menos {
+  margin-left: -13px;
+}
+
+/* Correção da falta de alt no Somente Texto da Barra Acessibilidade */
+.acs_somente_texto #menu_acessibilidade #icones_acessibilidade ul li a p {
+  border: 1px #F6830E solid;
+  visibility: visible;
+  padding: 5px 0;
+  text-align: center;
+  text-indent: 0;
+  width: 113px;
+}
+
+.acs_somente_texto #menu_acessibilidade #icones_acessibilidade .acessibilidade_menos {
+  margin-left: 0;
+}
+
+/* Correção "ok" e "webmail" da Barra de Acessibilidade*/
+#menu_acessibilidade #busca_avancada #btn_ok {
+  padding: 1px 0 0 0;
+}
+
+#menu_acessibilidade #busca_avancada #btn_webmail {
+  padding-top: 2px;
+}
+
+/* Correção do BG no Contraste */
+.acs_contraste .bg_contraste {
+  left: 0;
+}
+
+/* -------------------- Correção do Login Geral -------------------- */
+.adm_login .adm_login_sist {
+  margin-left: 250px;
+}
+
+.adm_login .adm_login_rodape {
+  width: 99.5%;
+}
+
+.adm_login .adm_login_sist ul li input {
+  margin-bottom: 0;
+}
+
+.adm_login .adm_login_sist ul li {
+  margin: 0 0 5px 0;
+}
+
+/* -------------------- Correção do Sistema Administrativo -------------------- */
+.admin {
+  _z-index: -1;
+}
+
+.sig_menu_adm li a { 
+	padding: 4px 19.4px;
+}
+
+.sig_container #sig_bemvindo #bv_nome {
+  line-height: 30px;
+}
+
+/* Menu no IE 6 */
+
+/*-------------------------------------------------------------------------------------------------------------------------------
+ul.sig_menu_adm a:hover ul, ul.sig_menu_adm a:hover a:hover ul, ul.sig_menu_adm a:hover a:hover a:hover ul {
+	display:block;
+}
+
+ul.sig_menu_adm span {
+	overflow:hidden;
+}
+
+ul.sig_menu_adm li a:hover, ul.sig_menu_adm li a {
+	padding:9px;
+	color:#763319
+}
+
+ul.sig_menu_adm li a:hover, ul.sig_menu_adm li a {
+	padding:4px;
+	font-weight: normal;
+	color: #000
+}
+
+ul.sig_menu_adm ul {
+	position: absolute;
+	left:-1px;
+	top:98%;
+	width:160.65px;
+	border-left:1px solid #d5a000;
+	border-bottom:3px solid #d5a000;
+	border-right:3px solid #d5a000;
+	border-top:0px;
+	background-color:#ffffff;
+}
+
+ul.sig_menu_adm ul ul {
+	position: absolute;
+	left:98%;
+	top:-2px;
+}
+
+ul.sig_menu_adm, ul.sig_menu_adm ul {
+	margin:0px;
+	list-style:none;
+	padding:0px 2px 2px 0px;
+}
+
+ul.sig_menu_adm a:active, ul.sig_menu_adm a:focus {
+	outline-style:none;
+}
+
+ul.sig_menu_adm ul li {
+	float: left;
+	width: 150px;
+}
+
+ul.sig_menu_adm ul a {
+	white-space:nowrap;
+	text-align:left;
+}
+
+ul.sig_menu_adm li:hover {
+	position:relative;
+}
+
+ul.sig_menu_adm li:hover>a {
+	background-color:#fff;
+	color: #000;
+	border-color:#665500;
+	border-style:solid;
+	text-decoration:none;
+}
+
+ul.sig_menu_adm li a:hover {
+	position:relative;
+	background-color:#fff;
+	color: #000;
+	text-decoration:none;
+	border-color:#665500;
+	border-style:solid;
+}
+
+ul.sig_menu_adm li a:hover {
+	background-color: #ffc000
+}
+
+ul.sig_menu_adm ul, ul.sig_menu_adm a:hover ul ul {
+	display:none;
+	z-index:99999;
+}
+
+ul.sig_menu_adm li:hover>ul {
+	display:block
+}
+*/
+
+<!--[if lte IE 6]>
+  <style> 
+    ul.sig_menu_adm ul { 
+      top:120%;
+      left: 4px; 
+    }
+  </style>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

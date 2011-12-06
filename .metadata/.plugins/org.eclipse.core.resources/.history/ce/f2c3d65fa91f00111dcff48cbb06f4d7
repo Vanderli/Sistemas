@@ -1,0 +1,70 @@
+<? 	# conexão com banco de dados 
+     include_once("../Connections/conn.php"); 
+	 include_once("../lib/biblioteca.php");   
+	
+	# variavel que recebida do POST
+	$cpf = $_POST['cpf'];
+	
+	# campos ocultos
+	$alt_cadastro = $_POST['alterar_cadastro'];
+	$seg_via      = $_POST['seg_via'];
+	
+	# Verifica se o CPF existe no banco de dados 
+	$sql = sprintf("SELECT * FROM inscricoes WHERE cpf = '$cpf' ");
+	$query = @mysql_query($sql) or die($msg[2]);	
+	# Recebe o CPF e retorna o id
+	$resultado = mysql_fetch_array($query);
+	$codInscricao = $resultado['codInscricao'];
+
+
+	# Novo Cadastro
+	if(!$alt_cadastro && !$seg_via){
+		
+		if ($cpf==""){
+			echo "<script type=\"text/javascript\">
+					  window.location.href='cad_cpf.php?f_cpf=erroVAZIO';	  
+				  </script>";
+		}else if(mysql_num_rows($query)){
+				echo "<script type=\"text/javascript\">
+						window.location.href='cad_cpf.php?f_cpf=erroCPF';
+					  </script>";
+		}else{
+				echo "<script type=\"text/javascript\">
+					window.location.href='../cadastro/cad_candidato.php?cpf=".criptografa($cpf)."';
+				</script>";
+		}
+	
+	# Alteracao do Cadastro
+	}else if($alt_cadastro){
+		# Se CPF cadastrado
+		if ($cpf==""){
+			echo "<script type=\"text/javascript\">
+					  window.location.href='alt_cpf.php?f_cpf=erroVAZIO';	  
+				  </script>";
+		}else if(!mysql_num_rows($query)){
+				echo "<script type=\"text/javascript\">
+						window.location.href='alt_cpf.php?f_cpf=erroCPF';
+					  </script>";
+		}else{
+				echo "<script type=\"text/javascript\">
+						window.location.href='../cadastro/alt_candidato.php?cpf=".criptografa($cpf)."&codInscricao=".criptografa($codInscricao)."';
+					  </script>";
+		}	
+		
+	# 2 VIA do Cadastro
+	}else if($seg_via){
+		if ($cpf==""){
+			echo "<script type=\"text/javascript\">
+					  window.location.href='seg_via_cpf.php?f_cpf=erroVAZIO';	  
+				  </script>";
+		}else if(!mysql_num_rows($query)){
+				echo "<script type=\"text/javascript\">
+						window.location.href='seg_via_cpf.php?f_cpf=erroCPF';
+					  </script>";
+		}else{
+				echo "<script type=\"text/javascript\">
+						window.location.href='../imprime_ficha/imprime_ficha_seg_via.php?cpf=".criptografa($cpf)."&codInscricao=".criptografa($codInscricao)."';
+					  </script>";
+		}	
+	}
+?>

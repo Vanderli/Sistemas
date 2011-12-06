@@ -1,0 +1,34 @@
+<div id="servico_online">
+  
+  <h3>Indicação de Infrator</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+      <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Trata-se da transferência de pontuação quando o proprietário do veículo não era o condutor no ato da autuação</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- Cópia da CNH<br />
+        	- Formulário preenchido (formulário este que vem anexo a notificação de autuação) com firma reconhecida da assinatura do infrator
+       </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria Municipal de Segurança, Trânsito e Transporte<br />
+        	Rua Major Manoel Francisco de Moraes 385 – Centro<br />
+        	Itapecerica da Serra - SP. CEP 06850-050<br />
+        	Tel 11 4667-9159 / 4667-8948 / 4667-9404
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../cidadao.php';" />
+  </div>
+</div>

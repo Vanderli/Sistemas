@@ -1,0 +1,54 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Assuntos Jurídicos</h3>
+
+  <h4>Atribuição</h4>
+  
+  <div id="atrib_sec_descreve">
+
+    <ul>
+      <li>
+        <p>I - assessorar o Prefeito em todos os processos, atos, projetos de leis ou decretos e pareceres;</p>
+      </li>
+      <li>
+        <p>II - manifestar-se nos processos judiciais nos prazos previstos em lei, bem como propor, contestar e acompanhar até final decisão as ações judiciais de interesse do Município e de qualquer órgão da Prefeitura;</p>
+      </li>
+      <li>
+        <p>III - representar o Município em todos os tabelionatos, juízos e instâncias judiciais;</p>
+      </li>
+      <li>
+        <p>IV - examinar os aspectos jurídicos de atos administrativos e elaborar estudos de natureza jurídico administrativa;</p>
+      </li>
+      <li>
+        <p>V - estabelecer processo administrativo e sindicância;</p>
+      </li>
+      <li>
+        <p>VI - coordenar, supervisionar e controlar os assuntos da dívida ativa do Município, promovendo sua cobrança amigável e judicial;</p>
+      </li>
+      <li>
+        <p>VII - redigir projetos de leis, decretos e outros atos que envolvam aspectos jurídicos, bem como promover a suplementação no âmbito do Município, da Legislação Federal e Estadual, no que couber;</p>
+      </li>
+      <li>
+        <p>VIII - manifestar-se quanto aos aspectos jurídicos da utilização e alienação dos bens públicos e atuar nos casos de desapropriação;</p>
+      </li>
+      <li>
+        <p>IX - assessorar o Prefeito e os diversos órgãos da Prefeitura em assuntos jurídicos da Administração;</p>
+      </li>
+      <li>
+        <p>X - promover a regularização de documentos de imóveis de propriedade da Prefeitura junto aos cartórios competentes, bem como coordenar a regularização fundiária no âmbito municipal;</p>
+      </li>
+      <li>
+        <p>XI - promover a elaboração de minutas de contratos, ajustes, escrituras e outros atos de natureza jurídica em que o Município for parte interessada; e</p>
+      </li>
+      <li>
+        <p>XII - coordenar, controlar e implantar projeto de fiscalização no âmbito municipal para atender todas as áreas sujeitas a atuação do Poder Público.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

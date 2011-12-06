@@ -1,0 +1,138 @@
+<script type="text/javascript">
+function vertical() {
+
+   var navItems = document.getElementById("nav").getElementsByTagName("li");
+    
+   for (var i=0; i< navItems.length; i++) {
+      if(navItems[i].className == "submenu") {
+         navItems[i].onmouseover=function() {this.getElementsByTagName('ul')[0].style.display="block";this.style.backgroundColor = "#f9f9f9";}
+         navItems[i].onmouseout=function() {this.getElementsByTagName('ul')[0].style.display="none";this.style.backgroundColor = "#FFFFFF";}
+      }
+   }
+
+}
+
+function horizontal() {
+
+   var navItems = document.getElementById("barra").getElementsByTagName("li");
+    
+   for (var i=0; i< navItems.length; i++) {
+      if((navItems[i].className == "menuvertical") || (navItems[i].className == "submenu"))
+      {
+         if(navItems[i].getElementsByTagName('ul')[0] != null)
+         {
+            navItems[i].onmouseover=function() {this.getElementsByTagName('ul')[0].style.display="block";this.style.backgroundColor = "#000";}
+            navItems[i].onmouseout=function() {this.getElementsByTagName('ul')[0].style.display="none";this.style.backgroundColor = "#000";}
+         }
+      }
+   }
+
+}
+
+</script>
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+
+
+<div align="center">
+	<img src="imagens/topo.jpg" width="778" height="110">
+</div>
+<br />
+<!-- -------------------INICIO MENU -------------------- -->
+<table width="100%">
+<tr>
+<td>
+<table width="777" align="center">
+    <tr>
+      <td>
+      <ul id="barra" class="menubar">
+
+  <li class="menuvertical"><a href="#">Documentos</a>
+     <ul id="nav" class="menu">
+       <li><a href="formCadDoc.php">Cadastrar</a></li>
+      
+        <li><a href="#">Consultar</a></li>
+    </ul>
+  </li>
+   
+   <li class="menuvertical"><a href="#">Tramites</a>
+      <ul id="nav" class="menu">
+        <li class="submenu"><a href="#">Externo</a>
+          <ul>
+            <li><a href="formTramiteExterno.php">Cadastrar</a></li>
+            <li><a href="#">Consultar</a></li>
+          </ul>
+        </li>
+      
+        <li class="submenu"><a href="#">Interno</a>
+          <ul>
+            <li><a href="formTramiteInterno.php">Cadastrar</a></li>
+            <li><a href="#">Consultar</a></li>
+          </ul>
+        </li>
+      </ul>
+     </li>
+   <li class="menuvertical"><a href="#">Relatórios</a>
+     <ul id="nav" class="menu">
+        <li><a href="#">Diário</a></li>
+      
+        <li><a href="#">Semanal</a></li>
+        
+        <li><a href="#">Mensal</a></li>
+        
+        <li><a href="#">Anual</a></li>
+        
+        <li><a href="#">Total</a></li>
+     </ul>
+   </li>
+   
+   <li class="menuvertical"><a href="#">Ferramentas</a>
+      <ul id="nav" class="menu">
+        <li class="submenu"><a href="#">Tramite Externo</a>
+          <ul>
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Consultar</a></li>
+          </ul>
+        </li>
+      
+        <li class="submenu"><a href="#">Tramite Interno</a>
+          <ul>
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Consultar</a></li>
+          </ul>
+        </li>
+        
+        <li class="submenu"><a href="#">Origem</a>
+          <ul>
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Consultar</a></li>
+          </ul>
+        </li>
+        
+        <li class="submenu"><a href="#">Tipo de Docum.</a>
+          <ul>
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Consultar</a></li>
+          </ul>
+        </li>
+        
+        <li class="submenu"><a href="#">Login e Senha</a>
+          <ul>
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Consultar</a></li>
+          </ul>
+        </li>
+      </ul>
+   </li>
+
+   <li class="menuvertical"><a href="#">Ajuda</a></li>
+
+   <li class="menuvertical"><a href="<?php echo $logoutAction ?>">Sair</a></li>
+</ul>
+</div>
+      </td>
+    </tr>
+  </table></td>
+</tr>
+
+</table>
+  <!-- -------------------FIM MENU -------------------- -->

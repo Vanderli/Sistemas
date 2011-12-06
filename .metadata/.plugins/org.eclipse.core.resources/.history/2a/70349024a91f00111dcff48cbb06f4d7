@@ -1,0 +1,21 @@
+<div id="tel_util">
+
+  <h3>Telefones Úteis</h3>
+  
+  <div id="cont_tel_util">
+    <h4>Guarda Civil Municipal</h4>
+    
+    <ul>
+      <li id="util_endereco">
+        <p>Rua Alzira de Jesus Marques nº 64 - Jardim Imperatriz</p>
+      </li>
+      <li id="util_tel">
+        <p>(11) 4667 9409</p>
+      </li>
+      <li id="util_site">
+        <a href="http://www.gcm.itapecerica.com" target="_blank" title="Guarda Civil Municipal">www.gcm.itapecerica.com</a>
+      </li>
+    </ul>
+  </div>
+
+</div>

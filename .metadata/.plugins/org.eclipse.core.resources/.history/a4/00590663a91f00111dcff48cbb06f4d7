@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_consLogin" value="name:codUsuario;datatype:int,name:nomeUsuario;datatype:string,name:login;datatype:string,name:senha;datatype:string,name:ativo;datatype:int" />
+</info>

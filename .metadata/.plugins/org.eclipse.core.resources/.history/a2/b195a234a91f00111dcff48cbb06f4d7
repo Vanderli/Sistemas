@@ -1,0 +1,47 @@
+<div id="cont_lista_arvore">
+
+  <h3>Secretaria Municipal de Planejamento e Meio Ambiente</h3>
+  
+  <h4>Serviços da Secretaria</h4>  
+  
+  <div class="la_container">
+    <p>Clique em Lista de Serviços para visualizar todos os serviços da Secretaria.<p>
+    <ul>
+    
+      <div class="la_colunas">    
+        <li class="la_coluna_tit3">   
+          <a title="Lista de Serviços" class="btn_esconde_la">Lista de Serviços</a>
+          <ul class="esconde_la">
+            <li><a href="alinhamento_frontal/alinhamento_frontal.php" title="Alinhamento Frontal">Alinhamento Frontal</a></li>
+            <li><a href="autorizacao_poda/autorizacao_poda.php" title="Alinhamento Frontal">Autorização de Poda e Corte de Árvores em Área Particular</a></li>            
+            <li><a href="aprovacao_const_resid/aprovacao_const_resid.php" title="Aprovação de Construção Residencial / Comercial / Industrial">Aprovação de Construção Residencial / Comercial / Industrial</a></li>
+            <li><a href="aprovacao_desdobro/aprovacao_desdobro.php" title="Aprovação de Desdobro, Fracionamento ou Desmembramento">Aprovação de Desdobro, Fracionamento ou Desmembramento</a></li>
+            <li><a href="carta_anuencia/carta_anuencia.php" title="Carta de Anuência">Carta de Anuência</a></li>            
+            <li><a href="certidoes_diversas/certidoes_diversas.php" title="Certidões Diversas">Certidões Diversas</a></li>
+            <li><a href="certificado_vistoria/certificado_vistoria.php" title="Certificado de Vistoria e Habite-se">Certificado de Vistoria e Habite-se</a></li>
+            <li><a href="certidao_num_oficial/certidao_num_oficial.php" title="Certidão de Número Oficial">Certidão de Número Oficial</a></li>
+            <li><a href="coleta_seletiva/coleta_seletiva_atualizado.pdf" title="Coleta Seletiva" target="_blank">Coleta Seletiva</a></li>            
+            <li><a href="demolicao/demolicao.php" title="Demolição">Demolição</a></li>
+            <li><a href="diretrizes_desdobro/diretrizes_desdobro.php" title="Diretrizes para Desdobro ou Fracionamento de Lote">Diretrizes para Desdobro ou Fracionamento de Lote</a></li>
+            <li><a href="diretrizes_movim_terra/diretrizes_movim_terra.php" title="Diretrizes para Movimentação de Terra">Diretrizes para Movimentação de Terra</a></li>
+            <li><a href="reforma_acresc_area/reforma_acresc_area.php" title="Reforma Com Acréscimo de Área / Sem Acréscimo de Área">Reforma Com Acréscimo de Área / Sem Acréscimo de Área</a></li>
+            <li><a href="regularizacao_resid/regularizacao_resid.php" title="Regularização Residencial / Comercial / Industrial">Regularização Residencial / Comercial / Industrial</a></li>
+            <li><a href="renovacao_alvara/renovacao_alvara.php" title="Renovação de Alvará">Renovação de Alvará</a></li>
+            <li><a href="substituicao_projeto/substituicao_projeto.php" title="Substituição de Projeto">Substituição de Projeto</a></li>
+            <li><a href="vistoria_corte_poda/vistoria_corte_poda.php" title="Substituição de Projeto">Vistorias para Corte / Poda em Área Pública (calçadas, escolas, canteiro central)</a></li>            
+          </ul>
+        </li>
+        
+      </div>
+    
+    
+    
+    </ul>
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+
+</div>

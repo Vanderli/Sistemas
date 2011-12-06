@@ -1,0 +1,510 @@
+_ADM/ADMINISTRATIVO/contato_sec/editar_contato_sec.php	g$_SESSION	o139	g$_GET	o217	g$con_id	o235	g$_GET	o245	g$usu_id	o314	g$_SESSION	o330	g$dat_cad	o353	g$hora_cad	o386	g$con_sec_id	o422	g$_POST	o438	g$con_titulo	o462	g$_POST	o483	g$con_email	o508	g$_POST	o529	g$con_tel	o553	g$_POST	o574	g$con_status	o596	g$_POST	o612	g$sql	o640	g$result	o1024	g$sql	o1047	g$msg	o1060	g$result	o1078	g$result	o1283
+_ADM/ADMINISTRATIVO/modulo_usu/inserir_mod_usu.php	g$_SESSION	o139	g$usu_id	o223	g$_SESSION	o239	g$dat_cad	o262	g$hora_cad	o295	g$status	o331	g$_POST	o347	g$nome	o389	g$_POST	o421	g$sql	o449	g$result	o699	g$sql	o722	g$msg	o735	g$result	o758	g$result	o1095
+cidadao/servicos/desdobro_desmembramento/visualiza-desdobro.php
+fale_conosco/enviar-email.php	g$para	o28	g$assunto	o87	g$nome	o150	g$_POST	o162	g$sexo	o182	g$_POST	o194	g$pais	o214	g$_POST	o226	g$estado	o246	g$_POST	o258	g$cidade	o280	g$_POST	o292	g$email	o314	g$_POST	o326	g$tel1	o347	g$_POST	o359	g$tel2	o379	g$_POST	o391	g$assunto	o411	g$_POST	o423	g$mensagem	o443	g$_POST	o455	g$headers	o512	g$headers	o555	g$corpo_msg	o654	g$nome	o1469	g$sexo	o1913	g$pais	o2043	g$estado	o2493	g$cidade	o2625	g$email	o2913	g$tel1	o3376	g$tel2	o3506	g$assunto	o3794	g$mensagem	o4084	g$para	o4172	g$assunto	o4179	g$corpo_msg	o4189	g$headers	o4201
+empresa/servicos/certidoes/visualiza-certidoes.php
+cidadao/servicos/piscina/visualiza-piscina.php
+censo2010/visualiza-censo2010.php
+_ADM/ADMINISTRATIVO/secretarias/editar_secretarias.php	g$_SESSION	o139	g$_GET	o218	g$sec_id	o236	g$_GET	o246	g$usu_id	o315	g$_SESSION	o331	g$dat_cad	o354	g$hora_cad	o387	g$sec_cidade	o423	g$sec_uf	o468	g$sec_sigla	o498	g$_POST	o533	g$sec_nome	o558	g$_POST	o582	g$sec_numero	o605	g$_POST	o629	g$sec_complemento	o655	g$_POST	o679	g$sec_rua	o710	g$_POST	o734	g$sec_cep	o757	g$_POST	o781	g$sec_bairro	o804	g$_POST	o828	g$sec_tel_1	o854	g$_POST	o878	g$sec_tel_2	o903	g$_POST	o927	g$sec_tel_3	o952	g$_POST	o976	g$sec_status	o1000	g$_POST	o1024	g$sql	o1052	g$result	o1788	g$sql	o1810	g$msg	o1823	g$result	o1841	g$result	o2047
+cidadao/servicos/autorizacao_conf_talao/visualiza-autorizacao_conf_talao.php
+_ADM/avisos/deseja_confirmar.php
+cidadao/servicos/talao_nf/talao_nf.php
+agenda/calendario/xajax/xajax_core/xajax_lang_de.inc.php	g$objLanguageManager	o584	g$objLanguageManager	o645
+empresa/servicos/iluminacao_publica/visualiza-iluminacao_publica.php
+cidadao/servicos/certificado_vistoria/visualiza-certificado_vistoria.php
+cidadao/servicos/aprovacao_const_resid/visualiza-aprovacao_const_resid.php
+_ADM/ADMINISTRATIVO/importante/cad_importante.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$imp_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o646	g$title	o676	g$red	o709	g$title	o797	g$red	o832	g$sql	o915	g$query	o985	g$sql	o1007	g$conn	o1013	g$msg	o1027	g$linha	o1039	g$query	o1067	g$red	o1516	g$dis	o1717	g$sql	o1896	g$rs	o2004	g$sql	o2022	g$row	o2118	g$rs	o2143	g$row	o2187	g$linha	o2208	g$row	o2232	g$row	o2316	g$dis	o2519	g$dis	o2846	g$linha	o2899	g$linha	o3011	g$_GET	o3167	g$_GET	o3363	g$dis	o3625
+_ADM/ADMINISTRATIVO/servicos_online/inserir_servicos_online.php	g$_SESSION	o163	g$usu_id	o247	g$_SESSION	o263	g$dat_cad	o286	g$hora_cad	o319	g$svc_sec_id	o355	g$_POST	o372	g$svc_titulo	o397	g$_POST	o414	g$svc_nome	o439	g$_POST	o461	g$svc_categoria	o484	g$_POST	o506	g$svc_status	o534	g$_POST	o556	g$sql	o583	g$result	o1037	g$sql	o1060	g$msg	o1073	g$result	o1090	g$result	o1299
+cidadao/servicos/talao_zona_azul/visualiza-talao_zona_azul.php
+includes/direita/calendario/xajax/xajax_core/plugin_layer/xajaxFunctionPlugin.inc.php	dXAJAX_FUNCTION	o742	cxajaxFunctionPlugin	o1000	exajaxRequestPlugin	vaFunctions	o1199	vsXajaxPrefix	o1363	vsDefer	o1547	vbDeferScriptGeneration	o1565	vsRequestedFunction	o1886	mxajaxFunctionPlugin	o2229	mconfigure	o2698	mregister	o3340	mgenerateClientScript	o4181	mcanProcessRequest	o4924	mprocessRequest	o5299	g$objPluginManager	o5805	g$objPluginManager	o5862
+empresa/servicos/iluminacao_publica/iluminacao_publica.php
+cidadao/servicos.php
+agenda/agenda.php	g$_GET	o69	g$age_id	o89	g$_GET	o99
+cidadao/servicos/certidao_com_vei_icms/visualiza-certidao_com_vei_icms.php
+cidadao/servicos/voleibol/visualiza-voleibol.php
+empresa/servicos/certidao_com_vei_ipi/visualiza-certidao_com_vei_ipi.php
+empresa/visualiza-empresa.php
+_ADM/ADMINISTRATIVO/usuarios/editar_usu.php	g$_SESSION	o139	g$_GET	o187	g$id	o201	g$_GET	o207	g$usu_id	o272	g$_SESSION	o288	g$dat_cad	o311	g$hora_cad	o344	g$modulo	o380	g$_POST	o396	g$status	o420	g$_POST	o436	g$nome	o480	g$_POST	o512	g$login	o536	g$_POST	o568	g$senha	o593	g$_POST	o613	g$busca	o838	g$query	o938	g$busca	o960	g$msg	o975	g$query	o1068	g$_POST	o1255	g$sql	o1330	g$sql	o1704	g$result	o2109	g$sql	o2131	g$msg	o2144	g$result	o2164	g$result	o2498
+paginas_erro/nao_javascript.php
+cidadao/visualiza-servicos.php
+empresa/servicos/indicacao_infrator/visualiza-indicacao_infrator.php
+agenda/agenda_3.php	g$_GET	o69	g$age_id	o89	g$_GET	o99
+home/visualiza-home.php	g$sql_bloco_not1	o230	g$query_bloco_not1	o395	g$sql_bloco_not1	o428	g$msg	o452	g$linha_bloco_not1	o467	g$query_bloco_not1	o506	g$sql_bloco_not2	o548	g$query_bloco_not2	o713	g$sql_bloco_not2	o746	g$msg	o770	g$linha_bloco_not2	o785	g$query_bloco_not2	o824	g$sql_bloco_not3	o871	g$query_bloco_not3	o1036	g$sql_bloco_not3	o1069	g$msg	o1093	g$linha_bloco_not3	o1108	g$query_bloco_not3	o1147	g$sql_bloco_not4	o1194	g$query_bloco_not4	o1359	g$sql_bloco_not4	o1392	g$msg	o1416	g$linha_bloco_not4	o1431	g$query_bloco_not4	o1470	g$sql_bloco_not5	o1517	g$query_bloco_not5	o1682	g$sql_bloco_not5	o1715	g$msg	o1739	g$linha_bloco_not5	o1754	g$query_bloco_not5	o1793	g$sql_bloco_6	o1955	g$query_bloco_6	o2117	g$sql_bloco_6	o2147	g$msg	o2168	g$linha_bloco_6	o2183	g$query_bloco_6	o2219	g$sql_bloco_7	o2263	g$query_bloco_7	o2425	g$sql_bloco_7	o2455	g$msg	o2476	g$linha_bloco_7	o2491	g$query_bloco_7	o2527	g$sql_bloco_8	o2571	g$query_bloco_8	o2733	g$sql_bloco_8	o2763	g$msg	o2784	g$linha_bloco_8	o2799	g$query_bloco_8	o2835	g$sql_bloco_9	o2879	g$query_bloco_9	o3041	g$sql_bloco_9	o3071	g$msg	o3092	g$linha_bloco_9	o3107	g$query_bloco_9	o3143	g$sql_bloco_10	o3187	g$query_bloco_10	o3351	g$sql_bloco_10	o3382	g$msg	o3404	g$linha_bloco_10	o3419	g$query_bloco_10	o3456	g$sql_bloco_11	o3501	g$query_bloco_11	o3665	g$sql_bloco_11	o3696	g$msg	o3718	g$linha_bloco_11	o3733	g$query_bloco_11	o3770	g$sql_bloco_12	o3815	g$query_bloco_12	o3979	g$sql_bloco_12	o4010	g$msg	o4032	g$linha_bloco_12	o4047	g$query_bloco_12	o4084	g$sql_bloco_13	o4129	g$query_bloco_13	o4293	g$sql_bloco_13	o4324	g$msg	o4346	g$linha_bloco_13	o4361	g$query_bloco_13	o4398	g$sql_bloco_14	o4443	g$query_bloco_14	o4609	g$sql_bloco_14	o4640	g$msg	o4662	g$linha_bloco_14	o4677	g$query_bloco_14	o4714	g$sql_bloco_15	o4759	g$query_bloco_15	o4925	g$sql_bloco_15	o4956	g$msg	o4978	g$linha_bloco_15	o4993	g$query_bloco_15	o5030	g$sql_bloco_16	o5075	g$query_bloco_16	o5241	g$sql_bloco_16	o5272	g$msg	o5294	g$linha_bloco_16	o5309	g$query_bloco_16	o5346	g$sql_bloco_17	o5391	g$query_bloco_17	o5557	g$sql_bloco_17	o5588	g$msg	o5610	g$linha_bloco_17	o5625	g$query_bloco_17	o5662	g$sql_bloco_18	o5707	g$query_bloco_18	o5873	g$sql_bloco_18	o5904	g$msg	o5926	g$linha_bloco_18	o5941	g$query_bloco_18	o5978	g$thumbnail	o6072	g$linha_bloco_6	o6540	g$linha_bloco_6	o6646	g$linha_bloco_6	o6715	g$linha_bloco_7	o6868	g$linha_bloco_7	o6974	g$linha_bloco_7	o7045	g$linha_bloco_8	o7192	g$linha_bloco_8	o7298	g$linha_bloco_8	o7368	g$linha_bloco_9	o7515	g$linha_bloco_9	o7620	g$linha_bloco_9	o7687	g$linha_bloco_10	o8070	g$linha_bloco_10	o8177	g$thumbnail	o8244	g$linha_bloco_10	o8259	g$linha_bloco_10	o8290	g$linha_bloco_10	o8389	g$linha_bloco_11	o8563	g$linha_bloco_11	o8670	g$thumbnail	o8739	g$linha_bloco_11	o8754	g$linha_bloco_11	o8785	g$linha_bloco_11	o8884	g$linha_bloco_12	o9059	g$linha_bloco_12	o9166	g$thumbnail	o9236	g$linha_bloco_12	o9251	g$linha_bloco_12	o9282	g$linha_bloco_12	o9381	g$linha_bloco_13	o9555	g$linha_bloco_13	o9662	g$thumbnail	o9731	g$linha_bloco_13	o9746	g$linha_bloco_13	o9777	g$linha_bloco_13	o9876	g$linha_bloco_14	o10162	g$linha_bloco_14	o10207	g$linha_bloco_15	o10318	g$linha_bloco_15	o10363	g$linha_bloco_16	o10474	g$linha_bloco_16	o10519	g$linha_bloco_17	o10630	g$linha_bloco_17	o10675	g$linha_bloco_18	o10786	g$linha_bloco_18	o10831	g$conn	o10975
+empresa/servicos/talao_nf/talao_nf.php
+censo2010/paginas_antigas/visualiza-inscricoes_censo2010.php
+_ADM/ADMINISTRATIVO/secretarias/inserir_secretarias.php	g$_SESSION	o163	g$usu_id	o247	g$_SESSION	o263	g$dat_cad	o286	g$hora_cad	o319	g$sec_cidade	o355	g$sec_uf	o400	g$sec_sigla	o430	g$_POST	o465	g$sec_nome	o490	g$_POST	o514	g$sec_numero	o537	g$_POST	o561	g$sec_complemento	o587	g$_POST	o611	g$sec_rua	o642	g$_POST	o666	g$sec_cep	o689	g$_POST	o713	g$sec_bairro	o736	g$_POST	o760	g$sec_tel_1	o786	g$_POST	o810	g$sec_tel_2	o835	g$_POST	o859	g$sec_tel_3	o884	g$_POST	o908	g$sec_status	o932	g$_POST	o956	g$sql	o986	g$result	o1816	g$sql	o1838	g$msg	o1851	g$result	o1868	g$result	o2074
+cidadao/servicos/2via_insc_munic/visualiza-2via_insc_munic.php
+_ADM/ADMINISTRATIVO/atribuicao_sec/cad_atribuicao_sec.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$atr_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o662	g$title	o692	g$red	o741	g$title	o833	g$red	o884	g$sql	o971	g$query	o1045	g$sql	o1067	g$conn	o1073	g$msg	o1087	g$linha	o1099	g$query	o1127	g$red	o1590	g$dis	o1846	g$sql	o2043	g$rs	o2164	g$sql	o2182	g$row	o2302	g$rs	o2327	g$row	o2383	g$linha	o2404	g$row	o2428	g$row	o2524	g$linha	o2817	g$linha	o2838	g$dis	o2870	g$dis	o3063	g$linha	o3073	g$linha	o3092	g$dis	o3288	g$linha	o3349	g$linha	o3469	g$_GET	o3661	g$_GET	o3857	g$dis	o4119
+empresa/servicos/recurso_multas/recurso_multas.php
+_ADM/ADMINISTRATIVO/prev_social/prev_social.php
+_ADM/login/php_jquery_verifica_login.php	fbuscarValor	o161	g$login	o1021	g$_POST	o1048	g$login	o1071	g$_POST	o1080	g$login_query	o1160	g$login	o1242	g$query_login	o1262	g$login_query	o1289	g$conn	o1303	g$row	o1335	g$query_login	o1360	g$linhas_users	o1377	g$query_login	o1408	g$row	o1472	g$row	o1494	g$row	o1569	g$row	o1591	g$query_login	o1716
+cidadao/servicos/certidao_nada_consta/visualiza-certidao_nada_consta.php
+empresa/servicos/conservacao_vias/conservacao_vias.php
+cidadao/servicos/exumacao/visualiza-exumacao.php
+empresa/servicos/reparo_iluminacao_publica/reparo_iluminacao_publica.php
+empresa/servicos/isencao_iptu/visualiza-isencao_iptu.php
+cidadao/servicos/certidao_com_vei_ipi/certidao_com_vei_ipi.php
+cidadao/servicos/mapas_cidade/visualiza-mapas_cidade.php
+cidadao/servicos/guias_sarjetas/visualiza-guias_sarjetas.php
+agenda/calendario/xajax/xajax_core/plugin_layer/xajaxCallableObjectPlugin.inc.php	dXAJAX_CALLABLE_OBJECT	o739	cxajaxCallableObjectPlugin	o932	exajaxRequestPlugin	vaCallableObjects	o1032	vsXajaxPrefix	o1093	vsDefer	o1145	vbDeferScriptGeneration	o1163	vsRequestedClass	o1233	vsRequestedMethod	o1298	mxajaxCallableObjectPlugin	o1378	mconfigure	o1979	mregister	o2487	mgenerateClientScript	o3355	mcanProcessRequest	o4079	mprocessRequest	o4291	g$objPluginManager	o4910	g$objPluginManager	o4967
+empresa/servicos/certidao_com_vei_icms/visualiza-certidao_com_vei_icms.php
+empresa/servicos/alteracao_insc_munic/alteracao_insc_munic.php
+agenda/visualiza-agenda_bk.php	g$_GET	o193	g$age_id	o213	g$_GET	o223	g$sql	o292	g$query	o356	g$sql	o378	g$msg	o391	g$linha	o403	g$query	o431	g$query	o499	g$thumbnail	o575	g$linha	o1428	g$linha	o1458	g$linha	o1511	g$thumbnail	o1603	g$linha	o1618	g$linha	o1640	g$linha	o1811	g$linha	o1907	g$linha	o2002	g$linha	o2113	g$linha	o2203	g$conn	o2350
+cidadao/servicos/emissao_aidf/emissao_aidf.php
+cidadao/servicos/bastequebol/visualiza-bastequebol.php
+_ADM/ADMINISTRATIVO/beneficio_sec/editar_beneficio_sec.php	g$_SESSION	o139	g$_GET	o215	g$ben_id	o233	g$_GET	o243	g$usu_id	o312	g$_SESSION	o328	g$dat_cad	o351	g$hora_cad	o384	g$ben_sec_id	o420	g$_POST	o436	g$ben_titulo	o460	g$_POST	o481	g$ben_desc	o506	g$_POST	o527	g$ben_status	o551	g$_POST	o567	g$sql	o595	g$result	o946	g$sql	o968	g$msg	o981	g$result	o999	g$result	o1206
+cidadao/servicos/acessa_sp/acessa_sp.php
+cidadao/servicos/cascalhar_ruas/visualiza-cascalhar_ruas.php
+empresa/servicos/relacao_industrias/visualiza-relacao_industrias.php
+includes/direita/calendario/xajax/xajax_core/xajaxCompress.inc.php	fxajaxCompressFile	o220
+_ADM/ADMINISTRATIVO/links_acesso/listar_links_acesso.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o560	g$_SERVER	o573	g$max_pag	o638	g$pag_ini	o656	g$_GET	o687	g$pag_ini	o704	g$_GET	o715	g$row_list	o738	g$pag_ini	o750	g$max_pag	o761	g$sql	o778	g$sql_limit	o937	g$sql	o977	g$row_list	o983	g$max_pag	o994	g$query	o1012	g$sql_limit	o1033	g$conn	o1044	g$msg	o1058	g$_GET	o1091	g$tot	o1112	g$_GET	o1119	g$insc_geral	o1149	g$sql	o1175	g$tot	o1186	g$insc_geral	o1208	g$tot_pag	o1234	g$tot	o1250	g$max_pag	o1255	g$lista_insc	o1275	g$_SERVER	o1307	g$params	o1340	g$_SERVER	o1363	g$newParams	o1394	g$params	o1433	g$param	o1444	g$param	o1471	g$param	o1506	g$newParams	o1550	g$param	o1562	g$newParams	o1598	g$lista_insc	o1623	g$newParams	o1669	g$lista_insc	o1697	g$tot	o1732	g$lista_insc	o1738	g$query	o1935	g$title	o2116	g$row	o2480	g$query	o2505	g$row	o2637	g$row	o2777	g$row	o2847	g$row	o2917	g$row	o2989	g$row	o3098	g$pag_atual	o3470	g$pag_ini	o3489	g$lista_insc	o3504	g$row_list	o3735	g$row_list	o3763	g$max_pag	o3775	g$tot	o3785	g$tot	o3805	g$pag_atual	o3971	g$tot_pag	o3987	g$pag_ini	o3997	g$lista_insc	o4012
+empresa/servicos/limpeza_calcadas/visualiza-limpeza_calcadas.php
+cidadao/servicos/limpeza_vias_publicas/visualiza-limpeza_vias_publicas.php
+cidadao/servicos/remocao_lixo/visualiza-remocao_lixo.php
+agenda/agenda_9.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+cidadao/servicos/carimbar_nota_fiscal/carimbar_nota_fiscal.php
+cidadao/servicos/vistoria_corte_poda/vistoria_corte_poda.php
+campanha_agasalho/2010/visualiza-campanha_agasalho.php
+includes/direita/calendario/xajax/xajax_core/plugin_layer/support/xajaxUserFunction.inc.php	cxajaxUserFunction	o944	vsAlias	o1189	vuf	o1301	vsInclude	o1423	vaConfiguration	o1599	kxajaxUserFunction	o3322	mgetName	o4111	mconfigure	o4336	mgenerateRequest	o4682	mgenerateClientScript	o5168	mcall	o5937
+home/home.php
+cidadao/servicos/cadastro_imobiliario/visualiza-cadastro_imobiliario.php
+empresa/servicos/recurso_multas/visualiza-recurso_multas.php
+empresa/servicos/microfilm_multa/visualiza-microfilm_multa.php
+rss/noticias-rss.php	g$url	o96	g$_SERVER	o113	g$ano	o149	fpubDate	o214	g$rss	o333	g$rss	o420	g$canal	o512	g$rss	o521	g$canal	o607	g$canal	o645	g$canal	o707	g$url	o732	g$canal	o744	g$canal	o832	g$sql	o906	g$query	o1101	g$sql	o1123	g$msg	o1136	g$dados	o1215	g$query	o1242	g$not_id	o1262	g$dados	o1272	g$not_titulo	o1299	g$dados	o1325	g$not_comentario	o1357	g$dados	o1387	g$not_publicado_em	o1423	g$dados	o1451	g$item	o1544	g$canal	o1552	g$item	o1640	g$not_titulo	o1665	g$item	o1688	g$not_comentario	o1717	g$item	o1744	g$not_publicado_em	o1770	g$item	o1799	g$url	o1823	g$not_id	o1859	g$rss	o2041
+cidadao/servicos/alteracao_licen_feirante/visualiza-alteracao_licen_feirante.php
+_ADM/ADMINISTRATIVO/importante/editar_importante.php	g$_SESSION	o139	g$_GET	o217	g$imp_id	o235	g$_GET	o245	g$tit_sql	o305	g$_POST	o367	g$tit_result	o397	g$tit_sql	o424	g$msg	o441	g$ti_array	o454	g$tit_result	o486	g$usu_id	o553	g$_SESSION	o569	g$dat_cad	o592	g$hora_cad	o625	g$imp_not_id	o661	g$_POST	o680	g$imp_titulo_not	o708	g$titulo_not	o727	g$imp_seq	o756	g$_POST	o772	g$imp_status	o793	g$_POST	o812	g$sql	o841	g$result	o1205	g$sql	o1228	g$msg	o1241	g$result	o1259	g$result	o1463
+empresa/servicos/certidao_nada_consta/visualiza-certidao_nada_consta.php
+_ADM/ADMINISTRATIVO/links_utilidades/inserir_links_utilidades.php	g$_SESSION	o163	g$usu_id	o247	g$_SESSION	o263	g$dat_cad	o286	g$hora_cad	o319	g$lku_nome	o355	g$_POST	o374	g$lku_link	o397	g$_POST	o416	g$lku_status	o439	g$_POST	o453	g$sql	o480	g$result	o820	g$sql	o842	g$msg	o855	g$result	o872	g$result	o1083
+empresa/servicos/autorizacao_poda/autorizacao_poda.php
+empresa/servicos/exumacao/exumacao.php
+_ADM/ADMINISTRATIVO/noticias/inserir_noticias.php	g$_SESSION	o163	g$usu_id	o247	g$_SESSION	o263	g$dat_cad	o286	g$hora_cad	o319	g$not_sec_id	o355	g$_POST	o375	g$not_blo_id	o400	g$_POST	o420	g$not_img	o445	g$_FILES	o465	g$not_titulo	o495	g$_POST	o531	g$not_descricao	o557	g$_POST	o582	g$not_comentario	o610	g$_POST	o635	g$not_publicado	o664	g$_POST	o689	g$not_publicado_em	o717	g$not_publicado	o740	g$dat_cad	o765	g$hora_cad	o778	g$not_status	o798	g$_POST	o823	g$tiposPermitidos	o944	g$altura_min	o1110	g$altura_max	o1130	g$largura_min	o1153	g$largura_max	o1173	g$tamanhoPermitido	o1198	g$dimensoes	o1242	g$_FILES	o1275	g$arqName	o1310	g$_FILES	o1330	g$arqType	o1360	g$_FILES	o1380	g$arqSize	o1410	g$_FILES	o1430	g$arqTemp	o1460	g$_FILES	o1480	g$arqError	o1514	g$_FILES	o1534	g$msg	o1645	g$arqType	o1701	g$tiposPermitidos	o1711	g$msg	o1747	g$arqSize	o1835	g$tamanhoPermitido	o1846	g$msg	o1872	g$dimensoes	o1974	g$largura_max	o1990	g$msg	o2011	g$largura_max	o2063	g$dimensoes	o2126	g$altura_max	o2142	g$msg	o2162	g$altura_max	o2211	g$dimensoes	o2271	g$largura_min	o2287	g$msg	o2311	g$largura_min	o2358	g$dimensoes	o2417	g$altura_min	o2433	g$msg	o2456	g$altura_min	o2502	g$not_sec_id	o2577	g$msg	o2591	g$msg	o2671	g$sql	o2753	g$result	o3403	g$sql	o3426	g$msg	o3439	g$id_atual	o3485	g$pasta	o3527	g$id_atual	o3572	g$pasta	o3598	g$arqTemp	o3637	g$pasta	o3647	g$not_img	o3656	g$result	o3678	g$result	o3891
+cidadao/servicos/diretrizes_desdobro/diretrizes_desdobro.php
+_ADM/ADMINISTRATIVO/links_acesso/cad_links_acesso.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$lka_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o651	g$title	o681	g$red	o719	g$title	o809	g$red	o849	g$sql	o934	g$query	o1006	g$sql	o1028	g$conn	o1034	g$msg	o1048	g$linha	o1060	g$query	o1088	g$red	o1544	g$dis	o1767	g$sql	o1964	g$rs	o2085	g$sql	o2103	g$row	o2223	g$rs	o2248	g$row	o2304	g$linha	o2325	g$row	o2349	g$row	o2445	g$linha	o2748	g$linha	o2767	g$dis	o2797	g$linha	o3014	g$linha	o3033	g$dis	o3063	g$dis	o3232	g$linha	o3293	g$linha	o3413	g$_GET	o3604	g$_GET	o3800	g$dis	o4062
+includes/direita/calendario/xajax/xajax_core/xajax.inc.php	dXAJAX_DEFAULT_CHAR_ENCODING	o663	dXAJAX_PROCESSING_EVENT	o1110	dXAJAX_PROCESSING_EVENT_BEFORE	o1220	dXAJAX_PROCESSING_EVENT_AFTER	o1330	dXAJAX_PROCESSING_EVENT_INVALID	o1440	cxajax	o1927	vaSettings	o2469	vbErrorHandler	o2805	vaProcessingEvents	o2969	vbExitAllowed	o3450	vbCleanBuffer	o3751	vsLogFile	o4013	vsCoreIncludeOutput	o4224	vobjPluginManager	o4358	vobjArgumentManager	o4489	vobjResponseManager	o4622	vobjLanguageManager	o4755	kxajax	o5078	m__sleep	o6487	m__wakeup	o7111	mgetGlobalResponse	o8673	vobj	o8708	mgetVersion	o8888	mregister	o10175	mconfigure	o11316	mconfigureMany	o12232	mgetConfiguration	o12625	mcanProcessRequest	o12958	mprocessRequest	o13636	mprintJavascript	o17923	mgetJavascript	o18301	mautoCompressJavascript	o18919	m_compressSelf	o20149	m_compile	o21766	m_detectURI	o24056	msetCharEncoding	o27858	mgetCharEncoding	o28288	msetFlags	o28691	msetFlag	o29499	mgetFlag	o29917	msetRequestURI	o30308	mgetRequestURI	o30765	msetDefaultMode	o31223	mgetDefaultMode	o31718	msetDefaultMethod	o32091	mgetDefaultMethod	o32461	msetWrapperPrefix	o32950	mgetWrapperPrefix	o33347	msetLogFile	o33908	mgetLogFile	o34267	mregisterFunction	o35456	mregisterCallableObject	o36092	mregisterEvent	o37115	fxajaxErrorHandler	o37468
+includes/direita/calendario/xajax/xajax_core/plugin_layer/support/xajaxEvent.inc.php	cxajaxEvent	o784	vsName	o862	vaConfiguration	o1019	vaHandlers	o1231	kxajaxEvent	o1348	mgetName	o1606	mconfigure	o1820	maddHandler	o2063	mgenerateRequest	o2558	mgenerateClientScript	o2916	mfire	o3656
+includes/direita/calendario/xajax/xajax_core/plugin_layer/xajaxEventPlugin.inc.php	dXAJAX_EVENT	o774	dXAJAX_EVENT_HANDLER	o852	cxajaxEventPlugin	o1160	exajaxRequestPlugin	vaEvents	o1242	vsXajaxPrefix	o1294	vsEventPrefix	o1352	vsDefer	o1403	vbDeferScriptGeneration	o1421	vsRequestedEvent	o1491	mxajaxEventPlugin	o1561	mconfigure	o1986	mregister	o2828	mgenerateClientScript	o3848	mcanProcessRequest	o4419	mprocessRequest	o4573	g$objPluginManager	o5076	g$objPluginManager	o5133
+_ADM/ADMINISTRATIVO/servicos_online/editar_servicos_online.php	g$_SESSION	o139	g$_GET	o215	g$svc_id	o233	g$_GET	o243	g$usu_id	o312	g$_SESSION	o328	g$dat_cad	o351	g$hora_cad	o384	g$svc_sec_id	o420	g$_POST	o437	g$svc_titulo	o462	g$_POST	o479	g$svc_link	o504	g$_POST	o526	g$svc_categoria	o549	g$_POST	o571	g$svc_status	o599	g$_POST	o621	g$sql	o648	g$result	o1049	g$sql	o1072	g$msg	o1085	g$result	o1103	g$result	o1312
+empresa/servicos/demolicao/visualiza-demolicao.php
+_ADM/login/logout.php
+cidadao/servicos/mapas_cidade/mapas_cidade.php
+cidadao/servicos/alteracao_horario_func/visualiza-alteracao_horario_func.php
+cidadao/servicos/limpeza_calcadas/limpeza_calcadas.php
+cidadao/servicos/2via_carne_iptu/visualiza-2via_carne_iptu.php
+_ADM/ADMINISTRATIVO/imprensa_oficial/listar_imprensa_oficial.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o555	g$_SERVER	o568	g$max_pag	o633	g$pag_ini	o651	g$_GET	o682	g$pag_ini	o699	g$_GET	o710	g$row_list	o733	g$pag_ini	o745	g$max_pag	o756	g$sql	o773	g$sql_limit	o932	g$sql	o972	g$row_list	o978	g$max_pag	o989	g$query	o1007	g$sql_limit	o1029	g$conn	o1040	g$msg	o1054	g$_GET	o1087	g$tot	o1108	g$_GET	o1115	g$insc_geral	o1145	g$sql	o1171	g$tot	o1182	g$insc_geral	o1204	g$tot_pag	o1230	g$tot	o1246	g$max_pag	o1251	g$lista_insc	o1271	g$_SERVER	o1303	g$params	o1336	g$_SERVER	o1359	g$newParams	o1390	g$params	o1429	g$param	o1440	g$param	o1467	g$param	o1502	g$newParams	o1546	g$param	o1558	g$newParams	o1594	g$lista_insc	o1619	g$newParams	o1665	g$lista_insc	o1693	g$tot	o1728	g$lista_insc	o1734	g$query	o1931	g$title	o2114	g$row	o2459	g$query	o2484	g$row	o2614	g$row	o2775	g$row	o3084	g$row	o3154	g$row	o3261	g$pag_atual	o3633	g$pag_ini	o3652	g$lista_insc	o3667	g$row_list	o3898	g$row_list	o3926	g$max_pag	o3938	g$tot	o3948	g$tot	o3968	g$pag_atual	o4134	g$tot_pag	o4150	g$pag_ini	o4160	g$lista_insc	o4175
+empresa/servicos/guias_sarjetas/visualiza-guias_sarjetas.php
+_ADM/ADMINISTRATIVO/contato_sec/cad_contato_sec.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$con_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o659	g$title	o689	g$red	o735	g$title	o824	g$red	o872	g$sql	o956	g$query	o1027	g$sql	o1049	g$conn	o1055	g$msg	o1069	g$linha	o1081	g$query	o1109	g$red	o1568	g$dis	o1830	g$sql	o2017	g$rs	o2134	g$sql	o2152	g$row	o2264	g$rs	o2289	g$row	o2341	g$linha	o2362	g$row	o2386	g$row	o2478	g$linha	o2784	g$linha	o2805	g$dis	o2837	g$linha	o3057	g$linha	o3077	g$dis	o3108	g$linha	o3322	g$linha	o3340	g$dis	o3369	g$dis	o3532	g$linha	o3593	g$linha	o3713	g$_GET	o3893	g$_GET	o4089	g$dis	o4351
+cidadao/servicos/termo_resp_tec_cc/termo_resp_tec_cc.php
+empresa/servicos/canalizacao_corregos/visualiza-canalizacao_corregos.php
+empresa/servicos/termo_resp_tec_cc/termo_resp_tec_cc.php
+includes/direita/calendario/xajax/xajax_core/xajaxResponse.inc.php	cxajaxResponse	o1303	vaCommands	o1475	vsCharacterEncoding	o1681	vbOutputEntities	o1868	vreturnValue	o2074	vobjPluginManager	o2184	kxajaxResponse	o2323	msetCharacterEncoding	o3284	msetOutputEntities	o3703	mplugin	o4588	m__get	o5636	mconfirmCommands	o6177	massign	o6835	mappend	o7429	mprepend	o7975	mreplace	o8519	mclear	o9067	mcontextAssign	o9626	mcontextAppend	o10256	mcontextPrepend	o10875	mcontextClear	o11453	malert	o11786	mdebug	o11905	mredirect	o12366	mscript	o14325	mcall	o14784	mremove	o15205	mcreate	o15788	minsert	o16621	minsertAfter	o17205	mcreateInput	o17772	minsertInput	o18452	minsertInputAfter	o19142	msetEvent	o19718	maddEvent	o19908	maddHandler	o20506	mremoveHandler	o21063	msetFunction	o21654	mwrapFunction	o22650	mincludeScript	o23264	mincludeScriptOnce	o23975	mremoveScript	o24790	mincludeCSS	o25419	mremoveCSS	o26038	mwaitForCSS	o27084	mwaitFor	o27964	msleep	o28555	msetReturnValue	o29063	mgetContentType	o29375	mgetOutput	o29469	mprintOutput	o29840	m_sendHeaders	o30057	mgetCommandCount	o30872	mloadCommands	o31263	mabsorb	o32123	maddPluginCommand	o32578	maddCommand	o33102	m_printHeader_XML	o33354	m_printResponse_XML	o33757	m_printCommand_XML	o34325	m_printArray_XML	o35065	m_printEscapedString_XML	o37005	m_encodeArray	o39638	cxajaxCustomResponse	o40060	vsOutput	o40090	vsContentType	o40106	vsCharacterEncoding	o40130	vbOutputEntities	o40157	kxajaxCustomResponse	o40188	msetCharacterEncoding	o40526	msetOutputEntities	o40642	mclear	o40746	mappend	o40800	mabsorb	o40870	mgetContentType	o41977	mgetCharacterEncoding	o42047	mgetOutputEntities	o42129	mgetOutput	o42205	mprintOutput	o42265
+_ADM/ADMINISTRATIVO/atribuicao_sec/inserir_atribuicao_sec.php	g$_SESSION	o140	g$usu_id	o224	g$_SESSION	o240	g$dat_cad	o263	g$hora_cad	o296	g$atr_sec_id	o332	g$_POST	o348	g$atr_status	o373	g$_POST	o389	g$atr_titulo	o414	g$_POST	o436	g$atr_desc	o461	g$_POST	o483	g$sql	o511	g$result	o877	g$sql	o900	g$msg	o913	g$result	o930	g$result	o1138
+agenda/calendario/xajax/xajax_core/xajaxPluginManager.inc.php	cxajaxPluginManager	o596	vaRequestPlugins	o661	vaResponsePlugins	o725	vaConfigurable	o787	vaRegistrars	o844	vaProcessors	o899	vaClientScriptGenerators	o966	kxajaxPluginManager	o1118	mgetInstance	o1637	vobj	o1666	mloadPlugins	o1851	m_insertIntoArray	o2783	mregisterPlugin	o3412	mcanProcessRequest	o4926	mprocessRequest	o5476	mconfigure	o6069	mregister	o6457	mgenerateClientScript	o7389	mgetPlugin	o7736
+empresa/servicos/alinhamento_frontal/visualiza-alinhamento_frontal.php
+cidadao/servicos/alteracao_ac/visualiza-alteracao_ac.php
+cidadao/servicos/certificado_vistoria/certificado_vistoria.php
+cidadao/servicos/microfilm_multa/visualiza-microfilm_multa.php
+agenda/agenda_7.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+empresa/servicos/2via_carne_emol_cemi/visualiza-2via_carne_emol_cemi.php
+coleta_seletiva/coleta_seletiva.php	g$_GET	o69	g$not_id	o89	g$_GET	o99
+empresa/servicos/inscricao_eventual/inscricao_eventual.php
+cidadao/cidadao.php
+empresa/servicos/autorizacao_conf_talao/autorizacao_conf_talao.php
+empresa/servicos/renovacao_alvara/renovacao_alvara.php
+empresa/servicos/regularizacao_resid/regularizacao_resid.php
+cidadao/servicos/renovacao_ccm/renovacao_ccm.php
+cidadao/servicos/abertura_via/visualiza-abertura_via.php
+_ADM/login/protege_pagina.php	g$_SESSION	o69	g$autorizado	o180	g$check_acesso	o202	fautorizado	o241	g$restrito_volta	o701	g$_SESSION	o772	g$autorizado	o815	g$_SESSION	o828	g$_SESSION	o852	g$qsChar	o884	g$url	o903	g$_SERVER	o910	g$restrito_volta	o949	g$qsChar	o972	g$QUERY_STRING	o1000	g$QUERY_STRING	o1025	g$url	o1050	g$QUERY_STRING	o1064	g$restrito_volta	o1083	g$restrito_volta	o1101	g$qsChar	o1118	g$url	o1155	g$restrito_volta	o1192
+cidadao/servicos/cadastro_imobiliario/cadastro_imobiliario.php
+agenda/calendario/xajax/xajax_core/plugin_layer/support/xajaxUserFunction.inc.php	cxajaxUserFunction	o944	vsAlias	o1189	vuf	o1301	vsInclude	o1423	vaConfiguration	o1599	kxajaxUserFunction	o3322	mgetName	o4111	mconfigure	o4336	mgenerateRequest	o4682	mgenerateClientScript	o5168	mcall	o5937
+cidadao/servicos/unificacao_area/unificacao_area.php
+empresa/servicos/substituicao_projeto/substituicao_projeto.php
+agenda/agenda_5.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+empresa/servicos/reforma_acresc_area/reforma_acresc_area.php
+agenda/visualiza-agenda_12.php
+empresa/servicos/talao_zona_azul/visualiza-talao_zona_azul.php
+empresa/servicos/remocao_lixo/visualiza-remocao_lixo.php
+cidadao/servicos/comunicacao_extravio/comunicacao_extravio.php
+includes/direita/calendario/xajax/xajax_core/xajaxPlugin.inc.php	cxajaxPlugin	o528	cxajaxRequestPlugin	o1232	exajaxPlugin	mconfigure	o1545	mregister	o1816	mgenerateClientScript	o2238	mcanProcessRequest	o2492	mprocessRequest	o2827	cxajaxResponsePlugin	o3264	exajaxPlugin	vobjResponse	o3489	msetResponse	o3764	maddCommand	o4081	mgetName	o4418	mprocess	o4947
+empresa/servicos/aprovacao_const_resid/visualiza-aprovacao_const_resid.php
+cidadao/servicos/reparo_iluminacao_publica/visualiza-reparo_iluminacao_publica.php
+_ADM/ADMINISTRATIVO/usuarios/alterar_senha/alterar_senha.php	g$_SESSION	o44	g$title	o194	g$_GET	o1427	g$_GET	o1561
+empresa/servicos/2via_insc_munic/2via_insc_munic.php
+cidadao/servicos/renovacao_alvara/visualiza-renovacao_alvara.php
+_ADM/ADMINISTRATIVO/usuarios/listar_usu.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o553	g$_SERVER	o566	g$max_pag	o631	g$pag_ini	o649	g$_GET	o680	g$pag_ini	o697	g$_GET	o708	g$row_list	o731	g$pag_ini	o743	g$max_pag	o754	g$sql	o771	g$sql_limit	o940	g$sql	o980	g$row_list	o986	g$max_pag	o997	g$query	o1015	g$sql_limit	o1037	g$conn	o1048	g$msg	o1062	g$_GET	o1095	g$tot	o1116	g$_GET	o1123	g$insc_geral	o1153	g$sql	o1179	g$tot	o1190	g$insc_geral	o1212	g$tot_pag	o1238	g$tot	o1254	g$max_pag	o1259	g$lista_insc	o1279	g$_SERVER	o1311	g$params	o1344	g$_SERVER	o1367	g$newParams	o1398	g$params	o1437	g$param	o1448	g$param	o1475	g$param	o1510	g$newParams	o1554	g$param	o1566	g$newParams	o1602	g$lista_insc	o1627	g$newParams	o1673	g$lista_insc	o1701	g$tot	o1736	g$lista_insc	o1742	g$query	o1939	g$title	o2113	g$row	o2453	g$query	o2478	g$row	o2597	g$row	o2716	g$row	o2786	g$row	o2856	g$row	o2929	g$row	o3025	g$pag_atual	o3397	g$pag_ini	o3416	g$lista_insc	o3431	g$row_list	o3662	g$row_list	o3690	g$max_pag	o3702	g$tot	o3712	g$tot	o3732	g$pag_atual	o3898	g$tot_pag	o3914	g$pag_ini	o3924	g$lista_insc	o3939
+cidadao/servicos/alteracao_ac/alteracao_ac.php
+empresa/servicos/2via_carne_emol_cemi/2via_carne_emol_cemi.php
+agenda/visualiza-agenda_14.php
+empresa/servicos/certidao_nada_consta/certidao_nada_consta.php
+cidadao/servicos/recurso_multas/visualiza-recurso_multas.php
+agenda/calendario/xajax/xajax_core/xajaxRequest.inc.php	dXAJAX_FORM_VALUES	o1208	dXAJAX_INPUT_VALUE	o1294	dXAJAX_CHECKED_VALUE	o1382	dXAJAX_ELEMENT_INNERHTML	o1478	dXAJAX_QUOTED_VALUE	o1577	dXAJAX_JS_VALUE	o1658	cxajaxRequest	o2094	vsName	o2177	vsQuoteCharacter	o2447	vaParameters	o2666	kxajaxRequest	o2827	museSingleQuote	o3097	museDoubleQuote	o3305	mclearParameters	o3479	maddParameter	o3813	msetParameter	o4839	mgetScript	o6492	mprintScript	o6731	cxajaxCustomRequest	o7301	exajaxRequest	vaVariables	o7383	vsScript	o7435	mxajaxCustomRequest	o7803	mclearVariables	o8078	msetVariable	o8403	mprintScript	o8529
+empresa/servicos/canalizacao_corregos/canalizacao_corregos.php
+_ADM/ADMINISTRATIVO/contato_sec/inserir_contato_sec.php	g$_SESSION	o163	g$usu_id	o247	g$_SESSION	o263	g$dat_cad	o286	g$hora_cad	o319	g$con_sec_id	o355	g$_POST	o371	g$con_titulo	o395	g$_POST	o416	g$con_email	o441	g$_POST	o462	g$con_tel	o486	g$_POST	o507	g$con_status	o529	g$_POST	o545	g$sql	o574	g$result	o1025	g$sql	o1048	g$msg	o1061	g$result	o1078	g$result	o1284
+includes/direita/calendario/xajax/xajax_core/plugin_layer/xajaxScriptPlugin.inc.php	cxajaxScriptPlugin	o788	exajaxRequestPlugin	vsRequest	o873	vsHash	o920	vsRequestURI	o970	vbDeferScriptGeneration	o1038	vbValidateHash	o1108	vbWorking	o1164	mxajaxScriptPlugin	o1448	mconfigure	o2480	mgenerateClientScript	o3204	mcanProcessRequest	o4453	m_getSections	o4531	mprocessRequest	o5821	g$objPluginManager	o6862	g$objPluginManager	o6919
+galeria/galeria_pag2.php
+empresa/servicos/atualizacao_cadastral/atualizacao_cadastral.php
+cidadao/servicos/indicacao_infrator/visualiza-indicacao_infrator.php
+cidadao/servicos/certidoes_diversas/certidoes_diversas.php
+agenda/calendario/xajax/xajax_core/xajaxLanguageManager.inc.php	cxajaxLanguageManager	o909	vaMessages	o1025	vsLanguage	o1119	kxajaxLanguageManager	o1268	mgetInstance	o5740	vobj	o5769	mconfigure	o6158	mregister	o6753	mgetText	o7141
+index_sem_Galeria.php
+cidadao/servicos/exclusao_atividade/exclusao_atividade.php
+empresa/servicos/remocao_lixo/remocao_lixo.php
+_ADM/lib_PHP/biblioteca.php	flimita_caracteres	o103	fformataDataBR	o1106	fformataDataUSA	o1306	fformataDatatimeBR	o1516	fexibeSaudacao	o1923	g$i	o2724	g$i	o2730	g$i	o2739	g$dias	o2747	g$i	o2753	g$i	o2759	g$meses	o2790	g$ano_atual	o3096	g$anoIni	o3144	g$anoFim	o3162	g$ano_atual	o3172	g$i	o3192	g$anoFim	o3195	g$i	o3204	g$anoIni	o3210	g$i	o3220	g$anos	o3231	g$i	o3237	g$i	o3243
+empresa/servicos/alteracao_ac/alteracao_ac.php
+lib_PHP/thumbnail.php	fErrorImage	o750	g$maxw	o780	fthumbnail	o1354	g$_GET	o3751	g$_GET	o3764	g$_GET	o3778
+conexao_db/conexaoTecnologia.php	g$msg	o79	g$msg	o147	g$msg	o244	g$host	o298	g$db	o321	g$user	o351	g$pass	o369	g$conn	o387	g$host	o410	g$user	o417	g$pass	o424	g$msg	o439	g$db	o472	g$conn	o477	g$msg	o491
+paginas_erro/manutencao.php
+cidadao/servicos/canalizacao_corregos/canalizacao_corregos.php
+empresa/servicos/demolicao/demolicao.php
+_ADM/ADMINISTRATIVO/modulo_usu/cad_mod_usu.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$mdu_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o642	g$title	o672	g$red	o701	g$title	o786	g$red	o820	g$sql	o900	g$query	o970	g$sql	o992	g$msg	o1005	g$linha	o1017	g$query	o1045	g$red	o1496	g$linha	o1791	g$linha	o1810	g$dis	o1840	g$dis	o2006	g$linha	o2065	g$linha	o2185	g$_GET	o2375	g$_GET	o2571	g$dis	o2833
+campanha_agasalho/2010/campanha_agasalho.php	g$_GET	o77	g$age_id	o97	g$_GET	o107
+lib_PHP/biblioteca.php	flimita_caracteres	o106	flimita_caracteres_1	o1066	fformataDataBR	o2057	fformataDataUSA	o2257	fformataDatatimeBR	o2467
+cidadao/servicos/futsal/visualiza-futsal.php
+empresa/servicos/alteracao_licen_feirante/alteracao_licen_feirante.php
+agenda/visualiza-agenda_11.php
+concurso-publico/concurso-publico.php
+cidadao/servicos/relacao_industrias/visualiza-relacao_industrias.php
+empresa/servicos/2via_carne_iptu/2via_carne_iptu.php
+cidadao/servicos/substituicao_projeto/visualiza-substituicao_projeto.php
+cidadao/servicos/regularizacao_resid/visualiza-regularizacao_resid.php
+_ADM/ADMINISTRATIVO/servicos_online/cad_servicos_online.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$svc_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o651	g$title	o681	g$red	o719	g$title	o812	g$red	o855	g$sql	o943	g$query	o1018	g$sql	o1040	g$conn	o1046	g$msg	o1060	g$linha	o1072	g$query	o1100	g$red	o1566	g$dis	o1784	g$sql	o1995	g$rs	o2112	g$sql	o2130	g$row	o2242	g$rs	o2267	g$row	o2319	g$linha	o2340	g$row	o2364	g$row	o2456	g$dis	o2722	g$linha	o2852	g$linha	o2987	g$linha	o3114	g$linha	o3430	g$linha	o3451	g$dis	o3483	g$linha	o3697	g$linha	o3716	g$dis	o3746	g$dis	o3944	g$linha	o4005	g$linha	o4125	g$_GET	o4318	g$_GET	o4514	g$dis	o4776
+empresa/servicos/revisao_taxas/visualiza-revisao_taxas.php
+fale_conosco/fale_conosco.php
+fale_conosco/visualiza-fale_conosco.php	g$_GET	o6	g$_GET	o56
+cidadao/servicos/iluminacao_publica/iluminacao_publica.php
+_ADM/ADMINISTRATIVO/contato_sec/listar_contato_sec.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o568	g$_SERVER	o581	g$max_pag	o646	g$pag_ini	o664	g$_GET	o695	g$pag_ini	o712	g$_GET	o723	g$row_list	o746	g$pag_ini	o758	g$max_pag	o769	g$sql	o786	g$sql_limit	o955	g$sql	o995	g$row_list	o1001	g$max_pag	o1012	g$query	o1030	g$sql_limit	o1052	g$conn	o1063	g$msg	o1077	g$_GET	o1110	g$tot	o1131	g$_GET	o1138	g$insc_geral	o1168	g$sql	o1194	g$tot	o1205	g$insc_geral	o1227	g$tot_pag	o1253	g$tot	o1269	g$max_pag	o1274	g$lista_insc	o1294	g$_SERVER	o1326	g$params	o1359	g$_SERVER	o1382	g$newParams	o1413	g$params	o1452	g$param	o1463	g$param	o1490	g$param	o1525	g$newParams	o1569	g$param	o1581	g$newParams	o1617	g$lista_insc	o1642	g$newParams	o1688	g$lista_insc	o1716	g$tot	o1751	g$lista_insc	o1757	g$query	o1954	g$title	o2143	g$row	o2489	g$query	o2514	g$row	o2645	g$row	o2764	g$row	o2834	g$row	o2906	g$row	o2979	g$row	o3087	g$pag_atual	o3459	g$pag_ini	o3478	g$lista_insc	o3493	g$row_list	o3724	g$row_list	o3752	g$max_pag	o3764	g$tot	o3774	g$tot	o3794	g$pag_atual	o3960	g$tot_pag	o3976	g$pag_ini	o3986	g$lista_insc	o4001
+_ADM/index.php	g$title	o48	g$_GET	o1434	g$_GET	o1576	g$_GET	o1707
+empresa/servicos/rebaixamento_guia/visualiza-rebaixamento_guia.php
+cidadao/servicos/carimbar_nota_fiscal/visualiza-carimbar_nota_fiscal.php
+empresa/servicos/reforma_acresc_area/visualiza-reforma_acresc_area.php
+agenda/agenda_10.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+noticia/visualiza-noticia.php	g$_GET	o183	g$not_id	o203	g$_GET	o213	g$sql	o282	g$query	o348	g$sql	o370	g$msg	o383	g$linha	o395	g$query	o423	g$query	o491	g$thumbnail	o567	g$linha	o1427	g$linha	o1486	g$linha	o1559	g$thumbnail	o1657	g$linha	o1672	g$linha	o1694	g$linha	o1821	g$linha	o1903	g$conn	o2035
+empresa/servicos/talao_zona_azul/talao_zona_azul.php
+cidadao/servicos/recurso_multas/recurso_multas.php
+empresa/servicos/autorizacao_poda/visualiza-autorizacao_poda.php
+includes/direita/calendario/xajax/xajax_core/xajaxControl.inc.php	dXAJAX_HTML_CONTROL_DOCTYPE_FORMAT	o982	dXAJAX_HTML_CONTROL_DOCTYPE_VERSION	o1154	dXAJAX_HTML_CONTROL_DOCTYPE_VALIDATION	o1331	cxajaxControl	o1679	vsTag	o1728	vsEndTag	o1998	vaAttributes	o2165	vaEvents	o2474	vsClass	o2667	kxajaxControl	o3184	mgetClass	o4024	mclearAttributes	o4176	msetAttribute	o4465	mgetAttribute	o5360	mclearEvents	o5616	msetEvent	o6593	mgetHTML	o7814	mprintHTML	o8176	m_printAttributes	o9972	m_printEvents	o10244	mbacktrace	o10865	cxajaxControlContainer	o11320	exajaxControl	vaChildren	o11438	vsChildClass	o11667	mxajaxControlContainer	o11886	mgetClass	o12359	mgetContentClass	o12944	mclearChildren	o13403	maddChild	o13648	maddChildren	o14554	mprintHTML	o14956	m_printChildren	o17070
+agenda/visualiza-agenda_7.php
+agenda/visualiza-agenda_10.php
+agenda/calendario/xajax/xajax_core/xajaxCompress.inc.php	fxajaxCompressFile	o220
+cidadao/servicos/talao_zona_azul/talao_zona_azul.php
+empresa/servicos/desdobro_desmembramento/visualiza-desdobro.php
+agenda/agenda_4.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+_ADM/ADMINISTRATIVO/beneficio_sec/inserir_beneficio_sec.php	g$_SESSION	o140	g$usu_id	o224	g$_SESSION	o240	g$dat_cad	o263	g$hora_cad	o296	g$ben_sec_id	o332	g$_POST	o348	g$ben_titulo	o372	g$_POST	o393	g$ben_desc	o418	g$_POST	o439	g$ben_status	o463	g$_POST	o479	g$sql	o508	g$result	o898	g$sql	o920	g$msg	o933	g$result	o950	g$result	o1157
+cidadao/servicos/regularizacao_resid/regularizacao_resid.php
+includes/direita/calendario/xajax/xajax_core/xajaxCall.inc.php	cxajaxCall	o667	vsFunction	o824	vsReturnValue	o1001	vaParameters	o1296	vsMode	o1421	vsRequestType	o1550	vsResponseProcessor	o1705	vsRequestURI	o1820	vsContentType	o1925	kxajaxCall	o2253	msetFunction	o2659	mclearParameters	o2921	maddParameter	o3486	maddFormValuesParameter	o3937	msetMode	o4275	msetRequestType	o4563	msetResponseProcessor	o4917	msetRequestURI	o5285	msetContentType	o5555	msetReturnValue	o5866	mgenerate	o6447
+cidadao/servicos/exumacao/exumacao.php
+includes/direita/calendario/xajax/xajax_core/legacy.inc.php	clegacyXajaxResponse	o13	exajaxResponse	moutputEntitiesOn	o68	moutputEntitiesOff	o135	maddConfirmCommands	o203	maddAssign	o332	maddAppend	o445	maddPrepend	o558	maddReplace	o673	maddClear	o788	maddAlert	o900	maddRedirect	o1012	maddScript	o1129	maddScriptCall	o1242	maddRemove	o1356	maddCreate	o1469	maddInsert	o1582	maddInsertAfter	o1695	maddCreateInput	o1817	maddInsertInput	o1939	maddInsertInputAfter	o2061	maddRemoveHandler	o2192	maddIncludeScript	o2318	maddIncludeCSS	o2444	mgetXML	o2565	clegacyXajax	o2607	exajax	mlegacyXajax	o2646	mregisterExternalFunction	o2992	mregisterCatchAllFunction	o3158	mregisterPreFunction	o3356	mcanProcessRequests	o3548	mprocessRequests	o3621	msetCallableObject	o3689	mdebugOn	o3790	mdebugOff	o3859	mstatusMessagesOn	o3930	mstatusMessagesOff	o4015	mwaitCursorOn	o4101	mwaitCursorOff	o4179	mexitAllowedOn	o4258	mexitAllowedOff	o4337	merrorHandlerOn	o4418	merrorHandlerOff	o4499	mcleanBufferOn	o4582	mcleanBufferOff	o4661	mdecodeUTF8InputOn	o4742	mdecodeUTF8InputOff	o4828	moutputEntitiesOn	o4916	moutputEntitiesOff	o5001	mallowBlankResponseOn	o5087	mallowBlankResponseOff	o5179
+noticia/imprime-noticia.php	g$_GET	o115	g$not_id	o135	g$_GET	o145	g$sql	o205	g$query	o271	g$sql	o293	g$msg	o306	g$linha	o318	g$query	o346	g$linha	o858	g$linha	o937	g$linha	o996
+cidadao/servicos/substituicao_projeto/substituicao_projeto.php
+_ADM/ADMINISTRATIVO/modulo_usu/listar_mod_usu.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o564	g$_SERVER	o577	g$max_pag	o642	g$pag_ini	o660	g$_GET	o691	g$pag_ini	o707	g$_GET	o718	g$row_list	o741	g$pag_ini	o753	g$max_pag	o764	g$sql	o781	g$sql_limit	o841	g$sql	o881	g$row_list	o887	g$max_pag	o898	g$query	o914	g$sql_limit	o936	g$conn	o947	g$msg	o961	g$_GET	o990	g$tot	o1011	g$_GET	o1018	g$insc_geral	o1050	g$sql	o1076	g$tot	o1087	g$insc_geral	o1109	g$tot_pag	o1135	g$tot	o1151	g$max_pag	o1156	g$lista_insc	o1176	g$_SERVER	o1208	g$params	o1241	g$_SERVER	o1264	g$newParams	o1295	g$params	o1334	g$param	o1345	g$param	o1372	g$param	o1407	g$newParams	o1451	g$param	o1463	g$newParams	o1499	g$lista_insc	o1524	g$newParams	o1570	g$lista_insc	o1598	g$tot	o1633	g$lista_insc	o1639	g$query	o1840	g$title	o2012	g$row	o2293	g$query	o2318	g$row	o2426	g$row	o2527	g$row	o2599	g$row	o2703	g$pag_atual	o3075	g$pag_ini	o3094	g$lista_insc	o3109	g$row_list	o3340	g$row_list	o3368	g$max_pag	o3380	g$tot	o3390	g$tot	o3410	g$pag_atual	o3576	g$tot_pag	o3592	g$pag_ini	o3602	g$lista_insc	o3617
+empresa/servicos/certidao_com_vei_icms/certidao_com_vei_icms.php
+agenda/calendario/xajax/xajax_core/xajax.inc.php	dXAJAX_DEFAULT_CHAR_ENCODING	o663	dXAJAX_PROCESSING_EVENT	o1110	dXAJAX_PROCESSING_EVENT_BEFORE	o1220	dXAJAX_PROCESSING_EVENT_AFTER	o1330	dXAJAX_PROCESSING_EVENT_INVALID	o1440	cxajax	o1927	vaSettings	o2469	vbErrorHandler	o2805	vaProcessingEvents	o2969	vbExitAllowed	o3450	vbCleanBuffer	o3751	vsLogFile	o4013	vsCoreIncludeOutput	o4224	vobjPluginManager	o4358	vobjArgumentManager	o4489	vobjResponseManager	o4622	vobjLanguageManager	o4755	kxajax	o5078	m__sleep	o6487	m__wakeup	o7111	mgetGlobalResponse	o8673	vobj	o8708	mgetVersion	o8888	mregister	o10175	mconfigure	o11316	mconfigureMany	o12232	mgetConfiguration	o12625	mcanProcessRequest	o12958	mprocessRequest	o13636	mprintJavascript	o17923	mgetJavascript	o18301	mautoCompressJavascript	o18919	m_compressSelf	o20149	m_compile	o21766	m_detectURI	o24056	msetCharEncoding	o27858	mgetCharEncoding	o28288	msetFlags	o28691	msetFlag	o29499	mgetFlag	o29917	msetRequestURI	o30308	mgetRequestURI	o30765	msetDefaultMode	o31223	mgetDefaultMode	o31718	msetDefaultMethod	o32091	mgetDefaultMethod	o32461	msetWrapperPrefix	o32950	mgetWrapperPrefix	o33347	msetLogFile	o33908	mgetLogFile	o34267	mregisterFunction	o35456	mregisterCallableObject	o36092	mregisterEvent	o37115	fxajaxErrorHandler	o37468
+includes/direita/agenda_eventos/agenda_eventos.php	g$url	o41	g$url	o109	g$sql_agenda	o179	g$query_agenda	o283	g$sql_agenda	o312	g$msg	o332	g$thumbnail	o415	g$linha	o575	g$query_agenda	o602	g$linha	o712	g$linha	o754	g$thumbnail	o810	g$linha	o825	g$linha	o847	g$linha	o972	g$linha	o1026
+agenda/calendario/xajax/xajax_core/xajaxPlugin.inc.php	cxajaxPlugin	o528	cxajaxRequestPlugin	o1232	exajaxPlugin	mconfigure	o1545	mregister	o1816	mgenerateClientScript	o2238	mcanProcessRequest	o2492	mprocessRequest	o2827	cxajaxResponsePlugin	o3264	exajaxPlugin	vobjResponse	o3489	msetResponse	o3764	maddCommand	o4081	mgetName	o4418	mprocess	o4947
+includes/direita/banner_transitorio/banner_transitorio.php
+cidadao/servicos/unificacao_area/visualiza-unificacao_area.php
+cidadao/visualiza-cidadao.php
+cidadao/servicos/alteracao_licen_feirante/alteracao_licen_feirante.php
+empresa/servicos/limpeza_vias_publicas/visualiza-limpeza_vias_publicas.php
+cidadao/servicos/exclusao_atividade/visualiza-exclusao_atividade.php
+includes/centro/_conteudo_ceg.php
+empresa/servicos/diretrizes_movim_terra/visualiza-diretrizes_movim_terra.php
+cidadao/servicos/diretrizes_movim_terra/diretrizes_movim_terra.php
+agenda/calendario/xajax/xajax_core/xajaxControl.inc.php	dXAJAX_HTML_CONTROL_DOCTYPE_FORMAT	o982	dXAJAX_HTML_CONTROL_DOCTYPE_VERSION	o1154	dXAJAX_HTML_CONTROL_DOCTYPE_VALIDATION	o1331	cxajaxControl	o1679	vsTag	o1728	vsEndTag	o1998	vaAttributes	o2165	vaEvents	o2474	vsClass	o2667	kxajaxControl	o3184	mgetClass	o4024	mclearAttributes	o4176	msetAttribute	o4465	mgetAttribute	o5360	mclearEvents	o5616	msetEvent	o6593	mgetHTML	o7814	mprintHTML	o8176	m_printAttributes	o9972	m_printEvents	o10244	mbacktrace	o10865	cxajaxControlContainer	o11320	exajaxControl	vaChildren	o11438	vsChildClass	o11667	mxajaxControlContainer	o11886	mgetClass	o12359	mgetContentClass	o12944	mclearChildren	o13403	maddChild	o13648	maddChildren	o14554	mprintHTML	o14956	m_printChildren	o17070
+_ADM/ADMINISTRATIVO/noticias/editar_noticias.php	g$_SESSION	o139	g$_GET	o215	g$not_id	o233	g$_GET	o243	g$usu_id	o312	g$_SESSION	o332	g$dat_cad	o355	g$hora_cad	o392	g$not_sec_id	o432	g$_POST	o452	g$not_blo_id	o477	g$_POST	o497	g$not_img	o522	g$_FILES	o542	g$not_img_db	o572	g$_POST	o592	g$not_titulo	o616	g$_POST	o652	g$not_descricao	o678	g$_POST	o703	g$not_comentario	o731	g$_POST	o756	g$not_publicado	o785	g$_POST	o805	g$not_publicado_em	o832	g$not_publicado	o855	g$dat_cad	o880	g$hora_cad	o893	g$not_status	o913	g$_POST	o933	g$tiposPermitidos	o1053	g$altura_min	o1219	g$altura_max	o1239	g$largura_min	o1262	g$largura_max	o1282	g$tamanhoPermitido	o1307	g$dimensoes	o1351	g$_FILES	o1384	g$arqName	o1419	g$_FILES	o1439	g$arqType	o1469	g$_FILES	o1489	g$arqSize	o1519	g$_FILES	o1539	g$arqTemp	o1569	g$_FILES	o1589	g$arqError	o1623	g$_FILES	o1643	g$not_img	o1796	g$sql	o1815	g$msg	o2399	g$arqType	o2455	g$tiposPermitidos	o2465	g$msg	o2502	g$arqSize	o2592	g$tamanhoPermitido	o2603	g$msg	o2630	g$dimensoes	o2734	g$largura_max	o2750	g$msg	o2772	g$largura_max	o2824	g$dimensoes	o2889	g$altura_max	o2905	g$msg	o2926	g$altura_max	o2975	g$dimensoes	o3037	g$largura_min	o3053	g$msg	o3075	g$largura_min	o3122	g$dimensoes	o3183	g$altura_min	o3199	g$msg	o3220	g$altura_min	o3266	g$not_sec_id	o3344	g$msg	o3358	g$msg	o3441	g$pasta	o3591	g$not_id	o3636	g$pasta	o3730	g$not_img_db	o3737	g$pasta	o3767	g$arqTemp	o3807	g$pasta	o3817	g$not_img	o3826	g$sql	o3848	g$result	o4494	g$sql	o4517	g$msg	o4530	g$result	o4548	g$result	o4752
+includes/direita/_direita.php	fdia_extenso	o103
+includes/direita/calendario/xajax/xajax_core/xajaxResponseManager.inc.php	cxajaxResponseManager	o775	vobjResponse	o961	vsCharacterEncoding	o1024	vbOutputEntities	o1092	vaDebugMessages	o1154	kxajaxResponseManager	o1306	mgetInstance	o1583	vobj	o1612	mconfigure	o2022	mclear	o2684	mappend	o3433	mdebug	o4938	msend	o5142	mgetCharacterEncoding	o5785	mgetOutputEntities	o6270
+empresa/servicos/abertura_via/visualiza-abertura_via.php
+empresa/servicos/vistoria_corte_poda/vistoria_corte_poda.php
+_ADM/avisos/cad_realizado.php
+empresa/servicos/aprovacao_desdobro/visualiza-aprovacao_desdobro.php
+empresa/servicos/revisao_taxas/revisao_taxas.php
+includes/direita/calendario/xajax/xajax_core/plugin_layer/support/xajaxCallableObject.inc.php	cxajaxCallableObject	o776	vobj	o874	vaConfiguration	o1213	kxajaxCallableObject	o1395	mgetName	o1635	mconfigure	o1962	mgenerateRequests	o2613	mgenerateClientScript	o3436	misClass	o4864	mhasMethod	o5277	mcall	o5657
+agenda/agenda_6.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+empresa/servicos/limpeza_calcadas/limpeza_calcadas.php
+cidadao/servicos/inscricao_eventual/inscricao_eventual.php
+empresa/servicos/cascalhar_ruas/cascalhar_ruas.php
+empresa/servicos/limpeza_bueiro/limpeza_bueiros.php
+cidadao/servicos/reforma_acresc_area/reforma_acresc_area.php
+empresa/servicos/exclusao_atividade/exclusao_atividade.php
+agenda/calendario/exibe-agenda.php	g$_SESSION	o136	g$xajax	o216	g$xajax	o255	g$xajax	o364	g$xajax	o401	g$xajax	o440	g$xajax	o478	g$xajax	o517	g$xajax	o562	g$xajax	o748
+cidadao/servicos/remocao_lixo/remocao_lixo.php
+galeria/visualiza-galeria.php	g$thumbnail	o67	g$thumbnail	o360	g$thumbnail	o738	g$thumbnail	o1026	g$thumbnail	o1333	g$thumbnail	o1668	g$thumbnail	o1969	g$thumbnail	o2298	g$thumbnail	o2652	g$thumbnail	o2984	g$thumbnail	o3317	g$thumbnail	o3629	g$thumbnail	o3931
+cidadao/servicos/isencao_iptu/visualiza-isencao_iptu.php
+cidadao/servicos/termo_resp_tec_cc/visualiza-termo_resp_tec_cc.php
+cidadao/servicos/rebaixamento_guia/visualiza-rebaixamento_guia.php
+_ADM/ADMINISTRATIVO/agenda/listar_agenda.php	g$_SESSION	o140	g$title	o414	g$thumbnail	o601	g$pag_atual	o704	g$_SERVER	o717	g$max_pag	o782	g$pag_ini	o800	g$_GET	o831	g$pag_ini	o848	g$_GET	o859	g$row_list	o882	g$pag_ini	o894	g$max_pag	o905	g$sql	o922	g$sql_limit	o977	g$sql	o1017	g$row_list	o1023	g$max_pag	o1034	g$query	o1052	g$sql_limit	o1074	g$conn	o1085	g$msg	o1099	g$_GET	o1132	g$tot	o1153	g$_GET	o1160	g$insc_geral	o1190	g$sql	o1216	g$tot	o1227	g$insc_geral	o1249	g$tot_pag	o1275	g$tot	o1291	g$max_pag	o1296	g$lista_insc	o1316	g$_SERVER	o1348	g$params	o1381	g$_SERVER	o1404	g$newParams	o1435	g$params	o1474	g$param	o1485	g$param	o1512	g$param	o1547	g$newParams	o1591	g$param	o1603	g$newParams	o1639	g$lista_insc	o1664	g$newParams	o1710	g$lista_insc	o1738	g$tot	o1773	g$lista_insc	o1779	g$query	o1996	g$title	o2218	g$row	o2676	g$query	o2701	g$row	o2845	g$row	o3267	g$row	o3418	g$row	o3503	g$row	o3605	g$thumbnail	o3732	g$row	o3747	g$row	o3767	g$row	o3928	g$pag_atual	o4344	g$pag_ini	o4363	g$lista_insc	o4378	g$row_list	o4632	g$row_list	o4660	g$max_pag	o4672	g$tot	o4682	g$tot	o4702	g$pag_atual	o4880	g$tot_pag	o4896	g$pag_ini	o4906	g$lista_insc	o4921
+cidadao/servicos/cascalhar_ruas/cascalhar_ruas.php
+agenda/age_categoria/visualiza-age_categoria.php
+noticia/busca_noticias/visualiza-arquivo_noticias.php	g$busca_noticia	o203	g$_GET	o223	g$ultimas_noticias	o292	g$_GET	o312	g$pag_atual	o350	g$_SERVER	o363	g$max_pag	o426	g$pag_ini	o443	g$_GET	o474	g$pag_ini	o491	g$_GET	o502	g$row_list	o523	g$pag_ini	o535	g$max_pag	o546	g$ultimas_noticias	o566	g$sql	o601	g$sql	o707	g$busca_noticia	o774	g$sql_limit	o880	g$sql	o920	g$row_list	o926	g$max_pag	o937	g$query	o953	g$sql_limit	o975	g$msg	o994	g$res_not	o1007	g$query	o1033	g$_GET	o1059	g$tot	o1075	g$_GET	o1082	g$insc_geral	o1113	g$sql	o1139	g$tot	o1150	g$insc_geral	o1172	g$tot_pag	o1194	g$tot	o1210	g$max_pag	o1215	g$lista_insc	o1231	g$_SERVER	o1263	g$params	o1296	g$_SERVER	o1319	g$newParams	o1350	g$params	o1389	g$param	o1400	g$param	o1427	g$param	o1462	g$newParams	o1506	g$param	o1518	g$newParams	o1554	g$lista_insc	o1574	g$newParams	o1620	g$lista_insc	o1644	g$tot	o1679	g$lista_insc	o1685	g$msg_noticia	o1706	g$busca_noticia	o1738	g$ultimas_noticias	o1758	g$msg_noticia	o1795	g$res_not	o1871	g$msg_noticia	o1886	g$msg_noticia	o2055	g$msg_noticia	o2100	g$linha	o2188	g$query	o2215	g$linha	o2313	g$linha	o2355	g$linha	o2536	g$linha	o2685	g$linha	o2727	g$linha	o2778	g$pag_atual	o2964	g$pag_ini	o2983	g$lista_insc	o2998	g$row_list	o3104	g$row_list	o3132	g$max_pag	o3144	g$tot	o3154	g$tot	o3174	g$pag_atual	o3228	g$tot_pag	o3244	g$pag_ini	o3254	g$lista_insc	o3269
+_ADM/ADMINISTRATIVO/atribuicao_sec/editar_atribuicao_sec.php	g$_SESSION	o139	g$_GET	o215	g$atr_id	o233	g$_GET	o243	g$usu_id	o310	g$_SESSION	o326	g$dat_cad	o349	g$hora_cad	o382	g$atr_sec_id	o418	g$_POST	o434	g$atr_titulo	o459	g$_POST	o480	g$atr_desc	o506	g$_POST	o527	g$atr_status	o550	g$_POST	o566	g$sql	o592	g$result	o943	g$sql	o966	g$msg	o979	g$result	o997	g$result	o1205
+empresa/servicos/certidoes_diversas/visualiza-certidoes_diversas.php
+cidadao/servicos/aprovacao_desdobro/aprovacao_desdobro.php
+_ADM/ADMINISTRATIVO/agenda/deletar_agenda.php	g$age_id	o143	g$_GET	o153	g$pasta	o209	g$age_id	o253	g$age_id	o283	g$age_id	o297	g$result	o318	g$age_id	o376	g$fotos	o437	g$deletar	o467	g$pasta	o491	g$deletar	o502	g$pasta	o528	g$result	o572
+cidadao/servicos/microfilm_multa/microfilm_multa.php
+agenda/calendario/xajax/xajax_core/legacy.inc.php	clegacyXajaxResponse	o13	exajaxResponse	moutputEntitiesOn	o68	moutputEntitiesOff	o135	maddConfirmCommands	o203	maddAssign	o332	maddAppend	o445	maddPrepend	o558	maddReplace	o673	maddClear	o788	maddAlert	o900	maddRedirect	o1012	maddScript	o1129	maddScriptCall	o1242	maddRemove	o1356	maddCreate	o1469	maddInsert	o1582	maddInsertAfter	o1695	maddCreateInput	o1817	maddInsertInput	o1939	maddInsertInputAfter	o2061	maddRemoveHandler	o2192	maddIncludeScript	o2318	maddIncludeCSS	o2444	mgetXML	o2565	clegacyXajax	o2607	exajax	mlegacyXajax	o2646	mregisterExternalFunction	o2992	mregisterCatchAllFunction	o3158	mregisterPreFunction	o3356	mcanProcessRequests	o3548	mprocessRequests	o3621	msetCallableObject	o3689	mdebugOn	o3790	mdebugOff	o3859	mstatusMessagesOn	o3930	mstatusMessagesOff	o4015	mwaitCursorOn	o4101	mwaitCursorOff	o4179	mexitAllowedOn	o4258	mexitAllowedOff	o4337	merrorHandlerOn	o4418	merrorHandlerOff	o4499	mcleanBufferOn	o4582	mcleanBufferOff	o4661	mdecodeUTF8InputOn	o4742	mdecodeUTF8InputOff	o4828	moutputEntitiesOn	o4916	moutputEntitiesOff	o5001	mallowBlankResponseOn	o5087	mallowBlankResponseOff	o5179
+agenda/calendario/xajax/xajax_core/xajaxResponse.inc.php	cxajaxResponse	o1303	vaCommands	o1475	vsCharacterEncoding	o1681	vbOutputEntities	o1868	vreturnValue	o2074	vobjPluginManager	o2184	kxajaxResponse	o2323	msetCharacterEncoding	o3284	msetOutputEntities	o3703	mplugin	o4588	m__get	o5636	mconfirmCommands	o6177	massign	o6835	mappend	o7429	mprepend	o7975	mreplace	o8519	mclear	o9067	mcontextAssign	o9626	mcontextAppend	o10256	mcontextPrepend	o10875	mcontextClear	o11453	malert	o11786	mdebug	o11905	mredirect	o12366	mscript	o14325	mcall	o14784	mremove	o15205	mcreate	o15788	minsert	o16621	minsertAfter	o17205	mcreateInput	o17772	minsertInput	o18452	minsertInputAfter	o19142	msetEvent	o19718	maddEvent	o19908	maddHandler	o20506	mremoveHandler	o21063	msetFunction	o21654	mwrapFunction	o22650	mincludeScript	o23264	mincludeScriptOnce	o23975	mremoveScript	o24790	mincludeCSS	o25419	mremoveCSS	o26038	mwaitForCSS	o27084	mwaitFor	o27964	msleep	o28555	msetReturnValue	o29063	mgetContentType	o29375	mgetOutput	o29469	mprintOutput	o29840	m_sendHeaders	o30057	mgetCommandCount	o30872	mloadCommands	o31263	mabsorb	o32123	maddPluginCommand	o32578	maddCommand	o33102	m_printHeader_XML	o33354	m_printResponse_XML	o33757	m_printCommand_XML	o34325	m_printArray_XML	o35065	m_printEscapedString_XML	o37005	m_encodeArray	o39638	cxajaxCustomResponse	o40060	vsOutput	o40090	vsContentType	o40106	vsCharacterEncoding	o40130	vbOutputEntities	o40157	kxajaxCustomResponse	o40188	msetCharacterEncoding	o40526	msetOutputEntities	o40642	mclear	o40746	mappend	o40800	mabsorb	o40870	mgetContentType	o41977	mgetCharacterEncoding	o42047	mgetOutputEntities	o42129	mgetOutput	o42205	mprintOutput	o42265
+includes/direita/calendario/xajax/xajax_core/xajax_lang_de.inc.php	g$objLanguageManager	o584	g$objLanguageManager	o645
+_ADM/saudacao/bem_vindo.php	g$_SESSION	o39	g$title	o301
+empresa/servicos/emissao_aidf/visualiza-emissao_aidf.php
+_ADM/lib_PHP/thumbnail.php	fErrorImage	o750	g$maxw	o780	fthumbnail	o1354	g$_GET	o3753	g$_GET	o3766	g$_GET	o3780
+cidadao/servicos/alteracao_horario_func/alteracao_horario_func.php
+_ADM/ADMINISTRATIVO/banner/banner.php
+cidadao/servicos/sepultamento/sepultamento.php
+cidadao/servicos/certidoes/certidoes.php
+includes/direita/calendario/xajax/xajax_core/xajaxPluginManager.inc.php	cxajaxPluginManager	o596	vaRequestPlugins	o661	vaResponsePlugins	o725	vaConfigurable	o787	vaRegistrars	o844	vaProcessors	o899	vaClientScriptGenerators	o966	kxajaxPluginManager	o1118	mgetInstance	o1637	vobj	o1666	mloadPlugins	o1851	m_insertIntoArray	o2783	mregisterPlugin	o3412	mcanProcessRequest	o4926	mprocessRequest	o5476	mconfigure	o6069	mregister	o6457	mgenerateClientScript	o7389	mgetPlugin	o7736
+cidadao/servicos/inclusao_atividade/inclusao_atividade.php
+empresa/servicos/substituicao_projeto/visualiza-substituicao_projeto.php
+cidadao/servicos/futebol_campo_masc/futebol_campo_masc.php
+empresa/servicos/conservacao_vias/visualiza-conservacao_vias.php
+empresa/servicos/alinhamento_frontal/alinhamento_frontal.php
+empresa/servicos/carimbar_nota_fiscal/carimbar_nota_fiscal.php
+cidadao/servicos/reparo_iluminacao_publica/reparo_iluminacao_publica.php
+_ADM/ADMINISTRATIVO/links_acesso/inserir_links_acesso.php	g$_SESSION	o163	g$usu_id	o247	g$_SESSION	o263	g$dat_cad	o286	g$hora_cad	o319	g$lka_sec_id	o355	g$_POST	o371	g$lka_nome	o395	g$_POST	o416	g$lka_link	o439	g$_POST	o460	g$lka_status	o484	g$_POST	o500	g$sql	o527	g$result	o911	g$sql	o933	g$msg	o946	g$result	o963	g$result	o1170
+empresa/servicos/certidao_num_oficial/certidao_num_oficial.php
+empresa/servicos/carta_anuencia/visualiza-carta_anuencia.php
+empresa/servicos/indicacao_infrator/indicacao_infrator.php
+cidadao/servicos/inscricao_autonomo/inscricao_autonomo.php
+cidadao/servicos/fechamento_via/visualiza-fechamento_via.php
+empresa/servicos/certidao_negativa_iss/visualiza-certidao_negativa_iss.php
+empresa/servicos/autorizacao_conf_talao/visualiza-autorizacao_conf_talao.php
+agenda/imprime-agenda.php	g$_GET	o271	g$age_id	o291	g$_GET	o301	g$sql	o367	g$query	o431	g$sql	o453	g$msg	o466	g$linha	o478	g$query	o506	g$linha	o1076	g$linha	o1184	g$linha	o1266	g$linha	o1347	g$linha	o1445
+_ADM/includes/cabecalho/adm_meta-css-js.php	dURL	o72	g$_SERVER	o88	g$title	o479
+agenda/visualiza-agenda_16.php
+_ADM/ADMINISTRATIVO/lei_resp_fiscal/lei_resp_fiscal.php
+_ADM/ADMINISTRATIVO/links_utilidades/cad_links_utilidades.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$lku_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o655	g$title	o685	g$red	o727	g$title	o821	g$red	o865	g$sql	o954	g$query	o1030	g$sql	o1052	g$conn	o1058	g$msg	o1072	g$linha	o1084	g$query	o1112	g$red	o1579	g$linha	o1844	g$linha	o1863	g$dis	o1893	g$linha	o2107	g$linha	o2126	g$dis	o2156	g$dis	o2324	g$linha	o2385	g$linha	o2505	g$_GET	o2685	g$_GET	o2881	g$dis	o3143
+_ADM/ADMINISTRATIVO/beneficio_sec/cad_beneficio_sec.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$ben_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o661	g$title	o691	g$red	o739	g$title	o830	g$red	o880	g$sql	o966	g$query	o1039	g$sql	o1061	g$conn	o1067	g$msg	o1081	g$linha	o1093	g$query	o1121	g$red	o1582	g$dis	o1846	g$sql	o2043	g$rs	o2164	g$sql	o2182	g$row	o2302	g$rs	o2327	g$row	o2383	g$linha	o2404	g$row	o2428	g$row	o2524	g$linha	o2843	g$linha	o2864	g$dis	o2896	g$dis	o3073	g$linha	o3083	g$linha	o3102	g$dis	o3295	g$linha	o3356	g$linha	o3476	g$_GET	o3668	g$_GET	o3864	g$dis	o4126
+agenda/calendario/xajax/xajax_core/xajax_lang_nl.inc.php	g$objLanguageManager	o585	g$objLanguageManager	o646
+cidadao/servicos/demolicao/visualiza-demolicao.php
+empresa/servicos/inclusao_atividade/visualiza-inclusao_atividade.php
+includes/cabecalho/_topo_rotativo.php	ftopo_rotativo	o14
+cidadao/servicos/alistamento_militar/visualiza-alistamento_militar.php
+_ADM/ADMINISTRATIVO/relatorio_atend/relatorio_atend.php
+agenda/agenda_2.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+includes/direita/calendario/xajax/xajax_core/xajaxRequest.inc.php	dXAJAX_FORM_VALUES	o1208	dXAJAX_INPUT_VALUE	o1294	dXAJAX_CHECKED_VALUE	o1382	dXAJAX_ELEMENT_INNERHTML	o1478	dXAJAX_QUOTED_VALUE	o1577	dXAJAX_JS_VALUE	o1658	cxajaxRequest	o2094	vsName	o2177	vsQuoteCharacter	o2447	vaParameters	o2666	kxajaxRequest	o2827	museSingleQuote	o3097	museDoubleQuote	o3305	mclearParameters	o3479	maddParameter	o3813	msetParameter	o4839	mgetScript	o6492	mprintScript	o6731	cxajaxCustomRequest	o7301	exajaxRequest	vaVariables	o7383	vsScript	o7435	mxajaxCustomRequest	o7803	mclearVariables	o8078	msetVariable	o8403	mprintScript	o8529
+cidadao/servicos/certidao_com_vei_ipi/visualiza-certidao_com_vei_ipi.php
+cidadao/servicos/canalizacao_corregos/visualiza-canalizacao_corregos.php
+cidadao/servicos/inscricao_autonomo/visualiza-inscricao_autonomo.php
+_ADM/ADMINISTRATIVO/links_utilidades/editar_links_utilidades.php	g$_SESSION	o139	g$_GET	o215	g$lku_id	o233	g$_GET	o243	g$usu_id	o313	g$_SESSION	o329	g$dat_cad	o352	g$hora_cad	o385	g$lku_nome	o421	g$_POST	o440	g$lku_link	o463	g$_POST	o482	g$lku_status	o505	g$_POST	o519	g$sql	o547	g$result	o860	g$sql	o882	g$msg	o895	g$result	o914	g$result	o1124
+empresa/servicos/isencao_iptu/isencao_iptu.php
+index.php
+empresa/servicos/emissao_aidf/emissao_aidf.php
+cidadao/servicos/limpeza_bueiro/limpeza_bueiros.php
+agenda/calendario/funcoes.php	fAntes	o195	fProximo	o5054	fAgenda	o9945
+agenda/calendario/xajax/xajax_core/plugin_layer/xajaxEventPlugin.inc.php	dXAJAX_EVENT	o774	dXAJAX_EVENT_HANDLER	o852	cxajaxEventPlugin	o1160	exajaxRequestPlugin	vaEvents	o1242	vsXajaxPrefix	o1294	vsEventPrefix	o1352	vsDefer	o1403	vbDeferScriptGeneration	o1421	vsRequestedEvent	o1491	mxajaxEventPlugin	o1561	mconfigure	o1986	mregister	o2828	mgenerateClientScript	o3848	mcanProcessRequest	o4419	mprocessRequest	o4573	g$objPluginManager	o5076	g$objPluginManager	o5133
+cidadao/servicos/futsal/futsal.php
+cidadao/servicos/indicacao_infrator/indicacao_infrator.php
+agenda/agenda_16.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+_ADM/ADMINISTRATIVO/agenda/inserir_agenda.php	g$_SESSION	o235	g$usu_id	o319	g$_SESSION	o335	g$dat_cad	o358	g$hora_cad	o391	g$age_img	o427	g$_FILES	o447	g$age_titulo	o478	g$_POST	o503	g$age_data_evento	o528	g$_POST	o553	g$age_hora_evento	o583	g$_POST	o608	g$age_local_evento	o639	g$_POST	o664	g$age_desc_evento	o696	g$_POST	o721	g$age_status	o752	g$_POST	o777	g$tiposPermitidos	o900	g$altura_min	o1066	g$altura_max	o1086	g$largura_min	o1109	g$largura_max	o1129	g$tamanhoPermitido	o1154	g$dimensoes	o1198	g$_FILES	o1231	g$arqName	o1266	g$_FILES	o1286	g$arqType	o1316	g$_FILES	o1336	g$arqSize	o1366	g$_FILES	o1386	g$arqTemp	o1416	g$_FILES	o1436	g$arqError	o1470	g$_FILES	o1490	g$msg	o1601	g$arqType	o1657	g$tiposPermitidos	o1667	g$msg	o1703	g$arqSize	o1791	g$tamanhoPermitido	o1802	g$msg	o1828	g$dimensoes	o1930	g$largura_max	o1946	g$msg	o1967	g$largura_max	o2019	g$dimensoes	o2082	g$altura_max	o2098	g$msg	o2118	g$altura_max	o2167	g$dimensoes	o2227	g$largura_min	o2243	g$msg	o2267	g$largura_min	o2314	g$dimensoes	o2373	g$altura_min	o2389	g$msg	o2412	g$altura_min	o2458	g$msg	o2498	g$sql	o2578	g$result	o3151	g$sql	o3174	g$msg	o3187	g$id_atual	o3233	g$pasta	o3275	g$id_atual	o3319	g$pasta	o3345	g$arqTemp	o3384	g$pasta	o3394	g$age_img	o3403	g$result	o3425	g$result	o3636
+empresa/servicos/alteracao_ac/visualiza-alteracao_ac.php
+cidadao/servicos/alistamento_militar/alistamento_militar.php
+cidadao/servicos/certidao_num_oficial/visualiza-certidao_num_oficial.php
+empresa/servicos/certidoes_diversas/certidoes_diversas.php
+empresa/servicos/financas/financas.php
+paginas_erro/manutencao_inline.php
+_ADM/ADMINISTRATIVO/usuarios/alterar_senha/editar_senha.php	g$_SESSION	o140	g$usu_id	o224	g$_SESSION	o240	g$dat_cad	o263	g$hora_cad	o296	g$nova_senha	o330	g$_POST	o355	g$senha_info	o381	g$_POST	o406	g$busca	o440	g$query	o520	g$busca	o541	g$msg	o556	g$linha	o568	g$query	o595	g$senha_atual	o608	g$linha	o623	g$senha_atual	o703	g$nova_senha	o719	g$senha_atual	o879	g$senha_info	o895	g$sql	o995	g$result	o1302	g$sql	o1325	g$msg	o1338	g$result	o1359	g$result	o1699
+includes/direita/calendario/exibe-agenda.php	g$_SESSION	o136	g$xajax	o216	g$xajax	o255	g$xajax	o364	g$xajax	o401	g$xajax	o440	g$xajax	o478	g$xajax	o517	g$xajax	o562	g$xajax	o820
+agenda/calendario/xajax/xajax_core/xajaxArgumentManager.inc.php	dXAJAX_METHOD_UNKNOWN	o531	dXAJAX_METHOD_GET	o601	dXAJAX_METHOD_POST	o668	cxajaxArgumentManager	o1014	vaArgs	o1151	vbDecodeUTF8Input	o1314	vsCharacterEncoding	o1454	vnMethod	o1670	vaSequence	o1762	mconvertStringToBool	o1787	margumentStripSlashes	o2069	margumentDecodeXML	o2202	margumentDecodeUTF8_iconv	o5394	margumentDecodeUTF8_mb_convert_encoding	o5903	margumentDecodeUTF8_utf8_decode	o6455	kxajaxArgumentManager	o7110	mgetInstance	o8731	vobj	o8760	mconfigure	o9202	mgetRequestMethod	o9588	mprocess	o9786
+empresa/servicos.php
+agenda/calendario/xajax/xajax_core/plugin_layer/xajaxScriptPlugin.inc.php	cxajaxScriptPlugin	o788	exajaxRequestPlugin	vsRequest	o873	vsHash	o920	vsRequestURI	o970	vbDeferScriptGeneration	o1038	vbValidateHash	o1108	vbWorking	o1164	mxajaxScriptPlugin	o1448	mconfigure	o2480	mgenerateClientScript	o3204	mcanProcessRequest	o4453	m_getSections	o4531	mprocessRequest	o5821	g$objPluginManager	o6862	g$objPluginManager	o6919
+empresa/servicos/diretrizes_desdobro/diretrizes_desdobro.php
+agenda/agenda_13.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+empresa/servicos/certidoes/certidoes.php
+cidadao/servicos/carta_anuencia/carta_anuencia.php
+cidadao/servicos/certidoes/visualiza-certidoes.php
+agenda/calendario/xajax/xajax_core/plugin_layer/support/xajaxCallableObject.inc.php	cxajaxCallableObject	o776	vobj	o874	vaConfiguration	o1213	kxajaxCallableObject	o1395	mgetName	o1635	mconfigure	o1962	mgenerateRequests	o2613	mgenerateClientScript	o3436	misClass	o4864	mhasMethod	o5277	mcall	o5657
+_ADM/ADMINISTRATIVO/galeria/galeria.php
+cipa/visualiza-cipa.php
+empresa/servicos/fechamento_via/fechamento_via.php
+cidadao/servicos/emissao_aidf/visualiza-emissao_aidf.php
+cidadao/servicos/desdobro_desmembramento/desdobro.php
+includes/direita/calendario/xajax/xajax_core/xajaxArgumentManager.inc.php	dXAJAX_METHOD_UNKNOWN	o531	dXAJAX_METHOD_GET	o601	dXAJAX_METHOD_POST	o668	cxajaxArgumentManager	o1014	vaArgs	o1151	vbDecodeUTF8Input	o1314	vsCharacterEncoding	o1454	vnMethod	o1670	vaSequence	o1762	mconvertStringToBool	o1787	margumentStripSlashes	o2069	margumentDecodeXML	o2202	margumentDecodeUTF8_iconv	o5394	margumentDecodeUTF8_mb_convert_encoding	o5903	margumentDecodeUTF8_utf8_decode	o6455	kxajaxArgumentManager	o7110	mgetInstance	o8731	vobj	o8760	mconfigure	o9202	mgetRequestMethod	o9588	mprocess	o9786
+_ADM/ADMINISTRATIVO/noticias/cad_noticias.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$not_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o644	g$title	o674	g$red	o705	g$title	o793	g$red	o827	g$sql	o908	g$query	o976	g$sql	o998	g$conn	o1004	g$msg	o1018	g$linha	o1030	g$query	o1058	g$thumbnail	o1332	g$red	o1682	g$dis	o1992	g$sql	o2127	g$rs	o2225	g$sql	o2243	g$row	o2317	g$rs	o2342	g$row	o2375	g$linha	o2396	g$row	o2420	g$row	o2493	g$dis	o2660	g$linha	o2716	g$linha	o2835	g$linha	o2948	g$linha	o3061	g$linha	o3174	g$linha	o3287	g$linha	o3400	g$linha	o3513	g$linha	o3626	g$linha	o3739	g$linha	o3854	g$linha	o3969	g$linha	o4084	g$linha	o4199	g$linha	o4314	g$linha	o4429	g$linha	o4544	g$linha	o4659	g$_GET	o4884	g$linha	o4980	g$linha	o4998	g$linha	o5144	g$linha	o5162	g$dis	o5191	g$not_id	o5260	g$thumbnail	o5321	g$not_id	o5336	g$linha	o5349	g$linha	o5705	g$linha	o5726	g$dis	o5758	g$linha	o5997	g$linha	o6022	g$dis	o6058	g$dis	o6227	g$linha	o6237	g$linha	o6261	g$dis	o6424	g$linha	o6478	g$linha	o6576	g$dis	o6769	g$linha	o6827	g$linha	o6934	g$_GET	o7140	g$_GET	o7154	g$_GET	o7265	g$_GET	o7429	g$dis	o7643
+empresa/servicos/fechamento_via/visualiza-fechamento_via.php
+cidadao/servicos/relacao_industrias/relacao_industrias.php
+empresa/servicos/cascalhar_ruas/visualiza-cascalhar_ruas.php
+empresa/servicos/certificado_vistoria/certificado_vistoria.php
+cidadao/servicos/certidoes_diversas/visualiza-certidoes_diversas.php
+_ADM/ADMINISTRATIVO/links_utilidades/listar_links_utilidades.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o564	g$_SERVER	o577	g$max_pag	o642	g$pag_ini	o660	g$_GET	o691	g$pag_ini	o708	g$_GET	o719	g$row_list	o742	g$pag_ini	o754	g$max_pag	o765	g$sql	o782	g$sql_limit	o847	g$sql	o887	g$row_list	o893	g$max_pag	o904	g$query	o922	g$sql_limit	o943	g$conn	o954	g$msg	o968	g$_GET	o1001	g$tot	o1022	g$_GET	o1029	g$insc_geral	o1059	g$sql	o1085	g$tot	o1096	g$insc_geral	o1118	g$tot_pag	o1144	g$tot	o1160	g$max_pag	o1165	g$lista_insc	o1185	g$_SERVER	o1217	g$params	o1250	g$_SERVER	o1273	g$newParams	o1304	g$params	o1343	g$param	o1354	g$param	o1381	g$param	o1416	g$newParams	o1460	g$param	o1472	g$newParams	o1508	g$lista_insc	o1533	g$newParams	o1579	g$lista_insc	o1607	g$tot	o1642	g$lista_insc	o1648	g$query	o1845	g$title	o2030	g$row	o2340	g$query	o2365	g$row	o2501	g$row	o2620	g$row	o2690	g$row	o2762	g$row	o2875	g$pag_atual	o3247	g$pag_ini	o3266	g$lista_insc	o3281	g$row_list	o3512	g$row_list	o3540	g$max_pag	o3552	g$tot	o3562	g$tot	o3582	g$pag_atual	o3748	g$tot_pag	o3764	g$pag_ini	o3774	g$lista_insc	o3789
+cidadao/servicos/alinhamento_frontal/alinhamento_frontal.php
+_ADM/ADMINISTRATIVO/concurso_publico/concurso_publico.php
+_ADM/ADMINISTRATIVO/agenda/editar_agenda.php	g$_SESSION	o210	g$_GET	o286	g$age_id	o304	g$_GET	o314	g$usu_id	o383	g$_SESSION	o399	g$dat_cad	o422	g$hora_cad	o455	g$age_img	o491	g$_FILES	o511	g$age_img_db	o541	g$_POST	o561	g$age_titulo	o586	g$_POST	o611	g$age_data_evento	o636	g$_POST	o661	g$age_hora_evento	o691	g$_POST	o716	g$age_local_evento	o747	g$_POST	o772	g$age_desc_evento	o804	g$_POST	o829	g$age_status	o860	g$_POST	o885	g$tiposPermitidos	o1007	g$altura_min	o1173	g$altura_max	o1193	g$largura_min	o1216	g$largura_max	o1236	g$tamanhoPermitido	o1261	g$dimensoes	o1305	g$_FILES	o1338	g$arqName	o1373	g$_FILES	o1393	g$arqType	o1423	g$_FILES	o1443	g$arqSize	o1473	g$_FILES	o1493	g$arqTemp	o1523	g$_FILES	o1543	g$arqError	o1577	g$_FILES	o1597	g$age_img	o1750	g$sql	o1769	g$msg	o2259	g$arqType	o2319	g$tiposPermitidos	o2329	g$msg	o2367	g$arqSize	o2459	g$tamanhoPermitido	o2470	g$msg	o2498	g$dimensoes	o2604	g$largura_max	o2620	g$msg	o2643	g$largura_max	o2695	g$dimensoes	o2762	g$altura_max	o2778	g$msg	o2800	g$altura_max	o2849	g$dimensoes	o2913	g$largura_min	o2929	g$msg	o2952	g$largura_min	o2999	g$dimensoes	o3062	g$altura_min	o3078	g$msg	o3100	g$altura_min	o3146	g$msg	o3191	g$pasta	o3339	g$age_id	o3383	g$pasta	o3512	g$age_img_db	o3519	g$pasta	o3549	g$arqTemp	o3589	g$pasta	o3599	g$age_img	o3608	g$sql	o3630	g$result	o4230	g$sql	o4253	g$msg	o4266	g$result	o4284	g$result	o4486
+_ADM/ADMINISTRATIVO/atribuicao_sec/listar_atribuicao_sec.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o571	g$_SERVER	o584	g$max_pag	o649	g$pag_ini	o667	g$_GET	o698	g$pag_ini	o715	g$_GET	o726	g$row_list	o749	g$pag_ini	o761	g$max_pag	o772	g$sql	o789	g$sql_limit	o961	g$sql	o1001	g$row_list	o1007	g$max_pag	o1018	g$query	o1036	g$sql_limit	o1058	g$conn	o1069	g$msg	o1083	g$_GET	o1116	g$tot	o1137	g$_GET	o1144	g$insc_geral	o1174	g$sql	o1200	g$tot	o1211	g$insc_geral	o1233	g$tot_pag	o1259	g$tot	o1275	g$max_pag	o1280	g$lista_insc	o1300	g$_SERVER	o1332	g$params	o1365	g$_SERVER	o1388	g$newParams	o1419	g$params	o1458	g$param	o1469	g$param	o1496	g$param	o1531	g$newParams	o1575	g$param	o1587	g$newParams	o1623	g$lista_insc	o1648	g$newParams	o1694	g$lista_insc	o1722	g$tot	o1757	g$lista_insc	o1763	g$query	o1960	g$title	o2153	g$row	o2471	g$query	o2496	g$row	o2630	g$row	o2749	g$row	o2819	g$row	o2893	g$row	o3004	g$pag_atual	o3376	g$pag_ini	o3395	g$lista_insc	o3410	g$row_list	o3641	g$row_list	o3669	g$max_pag	o3681	g$tot	o3691	g$tot	o3711	g$pag_atual	o3877	g$tot_pag	o3893	g$pag_ini	o3903	g$lista_insc	o3918
+cidadao/servicos/rebaixamento_guia/rebaixamento_guia.php
+cidadao/servicos/bastequebol/bastequebol.php
+empresa/servicos/carimbar_nota_fiscal/visualiza-carimbar_nota_fiscal.php
+empresa/servicos/microfilm_multa/microfilm_multa.php
+empresa/servicos/sepultamento/visualiza-sepultamento.php
+cidadao/servicos/autorizacao_conf_talao/autorizacao_conf_talao.php
+acessibilidade/visualiza-acessibilidade.php
+empresa/servicos/diretrizes_movim_terra/diretrizes_movim_terra.php
+agenda/visualiza-agenda_9.php
+includes/direita/calendario/funcoes.php	fAntes	o189	fProximo	o5048	fAgenda	o9939
+agenda/visualiza-agenda_15.php
+cidadao/servicos/sepultamento/visualiza-sepultamento.php
+cidadao/servicos/inscricao_eventual/visualiza-inscricao_eventual.php
+cidadao/servicos/certidao_com_vei_icms/certidao_com_vei_icms.php
+empresa/servicos/renovacao_ccm/visualiza-renovacao_ccm.php
+agenda/visualiza-agenda_3.php
+_ADM/ADMINISTRATIVO/links_acesso/editar_links_acesso.php	g$_SESSION	o139	g$_GET	o215	g$lka_id	o233	g$_GET	o243	g$usu_id	o312	g$_SESSION	o328	g$dat_cad	o351	g$hora_cad	o384	g$lka_sec_id	o420	g$_POST	o436	g$lka_nome	o460	g$_POST	o481	g$lka_link	o504	g$_POST	o525	g$lka_status	o549	g$_POST	o565	g$sql	o593	g$result	o940	g$sql	o962	g$msg	o975	g$result	o994	g$result	o1201
+_ADM/ADMINISTRATIVO/topo_rotativo/topo_rotativo.php
+empresa/servicos/limpeza_bueiro/visualiza-limpeza_bueiros.php
+empresa/servicos/desdobro_desmembramento/desdobro.php
+_ADM/ADMINISTRATIVO/imprensa_oficial/imprensa_oficial.php
+empresa/servicos/alteracao_horario_func/visualiza-alteracao_horario_func.php
+empresa/servicos/talao_nf/visualiza-talao_nf.php
+cidadao/servicos/abertura_via/abertura_via.php
+empresa/servicos/relacao_industrias/relacao_industrias.php
+cidadao/servicos/limpeza_calcadas/visualiza-limpeza_calcadas.php
+cidadao/servicos/voleibol/voleibol.php
+agenda/agenda_11.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+includes/cabecalho/_meta-css-js.php	dURL	o63	g$_SERVER	o79
+cidadao/servicos/2via_carne_iptu/2via_carne_iptu.php
+cidadao/servicos/alteracao_insc_munic/alteracao_insc_munic.php
+cidadao/servicos/carta_anuencia/visualiza-carta_anuencia.php
+empresa/servicos/certidao_negativa_iss/certidao_negativa_iss.php
+includes/direita/calendario/xajax/xajax_core/xajaxLanguageManager.inc.php	cxajaxLanguageManager	o909	vaMessages	o1025	vsLanguage	o1119	kxajaxLanguageManager	o1268	mgetInstance	o5740	vobj	o5769	mconfigure	o6158	mregister	o6753	mgetText	o7141
+empresa/servicos/renovacao_ccm/renovacao_ccm.php
+cidadao/servicos/demolicao/demolicao.php
+cidadao/servicos/certidao_num_oficial/certidao_num_oficial.php
+cidadao/servicos/2via_insc_munic/2via_insc_munic.php
+cidadao/servicos/revisao_taxas/visualiza-revisao_taxas.php
+censo2010/censo2010.php	g$_GET	o69	g$age_id	o89	g$_GET	o99
+empresa/servicos/sepultamento/sepultamento.php
+agenda/calendario/xajax/xajax_core/xajaxResponseManager.inc.php	cxajaxResponseManager	o775	vobjResponse	o961	vsCharacterEncoding	o1024	vbOutputEntities	o1092	vaDebugMessages	o1154	kxajaxResponseManager	o1306	mgetInstance	o1583	vobj	o1612	mconfigure	o2022	mclear	o2684	mappend	o3433	mdebug	o4938	msend	o5142	mgetCharacterEncoding	o5785	mgetOutputEntities	o6270
+empresa/servicos/guias_sarjetas/guias_sarjetas.php
+empresa/servicos/inscricao_eventual/visualiza-inscricao_eventual.php
+_ADM/ADMINISTRATIVO/noticias/listar_noticias.php	g$_SESSION	o140	g$title	o414	g$thumbnail	o603	g$pag_atual	o707	g$_SERVER	o720	g$max_pag	o785	g$pag_ini	o803	g$_GET	o834	g$pag_ini	o851	g$_GET	o862	g$row_list	o885	g$pag_ini	o897	g$max_pag	o908	g$sql	o925	g$sql_limit	o1077	g$sql	o1117	g$row_list	o1123	g$max_pag	o1134	g$query	o1152	g$sql_limit	o1174	g$conn	o1185	g$msg	o1199	g$_GET	o1232	g$tot	o1253	g$_GET	o1260	g$insc_geral	o1290	g$sql	o1316	g$tot	o1327	g$insc_geral	o1349	g$tot_pag	o1375	g$tot	o1391	g$max_pag	o1396	g$lista_insc	o1416	g$_SERVER	o1448	g$params	o1481	g$_SERVER	o1504	g$newParams	o1535	g$params	o1574	g$param	o1585	g$param	o1612	g$param	o1647	g$newParams	o1691	g$param	o1703	g$newParams	o1739	g$lista_insc	o1764	g$newParams	o1810	g$lista_insc	o1838	g$tot	o1873	g$lista_insc	o1879	g$query	o2096	g$title	o2304	g$row	o2791	g$query	o2816	g$row	o2962	g$row	o3377	g$row	o3489	g$row	o3589	g$row	o3692	g$row	o3796	g$thumbnail	o3923	g$row	o3938	g$row	o3958	g$row	o4121	g$pag_atual	o4537	g$pag_ini	o4556	g$lista_insc	o4571	g$row_list	o4825	g$row_list	o4853	g$max_pag	o4865	g$tot	o4875	g$tot	o4895	g$pag_atual	o5073	g$tot_pag	o5089	g$pag_ini	o5099	g$lista_insc	o5114
+concurso-publico/visualiza-concurso-publico.php
+agenda/visualiza-agenda_17.php
+empresa/servicos/alteracao_horario_func/alteracao_horario_func.php
+empresa/servicos/regularizacao_resid/visualiza-regularizacao_resid.php
+cidadao/servicos/conservacao_vias/conservacao_vias.php
+empresa/servicos/aprovacao_const_resid/aprovacao_const_resid.php
+includes/direita/calendario/xajax/xajax_core/plugin_layer/xajaxDefaultIncludePlugin.inc.php	cxajaxIncludeClientScriptPlugin	o719	exajaxRequestPlugin	vsJsURI	o787	vaJsFiles	o802	vsDefer	o819	vsRequestURI	o834	vsStatusMessages	o854	vsWaitCursor	o878	vsVersion	o898	vsDefaultMode	o915	vsDefaultMethod	o936	vbDebug	o959	vbVerboseDebug	o974	vnScriptLoadTimeout	o996	vbUseUncompressedScripts	o1023	vbDeferScriptGeneration	o1055	vsLanguage	o1086	vnResponseQueueSize	o1104	mxajaxIncludeClientScriptPlugin	o1137	mconfigure	o1784	mgenerateClientScript	o3728	mgetJavascriptConfig	o4380	mprintJavascriptConfig	o4610	mgetJavascriptInclude	o6352	mprintJavascriptInclude	o6586	m_getScriptFilename	o8988	g$objPluginManager	o9256	g$objPluginManager	o9313
+censo2010/paginas_antigas/inscricoes_censo2010.php	g$_GET	o69	g$age_id	o89	g$_GET	o99
+agenda/visualiza-agenda_13.php
+_ADM/ADMINISTRATIVO/beneficio_sec/listar_beneficio_sec.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o570	g$_SERVER	o583	g$max_pag	o648	g$pag_ini	o666	g$_GET	o697	g$pag_ini	o714	g$_GET	o725	g$row_list	o748	g$pag_ini	o760	g$max_pag	o771	g$sql	o788	g$sql_limit	o959	g$sql	o999	g$row_list	o1005	g$max_pag	o1016	g$query	o1034	g$sql_limit	o1055	g$conn	o1066	g$msg	o1080	g$_GET	o1113	g$tot	o1134	g$_GET	o1141	g$insc_geral	o1171	g$sql	o1197	g$tot	o1208	g$insc_geral	o1230	g$tot_pag	o1256	g$tot	o1272	g$max_pag	o1277	g$lista_insc	o1297	g$_SERVER	o1329	g$params	o1362	g$_SERVER	o1385	g$newParams	o1416	g$params	o1455	g$param	o1466	g$param	o1493	g$param	o1528	g$newParams	o1572	g$param	o1584	g$newParams	o1620	g$lista_insc	o1645	g$newParams	o1691	g$lista_insc	o1719	g$tot	o1754	g$lista_insc	o1760	g$query	o1957	g$title	o2149	g$row	o2467	g$query	o2492	g$row	o2625	g$row	o2744	g$row	o2814	g$row	o2888	g$row	o2998	g$pag_atual	o3370	g$pag_ini	o3389	g$lista_insc	o3404	g$row_list	o3635	g$row_list	o3663	g$max_pag	o3675	g$tot	o3685	g$tot	o3705	g$pag_atual	o3871	g$tot_pag	o3887	g$pag_ini	o3897	g$lista_insc	o3912
+agenda/calendario/xajax/xajax_core/plugin_layer/xajaxFunctionPlugin.inc.php	dXAJAX_FUNCTION	o742	cxajaxFunctionPlugin	o1000	exajaxRequestPlugin	vaFunctions	o1199	vsXajaxPrefix	o1363	vsDefer	o1547	vbDeferScriptGeneration	o1565	vsRequestedFunction	o1886	mxajaxFunctionPlugin	o2229	mconfigure	o2698	mregister	o3340	mgenerateClientScript	o4181	mcanProcessRequest	o4924	mprocessRequest	o5299	g$objPluginManager	o5805	g$objPluginManager	o5862
+cidadao/servicos/diretrizes_desdobro/visualiza-diretrizes_desdobro.php
+cidadao/servicos/comunicacao_extravio/visualiza-comunicacao_extravio.php
+coleta_seletiva/visualiza-coleta_seletiva.php
+cidadao/servicos/limpeza_bueiro/visualiza-limpeza_bueiros.php
+empresa/servicos/unificacao_area/unificacao_area.php
+agenda/visualiza-agenda.php
+_ADM/ADMINISTRATIVO/usuarios/cad_usu.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$id	o413	g$_GET	o419	g$_GET	o525	g$dis	o552	g$title	o585	g$_GET	o632	g$title	o662	g$red	o692	g$title	o765	g$red	o801	g$sql	o877	g$id	o1029	g$query	o1042	g$sql	o1064	g$msg	o1077	g$linha	o1089	g$query	o1117	g$red	o1565	g$dis	o1776	g$sql	o1936	g$rs	o2034	g$sql	o2052	g$row	o2128	g$rs	o2153	g$row	o2202	g$linha	o2223	g$row	o2243	g$row	o2317	g$linha	o2597	g$linha	o2616	g$dis	o2646	g$linha	o2846	g$linha	o2866	g$dis	o2897	g$dis	o3194	g$_GET	o3427	g$_GET	o3464	g$dis	o3560	g$dis	o3711	g$linha	o3766	g$linha	o3882	g$_GET	o4101	g$_GET	o4322	g$_GET	o4518	g$dis	o4780
+agenda/calendario/xajax/xajax_core/plugin_layer/support/xajaxEvent.inc.php	cxajaxEvent	o784	vsName	o862	vaConfiguration	o1019	vaHandlers	o1231	kxajaxEvent	o1348	mgetName	o1606	mconfigure	o1820	maddHandler	o2063	mgenerateRequest	o2558	mgenerateClientScript	o2916	mfire	o3656
+acessibilidade/acessibilidade.php	g$_GET	o69	g$age_id	o89	g$_GET	o99
+cidadao/servicos/atualizacao_cadastral/visualiza-atualizacao_cadastral.php
+empresa/servicos/exclusao_atividade/visualiza-exclusao_atividade.php
+empresa/servicos/financas/visualiza-financas.php
+empresa/servicos/renovacao_alvara/visualiza-renovacao_alvara.php
+cidadao/servicos/piscina/piscina.php
+cidadao/servicos/alteracao_insc_munic/visualiza-alteracao_insc_munic.php
+empresa/servicos/exumacao/visualiza-exumacao.php
+cidadao/servicos/diretrizes_movim_terra/visualiza-diretrizes_movim_terra.php
+galeria/subgaleria/carros_antigos/visualiza-galeria_img.php	g$thumbnail	o67	g$thumbnail	o1640	g$thumbnail	o1710	g$thumbnail	o1894	g$thumbnail	o1964	g$thumbnail	o2148	g$thumbnail	o2218	g$thumbnail	o2402	g$thumbnail	o2472	g$thumbnail	o2657	g$thumbnail	o2727	g$thumbnail	o2923	g$thumbnail	o2993	g$thumbnail	o3177	g$thumbnail	o3247	g$thumbnail	o3431	g$thumbnail	o3501	g$thumbnail	o3685	g$thumbnail	o3755	g$thumbnail	o3940	g$thumbnail	o4011	g$thumbnail	o4196	g$thumbnail	o4267	g$thumbnail	o4452	g$thumbnail	o4523	g$thumbnail	o4708	g$thumbnail	o4779	g$thumbnail	o4964	g$thumbnail	o5035	g$thumbnail	o5221	g$thumbnail	o5292	g$thumbnail	o5477	g$thumbnail	o5548	g$thumbnail	o5733	g$thumbnail	o5804	g$thumbnail	o5989	g$thumbnail	o6060	g$thumbnail	o6245	g$thumbnail	o6316	g$thumbnail	o6502	g$thumbnail	o6573	g$thumbnail	o6758	g$thumbnail	o6829	g$thumbnail	o7014	g$thumbnail	o7085	g$thumbnail	o7270	g$thumbnail	o7341	g$thumbnail	o7526	g$thumbnail	o7597	g$thumbnail	o7783	g$thumbnail	o7854	g$thumbnail	o8039	g$thumbnail	o8110	g$thumbnail	o8295	g$thumbnail	o8366	g$thumbnail	o8551	g$thumbnail	o8622	g$thumbnail	o8807	g$thumbnail	o8878	g$thumbnail	o9064	g$thumbnail	o9135	g$thumbnail	o9320	g$thumbnail	o9391	g$thumbnail	o9578	g$thumbnail	o9649	g$thumbnail	o9836	g$thumbnail	o9907	g$thumbnail	o10094	g$thumbnail	o10165	g$thumbnail	o10353	g$thumbnail	o10424	g$thumbnail	o10611	g$thumbnail	o10682	g$thumbnail	o10869	g$thumbnail	o10940	g$thumbnail	o11127	g$thumbnail	o11198	g$thumbnail	o11383	g$thumbnail	o11454	g$thumbnail	o11642	g$thumbnail	o11713	g$thumbnail	o11900	g$thumbnail	o11971	g$thumbnail	o12170	g$thumbnail	o12241	g$thumbnail	o12428	g$thumbnail	o12499	g$thumbnail	o12684	g$thumbnail	o12755	g$thumbnail	o12940	g$thumbnail	o13011	g$thumbnail	o13197	g$thumbnail	o13268
+agenda/visualiza-agenda_8.php
+empresa/servicos/2via_carne_iptu/visualiza-2via_carne_iptu.php
+destaque_galeria/visualiza-destaque_galeria.php	g$thumb_5	o65	g$thumb_9	o157	g$thumb_2	o249	g$thumb_4	o341	g$thumb_7	o433	g$thumb_1	o525	g$thumb_3	o617	g$thumb_6	o709	g$thumb_8	o801	g$thumb_1	o1127	g$thumb_1	o1254	g$thumb_2	o1710	g$thumb_2	o1836	g$thumb_3	o2301	g$thumb_3	o2450	g$thumb_4	o2942	g$thumb_4	o3076	g$thumb_5	o3561	g$thumb_5	o3693	g$thumb_6	o4202	g$thumb_6	o4336	g$thumb_7	o4807	g$thumb_7	o4939	g$thumb_8	o5411	g$thumb_8	o5546	g$thumb_9	o6019	g$thumb_9	o6163
+_ADM/ADMINISTRATIVO/agenda/cad_agenda.php	g$_SESSION	o136	g$v	o445	g$_GET	o469	g$age_id	o489	g$_GET	o499	g$_GET	o607	g$dis	o634	g$title	o667	g$_GET	o713	g$title	o743	g$red	o772	g$title	o858	g$red	o890	g$sql	o969	g$query	o1035	g$sql	o1057	g$conn	o1063	g$msg	o1077	g$linha	o1089	g$query	o1117	g$thumbnail	o1391	g$red	o1745	g$_GET	o2088	g$linha	o2187	g$linha	o2205	g$linha	o2351	g$linha	o2369	g$dis	o2398	g$age_id	o2469	g$thumbnail	o2531	g$age_id	o2546	g$linha	o2559	g$linha	o2855	g$linha	o2876	g$dis	o2908	g$linha	o3125	g$linha	o3151	g$dis	o3188	g$linha	o3404	g$linha	o3430	g$dis	o3467	g$linha	o3702	g$linha	o3729	g$dis	o3767	g$dis	o3974	g$linha	o3984	g$linha	o4010	g$dis	o4183	g$linha	o4241	g$linha	o4348	g$_GET	o4554	g$_GET	o4568	g$_GET	o4716	g$_GET	o4912	g$dis	o5174
+_ADM/ADMINISTRATIVO/importante/listar_importante.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o555	g$_SERVER	o568	g$max_pag	o633	g$pag_ini	o651	g$_GET	o682	g$pag_ini	o699	g$_GET	o710	g$row_list	o733	g$pag_ini	o745	g$max_pag	o756	g$sql	o773	g$sql_limit	o932	g$sql	o972	g$row_list	o978	g$max_pag	o989	g$query	o1007	g$sql_limit	o1029	g$conn	o1040	g$msg	o1054	g$_GET	o1087	g$tot	o1108	g$_GET	o1115	g$insc_geral	o1145	g$sql	o1171	g$tot	o1182	g$insc_geral	o1204	g$tot_pag	o1230	g$tot	o1246	g$max_pag	o1251	g$lista_insc	o1271	g$_SERVER	o1303	g$params	o1336	g$_SERVER	o1359	g$newParams	o1390	g$params	o1429	g$param	o1440	g$param	o1467	g$param	o1502	g$newParams	o1546	g$param	o1558	g$newParams	o1594	g$lista_insc	o1619	g$newParams	o1665	g$lista_insc	o1693	g$tot	o1728	g$lista_insc	o1734	g$query	o1931	g$title	o2114	g$row	o2459	g$query	o2484	g$row	o2614	g$row	o2775	g$row	o3084	g$row	o3154	g$row	o3261	g$pag_atual	o3633	g$pag_ini	o3652	g$lista_insc	o3667	g$row_list	o3898	g$row_list	o3926	g$max_pag	o3938	g$tot	o3948	g$tot	o3968	g$pag_atual	o4134	g$tot_pag	o4150	g$pag_ini	o4160	g$lista_insc	o4175
+noticia/busca_noticias/arquivo_noticias.php
+_ADM/menu/menu.php
+empresa/servicos/limpeza_vias_publicas/limpeza_vias_publicas.php
+agenda/visualiza-agenda_4.php
+empresa/servicos/certidao_com_vei_ipi/certidao_com_vei_ipi.php
+includes/cabecalho/_acessibilidade.php	g$cidade	o120	g$pais	o148	g$idioma	o173	g$googleWeather	o228	g$apiUrl	o338	g$googleWeather	o348	g$cidade	o385	g$pais	o408	g$idioma	o422	g$resultado	o460	g$apiUrl	o491	g$xml	o558	g$resultado	o599	g$atual	o665	g$xml	o674	g$atual	o1478	g$meteorologia	o1551	g$meteorologia	o1659	g$meteorologia	o1767	g$meteorologia	o1885	g$meteorologia	o2021	g$meteorologia	o2151	g$meteorologia	o2267	g$meteorologia	o2386	g$meteorologia	o2505	g$meteorologia	o2630	g$meteorologia	o2747	g$meteorologia	o2883	g$meteorologia	o3182	g$txt_tempo	o3219	g$atual	o3243	g$atual	o3287	g$txt_tempo	o3337	g$atual	o3385	g$txt_tempo	o3421
+cidadao/servicos/iluminacao_publica/visualiza-iluminacao_publica.php
+cidadao/servicos/academias/visualiza-academias.php
+empresa/servicos/aprovacao_desdobro/aprovacao_desdobro.php
+cidadao/servicos/inclusao_atividade/visualiza-inclusao_atividade.php
+_ADM/ADMINISTRATIVO/fotos/fotos.php
+cidadao/servicos/2via_carne_emol_cemi/2via_carne_emol_cemi.php
+_ADM/ADMINISTRATIVO/processo_seletivo/processo_seletivo.php
+cidadao/servicos/inscricao_ambulante/inscricao_ambulante.php
+_ADM/ADMINISTRATIVO/imprensa_oficial/editar_imprensa_oficial.php	g$_SESSION	o139	g$_GET	o217	g$imp_id	o235	g$_GET	o245	g$tit_sql	o305	g$_POST	o367	g$tit_result	o397	g$tit_sql	o424	g$msg	o441	g$ti_array	o454	g$tit_result	o486	g$usu_id	o553	g$_SESSION	o569	g$dat_cad	o592	g$hora_cad	o625	g$imp_not_id	o661	g$_POST	o680	g$imp_titulo_not	o708	g$titulo_not	o727	g$imp_seq	o756	g$_POST	o772	g$imp_status	o793	g$_POST	o812	g$sql	o841	g$result	o1205	g$sql	o1228	g$msg	o1241	g$result	o1259	g$result	o1463
+empresa/servicos/certificado_vistoria/visualiza-certificado_vistoria.php
+cidadao/servicos/inscricao_ambulante/visualiza-inscricao_ambulante.php
+galeria/galeria.php
+cidadao/servicos/guias_sarjetas/guias_sarjetas.php
+cidadao/servicos/2via_carne_emol_cemi/visualiza-2via_carne_emol_cemi.php
+agenda/agenda_15.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+empresa/servicos/inscricao_ambulante/inscricao_ambulante.php
+empresa/servicos/comunicacao_extravio/comunicacao_extravio.php
+_ADM/ADMINISTRATIVO/secretarias/listar_secretarias.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o556	g$_SERVER	o569	g$max_pag	o634	g$pag_ini	o652	g$_GET	o683	g$pag_ini	o700	g$_GET	o711	g$row_list	o734	g$pag_ini	o746	g$max_pag	o757	g$sql	o774	g$sql_limit	o834	g$sql	o874	g$row_list	o880	g$max_pag	o891	g$query	o909	g$sql_limit	o930	g$conn	o941	g$msg	o955	g$_GET	o988	g$tot	o1009	g$_GET	o1016	g$insc_geral	o1046	g$sql	o1072	g$tot	o1083	g$insc_geral	o1105	g$tot_pag	o1131	g$tot	o1147	g$max_pag	o1152	g$lista_insc	o1172	g$_SERVER	o1204	g$params	o1237	g$_SERVER	o1260	g$newParams	o1291	g$params	o1330	g$param	o1341	g$param	o1368	g$param	o1403	g$newParams	o1447	g$param	o1459	g$newParams	o1495	g$lista_insc	o1520	g$newParams	o1566	g$lista_insc	o1594	g$tot	o1629	g$lista_insc	o1635	g$query	o1832	g$title	o2017	g$row	o2300	g$query	o2325	g$row	o2456	g$row	o2575	g$row	o2647	g$row	o2755	g$pag_atual	o3127	g$pag_ini	o3146	g$lista_insc	o3161	g$row_list	o3392	g$row_list	o3420	g$max_pag	o3432	g$tot	o3442	g$tot	o3462	g$pag_atual	o3628	g$tot_pag	o3644	g$pag_ini	o3654	g$lista_insc	o3669
+empresa/servicos/rebaixamento_guia/rebaixamento_guia.php
+empresa/servicos/atualizacao_cadastral/visualiza-atualizacao_cadastral.php
+agenda/visualiza-agenda_5.php
+empresa/servicos/inscricao_ambulante/visualiza-inscricao_ambulante.php
+destaque_galeria/destaque_galeria.php
+_ADM/ADMINISTRATIVO/rec_desp_ens/rec_desp_ens.php
+includes/direita/calendario/xajax/xajax_core/plugin_layer/xajaxCallableObjectPlugin.inc.php	dXAJAX_CALLABLE_OBJECT	o739	cxajaxCallableObjectPlugin	o932	exajaxRequestPlugin	vaCallableObjects	o1032	vsXajaxPrefix	o1093	vsDefer	o1145	vbDeferScriptGeneration	o1163	vsRequestedClass	o1233	vsRequestedMethod	o1298	mxajaxCallableObjectPlugin	o1378	mconfigure	o1979	mregister	o2487	mgenerateClientScript	o3355	mcanProcessRequest	o4079	mprocessRequest	o4291	g$objPluginManager	o4910	g$objPluginManager	o4967
+agenda/visualiza-agenda_2.php
+agenda/age_categoria/age_categoria.php	g$_GET	o72	g$age_id	o92	g$_GET	o102
+_ADM/ADMINISTRATIVO/imprensa_oficial/cad_imprensa_oficial.php	g$_SESSION	o136	g$v	o454	g$_GET	o478	g$ipo_id	o498	g$_GET	o508	g$_GET	o616	g$dis	o643	g$title	o676	g$_GET	o732	g$title	o762	g$red	o801	g$title	o895	g$red	o936	g$sql	o1025	g$query	o1101	g$sql	o1123	g$msg	o1136	g$linha	o1148	g$query	o1176	g$red	o1633	g$anos	o2168	g$value_ano	o2177	g$ano	o2189	g$value_ano	o2217	g$value_ano	o2234	g$anos	o2482	g$value_ano	o2491	g$ano	o2503	g$value_ano	o2531	g$value_ano	o2548
+noticia/noticia.php	g$_GET	o69	g$not_id	o89	g$_GET	o99
+cipa/cipa.php	g$_GET	o69	g$not_id	o89	g$_GET	o99
+empresa/servicos/vistoria_corte_poda/visualiza-vistoria_corte_poda.php
+empresa/servicos/abertura_via/abertura_via.php
+agenda/calendario/xajax/xajax_core/plugin_layer/xajaxDefaultIncludePlugin.inc.php	cxajaxIncludeClientScriptPlugin	o719	exajaxRequestPlugin	vsJsURI	o787	vaJsFiles	o802	vsDefer	o819	vsRequestURI	o834	vsStatusMessages	o854	vsWaitCursor	o878	vsVersion	o898	vsDefaultMode	o915	vsDefaultMethod	o936	vbDebug	o959	vbVerboseDebug	o974	vnScriptLoadTimeout	o996	vbUseUncompressedScripts	o1023	vbDeferScriptGeneration	o1055	vsLanguage	o1086	vnResponseQueueSize	o1104	mxajaxIncludeClientScriptPlugin	o1137	mconfigure	o1784	mgenerateClientScript	o3728	mgetJavascriptConfig	o4380	mprintJavascriptConfig	o4610	mgetJavascriptInclude	o6352	mprintJavascriptInclude	o6586	m_getScriptFilename	o8988	g$objPluginManager	o9256	g$objPluginManager	o9313
+paginas_erro/nao_encontrada.php
+agenda/agenda_17.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+empresa/servicos/cadastro_imobiliario/visualiza-cadastro_imobiliario.php
+empresa/servicos/cadastro_imobiliario/cadastro_imobiliario.php
+_ADM/ADMINISTRATIVO/imprensa_oficial/inserir_imprensa_oficial.php	g$_SESSION	o163	g$tit_sql	o238	g$_POST	o300	g$tit_result	o330	g$tit_sql	o357	g$msg	o374	g$ti_array	o387	g$tit_result	o419	g$usu_id	o486	g$_SESSION	o502	g$dat_cad	o525	g$hora_cad	o558	g$imp_not_id	o594	g$_POST	o613	g$imp_titulo_not	o641	g$titulo_not	o660	g$imp_seq	o689	g$_POST	o705	g$imp_status	o726	g$_POST	o745	g$sql	o774	g$result	o1177	g$sql	o1200	g$msg	o1213	g$result	o1230	g$result	o1435
+cidadao/servicos/acessa_sp/visualiza-acessa_sp.php
+empresa/servicos/alteracao_insc_munic/visualiza-alteracao_insc_munic.php
+agenda/agenda_12.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+cidadao/servicos/fechamento_via/fechamento_via.php
+empresa/visualiza-servicos.php
+cidadao/servicos/conservacao_vias/visualiza-conservacao_vias.php
+cidadao/servicos/aprovacao_desdobro/visualiza-aprovacao_desdobro.php
+cidadao/servicos/certidao_negativa_iss/certidao_negativa_iss.php
+_ADM/ADMINISTRATIVO/subgaleria/subgaleria.php
+cidadao/servicos/renovacao_ccm/visualiza-renovacao_ccm.php
+cidadao/servicos/limpeza_vias_publicas/limpeza_vias_publicas.php
+cidadao/servicos/renovacao_alvara/renovacao_alvara.php
+empresa/servicos/diretrizes_desdobro/visualiza-diretrizes_desdobro.php
+empresa/empresa.php
+_ADM/ADMINISTRATIVO/servicos_online/listar_servicos_online.php	g$_SESSION	o140	g$title	o414	g$pag_atual	o560	g$_SERVER	o573	g$max_pag	o638	g$pag_ini	o656	g$_GET	o687	g$pag_ini	o704	g$_GET	o715	g$row_list	o738	g$pag_ini	o750	g$max_pag	o761	g$sql	o778	g$sql_limit	o951	g$sql	o991	g$row_list	o997	g$max_pag	o1008	g$query	o1026	g$sql_limit	o1048	g$conn	o1059	g$msg	o1073	g$_GET	o1106	g$tot	o1127	g$_GET	o1134	g$insc_geral	o1164	g$sql	o1190	g$tot	o1201	g$insc_geral	o1223	g$tot_pag	o1249	g$tot	o1265	g$max_pag	o1270	g$lista_insc	o1290	g$_SERVER	o1322	g$params	o1355	g$_SERVER	o1378	g$newParams	o1409	g$params	o1448	g$param	o1459	g$param	o1486	g$param	o1521	g$newParams	o1565	g$param	o1577	g$newParams	o1613	g$lista_insc	o1638	g$newParams	o1684	g$lista_insc	o1712	g$tot	o1747	g$lista_insc	o1753	g$query	o1950	g$title	o2143	g$row	o2493	g$query	o2518	g$row	o2653	g$row	o2772	g$row	o2842	g$row	o2914	g$row	o2991	g$row	o3103	g$pag_atual	o3475	g$pag_ini	o3494	g$lista_insc	o3509	g$row_list	o3740	g$row_list	o3768	g$max_pag	o3780	g$tot	o3790	g$tot	o3810	g$pag_atual	o3976	g$tot_pag	o3992	g$pag_ini	o4002	g$lista_insc	o4017
+destaque_galeria/visualiza-destaque_galeria_BK.php	g$thumb_5	o65	g$thumb_9	o157	g$thumb_2	o249	g$thumb_4	o341	g$thumb_7	o433	g$thumb_1	o525	g$thumb_3	o617	g$thumb_6	o709	g$thumb_8	o801	g$thumb_1	o1137	g$thumb_1	o1286	g$thumb_2	o1777	g$thumb_2	o1911	g$thumb_3	o2393	g$thumb_3	o2527	g$thumb_4	o2999	g$thumb_4	o3131	g$thumb_5	o3598	g$thumb_5	o3742	g$thumb_6	o4241	g$thumb_6	o4376	g$thumb_7	o4849	g$thumb_7	o4976	g$thumb_8	o5435	g$thumb_8	o5560	g$thumb_9	o6020	g$thumb_9	o6146
+agenda/calendario/xajax/xajax_core/xajaxCall.inc.php	cxajaxCall	o667	vsFunction	o824	vsReturnValue	o1001	vaParameters	o1296	vsMode	o1421	vsRequestType	o1550	vsResponseProcessor	o1705	vsRequestURI	o1820	vsContentType	o1925	kxajaxCall	o2253	msetFunction	o2659	mclearParameters	o2921	maddParameter	o3486	maddFormValuesParameter	o3937	msetMode	o4275	msetRequestType	o4563	msetResponseProcessor	o4917	msetRequestURI	o5285	msetContentType	o5555	msetReturnValue	o5866	mgenerate	o6447
+empresa/servicos/certidao_num_oficial/visualiza-certidao_num_oficial.php
+cidadao/servicos/reforma_acresc_area/visualiza-reforma_acresc_area.php
+cidadao/servicos/certidao_negativa_iss/visualiza-certidao_negativa_iss.php
+empresa/servicos/2via_insc_munic/visualiza-2via_insc_munic.php
+cidadao/servicos/autorizacao_poda/visualiza-autorizacao_poda.php
+cidadao/servicos/academias/academias.php
+_ADM/ADMINISTRATIVO/importante/inserir_importante.php	g$_SESSION	o163	g$tit_sql	o238	g$_POST	o300	g$tit_result	o330	g$tit_sql	o357	g$msg	o374	g$ti_array	o387	g$tit_result	o419	g$usu_id	o486	g$_SESSION	o502	g$dat_cad	o525	g$hora_cad	o558	g$imp_not_id	o594	g$_POST	o613	g$imp_titulo_not	o641	g$titulo_not	o660	g$imp_seq	o689	g$_POST	o705	g$imp_status	o726	g$_POST	o745	g$sql	o774	g$result	o1177	g$sql	o1200	g$msg	o1213	g$result	o1230	g$result	o1435
+galeria/visualiza-galeria_pag2.php	g$thumbnail	o67	g$thumbnail	o329	g$thumbnail	o629	g$thumbnail	o917	g$thumbnail	o1247	g$thumbnail	o1533	g$thumbnail	o1855	g$thumbnail	o2181	g$thumbnail	o2517	g$thumbnail	o2794
+empresa/servicos/alteracao_licen_feirante/visualiza-alteracao_licen_feirante.php
+cidadao/servicos/atualizacao_cadastral/atualizacao_cadastral.php
+empresa/servicos/inscricao_autonomo/inscricao_autonomo.php
+_ADM/ADMINISTRATIVO/noticias/deletar_noticias.php	g$not_id	o143	g$_GET	o153	g$pasta	o209	g$not_id	o254	g$not_id	o284	g$not_id	o298	g$result	o319	g$not_id	o379	g$fotos	o440	g$deletar	o470	g$pasta	o494	g$deletar	o505	g$pasta	o531	g$result	o575
+_ADM/ADMINISTRATIVO/usuarios/inserir_usu.php	g$_SESSION	o200	g$usu_id	o284	g$_SESSION	o300	g$dat_cad	o323	g$hora_cad	o356	g$modulo	o392	g$_POST	o408	g$status	o432	g$_POST	o448	g$nome	o490	g$_POST	o522	g$login	o546	g$_POST	o578	g$senha	o603	g$_POST	o623	g$busca	o738	g$query	o820	g$busca	o842	g$msg	o857	g$query	o949	g$sql	o1026	g$result	o1350	g$sql	o1372	g$msg	o1385	g$result	o1402	g$result	o1735
+cidadao/servicos/vistoria_corte_poda/visualiza-vistoria_corte_poda.php
+cidadao/servicos/isencao_iptu/isencao_iptu.php
+cidadao/servicos/talao_nf/visualiza-talao_nf.php
+_ADM/login/verifica_login.php	fbuscarValor	o198	g$_SESSION	o1178	g$verificaLogin	o1226	g$_SERVER	o1243	g$_GET	o1282	g$_SESSION	o1314	g$_GET	o1337	g$_POST	o1384	g$login	o1413	g$_POST	o1431	g$password	o1453	g$_POST	o1463	g$LoginCorreto	o1484	g$LoginErrado	o1533	g$login_query	o1593	g$login	o1715	g$password	o1748	g$query_login	o1780	g$login_query	o1807	g$conn	o1821	g$linhas_users	o1855	g$query_login	o1886	g$linhas_users	o1914	g$res	o1936	g$login_query	o1955	g$conn	o1969	g$campo	o2005	g$res	o2031	g$_SESSION	o2083	g$campo	o2105	g$_SESSION	o2128	g$campo	o2152	g$_SESSION	o2177	g$login	o2202	g$_SESSION	o2237	g$LoginCorreto	o2277	g$_SESSION	o2293	g$LoginCorreto	o2404	g$LoginErrado	o2493
+empresa/servicos/termo_resp_tec_cc/visualiza-termo_resp_tec_cc.php
+empresa/servicos/inclusao_atividade/inclusao_atividade.php
+empresa/servicos/inscricao_autonomo/visualiza-inscricao_autonomo.php
+empresa/servicos/reparo_iluminacao_publica/visualiza-reparo_iluminacao_publica.php
+cidadao/servicos/alinhamento_frontal/visualiza-alinhamento_frontal.php
+empresa/servicos/carta_anuencia/carta_anuencia.php
+empresa/servicos/comunicacao_extravio/visualiza-comunicacao_extravio.php
+cidadao/servicos/aprovacao_const_resid/aprovacao_const_resid.php
+includes/centro/_menu_inferior.php
+_ADM/ADMINISTRATIVO/modulo_usu/editar_mod_usu.php	g$_SESSION	o139	g$_GET	o187	g$mdu_id	o205	g$_GET	o215	g$usu_id	o287	g$_SESSION	o303	g$dat_cad	o326	g$hora_cad	o359	g$status	o395	g$_POST	o411	g$nome	o453	g$_POST	o485	g$sql	o516	g$result	o798	g$sql	o821	g$msg	o834	g$result	o852	g$result	o1172
+_ADM/ADMINISTRATIVO/secretarias/cad_secretarias.php	g$_SESSION	o136	g$v	o374	g$_GET	o398	g$sec_id	o418	g$_GET	o428	g$_GET	o536	g$dis	o563	g$title	o596	g$_GET	o647	g$title	o677	g$red	o711	g$title	o800	g$red	o839	g$sql	o923	g$query	o994	g$sql	o1016	g$conn	o1022	g$msg	o1036	g$linha	o1048	g$query	o1076	g$red	o1533	g$linha	o1790	g$linha	o1810	g$dis	o1841	g$linha	o2055	g$linha	o2074	g$dis	o2104	g$linha	o2316	g$linha	o2334	g$dis	o2363	g$linha	o2583	g$linha	o2604	g$dis	o2636	g$linha	o2872	g$linha	o2898	g$dis	o2935	g$linha	o3146	g$linha	o3164	g$dis	o3193	g$linha	o3414	g$linha	o3435	g$dis	o3467	g$linha	o4160	g$linha	o4180	g$dis	o4211	g$linha	o4432	g$linha	o4452	g$dis	o4483	g$linha	o4704	g$linha	o4724	g$dis	o4755	g$dis	o4930	g$linha	o4991	g$linha	o5111	g$_GET	o5291	g$_GET	o5487	g$dis	o5749
+home/noticia-home.php/noticia_home.php	g$linha_bloco_not1	o111	g$linha_bloco_not1	o164	g$thumbnail	o232	g$linha_bloco_not1	o247	g$linha_bloco_not1	o280	g$linha_bloco_not1	o448	g$linha_bloco_not1	o514	g$linha_bloco_not2	o705	g$linha_bloco_not2	o758	g$thumbnail	o826	g$linha_bloco_not2	o841	g$linha_bloco_not2	o874	g$linha_bloco_not2	o1031	g$linha_bloco_not2	o1097	g$linha_bloco_not3	o1288	g$linha_bloco_not3	o1341	g$thumbnail	o1409	g$linha_bloco_not3	o1424	g$linha_bloco_not3	o1457	g$linha_bloco_not3	o1602	g$linha_bloco_not3	o1668	g$linha_bloco_not4	o1859	g$linha_bloco_not4	o1912	g$thumbnail	o1980	g$linha_bloco_not4	o1995	g$linha_bloco_not4	o2028	g$linha_bloco_not4	o2196	g$linha_bloco_not4	o2262	g$linha_bloco_not5	o2453	g$linha_bloco_not5	o2506	g$thumbnail	o2574	g$linha_bloco_not5	o2589	g$linha_bloco_not5	o2622	g$linha_bloco_not5	o2790	g$linha_bloco_not5	o2844
+cidadao/servicos/autorizacao_poda/autorizacao_poda.php
+agenda/agenda_14.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+agenda/agenda_8.php	g$_GET	o74	g$age_id	o94	g$_GET	o104
+includes/direita/calendario/xajax/xajax_core/xajax_lang_nl.inc.php	g$objLanguageManager	o585	g$objLanguageManager	o646
+cidadao/servicos/futebol_campo_masc/visualiza-futebol_campo_masc.php
+cidadao/servicos/certidao_nada_consta/certidao_nada_consta.php
+cidadao/servicos/revisao_taxas/revisao_taxas.php
+empresa/servicos/unificacao_area/visualiza-unificacao_area.php
+galeria/subgaleria/carros_antigos/galeria_img.php
+agenda/visualiza-agenda_6.php

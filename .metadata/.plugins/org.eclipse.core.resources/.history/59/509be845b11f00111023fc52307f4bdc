@@ -1,0 +1,58 @@
+<? /* conexão com banco de dados */
+   include_once("../conexao_db/conexaoTecnologia.php");
+   # biblioteca com funções PHP
+   @include_once("../lib_PHP/biblioteca.php");
+   
+   if (isset($_GET['age_id'])) { $age_id = $_GET['age_id']; }	
+      
+	// Transformo o recurso em um array	
+	$sql = sprintf("SELECT * FROM agenda WHERE age_id=$age_id");	
+	$query = @mysql_query($sql) or die($msg[2]);
+	$linha = @mysql_fetch_assoc($query);
+	
+	// Libera um resultado da memória
+	mysql_free_result($query);
+	
+	# endereço de onde está a biblioteca para gerar o thumbnail
+	$thumbnail = "../lib_PHP/thumbnail.php?gd=2&src=../agenda/age_foto/age_id_";
+?>
+<script language="javascript">
+	imprimir = function(age_id) {
+		window.open('imprime-agenda.php?age_id='+age_id,'imprimir','width=800,height=800,resizable=0');
+	}
+</script>
+
+<div id="cont_noticia">  
+    <h3>Agenda</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <p id="noticia_data_pub">Publicado em <?=formataDataBR($linha['age_dat_cad']).' às '.$linha['age_hora_cad']?></p>
+    <h4><?=utf8_encode($linha['age_titulo'])?></h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="<?=$thumbnail?><?=$linha['age_id']?>/<?=$linha['age_img']?>&maxw=600" alt="Imagem Agenda" /> 
+    </div>
+
+    <div id="noticia_descreve">
+        <p id="age_data"><span>Data do Evento:</span> <?=utf8_encode($linha['age_data_evento'])?></p>
+        <p id="age_hora"><span>Horário:</span> <?=utf8_encode($linha['age_hora_evento'])?></p>
+        <p id="age_local"><span>Local:</span> <?=utf8_encode($linha['age_local_evento'])?></p>
+        <p id="age_desc"><span>Descrição:</span><br /><br /> <?=utf8_encode($linha['age_desc_evento'])?></p>
+    </div> 
+    
+    <a href="javascript: imprimir(<?=$linha['age_id']?>);" title="Imprimir Evento da Agenda" id="noticia_print">Imprimir</a>    
+   
+</div>
+<?  # fecha conexão com db
+	mysql_close($conn);
+?>

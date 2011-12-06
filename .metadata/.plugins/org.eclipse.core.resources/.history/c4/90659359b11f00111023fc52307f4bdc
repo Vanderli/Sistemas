@@ -1,0 +1,42 @@
+<? /* conexão com banco de dados */
+   include_once("../conexao_db/conexaoTecnologia.php");
+   # biblioteca com funções PHP
+   @include_once("../lib_PHP/biblioteca.php");
+   # cabeçalho
+   @include_once("../includes/cabecalho/_meta-css-js.php");	
+   
+   if (isset($_GET['age_id'])) { $age_id = $_GET['age_id']; }	
+   
+	// Transformo o recurso em um array	
+	$sql = sprintf("SELECT * FROM agenda WHERE age_id=$age_id");	
+	$query = @mysql_query($sql) or die($msg[2]);
+	$linha = @mysql_fetch_assoc($query);
+?>
+<!-- CSS Notícia -->
+<link href="<?=URL?>/css/print_noticia.css" lang="pt-BR" media="print" rel="stylesheet" type="text/css" />
+<link href="<?=URL?>/css/print_noticia.css" lang="pt-BR" media="screen" rel="stylesheet" type="text/css" />
+ 
+<div id="not_print_container">  
+
+  <div id="not_print_topo">    
+    <img src="<?=URL?>/img/topo/topo_brasao_menor.png" alt="Prefeitura do Município de Itapecerica da Serra" title="Prefeitura do Município de Itapecerica da Serra">
+  </div>  
+  
+    <div id="not_print_conteudo">
+        <h4><?=utf8_encode($linha['age_titulo'])?></h4>
+        <p>&nbsp;</p>
+        <p id="age_data">Data do Evento:<?=utf8_encode($linha['age_data_evento'])?></p>
+        <p id="age_hora">Horário:<?=utf8_encode($linha['age_hora_evento'])?></p>
+        <p id="age_local">Local:<?=utf8_encode($linha['age_local_evento'])?></p>
+        <p id="age_desc">Descrição:<br /><br /> <?=utf8_encode($linha['age_desc_evento'])?></p> 
+    </div> 
+   
+    <div id="not_print_rdp">
+        <p>Prefeitura do Munic&iacute;pio de Itapecerica da Serra - www.itapecerica.sp.gov.br</p>
+        <div id="not_btn">   
+            <a href="javascript: window.print();" id="not_print_btn">Imprimir</a>
+            <a href="javascript: window.close();" id="not_close_btn">Fechar</a>
+        </div>   
+    </div>
+  
+</div>

@@ -1,0 +1,41 @@
+<div id="cont_lista_arvore">
+
+  <h3>Secretaria Municipal de Esporte e Lazer</h3>
+  
+  <h4>Serviços da Secretaria</h4>  
+  
+  <div class="la_container">
+    <p>Clique em Lista de Serviços para visualizar todos os serviços da Secretaria.<p>
+    <ul>
+    
+      <div class="la_colunas">    
+        <li class="la_coluna_tit3">   
+          <a title="Lista de Serviços" class="btn_esconde_la">Lista de Serviços</a>
+          <ul class="esconde_la">
+            <li><a href="academias/academias.php" title="Academias de Ginástica e Musculação">Academias de Ginástica e Musculação</a></li>
+            <li><a href="futebol_campo_masc/futebol_campo_masc.php" title="Futebol de Campo - Masculino">Futebol de Campo - Masculino</a></li>
+            <li><a href="voleibol/voleibol.php" title="Voleibol">Voleibol</a></li>
+            <li><a href="bastequebol/bastequebol.php" title="Basquetebol">Basquetebol</a></li>
+            <li><a href="projeto_aquatico/projeto_aquatico.php" title="Projeto Aquático">Projeto Aquático</a></li>
+            <li><a href="futsal/futsal.php" title="Futsal">Futsal</a></li>
+            <li><a href="malha_bocha/malha_bocha.php" title="Malha e Bocha">Malha e Bocha</a></li>
+            <li><a href="melhor_idade/melhor_idade.php" title="Melhor Idade">Melhor Idade</a></li>
+            <li><a href="caminhada_alongamento/caminhada_alongamento.php" title="Caminhada e Alongamento">Caminhada e Alongamento</a></li>
+            <li><a href="artes_marciais/artes_marciais.php" title="Artes Marciais">Artes Marciais</a></li>
+            <li><a href="artes_especificas/artes_especificas.php" title="Artes Específicas">Artes Específicas</a></li>
+          </ul>
+        </li>
+        
+      </div>
+    
+    
+    
+    </ul>
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+
+</div>

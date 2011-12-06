@@ -1,0 +1,634 @@
+# MySQL-Front 3.1  (Build 8.5)
+
+
+# Host: localhost     Database: site_itapecerica
+# ------------------------------------------------------
+# Server version 5.0.45-community-nt
+
+#
+# Table structure for table agenda
+#
+
+CREATE TABLE `agenda` (
+  `age_id` int(10) unsigned NOT NULL auto_increment,
+  `age_usu_id` int(10) unsigned NOT NULL,
+  `age_dat_cad` date NOT NULL,
+  `age_hora_cad` time NOT NULL,
+  `age_img` varchar(255) NOT NULL,
+  `age_titulo` varchar(255) NOT NULL,
+  `age_data_evento` date NOT NULL,
+  `age_hora_evento` time NOT NULL,
+  `age_local_evento` varchar(255) NOT NULL,
+  `age_desc_evento` text NOT NULL,
+  `age_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`age_id`),
+  KEY `agenda_FKIndex1` (`age_usu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table agenda
+#
+
+INSERT INTO `agenda` VALUES (1,3,'2010-02-19','11:34:04','images.jpg','Titulo','0000-00-00','00:00:00','Local','Descrição','ATIVO');
+INSERT INTO `agenda` VALUES (2,3,'2010-02-19','16:09:11','images.jpg','f','2010-02-19','00:00:00','itapec','desc','ATIVO');
+INSERT INTO `agenda` VALUES (3,3,'2010-02-19','16:10:55','images.jpg','faffaf','2010-02-20','00:00:00','ITAPECERICA DA SERRA','DESC','ATIVO');
+INSERT INTO `agenda` VALUES (4,3,'2010-02-19','16:17:29','images.jpg','','2003-12-12','00:00:00','','','ATIVO');
+
+#
+# Table structure for table atribuicao_sec
+#
+
+CREATE TABLE `atribuicao_sec` (
+  `atr_id` int(10) unsigned NOT NULL auto_increment,
+  `atr_usu_id` int(10) unsigned NOT NULL,
+  `atr_sec_id` int(10) unsigned NOT NULL,
+  `atr_dat_cad` date NOT NULL,
+  `atr_hora_cad` time NOT NULL,
+  `atr_titulo` varchar(255) NOT NULL,
+  `atr_desc` text NOT NULL,
+  `atr_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`atr_id`),
+  KEY `atribuicao_sec_FKIndex1` (`atr_sec_id`),
+  KEY `atribuicao_sec_FKIndex2` (`atr_usu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table atribuicao_sec
+#
+
+INSERT INTO `atribuicao_sec` VALUES (1,3,2,'2010-01-30','18:13:53','TITULO 22','Descricao','INATIVO');
+INSERT INTO `atribuicao_sec` VALUES (2,3,2,'2010-01-30','18:16:38','saude','saude','INATIVO');
+
+#
+# Table structure for table banner
+#
+
+CREATE TABLE `banner` (
+  `ban_id` int(10) unsigned NOT NULL auto_increment,
+  `ban_usu_id` int(10) unsigned NOT NULL,
+  `ban_dat_cad` date NOT NULL,
+  `ban_hora_cad` time NOT NULL,
+  `ban_img` varchar(255) NOT NULL,
+  `ban_nome` varchar(255) NOT NULL,
+  `ban_posicao` enum('1','2','3','4','5','6') NOT NULL,
+  `ban_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`ban_id`),
+  KEY `banner_FKIndex1` (`ban_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table banner
+#
+
+
+#
+# Table structure for table beneficio_sec
+#
+
+CREATE TABLE `beneficio_sec` (
+  `ben_id` int(10) unsigned NOT NULL auto_increment,
+  `ben_usu_id` int(10) unsigned NOT NULL,
+  `ben_sec_id` int(10) unsigned NOT NULL,
+  `ben_data_cad` date NOT NULL,
+  `ben_hora_cad` time NOT NULL,
+  `ben_titulo` varchar(255) NOT NULL,
+  `ben_desc` varchar(255) NOT NULL,
+  `ben_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`ben_id`),
+  KEY `beneficio_FKIndex1` (`ben_sec_id`),
+  KEY `beneficio_FKIndex2` (`ben_usu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table beneficio_sec
+#
+
+INSERT INTO `beneficio_sec` VALUES (1,3,1,'2010-01-30','18:16:56','beneficio 2','beneficio 3','INATIVO');
+
+#
+# Table structure for table concurso_publico
+#
+
+CREATE TABLE `concurso_publico` (
+  `cop_id` int(10) unsigned NOT NULL auto_increment,
+  `con_usu_id` int(10) unsigned NOT NULL,
+  `cop_dat_cad` date NOT NULL,
+  `cop_hora_cad` time NOT NULL,
+  `cop_desc` text NOT NULL,
+  `cop_pdf` varchar(255) NOT NULL,
+  `cop_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`cop_id`),
+  KEY `concurso_publico_FKIndex1` (`con_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table concurso_publico
+#
+
+
+#
+# Table structure for table contato_sec
+#
+
+CREATE TABLE `contato_sec` (
+  `con_id` int(10) unsigned NOT NULL auto_increment,
+  `con_usu_id` int(10) unsigned NOT NULL,
+  `con_sec_id` int(10) unsigned NOT NULL,
+  `con_dat_cad` date NOT NULL,
+  `con_hora_cad` time NOT NULL,
+  `con_titulo` varchar(255) NOT NULL,
+  `con_email` varchar(255) NOT NULL,
+  `con_tel` varchar(9) NOT NULL,
+  `con_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`con_id`),
+  KEY `contato_sec_FKIndex1` (`con_sec_id`),
+  KEY `contato_sec_FKIndex2` (`con_usu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table contato_sec
+#
+
+INSERT INTO `contato_sec` VALUES (1,3,1,'2010-01-30','18:15:56','titulo 2','email 2','tel 2','INATIVO');
+INSERT INTO `contato_sec` VALUES (2,3,0,'2010-02-10','15:26:34','','','','');
+INSERT INTO `contato_sec` VALUES (3,3,0,'2010-02-10','15:29:14','','','','');
+INSERT INTO `contato_sec` VALUES (4,3,0,'2010-02-10','15:29:43','','','','');
+
+#
+# Table structure for table fotos
+#
+
+CREATE TABLE `fotos` (
+  `fot_id` int(10) unsigned NOT NULL auto_increment,
+  `fot_usu_id` int(10) unsigned NOT NULL,
+  `fot_sbg_id` int(10) unsigned NOT NULL,
+  `fot_dat_cad` date NOT NULL,
+  `fot_hora_cad` time NOT NULL,
+  `fot_legenda` varchar(255) NOT NULL,
+  `fot_foto` varchar(255) NOT NULL,
+  `fot_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`fot_id`),
+  KEY `fotos_FKIndex1` (`fot_sbg_id`),
+  KEY `fotos_FKIndex2` (`fot_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table fotos
+#
+
+
+#
+# Table structure for table galeria
+#
+
+CREATE TABLE `galeria` (
+  `gal_id` int(10) unsigned NOT NULL auto_increment,
+  `gal_usu_id` int(10) unsigned NOT NULL,
+  `gal_dat_cad` date NOT NULL,
+  `gal_hora_cad` time NOT NULL,
+  `gal_nome` varchar(200) NOT NULL,
+  `gal_ano` smallint(4) unsigned NOT NULL,
+  `gal_foto_principal` varchar(255) NOT NULL,
+  `gal_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`gal_id`),
+  KEY `galeria_FKIndex1` (`gal_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table galeria
+#
+
+
+#
+# Table structure for table importante
+#
+
+CREATE TABLE `importante` (
+  `imp_id` int(10) unsigned NOT NULL auto_increment,
+  `imp_not_id` int(10) unsigned NOT NULL,
+  `imp_usu_id` int(10) unsigned NOT NULL,
+  `imp_dat_cad` date NOT NULL,
+  `imp_hora_cad` time NOT NULL,
+  `imp_seq` smallint(5) unsigned NOT NULL,
+  `imp_titulo_not` text,
+  `imp_status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`imp_id`),
+  KEY `importante_FKIndex1` (`imp_usu_id`),
+  KEY `importante_FKIndex2` (`imp_not_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table importante
+#
+
+INSERT INTO `importante` VALUES (1,1,3,'2010-02-11','11:21:40',1,'','INATIVO');
+INSERT INTO `importante` VALUES (2,1,3,'2010-02-11','11:21:48',1,'','INATIVO');
+INSERT INTO `importante` VALUES (3,2,3,'2010-02-10','17:00:15',3,'','ATIVO');
+INSERT INTO `importante` VALUES (4,2,3,'2010-02-10','17:00:22',3,'','ATIVO');
+INSERT INTO `importante` VALUES (5,2,3,'2010-02-10','17:00:27',3,'','ATIVO');
+
+#
+# Table structure for table imprensa_oficial
+#
+
+CREATE TABLE `imprensa_oficial` (
+  `ipo_oficial` int(10) unsigned NOT NULL auto_increment,
+  `ipo_usu_id` int(10) unsigned NOT NULL,
+  `ipo_dat_cad` date default NULL,
+  `ipo_hora_cad` time default NULL,
+  `ipo_img` varchar(255) NOT NULL,
+  `ipo_ano` smallint(5) unsigned NOT NULL,
+  `ipo_mes` varchar(10) NOT NULL,
+  `ipo_edicao` smallint(5) unsigned NOT NULL,
+  `ipo_tamanho` varchar(10) NOT NULL,
+  `ipo_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`ipo_oficial`),
+  KEY `imprensa_oficial_FKIndex1` (`ipo_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table imprensa_oficial
+#
+
+
+#
+# Table structure for table lei_resp_fiscal
+#
+
+CREATE TABLE `lei_resp_fiscal` (
+  `lef_id` int(10) unsigned NOT NULL auto_increment,
+  `lef_usu_id` int(10) unsigned NOT NULL,
+  `lef_dat_cad` date NOT NULL,
+  `lef_hora_cad` time NOT NULL,
+  `lef_ano` smallint(5) unsigned NOT NULL,
+  `lef_periodo` varchar(255) NOT NULL,
+  `lef_periodo_esp` varchar(255) NOT NULL,
+  `lef_nome` varchar(255) NOT NULL,
+  `lef_pdf` varchar(255) NOT NULL,
+  `lef_status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`lef_id`),
+  KEY `lei_resp_fiscal_FKIndex1` (`lef_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table lei_resp_fiscal
+#
+
+
+#
+# Table structure for table links_acesso
+#
+
+CREATE TABLE `links_acesso` (
+  `lka_id` int(10) unsigned NOT NULL auto_increment,
+  `lka_usu_id` int(10) unsigned NOT NULL,
+  `lka_sec_id` int(10) unsigned NOT NULL,
+  `lka_dat_cad` date NOT NULL,
+  `lka_hora_cad` time NOT NULL,
+  `lka_nome` varchar(45) NOT NULL,
+  `lka_link` varchar(255) NOT NULL,
+  `lka_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`lka_id`),
+  KEY `links_acesso_FKIndex1` (`lka_sec_id`),
+  KEY `links_acesso_FKIndex2` (`lka_usu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table links_acesso
+#
+
+INSERT INTO `links_acesso` VALUES (1,3,2,'2010-02-12','10:15:21','teste 2','link 2','ATIVO');
+
+#
+# Table structure for table links_utilidades
+#
+
+CREATE TABLE `links_utilidades` (
+  `lku_id` int(10) unsigned NOT NULL auto_increment,
+  `lku_usu_id` int(10) unsigned NOT NULL,
+  `lku_dat_cad` date NOT NULL,
+  `lku_hora_cad` time NOT NULL,
+  `lku_nome` varchar(255) NOT NULL,
+  `lku_link` varchar(255) NOT NULL,
+  `lku_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`lku_id`),
+  KEY `links_utilidades_FKIndex1` (`lku_usu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table links_utilidades
+#
+
+INSERT INTO `links_utilidades` VALUES (1,3,'2010-02-12','11:42:22','nome','link','ATIVO');
+INSERT INTO `links_utilidades` VALUES (2,3,'2010-02-12','11:44:45','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (3,3,'2010-02-12','11:44:51','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (4,3,'2010-02-12','11:44:54','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (5,3,'2010-02-12','11:45:13','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (6,3,'2010-02-12','11:45:56','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (7,3,'2010-02-12','11:45:59','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (8,3,'2010-02-12','11:46:02','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (9,3,'2010-02-12','11:46:06','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (10,3,'2010-02-12','11:46:10','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (11,3,'2010-02-12','11:46:15','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (12,3,'2010-02-12','11:46:22','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (13,3,'2010-02-12','11:46:26','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (14,3,'2010-02-12','11:46:31','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (15,3,'2010-02-12','11:46:35','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (16,3,'2010-02-12','11:46:40','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (17,3,'2010-02-12','11:46:45','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (18,3,'2010-02-12','11:46:51','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (19,3,'2010-02-12','11:47:23','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (20,3,'2010-02-12','11:47:27','','','ATIVO');
+INSERT INTO `links_utilidades` VALUES (21,3,'2010-02-12','11:47:32','','','ATIVO');
+
+#
+# Table structure for table modulo_usu
+#
+
+CREATE TABLE `modulo_usu` (
+  `mdu_id` int(10) unsigned NOT NULL auto_increment,
+  `mdu_usuario_cad` smallint(5) unsigned NOT NULL,
+  `mdu_dat_cad` date NOT NULL,
+  `mdu_hora_cad` time NOT NULL,
+  `mdu_nome` varchar(255) NOT NULL,
+  `mdu_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`mdu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table modulo_usu
+#
+
+INSERT INTO `modulo_usu` VALUES (1,1,'2010-01-30','16:20:22','APOIO ADMINISTRATIVO','ATIVO');
+INSERT INTO `modulo_usu` VALUES (2,1,'2010-01-30','16:20:37','COMUNICAÇÃO','ATIVO');
+INSERT INTO `modulo_usu` VALUES (3,1,'2010-01-30','16:21:24','GERÊNCIA ATENDIMENTO','ATIVO');
+INSERT INTO `modulo_usu` VALUES (4,3,'2010-01-30','17:00:13','ADMINISTRAÇÃO','INATIVO');
+
+#
+# Table structure for table noticias
+#
+
+CREATE TABLE `noticias` (
+  `not_id` int(10) unsigned NOT NULL auto_increment,
+  `not_sec_id` int(10) unsigned NOT NULL,
+  `not_usu_id` int(10) unsigned NOT NULL,
+  `not_blo_id` int(6) default NULL,
+  `not_dat_cad` date NOT NULL,
+  `not_hora_cad` time NOT NULL,
+  `not_img` varchar(255) NOT NULL,
+  `not_titulo` varchar(255) NOT NULL,
+  `not_descricao` text NOT NULL,
+  `not_comentario` varchar(255) NOT NULL,
+  `not_publicado` enum('SIM','NAO') NOT NULL,
+  `not_publicado_em` datetime NOT NULL,
+  `not_status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`not_id`),
+  KEY `noticias_FKIndex1` (`not_usu_id`),
+  KEY `noticias_FKIndex2` (`not_sec_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table noticias
+#
+
+INSERT INTO `noticias` VALUES (1,4,3,1,'2010-02-26','09:14:41','thumbnail.jpg','Defesa Civil: sempre atuante nas emergências de Itapecerica','<p align=\"justify\">Três horas da manhã, o pessoal da Defesa Civil atende mais um chamado. Um pedido de socorro de uma família do bairro do Parque Paraíso. No local, uma casa está prestes a ruir por causa das chuvas que caem constantemente. Os rios e as baixadas estão cheios e muitas encostas, em situação de perigo. É nessa situação limite que a Defesa Civil precisa decidir rapidamente como será feita a remoção do pessoal em segurança.\r\n<p><br>\r\n<p align=\"justify\">Assim trabalham esses homens de coletes laranjas, que sofrem vários tipos de pressão toda vez que se deparam com uma ocorrência. Muitas vezes a adrenalina chega ao máximo e pode comprometer a razão diante das situações de tensão vividas. Mas a equipe está sempre preparada e atuante. Já faz parte da vida de alguns componentes a convivência com gripes e resfriados devido às constantes chuvas, garoas e friagem que enfrentam durante as noites. A Defesa Civil permanece no local do acidente até que se cumpram todos os procedimentos de socorro às vítimas.\r\n<p><br>\r\n<p align=\"justify\">Segundo assessor da Defesa Civil da Prefeitura de Itapecerica da Serra, a equipe está empenhada ao máximo em prestar o melhor serviço à população. “Vamos realizar cursos de capacitação para funcionários e munícipes com palestras explicativas. Também participaremos da Conferência Nacional de Defesa Civil em Brasília, que acontecerá em março. Dessa forma procuramos aprimorar cada vez mais nosso trabalho”, explica.\r\n<p><br>\r\n<p align=\"justify\">A Defesa Civil realiza ações de apoio aos munícipes em alagamentos, deslizamentos e acidentes com vítimas fatais; recolhe animal peçonhento como cobras, aranhas e outros; além de averiguar árvores com risco de cair sobre moradias. Desta forma, cumpre rotinas preventivas para amenizar que tragédias aconteçam na cidade. Devido à sua localização, Itapecerica da Serra está sujeita a acidente, visto que é rota de aviões, possui mais de 20 postos de gasolina e é passagem de caminhões com cargas perigosas na BR-116. A Defesa Civil está sempre alerta e procura atuar na prevenção.\r\n<p><br>\r\n<p align=\"justify\">Desde que assumiu a Prefeitura, o prefeito dá total apoio à Defesa Civil. Para torná-la mais atuante, criou um departamento que centraliza a equipe e acompanha as ocorrências. Além de investimento em equipamentos, o pessoal procura trabalhar em parceria com outras secretarias.\r\n<p><br>\r\n<p align=\"justify\">Confira o número de ocorrências atendidas nos últimos anos:\r\n<p>\r\n2006 - 118 ocorrências.\r\n<p>\r\n2007 – 162 ocorrências\r\n<p>\r\n2008 – 196 ocorrências\r\n<p>\r\n2009 – 215 ocorrências\r\n<p>\r\n2010 – 73 ocorrências (janeiro) - previsão de passar de 300 atendimentos      \r\n<p><br>\r\nServiço:\r\n<p>\r\nDefesa Civil de Itapecerica da Serra\r\n<p>\r\nRua Major Manoel Francisco de Moraes, nº 350\r\n<p><br>\r\nTelefone 4666-4435<p>\r\ne-mail: defesacivil@itapecerica.sp.gov.br\r\n<p><br>\r\n<p align=\"justify\">A Defesa Civil aceita doações de produtos não perecível e eletrodomésticos para serem doados às famílias que tiveram os seus bens perdidos nos últimos alagamentos','1','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (2,4,3,2,'2010-02-26','14:44:07','untitled.jpg','TECNOLOGIA !','<p align=\"justify\">Muita festa, alegria e animação. Assim foram os três dias do Carnaval Folia na Serra realizado pela Secretaria de Turismo da Prefeitura de Itapecerica da Serra, nos dias 13, 14 e 15 de fevereiro. O evento levou uma multidão de foliões ao Parque Paraíso, no espaço armado em frente ao Complexo da Administração Municipal. Apresentação de grupos musicais, desfile de escolas de samba, muita diversão e ginga no pé embalaram a festa.\r\n<p><br>\r\n<p align=\"justify\">A abertura do Carnaval ficou por conta do Grupo Suingue do Gueto. Composto por 15 pessoas, entre bailarinos e bailarinas, o grupo apresentou uma coreografia diversificada que foi do axé ao pagode.\r\n<p><br>\r\n<p align=\"justify\">Na sequência, foi a vez do Bloco Ilú Obá De Mim. Cerca de cem integrantes vestidos com motivos africanos executaram músicas e coreografias de origem afro.\r\n<p><br>\r\n<p align=\"justify\">A Escola de Samba Acadêmicos do Jacira deu continuidade à apresentação do samba na passarela itapecericana. A escola composta por crianças, jovens e adultos emocionou a todos com sua alegoria e enredo em homenagem às mulheres. Outra escola que fez um ótimo desfile foi a Rosa Serrana. Recebeu muitos aplausos e empolgou os foliões.\r\n<p><br>\r\n<p align=\"justify\">A cantora Sheila Brazil se apresentou nos três dias de carnaval de Itapecerica. A baiana esbanjou carisma e fez o público dançar muito axé com um repertório de grandes sucessos. \r\n<p><br>\r\n<p align=\"justify\">O Grupo de Pagode Ênfase marcou presença nos dias 14 e 15 com um repertório repleto de samba e pagode.\r\n<p><br>\r\n<p align=\"justify\">Durante toda a Folia na Serra mais de 20 mil pessoas passaram pela passarela do samba itapecericana. O carnaval na cidade contou ainda com distribuição de camisinha pelo grupo do CTA da Autarquia da Saúde - IS. Apesar da lotação máxima, a festa ocorreu na maior tranquilidade, em clima de alegria e harmonia com o apoio das Secretarias Cultura e de Segurança, Trânsito e Transportes, Guarda Civil Municipal, Polícia Militar, Segurança e Bombeiros.','bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (3,5,3,3,'2010-02-26','09:19:24','untitled.jpg','DIÁRIO OFICIAL !','<p align=\"justify\">A equipe da Escola Municipal de Karatê de Itapecerica da Serra recebeu no último dia 7 de fevereiro o prêmio de vice campeã paulista no evento “Melhores do Ano de 2009”, realizado pela Federação Paulista de Karatê Interestilos, na cidade de Santa Bárbara d´Oeste. \r\n<p><br>\r\n<p align=\"justify\">Além da segunda colocação no ranking estadual por equipe, os caratecas itapecericanos se destacaram também individualmente. Dez atletas terminaram na liderança do ranking obtendo o melhor resultado que Itapecerica já alcançou. \r\n<p><br>\r\n<p align=\"justify\">“O resultado é fruto de um trabalho nosso e da Secretaria de Esportes e Lazer durante todo o ano. Em 2010 o objetivo é nos tornamos a melhor cidade do estado no karatê”, afirmou professor da escola. \r\n<p><br>\r\n<p align=\"justify\">No próximo dia 28 de fevereiro, a cidade realizará a Copa Itapecerica, com a participação de mais de 30 municípios no evento que irá abrir o calendário de competições da Federação Paulista. \r\n<p><br>\r\n<p align=\"justify\">Este ano, o Brasil sediará o campeonato mundial de karatê no Ginásio do Ibirapuera, em São Paulo, com a expectativa de Itapecerica levar atletas à competição.','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (4,2,3,4,'2010-02-26','10:41:20','thumbnail.jpg','EDUCAÇÃO !','<p align=\"justify\">A equipe da Escola Municipal de Karatê de Itapecerica da Serra recebeu no último dia 7 de fevereiro o prêmio de vice campeã paulista no evento “Melhores do Ano de 2009”, realizado pela Federação Paulista de Karatê Interestilos, na cidade de Santa Bárbara d´Oeste. \r\n<p><br>\r\n<p align=\"justify\">Além da segunda colocação no ranking estadual por equipe, os caratecas itapecericanos se destacaram também individualmente. Dez atletas terminaram na liderança do ranking obtendo o melhor resultado que Itapecerica já alcançou. \r\n<p><br>\r\n<p align=\"justify\">“O resultado é fruto de um trabalho nosso e da Secretaria de Esportes e Lazer durante todo o ano. Em 2010 o objetivo é nos tornamos a melhor cidade do estado no karatê”, afirmou professor da escola. \r\n<p><br>\r\n<p align=\"justify\">No próximo dia 28 de fevereiro, a cidade realizará a Copa Itapecerica, com a participação de mais de 30 municípios no evento que irá abrir o calendário de competições da Federação Paulista. \r\n<p><br>\r\n<p align=\"justify\">Este ano, o Brasil sediará o campeonato mundial de karatê no Ginásio do Ibirapuera, em São Paulo, com a expectativa de Itapecerica levar atletas à competição.','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (5,2,3,5,'2010-02-26','10:41:33','thumbnail.jpg','SAÚDE !','<p align=\"justify\">A equipe da Escola Municipal de Karatê de Itapecerica da Serra recebeu no último dia 7 de fevereiro o prêmio de vice campeã paulista no evento “Melhores do Ano de 2009”, realizado pela Federação Paulista de Karatê Interestilos, na cidade de Santa Bárbara d´Oeste. \r\n<p><br>\r\n<p align=\"justify\">Além da segunda colocação no ranking estadual por equipe, os caratecas itapecericanos se destacaram também individualmente. Dez atletas terminaram na liderança do ranking obtendo o melhor resultado que Itapecerica já alcançou. \r\n<p><br>\r\n<p align=\"justify\">“O resultado é fruto de um trabalho nosso e da Secretaria de Esportes e Lazer durante todo o ano. Em 2010 o objetivo é nos tornamos a melhor cidade do estado no karatê”, afirmou professor da escola. \r\n<p><br>\r\n<p align=\"justify\">No próximo dia 28 de fevereiro, a cidade realizará a Copa Itapecerica, com a participação de mais de 30 municípios no evento que irá abrir o calendário de competições da Federação Paulista. \r\n<p><br>\r\n<p align=\"justify\">Este ano, o Brasil sediará o campeonato mundial de karatê no Ginásio do Ibirapuera, em São Paulo, com a expectativa de Itapecerica levar atletas à competição.','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (6,2,3,6,'2010-02-26','14:44:28','thumbnailCAJ0XYPS.jpg','6','<p align=\"justify\">A equipe da Escola Municipal de Karatê de Itapecerica da Serra recebeu no último dia 7 de fevereiro o prêmio de vice campeã paulista no evento “Melhores do Ano de 2009”, realizado pela Federação Paulista de Karatê Interestilos, na cidade de Santa Bárbara d´Oeste. \r\n<p><br>\r\n<p align=\"justify\">Além da segunda colocação no ranking estadual por equipe, os caratecas itapecericanos se destacaram também individualmente. Dez atletas terminaram na liderança do ranking obtendo o melhor resultado que Itapecerica já alcançou. \r\n<p><br>\r\n<p align=\"justify\">“O resultado é fruto de um trabalho nosso e da Secretaria de Esportes e Lazer durante todo o ano. Em 2010 o objetivo é nos tornamos a melhor cidade do estado no karatê”, afirmou professor da escola. \r\n<p><br>\r\n<p align=\"justify\">No próximo dia 28 de fevereiro, a cidade realizará a Copa Itapecerica, com a participação de mais de 30 municípios no evento que irá abrir o calendário de competições da Federação Paulista. \r\n<p><br>\r\n<p align=\"justify\">Este ano, o Brasil sediará o campeonato mundial de karatê no Ginásio do Ibirapuera, em São Paulo, com a expectativa de Itapecerica levar atletas à competição.','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (7,2,3,7,'0000-00-00','00:00:00','thumbnailCAW78FKI.jpg','7','<p align=\"justify\">A equipe da Escola Municipal de Karatê de Itapecerica da Serra recebeu no último dia 7 de fevereiro o prêmio de vice campeã paulista no evento “Melhores do Ano de 2009”, realizado pela Federação Paulista de Karatê Interestilos, na cidade de Santa Bárbara d´Oeste. \r\n<p><br>\r\n<p align=\"justify\">Além da segunda colocação no ranking estadual por equipe, os caratecas itapecericanos se destacaram também individualmente. Dez atletas terminaram na liderança do ranking obtendo o melhor resultado que Itapecerica já alcançou. \r\n<p><br>\r\n<p align=\"justify\">“O resultado é fruto de um trabalho nosso e da Secretaria de Esportes e Lazer durante todo o ano. Em 2010 o objetivo é nos tornamos a melhor cidade do estado no karatê”, afirmou professor da escola. \r\n<p><br>\r\n<p align=\"justify\">No próximo dia 28 de fevereiro, a cidade realizará a Copa Itapecerica, com a participação de mais de 30 municípios no evento que irá abrir o calendário de competições da Federação Paulista. \r\n<p><br>\r\n<p align=\"justify\">Este ano, o Brasil sediará o campeonato mundial de karatê no Ginásio do Ibirapuera, em São Paulo, com a expectativa de Itapecerica levar atletas à competição.','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (8,2,3,8,'0000-00-00','00:00:00','untitled.jpg','8','aaa','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (9,1,3,9,'2010-02-26','10:42:26','thumbnail.jpg','9','a','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (10,2,3,10,'2010-02-26','14:47:11','thumbnail.jpg','10','a','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (11,1,3,11,'2010-02-26','10:43:14','thumbnail.jpg','11','f','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (12,5,3,12,'2010-02-26','10:43:29','thumbnail.jpg','12','f','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (13,5,3,13,'2010-02-26','10:43:52','thumbnail.jpg','13','f','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+INSERT INTO `noticias` VALUES (14,1,3,14,'2010-02-26','10:44:12','thumbnail.jpg','14','d','! Lorem ipsum dolor sit aLorem ipsum dolor sit met ','NAO','0000-00-00 00:00:00','INATIVO');
+
+#
+# Table structure for table prev_social
+#
+
+CREATE TABLE `prev_social` (
+  `prv_id` int(10) unsigned NOT NULL auto_increment,
+  `prv_usu_id` int(10) unsigned NOT NULL,
+  `prv_dat_cad` date NOT NULL,
+  `prv_hora_cad` time NOT NULL,
+  `prv_descricao` varchar(255) NOT NULL,
+  `prv_pdf` varchar(255) NOT NULL,
+  `prv_status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`prv_id`),
+  KEY `prev_social_FKIndex1` (`prv_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table prev_social
+#
+
+
+#
+# Table structure for table processo_seletivo
+#
+
+CREATE TABLE `processo_seletivo` (
+  `pro_id` int(10) unsigned NOT NULL auto_increment,
+  `pro_usu_id` int(10) unsigned NOT NULL,
+  `pro_dat_cad` date NOT NULL,
+  `pro_hora_cad` time NOT NULL,
+  `pro_desc` text NOT NULL,
+  `pro_pdf` varchar(255) NOT NULL,
+  `pro_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`pro_id`),
+  KEY `processo_seletivo_FKIndex1` (`pro_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table processo_seletivo
+#
+
+
+#
+# Table structure for table rec_des_ens
+#
+
+CREATE TABLE `rec_des_ens` (
+  `rde_id` int(10) unsigned NOT NULL auto_increment,
+  `rde_usu_id` int(10) unsigned NOT NULL,
+  `rde_dat_cad` date NOT NULL,
+  `rde_hora_cad` time NOT NULL,
+  `rde_ano` smallint(5) unsigned NOT NULL,
+  `rde_periodo` varchar(45) NOT NULL,
+  `rde_periodo_esp` varchar(45) NOT NULL,
+  `rde_pdf` varchar(255) NOT NULL,
+  `rde_status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`rde_id`),
+  KEY `rec_des_ens_FKIndex1` (`rde_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table rec_des_ens
+#
+
+
+#
+# Table structure for table relatorio_atend
+#
+
+CREATE TABLE `relatorio_atend` (
+  `rel_id` int(10) unsigned NOT NULL auto_increment,
+  `rel_usu_id` int(10) unsigned NOT NULL,
+  `rel_dat_cad` date NOT NULL,
+  `rel_hora_cad` time NOT NULL,
+  `rel_desc` text NOT NULL,
+  `rel_ano` smallint(6) NOT NULL,
+  `rel_mes` varchar(10) NOT NULL,
+  `rel_pdf` varchar(255) NOT NULL,
+  `rel_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`rel_id`),
+  KEY `relatorio_atend_FKIndex1` (`rel_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table relatorio_atend
+#
+
+
+#
+# Table structure for table secretarias
+#
+
+CREATE TABLE `secretarias` (
+  `sec_id` int(10) unsigned NOT NULL auto_increment,
+  `sec_usu_id` int(10) unsigned NOT NULL,
+  `sec_dat_cad` date NOT NULL,
+  `sec_hora_cad` time NOT NULL,
+  `sec_sigla` varchar(8) NOT NULL,
+  `sec_nome` varchar(255) NOT NULL,
+  `sec_rua` varchar(255) NOT NULL,
+  `sec_numero` varchar(45) NOT NULL,
+  `sec_complemento` varchar(255) NOT NULL,
+  `sec_cep` varchar(10) NOT NULL,
+  `sec_bairro` varchar(255) NOT NULL,
+  `sec_cidade` varchar(45) NOT NULL,
+  `sec_tel_1` varchar(9) NOT NULL,
+  `sec_tel_2` varchar(9) NOT NULL,
+  `sec_tel_3` varchar(9) NOT NULL,
+  `sec_uf` enum('SP') NOT NULL,
+  `sec_status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`sec_id`),
+  KEY `secretarias_FKIndex1` (`sec_usu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table secretarias
+#
+
+INSERT INTO `secretarias` VALUES (1,3,'2010-02-25','11:40:03','SA','SECRETARIA MUNICIPAL DE ADMINISTRACAO','','','','','','Itapecerica da Serra','','','','SP','ATIVO');
+INSERT INTO `secretarias` VALUES (2,3,'2010-02-25','11:36:48','SF','SECRETARIA DE FINANÇAS','','','','','','Itapecerica da Serra','','','','SP','ATIVO');
+INSERT INTO `secretarias` VALUES (3,3,'2010-02-25','11:37:13','SE','SECRETARIA MUNICIPAL DE EDUCAÇÃO','','','','','','Itapecerica da Serra','','','','SP','ATIVO');
+INSERT INTO `secretarias` VALUES (4,3,'2010-02-25','11:37:32','SC','SECRETARIA MUNICIPAL DE CULTURA','','','','','','Itapecerica da Serra','','','','SP','ATIVO');
+INSERT INTO `secretarias` VALUES (5,3,'2010-02-25','11:37:48','SJ','SECRETARIA MUNICIPAL DE ASSUNTOS JURíDICOS','','','','','','Itapecerica da Serra','','','','SP','ATIVO');
+INSERT INTO `secretarias` VALUES (6,3,'2010-02-25','11:38:05','SG','SECRETARIA MUNICIPAL DE GOVERNO','','','','','','Itapecerica da Serra','','','','SP','ATIVO');
+
+#
+# Table structure for table servicos_online
+#
+
+CREATE TABLE `servicos_online` (
+  `svc_id` int(10) unsigned NOT NULL auto_increment,
+  `svc_sec_id` int(10) unsigned NOT NULL,
+  `svc_usu_id` int(10) unsigned NOT NULL,
+  `svc_dat_cad` date NOT NULL,
+  `svc_hora_cad` time NOT NULL,
+  `svc_titulo` varchar(255) NOT NULL,
+  `svc_link` varchar(255) NOT NULL,
+  `svc_categoria` enum('CIDADAO','EMPRESA','GOVERNO') NOT NULL,
+  `svc_status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`svc_id`),
+  KEY `servicos_online_FKIndex1` (`svc_usu_id`),
+  KEY `servicos_online_FKIndex2` (`svc_sec_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table servicos_online
+#
+
+INSERT INTO `servicos_online` VALUES (1,1,3,'2010-02-17','14:49:29','j','http://aaaaaaaaaaaaaaaaaaa','CIDADAO','ATIVO');
+INSERT INTO `servicos_online` VALUES (2,1,3,'2010-02-17','14:49:58','j','http://bbbbbbbbbbbbbbbbbbbbbbbbbb','EMPRESA','ATIVO');
+INSERT INTO `servicos_online` VALUES (3,2,3,'2010-02-18','09:54:55','TITULO DO GOVERNO DA SAUDE DE ITAPECERICA DA SERRA','http://localhost/portal_itapecerica-WEB-2.0/_ADM/ADMINISTRATIVO/servicos_online/cad_servicos_online.php?svc_id=3&edit=true','GOVERNO','INATIVO');
+INSERT INTO `servicos_online` VALUES (4,8,3,'2010-02-18','09:41:31','teste teste teste teste etste te ksjljkla jkjkl jlkj lakj lkaj lj lkj lkjkl','http://ddddddddddddddddddddddddddddd','CIDADAO','ATIVO');
+
+#
+# Table structure for table subgaleria
+#
+
+CREATE TABLE `subgaleria` (
+  `sbg_id` int(10) unsigned NOT NULL auto_increment,
+  `sbg_gal_id` int(10) unsigned NOT NULL,
+  `sbg_usu_id` int(10) unsigned NOT NULL,
+  `sbg_sec_id` int(10) unsigned NOT NULL,
+  `sbg_dat_cad` date NOT NULL,
+  `sbg_hora_cad` time NOT NULL,
+  `sbg_nome` varchar(255) NOT NULL,
+  `sbg_foto_principal` varchar(255) NOT NULL,
+  `sbg_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`sbg_id`),
+  KEY `subgaleria_FKIndex1` (`sbg_sec_id`),
+  KEY `subgaleria_FKIndex3` (`sbg_usu_id`),
+  KEY `subgaleria_FKIndex2` (`sbg_gal_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table subgaleria
+#
+
+
+#
+# Table structure for table topo_rotativo
+#
+
+CREATE TABLE `topo_rotativo` (
+  `top_id` int(10) unsigned NOT NULL auto_increment,
+  `top_usu_id` int(10) unsigned NOT NULL,
+  `top_dat_cad` date NOT NULL,
+  `top_hora_cad` time NOT NULL,
+  `top_img` varchar(255) NOT NULL,
+  `top_nome` varchar(255) NOT NULL,
+  `top_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`top_id`),
+  KEY `topo_rotativo_FKIndex1` (`top_usu_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table topo_rotativo
+#
+
+
+#
+# Table structure for table usuarios
+#
+
+CREATE TABLE `usuarios` (
+  `usu_id` int(10) unsigned NOT NULL auto_increment,
+  `usu_mdu_id` int(10) unsigned NOT NULL,
+  `usu_usuario_cad` smallint(5) unsigned NOT NULL,
+  `usu_dat_cad` date NOT NULL,
+  `usu_hora_cad` time NOT NULL,
+  `usu_nome` varchar(100) NOT NULL,
+  `usu_login` varchar(100) NOT NULL,
+  `usu_senha` varchar(100) NOT NULL,
+  `usu_status` enum('ATIVO','INATIVO') NOT NULL,
+  PRIMARY KEY  (`usu_id`),
+  KEY `usuarios_FKIndex1` (`usu_mdu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table usuarios
+#
+
+INSERT INTO `usuarios` VALUES (1,3,1,'2010-01-30','16:21:50','ELAINE BOSH','elaine.bosh','94ee376ebd40c0af875ebfc2faf3bbf9','ATIVO');
+INSERT INTO `usuarios` VALUES (2,2,1,'2010-01-30','16:22:07','FÁBIO DA SILVA','fabio.silva','c102d5180911dac5d30dd672e8781759','ATIVO');
+INSERT INTO `usuarios` VALUES (3,1,3,'2010-01-30','16:24:11','VANDERLI ARAUJO','a','0cc175b9c0f1b6a831c399e269772661','ATIVO');
+INSERT INTO `usuarios` VALUES (4,1,3,'2010-01-30','16:59:46','TESTE','teste','d41d8cd98f00b204e9800998ecf8427e','INATIVO');
+

@@ -1,0 +1,64 @@
+<?php
+  # ser� inserida no titulo da p�gina
+  $title = "Login";
+	// insiro o cabecalho da p�gina
+  @include("includes/cabecalho/adm_meta-css-js.php"); 
+ 
+?>
+
+<div class="adm_login">
+  
+  	<!-- Banner do sistema -->
+    <div class="adm_login_logo">
+      <img src="img/login/topo_brasao.png" alt="Brasf" title="Pf" />
+      <h1>Pf</h1>
+    </div>
+    
+    <!-- Barra com nome do Sistema -->
+    <div class="adm_login_anuncio">
+      <h2>SISTEMA ADMINISTRATIVO</h2> 
+    </div>
+    
+    <!-- Campos do login -->
+    <div class="adm_login_sist">
+        <form class="form1" name="form1" method="POST" action="login/verifica_login.php">
+            <ul>
+            	<li>
+            		<h2>Autentica&ccedil;&#259;o</h2>
+            	</li>
+                <li>
+                	<label>Login</label>
+                	<input type="text" class="adm_login_campo" maxlength="50 " name="login" onBlur="verificaLogin();" id="login" />
+                </li>
+                <li>
+                	<label>Senha</label>
+                	<input type="password" class="adm_login_campo" maxlength="50" name="senha"  id="senha" />
+                </li>
+                <li class="adm_login_invalido">
+                    <p id="msg">
+						<?php 
+                            if($_GET['action'] == 'erroLogin'){
+                                echo "Usu�rio e/ou senha inv�lido!";
+                            } else if($_GET['action'] == 'lessLogin'){
+                                echo "Sess�o expirada!"; 
+                            } else if($_GET['action'] == 'finish'){
+                                echo "Sess�o encerrada!";
+                            } 
+                        ?>
+                    </p>
+                </li>
+                <li class="adm_login_btns">
+                	<input class="adm_login_logar" name="adm_login_logar"  id="btn_logar" type="submit" value="LOGAR" />
+                </li> 
+            </ul>
+        </form>
+    </div> <!-- fecha div dsc_sist -->
+    
+    <div class="adm_login_rodape">
+      <p>Av - SP</p> 
+    </div>
+
+</div> <!-- fecha div dsc_login -->
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<?
+	# endereço de onde está a biblioteca para gerar o thumbnail
+	$thumbnail = "../../../lib_PHP/thumbnail.php?gd=2&src=../galeria/subgaleria/academia_esportes/";
+
+?>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="../../../js/js_galeria.js?rand=995"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    $('img.image1').data('ad-desc', 'Whoa! This description is set through elm.data("ad-desc") instead of using the longdesc attribute.<br>And it contains <strong>H</strong>ow <strong>T</strong>o <strong>M</strong>eet <strong>L</strong>adies... <em>What?</em> That aint what HTML stands for? Man...');
+    $('img.image1').data('ad-title', 'Title through $.data');
+    $('img.image4').data('ad-desc', 'This image is wider than the wrapper, so it has been scaled down');
+    $('img.image5').data('ad-desc', 'This image is higher than the wrapper, so it has been scaled down');
+    var galleries = $('#gallery').adGallery();
+    $('#switch-effect').change(
+      function() {
+        galleries[0].settings.effect = $(this).val();
+        return false;
+      }
+    );
+    $('#toggle-slideshow').click(
+      function() {
+        galleries[0].slideshow.toggle();
+        return false;
+      }
+    );
+  });
+  </script>
+
+  
+  
+  
+  <div id="gallery">
+  
+  <h3>Academia de Esportes</h3>
+  
+    <div class="ad-image-wrapper"></div>
+    
+    <div class="ad-nav">
+    
+      <div class="ad-thumbs">
+        <ul class="ad-thumb-list">
+        
+          <li>
+            <a href="<?=$thumbnail?>images/img (1).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (1).jpg&maxw=90" title="Academia de Esportes" longdesc="Ginásio Municipal de Itapecerica da Serra." class="image10">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (2).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (2).jpg&maxw=90" title="Academia de Esportes" longdesc="Ginásio Municipal de Itapecerica da Serra." class="image10">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (3).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (3).jpg&maxw=90" title="Academia de Esportes" longdesc="Ginásio Municipal de Itapecerica da Serra." class="image11">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (4).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (4).jpg&maxw=90" title="Academia de Esportes" longdesc="Academia do Parque Paraíso." class="image12">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (5).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (5).jpg&maxw=90" title="Academia de Esportes" longdesc="Academia do Parque Paraíso." class="image13">
+            </a>
+          </li>
+          
+          <li>
+            <a href="<?=$thumbnail?>images/img (6).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (6).jpg&maxw=90" title="Academia de Esportes" longdesc="Academia do Parque Paraíso." class="image9">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (7).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (7).jpg&maxw=90" title="Academia de Esportes" longdesc="Academia do Parque Paraíso." class="image10">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (8).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (8).jpg&maxw=90" title="TAcademia de Esportes" longdesc="Academia do Parque Paraíso." class="image11">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (9).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (9).jpg&maxw=90" title="Academia de Esportes" longdesc="Ginásio Municipal de Itapecerica da Serra." class="image12">
+            </a>
+          </li> 
+          <li>
+            <a href="<?=$thumbnail?>images/img (10).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (10).jpg&maxw=90" title="Academia de Esportes" longdesc="Academia do Parque Paraíso." class="image13">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (11).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (11).jpg&maxw=90" title="Academia de Esportes" longdesc="Academia do Parque Paraíso." class="image10">
+            </a>
+          </li>
+          <li>
+            <a href="<?=$thumbnail?>images/img (12).jpg&maxw=525">
+              <img src="<?=$thumbnail?>images/img (12).jpg&maxw=90" title="Academia de Esportes" longdesc="Ginásio Municipal de Itapecerica da Serra." class="image10">
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="ad-controls"></div>
+    
+  </div>
+
+  <a href="<?=URL?>/galeria/galeria.php" title="Voltar à Galeria de Fotos" id="voltar_galeria">Voltar à Galeria de Fotos</a>

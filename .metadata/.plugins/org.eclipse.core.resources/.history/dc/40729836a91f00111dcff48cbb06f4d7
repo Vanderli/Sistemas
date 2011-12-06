@@ -1,0 +1,43 @@
+<div id="servico_online">
+  
+  <h3>Acessa São Paulo</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+      <li>
+        <h4>Descrição do Serviço</h4>
+        <p>O Programa Acessa São Paulo oferece para a população do Município o acesso sem custo às novas tecnologias da informação e comunicação (TIC's), em especial à internet, contribuindo para o desenvolvimento social, cultural, intelectual e econômico dos cidadãos</p>
+      </li>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG original
+       </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+        	Menores de 16 anos somente poderão realizar o cadastro acompanhado de responsável com RG de ambos.<br />
+            O acesso a internet poderá ser realizar por até três vezes ao dia por meia hora cada acesso, consecutivos ou não, dependendo da fila de espera.
+       </p>
+      </li> 
+      <li>
+        <h4>Taxa</h4>
+        <p>
+        	Isento
+       </p>
+      </li>           
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Acessa São Paulo<br />
+        	Rua Treze de Maio, 100 – Centro<br />
+        	Itapecerica da Serra - SP
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+
+</div>

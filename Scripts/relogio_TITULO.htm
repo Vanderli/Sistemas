@@ -1,0 +1,106 @@
+
+<html>
+<head>
+<SCRIPT Language="JavaScript">
+<!-- Hide
+
+/*
+This script was written by Mike Cullen, 1999
+Featured on Dynamic Drive (dynamicdrive.com)
+For full source code, installation instructions
+and many more DHTML scripts
+Visit Dynamicdrive.com
+*/
+
+
+var scroller;
+var ampm;
+var actualtitle=document.title+" "
+function antiMilitaryTime()
+{
+if (hr == "12"){
+ampm="P.M."
+}
+else if (hr == "13"){
+hr="1"
+ampm="P.M."
+}
+else if (hr == "14"){
+hr="2"
+ampm="P.M."
+}
+else if (hr == "15"){
+hr ="3"
+ampm="P.M."
+}
+else if (hr == "16"){
+hr = "4"
+ampm="P.M."
+}
+else if (hr == "17"){
+hr = "5"
+ampm="P.M."
+}
+else if (hr == "18"){
+hr = "6"
+ampm="P.M."
+}
+else if (hr == "19"){
+hr = "7"
+ampm="P.M."
+}
+else if (hr == "20"){
+hr = "8"
+ampm="P.M."
+}
+else if (hr == "21"){
+hr = "9"
+ampm="P.M."
+}
+else if (hr == "22"){
+hr = "10"
+ampm="P.M."
+}
+else if (hr == "23"){
+hr = "11"
+ampm="P.M."
+}
+else if (hr == "24"){
+hr = "12"
+}
+}
+function addZero(){
+if (min <= "9"){
+min = "0"+min
+}
+if (sec<= "9"){
+sec = "0"+sec
+}
+if (hr <=9){
+hr = "0"+hr
+}
+}
+function time(){
+dt=new Date()
+sec=dt.getSeconds()
+hr=dt.getHours()
+ampm="A.M."
+min=dt.getMinutes()
+}
+function scroll() {
+time()
+antiMilitaryTime()
+addZero()
+var scroller="Horas: "+hr+":"+min+":"+sec+" "+ampm
+var timeout=setTimeout("scroll()", 1000)
+  document.title=actualtitle+scroller
+  }
+if (document.all||document.getElementById)
+scroll()
+//-->
+</SCRIPT>
+
+</head>
+<body>
+</body>
+</html>

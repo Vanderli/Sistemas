@@ -1,0 +1,29 @@
+<div id="cont_noticia">  
+    <h3>Secretaria Municipal de Planejamento e Meio Ambiente</h3>
+    
+    <div id="not_tam_font">
+        <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        	<span>A+</span>
+        </a>
+        <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        	<img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        	<span>A-</span>
+        </a>
+    </div>
+    
+    <h4>Parque da Represinha</h4>
+    
+    <div id="noticia_ilustra">      
+    	<img src="fotos/pq_represinha.jpg" alt="Parque da Represinha" title="Parque da Represinha" /> 
+    </div>
+
+    <div id="noticia_descreve">
+        <p id="age_desc"><span>Descrição:</span><br /><br /> 
+
+        Área de preservação com 4,3 hectares de Mata Atlântica, situada num vale, dentro das dependências do Templo Kinkaku-Ji, tem sua área central constituída de sistemas aquáticos formados pelo represamento de águas e afloramentos na área de um pequeno riacho que atravessa o parque. Possui diversas nascentes com vegetação típica de várzea. Sua fauna e flora são bastante diversificadas. Seu acesso é feito pela Rodovia Régis Bittencourt, KM 289.
+
+        </p>
+    </div> 
+   
+</div>

@@ -1,0 +1,15 @@
+<div id="sobre_secretario">
+ <h3>Secretaria Municipal de Turismo</h3>
+
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Antonio Texeira França" />
+  
+  <div id="descreve_secretario">
+    <h4>Antonio Texeira Franca</h4>
+    
+    <p>Casado com Maria Regina França, tem dois filhos e quatro netos. Nasceu em Birigui – SP e há 29 anos é morador do Jardim São Pedro – Itapecerica da Serra.</p>
+    <p>Cursou o ensino médio completo, além de ser comerciante, antes de administrar a Secretaria de Turismo, foi vereador por três mandatos de 1990 a 1992; 1997 a 2000 e 2005 a 2008. </p>
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

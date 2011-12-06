@@ -1,0 +1,188 @@
+<!-- Banner do sistema -->
+<div class="sig_logo">    
+    <img src="<?=URL?>/img/topo/topo_admin_4.jpg" width="770" height="130" border="0" 
+    	alt="Banner do Sistema Administrativo do Site" />
+         
+    <a href="<?=URL?>/saudacao/bem_vindo.php" id="banner_admin" title="Clique aqui para ir a página de Apresentação do Sistema">
+    	Prefeitura do Município de Itapecerica da Serra
+    </a> 
+</div>
+
+<!--######################################## INICIO DO MENU ########################################-->
+<div id="sig_menu">
+    <ul class="sig_menu_adm">
+    	<!-- ------------------------------ Imagens ------------------------------ -->
+        <li>
+            <a href="#" class="sig_menu_hor"><span>Imagens</span><![if gt IE 6]></a><![endif]>
+            <ul>
+                <li><a href="#">Banner</a></li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Subgaleria</a></li>
+                
+                <li class="sig_submenu"><a href="#">Topo Rotativo</a>			
+                    <ul>					
+                        <li><a href="#">Teste 01</a></li>					
+                        <li><a href="#">Teste 02</a></li>					
+                        <li><a href="#">Teste 03</a></li> 				
+                    </ul>            
+                </li>
+                
+            </ul>
+        </li>
+        <!-- ------------------------------ Links ------------------------------ -->
+        <li>
+            <a href="#" class="sig_menu_hor"><span>Links</span><![if gt IE 6]></a><![endif]>            
+            <ul>
+                 <li class="sig_submenu"><a href="#">Links de Acesso</a>			
+                    <ul>					
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/links_acesso/cad_links_acesso.php">Cadastrar</a></li>					
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/links_acesso/listar_links_acesso.php">Listar</a></li>								
+                    </ul>            
+                </li>
+                
+                <li class="sig_submenu"><a href="#">Links de Utilidades</a>			
+                    <ul>					
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/links_utilidades/cad_links_utilidades.php">Cadastrar</a></li>					
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/links_utilidades/listar_links_utilidades.php">Listar</a></li>								
+                    </ul>            
+                </li>
+            </ul>
+        </li>
+        <!-- ------------------------------ Publicação ------------------------------ -->
+        <li>
+            <a href="#" class="sig_menu_hor"><span>Publicação</span><![if gt IE 6]></a><![endif]>
+            <ul>
+                <li><a href="#">Concurso P&uacute;blico</a></li>
+                
+                <li class="sig_submenu"><a href="#">Importante</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/importante/cad_importante.php">
+                        	Cadastrar</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/importante/listar_importante.php">
+                        	Listar</a></li>
+                	</ul>
+                </li>
+                
+                <li><a href="#">Imprensa Oficial</a>
+                    <ul>					
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/imprensa_oficial/cad_imprensa_oficial.php">Cadastrar</a></li>					
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/imprensa_oficial/listar_imprensa_oficial.php">Listar</a></li>								
+                    </ul>
+                </li>
+                <li><a href="#">Lei de Resp.</a></li>
+                <li class="sig_submenu"><a href="#">Not&iacute;cias</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/noticias/cad_noticias.php">
+                            Cadastrar</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/noticias/listar_noticias.php">
+                            Listar</a></li>
+                    </ul>
+                </li>
+                
+                
+                
+                <li><a href="#">Previd&#281;ncia Social</a></li>
+                <li><a href="#">Processo Seletivo</a></li>
+                <li><a href="#">Rec. Desp. Ensino</a></li>
+                <li><a href="#">Relat&oacute;rio de Atend.</a></li>
+            </ul>
+        </li>
+        <!-- ------------------------------ Secretaria ------------------------------ -->
+        <li>
+            <a href="#" class="sig_menu_hor"><span>Secretaria</span><![if gt IE 6]></a><![endif]>
+            <ul>
+                <li class="sig_submenu"><a href="#">Atribui&ccedil;&#259;o</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/atribuicao_sec/cad_atribuicao_sec.php">
+                            Cadastrar</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/atribuicao_sec/listar_atribuicao_sec.php">
+                            Listar</a></li>
+                    </ul>
+                </li>
+                <li class="sig_submenu"><a href="#">Beneficio</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/beneficio_sec/cad_beneficio_sec.php">
+                            Cadastrar</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/beneficio_sec/listar_beneficio_sec.php">
+                            Listar</a></li>
+                    </ul>
+                </li>
+                <li class="sig_submenu"><a href="#">Contato Sec.</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/contato_sec/cad_contato_sec.php">
+                            Cadastrar</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/contato_sec/listar_contato_sec.php">
+                            Listar</a></li>
+                    </ul>
+                </li>
+                <li class="sig_submenu"><a href="#">Secretarias</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/secretarias/cad_secretarias.php">
+                            Cadastrar</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/secretarias/listar_secretarias.php">
+                            Listar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!-- ------------------------------ Serviços ------------------------------ -->
+        <li>
+            <a href="#" class="sig_menu_hor"><span>Servi&ccedil;os</span><![if gt IE 6]></a><![endif]>
+            <ul>
+                <li class="sig_submenu"><a href="#">Agenda</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/agenda/cad_agenda.php">
+                            Cadastrar</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/agenda/listar_agenda.php">
+                            Listar</a></li>
+                    </ul>
+                </li>      
+                <li class="sig_submenu"><a href="#">Serviços Online</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/servicos_online/cad_servicos_online.php">
+                            Cadastrar</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/servicos_online/listar_servicos_online.php">
+                            Listar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="sig_menu_hor"><span>M&oacute;dulo</span><![if gt IE 6]></a><![endif]>
+            <ul>
+            	<li class="sig_submenu"><a href="#">M&oacute;dulo Usu&aacute;rio</a>
+                    <ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/modulo_usu/cad_mod_usu.php">
+                        	M&oacute;dulo Usu&aacute;rio</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/modulo_usu/listar_mod_usu.php">
+                        	Listar M&oacute;dulo</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!-- ------------------------------ Usuário ------------------------------ -->
+        <li>
+            <a href="#" class="sig_menu_hor"><span>Usu&aacute;rio</span><![if gt IE 6]></a><![endif]>
+            <ul>
+            	<li class="sig_submenu"><a href="#">Usu&aacute;rio</a>
+                	<ul>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/usuarios/cad_usu.php">
+                        	Usu&aacute;rio</a></li>
+                        <li><a href="<?=URL?>/ADMINISTRATIVO/usuarios/listar_usu.php">
+                        	Lista Usu&aacute;rio</a></li>
+                    </ul>
+                </li>
+                <li><a href="<?=URL?>/ADMINISTRATIVO/usuarios/alterar_senha/alterar_senha.php">
+                	Altera Senha</a></li>
+            </ul>
+        </li>
+        <!-- ------------------------------ Sair ------------------------------ -->
+        <li>
+        	<a href="<?=URL?>/login/logout.php" title="Sair do Sistema" class="sig_menu_hor">
+            	<span>Sair</span><![if gt IE 6]></a><![endif]>
+        </li>
+    </ul>
+</div>
+
+<!--######################################## FIM DO MENU ########################################-->

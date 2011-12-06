@@ -1,0 +1,78 @@
+<? 
+   # biblioteca com funções PHP
+   @include_once("../../lib_PHP/biblioteca.php");
+
+	# conexao com banco
+	include_once("../../conexao_db/conexaoTecnologia.php");
+	
+	# primeiro bloco que serao os quatros últimas noticias publicadas para essa secretaria
+	$sql_sec_bloco_1   = sprintf("SELECT * FROM noticias 
+									WHERE not_sec_id = 10 
+									AND not_publicado = 'SIM' 
+									AND not_status = 'ATIVO' 
+									ORDER BY not_id DESC LIMIT 0,4");
+	$query_sec_bloco_1 = mysql_query($sql_sec_bloco_1) or die($msg[2]);
+	
+	# As seis ultimas noticias publicadas para essa secretaria
+	$sql_sec_bloco_2   = sprintf("SELECT * FROM noticias 
+									WHERE not_sec_id = 10 
+									AND not_publicado = 'SIM' 
+									AND not_status = 'ATIVO' 
+									ORDER BY not_publicado_em DESC LIMIT 4,6");
+	$query_sec_bloco_2 = mysql_query($sql_sec_bloco_2) or die($msg[2]);
+?>
+  <!-- Início Secretarias -->
+  <div class="cont_secretarias">
+    
+    <h3>Secretaria Municipal de Obras e Serviços</h3>
+     
+    <!-- Início Apresentação de Notícias -->
+    <div class="apresentacao_sec">
+      <div class="galeria_sec">
+        <img src="fotos/sec_ilustra.jpg" alt="Imagem de Teste" title="Imagem de Teste" />
+        <!--<p>Lorem ipsum dolor sit amet consectetuer Nam est lacus Maecenas justo.</p>-->
+      </div>
+      <ul>
+         <? while($row_1 = mysql_fetch_assoc($query_sec_bloco_1)) : ?>
+
+        <li>
+          <a href="<?=URL?>/noticia/noticia.php?not_id=<?=$row_1['not_id']?>" title="<?=utf8_encode($row_1['not_comentario'])?>">
+            <h4><?=utf8_encode($row_1['not_titulo'])?></h4>
+          </a>
+          <a href="<?=URL?>/noticia/noticia.php?not_id=<?=$row_1['not_id']?>">   
+            <p><?=utf8_encode($row_1['not_comentario'])?></p>         
+          </a>
+        </li>
+        <? endwhile; ?>
+      </ul>
+      
+    </div>
+    <!-- Fim Apresentação de Notícias -->
+    
+    <!-- Início Agência de Notícias -->
+    <div class="sec_noticias">
+      <h2>ÚLTIMAS NOTÍCIAS</h2>
+      <ul>
+      <? while($row_2 = mysql_fetch_assoc($query_sec_bloco_2)) : ?>
+        <li><a href="<?=URL?>/noticia/noticia.php?not_id=<?=$row_2['not_id']?>"><?=utf8_encode($row_2['not_comentario'])?></a></li>
+      <? endwhile; ?>
+      </ul>
+    </div>
+      <!-- Fim Agência de Notícias -->
+      
+    <!-- Início Menu + Secretarias -->
+    <div class="menu_secretaria">
+      <h2>SOBRE O(A) SECRETÁRIO(A)</h2>
+      <div class="name_sec">
+        <span>Secretário (a): </span><a href="secretario/secretario.php">Carlos Humberto Hueb da Silva</a>
+      </div>
+      <h2>SOBRE A SECRETARIA</h2>
+      <ul>
+        <li><a href="atribuicao/atribuicao_secretaria.php" title="Atribuições">Atribuições</a></li>
+        <li><a href="servicos/servicos.php" title="Serviços da Secretaria">Serviços da Secretaria</a></li>
+        <li><a href="contato/contato_secretaria.php" title="Contato">Contato</a></li>
+      </ul>
+    </div>
+    <!-- Fim Menu + Secretarias -->
+    
+  </div>

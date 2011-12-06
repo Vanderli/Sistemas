@@ -1,0 +1,44 @@
+<div id="cont_minha_casa">
+
+  <h3>Minha Casa Minha Vida</h3>
+  
+  <p>Os interessados em participar do programa habitacional Minha Casa, Minha Vida devem entregar na sede da Prefeitura, de segunda a sexta, das 9h às 15h, o formulário preenchido e assinado e a cópia da documentação necessária. Importante ressaltar que o comprovante de endereço deve estar no nome do 1º ou 2º responsável.</p>
+  <p>Poderão se beneficiar do programa, que pretende viabilizar a construção de um milhão de moradias no Brasil, pessoas com renda de até 10 salários mínimos, interessadas em adquirir imóveis novos de até R$ 130 mil.</p>
+  <p>Mais informações pelo telefone 4668-9232, no Departamento de Habitação.</p>
+  <p><br />Abaixo estão os links para preenchimento e impressão do formulário.</p>
+  
+  <ul>
+    <li>
+      <a href="familias_beneficiadas/familias_beneficiadas.php" title="Famílias Beneficiadas e Principais Benefícios">Famílias Beneficiadas e Principais Benefícios</a>
+    </li>
+    <li>
+      <a href="vantagens_programa/vantagens_programa.php" title="Vantagens do Programa">Vantagens do Programa</a>
+    </li>
+    <li>
+      <a href="formulario_minha_casa/cadastro.php" title="Formulário" target="_blank"><strong>Formulário</strong></a>
+    </li>
+  </ul>
+  <ul id="mc_tutorial">
+
+    <h4>Dicas de Impressão do Formulário</h4>
+    
+    <li>
+      <p>
+        <strong>OPCÃO 1:</strong><br />
+        - Na barra do menu clique em Arquivo e escolha a opção Visualizar Impressão;<br />
+        - Caso exista alternativa de Reduzir para Caber ou Diminuir até caber, mantenha selecionada;<br />
+        - Agora é só imprimir.
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>OPCÃO 2:</strong><br />
+        - Na barra do menu clique em Arquivo e escolha a opção Configurar Página;<br />
+        - Em tamanho escolha A4;<br />
+        - Deixe a folha configurada como retrato;<br />
+        - Configure todas as 4 margens para que fiquem com 0 de espaço;<br />
+        - Agora é só imprimir.
+      </p>
+    </li>
+  </ul> 
+</div>

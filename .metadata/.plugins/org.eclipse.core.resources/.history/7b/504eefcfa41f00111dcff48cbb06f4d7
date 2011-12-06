@@ -1,0 +1,412 @@
+<?  include_once('../conexao/ft.php'); 
+	include_once("../biblioteca/lib.php");
+	# insiro sess�o para poder acessar as p�ginas
+    include_once("../login/protege_pagina.php");
+
+
+/* INSERT */
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$editFormAction = $_SERVER['PHP_SELF'];
+if (isset($_SERVER['QUERY_STRING'])) {
+  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+}
+
+if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
+
+	$nascimento  = $_POST['anoNasc'].'-'.$_POST['mesNasc'].'-'.$_POST['diaNasc'];
+	
+	# Funcao para retirar expressoes Regulares
+	$rg_digitado = trim(strtoupper($_POST['rg']));
+	$rg = preg_replace("/[^A-Za-z0-9]/", "", $rg_digitado);
+	
+		
+  $insertSQL = sprintf("INSERT INTO inscricoes (funcao, nascimento, idade, nome, rg, cpf, pis, sexo, qtde_filhos_menores, qtde_res_casa, estado_civil, endereco, numero, complemento, bairro, cidade, cep, uf, telefone, def_portador, def_fisico_especifico, escolaridade, qtde_dependentes, tempo_desempregado, renda_familiar, despesa_familiar, carcerario, seguro_desemprego, aposentadoria, prog_social, prog_social_especifico, hora, data, usuario_cadastro) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+                       GetSQLValueString($_POST['funcao'], "text"),
+                       GetSQLValueString($nascimento, "date"),
+                       GetSQLValueString($_POST['idade'], "int"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['nome']))), "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($rg))), "text"),
+                       GetSQLValueString($_POST['cpf'], "text"),
+                       GetSQLValueString($_POST['pis'], "text"),
+                       GetSQLValueString($_POST['sexo'], "text"),
+                       GetSQLValueString($_POST['qtde_filhos_menores'], "int"),
+                       GetSQLValueString($_POST['qtde_res_casa'], "int"),
+                       GetSQLValueString($_POST['estado_civil'], "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['endereco']))), "text"),
+                       GetSQLValueString($_POST['numero'], "int"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['complemento']))), "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['bairro']))), "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['cidade']))), "text"),
+                       GetSQLValueString($_POST['cep'], "text"),
+                       GetSQLValueString($_POST['uf'], "text"),
+                       GetSQLValueString($_POST['telefone'], "text"),
+                       GetSQLValueString($_POST['def_portador'], "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['def_fisico_especifico']))), "text"),
+                       GetSQLValueString($_POST['escolaridade'], "text"),
+                       GetSQLValueString($_POST['qtde_dependentes'], "int"),
+                       GetSQLValueString($_POST['tempo_desempregado'], "int"),
+                       GetSQLValueString($_POST['renda_familiar'], "text"),
+                       GetSQLValueString($_POST['despesa_familiar'], "text"),
+                       GetSQLValueString($_POST['carcerario'], "text"),
+                       GetSQLValueString($_POST['seguro_desemprego'], "text"),
+                       GetSQLValueString($_POST['aposentadoria'], "text"),
+                       GetSQLValueString($_POST['prog_social'], "text"),
+                       GetSQLValueString(trim(strtoupper(maiusculo($_POST['prog_social_especifico']))), "text"),
+					   GetSQLValueString(date('G:i:s'), "text"),
+					   GetSQLValueString(date('Y-m-d'), "text"),
+					   GetSQLValueString($_SESSION['log_id'], "text"));
+					   
+
+$Result1 = mysql_query($insertSQL) or die(mysql_error());
+  
+  // pego o id do cadastro atual
+  $id = mysql_insert_id();
+  
+  if($Result1){
+	  echo "<script type=\"text/javascript\">
+	  			 alert('Dados inseridos com sucesso!'); 
+				window.location.href=' ../imprime_ficha/form_ficha.php?id='+'".$id."';  
+			</script>";	 
+	}else {
+		echo "<script type=\"text/javascript\">
+					  alert('Falha na inser��o dos dados!');
+					  window.location.href='../inscricoes/cadastrar_data.php';
+					  
+				 </script>";
+	}
+}
+
+// pego os valores do formul�rio anterior
+$des = $_GET['des'];
+$idade = $_GET['idade'];
+list($diaNasc, $mesNasc, $anoNasc) = explode('/', $data);
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>..:: Frente de Trabalho ::..</title>
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<!-- Javascript's-->
+<script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>    
+<script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="../js/jquery-price_format.js"></script>
+<script type="text/javascript" src="../js/library.js"></script> 
+</head>
+
+<body>
+<div id="container">
+    <div id="menu">
+		<?php 
+			@include('../menu/menu.php'); 
+            $somenteLeitura = 'readonly="readyonly"';
+			date("Y-m-d");
+			date("H:i:s");
+        ?>
+    </div>
+    <div id="formulario">
+      <form action="<?php echo $editFormAction; ?>" name="form1" method="POST">
+        <h3 align="center">.: Cadastro de Inscri&ccedil;&otilde;es :.</h3>
+      <table width="760" height="1056">
+                <tr valign="baseline">
+                    <td width="244" class="label">Fun&ccedil;&atilde;o:</td>
+                    <td colspan="3" align="left">
+                        <input name="funcao" type="text"  id="funcao" value="AUXILIAR DE SERVI�OS GERAIS" size="40" <?php echo $somenteLeitura; ?> />
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">Data Nascimento:</td>
+                    <td colspan="3" align="left">
+                            <input type="text" value="<?php echo $diaNasc ?>" <?php echo $somenteLeitura; ?> size="3" class="form" id="diaNasc " name="diaNasc"/>
+                        /
+                            <input type="text" value="<?php echo $mesNasc ?>" <?php echo $somenteLeitura; ?> size="3" class="form" id="mesNasc" name="mesNasc"/>
+                        /
+                            <input type="text" value="<?php echo $anoNasc ?>" <?php echo $somenteLeitura; ?> size="3" class="form" id="anoNasc" name="anoNasc"/>
+                        <span class="alerta">(Menor de 18 anos - O SISTEMA BLOQUEIA)</span>  
+                        
+                        <!-- inputs invisiveis -->
+                        <input id="nascimento" name="nascimento" value="" type="hidden" class="form" />
+                    	<input id="status" name="status" value="inativo" type="hidden" class="form" />               
+                </tr>
+                <tr valign="baseline">
+                    <td  class="label">Idade:</td>
+                    <td colspan="3" align="left"><input type="text" value="<?php echo $idade ?>" size="10" 
+					<?php echo $somenteLeitura; ?>class="form" id="idade" name="idade"/>                  </tr>
+                    <tr valign="baseline">
+                    <td   class="label">Nome:</td>
+                    <td colspan="3" align="left"><input name="nome" type="text" value="" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">RG:</td>
+                    <td colspan="3" align="left"><input name="rg" type="text" value="" size="20"  /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">CPF:</td>
+                    <td colspan="3" align="left"><input name="cpf" id="cpf" type="text" value="" size="20" maxlength="15" />
+                    <span class="alerta">somente n&uacute;meros</span></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">PIS:</td>
+                    <td colspan="3" align="left"><input name="pis" type="text" value="" size="20" />
+                    <span class="alerta">somente n&uacute;meros</span></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Sexo:</td>
+                    <td colspan="3" align="left">
+                        <select name="sexo" id="sexo">
+                            <option value="-1">- SELECIONE -</option>
+                            <option value="MASCULINO">MASCULINO</option>
+                            <option value="FEMININO">FEMININO</option>
+                        </select>
+                    </td>                  
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">N.� de filhos menores de 18 anos:</td>
+                    <td colspan="3" align="left"><input name="qtde_filhos_menores" id="qtde_filhos_menores" type="text" value="" size="10" maxlength="3" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">Quantas pessoas residem na casa:</td>
+                    <td colspan="3" align="left"><input name="qtde_res_casa" id="qtde_res_casa" type="text" value="" size="10" maxlength="3" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td  class="label">Estado Civil:</td>
+                    <td colspan="3" align="left"><select name="estado_civil" id="estado_civil">
+                        <option value="-1">- ESTADO CIVIL -</option>
+                        <option value="SOLTEIRO">SOLTEIRO</option>
+                        <option value="CASADO">CASADO</option>
+                        <option value="SEPARADO">SEPARADO</option>
+                        <option value="VIUVO">VI�VO</option>
+                        <option value="OUTROS">OUTROS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Endereco:</td>
+                    <td colspan="3" align="left"><input name="endereco" type="text" value="" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">N&uacute;mero:</td>
+                    <td colspan="3" align="left"><input name="numero" type="text" value="" size="15" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Complemento:</td>
+                    <td colspan="3" align="left"><input name="complemento" type="text" value="" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Bairro:</td>
+                    <td colspan="3" align="left"><input name="bairro" type="text" value="" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Cidade:</td>
+                    <td colspan="3" align="left"><input name="cidade" type="text" value="" size="94" maxlength="90" /></td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">CEP:</td>
+                    <td colspan="3" align="left">
+                        <input name="cep"  id="cep" type="text" value="" size="30" maxlength="20"/>
+                        <span class="alerta">sem o h&iacute;fen ( - )</span>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">UF:</td>
+                    <td colspan="3" align="left">
+                        <select name="uf" id="uf">
+                            <option value="-1">- Estado -</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AM">AM</option>
+                            <option value="AP">AP</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MG">MG</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="PR">PR</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="RS">RS</option>
+                            <option value="SC">SC</option>
+                            <option value="SE">SE</option>
+                            <option value="SP">SP</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Telefone:</td>
+                    <td colspan="2" align="left">
+                        <input name="telefone" id="telefone" type="text" size="20" /></td>
+                    <td width="292" align="left">&nbsp;</td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Portador de Defici�ncia: </td>
+                    <td width="113" align="left">
+                        <select name="def_portador" id="def_portador">
+                            <option value="-1">-- Selecione --</option>
+                            <option value="NAO">N�O</option>
+                            <option value="SIM">SIM</option>
+                      </select>
+                    </td>
+                    <td width="81" align="left">
+                        <div align="right">Especifique:&nbsp;&nbsp;</div>
+                    </td>
+                    <td align="left">
+                        <input name="def_fisico_especifico" type="text" id="def_fisico_especifico" value="" size="53" maxlength="50" />
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Escolaridade:</td>
+                    <td colspan="3" align="left">
+                        <select name="escolaridade" id="escolaridade">
+                            <option value="-1">-- Selecione --</option>
+                            <option value="N�O ALFABETIZADO">N�O ALFABETIZADO</option>
+                            <option value="ENS. FUNDAMENTAL COMPLETO">ENS. FUNDAMENTAL COMPLETO</option>
+                            <option value="ENS. FUNDAMENTAL INCOMPLETO">ENS. FUNDAMENTAL INCOMPLETO</option>
+                            <option value="ENS. MEDIO COMPLETO">ENS. M�DIO COMPLETO</option>
+                            <option value="ENS. MEDIO INCOMPLETO">ENS. M�DIO INCOMPLETO</option>
+                            <option value="ENS. SUPERIOR COMPLETO">ENS. SUPERIOR COMPLETO</option>
+                            <option value="ENS. SUPERIOR INCOMPLETO">ENS. SUPERIOR INCOMPLETO</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">N.� de Dependentes:</td>
+                    <td colspan="3" align="left">
+                        <input name="qtde_dependentes" type="text" id="qtde_dependentes" value="" size="20" maxlength="3" />
+                    <span class="alerta">somente n&uacute;meros</span>                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">Tempo desempregado <span class="alerta">(meses):</span></td>
+                    <td colspan="3" align="left">
+                        <input name="tempo_desempregado" type="text" id="tempo_desempregado" value="<?php echo $des ?>" <?php echo $somenteLeitura; ?> size="20" maxlength="3" <?php echo $somenteLeitura; ?>/>
+                    <span class="alerta">somente n&uacute;meros</span>                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Renda Familiar R$:</td>
+                    <td colspan="3" align="left">
+                        <input name="renda_familiar" type="text" id="renda_familiar" value="" size="20" maxlength="15" />
+                    <span class="alerta">somente n&uacute;meros</span>                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Despesa Familiar R$:</td>
+                    <td colspan="3" align="left">
+                        <input name="despesa_familiar" type="text" id="despesa_familiar" value="" size="20" maxlength="15" />
+                    <span class="alerta">somente n&uacute;meros</span>                    </td>
+                </tr>
+                <tr valign="baseline">
+                	<td class="label">Egresso do Sistema Carcer&aacute;rio:</td>
+                    <td colspan="3" align="left">
+                        <select name="carcerario" id="carcerario">
+                        <option value="-1">-- Selecione --</option>
+                        <option value="NAO">N�O</option>
+                        <option value="SIM">SIM</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Recebe Seguro Desemprego:</td>
+                    <td colspan="3" align="left">
+                        <select name="seguro_desemprego" id="seguro_desemprego">
+                            <option value="-1">-- Selecione --</option>
+                            <option value="NAO">N�O</option>
+                            <option value="SIM">SIM</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td class="label">Recebe Aponsetadoria ou Benef&iacute;cios:</td>
+                    <td colspan="3" align="left">
+                        <select name="aposentadoria" id="aposentadoria">
+                            <option value="-1">-- Selecione --</option>
+                            <option value="NAO">N�o</option>
+                            <option value="SIM">Sim</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr valign="baseline">
+                    <td   class="label">Inserido em Programa Social Municipal:</td>
+                    <td align="left">
+                        <select name="prog_social" id="prog_social">
+                            <option value="-1">-- Selecione --</option>
+                            <option value="NAO">N�O</option>
+                            <option value="SIM">SIM</option>
+                      </select>
+                    </td>
+                    <td align="left"> <div align="right">Qual?&nbsp;&nbsp;</div></td>
+                    <td align="left">
+                        <input name="prog_social_especifico" type="text" id="prog_social_especifico" value="" size="53" maxlength="50" />
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="4">&nbsp;</td>
+                </tr>
+
+
+                <tr valign="baseline">
+                    <td colspan="4">
+                        <div align="center">
+                            <span class="alerta"> Os campos em branco dever&atilde;o ser preenchidos com ( - )</span>
+                      </div>
+                	</td>
+            	</tr>
+                <tr>
+                    <td colspan="4">
+                        <div align="center">
+                          <input name="btnCadastrar" type="submit" class="botao" id="btnCadastrar" value="Cadastrar" />
+                        </div>
+                     </td>
+        		</tr>
+                <tr>
+                    <td colspan="4"><input type="hidden" name="MM_insert" value="form1" /></td>
+                </tr>
+        </table>
+      </form>
+        <!-- MSG DE ERRO! -->
+        <div  id="msg">
+            <?php if ($_GET['action'] == 'success') { echo "Candidato inscrito com sucesso!"; } ?>
+            <?php if (!empty($_GET['erro'])) { echo $msgErro; echo "<script> setTimeout('ocultaMsg()',2000); </script>"; } ?>   
+        </div>      
+  	</div> <!-- DIV formul�rio -->
+</div><!-- DIV container -->
+    
+</body>
+</html>

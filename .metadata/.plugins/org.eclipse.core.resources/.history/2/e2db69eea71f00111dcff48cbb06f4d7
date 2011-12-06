@@ -1,0 +1,82 @@
+<?php   
+		/* conexão com banco de dados */
+		include("../../conexao_db/conexaoTecnologia.php");
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../../login/protege_pagina.php");
+		/* biblioteca */
+		include("../../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+		
+		// BUSCO O ID DO FORMULÁRIO
+		$id_dep = "-1";
+		if (isset($_GET['id_dep'])) {
+			$id_dep = $_GET['id_dep'];
+		}
+		
+		/* VISUALIZAR INFORMAÇÕES */
+		mysql_select_db($database_tecnologia, $tecnologia);
+		// Transformo o recurso em um array	
+		$sql = sprintf("SELECT * FROM origem2 WHERE cod_origem2 ='".$id_dep."'"); 
+		$query = mysql_query($sql, $tecnologia) or die('Clique em Voltar, e tente novamente!');
+		$linha = mysql_fetch_assoc($query);	
+		//print_r($linha);exit; 
+?>
+<html>
+<head>
+	<title>..:: Visualizar Departamento - Sistema Administrativo ::..</title>
+    <!-- icon do SIG -->
+    <link rel="shortcut icon" href="../../imagens/sgd_icon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="../../estilo/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+<body onLoad="vertical();horizontal();">
+	<!-- menu -->
+	<?php @include_once('../../menu/menu.php'); ?>
+    <br />
+    <div id="formCadDocumento" align="center">
+         <form action="<?php echo $editFormAction; ?>" method="POST" name="Form" id="Form">
+            <fieldset style="width: 500px;">
+                <p class="titulo">Visualizar Origem / Destino Externo - Departamento / Órgão</p>
+	 <p align="left">
+      				 <!-- COMBO ORIGEM 1 -->
+                	<label>Secretaria / Órgão</label>
+                        <select name="origem1" id="origem1" disabled>
+                            <option value=" ">- Selecione -</option>
+                            <?php // varro as informações do banco de dados
+                                    $sql = sprintf("SELECT * FROM origem1 WHERE status_origem1='ATIVO'");
+                                    $rs = mysql_query($sql);
+                                    // Obtém o resultado de uma linha como um objeto
+                                    while($row = mysql_fetch_object($rs)):?>
+                                        <!-- deixo checado apenas o combo que está no banco de dados -->
+                                        <option value="<?=$row->cod_origem1;?>"<?php $linha['cod_origem1'] == $row->cod_origem1 ? print 'selected' : null;?>>
+                                            <?=$row->sigla_origem1;?>
+                                        </option>
+                                   <?php endwhile;?>
+                        </select>
+                </p>
+                <p align="left">
+                    <label class="vermelhorNegrito">Descrição</label>
+                    	<input name="desc_origem2" type="text" id="desc_origem2" value="<?=$linha['desc_origem2']?>" size="50" maxlength="90" class="disabled" readonly/>
+                </p>	
+                <p align="left">
+                    <label class="vermelhorNegrito">Sigla</label>
+                    	<input name="sigla_origem2" type="text" id="sigla_origem2" value="<?=$linha['sigla_origem2']?>" size="50" maxlength="40" disabled/>
+                </p>	         	
+                <p align="left">
+                    <label>Status</label>
+                        <select name="status" id="status" disabled>
+                        <option value=" ">-- Selecione -- </option>
+                        <option value="1" <?php if (!(strcmp("ATIVO", $linha['status_origem2']))) {echo "selected=\"selected\"";} ?>>Ativo</option>
+                        <option value="2" <?php if (!(strcmp("INATIVO", $linha['status_origem2']))) {echo "selected=\"selected\"";} ?>>Inativo</option>
+                        </select>
+                </p>
+                <br />
+                <p align="center">          
+                	<input type="button" onClick="javascript:history.go(-1);" name="Voltar" value="Voltar" class="botao">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

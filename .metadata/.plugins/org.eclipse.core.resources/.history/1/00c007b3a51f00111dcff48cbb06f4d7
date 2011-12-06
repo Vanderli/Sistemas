@@ -1,0 +1,56 @@
+<?php include_once('conexao/ft'); ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>..:: FT ::..</title>
+<link href="css/estilo.css" rel="stylesheet" type="text/css" /></head>
+
+<body>
+<div id="formulario">
+  <div style="clear: both;">
+      <div id="topoLogin"><span class="topoMenu"><img src="imagens/FT.jpg" border="1" /></span></div>
+    <div id="formLogin">
+      <form id="form1" name="form1" method="POST" action="login/verifica_login.php">
+        <table width="195" border="0">
+          <tr>
+            <td colspan="2"><h3>:: Login ::</h3></td>
+          </tr>
+          <tr>
+            <td width="48" class="label">Login</td>
+            <td width="137"><input type="text" name="login" id="login" size="25" /></td>
+          </tr>
+          <tr>
+            <td class="label">Senha</td>
+            <td><input type="password" name="senha" id="senha" size="25" /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="right">
+                <input type="submit" name="btnLogar" id="btnLogar" value="Logar" class="botao"/>
+            </div></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+            <div align="center" id="msg">
+				<?php 
+					if($_GET['action'] == 'erroLogin'){
+						echo "Usu�rio e/ou senha inv�lido!";
+					} else if($_GET['action'] == 'lessLogin'){
+						echo "Sess�o expirada!"; 
+					} else if($_GET['action'] == 'finish'){
+						echo "Sess�o encerrada!";
+					} 
+                ?>
+            </div>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div style="clear: both;"></div>
+    </div>
+      </div>
+  <div style="clear: both;"></div>
+</div>
+</body>
+</html>

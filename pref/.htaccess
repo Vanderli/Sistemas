@@ -1,0 +1,20 @@
+# Impedir de listagem
+Options +Indexes
+
+# Redirecionar para outra pagina
+#Redirect /portal_itapecerica-WEB-2.0/index.php http://192.168..../paginas_erro/manutencao.php
+
+# Redirecionar caso erros
+# 401-falha na autoriza��o / 403-n�o encontrado / 404-acesso negado / 500-erro interno
+ErrorDocument 401 http://192.168..../paginas_erro/nao_encontrada.php
+ErrorDocument 403 http://192.168..../paginas_erro/nao_encontrada.php
+ErrorDocument 404 http://192.168..../paginas_erro/nao_encontrada.php
+ErrorDocument 500 http://192.168..../paginas_erro/nao_encontrada.php
+
+# Mensagem de Manutencao
+RewriteEngine off
+RewriteCond %{SCRIPT_FILENAME} !css.*
+RewriteCond %{SCRIPT_FILENAME} !img.*
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.2$
+RewriteCond %{REQUEST_URI} !/manutencao.php$
+RewriteRule $ http://192.168..../paginas_erro/manutencao.php [R=302,L] 

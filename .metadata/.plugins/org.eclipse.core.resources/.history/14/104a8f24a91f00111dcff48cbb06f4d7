@@ -1,0 +1,21 @@
+<div id="tel_util">
+
+  <h3>Telefones Úteis</h3>
+  
+  <div id="cont_tel_util">
+    <h4>Eletropaulo</h4>
+    
+    <ul>
+      <li id="util_endereco">
+        <p>Rua Felipe Calleira nº 91 - Jardim Tereza Maria</p>
+      </li>
+      <li id="util_tel">
+        <p>0800 72 72 120</p>
+      </li>
+      <li id="util_site">
+        <a href="http://www.eletropaulo.com.br" target="_blank" title="Eletropaulo">www.eletropaulo.com.br</a>
+      </li>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,47 @@
+<?php
+	/* conexão com banco de dados */
+	include("../../../conexao_db/conexaoTecnologia.php");
+	
+	// inicializo a sessão.
+	if (!isset($_SESSION)) { session_start(); }
+	// guardo o id em uma variável
+	if (isset($_GET['imp_id'])){$imp_id = $_GET['imp_id'];}
+	
+	// buscar título do id da noticia
+	 $tit_sql    = sprintf("select * from noticias WHERE not_id =".$_POST['imp_titulo_not']);
+	 $tit_result = @mysql_query($tit_sql) or die($msg[2]);
+	 $ti_array   = mysql_fetch_array($tit_result);	 
+	
+	// informações do servidor e banco de dados
+	$usu_id       = $_SESSION['usu_id'];
+	$dat_cad      = date('Y/m/d');
+	$hora_cad     = date('G:i:s');
+	
+	$imp_not_id      = $_POST['imp_titulo_not'];
+	$imp_titulo_not  = $titulo_not['not_titulo'];
+	$imp_seq   		 = $_POST['imp_seq'];
+	$imp_status      = $_POST['imp_status'];
+	
+
+	$sql = "UPDATE importante SET 
+							imp_usu_id     = '$usu_id',
+							imp_dat_cad    = '$dat_cad',
+							imp_hora_cad   = '$hora_cad',
+							imp_not_id     = '$imp_not_id',
+							imp_titulo_not = '$imp_titulo_not',
+							imp_seq        = '$imp_seq',
+							imp_status     = '$imp_status'
+				WHERE imp_id = $imp_id";	
+
+	//print_r($sql);exit;
+	
+	$result = @mysql_query($sql) or die($msg[2]);
+	
+	if($result){
+		echo "<script>alert('Dados inseridos com sucesso')</script>";
+		echo "<script>location.href='listar_importante.php'</script>";
+	}
+	
+	// Libera um resultado da memória
+	mysql_free_result($result);
+?>

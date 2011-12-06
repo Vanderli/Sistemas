@@ -1,0 +1,316 @@
+ /* Início
+ Créditos a Maurício Samy Silva (Maujor - http://www.maujor.com). 
+       ==========ToolTip============
+ */
+	a.dcontexto{
+	position:relative;
+	font:12px arial, verdana, helvetica, sans-serif;
+	color:#039;
+	text-decoration:none;
+	cursor:help;
+	z-index:24;
+	border-bottom-width: 2px;
+	border-bottom-color: #039;
+	clear: left;
+  }
+  a.dcontexto:hover{
+  background:transparent;
+  z-index:25; 
+  }
+  a.dcontexto span{display: none}
+  a.dcontexto:hover span{ 
+  display:block;
+  position:absolute;
+  width:400px; 
+  top:3em;
+  text-align:justify;
+  left:0;
+  font: 12px arial, verdana, helvetica, sans-serif; 
+  padding:5px 10px;
+  border:1px solid #999;
+  background:#e0ffff; 
+  color:#000;
+  }
+
+/* 
+     ==========ToolTip============
+ Fim
+ Créditos a Maurício Samy Silva (Maujor - http://www.maujor.com). 
+ */
+
+/* Menus incluir, excluir e alterar */
+
+.menu
+{
+	padding: 0 1px 1px;
+	margin-left: 0;
+	font: bold 12px Verdana, sans-serif;
+	text-align: right;
+}
+
+.menu li
+{
+list-style: none;
+margin: 0;
+border-top: 1px solid gray;
+display: inline;
+}
+
+.menu li a
+{
+padding: 0.25em 0.5em 0.25em 0.75em;
+border-left: 1em solid #AAB;
+background: #0066CC;
+text-decoration: none;
+}
+
+.menu li a:link { color: #FFFFFF; }
+.menu li a:visited { color: #CCCCCC; }
+
+.menu li a:hover
+{
+	color: #FFFFFF;
+	background: #0000CC;
+	border-top-color: #FFFF00;
+	border-right-color: #FFFF00;
+	border-bottom-color: #FFFF00;
+	border-left-color: #FFFF00;
+}
+
+/* Fim menus incluir, excluir e alterar */
+
+
+/******
+*
+* Créditos: hcar - Hamilcar Antônio Vieira da Silva - hcar_1@yahoo.com.br
+*
+* ******/
+
+
+#todo #conteudo #botoes {
+	text-align: center;
+	clear: left;
+	display: none;
+}
+#todo {
+	background-color: #999900;
+	width: 500px;
+	border: 20px inset #CC6600;
+	position: absolute;
+}
+#todo #aux {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #990000;
+	border: 3px inset #CCCCCC;
+	color: #FFFFFF;
+	clear: left;
+	float: left;
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	display: none;
+	background-image: url(../includes/ );
+	text-align: center;
+}
+#todo #conteudo {
+	clear: left;
+	background-color: #00CCFF;
+	border: 5px inset #CCCCCC;
+	margin: 5px;
+	padding: 5px;
+
+}
+#todo #conteudo #form_fotos #image #imgInfo {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #990000;
+	border: 3px inset #CCCCCC;
+	color: #FFFFFF;
+	clear: left;
+	float: left;
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	display: none;
+	background-image: url(../includes/ );
+	text-align: center;
+}
+#todo #iframeEnvia {
+	clear: left;
+	height: 80px;
+	width: 450px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	background-color: #FF6600;
+}
+#todo #iframe {
+	text-align: center;
+	clear: left;
+	display: none;
+}
+#todo #conteudo #form_fotos #image #im {
+	clear: left;
+}
+#todo #observacao {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #003300;
+	font-weight: bold;
+	background-color: #00CCFF;
+	border: 5px inset #CCCCCC;
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+#todo #conteudo #form_fotos #radio {
+	clear: left;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	display: none;
+}
+#todo #conteudo #form_fotos #image {
+	padding-top: 10px;
+	clear: left;
+	display: none;
+}
+#todo #conteudo #form_fotos #text .txt {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+#todo #conteudo #form_fotos #text {
+	clear: left;
+	display: none;
+}
+#todo #conteudo #form_fotos #text #limiteChar {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	margin-left: 50px;
+	clear: left;
+}
+#todo #conteudo #escolha {
+	text-align: center;
+}
+#todo #conteudo #acao {
+}
+#todo #retornar {
+	clear: left;
+	height: 80px;
+	width: 450px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	background-color: #FF6600;
+	padding-left: 10px;
+	margin-left: 15px;
+	display: none;
+}
+
+#infoAltera {
+	background-color: #990000;
+	display: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+#infoExclui {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #990000;
+	display: none;
+}
+
+/*********************************************************************/
+
+.topo {
+	background-color: #0066FF;
+}
+.tab {
+	background-color: #33CCFF;
+}
+.list {
+	width: 90%;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	clear: left;
+}
+.list .tab .exc {
+	width: 5%;
+	text-align: center;
+}
+#listar #navega {
+	text-align: center;
+	padding-top: 10px;
+}
+.num {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #CCCCCC;
+	margin: 1px;
+	padding: 2px;
+	border: 1px solid #000000;
+	text-align: center;
+}
+.antProx {
+	font-size: 14px;
+	text-decoration: none;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+#listar #navega {
+	padding-top: 10px;
+}
+.num1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #999999;
+	border: 1px solid #000000;
+	margin: 1px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	text-align: center;
+}
+
+.list .tab .data {
+	width: 15%;
+	text-align: center;
+}
+.list .tab .tit {
+	width: 65%;
+}
+.list .tab .ord {
+	width: 5%;
+	text-align: center;
+}
+.list .tab .alt {
+	width: 5%;
+	text-align: center;
+}
+#listar {
+	padding: 10px;
+}

@@ -1,0 +1,96 @@
+@import url(estilo_mc.css);
+
+body {
+  color: #000;
+  font-size: 0.6em;
+  
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+#cadastro_serv ul li input,
+#cadastro_serv ul li select,
+#cadastro_serv ul li textarea {
+  border: 1px #000 solid;
+}
+
+#cadastro_serv ul li input[type=radio],
+#cadastro_serv ul li input[type=checkbox] {
+  border: none !important;
+}
+
+#cadastro_serv {
+  margin-left: -295px;
+}
+
+#cadastro_serv ul li #mc_imprimir {
+  display: none;
+}
+
+
+
+span {
+  display: none;
+}
+
+/* Redifinindo Tamanho de TODOS os campos */
+#cadastro_serv {
+  width: 600px;
+}
+
+.mc_tam_ender {
+  width: 448px !important;
+}
+
+.mc_tam_menor {
+  width: 137px !important;
+}
+
+.mc_tam_menor2 {
+  width: 140px !important;
+}
+
+.mc_tam_med3,
+.mc_tam_med4 {
+  width: 282px !important;
+}
+
+.mc_tam_peq2 {
+  width: 241px !important;
+}
+
+.mc_tam_med6 {
+  width: 180px !important;
+}
+
+#cadastro_serv ul .divide_coluna {
+  margin-right: 0;
+  width: 40%;
+}
+
+.linhas {
+  height: 10px !important;
+  margin-top: 5px !important;
+  width: 90%;
+}
+
+#cadastro_serv ul .divide_coluna4 p {
+  margin: 0 !important;
+}
+
+.mc_form_brasao img {
+  margin-left: 125px;
+  height: 60% !important;
+  width: 60% !important;
+}
+
+/* IE */
+#afasta_pag2 {
+  margin-bottom: 150px\9
+}
+
+
+
+

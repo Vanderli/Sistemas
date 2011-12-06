@@ -1,0 +1,29 @@
+<div id="servico_online">
+  
+  <h3>Talão de zona azul</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+      <li>
+        <h4>Descrição do Serviço</h4>
+        <p>
+        	A venda pode ser realizada em vias publicas por agente autorizado ou em posto de venda oficial, ambos com valor de R$ 1,40 a hora<br />
+        	Quanto à revenda o mesmo deverá procurar a administradora
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Administradora<br />
+        	Rua Major Telles, 193 – CJTO 202<br />
+        	Itapecerica da Serra
+        </p> 
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>
+</div>

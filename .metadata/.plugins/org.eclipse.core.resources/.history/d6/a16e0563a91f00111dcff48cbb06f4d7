@@ -1,0 +1,41 @@
+/* CSS dos Dados Para Cadastramento de Servidores */
+
+/* Hacks IE */
+h1 {
+  font-weight: normal;
+  height: 18px;
+}
+
+h3 {
+  _margin-bottom: 0px;
+}
+
+#cadastro_serv ul li .dcs_tam_menor {
+  width: 172px;
+}
+
+#cadastro_serv ul li .dcs_tam_med {
+  _width: 528px;
+}
+
+.dcs_tam_uf {
+  _width: 35px; 
+}
+
+/* Login */
+
+#dcs_login #dcs_sist {
+  _margin-left: 125px;
+}
+
+#dcs_login #dcs_rodape {
+  width: 99.5%;
+}
+
+#dcs_login #dcs_sist ul li input {
+  margin-bottom: 0;
+}
+
+#dcs_login #dcs_sist ul li {
+  margin: 0 0 5px 0;
+}

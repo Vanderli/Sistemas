@@ -1,0 +1,122 @@
+<?php 	
+		/* conexão com banco de dados */
+		include("../../conexao_db/conexaoTecnologia.php");
+		/* insiro sessão para poder acessar as páginas */ 
+		include("../../login/protege_pagina.php");
+		/* biblioteca */
+		include("../../Biblioteca/biblioteca.php");
+		// para poder utilizar a biblioteca de data
+		$data = new DataHora;
+		
+		// BUSCO O ID DO FORMULÁRIO
+		$id_tra_ext = "-1";
+		if (isset($_GET['id_tra_ext'])) {
+			$id_tra_ext = $_GET['id_tra_ext'];
+		}
+
+		/* VISUALIZAR */
+		mysql_select_db($database_tecnologia, $tecnologia);
+		// Transformo o recurso em um array	
+		$sql = sprintf("SELECT * FROM tramite_externo WHERE cod_tra_ext ='".$id_tra_ext."'"); 
+		$query = mysql_query($sql, $tecnologia) or die('Clique em Voltar, e tente novamente!');
+		$linha = mysql_fetch_assoc($query);	
+		
+		
+		//print_r($linha);exit;
+?>
+
+<html>
+<head>
+<title>..:: Cadastrar Tr&acirc;mite Externo - Sistema Administrativo ::..</title>
+	<!-- icon do SIG -->
+    <link rel="shortcut icon" href="../../imagens/sgd_icon.ico">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!-- estilos -->
+    <link href="../../estilo/estilo.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body onLoad="vertical();horizontal();">
+<?php include('../../menu/menu.php'); ?>
+<br />
+<div id="formCadDocumento" align="center">
+  <form action="<?php echo $editFormAction; ?>" method="POST" name="Form" id="Form">
+    <fieldset style="width: 500px;">
+        <p class="titulo">Tramitação Externa de Documentos</p>
+        <p align="left">
+          <label class="vermelhorNegrito">Código Doc.</label>
+            <input type="text" name="num_documento" id="vermelhorNegrito12" value="<?=$linha['num_documento']?>" size="10" maxlength="10" class="disabled" readonly />
+        </p>
+        <p align="left">
+          <label class="vermelhorNegrito">Data Tramitação</label>
+                <input type="text" name="data_cadastro" id="data_cadastro" value="<?=$data->formataDataBR($linha['data_cadastro'])?>" size="10"  maxlength="10" class="disabled" readonly />
+		</p>
+        <p align="left">
+            <label class="vermelhorNegrito">Usuário </label>
+             <?php // varro as informações do banco de dados
+                        $sql = sprintf("SELECT * FROM usuarios WHERE STATUS = 'ATIVO' AND codUsuario =".$linha['usuario_cadastro']);
+                        $rs = mysql_query($sql);
+                        // Obtém o resultado de uma linha como um objeto
+                    while($row = mysql_fetch_object($rs)):?>                           
+                    <!-- deixo checado apenas o combo que está no banco de dados -->
+                        <input name="usuarioCadastro" type="text" id="usuarioCadastro" value="<?=$row->nomeUsuario;?>" size="20" maxlength="20" class="disabled" readonly />
+                    <?php endwhile;?>   
+        </p>
+		<br />
+    	<p align="left">
+      		<label>Status</label>            
+            <select name="status" id="status" class="disabled" disabled>
+                <option value="">-- Selecione -- </option>
+                <option value="1" <?php if (!(strcmp("Andamento", $linha['status']))) {echo "selected=\"selected\"";} ?>>Andamento</option>
+                <option value="2" <?php if (!(strcmp("Finalizado", $linha['status']))) {echo "selected=\"selected\"";} ?>>Finalizado</option>
+            </select>
+    	</p>
+	 	<p align="left">
+             <!-- COMBO Destino Externo 1 ou Sec. / Orgão de Origem -->
+            <label>Sec. / Órgão de Destino</label>
+            <select name="dest_externo_1" id="dest_externo_1" class="disabled"  disabled>
+                <option value="">- Selecione -</option>
+                <?php // varro as informações do banco de dados
+                        $sql = sprintf("SELECT * FROM origem1 WHERE status_origem1='ATIVO'");
+                        $rs = mysql_query($sql);
+                        // Obtém o resultado de uma linha como um objeto
+                        while($row = mysql_fetch_object($rs)):?>
+                            <!-- deixo checado apenas o combo que está no banco de dados -->
+                            <option value="<?=$row->cod_origem1;?>"<?php $linha['dest_externo_1'] == $row->cod_origem1 ? print 'selected' : null;?>>
+                                <?=$row->sigla_origem1;?>
+                            </option>
+                       <?php endwhile;?>
+            </select>
+		</p>
+        <p align="left">
+         <!-- COMBO Destino Externo 2 ou Depto / Orgão de Origem -->
+          <label>Depto / Órgão de Destino</label>   
+            <select name="dest_externo_2" id="dest_externo_2" class="disabled" disabled>
+                <option value="">- Selecione -</option>
+                <?php // varro as informações do banco de dados
+               		$sql_2 = sprintf("SELECT * FROM origem2 WHERE status_origem2='ATIVO' AND cod_origem1 = '".$linha['dest_externo_1']."'");
+					$rs_2 = mysql_query($sql_2);
+					// Obtém o resultado de uma linha como um objeto
+					while($row_2 = mysql_fetch_object($rs_2)):?>
+						<!-- deixo checado apenas o combo que está no banco de dados -->
+ 						<option value="<?=$row_2->cod_origem2;?>"<?php $linha['dest_externo_2'] == $row_2->cod_origem2 ? print 'selected' : null;?>>
+                			<?=$row_2->sigla_origem2;?>
+               			 </option>
+            		<?php endwhile;?>
+            </select>
+    	</p>
+        <p align="left">
+            <label>Nº Remessa</label>
+            <input type="text" name="num_remessa" id="num_remessa" value="<?=$linha['num_remessa']?>" size="100" maxlength="45" class="disabled" readonly/>
+    	</p>
+        <p align="left">
+            <label>Assunto </label>
+              <textarea name="assunto" cols="50" rows="8" id="assunto" class="disabled" readonly><?=$linha['assunto']?></textarea>
+    	</p>
+		<br />
+    	<p align="center">
+            <input type="button" onClick="javascript:history.go(-1);" name="Voltar" value="Voltar" class="botao" />
+        </p>
+	</fieldset>   	
+</form>
+</div>
+</body>
+</html>

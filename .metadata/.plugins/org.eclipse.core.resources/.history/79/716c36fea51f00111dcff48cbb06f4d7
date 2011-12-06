@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_listaSessao" value="name:codSessao;datatype:int,name:nomeSessao;datatype:string,name:descricaoSessao;datatype:string" />
+</info>

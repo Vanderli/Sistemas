@@ -1,0 +1,256 @@
+# MySQL-Front 3.1  (Build 8.5)
+
+
+# Host: 16.206 - teste    Database: tramiteInfoTecnologia
+# ------------------------------------------------------
+# Server version 5.0.45
+
+#
+# Table structure for table destino_interno
+#
+
+CREATE TABLE `destino_interno` (
+  `cod_dest_int` int(6) unsigned NOT NULL auto_increment,
+  `data_cadastro` date default NULL,
+  `hora` time default NULL,
+  `usuario_cadastro` smallint(6) default NULL,
+  `nome` varchar(100) default NULL,
+  `status_dest_int` enum('ATIVO','INATIVO') default 'ATIVO',
+  PRIMARY KEY  (`cod_dest_int`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table destino_interno
+#
+
+INSERT INTO `destino_interno` VALUES (1,'2009-07-13','15:18:26',1,'BENEDITA APARECIDA DO CARMO BURGOS','ATIVO');
+INSERT INTO `destino_interno` VALUES (2,'2009-07-13','15:07:27',1,'ELAINE MARIA BOSCHI A. SANTOS','ATIVO');
+INSERT INTO `destino_interno` VALUES (3,'2009-07-13','15:13:41',1,'MARIA DE LOURDES CINTRA RIBEIRO','ATIVO');
+INSERT INTO `destino_interno` VALUES (4,'2009-07-13','15:10:29',1,'SIDNEY PRADO PEREIRA','ATIVO');
+INSERT INTO `destino_interno` VALUES (5,'2009-07-13','15:14:35',1,'CLAUDIO LUIZ GONÇALVES SANTOS','ATIVO');
+
+#
+# Table structure for table documento
+#
+
+CREATE TABLE `documento` (
+  `codDocumento` int(6) unsigned zerofill NOT NULL auto_increment,
+  `dataCadastro` date NOT NULL,
+  `horaCadastro` time default NULL,
+  `usuarioCadastro` smallint(6) default NULL,
+  `numDocumento` varchar(45) default NULL,
+  `origem1` int(6) default NULL,
+  `origem2` int(6) default NULL,
+  `tipo_documento` int(6) default NULL,
+  `numRemessa` varchar(45) default NULL,
+  `assunto` text,
+  `nome` varchar(100) default NULL,
+  `unidade` varchar(100) default NULL,
+  `cargo` varchar(100) default NULL,
+  `recebidoPor` smallint(6) default NULL,
+  `dataRecebimento` date default NULL,
+  `horaRecebimento` time default NULL,
+  PRIMARY KEY  (`codDocumento`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table documento
+#
+
+INSERT INTO `documento` VALUES (1,'2009-07-13','15:38:42',1,'123456.987-987',6,12,1,'56566.98978','ASSUNTO','PATRICIA DA SILVA MORAIS','ITAPECERICA DA SERRA','GERENTE COMERCIAL',1,'2009-10-10','10:10:00');
+INSERT INTO `documento` VALUES (2,'2009-07-01','15:40:51',4,'689879.898-6832',1,2,1,'5656.7998-23','AVANÇO ÍNDIA TESTA SUBMARINO MILITAR DE PROPULSÃO NUCLEAR\r\nRUMOR DITADOR NORTE-COREANO TEM CÂNCER GRAVE, DIZ TV\r\nCRISE POLÍCIA MATA DOIS UIGURES EM CONFRONTO NA CHINA\r\n\r\nPELO PAÍS  \r\nPA DOCUMENTOS DO ARAGUAIA SOMEM DE ARQUIVO\r\nBA MULHER MORRE APÓS SER ESFAQUEADA E JOGADA DE VIADUTO\r\nPE VIÚVA DE BOXEADOR NEGA CRIME E DIZ ACREDITAR EM SUICÍDIO\r\nPR GUARDA MUNICIPAL É MORTO A TIROS EM TENTATIVA DE ASSALTO','ANA ALBUQUERQUE MORAIS DA SILVA DE OLIVEIRA','EMBU-GUAÇÚ','SECRETÁRIA',1,'2009-11-10','10:10:00');
+INSERT INTO `documento` VALUES (3,'2009-07-13','15:42:46',1,'6599.89-86 ab',2,3,5,'56.98 af-32','SCOLHA VINHOS PARA DEGUSTAR\r\nCOM PRATOS DA CULINÁRIA ASIÁTICA\r\nSOMMELIER DÁ DICAS PARA ESCOLHER VINHSO QUE COMBINEM COM RECEITAS DA CULINÁRIA CHINESA, INDIANA E JAPONESA.\r\nEM SPCASAS PROMOVEM TEMPORADA DE CULINÁRIA FRANCESA\r\nRECEITAPREPARE SOBREMESA COM CHOCOLATE AMARGO\r\nBLOG DO KATSUKI \t|','LEONARDO DE MARCOS DE SILVA','EMBU DAS ARTES','DIRETOR',4,'2009-10-10','12:25:00');
+INSERT INTO `documento` VALUES (4,'2009-07-16','16:49:34',1,'2735-65',6,12,7,NULL,'SOLICITAMOS A LIBERAÇÃO DO IP 192.165.5.10 PARA ACESSO A INTERNET','RONALDO DA SILVA DE LIMA',NULL,NULL,4,'2009-02-28','16:25:00');
+INSERT INTO `documento` VALUES (5,'2009-07-16','16:52:46',1,'5454545',1,2,1,'5454','54545','5454554','455','5454',1,'2009-10-10','10:10:00');
+INSERT INTO `documento` VALUES (6,'2009-07-16','16:54:33',1,'6565.565',1,2,1,NULL,'FAFAFAFAF','AAAAA','AAAA','AAAAA',1,'1990-10-10','10:10:00');
+INSERT INTO `documento` VALUES (7,'2009-07-16','16:55:27',1,'6565.565',2,3,6,'56565','AFAF','AFAFA',NULL,'DDDDD',1,'2003-10-10','10:10:00');
+INSERT INTO `documento` VALUES (8,'2009-07-17','09:10:32',1,'654.987',2,3,4,'897.98','TESTE','VALTER DA SILVA DE OLIVEIRA SALVADOR DOS SANTOS DE LIMA DOS SANTOS',NULL,'TESTE',1,'2000-10-10','10:10:00');
+
+#
+# Table structure for table origem1
+#
+
+CREATE TABLE `origem1` (
+  `cod_origem1` int(6) unsigned NOT NULL auto_increment,
+  `data_cadastro` date default NULL,
+  `hora` time default NULL,
+  `usuario_cadastro` smallint(6) default NULL,
+  `sigla_origem1` varchar(45) default NULL,
+  `desc_origem1` varchar(100) default NULL,
+  `status_origem1` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`cod_origem1`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table origem1
+#
+
+INSERT INTO `origem1` VALUES (1,'2009-07-13','14:58:38',1,'SG','SECRETARIA MUNICIPAL DE GOVERNO','ATIVO');
+INSERT INTO `origem1` VALUES (2,'2009-07-13','14:48:35',1,'SC','SECRETARIA MUNICIPAL DE CULTURA ','ATIVO');
+INSERT INTO `origem1` VALUES (3,'2009-07-13','14:49:07',1,'SETUL','SECRETARIA MUNICIPAL DE ESPORTE, TURISMO E LAZER','ATIVO');
+INSERT INTO `origem1` VALUES (4,'2009-07-13','14:50:09',1,'SIDS','SECRETARIA MUNICIPAL DE INCLUSÃO E DESENVOLVIMENTO SOCIAL','ATIVO');
+INSERT INTO `origem1` VALUES (5,'2009-07-13','14:50:42',1,'SPMA','SECRETARIA MUNICIPAL DE PLANEJAMENTO E MEIO AMBIENTE','ATIVO');
+INSERT INTO `origem1` VALUES (6,'2009-07-13','14:51:05',1,'SA','SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO','ATIVO');
+
+#
+# Table structure for table origem2
+#
+
+CREATE TABLE `origem2` (
+  `cod_origem2` int(6) unsigned NOT NULL auto_increment,
+  `data_cadastro` date default NULL,
+  `hora` time default NULL,
+  `usuario_cadastro` smallint(6) default NULL,
+  `cod_origem1` int(6) default NULL,
+  `sigla_origem2` varchar(45) default NULL,
+  `desc_origem2` varchar(100) default NULL,
+  `status_origem2` enum('ATIVO','INATIVO') default 'ATIVO',
+  PRIMARY KEY  (`cod_origem2`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table origem2
+#
+
+INSERT INTO `origem2` VALUES (1,'2009-07-13','14:53:13',1,1,'SGPA','DEPARTAMENTO DE AÇÃO POLÍTICA ADMINISTRATIVA','ATIVO');
+INSERT INTO `origem2` VALUES (2,'2009-07-13','14:52:12',1,1,'SGCS','DEPARTAMENTO DE COMUNICAÇÃO SOCIAL','ATIVO');
+INSERT INTO `origem2` VALUES (3,'2009-07-13','14:54:01',1,2,'SCD','DEPARTAMENTO DE CULTURA','ATIVO');
+INSERT INTO `origem2` VALUES (4,'2009-07-13','14:54:27',1,3,'SEDE','DEPARTAMENTO DE ESPORTES','ATIVO');
+INSERT INTO `origem2` VALUES (5,'2009-07-13','14:54:48',1,3,'SETL','DEPARTAMENTO DE TURISMO','ATIVO');
+INSERT INTO `origem2` VALUES (6,'2009-07-13','14:56:52',1,4,'SIDSRT','DEPARTAMENTO DE RELAÇÕES DO TRABALHO','ATIVO');
+INSERT INTO `origem2` VALUES (7,'2009-07-13','14:59:27',1,4,'SIDSPP','DEPARTAMENTO DE PROGRAMAS E PROJETOS','ATIVO');
+INSERT INTO `origem2` VALUES (8,'2009-07-13','15:00:31',1,4,'SIDSSA','DEPARTAMENTO DE SERVIÇOS E ATENDIMENTO','ATIVO');
+INSERT INTO `origem2` VALUES (9,'2009-07-13','15:01:13',1,5,'SMAD','DEPARTAMENTO DE MEIO AMBIENTE','ATIVO');
+INSERT INTO `origem2` VALUES (10,'2009-07-13','15:01:49',1,6,'SADRH','DEPARTAMENTO DE RECURSOS HUMANOS','ATIVO');
+INSERT INTO `origem2` VALUES (11,'2009-07-13','15:02:35',1,6,'SADAA','DEPARTAMENTO DE APOIO ADMINISTRATIVO','ATIVO');
+INSERT INTO `origem2` VALUES (12,'2009-07-13','15:04:02',1,6,'SADTI','DEPARTAMENTO DE TECNOLOGIA E INFORMAÇÃO','ATIVO');
+
+#
+# Table structure for table recebido_por
+#
+
+CREATE TABLE `recebido_por` (
+  `cod_rec_por` int(6) unsigned NOT NULL auto_increment,
+  `data_cadastro` date default NULL,
+  `hora` time default NULL,
+  `usuario_cadastro` smallint(6) default NULL,
+  `nome` varchar(100) default NULL,
+  `status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`cod_rec_por`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table recebido_por
+#
+
+INSERT INTO `recebido_por` VALUES (1,'2009-07-13','15:34:33',1,'MARCIA BAPTISTA FERREIRA DE OLIVEIRA ALEXANDRE DE AMORIM','ATIVO');
+INSERT INTO `recebido_por` VALUES (2,'2009-07-13','15:35:10',1,'ADRIANA ALEXANDRE DE AMORIM','ATIVO');
+INSERT INTO `recebido_por` VALUES (3,'2009-07-13','15:35:22',1,'MARIA DE LOURDES VIANA LOPES','ATIVO');
+INSERT INTO `recebido_por` VALUES (4,'2009-07-13','15:35:38',1,'RONALDO DE JESUS PIRES','ATIVO');
+INSERT INTO `recebido_por` VALUES (5,'2009-07-13','15:35:48',1,'MANOEL FRANCISCO DA LUZ NETO','ATIVO');
+INSERT INTO `recebido_por` VALUES (6,'2009-07-13','15:36:02',1,'ALINE DE CÁSSIA SOARES DE MOURA','ATIVO');
+INSERT INTO `recebido_por` VALUES (7,'2009-07-13','15:36:17',1,'JENYFFER KIELCY ALVES XAVIER','ATIVO');
+INSERT INTO `recebido_por` VALUES (8,'2009-07-13','15:36:31',1,'ANTONIO FRANCISCO VIEIRA','ATIVO');
+
+#
+# Table structure for table tipo_documento
+#
+
+CREATE TABLE `tipo_documento` (
+  `cod_tipo` int(6) NOT NULL auto_increment,
+  `data_cadastro` date default NULL,
+  `hora` time default NULL,
+  `usuario_cadastro` smallint(6) default NULL,
+  `nome_tipo` varchar(100) NOT NULL,
+  `status_tipo` enum('ATIVO','INATIVO') default 'ATIVO',
+  PRIMARY KEY  (`cod_tipo`)
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table tipo_documento
+#
+
+INSERT INTO `tipo_documento` VALUES (1,'2009-07-13','15:20:50',1,'OFICIO','ATIVO');
+INSERT INTO `tipo_documento` VALUES (2,'2009-07-13','15:22:58',1,'AUTOGRAFO','ATIVO');
+INSERT INTO `tipo_documento` VALUES (3,'2009-07-13','15:22:38',1,'REQUERIMENTO','ATIVO');
+INSERT INTO `tipo_documento` VALUES (4,'2009-07-13','15:22:26',1,'INFORMAÇÃO','ATIVO');
+INSERT INTO `tipo_documento` VALUES (5,'2009-07-13','15:23:13',1,'DECLARACAO','ATIVO');
+INSERT INTO `tipo_documento` VALUES (6,'2009-07-13','15:23:24',1,'INDICACAO','ATIVO');
+INSERT INTO `tipo_documento` VALUES (7,'2009-07-13','15:23:57',1,'SOLICITACAO','ATIVO');
+
+#
+# Table structure for table tramite_externo
+#
+
+CREATE TABLE `tramite_externo` (
+  `cod_tra_ext` int(6) unsigned NOT NULL auto_increment,
+  `num_documento` varchar(45) default NULL,
+  `data_cadastro` date default NULL,
+  `hora_cadastro` time default NULL,
+  `usuario_cadastro` smallint(6) default NULL,
+  `status` enum('Andamento','Finalizado') default NULL,
+  `dest_externo_1` int(6) default NULL,
+  `dest_externo_2` int(6) default NULL,
+  `num_remessa` varchar(45) default NULL,
+  `assunto` text,
+  PRIMARY KEY  (`cod_tra_ext`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table tramite_externo
+#
+
+INSERT INTO `tramite_externo` VALUES (1,'000001','2009-07-13','16:05:54',2,'Andamento',1,2,'5656.8999','OSTITUIÇÃO HISTÓRIA EM QUAD');
+INSERT INTO `tramite_externo` VALUES (2,'000001','2009-07-13','16:12:58',2,'Andamento',3,5,'365-98 ab','OME: CAMPO REQUERIDO, E TER NO MÍNIMO DE 2 CARACTERES;\r\n');
+
+#
+# Table structure for table tramite_interno
+#
+
+CREATE TABLE `tramite_interno` (
+  `cod_tra_int` int(6) unsigned NOT NULL auto_increment,
+  `num_documentoo` varchar(45) default NULL,
+  `data_cadastro` date default NULL,
+  `hora_cadastro` time default NULL,
+  `usuario_cadastro` smallint(6) default NULL,
+  `status` enum('Andamento','Finalizado') default NULL,
+  `dest_interno` int(6) default NULL,
+  `assunto` text,
+  PRIMARY KEY  (`cod_tra_int`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table tramite_interno
+#
+
+INSERT INTO `tramite_interno` VALUES (1,'000001','2009-07-13','16:18:21',2,'Andamento',1,'HOJE VOU APRESENTAR O VALIDATION, UM PLUGIN JQUERY UTILIZADO PARA VALIDAÇÃO DE FORMULÁRIOS HTML.\r\nEXISTEM PELA WEB MUITOS VALIDADORES DE FORMULÁRIO UTILIZANDO JAVASCRIPT, ESCOLHI O VALIDATION POR SER UMA SOLUÇÃO DESENVOLVIDA EM JQUERY, POR SER SEU MAIS ANTIGO PLUGIN PARA VALIDAÇÃO DE FORMULÁRIOS HTML, E PORQUE INDICO E UTILIZO EM MINHAS APLICAÇÕES.\r\nCOM ELE PODEMOS FACILMENTE, MOSTRAR MENSAGENS DE ERRO E ESCONDER-LAS QUANDO NECESSÁRIO.\r\nATUALMENTE O PLUGIN ESTÁ NA VERSÃO 1.5.2 E SUA DOCUMENTAÇÃO POD');
+INSERT INTO `tramite_interno` VALUES (2,'000002','2009-07-13','16:28:34',2,'Andamento',5,'AFAFAF');
+
+#
+# Table structure for table usuarios
+#
+
+CREATE TABLE `usuarios` (
+  `codUsuario` int(6) unsigned NOT NULL auto_increment,
+  `data_cadastro` date default NULL,
+  `hora` time default NULL,
+  `usuario_cadastro` smallint(6) default NULL,
+  `nomeUsuario` varchar(100) default NULL,
+  `login` varchar(100) default NULL,
+  `senha` varchar(100) default NULL,
+  `modulo` enum('ADMINISTRADOR','CADASTRAR E CONSULTAR','CONSULTAR','TRAMITES') default NULL,
+  `status` enum('ATIVO','INATIVO') default NULL,
+  PRIMARY KEY  (`codUsuario`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table usuarios
+#
+
+INSERT INTO `usuarios` VALUES (1,'2009-07-16','15:58:34',1,'TECNOLOGIA DA INFORMAÇÃO','tecnologia.informacao','1fdc99e23ef1547a9012ebc5f78fedb9','ADMINISTRADOR','ATIVO');
+INSERT INTO `usuarios` VALUES (2,'2009-07-01','08:49:43',2,'LUCIA PEREIRA DOS SANTOS','b','e1faffe9c3c801f2f8c3fbe7cb032cb2','CADASTRAR E CONSULTAR','ATIVO');
+INSERT INTO `usuarios` VALUES (4,'2009-06-23','16:36:20',4,'AEDSON FERREIRA DE SOUZA CONCEICAO DA SILVA','c','4a8a08f09d37b73795649038408b5f33','CONSULTAR','ATIVO');
+INSERT INTO `usuarios` VALUES (3,'2009-06-23','16:36:30',3,'ADRIANA CONCEICAO TELES INACIO','d','8277e0910d750195b448797616e091ad','TRAMITES','ATIVO');
+INSERT INTO `usuarios` VALUES (5,'2009-07-16','16:58:32',1,'CASSIA VALERIA DE MORAES D DOS SANTOS','eeeeee','e1671797c52e15f763380b45e841ec32','TRAMITES','ATIVO');
+INSERT INTO `usuarios` VALUES (6,'2009-07-16','16:59:54',6,'VANDERLI','x','9dd4e461268c8034f5c8564e155c67a6','ADMINISTRADOR','ATIVO');
+

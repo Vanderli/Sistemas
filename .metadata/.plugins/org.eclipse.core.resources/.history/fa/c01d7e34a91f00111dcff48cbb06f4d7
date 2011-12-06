@@ -1,0 +1,23 @@
+<div id="sobre_secretario">
+  <h3>Secretaria Municipal de Finanças</h3>
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Antonio de Godoi" />
+  
+  <div id="descreve_secretario">
+    <h4>Antonio de Godoi</h4>
+    
+    <p>Nascido em Itapecerica da Serra – SP, casado, pai de dois filhos.</p>
+    <p>Formado em Técnico em Contabilidade, Bacharel em Administração de Empresas e diversos cursos de aperfeiçoamento nas áreas de Recursos Humanos, Administração e Finanças Públicas.</p>
+    <p>Servidor Público aposentado de Itapecerica da Serra referente ao período de 1970 a 1998, com atuação nas áreas de Contabilidade e Recursos Humanos. Foi Secretário de Administração no exercício de 1996.</p>
+    <p>Foi Diretor de Administração no período de 1998 a 2000, no Município de Embu-Guaçu.</p>
+    <p>Foi Diretor de Administração e Finanças no período de 2001 a 2004, no Município de São Lourenço da Serra.</p>
+    <p>Responsável pelas Secretarias de Administração e Finanças no período de 2005 a 2006, no Município de Itapecerica da Serra.</p>
+    <p>Responsável pela Secretaria de Finanças no período de 2007 a 2008, no Município de Itapecerica da Serra.</p>
+    <p>A partir de 2009, ocupa o cargo de Secretário de Finanças em Itapecerica da Serra.</p>
+
+    
+
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

@@ -1,0 +1,20 @@
+<div id="sobre_secretario">
+  <h3>Secretaria Municipal de Inclusão e Desenvolvimento Social</h3>
+
+  <img src="secretario.jpg" alt="Foto do Secretário" title="Imagem de Teste" />
+  
+  <div id="descreve_secretario">
+    <h4>Dra Teresa Hueb Costa</h4>
+    
+    <p>Nascida em Uberaba - Minas Gerais, é formada em odontologia pela Universidade de Uberaba - UNIUB.</p>
+    <p>Fez Especialização e Mestrado em odontopediatria pela Universidade Santo Amaro - UNISA - São Paulo.</p>
+    <p>Assumiu a Secretaria de Ação Social e Relações do Trabalho em 2005, hoje, Secretaria de Inclusão e Desenvolvimento Social, no primeiro mandato da administração Jorge Costa e continua à frente da pasta na segunda gestão.</p>
+    <p>Casada com Jorge José da Costa em 1993, na cidade de Uberaba e mãe de Rafaela de 12 anos, assumiu como Primeira Dama, o Fundo Social de Solidariedade em 2005.</p>
+    <p>Em 2007, assumiu a presidência do Conselho de Direito da Criança e do Adolescente - CMDCA - e o Conselho Municipal de Assistencia Social - CMAS - por dois anos.</p>
+    <p>Esteve à frente da Secretaria de Cultura, interinamente, em 2006.</p>
+    <p>Hoje, à frente da Secretaria de Inclusão e Desenvolvimento Social e do Fundo Social de Solidariedade, Dra Teresa Hueb Costa vem implantando projetos de relevância em Itapecerica da Serra.</p>            
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

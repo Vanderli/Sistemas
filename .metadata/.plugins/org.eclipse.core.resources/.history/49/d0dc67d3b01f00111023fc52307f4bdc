@@ -1,0 +1,62 @@
+<div id="servico_online">
+  
+  <h3>Certificado de Vistoria e Habite-se</h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+       <li>
+        <h4>Descrição do Serviço</h4>
+        <p>Vistoria executada por técnicos habilitados para verificação do cumprimento do projeto anteriormente aprovados</p>
+      </li>
+      <li>
+        <h4>Exigências</h4>
+        <p>
+        	Terreno particular/ loteamento regular e o pedido é feito pessoalmente
+        </p>
+      </li>      
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+            - Requerimento com qualificação e endereço completo<br />
+            - RG e CPF/CNPJ originais e cópia simples<br />
+            - Recolhimento – modelo fornecido pelo Departamento<br />
+            - Alvará de Aprovação ou Substituição, documentos original<br />
+            - Projeto aprovado documento original (2 vias)<br />
+            - Memoriais descritivos originais (2 vias)<br />
+            - Caderneta de obra preenchida com o termo de encerramento da obra (processo protocolizado após Janeiro de 2008)<br />
+            - DUSM (No caso de alvará)<br />
+            - Bombeiro (condicionado)
+        </p>
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+            - Procuração (reconhecida Firma) no caso de não ser o proprietário<br />
+            - Contrato Social, se pessoa Jurídica<br />
+            - Em caso de Alvará vencido, será cobrada a renovação
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>
+        	- Taxa de protocolo R$ 7,22<br />
+            - Alvará R$ 18,28<br />
+            - Vistoria R$ 36,56<br />
+        </p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Secretaria de Planejamento e Meio Ambiente <br />
+        	Completo Administrativo Norberto Jose da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../../empresa.php';" />
+  </div>
+</div>

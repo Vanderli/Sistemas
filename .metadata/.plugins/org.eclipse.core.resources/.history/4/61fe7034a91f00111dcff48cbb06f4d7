@@ -1,0 +1,50 @@
+<div id="cont_atrib_sec">
+  
+  <h3>Secretaria Municipal de Educação</h3>
+
+  <h4>Atribuição</h4>
+
+  <div id="atrib_sec_descreve">  
+    <ul>
+      <li>
+        <p>I - coordenar, planejar, controlar, organizar e implementar as atividades educacionais, respeitadas as incumbências estabelecidas em legislação federal, estadual e municipal;</p>
+      </li>
+      <li>
+        <p>II - planejar, executar e controlar o programa de merenda escolar no Município, dentro de suas competências, conforme estabelecido em legislação pertinente;</p>
+      </li>
+      <li>
+        <p>III - organizar, manter e desenvolver os órgãos e instituições oficiais do seu sistema de ensino, integrando-os às políticas e planos educacionais da União e do Estado;</p>
+      </li>
+      <li>
+        <p>IV - baixar normas complementares para o seu sistema de ensino;</p>
+      </li>
+      <li>
+        <p>V - autorizar, credenciar e supervisionar os estabelecimentos do seu sistema de ensino;</p>
+      </li>
+      <li>
+        <p>VI - planejar e executar, por meio de seus órgãos, programas e ações de apoio ao escolar;</p>
+      </li>
+      <li>
+        <p>VII - articular-se com órgãos públicos federais, estaduais, municipais ou da iniciativa privada, objetivando a complementação e aperfeiçoamento do sistema para consecução dos programas e planos elaborados pelo Município;</p>
+      </li>
+      <li>
+        <p>VIII - garantir e dar suporte às atividades referentes aos Conselhos Municipais legalmente constituídos e vinculados à Secretaria Municipal de Educação;</p>
+      </li>
+      <li>
+        <p>IX - proporcionar o desenvolvimento dos Recursos Humanos vinculados à Secretaria Municipal de Educação;</p>
+      </li>
+      <li>
+        <p>X - estabelecer mecanismos de articulação com outras Secretarias Municipais, visando a perfeita consecução dos assuntos da educação; e</p>
+      </li>
+      <li>
+        <p>XI - estabelecer diretrizes para a construção e manutenção das cedes educacionais.</p>
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+</div>

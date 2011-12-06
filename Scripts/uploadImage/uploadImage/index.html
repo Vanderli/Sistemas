@@ -1,0 +1,248 @@
+<!--
+
+ Créditos para Hamilcar Antônio Vieira da Silva - hcar_1@hotmail.com
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+
+<title>Upload De imagens</title>
+
+<link href="include/arqCss.css" rel="stylesheet" type="text/css"/>
+
+<script language="JavaScript" type="text/javascript" src="include/upload.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="include/ajaxget.js"></script>
+
+<noscript>
+
+	<meta http-equiv="refresh" content="0;URL=noscrip.htm">
+
+</noscript>
+
+</head>
+
+<body>
+
+<div id="todo">
+
+ <div id="observacao">
+
+ <a href="#" class="dcontexto">Passe o mouse aqui para ter uma explicação de como usar o sistema.<span> 
+
+ Escolha a opção que deseja:
+
+<br/><br/>
+
+<strong>Incluir :</strong> 
+
+Ao clicar no link incluir, você será direcionado para uma página 
+
+onde terá de escolher uma das opções definidas nas checkbox, ao escolher, você 
+
+será redirecionado para o formulário onde deverá preencher todos os campos do mesmo,
+
+para adicionar uma imagem, click na seta até alcançar  o total de imagens a ser 
+
+enviado, sendo que o limite máximo para envio está configurado para umtotal de 4 imagens.
+
+<br/><br/>
+
+<strong>Alterar :</strong> 
+
+Ao clicar no link alterar(lápis) da notícia que deseja alterar, você será
+
+redirecionado ao formulário, que listará a notícia com os campos título, chamada, texto, 
+
+ordem e data da notícia, onde será permitido alterar os itens título, chamada, texto e
+
+ordem, depois de alterar click no botão alterar e a alteração será efetuada.
+
+<br/><br/>
+
+<strong>Excluir :</strong> 
+
+Ao clicar no link excluir(latão) da notícia que deseja excluir, você será
+
+redirecionado ao formulário, que listará a notícia com os campos título, chamada, texto e 
+
+imagem da notícia, depois click no botão excluir e a notícia será excluída.</span></a>
+
+ </div>
+
+ <div id="aux"></div>
+
+ <div id="conteudo">
+
+ <div id="escolha">
+
+		<ul class="menu">		
+
+			<li><a href='noticiario.php' target="_blank" title="Veja as notícias cadastradas">Ver Destaques</a></li>
+
+			<li><a href='javaScript:action("incluir");' title="Click para incluir notícias">Incluir</a></li>
+
+			<li><a href='javaScript:action("reset");' title="Reiniciar">Reiniciar</a></li>
+
+		</ul>
+
+ </div> 
+
+ <div id="acao">
+
+ 
+
+ </div>
+
+ <form id="form_fotos" name="form_fotos">
+
+			<div id="radio">
+
+				<label>
+
+				<input type="radio" name="testaEnvio" value="texto" onclick='criaForm("texto")'/>
+
+Enviar somente texto</label>
+
+				<br />
+
+				<label>
+
+<input type="radio" name="testaEnvio" value="imagens" onclick='criaForm("imagens")'/> 
+
+Enviar somente imagens</label>
+
+				<br />
+
+				<label>
+
+				<input type="radio" name="testaEnvio" value="misto" onclick='criaForm("misto")'/>
+
+Enviar texto e imagens</label>
+
+				<br/>
+
+			</div>
+
+			<div id="text">
+
+<label id="titulo" class="txt">Título:</label><br/>
+
+<input name="titulo" type="text" size="60" maxlength="55" onKeyDown = "textCounter(document.form_fotos.titulo,document.form_fotos.remLen1,55);" onKeyUp = "textCounter(document.form_fotos.titulo,document.form_fotos.remLen1,55);"/>
+
+<br/>
+
+	<span id="limiteChar">Limitado em<input type="text" name="remLen1" readonly="" value="55" size="1" maxlength="2"/>Caracteres
+
+	</span>
+
+	<br/>
+
+		<label id="chamada" class="txt">Chamada:</label><br/>
+
+<textarea  name="chamada" cols="45" rows="3" onKeyDown = "textCounter(document.form_fotos.chamada,document.form_fotos.remLen2,300);" onKeyUp = "textCounter(document.form_fotos.chamada,document.form_fotos.remLen2,300);">
+
+</textarea>
+
+<br/>
+
+<span id="limiteChar">Limitado em<input type="text" name="remLen2" readonly="" value="300" size="2" maxlength="3"/>Caracteres
+
+</span>
+
+<br/>
+
+		<label id="texto" class="txt">Texto:</label><br/>
+
+<textarea  name="texto" cols="45" rows="7">
+
+</textarea>
+
+<br/>
+
+<label id="texto" class="txt">Escolha a ordem de visualização das notícias:</label>
+
+<select name="ordem">
+
+	<option value="0">0</option>
+
+	<option value="1">1</option>
+
+	<option value="2">2</option>
+
+	<option value="3">3</option>
+
+	<option value="4">4</option>
+
+	<option value="5">5</option>
+
+</select>	
+
+			</div>
+
+			<div id="image">
+
+			  <div id="imgInfo"></div>
+
+				<div id="im">
+
+		<label id="imgs" class="text">Adicionar fotos:</label><br/>
+
+		<a href="javaScript:add_foto();"><img src="images/seta007.gif" alt="Clique para adicionar outra imagem" border="0" /></a> (Clique na imagem para enviar at&eacute; 4 imagens)
+
+		</div>
+
+		 </div>
+
+			<div id="imagens">	
+
+			</div>
+
+			<p id="botoes">
+
+				<input id="enviar" name="enviar" type="button" value="Enviar" onclick="validaForm()"/>
+
+				<input id="data" name="data" type="hidden" value="" />
+
+				------------
+
+				<input name="limpar" type="reset" value="Limpar"  onclick="resetForm(2)"/>
+
+			</p>
+
+	</form>
+
+ </div>
+
+ <div id="iframe">
+
+ 	<iframe id="iframeEnvia" name="iframeEnvia">
+
+	</iframe>
+
+ </div> 
+
+ <div id="retornar">
+
+ </div>
+
+</div>
+
+<script> 
+
+	data();
+
+	ajaxGet("listar.php",document.getElementById("acao"),true); 
+
+</script>
+
+</body>
+
+</html>
+

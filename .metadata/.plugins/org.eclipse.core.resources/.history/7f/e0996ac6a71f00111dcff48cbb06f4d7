@@ -1,0 +1,107 @@
+/* ESTILO TECNOLOGIA-IMPRIME_FICHA_PRINT */
+table {
+	/*width:770px;*/
+	table-layout:inherit;
+	word-wrap:break-word; /* quebrar palavras caso não se encaixe no layout */
+	overflow:hidden; /* MOZILLA */
+}
+/* FIXA CABEÇALHO EM TODAS AS FOLHAS NA IMPRESSÃO */
+div.conteudodatabela{overflow: visible;}
+table>tbody{overflow: visible;}
+td {height: 14pt;} 
+thead td{font-size: 11pt;	}
+tfoot td{
+	text-align: center;
+	font-size: 9pt;
+	border-bottom: solid 1px slategray;
+}
+
+thead{display: table-header-group;}
+tfoot{display: table-footer-group;}
+thead th, thead td{position: static;} 
+
+thead tr {position: static;} /* Evitar Problema se Imprimir após Deslocamento Tabela*/ 
+table tfoot tr { position: static;}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, "Trebuchet MS";
+	list-style: none;
+}
+body {
+	padding: 10px;
+	font-size: 8px;
+}
+
+th.cabecalhoLista {
+	font-weight: bold;
+	text-align: center;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+}
+.titulo {
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	background-color: #CCCCCC;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-family: "Trebuchet MS", Arial;
+	font-size: 15px;
+	font-weight: bold;
+	color: #666;
+	border: 1px solid #696969; 
+}
+.negrito {
+	font-size:12px;
+	padding:7px;
+	color: #666;	
+	font-weight: bold;
+	text-align: center;
+	background-color: #eaeaea;
+	border: 1px solid #666666;
+}
+.bordaTabela, #bordaTabela {
+	border: 1px double #000;
+}
+
+.negrito {
+	font-weight: bold;
+	font-size:12px;
+	padding:7px;
+}
+
+
+/* deixo invisivel o botão no momento da impressão */
+.list_btn { 
+	visibility:hidden;
+	display: none;
+}
+
+input, textarea, select {
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;	
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;	
+	width: 360px;	
+	font-size: 12px;
+	background: #e7e7e7;
+}
+
+.linhaLista {
+	background-: #D1D1D1;
+	font-size:22px;
+}
+.negrito {
+	font-weight: bold;
+}
+
+.linhaAbaixo {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}

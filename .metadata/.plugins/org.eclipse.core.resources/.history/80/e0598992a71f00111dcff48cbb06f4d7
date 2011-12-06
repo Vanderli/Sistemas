@@ -1,0 +1,88 @@
+<?php 
+		/* insiro sessão para poder acessar as páginas */ 
+		include('verifica_login.php'); 
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>..:: Login - Sistema Administrativo ::..</title>    
+    <!-- icon do SIG -->  
+    <link rel="shortcut icon" href="../imagens/sgd_icon.ico">
+    <!-- para rodar um gif -->
+	<!--<link rel="icon" type="image/gif" href="../imagens/sgd_icon.gif">-->
+    
+    <!-- Chamada do método que verifica se login está bloqueado ou não -->
+	<script type="text/javascript" src="../js/jquery-1.2.6.js"></script>
+	<script type="text/javascript">
+    $(function() {
+    
+        verificaLogin = function() {
+            $.ajax({
+                type: "POST",
+                url: "php_jquery_verifica_login.php",
+                dataType: "html",
+                data: "login=" + $("#login").val(),
+                success: function(ret) {
+                    if (ret=="inativo")
+                    {
+                        $("#btnLogar").attr('disabled','disabled');
+                        $("#msg").hide();
+                        $("#msg").text('Usuário bloqueado pelo Administrador do Sistema, favor entrar em contato com o Departamento de Tecnologia e Informação!').show('show');
+                    }
+                }
+            });
+        }
+    });
+    </script>
+	
+    <link href="../estilo/estiloLogin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="formulario">
+    	<div style="clear: both;">
+    		<div id="topoLogin"><span class="topoMenu"><img src="../imagens/topos/topo_sadti.jpg" border="1" /></span></div>
+    			<div id="formLogin">
+                    <form id="form1" name="form1" method="POST" action="<?=$verificaLogin; ?>">
+                        <table width="195" border="0">
+                            <tr>
+                                <td colspan="2"><h3>:: Login ::</h3></td>
+                            </tr>
+                            <tr>
+                                <td width="48" class="label">Login</td>
+                                <td width="137"><input name="login" type="text" id="login" onblur="verificaLogin();" size="25" /></td>
+                            </tr>
+                            <tr>
+                                <td class="label">Senha</td>
+                                <td><input name="senha" type="password" id="senha" size="25" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div align="right">
+                                        <input type="submit" name="btnLogar" id="btnLogar" value="Logar" class="botao"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div align="center" id="msg">
+                                        <?php 
+												if($_GET['action'] == 'erroLogin'){
+													echo "Usuário e/ou senha inválido!";
+												} else if($_GET['action'] == 'lessLogin'){
+												 	echo "Sessão expirada!"; 
+												} else if($_GET['action'] == 'finish'){
+												 	echo "Sessão encerrada!";
+												} 
+										?>
+                                </td>
+                           </tr>
+                        </table>
+                    </form>
+    			<div style="clear: both;"></div>
+    		</div>
+    	</div>
+    	<div style="clear: both;"></div>
+    </div>
+</body>
+</html>

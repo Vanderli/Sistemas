@@ -1,0 +1,59 @@
+  <div class="cont_secretarias">
+    
+    <h3>Processo Seletivo</h3>
+    
+    <p id="instala_pdf">Para visualizar arquivos em PDF você precisa ter o Adobe Reader instalado. Caso não consiga abrir os arquivos, instale o Adobe Reader clicando <a href="http://www.brasil.adobe.com/products/acrobat/readstep2.html" title="Adobe Reader Download" target="_blank">aqui</a>.</p>
+
+    <!-- Início dos Processo Seletivos -->
+    <div class="sec_noticias">
+    <!--
+    <p>
+        <br />
+        Processo Seletivo para contratação de 
+        Médico Anestesista, 
+        Médico Clínico Geral, 
+        Médico  Neonatologista, 
+        Médico Pediatra, 
+        Médico Psiquiatra. 
+        <a href="http://www.itapecerica.sp.gov.br/ps_002_2010_saude/" target="_blank"><span>Faça sua inscrição.</span></a> 
+    </p>
+    -->
+    <br />
+      <ul>
+        <li>
+            <a href="../ps_003_2010_saude/index.php" target="_blank">
+                <span>Processo Seletivo nº 003/2010 – DRH - IS</span> - <span class="link_color">Clique aqui para fazer sua inscrição.</span>
+            </a>
+        </li>      
+        <li>
+            <a href="arquivos/2010/Edital_003_2010_Abertura_IS.pdf" target="_blank">
+                <span>EDITAL Nº 013/2010</span> - Processo Seletivo nº 003/2010 – DRH - IS para contratação por tempo determinado de Médico Anestesista, Médico Clínico Geral, Médico Neonatologista, Médico Pediatra, Médico Psiquiatra, Médico Ortopedista, Agente Administrativo II, Medico Infectologista, Médico Vascular, Técnico II (nutricionista) e Técnico II (Farmacêutico).
+            </a>
+        </li>             
+        <li>
+            <a href="arquivos/2010/Edital_052_2010_Monitor_Pronasci.pdf" target="_blank">
+                <span>EDITAL Nº 052/2010</span> - Processo Seletivo nº 002/2010 – DRH para contratação por tempo determinado 
+                de Monitor Bolsista.
+            </a>
+        </li>       
+        <li>
+            <a href="arquivos/2010/Edital_012_2010_class_final_medicos.pdf" target="_blank">
+                <span>EDITAL Nº 012/2010</span> - Classificação Final do Processo Seletivo para contratação de Médico Clínico Geral e Médico Pediatra.
+            </a>
+        </li>      
+        <li>
+            <a href="arquivos/2010/Edital_Convocacao_Prova_Escrita_010_2010_SAUDE.pdf" target="_blank">
+                <span>EDITAL Nº 010/2010</span> - Convocação  para Prova Escrita dos Candidatos aos empregos de Médico Clínico Geral e Médico Pediatra.
+            </a>
+        </li>   
+  		<li>
+        	<a href="arquivos/2010/Edital_002_2010_Abertura_IS.pdf" target="_blank">
+        		<span>EDITAL Nº 008/2010</span> - Processo Seletivo nº 002/2010 - contratação por tempo determinado 
+                para os Empregos de Médico Anestesista, Médico Clínico Geral, Médico Neonatologista, Médico Pediatra e Médico Psiquiatra.
+            </a>
+        </li>      
+      </ul>
+    </div>
+      <!-- Fim dos Processo Seletivos -->
+          
+  </div>

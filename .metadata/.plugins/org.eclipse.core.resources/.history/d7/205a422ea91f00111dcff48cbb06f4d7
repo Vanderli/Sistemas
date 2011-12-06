@@ -1,0 +1,43 @@
+<?php
+	/* conexão com banco de dados */
+	include("../../../conexao_db/conexaoTecnologia.php");
+	
+	// inicializo a sessão.
+	if (!isset($_SESSION)) { session_start(); }
+	// guardo o id em uma variável
+	if (isset($_GET['con_id'])){$con_id = $_GET['con_id'];}
+	
+	// informações do servidor e banco de dados
+	$usu_id       = $_SESSION['usu_id'];
+	$dat_cad      = date('Y/m/d');
+	$hora_cad     = date('G:i:s');
+	
+	$con_sec_id   = $_POST['con_sec_id'];
+	$con_titulo   = trim($_POST['con_titulo']);
+	$con_email    = trim($_POST['con_email']);
+	$con_tel      = trim($_POST['con_tel']);
+	$con_status   = $_POST['con_status'];	
+	
+	$sql = "UPDATE contato_sec SET 
+							con_usu_id   = '$usu_id',
+							con_dat_cad  = '$dat_cad',
+							con_hora_cad = '$hora_cad',
+							con_sec_id   = '$con_sec_id',
+							con_titulo   = '$con_titulo',
+							con_email    = '$con_email',
+							con_tel      = '$con_tel',
+							con_status   = '$con_status'
+				WHERE con_id = $con_id";	
+
+	//print_r($sql);exit;
+	
+	$result = @mysql_query($sql) or die($msg[2]);
+	
+	if($result){
+		echo "<script>alert('Dados alterados com sucesso')</script>";
+		echo "<script>location.href='listar_contato_sec.php'</script>";
+	}
+	
+	// Libera um resultado da memória
+	mysql_free_result($result);
+?>

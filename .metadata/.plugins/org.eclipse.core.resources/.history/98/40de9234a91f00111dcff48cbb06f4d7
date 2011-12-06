@@ -1,0 +1,46 @@
+<div id="servico_online">
+  
+  <h3>Isenção de IPTU </h3>
+  
+  <div id="servico_online_descreve">
+  
+    <ul>
+      <li>
+        <h4>Documentos Necessários</h4>
+        <p>
+        	- RG e CPF originais<br />
+        	- Requerimento com qualificação e endereço completo<br />
+            - Carnê de IPTU original e cópia simples da capa e 1º folha<br />
+            - Comprovante de renda / original e cópia simples<br />
+            - Carta de concessão fornecida pelo INSS / original e cópia simples<br />
+            - Documento do imóvel / original e cópia simples<br />
+            - Certidão de óbito / original e cópia simples - no caso de viúvo (a)
+       </p>                
+      </li>
+      <li>
+        <h4>Observações</h4>
+        <p>
+        	Até 3 (três) salários mínimos<br />
+        	Área construída até 180 metros<br />
+        	Requerer até o dia 30 de setembro para efeito no próximo exercício
+        </p>
+      </li>
+      <li>
+        <h4>Taxas</h4>
+        <p>Taxa de protocolo 0,44 UFM/UFESP</p>
+      </li>
+      <li>
+        <h4>Local de Atendimento</h4>
+        <p>
+        	Departamento de Receita<br />
+        	Complexo Administrativo Norberto José da Costa<br />
+        	Av. Eduardo Roberto Daher, 1135 - Centro
+        </p>                
+      </li>
+    </ul>
+    
+  </div>
+    <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../servicos.php';" />
+  </div>
+</div>

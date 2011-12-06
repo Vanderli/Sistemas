@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* 20091217-1558 */
+	
+* { width:auto; float:none; overflow:visible; padding:0; margin:0; font-weight:normal; }
+body { font:10pt "Helvetica Neue", Helvetica, Arial, sans-serif; line-height:1.5; color:#222; }
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 { font-weight:bold; margin:0cm 0 0.2cm; line-height:1.3em; page-break-after:avoid; }
+h1 { font-size:16pt; margin-bottom:0.5cm }
+h2 { font-size:14pt }
+h3 { font-size:11pt }
+h4, h4 a { font-size:11pt; font-weight:normal; }
+h5 { font-size:11pt}
+h6, h6 a { font-size:10pt; margin:0.2cm 0 0 0; font-weight:normal; }
+
+/* Lines */
+hr { margin:0.4cm 0; }
+br { display:none; }
+
+/* Images */
+img { display:block; margin-bottom:0.5cm; page-break-inside:avoid; border-color:#999; }
+
+/* Tags */
+p, address { margin:0.1cm 0 }
+strong, em {font-weight:bold}
+
+/* Blockquotes */
+blockquote{width:95%;margin:0.5cm auto; background-color:#eee;padding:5px;border:0.5mm solid #555}
+blockquote p {margin:5px 0}
+
+/* Lists */
+li, dd { margin-bottom:0.2cm; }
+dt {font-weight:bold; margin-bottom:0.5cm; }
+ul, ol {margin-left:0.5cm }
+ul li {list-style:disc inside}
+ol li {list-style:decimal inside}
+li a, li strong, li span {display:inline}
+
+/* Links */
+a { color:#666; text-decoration:none; }
+a[href^="/"]:after { content: " (link: terra.com.br" attr(href) ") "; }
+
+
+/* Tables */
+table { width:98%; margin:0 auto; border:1px solid #666; border-collapse:collapse; margin-bottom:0.5cm;}
+caption {font-size:12pt; font-weight:bold; margin-bottom:6px}
+th { font-weight:bold}
+thead th { background-color:#e0e0e0; }
+th, td { border:1px solid #666; padding:0.3% 1%; }
+
+/* Hide - No need for it */
+.lst-accessibility,
+.ctn-tgm-advertising,
+.col-aside,
+.ctn-hotlinks,
+.ctn-media,
+.ctn-metrics,
+.special-coverage,
+.trr-ctn-advertising,
+.ctn-links,
+#mod-header .ctn-main-bar, 
+#mod-header .ctn-navigation-bar, 
+#mod-footer,
+#trr-tbox,
+#modalWindow
+{ display:none; }
+
+/* Header */
+#mod-header { padding:0 0 0.5cm 0; }
+#mod-header .ttl-terra-home a { display:list-item; list-style-image:url(../apps/headerfooter/_img/img-terra-print.gif); list-style-position:inside; letter-spacing:-999em; font-size:1pt; color:#fff; }
+
+/* Cols */
+.col-wide, .col-skinny { margin:0.5cm; }
+
+/* Headlines */
+.lst-headlines { margin-bottom:0.5cm; }
+
+/* Mod Videos */
+.mod-videos ul { overflow:hidden; }
+.mod-videos li { clear:both; list-style:none; }
+.mod-videos img { float:left; margin:0 0.5em 0 0; }
+
+/* Mod Feature Photos */
+.fotos { overflow:hidden; }
+.fotos li { list-style:none; float:left; }
+
+/* Tabs */
+.ctn-tabs .tabs { display:none; }
+.ctn-tabs table { margin-bottom:0.2cm; }
+.ctn-tabs .more { margin-bottom:0.5cm; }

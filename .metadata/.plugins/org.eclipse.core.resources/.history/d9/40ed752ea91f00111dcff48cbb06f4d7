@@ -1,0 +1,415 @@
+<? # insiro o cabecalho da página
+@include("cabecalho/_meta-css-js.php"); 
+?>
+
+<body>
+<div id="cadastro_serv">
+    <form action="" name="minha_casa_minha_vida" id="form_cadastro"  method="post">
+        <ul>
+            <li class="mc_form_brasao">
+                <h1>Programa Habitacional - Minha Casa Minha Vida | Prefeitura do Município de Itapecerica da Serra</h1>
+                <img src="img/logo_minha_casa.jpg" alt="Brasão da Prefeitura do Município de Itapecerica da Serra" title="Prefeitura do Município de Itapecerica da Serra">     
+            </li>
+            <li>
+                <span id="mc_sessao"></span>
+            </li>  
+            <li>
+                <h2>DADOS PARA O CADASTRO</h2>
+            </li>
+            <li>
+                <label><strong>Questionário Nº</strong></label>
+                <p></p>
+            </li>
+            <li>
+                <label><strong>1 - Funcionário Público</strong></label>
+            </li>        
+            
+            <li>        
+                <ul id="demais_qst">  
+                    <li>
+                        <input type="radio" name="func_publico" />1.1 - Sim
+                    </li>
+                    <li>
+                        <input type="radio" name="func_publico" />1.2 - Não
+                    </li>
+                </ul>
+            </li>
+            
+            <li><h3></h3></li>
+            
+            <!-- ******************** 1º Responsável ******************** -->
+            <li>
+                <label for="mc_nome" class="mc_tam_ender">2 - Nome 1º Responsável</label>
+                <label for="mc_idade" class="mc_tam_menor3">2.1 - Idade<span>(Núm.)</span></label>
+            </li>
+            <li>
+                <input name="rec_nome" type="text" id="rec_nome" class="mc_tam_ender" maxlength="70"  />
+                <input name="rec_idade" type="text" class="mc_tam_menor3"  maxlength="3" />
+            </li>
+            <!-- **** RG - ORGÃO EXPEDIDOR - DATA EMISSÃO - CPF **** -->
+            <li>
+                <label for="mc_rg" class="mc_tam_menor">3 - RG</label>
+                <label for="mc_org_exp" class="mc_tam_menor4">3.1 - Orgão Exp.</label>
+                <label for="rg_emissao" class="mc_tam_menor2">3.2 - Data<span>(dd/mm/aaaa)</span></label>
+                <label for="mc_cpf" class="mc_tam_menor">4 - CPF<span>(Números)</span></label>
+            </li>
+            <li>
+                <input name="rec_rg" type="text" class="mc_tam_menor"  maxlength="16" />
+                <input name="mc_org_exp" type="text" class="mc_tam_menor4"  />
+                <input name="rg_emissao" id="data_rg_emissao" type="text" class="mc_tam_menor"   />
+                <input name="mc_cpf" id="cpf" type="text" class="mc_tam_menor"  />
+            </li>
+            <!-- ******************** 2º Responsável ******************** -->
+            <li>
+                <label for="mc_nome2" class="mc_tam_ender">5 - Nome 2º Responsável</label>
+                <label for="mc_idade2" class="mc_tam_menor3">5.1 - Idade<span>(Núm.)</span></label>
+            </li>
+            <li>
+                <input name="rec_nome2" type="text" id="rec_nome" class="mc_tam_ender"  maxlength="40" />
+                <input name="rec_idade2" type="text" class="mc_tam_menor3"  maxlength="3" />
+            </li>
+            <!-- **** RG - ORGÃO EXPEDIDOR - DATA EMISSÃO - CPF **** -->
+            <li>
+                <label for="mc_rg2" class="mc_tam_menor">6 - RG</label>
+                <label for="mc_org_exp2" class="mc_tam_menor4">6.1 - Orgão Exp.</label>
+                <label for="rg_emissao2" class="mc_tam_menor2">6.2 - Data<span>(dd/mm/aaaa)</span></label>
+                <label for="mc_cpf2" class="mc_tam_menor">7 - CPF<span>(Números)</span></label>
+            </li>
+            <li>
+                <input name="rec_rg2" type="text" class="mc_tam_menor"  maxlength="16" />
+                <input name="mc_org_exp2" type="text" class="mc_tam_menor4"  />
+                <input name="rg_emissao2" id="data_rg_emissao2" type="text" class="mc_tam_menor"  />
+                <input name="mc_cpf2" id="cpf2" type="text" class="mc_tam_menor"  />
+            </li>
+            <li><h3></h3></li>
+            <!-- **** ESTADO CIVIL - CONDIÇÕES DE MORADIA **** -->
+            <li>
+                <label class="divide_coluna"><strong>8 - Estado Civil</strong></span></label>
+                <label class="mc_tam_menor"><strong>9 - Condições de Moradia</strong></label>
+            </li>
+            <li class="divide_coluna">
+                <ul>
+                    <li>
+                        <input type="radio" name="est_civil" />8.1 - Solteiro
+                    <li>
+                        <input type="radio" name="est_civil" />8.2 - Casado
+                    </li>
+                    <li>
+                        <input type="radio" name="est_civil" />8.3 - Desquitado
+                    </li>
+                    <li>
+                        <input type="radio" name="est_civil" />8.4 - Divorciado
+                    </li>
+                    <li>
+                        <input type="radio" name="est_civil" />8.5 - Viúvo
+                    </li>
+                    <li>
+                        <input type="radio" name="est_civil" />8.6 - União Estável
+                    </li>
+                </ul>
+            </li>
+            <li class="divide_coluna2">
+                <ul>
+<li>
+              <input type="radio" name="cond_moradia" />
+              <p>9.1 - Própria</p>
+                <ul id="reg_irre">
+                  <li>
+                    <input type="checkbox" name="cond_regular" />
+                    <p>9.1.1-Regular</p>
+                    <input type="checkbox" name="cond_irregular" />
+                    <p>9.1.2-Irregular</p>
+                  </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="radio" name="cond_moradia" />9.2 - Cedida
+                    </li>
+                    <li>
+                        <input type="radio" name="cond_moradia" />9.3 - Alugada
+                    </li>
+                    <li>
+                        <input type="radio" name="cond_moradia" />9.4 - Mora com parentes
+                    </li>
+                    <li>
+                        <input type="radio" name="cond_moradia" />9.5 - Financiada
+                    </li>
+                    <li>
+                        <input type="radio" name="cond_moradia" />9.6 - Outros
+                    </li>
+                    <li>
+                    	<input name="mc_cond_moradia_out" type="text" class="mc_tam_med6" id="outros_cm"  maxlength="15" />
+                    </li>
+                    <li>
+                        <p class="explica_reg">Regular = Escritura com Registro em Cartório</p>
+                        <p class="explica_reg2">Irregular = Sem documentação Registrada ou átra pública</p>
+                    </li>
+                </ul>
+            </li>
+            <li><h3></h3></li>
+            <!-- **** ENDEREÇO **** -->
+            <li>
+                <label for="mc_endereco" class="mc_tam_ender">10 - Endereço</label>
+                <label for="mc_num" class="mc_tam_menor3">Nº</label>
+            </li>
+            <li>
+                <input name="rec_end_num" id="rec_end_num" type="text" class="mc_tam_ender"  maxlength="30" />
+                <input name="rec_cep" type="text" class="mc_tam_menor3" />
+            </li>
+            <!-- **** BAIRRO - MUNICÍPIO **** -->
+            <li>
+                <label for="mc_bairro" class="mc_tam_med3">10.1 - Bairro</label>
+                <label for="mc_cidade" class="mc_tam_med4">10.2 - Cidade</label>
+            </li>
+            <li>
+                <input name="rec_bairro" type="text" class="mc_tam_med3"  maxlength="20" />
+                <input name="rec_municipio" type="text" class="mc_tam_med3"  maxlength="20" />
+            </li>
+            <!-- **** TELEFONE - CELULAR - EMAIL **** -->
+            <li>
+                <label for="mc_tel" class="mc_tam_menor">10.3 - Telefone<span>(Números)</span></label>
+                <label for="mc_cel" class="mc_tam_menor2">10.4 - Celular<span>(Números)</span></label>
+                <label for="mc_obs" class="mc_tam_menor">10.5 - Observação</label>
+            </li>
+            <li>
+                <input name="mc_telefone" id="telefone" type="text" class="mc_tam_menor"  maxlength="15" />
+                <input name="mc_celular" id="celular" type="text" class="mc_tam_menor2"  maxlength="15" />
+                <input name="mc_obs" type="text" class="mc_tam_peq2"  maxlength="15" />
+            </li>
+            <li id="afasta_pag2"><h3></h3></li>
+            <!-- **** OCUPÃO - RENDA **** -->
+            <li>
+                <label class="divide_coluna"><strong>11 - Ocupação 1º Responsável</strong></span></label>
+                <label class="divide_coluna"><strong>12 - Renda Mensal Familiar</strong></label>
+            </li>
+            
+            <li class="divide_coluna">
+                <ul>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        11.1 - Empregado com Registro
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        11.2 - Empregado sem Registro
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        11.3 - Autônomo
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        11.4 - Só faz bico
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        11.5 - Benefício INSS
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        11.6 - Dona de Casa
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        11.7 - Desempregado
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="divide_coluna2">
+                <ul>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        12.1 - Até 01 Salário Mínimo
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        12.2 - De 02 a 03 Salários Mínimos (até R$ 1395,00)
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        12.3 - De 04 a 05 Salários Mínimos (até R$ 2325,00)
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        12.4 - De 06 a 10 Salários Mínimos (até R$ 4650,00)
+                    </li>
+                    <li>
+                        <input type="radio" name="ocupacao" />
+                        12.5 - Acima de 10 Salários Mínimos (acima de R$ 4650,00)
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="afasta_pag"><h3></h3>
+            </li>
+            <!-- **** TRABALHO - PESSOAS - TEMPO - BOLSA FAMILIA - PROG. HABITACIONAL  **** -->
+            <li>
+                <label><strong>13 - Local de Trabalho</strong></label>
+            </li>        
+            <li>
+                <ul id="demais_qst">
+                    <li>
+                        <input type="radio" name="local_trab" />
+                        Itapecerica da Serra
+                    </li>
+                    <li id="municipio_qual" >
+                        <input type="radio" name="local_trab" />
+                        Outro Município. Qual
+                    </li>
+                    <li id="municipio_trab">
+                        <input type="text" name="municipio_trab" />
+                    </li>
+                </ul>
+            </li>        
+            <li>
+                <label><strong>14 - Quantas pessoas moram na casa</strong></label>
+            </li>        
+            <li>
+                <ul>
+                    <li>
+                        <input type="text" name="pessoas_casa" />
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label><strong>15 - Tempo de moradia no Município</strong></label>
+            </li>
+            <li>
+                <ul id="demais_qst">
+                    <li>
+                        <input type="radio" name="tempo_mora" />Até 1 ano
+                    </li>
+                    <li>
+                        <input type="radio" name="tempo_mora" />De 1 a 5 anos
+                    </li>
+                    <li>
+                        <input type="radio" name="tempo_mora" />Acima de 5 anos
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label><strong>16 - Tem cadastro no Bolsa Família</strong></label>
+            </li>
+            <li>
+                <ul id="demais_qst">
+                    <li>
+                        <input type="radio" name="bolsa_familia" />Não
+                    </li>
+                    <li id="municipio_qual">
+                        <input type="radio" name="bolsa_familia" />Sim. Nº
+                    </li>
+                    <li id="municipio_trab">
+                        <input type="text" name="bolsa_familia_qnts" />
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label><strong>17 - Já foi atendido por algum Programa Habitacional</strong></label>
+            </li>
+            <li>
+                <ul id="demais_qst">
+                    <li>
+                        <input type="radio" name="prog_habita" />Não
+                    </li>
+                    <li id="municipio_qual" >
+                        <input type="radio" name="prog_habita" />Sim. Qual
+                    </li>
+                    <li id="municipio_trab">
+                        <input type="text" name="prog_habita_ql" />
+                    </li>
+                </ul>
+            </li>
+            <li><h3></h3></li>
+            <!-- **** DONO DE IMÓVEL **** -->
+            <li>
+                <ul>
+                    <li>
+                        <label><strong>18 - É proprietário de algum Imóvel</strong></label>
+                    </li>
+                    <li>
+                        <ul id="demais_qst">
+                            <li>
+                                <input type="radio" name="outro_imovel" />Não
+                            </li>
+                            <li id="municipio_qual" >
+                                <input type="radio" name="outro_imovel" />Sim. Qual
+                            </li>
+                            <li id="municipio_trab">
+                                <input type="text" name="outro_imovel_ql" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="demais_qst">
+                            <li id="municipio_trab">
+                                <p>Onde</p><input type="text" name="outro_imovel_ql" />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><h3></h3></li>
+            <!-- **** DOCUMENTAÇÃO APRESENTADA **** -->      
+            <li class="divide_coluna">
+                <ul>
+                    <li>
+                        <input type="checkbox" disabled="disabled" name="ocupacao" />RG
+                    </li>
+                    <li>
+                        <input type="checkbox" disabled="disabled" name="ocupacao" />CPF
+                    </li>
+                    <li>
+                        <input type="checkbox" disabled="disabled" name="ocupacao" />Comprovação de Renda
+                    </li>
+                    <li>
+                        <input type="checkbox" disabled="disabled" name="ocupacao" />Comprovante de Endereço
+                    </li>
+                    <li>
+                        <input type="checkbox" disabled="disabled" name="ocupacao" />Outro
+                    </li>
+                </ul>
+            </li>
+            <li class="divide_coluna2">
+                <p class="explica_reg">
+                    No caso de cadastro via internet, após o preenchimento, 
+                    o interessado deverá imprimir o cadastro e apresentar 
+                    no Departamento de Habitação junto com cópia da 
+                    documentação solicitada ao lado.
+                </p>
+            </li>
+            <li><h3></h3></li>
+            <!-- **** DOCUMENTAÇÃO APRESENTADA **** -->      
+            <li class="divide_coluna3">
+                <ul>
+                    <li><label>Observações</label></li>
+                    <li>
+                        <p class="linhas"></p>
+                        <p class="linhas"></p>
+                        <p class="linhas"></p>
+                        <p class="linhas"></p>
+                        <p class="linhas"></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="divide_coluna4">
+                <ul>
+                    <li><label>Data</label></li>
+                    <li>
+                        <p id="data">______/______/_________</p>
+                    </li>
+                    <li><label>Entrevistador</label></li>
+                    <li><p class="linhas"></p></li>
+                    <li><label>Assinatura</label></li>
+                    <li><p class="assina"></p></li>
+                </ul>
+            </li>
+            <!-- **** BOTÃO AVANÇAR **** -->
+            <li>
+                <button type="button" name="mc_imprimir" id="mc_imprimir" value="Imprimir" onClick="javascript: print();">Imprimir</button>
+            </li>
+        </ul>         
+    </form>    
+</div>
+</body>
+</html>

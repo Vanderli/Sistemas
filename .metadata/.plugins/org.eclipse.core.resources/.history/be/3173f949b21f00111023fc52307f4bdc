@@ -1,0 +1,135 @@
+<?php
+	/* conexão com banco de dados */
+	include("../../../conexao_db/conexaoTecnologia.php");	
+	# inicializo a sessão.
+	if (!isset($_SESSION)){	session_start();}		
+	# impede que seja acessado alguma página sem passar pelo login 
+	@include("../../login/protege_pagina.php");
+	
+	/* ---------------------------- EDITAR E VISUALIZAR  ---------------------------- */ 
+	$v = "-1";	
+	if (isset($_GET['sec_id'])) { $sec_id = $_GET['sec_id']; }	
+	/* 
+	 * Desabilito o campo caso seja para visualizar
+	 * Edito o título
+	 */
+	if ($_GET['v'] == 'true') {
+		$dis = "disabled='disabled'";
+		$title = "Visualizar Secretarias";
+		
+	}else if ($_GET['edit'] == 'true') {
+		$title = "Editar Secretarias";
+		$red = "editar_secretarias.php?sec_id=$sec_id";
+		
+	/* Cadastro novo */
+	} else { 
+		$title = "Cadastro de Secretarias";
+		$red = "inserir_secretarias.php";
+	}
+			
+	// Transformo o recurso em um array	
+	$sql = sprintf("SELECT * FROM secretarias WHERE sec_id='$sec_id'");	
+	$query = @mysql_query($sql, $conn) or die($msg[2]);
+	$linha = @mysql_fetch_assoc($query);	 
+
+	
+	/* ---------------------------- FIM EDITAR E VISUALIZAR  ---------------------------- */
+	
+		
+	# insiro o cabecalho da página
+	include("../../includes/cabecalho/adm_meta-css-js.php"); 
+	
+?>
+
+<div class="sig_container">
+
+    <!-- Menu -->
+    <div class="sig_menu"><?php @include("../../menu/menu.php");?></div>
+  
+    <div class="admin">
+        <form id="admin_secretarias" method="post" name="admin_secretarias" action="<?=$red?>">
+            <ul>
+                <li><h3>Secretarias</h3></li>
+                <li>
+                    <label>Sigla</label>
+                    <input type="text" id="sec_sigla" maxlength="8" name="sec_sigla" 
+                    	value="<?=$linha['sec_sigla']?$linha['sec_sigla']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Nome</label>
+                    <input type="text" id="sec_nome" maxlength="255" name="sec_nome" 
+                    	value="<?=$linha['sec_nome']?$linha['sec_nome']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Rua</label>
+                    <input type="text" id="sec_rua" maxlength="255" name="sec_rua"  
+                    	value="<?=$linha['sec_rua']?$linha['sec_rua']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Número</label>
+                    <input type="text" id="sec_numero" maxlength="45" name="sec_numero"  
+                    	value="<?=$linha['sec_numero']?$linha['sec_numero']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Complemento</label>
+                    <input type="text" id="sec_complemento" maxlength="255" name="sec_complemento"  
+                    	value="<?=$linha['sec_complemento']?$linha['sec_complemento']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>CEP</label>
+                    <input type="text" id="sec_cep" maxlength="10" name="sec_cep"  
+                    	value="<?=$linha['sec_cep']?$linha['sec_cep']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Bairro</label>
+                    <input type="text" id="sec_bairro" maxlength="255" name="sec_bairro"  
+                    	value="<?=$linha['sec_bairro']?$linha['sec_bairro']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Cidade</label>
+                    <input type="text" id="sec_cidade" maxlength="45" name="sec_cidade" value="Itapecerica da Serra" disabled="disabled"/>
+                </li>
+                <li>
+                    <label>UF</label>
+                    <select name="sec_uf" id="sec_uf" disabled="disabled">
+                    	<option value="sp">SP</option>
+                    </select>
+                </li>
+                <li>
+                    <label>Telefone 1</label>
+                    <input type="text" id="sec_tel_1" maxlength="8" name="sec_tel_1"  
+                    	value="<?=$linha['sec_tel_1']?$linha['sec_tel_1']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Telefone 2</label>
+                    <input type="text" id="sec_tel_2" maxlength="8" name="sec_tel_2"  
+                    	value="<?=$linha['sec_tel_2']?$linha['sec_tel_2']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Telefone 3</label>
+                    <input type="text" id="sec_tel_3" maxlength="8" name="sec_tel_3"  
+                    	value="<?=$linha['sec_tel_3']?$linha['sec_tel_3']:null?>" <?=$dis?>/>
+                </li>
+                <li>
+                    <label>Status</label>          
+                    <select name="sec_status" id="admin_status" <?=$dis?>>
+                        <option value="ATIVO"   <?=($linha['sec_status'] == 'ATIVO')?'selected':null;?>>ATIVO</option>
+                        <option value="INATIVO" <?=($linha['sec_status'] == 'INATIVO')?'selected':null;?>>INATIVO</option> 
+                    </select>
+                </li>
+                <li class="admin_btns">
+					<? if ($_GET['v'] == 'true') {?>
+                    <input class="btn_cadastrar" name="visualizar" type="button" value="Voltar" onClick="javascript:history.go(-1);"/>
+                    <? } else if($_GET['edit'] == 'true'){ ?>
+                    <input class="btn_cadastrar" name="editar" type="submit" value="Editar" />
+                    <? } else{ ?>
+                    <input class="btn_cadastrar" name="cadastrar" type="submit" value="Cadastrar" <?=$dis?>/>
+                    <? } ?>
+                </li>
+            </ul>
+        </form>
+    </div>
+  
+</div><!-- fecha div sig_container -->
+</body>
+</html>

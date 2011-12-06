@@ -1,0 +1,533 @@
+
+  <?php
+
+$dia_ingles = date("l"); //v&ecirc; o dia da semana em ingl&ecirc;s
+
+switch($dia_ingles) //acha o dia da semana em portugu&ecirc;s
+{
+  case "Monday":
+   $dia_port = "Segunda-Feira";
+   break;
+  case "Tuesday":
+   $dia_port = "Ter&ccedil;a-Feira";
+   break;
+  case "Wednesday":
+   $dia_port = "Quarta-Feira";
+   break;
+  case "Thursday":
+   $dia_port = "Quinta-Feira";
+   break;
+  case "Friday":
+   $dia_port = "Sexta-Feira";
+   break;
+  case "Saturday":
+   $dia_port = "S&aacute;bado";
+   break;
+  case "Sunday":
+   $dia_port = "Domingo";
+   break;
+}
+
+$mes_ingles = date("n"); // v&ecirc; o m&ecirc;s em Ingl&ecirc;s
+
+switch($mes_ingles) // acha o m&ecirc;s em portugu&ecirc;s
+{
+  case "1":
+    $mes_port = "Janeiro";
+    break;
+  case "2":
+    $mes_port = "Fevereiro";
+    break;
+  case "3":
+    $mes_port = "Mar&ccedil;o";
+    break;
+  case "4":
+    $mes_port = "Abril";
+    break;
+  case "5":
+    $mes_port = "Maio";
+    break;
+  case "6":
+    $mes_port = "Junho";
+    break;
+  case "7":
+    $mes_port = "Julho";
+    break;
+  case "8":
+    $mes_port = "Agosto";
+    break;
+  case "9":
+    $mes_port = "Setembro";
+    break;
+  case "10":
+    $mes_port = "Outubro";
+    break;
+  case "11":
+    $mes_port = "Novembro";
+    break;
+  case "12":
+   $mes_port = "Dezembro";
+   break;
+}
+?>
+
+
+
+<?php require_once('../conexao/frente_trabalho.php');
+
+$colname_confirmacao = "-1";
+if (isset($_GET['id'])) {
+  $id = $_GET['id'];
+}
+
+// Transformo o recurso em um array	
+	$sql = sprintf("SELECT * FROM inscricoes WHERE id='".$id."'");
+	$query = mysql_query($sql) or die(mysql_error());
+	$row = mysql_fetch_assoc($query);
+	//print_r($row);exit;
+	list($anoNasc, $mesNasc, $diaNasc) = explode('-', $row['nascimento']);
+	$nascimento = $diaNasc.'/'.$mesNasc.'/'.$anoNasc;
+	
+	list($anoIns, $mesIns, $diaIns) = explode('-', $row['data']);
+	$data_ins = $diaIns.'/'.$mesIns.'/'.$anoIns;
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>..:: Frente de Trabalho ::..</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../css/estiloFicha.css" rel="stylesheet" type="text/css" />
+<link href="../css/estiloFicha_print.css" rel="stylesheet" type="text/css"  media="print"/>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+//funcao que imprime a ficha
+function imprime() {
+	javascript:window.print();
+}
+//-->
+</script>
+</head>
+<body>
+<!-- Formulário que será visivel como primeira via -->
+<div class="prim_via">
+
+    <div align="center"><img src="../imagens/cabecalho.jpg" width="700" height="120"></div>
+    <table width="700" align="center">
+      <tr class="txt_via">
+      	<td height="15" class="negrito" colspan="2" align="center"><h3>1º VIA</h3></td>
+      </tr>
+      <tr>
+        <td width="232" height="15" class="negrito">Cód. da Inscri&ccedil;&atilde;o:</td>
+        <td width="472" height="15" class="style9"><?php echo $id;?></td>
+      </tr>
+      <tr>
+        <td width="232" height="15" class="negrito">Data da Inscri&ccedil;&atilde;o:</td>
+        <td width="472" height="15"><?php echo $data_ins;?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Hor&aacute;rio da Inscri&ccedil;&atilde;o:</td>
+        <td height="15"><?php echo $row['hora']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Data Nascimento:</td>
+        <td height="15"><?php echo $nascimento; ?></td>
+      </tr>
+      <tr>
+        <td height="15"><span class="negrito">Idade:</span></td>
+        <td height="15"><?php echo $row['idade']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Nome:</td>
+        <td height="15"><?php echo $row['nome']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">RG:</td>
+        <td height="15"><?php echo $row['rg']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">CPF:</td>
+        <td height="15"><?php echo $row['cpf']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">PIS:</td>
+        <td height="15"><?php echo $row['pis']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Sexo:</td>
+        <td height="15"><?php echo $row['sexo']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">N.&ordm; de filhos menores de 18 anos:</td>
+        <td height="15"><?php echo $row['qtde_filhos_menores']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Quantas pessoas residem na casa:</td>
+        <td height="15"><?php echo $row['qtde_res_casa']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Estado Civil:</td>
+        <td height="15"><?php echo $row['estado_civil']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Endere&ccedil;o:</td>
+        <td height="15"><?php echo $row['endereco']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">N&uacute;mero:</td>
+        <td height="15"><?php echo $row['numero']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Complemento:</td>
+        <td height="15"><?php echo $row['complemento']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Bairro:</td>
+        <td height="15"><?php echo $row['bairro']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Cidade:</td>
+        <td height="15"><?php echo $row['cidade']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">CEP:</td>
+        <td height="15"><?php echo $row['cep']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">UF:</td>
+        <td height="15"><?php echo $row['uf']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Telefone:</td>
+        <td height="15"><?php echo $row['telefone']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Portador de Defici&ecirc;ncia: </td>
+        <td height="15"><?php echo $row['def_portador']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Especifique:</td>
+        <td height="15"><?php echo $row['def_fisico_especifico']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Escolaridade:</td>
+        <td height="15"><?php echo $row['escolaridade']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">N.&ordm; de Dependentes:</td>
+        <td height="15"><?php echo $row['qtde_dependentes']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Tempo desempregado (meses):</td>
+        <td height="15"><?php echo $row['tempo_desempregado']; ?></td>
+      </tr>
+      <tr>
+        <td height="21" class="negrito">Renda Familiar R$:</td>
+        <td height="21"><?php echo $row['renda_familiar']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Despesa Familiar R$:</td>
+        <td height="15"><?php echo $row['despesa_familiar']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Egresso do Sistema Carcer&aacute;rio:</td>
+        <td height="15"><?php echo $row['carcerario']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Recebe Seguro Desemprego:</td>
+        <td height="15"><?php echo $row['seguro_desemprego']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Recebe Aponsetadoria ou Benef&iacute;cios:</td>
+        <td height="15"><?php echo $row['aposentadoria']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Inserido em Programa Social Municipal:</td>
+        <td height="15"><?php echo $row['prog_social']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Qual?&nbsp;</td>
+        <td height="15"><?php echo $row['prog_social_especifico']; ?></td>
+      </tr>
+      <tr>
+        <td height="15">&nbsp;</td>
+        <td height="15">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="15" colspan="2"><p align="justify">O Bolsista abaixo DECLARA, sob as penas da lei, QUE:</p><br />
+        <p align="justify">Os dados informados neste formul&aacute;rio s&atilde;o verdadeiras, estou ciente de que a inexatid&atilde;o ou irregularidade destas afirmativas, ainda que verificadas posteriormente, ocasionar&aacute; minha elimina&ccedil;&atilde;o do Programa, independente da classifica&ccedil;&atilde;o obtida, com a anula&ccedil;&atilde;o de todos os atos praticados, sem preju&iacute;zo das demais medidas de ordem administrativa, civil ou criminal; Tenho pleno conhecimento das normas e m&eacute;todos do Programa Emergencial de Trabalho e Cidadania, conforme Lei Municipal n&ordm; 1822/07 alterada pela Lei n&ordm; 1987 de 05/05/2009.</p></td>
+      </tr>
+      <tr>
+        <td height="15" colspan="2"><table width="700" align="center">
+          <tr>
+            <td colspan="2"><?php
+            //Resultado
+
+			echo ($dia_port);
+			echo (", ");
+			echo (date("d"));
+			echo (" de ");
+			echo ($mes_port);
+			echo (" de ");
+			echo (date("Y"));
+			?></td>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">________________________________________________</div></td>
+            <td colspan="2"><div align="center">________________________________________________</div></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">Assinatura do Candidato</td>
+            <td colspan="2" align="center">Assinatura do Respons&aacute;vel pela Inscri&ccedil;&atilde;o</td>
+          </tr>
+          <tr>
+            <td width="168">&nbsp;</td>
+            <td width="166">&nbsp;</td>
+            <td width="172">&nbsp;</td>
+            <td width="150">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="center">_________________________________________________________</td>
+            </tr>
+          <tr>
+            <td colspan="4" align="center">ASSINATURA MEMBRO COMISS&Atilde;O</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="38" colspan="2" class="list_btn">
+        <form name="form1" method="post" action="">
+          <p align="center">          
+                    <input type="button" name="Voltar ao Cadastrar" value="Voltar ao Cadastrar" class="botao" onClick="parent.location='../inscricoes/cadastrar_data.php'">
+            <input type="button" name="imprimir" value="Imprimir" class="botao" onClick="imprime(); ">
+            </p>
+          </form>    
+        </td>
+      </tr>
+    </table>
+</div>
+</div>
+<!-- existe o mesmo formulário que só é visivel no momento da impressão -->
+<div class="seg_via" id="quebra">
+    <div align="center"><img src="../imagens/cabecalho.jpg" width="700" height="120"></div>
+    <table width="700" align="center">
+      <tr class="txt_via">
+      	<td height="15" class="negrito" colspan="2" align="center"><h3>2º VIA</h3></td>
+      </tr>
+       <tr>
+        <td width="232" height="15" class="negrito">Cód. da Inscri&ccedil;&atilde;o:</td>
+        <td width="472" height="15" class="style9"><?php echo $id;?></td>
+      </tr>
+      <tr>
+        <td width="231" height="15" class="negrito">Data da Inscri&ccedil;&atilde;o:</td>
+        <td width="473" height="15"><?php echo $data_ins;?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Hor&aacute;rio da Inscri&ccedil;&atilde;o:</td>
+        <td height="15"><?php echo $row['hora']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Data Nascimento:</td>
+        <td height="15"><?php echo $nascimento; ?></td>
+      </tr>
+      <tr>
+        <td height="15"><span class="negrito">Idade:</span></td>
+        <td height="15"><?php echo $row['idade']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Nome:</td>
+        <td height="15"><?php echo $row['nome']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">RG:</td>
+        <td height="15"><?php echo $row['rg']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">CPF:</td>
+        <td height="15"><?php echo $row['cpf']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">PIS:</td>
+        <td height="15"><?php echo $row['pis']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Sexo:</td>
+        <td height="15"><?php echo $row['sexo']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">N.&ordm; de filhos menores de 18 anos:</td>
+        <td height="15"><?php echo $row['qtde_filhos_menores']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Quantas pessoas residem na casa:</td>
+        <td height="15"><?php echo $row['qtde_res_casa']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Estado Civil:</td>
+        <td height="15"><?php echo $row['estado_civil']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Endere&ccedil;o:</td>
+        <td height="15"><?php echo $row['endereco']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">N&uacute;mero:</td>
+        <td height="15"><?php echo $row['numero']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Complemento:</td>
+        <td height="15"><?php echo $row['complemento']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Bairro:</td>
+        <td height="15"><?php echo $row['bairro']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Cidade:</td>
+        <td height="15"><?php echo $row['cidade']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">CEP:</td>
+        <td height="15"><?php echo $row['cep']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">UF:</td>
+        <td height="15"><?php echo $row['uf']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Telefone:</td>
+        <td height="15"><?php echo $row['telefone']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Portador de Defici&ecirc;ncia: </td>
+        <td height="15"><?php echo $row['def_portador']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Especifique:</td>
+        <td height="15"><?php echo $row['def_fisico_especifico']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Escolaridade:</td>
+        <td height="15"><?php echo $row['escolaridade']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">N.&ordm; de Dependentes:</td>
+        <td height="15"><?php echo $row['qtde_dependentes']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Tempo desempregado (meses):</td>
+        <td height="15"><?php echo $row['tempo_desempregado']; ?></td>
+      </tr>
+      <tr>
+        <td height="21" class="negrito">Renda Familiar R$:</td>
+        <td height="21"><?php echo $row['renda_familiar']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Despesa Familiar R$:</td>
+        <td height="15"><?php echo $row['despesa_familiar']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Egresso do Sistema Carcer&aacute;rio:</td>
+        <td height="15"><?php echo $row['carcerario']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Recebe Seguro Desemprego:</td>
+        <td height="15"><?php echo $row['seguro_desemprego']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Recebe Aponsetadoria ou Benef&iacute;cios:</td>
+        <td height="15"><?php echo $row['aposentadoria']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Inserido em Programa Social Municipal:</td>
+        <td height="15"><?php echo $row['prog_social']; ?></td>
+      </tr>
+      <tr>
+        <td height="15" class="negrito">Qual?&nbsp;</td>
+        <td height="15"><?php echo $row['prog_social_especifico']; ?></td>
+      </tr>
+      <tr>
+        <td height="15">&nbsp;</td>
+        <td height="15">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="15" colspan="2"><p align="justify">O Bolsista abaixo DECLARA, sob as penas da lei, QUE:</p><br />
+        <p align="justify">Os dados informados neste formul&aacute;rio s&atilde;o verdadeiras, estou ciente de que a inexatid&atilde;o ou irregularidade destas afirmativas, ainda que verificadas posteriormente, ocasionar&aacute; minha elimina&ccedil;&atilde;o do Programa, independente da classifica&ccedil;&atilde;o obtida, com a anula&ccedil;&atilde;o de todos os atos praticados, sem preju&iacute;zo das demais medidas de ordem administrativa, civil ou criminal; Tenho pleno conhecimento das normas e m&eacute;todos do Programa Emergencial de Trabalho e Cidadania, conforme Lei Municipal n&ordm; 1822/07 alterada pela Lei n&ordm; 1987 de 05/05/2009.</p></td>
+      </tr>
+      <tr>
+        <td height="15" colspan="2"><table width="700" align="center">
+          <tr>
+            <td colspan="2"><?php
+            //Resultado
+
+			echo ($dia_port);
+			echo (", ");
+			echo (date("d"));
+			echo (" de ");
+			echo ($mes_port);
+			echo (" de ");
+			echo (date("Y"));
+			?></td>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+            </tr>
+          <tr>
+            <td colspan="2"><div align="center">________________________________________________</div></td>
+            <td colspan="2"><div align="center">________________________________________________</div></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">Assinatura do Candidato</td>
+            <td colspan="2" align="center">Assinatura do Respons&aacute;vel pela Inscri&ccedil;&atilde;o</td>
+          </tr>
+           
+          <tr>
+            <td width="168">&nbsp;</td>
+            <td width="166">&nbsp;</td>
+            <td width="172">&nbsp;</td>
+            <td width="150">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="center">_________________________________________________________</td>
+            </tr>
+          <tr>
+            <td colspan="4" align="center">ASSINATURA MEMBRO COMISS&Atilde;O</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="38" colspan="2" class="list_btn">
+        <form name="form1" method="post" action="">
+          <p align="center">          
+                    <input type="button" name="Voltar ao Cadastrar" value="Voltar ao Cadastrar" class="botao" onClick="parent.location='../inscricoes/cadastrar_data.php'">
+            <input type="button" name="imprimir" value="Imprimir" class="botao" onClick="imprime(); ">
+            </p>
+          </form>     
+        </td>
+      </tr>
+    </table>
+<div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?  # conexao com banco de dados
+    include_once("../conexao_db/conexaoTecnologia.php");
+    $url = "http://".$_SERVER['SERVER_NAME']."/portal_itapecerica-WEB-2.0";
+    $ano = date(Y);
+    # retornar no formato pubDate
+    function pubDate($datetime){
+        return date("D, d M Y G:i:s O", strtotime($datetime));
+    }
+    # Intancia classe
+    $rss = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><rss></rss>');
+    $rss->addAttribute('version', '2.0');
+    # Cria o elemento <channel> dentro de <rss>
+    $canal = $rss->addChild('channel');
+
+    # Adiciona sub-elementos ao elemento <channel>
+    $canal->addChild('title', 'Prefeitura do Município de Itapecerica da Serra');
+    $canal->addChild('description', 'Últimas noticias da Prefeitura do Município de Itapecerica da Serra');
+    $canal->addChild('link', $url);
+    $canal->addChild('copyright', "Copyright $ano Prefeitura do Município de Itapecerica da Serra - Todos os direitos reservados");
+    $canal->addChild('language','pt-br');
+
+    # Define a consulta MySQL
+    $sql = "SELECT not_id, not_titulo, not_comentario, not_publicado_em
+            FROM noticias
+            WHERE not_status = 'ATIVO'
+            ORDER BY not_publicado_em DESC LIMIT 15";
+    $query = @mysql_query($sql) or die($msg[2]);
+
+    # Inclui um <item> para cada resultado encontrado
+    while ($dados = mysql_fetch_assoc($query)) {
+        $not_id = $dados['not_id'];
+        $not_titulo = utf8_encode($dados['not_titulo']);
+        $not_comentario = utf8_encode($dados['not_comentario']);
+        $not_publicado_em = pubDate($dados['not_publicado_em']);
+        # Cria um elemento <item> dentro de <channel>
+        $item = $canal->addChild('item');
+        # Adiciona sub-elementos ao elemento <item>
+        $item->addChild('title', $not_titulo);
+        $item->addChild('description', $not_comentario);
+        $item->addChild('pubDate',$not_publicado_em);
+        $item->addChild('link', $url.'/noticia/noticia.php?not_id='.$not_id);
+    }
+    # Define o tipo de conteudo e o charset
+    header("content-type: application/rss+xml; encoding=UTF-8");
+
+    # Entrega o conteudo do RSS completo
+    echo $rss->asXML();
+    exit;
+?>

@@ -1,0 +1,15 @@
+<?php
+	// insiro o cabecalho da página
+  @include("../../includes/layout/cabecalho/_meta-css-js.php"); 
+?>
+ 
+<body>
+
+  <div class="cad_realizado">
+    <p>Deseja confirmar o Cadastro?</p>
+    <button type="submit" id="cad_realizado_cancel" name="cad_realizado_cancel"></button>
+    <button type="submit" id="cad_realizado_ok2" name="cad_realizado_ok"></button>
+  </div>
+
+</body>
+</html>

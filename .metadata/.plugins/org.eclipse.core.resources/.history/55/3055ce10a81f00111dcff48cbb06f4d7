@@ -1,0 +1,12 @@
+<?php
+
+# FileName="Connection_php_mysql.htm"
+# Type="MYSQL"
+# HTTP="true"
+
+$hostname_tecnologia = "192.168.16.201";
+$database_tecnologia = "sigd_sadti";
+$username_tecnologia = "root";
+$password_tecnologia = "pass234678";
+$tecnologia = mysql_pconnect($hostname_tecnologia, $username_tecnologia, $password_tecnologia) or trigger_error(mysql_error(),E_USER_ERROR); 
+?>

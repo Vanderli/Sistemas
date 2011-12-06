@@ -1,0 +1,18 @@
+<div id="sobre_secretario">
+ <h3>Gabinete do Prefeito - Prefeito</h3>
+
+  <img src="prefeito.jpg" alt="Foto do Prefeito" title="Jorge Costa" />
+  
+  <div id="descreve_secretario">
+    <h4>Jorge Costa</h4>
+    
+    <p>Jorge José da Costa nasceu em São Paulo, foi criado na Vila Sonia, zona Oeste da  Capital. Começou a trabalhar muito cedo e desde então já demonstrava seu espírito empreendedor e visionário. Veio para Itapecerica da Serra em 1974, quando da instalação de uma concessionária de bebidas pela família, o “Barricao”, conhecida por todos. Em 1988, a convite de um amigo foi, despretensiosamente, vice-prefeito da cidade e com o falecimento do então Prefeito na metade do mandato, Jorge Costa enfrentou o desafio de governar a cidade.</p>
+    <p>Após o falecimento de seu pai, assumiu os negócios da família juntamente com o irmão Norberto em Itapecerica da Serra  e, em 2004 mudou para o ramo da construção civil.</p>
+    <p>Neste mesmo ano, Jorge Costa assumiu a Prefeitura da cidade pela segunda vez e, apesar de encontrar uma administração com sérios problemas financeiros, cumpriu o mandato com austeridade e ousadia, trazendo avanços, que lhe garantiram a reeleição.</p>
+    <p>Casado com Teresa Cristina Hueb Costa e pai de três filhas, está em seu terceiro mandato, à frente da administração com a mesma energia, determinação e espírito inovador fazendo de Itapecerica da Serra uma cidade melhor para se viver.</p>
+    <p>Formado em Direito pela UNIP.</p> 
+  </div>
+  
+  <a href="../secretarias.php" title="Voltar" id="voltar_sec">Voltar</a>
+
+</div>

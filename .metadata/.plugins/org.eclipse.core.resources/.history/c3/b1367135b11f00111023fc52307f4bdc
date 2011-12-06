@@ -1,0 +1,56 @@
+<div id="cont_noticia">  
+    <h3>Censo 2010</h3>
+    
+    <div id="not_tam_font">
+      <a href="#" title="Aumentar Fonte" id="acs_aumenta_fonte_not">
+        <img src="<?=URL?>/img/acessibilidade/icons/a_mais_2.png" alt="+ A" title="Aumentar Fonte" />
+        <span>A+</span>
+      </a>
+      <a href="#" title="Diminuir Fonte" id="acs_reduz_fonte_not">
+        <img src="<?=URL?>/img/acessibilidade/icons/a_menos_2.png" alt="- A" title="Diminuir Fonte" />
+        <span>A-</span>
+      </a>
+    </div>
+    
+    <h4>Pré-Coleta: a base para os trabalhos do Censo 2010</h4>
+        
+    <div id="noticia_descreve">
+
+        <p>
+            No decorrer desse ano a população brasileira será recenseada pela 12ª vez em sua história e teremos um 
+            grande retrato em extensão e profundidade da nossa população. O recenseamento iniciará em agosto de 2010 
+            e para isso o território está sendo preparado pelos profissionais do IBGE. Trata-se da Pré-Coleta, primeira 
+            operação de campo do Censo Demográfico 2010.
+        </p>
+        
+        <br />
+        
+        <p>
+            Durante essa etapa mais de 20 mil supervisores farão a listagem dos endereços das unidades residenciais e 
+            não-residenciais, e a coleta de características das ruas como pavimentação, iluminação, arborização, 
+            entre outros. As listagens serão associadas aos mapas de trabalho, o que permitirá aos recenseadores 
+            conhecer com antecedência os setores que terão de visitar.
+        </p>
+                
+        <br />
+        
+        <p>
+            É a primeira vez que o IBGE realiza a Pré-Coleta em níveis nacionais e tem como objetivo uma 
+            preparação mais precisa para a realização da coleta de dados. Com a Pré-Coleta o IBGE visa diminuir 
+            a omissão ou inclusão indevida de domicílios e falhas na enumeração de pessoas. Os dados coletados, 
+            juntamente com as informações do próprio Censo, ampliarão o panorama das condições de moradia no Brasil. 
+            A etapa iniciou a partir do dia 16 de abril e para cumprir todos os objetivos é possível que os agentes 
+            voltem mais de uma vez nas localidades.
+        </p>
+                        
+        <br />
+        
+        <p>
+        	Em meio a esse processo, para que todos se sintam seguros, o agente do IBGE estará devidamente 
+            identificado com um crachá de identificação. Caso necessário, o nome e o número de matrícula 
+            que constam no crachá podem ser confirmados através de ligação gratuita para o telefone 0800 721 8181.
+        </p>
+                                                      
+	</div> 
+   
+</div>

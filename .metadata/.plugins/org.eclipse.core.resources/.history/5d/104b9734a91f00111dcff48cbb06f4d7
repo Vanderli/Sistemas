@@ -1,0 +1,31 @@
+<div id="cont_lista_arvore">
+
+  <h3>Gabinete do Prefeito</h3>
+  
+  <h4>Serviços do Gabinete</h4>  
+  
+  <div class="la_container">
+    <p>Clique em Lista de Serviços para visualizar todos os serviços do Gabinete do Prefeito.<p>
+    <ul>
+    
+      <div class="la_colunas">    
+        <li class="la_coluna_tit3">   
+          <a title="Lista de Serviços" class="btn_esconde_la">Lista de Serviços</a>
+          <ul class="esconde_la">
+            <li><a href="alistamento_militar/alistamento_militar.php" title="Alistamento Militar">Alistamento Militar</a></li>
+          </ul>
+        </li>
+        
+      </div>
+    
+    
+    
+    </ul>
+  </div>
+  
+  <div id="sec_voltar">
+    <input type="button" value="Voltar" name="Voltar" onclick="javascript:window.location='../secretarias.php';" />
+  </div>
+
+
+</div>
